@@ -1,0 +1,10 @@
+{
+  "name": "MarbledSteelTile",
+  "category": "Level",
+  "archive": "mockups/Environment/Level/MarbledSteelTile.zip",
+  "original_archive_name": "Meshy_AI_Marbled_Steel_Tile_1007065050_texture_fbx.zip",
+  "sha256": "eeebcdcd341a5e1cb26e4594d40e5b96cb0c6fc58532429e1ae4717185f2a41d",
+  "imported": false,
+  "longest_dimension_cm": 300,
+  "surface": "Metal"
+}

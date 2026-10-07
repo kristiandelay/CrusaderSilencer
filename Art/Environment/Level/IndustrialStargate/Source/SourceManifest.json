@@ -1,0 +1,10 @@
+{
+  "name": "IndustrialStargate",
+  "category": "Level",
+  "archive": "mockups/Environment/Level/IndustrialStargate.zip",
+  "original_archive_name": "Meshy_AI_Industrial_Stargate_1007065115_texture_fbx.zip",
+  "sha256": "e408e686a7b494328730920c728a0179116a00e49544404caa94b9d409c9bea5",
+  "imported": false,
+  "longest_dimension_cm": 500,
+  "surface": "Metal"
+}

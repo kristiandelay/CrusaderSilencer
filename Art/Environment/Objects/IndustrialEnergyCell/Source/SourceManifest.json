@@ -1,0 +1,10 @@
+{
+  "name": "IndustrialEnergyCell",
+  "category": "Objects",
+  "archive": "mockups/Environment/Objects/IndustrialEnergyCell.zip",
+  "original_archive_name": "Meshy_AI_Industrial_Energy_Cel_1007065531_texture_fbx.zip",
+  "sha256": "b3060f3a486d024e3c4ed8516202ee60b24b5766ae69f2c45e4cf0b0169ca659",
+  "imported": false,
+  "longest_dimension_cm": 120,
+  "surface": "Metal"
+}
