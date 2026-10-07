@@ -1,0 +1,876 @@
+{
+  "created_utc": "2026-10-07T06:30:06.232497+00:00",
+  "engine": "5.8.3-58210709+++UE5+Release-5.8",
+  "blender": "5.2.2 LTS",
+  "passed": true,
+  "default_visual": "CrimsonSentinel",
+  "catalog_size": 11,
+  "characters": [
+    {
+      "name": "ObsidianSentinel",
+      "rig": {
+        "source_triangles": 778200,
+        "game_triangles": 85000,
+        "vertices": 42482,
+        "bones": 64,
+        "unweighted_vertices": 0,
+        "max_influences": 4,
+        "finger_weighted_vertices": {
+          "index_metacarpal_l": 459,
+          "index_01_l": 188,
+          "index_02_l": 112,
+          "index_03_l": 66,
+          "middle_metacarpal_l": 245,
+          "middle_01_l": 233,
+          "middle_02_l": 81,
+          "middle_03_l": 67,
+          "ring_metacarpal_l": 203,
+          "ring_01_l": 221,
+          "ring_02_l": 85,
+          "ring_03_l": 58,
+          "pinky_metacarpal_l": 235,
+          "pinky_01_l": 200,
+          "pinky_02_l": 90,
+          "pinky_03_l": 67,
+          "thumb_01_l": 339,
+          "thumb_02_l": 173,
+          "thumb_03_l": 107,
+          "index_metacarpal_r": 665,
+          "index_01_r": 200,
+          "index_02_r": 104,
+          "index_03_r": 69,
+          "middle_metacarpal_r": 397,
+          "middle_01_r": 253,
+          "middle_02_r": 79,
+          "middle_03_r": 64,
+          "ring_metacarpal_r": 174,
+          "ring_01_r": 224,
+          "ring_02_r": 86,
+          "ring_03_r": 58,
+          "pinky_metacarpal_r": 304,
+          "pinky_01_r": 167,
+          "pinky_02_r": 96,
+          "pinky_03_r": 60,
+          "thumb_01_r": 389,
+          "thumb_02_r": 192,
+          "thumb_03_r": 104
+        }
+      },
+      "fingers": [
+        {
+          "finger": "thumb_l",
+          "weighted_vertices": 294,
+          "maximum_travel_cm": 10.166304180583682,
+          "average_travel_cm": 3.0126417815331674
+        },
+        {
+          "finger": "index_l",
+          "weighted_vertices": 166,
+          "maximum_travel_cm": 13.594408181578702,
+          "average_travel_cm": 4.998604981234667
+        },
+        {
+          "finger": "middle_l",
+          "weighted_vertices": 201,
+          "maximum_travel_cm": 12.113481694014386,
+          "average_travel_cm": 3.9299133354931137
+        },
+        {
+          "finger": "ring_l",
+          "weighted_vertices": 180,
+          "maximum_travel_cm": 11.69568115142625,
+          "average_travel_cm": 3.8628205281768007
+        },
+        {
+          "finger": "pinky_l",
+          "weighted_vertices": 188,
+          "maximum_travel_cm": 11.319416355548064,
+          "average_travel_cm": 3.746951177852002
+        },
+        {
+          "finger": "thumb_r",
+          "weighted_vertices": 305,
+          "maximum_travel_cm": 10.304496572489182,
+          "average_travel_cm": 2.9314980216149493
+        },
+        {
+          "finger": "index_r",
+          "weighted_vertices": 164,
+          "maximum_travel_cm": 13.679317728618951,
+          "average_travel_cm": 5.274822805032987
+        },
+        {
+          "finger": "middle_r",
+          "weighted_vertices": 198,
+          "maximum_travel_cm": 12.198551820571405,
+          "average_travel_cm": 3.9195471388986456
+        },
+        {
+          "finger": "ring_r",
+          "weighted_vertices": 193,
+          "maximum_travel_cm": 11.818091951041982,
+          "average_travel_cm": 3.7704748861516753
+        },
+        {
+          "finger": "pinky_r",
+          "weighted_vertices": 172,
+          "maximum_travel_cm": 11.502706499474344,
+          "average_travel_cm": 4.075498653416825
+        }
+      ]
+    },
+    {
+      "name": "RegalCommander",
+      "rig": {
+        "source_triangles": 587412,
+        "game_triangles": 85000,
+        "vertices": 42420,
+        "bones": 64,
+        "unweighted_vertices": 0,
+        "max_influences": 4,
+        "finger_weighted_vertices": {
+          "index_metacarpal_l": 1119,
+          "index_01_l": 219,
+          "index_02_l": 174,
+          "index_03_l": 127,
+          "middle_metacarpal_l": 275,
+          "middle_01_l": 264,
+          "middle_02_l": 189,
+          "middle_03_l": 137,
+          "ring_metacarpal_l": 445,
+          "ring_01_l": 230,
+          "ring_02_l": 160,
+          "ring_03_l": 135,
+          "pinky_metacarpal_l": 1964,
+          "pinky_01_l": 50,
+          "pinky_02_l": 105,
+          "pinky_03_l": 179,
+          "thumb_01_l": 2512,
+          "thumb_02_l": 464,
+          "thumb_03_l": 154,
+          "index_metacarpal_r": 813,
+          "index_01_r": 201,
+          "index_02_r": 171,
+          "index_03_r": 131,
+          "middle_metacarpal_r": 242,
+          "middle_01_r": 248,
+          "middle_02_r": 173,
+          "middle_03_r": 149,
+          "ring_metacarpal_r": 665,
+          "ring_01_r": 235,
+          "ring_02_r": 165,
+          "ring_03_r": 137,
+          "pinky_metacarpal_r": 1198,
+          "pinky_01_r": 44,
+          "pinky_02_r": 103,
+          "pinky_03_r": 183,
+          "thumb_01_r": 1400,
+          "thumb_02_r": 307,
+          "thumb_03_r": 159
+        }
+      },
+      "fingers": [
+        {
+          "finger": "thumb_l",
+          "weighted_vertices": 1252,
+          "maximum_travel_cm": 10.442411808868034,
+          "average_travel_cm": 1.7228263886375563
+        },
+        {
+          "finger": "index_l",
+          "weighted_vertices": 216,
+          "maximum_travel_cm": 12.230953434782926,
+          "average_travel_cm": 5.226971331688177
+        },
+        {
+          "finger": "middle_l",
+          "weighted_vertices": 230,
+          "maximum_travel_cm": 11.432441301459987,
+          "average_travel_cm": 4.236885538733843
+        },
+        {
+          "finger": "ring_l",
+          "weighted_vertices": 269,
+          "maximum_travel_cm": 13.449982137561834,
+          "average_travel_cm": 5.407204711918189
+        },
+        {
+          "finger": "pinky_l",
+          "weighted_vertices": 154,
+          "maximum_travel_cm": 14.355271974629384,
+          "average_travel_cm": 8.26280469813533
+        },
+        {
+          "finger": "thumb_r",
+          "weighted_vertices": 915,
+          "maximum_travel_cm": 10.467770294351274,
+          "average_travel_cm": 2.118377680933504
+        },
+        {
+          "finger": "index_r",
+          "weighted_vertices": 226,
+          "maximum_travel_cm": 12.862796073449529,
+          "average_travel_cm": 5.4673048175385395
+        },
+        {
+          "finger": "middle_r",
+          "weighted_vertices": 227,
+          "maximum_travel_cm": 11.536559993849952,
+          "average_travel_cm": 4.37033767782068
+        },
+        {
+          "finger": "ring_r",
+          "weighted_vertices": 275,
+          "maximum_travel_cm": 13.30140402704076,
+          "average_travel_cm": 5.571266277522706
+        },
+        {
+          "finger": "pinky_r",
+          "weighted_vertices": 158,
+          "maximum_travel_cm": 14.450590994078015,
+          "average_travel_cm": 8.268995550935523
+        }
+      ]
+    },
+    {
+      "name": "TheSteadfastOfficer",
+      "rig": {
+        "source_triangles": 573790,
+        "game_triangles": 85000,
+        "vertices": 42476,
+        "bones": 64,
+        "unweighted_vertices": 0,
+        "max_influences": 4,
+        "finger_weighted_vertices": {
+          "index_metacarpal_l": 835,
+          "index_01_l": 206,
+          "index_02_l": 138,
+          "index_03_l": 109,
+          "middle_metacarpal_l": 115,
+          "middle_01_l": 267,
+          "middle_02_l": 138,
+          "middle_03_l": 111,
+          "ring_metacarpal_l": 228,
+          "ring_01_l": 36,
+          "ring_02_l": 137,
+          "ring_03_l": 111,
+          "pinky_metacarpal_l": 759,
+          "pinky_01_l": 230,
+          "pinky_02_l": 204,
+          "pinky_03_l": 101,
+          "thumb_01_l": 758,
+          "thumb_02_l": 181,
+          "thumb_03_l": 63,
+          "index_metacarpal_r": 841,
+          "index_01_r": 216,
+          "index_02_r": 134,
+          "index_03_r": 118,
+          "middle_metacarpal_r": 101,
+          "middle_01_r": 285,
+          "middle_02_r": 132,
+          "middle_03_r": 108,
+          "ring_metacarpal_r": 205,
+          "ring_01_r": 52,
+          "ring_02_r": 154,
+          "ring_03_r": 113,
+          "pinky_metacarpal_r": 778,
+          "pinky_01_r": 254,
+          "pinky_02_r": 157,
+          "pinky_03_r": 99,
+          "thumb_01_r": 782,
+          "thumb_02_r": 177,
+          "thumb_03_r": 71
+        }
+      },
+      "fingers": [
+        {
+          "finger": "thumb_l",
+          "weighted_vertices": 407,
+          "maximum_travel_cm": 9.219311454615946,
+          "average_travel_cm": 2.543455611877317
+        },
+        {
+          "finger": "index_l",
+          "weighted_vertices": 199,
+          "maximum_travel_cm": 12.278993044893124,
+          "average_travel_cm": 5.040521776334651
+        },
+        {
+          "finger": "middle_l",
+          "weighted_vertices": 257,
+          "maximum_travel_cm": 11.294052087895077,
+          "average_travel_cm": 3.958355526224946
+        },
+        {
+          "finger": "ring_l",
+          "weighted_vertices": 126,
+          "maximum_travel_cm": 12.257608425369623,
+          "average_travel_cm": 6.984188073668427
+        },
+        {
+          "finger": "pinky_l",
+          "weighted_vertices": 199,
+          "maximum_travel_cm": 10.97254595594158,
+          "average_travel_cm": 4.504703106823469
+        },
+        {
+          "finger": "thumb_r",
+          "weighted_vertices": 397,
+          "maximum_travel_cm": 9.049369560328495,
+          "average_travel_cm": 2.473947041764103
+        },
+        {
+          "finger": "index_r",
+          "weighted_vertices": 203,
+          "maximum_travel_cm": 12.346788906298356,
+          "average_travel_cm": 5.146395029733643
+        },
+        {
+          "finger": "middle_r",
+          "weighted_vertices": 261,
+          "maximum_travel_cm": 11.382419639620435,
+          "average_travel_cm": 3.994320031359057
+        },
+        {
+          "finger": "ring_r",
+          "weighted_vertices": 145,
+          "maximum_travel_cm": 12.320113176222318,
+          "average_travel_cm": 6.344307322019969
+        },
+        {
+          "finger": "pinky_r",
+          "weighted_vertices": 191,
+          "maximum_travel_cm": 11.053373828920403,
+          "average_travel_cm": 4.677187936293925
+        }
+      ]
+    },
+    {
+      "name": "UrbanTrailblazer",
+      "rig": {
+        "source_triangles": 776574,
+        "game_triangles": 85000,
+        "vertices": 42260,
+        "bones": 64,
+        "unweighted_vertices": 0,
+        "max_influences": 4,
+        "finger_weighted_vertices": {
+          "index_metacarpal_l": 124,
+          "index_01_l": 97,
+          "index_02_l": 58,
+          "index_03_l": 55,
+          "middle_metacarpal_l": 109,
+          "middle_01_l": 146,
+          "middle_02_l": 67,
+          "middle_03_l": 51,
+          "ring_metacarpal_l": 168,
+          "ring_01_l": 217,
+          "ring_02_l": 124,
+          "ring_03_l": 46,
+          "pinky_metacarpal_l": 584,
+          "pinky_01_l": 104,
+          "pinky_02_l": 95,
+          "pinky_03_l": 52,
+          "thumb_01_l": 226,
+          "thumb_02_l": 110,
+          "thumb_03_l": 62,
+          "index_metacarpal_r": 126,
+          "index_01_r": 106,
+          "index_02_r": 63,
+          "index_03_r": 53,
+          "middle_metacarpal_r": 110,
+          "middle_01_r": 161,
+          "middle_02_r": 74,
+          "middle_03_r": 47,
+          "ring_metacarpal_r": 164,
+          "ring_01_r": 240,
+          "ring_02_r": 159,
+          "ring_03_r": 46,
+          "pinky_metacarpal_r": 152,
+          "pinky_01_r": 111,
+          "pinky_02_r": 114,
+          "pinky_03_r": 55,
+          "thumb_01_r": 162,
+          "thumb_02_r": 115,
+          "thumb_03_r": 66
+        }
+      },
+      "fingers": [
+        {
+          "finger": "thumb_l",
+          "weighted_vertices": 130,
+          "maximum_travel_cm": 9.09553180031118,
+          "average_travel_cm": 3.6271340248985
+        },
+        {
+          "finger": "index_l",
+          "weighted_vertices": 105,
+          "maximum_travel_cm": 10.263160258716306,
+          "average_travel_cm": 4.334555089346408
+        },
+        {
+          "finger": "middle_l",
+          "weighted_vertices": 136,
+          "maximum_travel_cm": 10.525170447629822,
+          "average_travel_cm": 3.5938140612982274
+        },
+        {
+          "finger": "ring_l",
+          "weighted_vertices": 153,
+          "maximum_travel_cm": 9.841229797365848,
+          "average_travel_cm": 2.8693523583135527
+        },
+        {
+          "finger": "pinky_l",
+          "weighted_vertices": 74,
+          "maximum_travel_cm": 8.091090232937255,
+          "average_travel_cm": 4.01535330750569
+        },
+        {
+          "finger": "thumb_r",
+          "weighted_vertices": 131,
+          "maximum_travel_cm": 9.22315920113151,
+          "average_travel_cm": 3.6785199272168456
+        },
+        {
+          "finger": "index_r",
+          "weighted_vertices": 123,
+          "maximum_travel_cm": 10.460388305925465,
+          "average_travel_cm": 4.062648043143693
+        },
+        {
+          "finger": "middle_r",
+          "weighted_vertices": 149,
+          "maximum_travel_cm": 10.53384666238273,
+          "average_travel_cm": 3.2747092591539175
+        },
+        {
+          "finger": "ring_r",
+          "weighted_vertices": 170,
+          "maximum_travel_cm": 10.021970455713111,
+          "average_travel_cm": 2.738265641746811
+        },
+        {
+          "finger": "pinky_r",
+          "weighted_vertices": 79,
+          "maximum_travel_cm": 8.232712347985643,
+          "average_travel_cm": 3.908678326066604
+        }
+      ]
+    }
+  ],
+  "standalone": {
+    "passed": true,
+    "error": null,
+    "results": [
+      {
+        "case": "widget_select",
+        "visual": "ObsidianSentinel",
+        "mesh": "Manny"
+      },
+      {
+        "case": "aim",
+        "visual": "ObsidianSentinel",
+        "left": false,
+        "pitch": 0.0,
+        "muzzle_error_degrees": 5.693572467208609,
+        "weapon_roll_degrees": -1.3541242909854934
+      },
+      {
+        "case": "aim",
+        "visual": "ObsidianSentinel",
+        "left": false,
+        "pitch": 40.0,
+        "muzzle_error_degrees": 2.9543307441027427,
+        "weapon_roll_degrees": -0.06259251343991142
+      },
+      {
+        "case": "aim",
+        "visual": "ObsidianSentinel",
+        "left": false,
+        "pitch": -40.0,
+        "muzzle_error_degrees": 4.129856938353982,
+        "weapon_roll_degrees": -2.960936984713306
+      },
+      {
+        "case": "aim",
+        "visual": "ObsidianSentinel",
+        "left": true,
+        "pitch": 0.0,
+        "muzzle_error_degrees": 5.650364271493975,
+        "weapon_roll_degrees": 1.1968191814316111
+      },
+      {
+        "case": "aim",
+        "visual": "ObsidianSentinel",
+        "left": true,
+        "pitch": 40.0,
+        "muzzle_error_degrees": 3.4972107118213134,
+        "weapon_roll_degrees": -1.5096841482151273
+      },
+      {
+        "case": "aim",
+        "visual": "ObsidianSentinel",
+        "left": true,
+        "pitch": -40.0,
+        "muzzle_error_degrees": 3.902849721723815,
+        "weapon_roll_degrees": 3.422781365213242
+      },
+      {
+        "case": "fire_reload_and_clear",
+        "visual": "ObsidianSentinel"
+      },
+      {
+        "case": "widget_select",
+        "visual": "RegalCommander",
+        "mesh": "Manny"
+      },
+      {
+        "case": "aim",
+        "visual": "RegalCommander",
+        "left": false,
+        "pitch": 0.0,
+        "muzzle_error_degrees": 5.783333163486055,
+        "weapon_roll_degrees": -1.134933022949449
+      },
+      {
+        "case": "aim",
+        "visual": "RegalCommander",
+        "left": false,
+        "pitch": 40.0,
+        "muzzle_error_degrees": 3.0740271715975904,
+        "weapon_roll_degrees": 0.5186254877924473
+      },
+      {
+        "case": "aim",
+        "visual": "RegalCommander",
+        "left": false,
+        "pitch": -40.0,
+        "muzzle_error_degrees": 4.179113778363096,
+        "weapon_roll_degrees": -3.870776483485212
+      },
+      {
+        "case": "aim",
+        "visual": "RegalCommander",
+        "left": true,
+        "pitch": 0.0,
+        "muzzle_error_degrees": 5.856567719226255,
+        "weapon_roll_degrees": 0.2195404960744181
+      },
+      {
+        "case": "aim",
+        "visual": "RegalCommander",
+        "left": true,
+        "pitch": 40.0,
+        "muzzle_error_degrees": 2.8995710937942576,
+        "weapon_roll_degrees": -0.060980885796187136
+      },
+      {
+        "case": "aim",
+        "visual": "RegalCommander",
+        "left": true,
+        "pitch": -40.0,
+        "muzzle_error_degrees": 4.967078120326376,
+        "weapon_roll_degrees": 3.6068360425912687
+      },
+      {
+        "case": "fire_reload_and_clear",
+        "visual": "RegalCommander"
+      },
+      {
+        "case": "widget_select",
+        "visual": "TheSteadfastOfficer",
+        "mesh": "Manny"
+      },
+      {
+        "case": "aim",
+        "visual": "TheSteadfastOfficer",
+        "left": false,
+        "pitch": 0.0,
+        "muzzle_error_degrees": 5.5396007553345035,
+        "weapon_roll_degrees": -0.2527810388262007
+      },
+      {
+        "case": "aim",
+        "visual": "TheSteadfastOfficer",
+        "left": false,
+        "pitch": 40.0,
+        "muzzle_error_degrees": 3.344225802081935,
+        "weapon_roll_degrees": 0.1971046088242377
+      },
+      {
+        "case": "aim",
+        "visual": "TheSteadfastOfficer",
+        "left": false,
+        "pitch": -40.0,
+        "muzzle_error_degrees": 4.420846147002602,
+        "weapon_roll_degrees": -3.0413348850032005
+      },
+      {
+        "case": "aim",
+        "visual": "TheSteadfastOfficer",
+        "left": true,
+        "pitch": 0.0,
+        "muzzle_error_degrees": 5.392167001416559,
+        "weapon_roll_degrees": 0.9558361063533671
+      },
+      {
+        "case": "aim",
+        "visual": "TheSteadfastOfficer",
+        "left": true,
+        "pitch": 40.0,
+        "muzzle_error_degrees": 3.2907119529228823,
+        "weapon_roll_degrees": -0.08992626468037221
+      },
+      {
+        "case": "aim",
+        "visual": "TheSteadfastOfficer",
+        "left": true,
+        "pitch": -40.0,
+        "muzzle_error_degrees": 4.439552043222124,
+        "weapon_roll_degrees": 3.406026862946642
+      },
+      {
+        "case": "fire_reload_and_clear",
+        "visual": "TheSteadfastOfficer"
+      },
+      {
+        "case": "widget_select",
+        "visual": "UrbanTrailblazer",
+        "mesh": "Manny"
+      },
+      {
+        "case": "aim",
+        "visual": "UrbanTrailblazer",
+        "left": false,
+        "pitch": 0.0,
+        "muzzle_error_degrees": 5.736948618088251,
+        "weapon_roll_degrees": -1.070350853424866
+      },
+      {
+        "case": "aim",
+        "visual": "UrbanTrailblazer",
+        "left": false,
+        "pitch": 40.0,
+        "muzzle_error_degrees": 3.2868096854111686,
+        "weapon_roll_degrees": 0.9757876385363183
+      },
+      {
+        "case": "aim",
+        "visual": "UrbanTrailblazer",
+        "left": false,
+        "pitch": -40.0,
+        "muzzle_error_degrees": 3.833948090223527,
+        "weapon_roll_degrees": -3.312281190079914
+      },
+      {
+        "case": "aim",
+        "visual": "UrbanTrailblazer",
+        "left": true,
+        "pitch": 0.0,
+        "muzzle_error_degrees": 5.976963144218466,
+        "weapon_roll_degrees": 1.1982729518440922
+      },
+      {
+        "case": "aim",
+        "visual": "UrbanTrailblazer",
+        "left": true,
+        "pitch": 40.0,
+        "muzzle_error_degrees": 2.8520082569584138,
+        "weapon_roll_degrees": 0.046852771701072646
+      },
+      {
+        "case": "aim",
+        "visual": "UrbanTrailblazer",
+        "left": true,
+        "pitch": -40.0,
+        "muzzle_error_degrees": 4.279713853360565,
+        "weapon_roll_degrees": 3.2568128894486996
+      },
+      {
+        "case": "fire_reload_and_clear",
+        "visual": "UrbanTrailblazer"
+      }
+    ]
+  },
+  "network": {
+    "passed": true,
+    "error": null,
+    "results": [
+      {
+        "visual": "ObsidianSentinel",
+        "roles": 4,
+        "left_muzzle_error_degrees": [
+          6.828318489413754,
+          4.072934183633257,
+          4.035857559484628,
+          6.869151585551298
+        ],
+        "left_weapon_roll_degrees": [
+          -1.3219545189431992,
+          -0.7660851313614909,
+          -0.3625283732800102,
+          -1.350653475930074
+        ]
+      },
+      {
+        "visual": "RegalCommander",
+        "roles": 4,
+        "left_muzzle_error_degrees": [
+          6.455803707871569,
+          4.418715752510134,
+          4.387608106072349,
+          6.528091585908343
+        ],
+        "left_weapon_roll_degrees": [
+          -1.411109189458249,
+          -1.0913649527816194,
+          -0.495810349536101,
+          -1.4626175555164478
+        ]
+      },
+      {
+        "visual": "TheSteadfastOfficer",
+        "roles": 4,
+        "left_muzzle_error_degrees": [
+          6.833829664800495,
+          4.41855327676812,
+          4.264499283522181,
+          6.863305206706822
+        ],
+        "left_weapon_roll_degrees": [
+          -1.7584328910792462,
+          -0.3821809903096591,
+          0.2646130134778707,
+          -1.7162858436915585
+        ]
+      },
+      {
+        "visual": "UrbanTrailblazer",
+        "roles": 4,
+        "left_muzzle_error_degrees": [
+          6.909770123531509,
+          4.156762657561426,
+          4.141724803210576,
+          6.952617967618308
+        ],
+        "left_weapon_roll_degrees": [
+          -1.5262320659053414,
+          -0.42691845526195277,
+          0.2882135175876437,
+          -1.6912607839259384
+        ]
+      },
+      {
+        "case": "clear_override",
+        "roles": 4
+      }
+    ]
+  },
+  "asset_validation": [
+    {
+      "name": "ObsidianSentinel",
+      "bones": 64,
+      "lods": 3,
+      "assets": 10
+    },
+    {
+      "name": "RegalCommander",
+      "bones": 64,
+      "lods": 3,
+      "assets": 10
+    },
+    {
+      "name": "TheSteadfastOfficer",
+      "bones": 64,
+      "lods": 3,
+      "assets": 10
+    },
+    {
+      "name": "UrbanTrailblazer",
+      "bones": 64,
+      "lods": 3,
+      "assets": 10
+    }
+  ],
+  "file_sha256": {
+    "Art/Characters/ObsidianSentinel/Export/ObsidianSentinel.fbx": "f6e7bcbf7657b25ce62c0761c9e0890d0c49e68bc63adb8acaa993617bd09754",
+    "Art/Characters/ObsidianSentinel/ObsidianSentinel.blend": "7a6b6ca8143467eb7a9d4cceff8f983535945b3b06e03749f468e0fd98a9a279",
+    "Art/Characters/ObsidianSentinel/Source/ObsidianSentinel.fbx": "d5a1512768825c75d0a5e1f0ded6b752847c86725b8ebc79be0bd22927789dad",
+    "Art/Characters/ObsidianSentinel/Source/ObsidianSentinel_BaseColor.png": "7b1c2618088316f894e38715ac49b41942045429ccfdee5db393a2e6cb5a07b0",
+    "Art/Characters/ObsidianSentinel/Source/ObsidianSentinel_Metallic.png": "12d3a9f1f4bc3dc51db4ccc2a39910cf89de3a69cebb5968923b0ee8c9606ae1",
+    "Art/Characters/ObsidianSentinel/Source/ObsidianSentinel_Normal.png": "fced9d6bfee00b7008439b29d8ba7d4a6930b3fdedb97da171b743c5f52ecb10",
+    "Art/Characters/ObsidianSentinel/Source/ObsidianSentinel_Roughness.png": "3eb288ba4101a3c54e330d391bf0d155d2d7f83d1c5adfdab2294efff6f51798",
+    "Art/Characters/ObsidianSentinel/Source/SourceManifest.json": "22a8d810e32370754c2558e197974a35ea671c3dc3d5edf0217f181424b50977",
+    "Art/Characters/RegalCommander/Export/RegalCommander.fbx": "c52e5d1362f5dcfaeebe40e4b21aa72c543fcde5c37e4b12f4f316fe48d8cec5",
+    "Art/Characters/RegalCommander/RegalCommander.blend": "4677aeb80373f05421683d6c3de939affb915a190c2b33cb68107584e1d5e38e",
+    "Art/Characters/RegalCommander/Source/RegalCommander.fbx": "72db95216b6e93b5f2ad68d1b493b3ffacbbc47ee7dc2085f33b577d60fc8652",
+    "Art/Characters/RegalCommander/Source/RegalCommander_BaseColor.png": "56164ec6518d962478e530707cf6e92f60b5b5cd2bb23372b38a61bb96c3ed22",
+    "Art/Characters/RegalCommander/Source/RegalCommander_Metallic.png": "7e6b77fbbdeb2b1b8e6ed14ab3a351b0e56c8455fdc61ceb84dca2f09a35da63",
+    "Art/Characters/RegalCommander/Source/RegalCommander_Normal.png": "333d75c50c8b5375ca72d0aa33d94fe4bfaf7dfde400cbe7f8625802288d172d",
+    "Art/Characters/RegalCommander/Source/RegalCommander_Roughness.png": "1c8789072c621e7b67f8c3d10c7b85d8022bc60b44ece91795de8e8471515bd0",
+    "Art/Characters/RegalCommander/Source/SourceManifest.json": "f205bef35fdeae1fdd9e7296cfb8067564ebbf7fbb882e0571336c458f366095",
+    "Art/Characters/TheSteadfastOfficer/Export/TheSteadfastOfficer.fbx": "cd0b7862fb0f127bd0a3e21b379dc0c679a22299bff3c14889df23f929b6f422",
+    "Art/Characters/TheSteadfastOfficer/Source/SourceManifest.json": "8033a94400318c19a419d52cee2058c4d3e4a83521498d1baf666f7d247852ca",
+    "Art/Characters/TheSteadfastOfficer/Source/TheSteadfastOfficer.fbx": "3e824103a5361267ae152c4d3c21dfd2e63443cc059a9890b518c4fa84e801da",
+    "Art/Characters/TheSteadfastOfficer/Source/TheSteadfastOfficer_BaseColor.png": "2daa9c17e9886c347e9e1f77ead37e9d0db00b0fa8f17b4da09b65bc9fb65c7f",
+    "Art/Characters/TheSteadfastOfficer/Source/TheSteadfastOfficer_Metallic.png": "52527a8491fb438a4a07f0ae0bd9a7f653b6ad3bb8c3e4bf73e8a7c379d209f6",
+    "Art/Characters/TheSteadfastOfficer/Source/TheSteadfastOfficer_Normal.png": "591485f0e0252dd9094d881e348660ba6c345df2cd34c62addd5469393bfb9ae",
+    "Art/Characters/TheSteadfastOfficer/Source/TheSteadfastOfficer_Roughness.png": "a44f19e19dbc4768223644f21ca2fd4ee85bebea56a03715bfc258248410ec31",
+    "Art/Characters/TheSteadfastOfficer/TheSteadfastOfficer.blend": "df404d74b6bffd9e1f0b7f8f957b1b401da7a71891d309bd40ac64e1598af7ef",
+    "Art/Characters/UrbanTrailblazer/Export/UrbanTrailblazer.fbx": "cf71ebc0c9ca9ab00f31cede08b799f91100d2116ca48c94d259c6e4ad980763",
+    "Art/Characters/UrbanTrailblazer/Source/SourceManifest.json": "5d1a7184c4c3a6d57501ba7234c2186feb1cf3e62589d1a6b17af9efe9070d8c",
+    "Art/Characters/UrbanTrailblazer/Source/UrbanTrailblazer.fbx": "add287f94f8f12a297976a66f587bfcbacec115f7eb1f1e25ed4656fdfbbea50",
+    "Art/Characters/UrbanTrailblazer/Source/UrbanTrailblazer_BaseColor.png": "dc6e1bd8678a9cb16c7df7ebb4cb89d8fe2e22ab5802dd8d9e536e6bbf4b2c9f",
+    "Art/Characters/UrbanTrailblazer/Source/UrbanTrailblazer_Metallic.png": "e310282b4724c1c6a7c9f9cc93d35a05ceedd6f2fcc232822b38be516bf95019",
+    "Art/Characters/UrbanTrailblazer/Source/UrbanTrailblazer_Normal.png": "b0875cb06a638e53f977b6403fd70c72ed4aea9de3e47b18fbb535ffa03f2b2d",
+    "Art/Characters/UrbanTrailblazer/Source/UrbanTrailblazer_Roughness.png": "4823fcee4714779cf2da888212e4cc4f745185b72921b4606d3c435059113a1a",
+    "Art/Characters/UrbanTrailblazer/UrbanTrailblazer.blend": "d780bf1e48b9cf980190d83e663037f59d81467a85a24689ee791afe8962186b",
+    "src/Content/Crusader/Characters/ObsidianSentinel/BP_ObsidianSentinel.uasset": "1b95a5e890d3383efbde546f9221da103311d4fb492fbae22d64059b28b541fe",
+    "src/Content/Crusader/Characters/ObsidianSentinel/IK_ObsidianSentinel.uasset": "871094ec8a670b615376f9a64d2ccdfda580f2d6d969b4fc7045cb944d3b4ff3",
+    "src/Content/Crusader/Characters/ObsidianSentinel/M_ObsidianSentinel.uasset": "39bd330cbfe9b0462fc8fe602997594d18fa31d973ab6f57bdeca1df98ec8530",
+    "src/Content/Crusader/Characters/ObsidianSentinel/ObsidianSentinel.uasset": "d2ef8e1ebc40d1a9822764e024b71c8ce926175696a411bcc3f68f9cdbac877a",
+    "src/Content/Crusader/Characters/ObsidianSentinel/ObsidianSentinel_Skeleton.uasset": "7534a32a5ce229a8930e4ea5207629216b8eb4f0ad915269b8959971dd59b581",
+    "src/Content/Crusader/Characters/ObsidianSentinel/RTG_Manny_to_ObsidianSentinel.uasset": "5627ae543f9de7e00c5163b04b5599cfd50ec428692780baca4517582eec7689",
+    "src/Content/Crusader/Characters/ObsidianSentinel/Textures/ObsidianSentinel_BaseColor.uasset": "fdfcda964022a163932a02d7af3bc4065926382bf31aeceada167a41156f55be",
+    "src/Content/Crusader/Characters/ObsidianSentinel/Textures/ObsidianSentinel_Metallic.uasset": "e92b9efe78799a91e7135b36d7143813843e9c1ec303c4e15a337f8d3f4afa87",
+    "src/Content/Crusader/Characters/ObsidianSentinel/Textures/ObsidianSentinel_Normal.uasset": "5287e23226cf088d685422d43ce120cd83b46b45751c518a12f26f3fac8b6752",
+    "src/Content/Crusader/Characters/ObsidianSentinel/Textures/ObsidianSentinel_Roughness.uasset": "75465c516b3c5cfcb239384929529cae042ee763d7df90167a4ed70e125b6682",
+    "src/Content/Crusader/Characters/RegalCommander/BP_RegalCommander.uasset": "2ed5e8e43e96416f02288858ff21ef20f67a0d6e4c11d328d5360e6e2d8269ac",
+    "src/Content/Crusader/Characters/RegalCommander/IK_RegalCommander.uasset": "b2bf440ab7289a049aee41b5d0b6ecac26e5cc424b9706fc1cd778998d7928c0",
+    "src/Content/Crusader/Characters/RegalCommander/M_RegalCommander.uasset": "067dcf6d0765522ac0c6b006b6c95aa2a681bcaee739cc253bba054666f4d43e",
+    "src/Content/Crusader/Characters/RegalCommander/RegalCommander.uasset": "274c56d371380c2d22640c4034477255d8b8495f4d6044039bdc6188c08709e1",
+    "src/Content/Crusader/Characters/RegalCommander/RegalCommander_Skeleton.uasset": "b19ff4d9c3dde491021e3919a2adfa27d4f4a1134b618f996239bb945c569d54",
+    "src/Content/Crusader/Characters/RegalCommander/RTG_Manny_to_RegalCommander.uasset": "dbb5ca23b04eaa11c2fe72ff850c51927522fab7ddf0bc218caa931a08ec49ff",
+    "src/Content/Crusader/Characters/RegalCommander/Textures/RegalCommander_BaseColor.uasset": "10aaf7a21b2c306bbc68cff4095779aed93df0464353bfd6b9f9474c5b955b86",
+    "src/Content/Crusader/Characters/RegalCommander/Textures/RegalCommander_Metallic.uasset": "66d131582959462a6186eddee76130d0339f93cab3e0ac0ed6454d70580bd1b5",
+    "src/Content/Crusader/Characters/RegalCommander/Textures/RegalCommander_Normal.uasset": "0dbe8d178cb0d9054feaae0283d8ba9242c8bcfe79f2c907c182a8298487309f",
+    "src/Content/Crusader/Characters/RegalCommander/Textures/RegalCommander_Roughness.uasset": "5272fac125e23b92d8d526f9a09bdc0c5b2fe0a38674d545ac1f7afea4282991",
+    "src/Content/Crusader/Characters/TheSteadfastOfficer/BP_TheSteadfastOfficer.uasset": "12346db8234aa5cda7c9843c968a6678c96ae8e1c29d3d897a6db7d4663623d7",
+    "src/Content/Crusader/Characters/TheSteadfastOfficer/IK_TheSteadfastOfficer.uasset": "20f6391b2f53573f66e2fd447989d26c56d685262b9faee0a706467245b8aa75",
+    "src/Content/Crusader/Characters/TheSteadfastOfficer/M_TheSteadfastOfficer.uasset": "2dd7cf21c7616c788a64a7e9554cbbdae6d479531ebacb258d8cd8f34003f11a",
+    "src/Content/Crusader/Characters/TheSteadfastOfficer/RTG_Manny_to_TheSteadfastOfficer.uasset": "6459721200bd63cbcfb1169c33a01dcab447d9d767d7575a9a27bebd73be0687",
+    "src/Content/Crusader/Characters/TheSteadfastOfficer/Textures/TheSteadfastOfficer_BaseColor.uasset": "79a7bc19f87d7519e8dda9fcca1d5daf484ba0eb07298e4bb7bbaf6c37196954",
+    "src/Content/Crusader/Characters/TheSteadfastOfficer/Textures/TheSteadfastOfficer_Metallic.uasset": "3c89bed9afca458c2420190fb97b430aff9dc0a215884663ae64e53ca2cf72c4",
+    "src/Content/Crusader/Characters/TheSteadfastOfficer/Textures/TheSteadfastOfficer_Normal.uasset": "c16b3de6ddc4e5c93edf5faca3bdead6639204b320557c2f37528239d59a93d7",
+    "src/Content/Crusader/Characters/TheSteadfastOfficer/Textures/TheSteadfastOfficer_Roughness.uasset": "2352a45c821c4336133d7aae142811c0864ef1f5387ad9351aaac98310028cd9",
+    "src/Content/Crusader/Characters/TheSteadfastOfficer/TheSteadfastOfficer.uasset": "86ad97d9b1277554b1c7b732bb32ca9d983a24a6024f930098855fa87ad7b457",
+    "src/Content/Crusader/Characters/TheSteadfastOfficer/TheSteadfastOfficer_Skeleton.uasset": "df65577651592fb2899e265b0b2c95a05988d1868e907630ac3c0a8995c512b1",
+    "src/Content/Crusader/Characters/UrbanTrailblazer/BP_UrbanTrailblazer.uasset": "056465d2605c287e2f9752b0516b9c142f6ade0eaf6078adb36067261bbdf9e6",
+    "src/Content/Crusader/Characters/UrbanTrailblazer/IK_UrbanTrailblazer.uasset": "74721a91c1d986200410f6e361489579dac36bc3a9a6efcc703e7c9c3afaa843",
+    "src/Content/Crusader/Characters/UrbanTrailblazer/M_UrbanTrailblazer.uasset": "d0ba4fa71a1edc14d341254e5e8e33a509cd87d208febfd2902b29f6d5982918",
+    "src/Content/Crusader/Characters/UrbanTrailblazer/RTG_Manny_to_UrbanTrailblazer.uasset": "d79e88e8d28e2d9bf160241ec0a96ba98c4b76a3be618a251252b34c70b6aa0f",
+    "src/Content/Crusader/Characters/UrbanTrailblazer/Textures/UrbanTrailblazer_BaseColor.uasset": "748e90e7fabd78be1fed74cc10667b426cec57751c49beaf327852828cd93370",
+    "src/Content/Crusader/Characters/UrbanTrailblazer/Textures/UrbanTrailblazer_Metallic.uasset": "f7566721bea1cabe0b9785e603ac7214bea2fa6ec886e4cc3eec084e6563b256",
+    "src/Content/Crusader/Characters/UrbanTrailblazer/Textures/UrbanTrailblazer_Normal.uasset": "b54318f1ce42d94d071b8efb88361191d5f045ed617a6bbf401239decb9f15b3",
+    "src/Content/Crusader/Characters/UrbanTrailblazer/Textures/UrbanTrailblazer_Roughness.uasset": "b6210b2bac4b3a1e82503beb6156b684caae5b1d670808d66851d73524dff8d8",
+    "src/Content/Crusader/Characters/UrbanTrailblazer/UrbanTrailblazer.uasset": "38fb5608931c1ff49699480c84e222870693bf1ce02f89504b7ddbef27153a99",
+    "src/Content/Crusader/Characters/UrbanTrailblazer/UrbanTrailblazer_Skeleton.uasset": "918b1d45dad0720b363221631bdb350fd5d6ef6c502283d63e1c2d57787d624f"
+  },
+  "reviewed_captures": {
+    "Artifacts/NPCCharacters/ObsidianSentinel-right.png": "4d5ccc6ff467ec534f5740600efb867ac0a154c408937586e459af502dc425d9",
+    "Artifacts/NPCCharacters/RegalCommander-right.png": "91dd3ec93158b87c8f738aa63b26d002634a2fbe2acdbe15f9a7501f012ed63e",
+    "Artifacts/NPCCharacters/TheSteadfastOfficer-right.png": "1e6885648e82361e61664df403e70e3bc36e8330a097ce0927c4b9851f9a4446",
+    "Artifacts/NPCCharacters/UrbanTrailblazer-right.png": "353db12d2e2e8576b4619d2d9b49b7a012e649680d74532aaca5086bc05037cb"
+  }
+}

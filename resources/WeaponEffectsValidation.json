@@ -1,0 +1,895 @@
+{
+  "created_utc": "2026-10-07T06:30:06.503882+00:00",
+  "engine": "5.8.3-58210709+++UE5+Release-5.8",
+  "passed": true,
+  "surfaces": [
+    {
+      "id": 0,
+      "name": "Default",
+      "physical_material": "/Game/Crusader/Effects/Surfaces/PM_Default.PM_Default",
+      "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Concrete/NS_Impact_Concrete_Low.NS_Impact_Concrete_Low",
+      "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_Concrete.Cue_Bullet_Impact_Concrete",
+      "decal": "/Game/BulletImpactVFX/BulletHoleDecals/Material_Instances/Inst_BulletDecal_Concrete_01.Inst_BulletDecal_Concrete_01"
+    },
+    {
+      "id": 1,
+      "name": "Character",
+      "physical_material": "/Game/Crusader/Effects/Surfaces/PM_Character.PM_Character",
+      "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Flesh/NS_Impact_Blood_Low.NS_Impact_Blood_Low",
+      "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_Flesh.Cue_Bullet_Impact_Flesh",
+      "decal": null
+    },
+    {
+      "id": 2,
+      "name": "Concrete",
+      "physical_material": "/Game/Crusader/Effects/Surfaces/PM_Concrete.PM_Concrete",
+      "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Concrete/NS_Impact_Concrete_Low.NS_Impact_Concrete_Low",
+      "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_Concrete.Cue_Bullet_Impact_Concrete",
+      "decal": "/Game/BulletImpactVFX/BulletHoleDecals/Material_Instances/Inst_BulletDecal_Concrete_01.Inst_BulletDecal_Concrete_01"
+    },
+    {
+      "id": 3,
+      "name": "Glass",
+      "physical_material": "/Game/Crusader/Effects/Surfaces/PM_Glass.PM_Glass",
+      "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Glass/NS_Impact_Glass_Low.NS_Impact_Glass_Low",
+      "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_Glass_Small.Cue_Bullet_Impact_Glass_Small",
+      "decal": "/Game/BulletImpactVFX/BulletHoleDecals/Material_Instances/Inst_BulletDecal_Glass_Common_01.Inst_BulletDecal_Glass_Common_01"
+    },
+    {
+      "id": 4,
+      "name": "Metal",
+      "physical_material": "/Game/Crusader/Effects/Surfaces/PM_Metal.PM_Metal",
+      "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Metal/NS_Impact_Metal_Low.NS_Impact_Metal_Low",
+      "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_MetalSolid.Cue_Bullet_Impact_MetalSolid",
+      "decal": "/Game/BulletImpactVFX/BulletHoleDecals/Material_Instances/Inst_BulletDecal_Metal_Solid_01.Inst_BulletDecal_Metal_Solid_01"
+    },
+    {
+      "id": 5,
+      "name": "Wood",
+      "physical_material": "/Game/Crusader/Effects/Surfaces/PM_Wood.PM_Wood",
+      "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Plank/NS_Impact_Plank_Low.NS_Impact_Plank_Low",
+      "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_Wood.Cue_Bullet_Impact_Wood",
+      "decal": "/Game/BulletImpactVFX/BulletHoleDecals/Material_Instances/M_BulletDecal_Wood_01_Inst.M_BulletDecal_Wood_01_Inst"
+    },
+    {
+      "id": 6,
+      "name": "Brick",
+      "physical_material": "/Game/Crusader/Effects/Surfaces/PM_Brick.PM_Brick",
+      "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Brickwall/NS_Impact_Brickwall_Low.NS_Impact_Brickwall_Low",
+      "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_Brickwall.Cue_Bullet_Impact_Brickwall",
+      "decal": "/Game/BulletImpactVFX/BulletHoleDecals/Material_Instances/Inst_BulletDecal_Brick_Wall_01.Inst_BulletDecal_Brick_Wall_01"
+    },
+    {
+      "id": 7,
+      "name": "Dirt",
+      "physical_material": "/Game/Crusader/Effects/Surfaces/PM_Dirt.PM_Dirt",
+      "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Dirt/NS_Impact_Dirt_Low.NS_Impact_Dirt_Low",
+      "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_Ground.Cue_Bullet_Impact_Ground",
+      "decal": null
+    },
+    {
+      "id": 8,
+      "name": "Sand",
+      "physical_material": "/Game/Crusader/Effects/Surfaces/PM_Sand.PM_Sand",
+      "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Sand/NS_Impact_Sand_Low.NS_Impact_Sand_Low",
+      "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_Sand.Cue_Bullet_Impact_Sand",
+      "decal": null
+    },
+    {
+      "id": 9,
+      "name": "Water",
+      "physical_material": "/Game/Crusader/Effects/Surfaces/PM_Water.PM_Water",
+      "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Water/NS_Impact_Water_Low.NS_Impact_Water_Low",
+      "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_Water.Cue_Bullet_Impact_Water",
+      "decal": null
+    },
+    {
+      "id": 10,
+      "name": "Rubber",
+      "physical_material": "/Game/Crusader/Effects/Surfaces/PM_Rubber.PM_Rubber",
+      "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Plastic/NS_Impact_Plastic_Low.NS_Impact_Plastic_Low",
+      "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_PlasticRubber.Cue_Bullet_Impact_PlasticRubber",
+      "decal": "/Game/BulletImpactVFX/BulletHoleDecals/Material_Instances/Inst_BulletDecal_Rubber_01.Inst_BulletDecal_Rubber_01"
+    },
+    {
+      "id": 11,
+      "name": "Fabric",
+      "physical_material": "/Game/Crusader/Effects/Surfaces/PM_Fabric.PM_Fabric",
+      "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Fabric/NS_Impact_Fabric_Low.NS_Impact_Fabric_Low",
+      "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_Soft_Materials.Cue_Bullet_Impact_Soft_Materials",
+      "decal": "/Game/BulletImpactVFX/BulletHoleDecals/Material_Instances/Inst_BulletDecal_Sandbag_01.Inst_BulletDecal_Sandbag_01"
+    },
+    {
+      "id": 12,
+      "name": "Rock",
+      "physical_material": "/Game/Crusader/Effects/Surfaces/PM_Rock.PM_Rock",
+      "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Rock/NS_Impact_Rock_Low.NS_Impact_Rock_Low",
+      "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_Rock.Cue_Bullet_Impact_Rock",
+      "decal": "/Game/BulletImpactVFX/BulletHoleDecals/Material_Instances/Inst_BulletDecal_Rock_01.Inst_BulletDecal_Rock_01"
+    },
+    {
+      "id": 13,
+      "name": "Snow",
+      "physical_material": "/Game/Crusader/Effects/Surfaces/PM_Snow.PM_Snow",
+      "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Snow/NS_Impact_Snow_Low.NS_Impact_Snow_Low",
+      "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_Snow.Cue_Bullet_Impact_Snow",
+      "decal": "/Game/BulletImpactVFX/BulletHoleDecals/Material_Instances/Inst_BulletDecal_Snow_01.Inst_BulletDecal_Snow_01"
+    },
+    {
+      "id": 14,
+      "name": "Ice",
+      "physical_material": "/Game/Crusader/Effects/Surfaces/PM_Ice.PM_Ice",
+      "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Ice/NS_Impact_Ice_Low.NS_Impact_Ice_Low",
+      "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_Glass_Medium.Cue_Bullet_Impact_Glass_Medium",
+      "decal": null
+    },
+    {
+      "id": 15,
+      "name": "Mud",
+      "physical_material": "/Game/Crusader/Effects/Surfaces/PM_Mud.PM_Mud",
+      "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Mud/NS_Impact_Mud_Low.NS_Impact_Mud_Low",
+      "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_MudWet.Cue_Bullet_Impact_MudWet",
+      "decal": null
+    },
+    {
+      "id": 16,
+      "name": "Ceramic",
+      "physical_material": "/Game/Crusader/Effects/Surfaces/PM_Ceramic.PM_Ceramic",
+      "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Ceramic/NS_Impact_Ceramic_Low.NS_Impact_Ceramic_Low",
+      "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_Glass_Pottery.Cue_Bullet_Impact_Glass_Pottery",
+      "decal": "/Game/BulletImpactVFX/BulletHoleDecals/Material_Instances/Inst_BulletDecal_Concrete_01.Inst_BulletDecal_Concrete_01"
+    },
+    {
+      "id": 17,
+      "name": "Drywall",
+      "physical_material": "/Game/Crusader/Effects/Surfaces/PM_Drywall.PM_Drywall",
+      "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Drywall/NS_Impact_Drywall_Low.NS_Impact_Drywall_Low",
+      "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_Sheetrock.Cue_Bullet_Impact_Sheetrock",
+      "decal": "/Game/BulletImpactVFX/BulletHoleDecals/Material_Instances/Inst_BulletDecal_Sheetrock_01.Inst_BulletDecal_Sheetrock_01"
+    }
+  ],
+  "range": {
+    "map": "/Game/Maps/L_TraversalGym",
+    "targets": [
+      {
+        "name": "Concrete",
+        "actor": "CR_SurfaceRange_Concrete",
+        "target": [
+          -290,
+          -6920,
+          170
+        ],
+        "standing": [
+          -290,
+          -5710,
+          94
+        ],
+        "surface": 2
+      },
+      {
+        "name": "Glass",
+        "actor": "CR_SurfaceRange_Glass",
+        "target": [
+          40,
+          -6920,
+          170
+        ],
+        "standing": [
+          40,
+          -5710,
+          94
+        ],
+        "surface": 3
+      },
+      {
+        "name": "Metal",
+        "actor": "CR_SurfaceRange_Metal",
+        "target": [
+          370,
+          -6920,
+          170
+        ],
+        "standing": [
+          370,
+          -5710,
+          94
+        ],
+        "surface": 4
+      },
+      {
+        "name": "Wood",
+        "actor": "CR_SurfaceRange_Wood",
+        "target": [
+          700,
+          -6920,
+          170
+        ],
+        "standing": [
+          700,
+          -5710,
+          94
+        ],
+        "surface": 5
+      },
+      {
+        "name": "Brick",
+        "actor": "CR_SurfaceRange_Brick",
+        "target": [
+          1030,
+          -6920,
+          170
+        ],
+        "standing": [
+          1030,
+          -5710,
+          94
+        ],
+        "surface": 6
+      },
+      {
+        "name": "Rubber",
+        "actor": "CR_SurfaceRange_Rubber",
+        "target": [
+          1360,
+          -6920,
+          170
+        ],
+        "standing": [
+          1360,
+          -5710,
+          94
+        ],
+        "surface": 10
+      },
+      {
+        "name": "Fabric",
+        "actor": "CR_SurfaceRange_Fabric",
+        "target": [
+          1690,
+          -6920,
+          170
+        ],
+        "standing": [
+          1690,
+          -5710,
+          94
+        ],
+        "surface": 11
+      },
+      {
+        "name": "Rock",
+        "actor": "CR_SurfaceRange_Rock",
+        "target": [
+          2020,
+          -6920,
+          170
+        ],
+        "standing": [
+          2020,
+          -5710,
+          94
+        ],
+        "surface": 12
+      },
+      {
+        "name": "Ceramic",
+        "actor": "CR_SurfaceRange_Ceramic",
+        "target": [
+          2350,
+          -6920,
+          170
+        ],
+        "standing": [
+          2350,
+          -5710,
+          94
+        ],
+        "surface": 16
+      },
+      {
+        "name": "Drywall",
+        "actor": "CR_SurfaceRange_Drywall",
+        "target": [
+          2680,
+          -6920,
+          170
+        ],
+        "standing": [
+          2680,
+          -5710,
+          94
+        ],
+        "surface": 17
+      },
+      {
+        "name": "Dirt",
+        "actor": "CR_SurfaceRange_Dirt",
+        "target": [
+          -150,
+          -6210,
+          31
+        ],
+        "standing": [
+          -150,
+          -5650,
+          94
+        ],
+        "surface": 7
+      },
+      {
+        "name": "Sand",
+        "actor": "CR_SurfaceRange_Sand",
+        "target": [
+          390,
+          -6210,
+          31
+        ],
+        "standing": [
+          390,
+          -5650,
+          94
+        ],
+        "surface": 8
+      },
+      {
+        "name": "Water",
+        "actor": "CR_SurfaceRange_Water",
+        "target": [
+          930,
+          -6210,
+          31
+        ],
+        "standing": [
+          930,
+          -5650,
+          94
+        ],
+        "surface": 9
+      },
+      {
+        "name": "Snow",
+        "actor": "CR_SurfaceRange_Snow",
+        "target": [
+          1470,
+          -6210,
+          31
+        ],
+        "standing": [
+          1470,
+          -5650,
+          94
+        ],
+        "surface": 13
+      },
+      {
+        "name": "Ice",
+        "actor": "CR_SurfaceRange_Ice",
+        "target": [
+          2010,
+          -6210,
+          31
+        ],
+        "standing": [
+          2010,
+          -5650,
+          94
+        ],
+        "surface": 14
+      },
+      {
+        "name": "Mud",
+        "actor": "CR_SurfaceRange_Mud",
+        "target": [
+          2550,
+          -6210,
+          31
+        ],
+        "standing": [
+          2550,
+          -5650,
+          94
+        ],
+        "surface": 15
+      }
+    ]
+  },
+  "standalone": {
+    "passed": true,
+    "error": null,
+    "results": [
+      {
+        "weapon": "Pistol",
+        "surface": "Concrete",
+        "left": false,
+        "shots": 1,
+        "impacts": 1,
+        "trails": 1,
+        "pellets": 1,
+        "hit_surfaces": [
+          2
+        ],
+        "blocking": [
+          true
+        ]
+      },
+      {
+        "weapon": "Pistol",
+        "surface": "Glass",
+        "left": true,
+        "shots": 1,
+        "impacts": 1,
+        "trails": 1,
+        "pellets": 1,
+        "hit_surfaces": [
+          3
+        ],
+        "blocking": [
+          true
+        ]
+      },
+      {
+        "weapon": "Pistol",
+        "surface": "Metal",
+        "left": false,
+        "shots": 1,
+        "impacts": 1,
+        "trails": 1,
+        "pellets": 1,
+        "hit_surfaces": [
+          4
+        ],
+        "blocking": [
+          true
+        ]
+      },
+      {
+        "weapon": "Pistol",
+        "surface": "Wood",
+        "left": true,
+        "shots": 1,
+        "impacts": 1,
+        "trails": 1,
+        "pellets": 1,
+        "hit_surfaces": [
+          5
+        ],
+        "blocking": [
+          true
+        ]
+      },
+      {
+        "weapon": "Pistol",
+        "surface": "Brick",
+        "left": false,
+        "shots": 1,
+        "impacts": 1,
+        "trails": 1,
+        "pellets": 1,
+        "hit_surfaces": [
+          6
+        ],
+        "blocking": [
+          true
+        ]
+      },
+      {
+        "weapon": "Pistol",
+        "surface": "Rubber",
+        "left": true,
+        "shots": 1,
+        "impacts": 1,
+        "trails": 1,
+        "pellets": 1,
+        "hit_surfaces": [
+          10
+        ],
+        "blocking": [
+          true
+        ]
+      },
+      {
+        "weapon": "Pistol",
+        "surface": "Fabric",
+        "left": false,
+        "shots": 1,
+        "impacts": 1,
+        "trails": 1,
+        "pellets": 1,
+        "hit_surfaces": [
+          11
+        ],
+        "blocking": [
+          true
+        ]
+      },
+      {
+        "weapon": "Pistol",
+        "surface": "Rock",
+        "left": true,
+        "shots": 1,
+        "impacts": 1,
+        "trails": 1,
+        "pellets": 1,
+        "hit_surfaces": [
+          12
+        ],
+        "blocking": [
+          true
+        ]
+      },
+      {
+        "weapon": "Pistol",
+        "surface": "Ceramic",
+        "left": false,
+        "shots": 1,
+        "impacts": 1,
+        "trails": 1,
+        "pellets": 1,
+        "hit_surfaces": [
+          16
+        ],
+        "blocking": [
+          true
+        ]
+      },
+      {
+        "weapon": "Pistol",
+        "surface": "Drywall",
+        "left": true,
+        "shots": 1,
+        "impacts": 1,
+        "trails": 1,
+        "pellets": 1,
+        "hit_surfaces": [
+          17
+        ],
+        "blocking": [
+          true
+        ]
+      },
+      {
+        "weapon": "Pistol",
+        "surface": "Dirt",
+        "left": false,
+        "shots": 1,
+        "impacts": 1,
+        "trails": 1,
+        "pellets": 1,
+        "hit_surfaces": [
+          7
+        ],
+        "blocking": [
+          true
+        ]
+      },
+      {
+        "weapon": "Pistol",
+        "surface": "Sand",
+        "left": true,
+        "shots": 1,
+        "impacts": 1,
+        "trails": 1,
+        "pellets": 1,
+        "hit_surfaces": [
+          8
+        ],
+        "blocking": [
+          true
+        ]
+      },
+      {
+        "weapon": "Pistol",
+        "surface": "Water",
+        "left": false,
+        "shots": 1,
+        "impacts": 1,
+        "trails": 1,
+        "pellets": 1,
+        "hit_surfaces": [
+          9
+        ],
+        "blocking": [
+          true
+        ]
+      },
+      {
+        "weapon": "Pistol",
+        "surface": "Snow",
+        "left": true,
+        "shots": 1,
+        "impacts": 1,
+        "trails": 1,
+        "pellets": 1,
+        "hit_surfaces": [
+          13
+        ],
+        "blocking": [
+          true
+        ]
+      },
+      {
+        "weapon": "Pistol",
+        "surface": "Ice",
+        "left": false,
+        "shots": 1,
+        "impacts": 1,
+        "trails": 1,
+        "pellets": 1,
+        "hit_surfaces": [
+          14
+        ],
+        "blocking": [
+          true
+        ]
+      },
+      {
+        "weapon": "Pistol",
+        "surface": "Mud",
+        "left": true,
+        "shots": 1,
+        "impacts": 1,
+        "trails": 1,
+        "pellets": 1,
+        "hit_surfaces": [
+          15
+        ],
+        "blocking": [
+          true
+        ]
+      },
+      {
+        "weapon": "Rifle",
+        "surface": "Metal",
+        "left": false,
+        "shots": 1,
+        "impacts": 1,
+        "trails": 1,
+        "pellets": 1,
+        "hit_surfaces": [
+          4
+        ],
+        "blocking": [
+          true
+        ]
+      },
+      {
+        "weapon": "Rifle",
+        "surface": "Metal",
+        "left": true,
+        "shots": 1,
+        "impacts": 1,
+        "trails": 1,
+        "pellets": 1,
+        "hit_surfaces": [
+          4
+        ],
+        "blocking": [
+          true
+        ]
+      },
+      {
+        "weapon": "Shotgun",
+        "surface": "Metal",
+        "left": false,
+        "shots": 1,
+        "impacts": 9,
+        "trails": 9,
+        "pellets": 9,
+        "hit_surfaces": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "blocking": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "weapon": "Shotgun",
+        "surface": "Metal",
+        "left": true,
+        "shots": 1,
+        "impacts": 9,
+        "trails": 9,
+        "pellets": 9,
+        "hit_surfaces": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "blocking": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "weapon": "Pistol",
+        "surface": "Miss",
+        "left": false,
+        "shots": 1,
+        "impacts": 0,
+        "trails": 1,
+        "pellets": 1,
+        "hit_surfaces": [
+          0
+        ],
+        "blocking": [
+          false
+        ]
+      },
+      {
+        "weapon": "Rifle",
+        "surface": "Miss",
+        "left": false,
+        "shots": 1,
+        "impacts": 0,
+        "trails": 1,
+        "pellets": 1,
+        "hit_surfaces": [
+          0
+        ],
+        "blocking": [
+          false
+        ]
+      },
+      {
+        "weapon": "Shotgun",
+        "surface": "Miss",
+        "left": false,
+        "shots": 1,
+        "impacts": 0,
+        "trails": 9,
+        "pellets": 9,
+        "hit_surfaces": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "blocking": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    ]
+  },
+  "network": {
+    "passed": true,
+    "error": null,
+    "results": [
+      {
+        "shooter": "host",
+        "shot_bursts_by_role": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "surface": 2,
+        "passed": true
+      },
+      {
+        "shooter": "client",
+        "shot_bursts_by_role": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "surface": 4,
+        "passed": true
+      }
+    ]
+  },
+  "assets": {
+    "passed": true,
+    "assets": 77,
+    "failures": 0,
+    "characters": [
+      {
+        "name": "ObsidianSentinel",
+        "bones": 64,
+        "lods": 3,
+        "assets": 10
+      },
+      {
+        "name": "RegalCommander",
+        "bones": 64,
+        "lods": 3,
+        "assets": 10
+      },
+      {
+        "name": "TheSteadfastOfficer",
+        "bones": 64,
+        "lods": 3,
+        "assets": 10
+      },
+      {
+        "name": "UrbanTrailblazer",
+        "bones": 64,
+        "lods": 3,
+        "assets": 10
+      }
+    ],
+    "validation": "(NumRequested=77,NumExternalObjects=0,NumChecked=77,NumValid=77,NumInvalid=0,NumSkipped=0,NumWarnings=0,NumUnableToValidate=0,bAssetLimitReached=False,ValidatorStatistics=((\"/Script/DataValidation.DirtyFilesChangelistValidator\", (TotalDurationSeconds=0.000063)),(\"/Script/DataValidation.EditorValidator_ActionUtility\", (TotalDurationSeconds=0.000052)),(\"/Script/DataValidation.EditorValidator_Localization\", (AssetsValidated=77,TotalDurationSeconds=0.000307)),(\"/Script/DataValidation.EditorValidator_Material\", (TotalDurationSeconds=0.000025)),(\"/Script/DataValidation.PackageFileValidator\", (AssetsValidated=77,TotalDurationSeconds=0.105623)),(\"/Script/DataValidation.WorldPartitionChangelistValidator\", (TotalDurationSeconds=0.000088)),(\"/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator\", (TotalDurationSeconds=0.000054)),(\"/Script/MutableValidation.AssetValidator_CustomizableObjects\", (TotalDurationSeconds=0.000046)),(\"/Script/MutableValidation.AssetValidator_ReferencedCustomizableObjects\", (TotalDurationSeconds=0.000014)),(\"/Script/GameFeaturesEditor.IllegalPluginDependenciesValidator\", (TotalDurationSeconds=0.000027)),(\"/Script/AssetReferenceRestrictions.AssetValidator_AssetReferenceRestrictions\", (AssetsValidated=77,TotalDurationSeconds=0.002299)),(\"/Script/AssetReferenceRestrictions.EditorValidator_PluginAssetReferences\", (TotalDurationSeconds=0.000026)),(\"/Script/LyraEditor.EditorValidator_Blueprints\", (AssetsValidated=14,TotalDurationSeconds=0.000089)),(\"/Script/LyraEditor.EditorValidator_Load\", (AssetsValidated=77,TotalDurationSeconds=0.020866)),(\"/Script/LyraEditor.EditorValidator_MaterialFunctions\", (TotalDurationSeconds=0.000088)),(\"/Script/LyraEditor.EditorValidator_SourceControl\", (AssetsValidated=77,TotalDurationSeconds=0.000982))),AssetsDetails=((\"/Game/Baseline/Animations/ABP_BaselineVisualRetarget.ABP_BaselineVisualRetarget\", ()),(\"/Game/Baseline/Weapons/Pistol/B_WeaponInstance_Pistol.B_WeaponInstance_Pistol\", ()),(\"/Game/Baseline/Weapons/Pistol/GA_Weapon_Fire_Pistol.GA_Weapon_Fire_Pistol\", ()),(\"/Game/Baseline/Weapons/Rifle/B_WeaponInstance_Rifle.B_WeaponInstance_Rifle\", ()),(\"/Game/Baseline/Weapons/Rifle/GA_Weapon_Fire_Rifle_Auto.GA_Weapon_Fire_Rifle_Auto\", ()),(\"/Game/Baseline/Weapons/Shotgun/B_WeaponInstance_Shotgun.B_WeaponInstance_Shotgun\", ()),(\"/Game/Baseline/Weapons/Shotgun/GA_Weapon_Fire_Shotgun.GA_Weapon_Fire_Shotgun\", ()),(\"/Game/Blueprints/GM_Sandbox.GM_Sandbox\", ()),(\"/Game/Crusader/Characters/ObsidianSentinel/BP_ObsidianSentinel.BP_ObsidianSentinel\", ()),(\"/Game/Crusader/Characters/ObsidianSentinel/IK_ObsidianSentinel.IK_ObsidianSentinel\", ()),(\"/Game/Crusader/Characters/ObsidianSentinel/M_ObsidianSentinel.M_ObsidianSentinel\", ()),(\"/Game/Crusader/Characters/ObsidianSentinel/ObsidianSentinel.ObsidianSentinel\", ()),(\"/Game/Crusader/Characters/ObsidianSentinel/ObsidianSentinel_Skeleton.ObsidianSentinel_Skeleton\", ()),(\"/Game/Crusader/Characters/ObsidianSentinel/RTG_Manny_to_ObsidianSentinel.RTG_Manny_to_ObsidianSentinel\", ()),(\"/Game/Crusader/Characters/ObsidianSentinel/Textures/ObsidianSentinel_BaseColor.ObsidianSentinel_BaseColor\", ()),(\"/Game/Crusader/Characters/ObsidianSentinel/Textures/ObsidianSentinel_Metallic.ObsidianSentinel_Metallic\", ()),(\"/Game/Crusader/Characters/ObsidianSentinel/Textures/ObsidianSentinel_Normal.ObsidianSentinel_Normal\", ()),(\"/Game/Crusader/Characters/ObsidianSentinel/Textures/ObsidianSentinel_Roughness.ObsidianSentinel_Roughness\", ()),(\"/Game/Crusader/Characters/RegalCommander/BP_RegalCommander.BP_RegalCommander\", ()),(\"/Game/Crusader/Characters/RegalCommander/IK_RegalCommander.IK_RegalCommander\", ()),(\"/Game/Crusader/Characters/RegalCommander/M_RegalCommander.M_RegalCommander\", ()),(\"/Game/Crusader/Characters/RegalCommander/RTG_Manny_to_RegalCommander.RTG_Manny_to_RegalCommander\", ()),(\"/Game/Crusader/Characters/RegalCommander/RegalCommander.RegalCommander\", ()),(\"/Game/Crusader/Characters/RegalCommander/RegalCommander_Skeleton.RegalCommander_Skeleton\", ()),(\"/Game/Crusader/Characters/RegalCommander/Textures/RegalCommander_BaseColor.RegalCommander_BaseColor\", ()),(\"/Game/Crusader/Characters/RegalCommander/Textures/RegalCommander_Metallic.RegalCommander_Metallic\", ()),(\"/Game/Crusader/Characters/RegalCommander/Textures/RegalCommander_Normal.RegalCommander_Normal\", ()),(\"/Game/Crusader/Characters/RegalCommander/Textures/RegalCommander_Roughness.RegalCommander_Roughness\", ()),(\"/Game/Crusader/Characters/TheSteadfastOfficer/BP_TheSteadfastOfficer.BP_TheSteadfastOfficer\", ()),(\"/Game/Crusader/Characters/TheSteadfastOfficer/IK_TheSteadfastOfficer.IK_TheSteadfastOfficer\", ()),(\"/Game/Crusader/Characters/TheSteadfastOfficer/M_TheSteadfastOfficer.M_TheSteadfastOfficer\", ()),(\"/Game/Crusader/Characters/TheSteadfastOfficer/RTG_Manny_to_TheSteadfastOfficer.RTG_Manny_to_TheSteadfastOfficer\", ()),(\"/Game/Crusader/Characters/TheSteadfastOfficer/Textures/TheSteadfastOfficer_BaseColor.TheSteadfastOfficer_BaseColor\", ()),(\"/Game/Crusader/Characters/TheSteadfastOfficer/Textures/TheSteadfastOfficer_Metallic.TheSteadfastOfficer_Metallic\", ()),(\"/Game/Crusader/Characters/TheSteadfastOfficer/Textures/TheSteadfastOfficer_Normal.TheSteadfastOfficer_Normal\", ()),(\"/Game/Crusader/Characters/TheSteadfastOfficer/Textures/TheSteadfastOfficer_Roughness.TheSteadfastOfficer_Roughness\", ()),(\"/Game/Crusader/Characters/TheSteadfastOfficer/TheSteadfastOfficer.TheSteadfastOfficer\", ()),(\"/Game/Crusader/Characters/TheSteadfastOfficer/TheSteadfastOfficer_Skeleton.TheSteadfastOfficer_Skeleton\", ()),(\"/Game/Crusader/Characters/UrbanTrailblazer/BP_UrbanTrailblazer.BP_UrbanTrailblazer\", ()),(\"/Game/Crusader/Characters/UrbanTrailblazer/IK_UrbanTrailblazer.IK_UrbanTrailblazer\", ()),(\"/Game/Crusader/Characters/UrbanTrailblazer/M_UrbanTrailblazer.M_UrbanTrailblazer\", ()),(\"/Game/Crusader/Characters/UrbanTrailblazer/RTG_Manny_to_UrbanTrailblazer.RTG_Manny_to_UrbanTrailblazer\", ()),(\"/Game/Crusader/Characters/UrbanTrailblazer/Textures/UrbanTrailblazer_BaseColor.UrbanTrailblazer_BaseColor\", ()),(\"/Game/Crusader/Characters/UrbanTrailblazer/Textures/UrbanTrailblazer_Metallic.UrbanTrailblazer_Metallic\", ()),(\"/Game/Crusader/Characters/UrbanTrailblazer/Textures/UrbanTrailblazer_Normal.UrbanTrailblazer_Normal\", ()),(\"/Game/Crusader/Characters/UrbanTrailblazer/Textures/UrbanTrailblazer_Roughness.UrbanTrailblazer_Roughness\", ()),(\"/Game/Crusader/Characters/UrbanTrailblazer/UrbanTrailblazer.UrbanTrailblazer\", ()),(\"/Game/Crusader/Characters/UrbanTrailblazer/UrbanTrailblazer_Skeleton.UrbanTrailblazer_Skeleton\", ()),(\"/Game/Crusader/Effects/FX_Pistol.FX_Pistol\", ()),(\"/Game/Crusader/Effects/FX_Rifle.FX_Rifle\", ()),(\"/Game/Crusader/Effects/FX_Shotgun.FX_Shotgun\", ()),(\"/Game/Crusader/Effects/Range/M_FiringLine.M_FiringLine\", ()),(\"/Game/Crusader/Effects/Range/M_RangeFloor.M_RangeFloor\", ()),(\"/Game/Crusader/Effects/Range/M_RangeFrame.M_RangeFrame\", ()),(\"/Game/Crusader/Effects/Range/M_Snow.M_Snow\", ()),(\"/Game/Crusader/Effects/SA_BulletImpact.SA_BulletImpact\", ()),(\"/Game/Crusader/Effects/Surfaces/PM_Brick.PM_Brick\", ()),(\"/Game/Crusader/Effects/Surfaces/PM_Ceramic.PM_Ceramic\", ()),(\"/Game/Crusader/Effects/Surfaces/PM_Character.PM_Character\", ()),(\"/Game/Crusader/Effects/Surfaces/PM_Concrete.PM_Concrete\", ()),(\"/Game/Crusader/Effects/Surfaces/PM_Default.PM_Default\", ()),(\"/Game/Crusader/Effects/Surfaces/PM_Dirt.PM_Dirt\", ()),(\"/Game/Crusader/Effects/Surfaces/PM_Drywall.PM_Drywall\", ()),(\"/Game/Crusader/Effects/Surfaces/PM_Fabric.PM_Fabric\", ()),(\"/Game/Crusader/Effects/Surfaces/PM_Glass.PM_Glass\", ()),(\"/Game/Crusader/Effects/Surfaces/PM_Ice.PM_Ice\", ()),(\"/Game/Crusader/Effects/Surfaces/PM_Metal.PM_Metal\", ()),(\"/Game/Crusader/Effects/Surfaces/PM_Mud.PM_Mud\", ()),(\"/Game/Crusader/Effects/Surfaces/PM_Rock.PM_Rock\", ()),(\"/Game/Crusader/Effects/Surfaces/PM_Rubber.PM_Rubber\", ()),(\"/Game/Crusader/Effects/Surfaces/PM_Sand.PM_Sand\", ()),(\"/Game/Crusader/Effects/Surfaces/PM_Snow.PM_Snow\", ()),(\"/Game/Crusader/Effects/Surfaces/PM_Water.PM_Water\", ()),(\"/Game/Crusader/Effects/Surfaces/PM_Wood.PM_Wood\", ()),(\"/Game/GameplayCueNotifies/GCN_CrusaderImpact.GCN_CrusaderImpact\", ()),(\"/Game/Maps/L_TraversalGym.L_TraversalGym\", ()),(\"/Game/Weapons/B_Weapon.B_Weapon\", ())))"
+  },
+  "build": "LyraEditor Win64 Development: Succeeded",
+  "file_sha256": {
+    "src/Content/Crusader/Effects/FX_Pistol.uasset": "454d23fc8bf5f2ff54eaacd73449acc856b83ccd6fe9b463f748b49852a751d9",
+    "src/Content/Crusader/Effects/FX_Rifle.uasset": "5c35ab32becaf0d892f042e9e1bec89c06ae9836b9bec0971cd9c292439ba388",
+    "src/Content/Crusader/Effects/FX_Shotgun.uasset": "e8b9d5da1b276b6835e885594bfefc087fe0facf3edbe4b53d3a3e2237b48f79",
+    "src/Content/Crusader/Effects/Range/M_FiringLine.uasset": "0233d5c22d0290c90bf2092fa02eaede1687f6de32f5eb060b5799ea34a56731",
+    "src/Content/Crusader/Effects/Range/M_RangeFloor.uasset": "1842a3ec25bf51b4d1b49e9ab906c64a693ea2f2f9ebb13fba83ffe504287d38",
+    "src/Content/Crusader/Effects/Range/M_RangeFrame.uasset": "672daacfc21cae6c6cb3bcbc4a8ab39e83bd2ebec2fd6e64d86da18b21138633",
+    "src/Content/Crusader/Effects/Range/M_Snow.uasset": "497a7ea329f103e5592abd25c428b57e7ffd95a82eb1af6508cd86750345245b",
+    "src/Content/Crusader/Effects/SA_BulletImpact.uasset": "6a6efc82110aff6cc761d0d8d313597c9b9e9ead6c3b9d522851db9dcd2e3952",
+    "src/Content/Crusader/Effects/Surfaces/PM_Brick.uasset": "51ad56b896ed185667c3d60bbf3dff21e74c8b2f38ffeee18167197839b4fd4a",
+    "src/Content/Crusader/Effects/Surfaces/PM_Ceramic.uasset": "3e8a665966cc0fbb4602da5938714c4cf3120f325e6b37794436800454a224a5",
+    "src/Content/Crusader/Effects/Surfaces/PM_Character.uasset": "9d9b414d047bd8e296b8a65b4b860325900371d449983d4e8591dbaae8cb5ff1",
+    "src/Content/Crusader/Effects/Surfaces/PM_Concrete.uasset": "e2418241960b3efeac1756d46e5d5273c6cbd2b73586b2893f4af8795ebdd94a",
+    "src/Content/Crusader/Effects/Surfaces/PM_Default.uasset": "29e5fe6b8500ecb58d3760236ec0e7e80d85c263da492a5669cd9dac5e8b7568",
+    "src/Content/Crusader/Effects/Surfaces/PM_Dirt.uasset": "8977b53f4f858ec5acbfc53504a074449865e508feeddfa3d166b6ae7be9b5e0",
+    "src/Content/Crusader/Effects/Surfaces/PM_Drywall.uasset": "852e1d402fa40d845ce8a65f55abc3b457408d0fc67a8dbe394ed61b40d379bf",
+    "src/Content/Crusader/Effects/Surfaces/PM_Fabric.uasset": "54128580a7711167fa032e225df38b4fbd5d8cbb2704122a9ce54d58d2926888",
+    "src/Content/Crusader/Effects/Surfaces/PM_Glass.uasset": "6e10e39021556e1061398d82faa4dc575e5c64e120134ae39fe3902cd730e2f9",
+    "src/Content/Crusader/Effects/Surfaces/PM_Ice.uasset": "32b0aabbbf10a05e7e8984ca46ffc8fc34bc2a63a1ef50815fa335ebe1b71486",
+    "src/Content/Crusader/Effects/Surfaces/PM_Metal.uasset": "298b0ad7f749ebe26293387de178469ee6ca7aba4a456ae04ee6443a62b70292",
+    "src/Content/Crusader/Effects/Surfaces/PM_Mud.uasset": "cbcbf69200d676fe4d821d34f051477fa54f3de19ac1b9ee40fac9f8a83ffba2",
+    "src/Content/Crusader/Effects/Surfaces/PM_Rock.uasset": "87b2a372a7de24c77e9ff02e74b735a572080e60fbc104b32fd96ea2e9652a47",
+    "src/Content/Crusader/Effects/Surfaces/PM_Rubber.uasset": "afcf165f8327f606bfe16c6579218d62877ab565dbf99ebb804f37f3fa499c0d",
+    "src/Content/Crusader/Effects/Surfaces/PM_Sand.uasset": "e7efa43ed79f0eb535c38e3718449362342ce95eafa932939855e56b6cfe16e0",
+    "src/Content/Crusader/Effects/Surfaces/PM_Snow.uasset": "a080cfa27b33388f89e03a39d5d1d553523e66c73319776e483d269ee3d27feb",
+    "src/Content/Crusader/Effects/Surfaces/PM_Water.uasset": "12d1859ac0a687663a1ddc4c7b99397c34ecb730a8fc8a6d542afd081d4bdc5d",
+    "src/Content/Crusader/Effects/Surfaces/PM_Wood.uasset": "09a792e65a8169cea791e71bf82c67b3299272cac3ee3f724c5ed74322bdb670",
+    "src/Content/GameplayCueNotifies/GCN_CrusaderImpact.uasset": "bc8cb5db332f7e1289460d4d95e7d58b6830d9dcd3c22687e3090302332800b3",
+    "src/Content/Maps/L_TraversalGym.umap": "0efd0484a912707a8f1abc3086614e9b9f8d432a272a73de434dd57279c030d2",
+    "src/Content/Weapons/B_Weapon.uasset": "82e29e0f96d9fdd18abcba1e3145fb62bb29a86c442433b3055f2d83abd90505",
+    "src/Source/LyraGame/Crusader/CRWeaponEffects.cpp": "74d034c654e2712f66bc7af5ac96e3533f1dc334054aff774941755a7224a3a7",
+    "src/Source/LyraGame/Crusader/CRWeaponEffects.h": "baa491b5e0abef2e35635d78e0bba54a9822118c878d4ef75aae74849a158b76",
+    "src/Source/LyraGame/Weapons/LyraGameplayAbility_RangedWeapon.cpp": "645b35d06a963f418aeb1bf0204038e015d969f6e7ab72c380453c1a8f080ac8"
+  },
+  "reviewed_captures": {
+    "Artifacts/WeaponFX/MetalImpact.png": "539a2df8d43577698322450509a738f885170190c91d182efe9f6e33483a6929",
+    "Artifacts/WeaponFX/RifleMuzzle.png": "d6756c7a97bca201f3b34d1dbce52f0457426cdf93404964d6a236d00b5f5304",
+    "Artifacts/WeaponFX/SurfaceRange.png": "6bdd3192840a44d769f0b4130ed1f0a9a89fd79db3df6962fb112195a5d0742c"
+  }
+}

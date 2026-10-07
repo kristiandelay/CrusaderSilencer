@@ -1,0 +1,86 @@
+{
+  "created_utc": "2026-10-06T19:40:04.174179+00:00",
+  "engine": "5.8.3",
+  "passed": true,
+  "passed_cases": 50,
+  "build": "Artifacts/UE58FeaturesBuild9.log",
+  "tests": [
+    {
+      "name": "Physical interactions",
+      "report": "Artifacts/PhysicalTests/physical-interactions.json",
+      "passed": true,
+      "cases": 5,
+      "recorded_utc": "2026-10-06T19:34:34.837381+00:00"
+    },
+    {
+      "name": "Interaction boundaries and fast fall",
+      "report": "Artifacts/PhysicalTests/physical-boundaries.json",
+      "passed": true,
+      "cases": 5,
+      "recorded_utc": "2026-10-06T19:38:31.020342+00:00"
+    },
+    {
+      "name": "Two-player physical interactions",
+      "report": "Artifacts/PhysicalTests/network-physical.json",
+      "passed": true,
+      "cases": 3,
+      "recorded_utc": "2026-10-06T19:36:45.685851+00:00"
+    },
+    {
+      "name": "Three-weapon aiming, slide shooting and reload",
+      "report": "Artifacts/AimTests/aim-and-slide.json",
+      "passed": true,
+      "cases": 24,
+      "recorded_utc": "2026-10-06T19:25:33.043526+00:00"
+    },
+    {
+      "name": "Relaxed head and spine",
+      "report": "Artifacts/CarryTests/carry-body.json",
+      "passed": true,
+      "cases": 4,
+      "recorded_utc": "2026-10-06T19:29:16.210629+00:00"
+    },
+    {
+      "name": "Movement and parkour",
+      "report": "Artifacts/GymTests/result.json",
+      "passed": true,
+      "cases": 9,
+      "recorded_utc": "2026-10-06T19:35:11.582933+00:00"
+    }
+  ],
+  "implementation": {
+    "movement_owner": "UBaselineCharacterMovement (Lyra CMC)",
+    "physics_component": "UPhysicsControlComponent",
+    "physics_asset": "/Game/Characters/UEFN_Mannequin/Rigs/PCA_SandboxCharacter",
+    "paired_search": "UPoseSearchInteractionLibrary::MotionMatchMulti",
+    "get_up_database": "/Game/Baseline/Animations/PSD_PhysicalGetUp",
+    "training_partners": 2,
+    "controls": {
+      "F": "Shove",
+      "V": "Tackle",
+      "B": "Takedown",
+      "T": "Ragdoll / get up",
+      "Space": "Get up while ragdolled"
+    }
+  },
+  "native_sha256": {
+    "src/Source/LyraGame/Baseline/BaselinePhysicalInteraction.h": "523fba22b5f9f42e78e47c9f82a9e7d2f30b0d7ea94152c06181f9b212ceb7d4",
+    "src/Source/LyraGame/Baseline/BaselinePhysicalInteraction.cpp": "9d31ffc37560840fc15f57b100d826b28e67cb7769466eac1c5d23037695f028",
+    "src/Source/LyraGame/Crusader/CRTraversalCharacter.cpp": "ae1682a57d2d3bbf2aa2e4f999974ac4fb25d5dd7d3a712669a386314bd984ed",
+    "src/Source/LyraEditor/Crusader/CRBlueprintTools.cpp": "275bd49d04af81104400a66c030fb9a6254c43eb51ebe40a670fbe8d85e8d238"
+  },
+  "validation_notes": [
+    "Physical, boundary, parkour and network checks passed on the final build. Weapon and carry regressions passed before the final death-state guards; those guards do not alter their animation paths.",
+    "Ragdoll motors were checked enabled during simulation.",
+    "The carry reference is scheduled after physics so it compares the same source pose as the visible mesh."
+  ],
+  "limits": [
+    "Ragdoll limbs simulate locally; the server corrects pelvis position. Bone poses are not deterministic between machines.",
+    "Packaged builds, dedicated servers and latency/packet-loss qualification were not run."
+  ],
+  "ragdoll_followup": "resources/RagdollSettlingValidation.json supersedes powered ragdoll behavior and the motor-enabled assertion; referenced physical test reports now contain the latest regression run.",
+  "combat_followup": {
+    "manifest": "resources/CombatShoulderValidation.json",
+    "note": "Shared report paths have been rerun for combat death and shoulder switching; original results above remain a historical snapshot."
+  }
+}

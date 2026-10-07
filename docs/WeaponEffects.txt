@@ -1,0 +1,43 @@
+Crusader Silencer weapon effects and surface range
+
+Open src/CrusaderSilencer.uproject, then /Game/Maps/L_TraversalGym.
+The surface range is south of the slide lane, around X=1200, Y=-6400.
+Weapon pickups are beside its marked firing line. Solid targets: concrete,
+glass, metal, wood, brick, rubber, fabric, rock, ceramic and drywall.
+Ground trays: dirt, sand, water, snow, ice and mud.
+
+Assets:
+  Bullet Impact VFX by Medartimus
+  https://www.fab.com/listings/eb49911a-44bb-4114-abd5-b4124fa6f3c9
+  Realistic Gun VFX by Hivemind
+  https://www.fab.com/listings/21573c1a-e494-4194-9926-0c03f48a5563
+  Pack content is preserved under /Game/BulletImpactVFX and /Game/GunFX.
+  Project profiles and physical materials: /Game/Crusader/Effects.
+
+Rifle, pistol and shotgun use separate muzzle/ejection systems and shared
+surface-aware impacts, spatial sounds, bullet trails and temporary bullet
+marks. Existing firing audio, recoil, damage, ammo and reload abilities remain.
+Surface IDs 1-3 keep the existing Character/Concrete/Glass meanings; 4-17 add
+the new surfaces. resources/WeaponSurfaces.json contains the exact asset map.
+
+CRWeaponEffectsComponent uses committed Lyra target data. It predicts locally
+once and multicasts cosmetics to observers, skipping the predicted owner.
+Every pellet retains its own trace endpoint, including misses. Misses emit
+trails without impact particles, sounds or marks. Trails expire at their
+trace endpoint; decals fade after 15 seconds and are bounded per shooter.
+Nearby shotgun impact sounds are combined to avoid overlapping nine cues.
+The old B_Weapon cosmetic path is skipped when a Crusader effects profile is
+active; fire audio and animation still run through the existing gameplay cues.
+
+Rebuild after the C++ editor build, with Play stopped:
+  python Scripts/Send-Editor.py Scripts/Configure-WeaponEffects.py
+  python Scripts/Send-Editor.py Scripts/Create-SurfaceRange.py
+The range script updates only its CR_SurfaceRange_ actors.
+
+Validation:
+  Test-WeaponEffects.py fires real abilities at all 16 targets and checks
+  surface IDs, both shoulder stances, all three weapons, pellets and misses.
+  Test-WeaponEffects-Network.py checks one cosmetic burst per role for host
+  and client shots, with matching replicated physical surface IDs.
+  Reports/captures: Artifacts/WeaponFX/.
+  Durable report: resources/WeaponEffectsValidation.json.

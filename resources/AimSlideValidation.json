@@ -1,0 +1,395 @@
+{
+  "verified_utc": "2026-10-06T17:48:21.832849+00:00",
+  "engine": "UE 5.8.3",
+  "updates": [
+    "Lyra weapon-specific upper-body pitch/yaw aim offsets",
+    "Aiming and firing remain available during momentum slides, including slide blend-out",
+    "Weapon completely hidden and fire/reload blocked during non-slide traversal montages",
+    "Weapon restored with equip animation after traversal",
+    "Aim rotation replicated to observers independently of slide movement facing"
+  ],
+  "build": "Succeeded",
+  "asset_authoring": {
+    "exit_code": 0,
+    "errors": 0,
+    "warnings": 5,
+    "warning_detail": "Repeated reparenting to the existing parent and a deprecated editor helper"
+  },
+  "tests": {
+    "weapon_aim_and_slide_fire": {
+      "artifact": "Artifacts/AimTests/aim-and-slide.json",
+      "result": {
+        "passed": true,
+        "error": null,
+        "results": [
+          {
+            "weapon": "Rifle",
+            "case": "aim",
+            "pitch": 0,
+            "yaw": 0,
+            "muzzle_error_degrees": 6.366306879560404
+          },
+          {
+            "weapon": "Rifle",
+            "case": "aim",
+            "pitch": 50,
+            "yaw": 0,
+            "muzzle_error_degrees": 2.575804892276793
+          },
+          {
+            "weapon": "Rifle",
+            "case": "aim",
+            "pitch": -50,
+            "yaw": 0,
+            "muzzle_error_degrees": 3.567453187555728
+          },
+          {
+            "weapon": "Rifle",
+            "case": "aim",
+            "pitch": 20,
+            "yaw": 60,
+            "muzzle_error_degrees": 4.3904591469929315
+          },
+          {
+            "weapon": "Rifle",
+            "case": "aim",
+            "pitch": -20,
+            "yaw": -60,
+            "muzzle_error_degrees": 5.410464838652636
+          },
+          {
+            "weapon": "Rifle",
+            "case": "aim_and_fire_while_sliding",
+            "ammo_before": 30,
+            "ammo_after": 27,
+            "maximum_muzzle_error_degrees": 10.022630584996001,
+            "aim_yaw": 45.0
+          },
+          {
+            "weapon": "Pistol",
+            "case": "aim",
+            "pitch": 0,
+            "yaw": 0,
+            "muzzle_error_degrees": 5.361207542655626
+          },
+          {
+            "weapon": "Pistol",
+            "case": "aim",
+            "pitch": 50,
+            "yaw": 0,
+            "muzzle_error_degrees": 8.098999985463308
+          },
+          {
+            "weapon": "Pistol",
+            "case": "aim",
+            "pitch": -50,
+            "yaw": 0,
+            "muzzle_error_degrees": 5.233824490100029
+          },
+          {
+            "weapon": "Pistol",
+            "case": "aim",
+            "pitch": 20,
+            "yaw": 60,
+            "muzzle_error_degrees": 6.50296431340785
+          },
+          {
+            "weapon": "Pistol",
+            "case": "aim",
+            "pitch": -20,
+            "yaw": -60,
+            "muzzle_error_degrees": 5.697416815511505
+          },
+          {
+            "weapon": "Pistol",
+            "case": "aim_and_fire_while_sliding",
+            "ammo_before": 12,
+            "ammo_after": 11,
+            "maximum_muzzle_error_degrees": 15.160729191476223,
+            "aim_yaw": 45.0
+          },
+          {
+            "weapon": "Shotgun",
+            "case": "aim",
+            "pitch": 0,
+            "yaw": 0,
+            "muzzle_error_degrees": 5.830917953622256
+          },
+          {
+            "weapon": "Shotgun",
+            "case": "aim",
+            "pitch": 50,
+            "yaw": 0,
+            "muzzle_error_degrees": 2.776800121413328
+          },
+          {
+            "weapon": "Shotgun",
+            "case": "aim",
+            "pitch": -50,
+            "yaw": 0,
+            "muzzle_error_degrees": 3.4302446769659785
+          },
+          {
+            "weapon": "Shotgun",
+            "case": "aim",
+            "pitch": 20,
+            "yaw": 60,
+            "muzzle_error_degrees": 4.139692913659901
+          },
+          {
+            "weapon": "Shotgun",
+            "case": "aim",
+            "pitch": -20,
+            "yaw": -60,
+            "muzzle_error_degrees": 6.168168986352723
+          },
+          {
+            "weapon": "Shotgun",
+            "case": "aim_and_fire_while_sliding",
+            "ammo_before": 8,
+            "ammo_after": 6,
+            "maximum_muzzle_error_degrees": 13.34070103484869,
+            "aim_yaw": 45.0
+          }
+        ]
+      }
+    },
+    "armed_movement_and_parkour": {
+      "artifact": "Artifacts/GymTests/result.json",
+      "result": {
+        "passed": true,
+        "error": null,
+        "pawn": "/Game/Crusader/Characters/B_CRTraversalPawn.B_CRTraversalPawn_C",
+        "results": [
+          {
+            "name": "jog",
+            "start": [
+              -1399.9999999999995,
+              -3200.0,
+              88.27499628067017
+            ],
+            "end": [
+              -858.1884808084803,
+              -3200.0,
+              88.27499628067017
+            ],
+            "max_speed": 500.00000000000006,
+            "max_z": 88.27499628067017,
+            "min_capsule_half_height": 86.0,
+            "montage": null
+          },
+          {
+            "name": "walk",
+            "start": [
+              -1400.0,
+              -3200.0,
+              88.27499628067017
+            ],
+            "end": [
+              -1144.0415755124884,
+              -3200.0,
+              88.27499628067017
+            ],
+            "max_speed": 200.00000000000003,
+            "max_z": 88.27499628067017,
+            "min_capsule_half_height": 86.0,
+            "montage": null
+          },
+          {
+            "name": "sprint",
+            "start": [
+              -1400.0,
+              -3200.0,
+              88.27499628067017
+            ],
+            "end": [
+              -758.7086916002528,
+              -3200.0,
+              88.27499628067017
+            ],
+            "max_speed": 700.0000000000001,
+            "max_z": 88.27499628067017,
+            "min_capsule_half_height": 86.0,
+            "montage": null
+          },
+          {
+            "name": "crouch",
+            "start": [
+              -1400.0,
+              -3200.0,
+              88.27499628067017
+            ],
+            "end": [
+              -1117.37088079067,
+              -3200.0,
+              62.274996280670166
+            ],
+            "max_speed": 225.00000000000003,
+            "max_z": 88.27499628067017,
+            "min_capsule_half_height": 60.0,
+            "montage": null
+          },
+          {
+            "name": "jump",
+            "start": [
+              -1400.0,
+              -3200.0,
+              88.27498817443848
+            ],
+            "end": [
+              -1400.0,
+              -3200.0,
+              88.27499622856092
+            ],
+            "max_speed": 0.0,
+            "max_z": 215.80064240269704,
+            "min_capsule_half_height": 86.0,
+            "montage": null
+          },
+          {
+            "name": "hurdle",
+            "start": [
+              2730.0,
+              -800.0,
+              88.27499628067017
+            ],
+            "end": [
+              2940.7418566251035,
+              -799.999999766464,
+              88.27499533114634
+            ],
+            "max_speed": 499.50213773560364,
+            "max_z": 151.54743993543235,
+            "min_capsule_half_height": 86.0,
+            "montage": "/Game/Characters/UEFN_Mannequin/Animations/Traversal/Catch/Hurdle/AM_M_Neutral_Traversal_Catch_Hurdle_med_stand.AM_M_Neutral_Traversal_Catch_Hurdle_med_stand",
+            "weapon_hidden_during_action": true,
+            "weapon_restored_after_action": true
+          },
+          {
+            "name": "mantle",
+            "start": [
+              4300.0,
+              -970.0,
+              88.27499628067017
+            ],
+            "end": [
+              4300.000004464169,
+              -849.9987332062556,
+              188.49965070835316
+            ],
+            "max_speed": 478.7336543855112,
+            "max_z": 188.49965070835316,
+            "min_capsule_half_height": 86.0,
+            "montage": "/Game/Characters/UEFN_Mannequin/Animations/Traversal/Catch/Mantle/AM_M_Neutral_Traversal_Catch_Mantle_med_stand.AM_M_Neutral_Traversal_Catch_Mantle_med_stand",
+            "weapon_hidden_during_action": true,
+            "weapon_restored_after_action": true
+          },
+          {
+            "name": "climb",
+            "start": [
+              2700.0,
+              -1770.0,
+              88.27499628067017
+            ],
+            "end": [
+              2699.9999996209817,
+              -1649.9984551912546,
+              338.49727863632717
+            ],
+            "max_speed": 104.12299505734077,
+            "max_z": 338.49727863632717,
+            "min_capsule_half_height": 86.0,
+            "montage": "/Game/Characters/UEFN_Mannequin/Animations/Traversal/Climb/AM_M_Neutral_Traversal_Climb_Start_2_5_stand_F_Lfoot.AM_M_Neutral_Traversal_Climb_Start_2_5_stand_F_Lfoot",
+            "weapon_hidden_during_action": true,
+            "weapon_restored_after_action": true
+          },
+          {
+            "name": "vault",
+            "start": [
+              4810.0,
+              -800.0,
+              438.46249532699585
+            ],
+            "end": [
+              5314.649593838372,
+              -800.0000014650993,
+              88.27499104238925
+            ],
+            "max_speed": 472.56933769242426,
+            "max_z": 576.5834160147435,
+            "min_capsule_half_height": 86.0,
+            "montage": "/Game/Characters/UEFN_Mannequin/Animations/Traversal/Catch/Vault/AM_M_Neutral_Traversal_Catch_Vault_high.AM_M_Neutral_Traversal_Catch_Vault_high",
+            "weapon_hidden_during_action": true,
+            "weapon_restored_after_action": true
+          }
+        ],
+        "input_keys": {
+          "Move": [
+            "W",
+            "S",
+            "A",
+            "D",
+            "Gamepad_Left2D"
+          ],
+          "Walk": [
+            "LeftControl",
+            "Gamepad_RightShoulder"
+          ],
+          "Sprint": [
+            "LeftShift",
+            "Gamepad_LeftShoulder"
+          ],
+          "Crouch": [
+            "C",
+            "Gamepad_FaceButton_Right"
+          ],
+          "Jump": [
+            "SpaceBar",
+            "Gamepad_FaceButton_Bottom"
+          ]
+        }
+      }
+    },
+    "observer_aim_replication": {
+      "artifact": "Artifacts/AimTests/network-aim.json",
+      "result": {
+        "passed": true,
+        "error": null,
+        "results": [
+          {
+            "pitch": 40.001220703125,
+            "yaw": 60.0018310546875,
+            "observer_muzzle_error_degrees": 2.973757479119152
+          },
+          {
+            "pitch": -40.001220703125,
+            "yaw": -60.0018310546875,
+            "observer_muzzle_error_degrees": 4.518139440652454
+          }
+        ]
+      }
+    }
+  },
+  "validation_scope": "Editor PIE, including two-player listen-server observer aim. Packaged builds and adverse network conditions were not tested.",
+  "previous_baseline": "BaselineValidation.json records the earlier baseline milestone; this report supersedes its weapon presentation and slide-combat behavior.",
+  "sha256": {
+    "src/Source/LyraGame/Baseline/BaselineEquipment.h": "dd029747df8d42d52c3f5787309dd46e303a87bde1597e10e2bc769724a5543a",
+    "src/Source/LyraGame/Baseline/BaselineEquipment.cpp": "f57ff277f96c6328f307e80cb6239d9933e0bfee31321046e6053d66cde00746",
+    "src/Source/LyraGame/Crusader/CRTraversalCharacter.h": "6ebdea25414d9c66d8a30e7b7b166e1396ffe236702701110195045c68cbf791",
+    "src/Source/LyraGame/Crusader/CRTraversalCharacter.cpp": "7e969c61ab4c4ccc94cb93ea0ca4cef66647baef02c056b01bc8a93ef41557e1",
+    "src/Source/LyraEditor/Crusader/CRBlueprintTools.h": "95b70208e94c01feaa92dceffa9e61aaa6b96dbbfbf1beff50fd0dfd98cdb3b4",
+    "src/Source/LyraEditor/Crusader/CRBlueprintTools.cpp": "1658a950df25dd48828145b1464e59e3d1ff4a141a59c4edd51781e90c55a668",
+    "Scripts/Extend-Baseline.py": "4ebe7b7f50ea4b321b7a1346905a0f32b2f5a4e6c1e35412982222e3e991f06a",
+    "src/Content/Baseline/Animations/ABP_BaselineManny.uasset": "1c8451c85802770aa60ae393748812f90770731a4b089955528651a22aa15872",
+    "src/Content/Blueprints/SandboxCharacter_CMC.uasset": "ab34854fb07a3e0712428af67276d75eee5a3e2f489b580ec89f7a8df8a2a02b",
+    "src/Content/Crusader/Characters/B_CRTraversalPawn.uasset": "aaf0c69643d6a596acbc7750689235907c838d9bbdddde28d34e8b37ea1c0514",
+    "src/Content/Crusader/Characters/B_CRMannequin.uasset": "f7e1779bc5b31cb5e0d73a0368a3b1f605752dfa7ef1405a51909ec9e13b08c2",
+    "src/Content/Baseline/Weapons/Rifle/B_WeaponInstance_Rifle.uasset": "788dc1adeb06a41ccfadcbf2f93b06322fc80f740b0202b44e9a67bb5df2f898",
+    "src/Content/Baseline/Weapons/Pistol/B_WeaponInstance_Pistol.uasset": "9ddfadc8e7f5af74517041e721dd883b134545051aab402c1277e50c798612c5",
+    "src/Content/Baseline/Weapons/Shotgun/B_WeaponInstance_Shotgun.uasset": "6ff56299a8f156f69b209150f9eeb5b9b431cf6dafb7438f9127f784ec1cda24"
+  },
+  "combat_followup": {
+    "manifest": "resources/CombatShoulderValidation.json",
+    "note": "Shared report paths have been rerun for combat death and shoulder switching; original results above remain a historical snapshot."
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "ObsidianSentinel",
+  "archive": "ObsidianSentinel.zip",
+  "archive_sha256": "695cb31051000c1af6f9d6c1d1bb36ff707396a9f09f249721b81a227896cc69",
+  "files": [
+    {
+      "original": "Meshy_AI_Obsidian_Sentinel_1006134754_texture_fbx/Meshy_AI_Obsidian_Sentinel_1006134754_texture.fbx",
+      "file": "ObsidianSentinel.fbx",
+      "bytes": 40945788,
+      "sha256": "d5a1512768825c75d0a5e1f0ded6b752847c86725b8ebc79be0bd22927789dad"
+    },
+    {
+      "original": "Meshy_AI_Obsidian_Sentinel_1006134754_texture_fbx/Meshy_AI_Obsidian_Sentinel_1006134754_texture.png",
+      "file": "ObsidianSentinel_BaseColor.png",
+      "bytes": 5805622,
+      "sha256": "7b1c2618088316f894e38715ac49b41942045429ccfdee5db393a2e6cb5a07b0"
+    },
+    {
+      "original": "Meshy_AI_Obsidian_Sentinel_1006134754_texture_fbx/Meshy_AI_Obsidian_Sentinel_1006134754_texture_metallic.png",
+      "file": "ObsidianSentinel_Metallic.png",
+      "bytes": 1215812,
+      "sha256": "12d3a9f1f4bc3dc51db4ccc2a39910cf89de3a69cebb5968923b0ee8c9606ae1"
+    },
+    {
+      "original": "Meshy_AI_Obsidian_Sentinel_1006134754_texture_fbx/Meshy_AI_Obsidian_Sentinel_1006134754_texture_normal.png",
+      "file": "ObsidianSentinel_Normal.png",
+      "bytes": 4964835,
+      "sha256": "fced9d6bfee00b7008439b29d8ba7d4a6930b3fdedb97da171b743c5f52ecb10"
+    },
+    {
+      "original": "Meshy_AI_Obsidian_Sentinel_1006134754_texture_fbx/Meshy_AI_Obsidian_Sentinel_1006134754_texture_roughness.png",
+      "file": "ObsidianSentinel_Roughness.png",
+      "bytes": 1643549,
+      "sha256": "3eb288ba4101a3c54e330d391bf0d155d2d7f83d1c5adfdab2294efff6f51798"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Obsidian_Sentinel_1006134754_texture_fbx.zip",
+  "archive_path": "mockups/Guards/ObsidianSentinel.zip"
+}

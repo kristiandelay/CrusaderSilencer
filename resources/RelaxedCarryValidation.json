@@ -1,0 +1,235 @@
+{
+  "verified_utc": "2026-10-06T18:39:48.476200+00:00",
+  "engine": "UE 5.8.3",
+  "updates": [
+    "Separate looping carry animations for rifle, pistol and shotgun",
+    "Carry blends only arm chains in local space; GASP retains head, neck, spine and locomotion",
+    "No forced downward aim offset in relaxed carry",
+    "Smooth aim transition; full upper-body montages retained for equip, fire and reload"
+  ],
+  "build": "Succeeded",
+  "asset_authoring": {
+    "errors": 0,
+    "warnings": 8,
+    "warning_detail": "Existing-parent reparent notices, deprecated editor helper, and three duplicate-animation import-data load notices"
+  },
+  "tests": {
+    "relaxed_body_motion": {
+      "artifact": "Artifacts/CarryTests/carry-body.json",
+      "result": {
+        "passed": true,
+        "error": null,
+        "results": [
+          {
+            "case": "idle",
+            "max_body_rotation_difference_degrees": 0.0,
+            "head_motion_cm": 0.23236945766601025
+          },
+          {
+            "case": "look_up",
+            "max_body_rotation_difference_degrees": 0.0,
+            "head_motion_cm": 0.1446573024230986
+          },
+          {
+            "case": "walk",
+            "max_body_rotation_difference_degrees": 0.0,
+            "head_motion_cm": 13.105986271966174
+          },
+          {
+            "case": "crouch_walk",
+            "max_body_rotation_difference_degrees": 0.0,
+            "head_motion_cm": 11.763381662054186
+          }
+        ]
+      }
+    },
+    "three_weapon_aim_slide_reload": {
+      "artifact": "Artifacts/AimTests/aim-and-slide.json",
+      "result": {
+        "passed": true,
+        "error": null,
+        "results": [
+          {
+            "weapon": "Rifle",
+            "case": "lowered_carry",
+            "muzzle_pitch": -52.50910030483564
+          },
+          {
+            "weapon": "Rifle",
+            "case": "aim",
+            "pitch": 0,
+            "yaw": 0,
+            "muzzle_error_degrees": 5.6304683542490155
+          },
+          {
+            "weapon": "Rifle",
+            "case": "aim",
+            "pitch": 50,
+            "yaw": 0,
+            "muzzle_error_degrees": 2.593785656964111
+          },
+          {
+            "weapon": "Rifle",
+            "case": "aim",
+            "pitch": -50,
+            "yaw": 0,
+            "muzzle_error_degrees": 3.4634029577124985
+          },
+          {
+            "weapon": "Rifle",
+            "case": "aim",
+            "pitch": 20,
+            "yaw": 60,
+            "muzzle_error_degrees": 4.2261844247586025
+          },
+          {
+            "weapon": "Rifle",
+            "case": "aim",
+            "pitch": -20,
+            "yaw": -60,
+            "muzzle_error_degrees": 5.451504909572909
+          },
+          {
+            "weapon": "Rifle",
+            "case": "aim_and_fire_while_sliding",
+            "ammo_before": 30,
+            "ammo_after": 27,
+            "maximum_muzzle_error_degrees": 9.743406442106938,
+            "aim_yaw": 44.999244689941406
+          },
+          {
+            "weapon": "Rifle",
+            "case": "reload_from_carry",
+            "maximum_reload_weight": 1.0
+          },
+          {
+            "weapon": "Pistol",
+            "case": "lowered_carry",
+            "muzzle_pitch": -55.954093706596346
+          },
+          {
+            "weapon": "Pistol",
+            "case": "aim",
+            "pitch": 0,
+            "yaw": 0,
+            "muzzle_error_degrees": 5.861984646927087
+          },
+          {
+            "weapon": "Pistol",
+            "case": "aim",
+            "pitch": 50,
+            "yaw": 0,
+            "muzzle_error_degrees": 8.077108391973288
+          },
+          {
+            "weapon": "Pistol",
+            "case": "aim",
+            "pitch": -50,
+            "yaw": 0,
+            "muzzle_error_degrees": 5.07547908892144
+          },
+          {
+            "weapon": "Pistol",
+            "case": "aim",
+            "pitch": 20,
+            "yaw": 60,
+            "muzzle_error_degrees": 6.657522819719172
+          },
+          {
+            "weapon": "Pistol",
+            "case": "aim",
+            "pitch": -20,
+            "yaw": -60,
+            "muzzle_error_degrees": 5.9717174888993085
+          },
+          {
+            "weapon": "Pistol",
+            "case": "aim_and_fire_while_sliding",
+            "ammo_before": 12,
+            "ammo_after": 11,
+            "maximum_muzzle_error_degrees": 15.151888678545493,
+            "aim_yaw": 44.99931716918945
+          },
+          {
+            "weapon": "Pistol",
+            "case": "reload_from_carry",
+            "maximum_reload_weight": 1.0
+          },
+          {
+            "weapon": "Shotgun",
+            "case": "lowered_carry",
+            "muzzle_pitch": -54.98248731176525
+          },
+          {
+            "weapon": "Shotgun",
+            "case": "aim",
+            "pitch": 0,
+            "yaw": 0,
+            "muzzle_error_degrees": 5.451913927929035
+          },
+          {
+            "weapon": "Shotgun",
+            "case": "aim",
+            "pitch": 50,
+            "yaw": 0,
+            "muzzle_error_degrees": 2.3549138553228572
+          },
+          {
+            "weapon": "Shotgun",
+            "case": "aim",
+            "pitch": -50,
+            "yaw": 0,
+            "muzzle_error_degrees": 3.864734704125442
+          },
+          {
+            "weapon": "Shotgun",
+            "case": "aim",
+            "pitch": 20,
+            "yaw": 60,
+            "muzzle_error_degrees": 4.232873247641751
+          },
+          {
+            "weapon": "Shotgun",
+            "case": "aim",
+            "pitch": -20,
+            "yaw": -60,
+            "muzzle_error_degrees": 5.386901555760675
+          },
+          {
+            "weapon": "Shotgun",
+            "case": "aim_and_fire_while_sliding",
+            "ammo_before": 8,
+            "ammo_after": 6,
+            "maximum_muzzle_error_degrees": 14.691908542562352,
+            "aim_yaw": 44.999595642089844
+          },
+          {
+            "weapon": "Shotgun",
+            "case": "reload_from_carry",
+            "maximum_reload_weight": 1.0
+          }
+        ]
+      }
+    }
+  },
+  "passed_cases": 28,
+  "validation_scope": "Single-player editor PIE: head/spine compared to a simultaneous unmodified retarget, three weapons, standing aim angles, slide shooting and reloads from carry. Background idle throttling was disabled for the combat run. Multiplayer and packaged builds were not rerun for this carry correction.",
+  "additional_checks": "A later stance-suite rerun was interrupted by live movement and weapon/inventory changes in the interactive session and is not counted. The session was left running for the user.",
+  "previous_milestone": "WeaponStanceValidation.json preserves earlier turn, parkour and replication checks; its downward aiming carry is superseded.",
+  "sha256": {
+    "src/Source/LyraGame/Baseline/BaselineEquipment.h": "cac72a14ee67abd659550c7cbc9442123fe136c5da809755a6954c6b04507f1a",
+    "src/Source/LyraGame/Baseline/BaselineEquipment.cpp": "885dbc6248c50733699421840a1e93b6a91dfa7fc1c32e93b8e6e26ea2410781",
+    "src/Source/LyraEditor/Crusader/CRBlueprintTools.cpp": "0aa287b2f2fbde33ebd1342f8d03648e4872042f5222da5fb530f46fa1fb9547",
+    "Scripts/Extend-Baseline.py": "eadd9b68c4439e0ae40201b9c506f9de5f866391c8e21b7fd961ebacfe3c3915",
+    "Scripts/Test-Baseline-Carry.py": "abe141cd14170229c48a00c45eba60866247ff4de6aac49f97cb038a492cc6c9",
+    "Scripts/Test-Baseline-Aim.py": "d634a29944d17689ae6125f44c478caf7e7a3c3e24ac872d16795f63ba6d3025",
+    "Scripts/Test-Baseline-Stance.py": "b087795c191df403ba71d10ba43af8466a62b31044611e23cccaf9a0ce515e49",
+    "src/Content/Baseline/Animations/ABP_BaselineManny.uasset": "9dc6b85602ba7b3a93f8d1407b2be306cb778043ae05bfa159cb2a22ef3f2c6c",
+    "src/Content/Baseline/Animations/A_Rifle_Carry.uasset": "69acea28e3e5e6970beb0a966abe60dbe197ab25f8c2d415501575d1683ed2be",
+    "src/Content/Baseline/Animations/A_Pistol_Carry.uasset": "671a0944b557c897d01c9a5692a2b892bafaef9cf64718c611a37905ec891dc4",
+    "src/Content/Baseline/Animations/A_Shotgun_Carry.uasset": "4612e659259afafaf9d0c74e4836a738db42b8cd328969d5f0b9e373802dd690",
+    "src/Content/Baseline/Weapons/Rifle/B_WeaponInstance_Rifle.uasset": "b0b4ca35b490136ff65685cbfc9e1a01d0846b75930967a701ba10f23e090a7d",
+    "src/Content/Baseline/Weapons/Pistol/B_WeaponInstance_Pistol.uasset": "c986cc2bdfb412a6b9bff41dff115a8738c46dcd0a5cc43c74d8f9f0cec66c24",
+    "src/Content/Baseline/Weapons/Shotgun/B_WeaponInstance_Shotgun.uasset": "89d3926f25cdc8bd0ae98cd3fba2f12effb24f83b0d122644bdc421a2ae57eb1"
+  }
+}

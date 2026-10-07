@@ -1,0 +1,535 @@
+{
+  "verified_utc": "2026-10-06T17:28:19.970422+00:00",
+  "engine": {
+    "MajorVersion": 5,
+    "MinorVersion": 8,
+    "PatchVersion": 3,
+    "Changelist": 58210709,
+    "CompatibleChangelist": 55116800,
+    "IsLicenseeVersion": 0,
+    "IsPromotedBuild": 1,
+    "BranchName": "++UE5+Release-5.8"
+  },
+  "scope": "Reusable Lyra/GASP movement, momentum slide and world equipment baseline",
+  "editor_build": "Succeeded",
+  "independent_export_build": "Succeeded",
+  "independent_export_commandlet": {
+    "exit_code": 0,
+    "errors": 0,
+    "warnings": 0
+  },
+  "checks": {
+    "equipment_and_slide": {
+      "artifact": "Artifacts/BaselineTests/result.json",
+      "result": {
+        "passed": true,
+        "error": null,
+        "results": [
+          {
+            "name": "rifle_pickup_and_equip",
+            "ammo": {
+              "MagazineAmmo": 30,
+              "SpareAmmo": 60,
+              "MagazineSize": 30
+            },
+            "weapon": "/Game/Baseline/Weapons/Rifle/B_WeaponInstance_Rifle.B_WeaponInstance_Rifle_C"
+          },
+          {
+            "name": "lyra_rifle_fire",
+            "ammo": {
+              "MagazineAmmo": 26,
+              "SpareAmmo": 60,
+              "MagazineSize": 30
+            }
+          },
+          {
+            "name": "lyra_reload",
+            "ammo": {
+              "MagazineAmmo": 30,
+              "SpareAmmo": 56,
+              "MagazineSize": 30
+            }
+          },
+          {
+            "name": "drop_creates_physical_world_item",
+            "location": [
+              2261.002535078791,
+              -1099.737037020481,
+              9.124870214778738
+            ]
+          },
+          {
+            "name": "repick_preserves_ammo",
+            "ammo": {
+              "MagazineAmmo": 30,
+              "SpareAmmo": 56,
+              "MagazineSize": 30
+            }
+          },
+          {
+            "name": "slide_flat",
+            "initial_speed": 757.5874633789064,
+            "maximum_speed": 757.5874633789064,
+            "final_speed": 0.0,
+            "capsule_half_height": 60.0
+          },
+          {
+            "name": "slide_downhill",
+            "initial_speed": 770.3317934754623,
+            "maximum_speed": 818.7576887877118,
+            "final_speed": 818.7576887877118,
+            "capsule_half_height": 60.0
+          },
+          {
+            "name": "slide_uphill",
+            "initial_speed": 749.5146442151839,
+            "maximum_speed": 749.5146442151839,
+            "final_speed": 302.2745682923652,
+            "capsule_half_height": 60.0
+          },
+          {
+            "name": "lyra_pistol_pickup_and_fire",
+            "ammo": {
+              "MagazineAmmo": 11,
+              "SpareAmmo": 48,
+              "MagazineSize": 12
+            }
+          },
+          {
+            "name": "lyra_shotgun_pickup_and_fire",
+            "ammo": {
+              "MagazineAmmo": 6,
+              "SpareAmmo": 16,
+              "MagazineSize": 8
+            }
+          },
+          {
+            "name": "three_slot_inventory_and_switch",
+            "slots": 3
+          },
+          {
+            "name": "empty_weapon_drop_and_recovery",
+            "ammo": {
+              "MagazineAmmo": 0,
+              "SpareAmmo": 0,
+              "MagazineSize": 30
+            }
+          }
+        ]
+      }
+    },
+    "boundaries": {
+      "artifact": "Artifacts/BaselineTests/boundaries.json",
+      "result": {
+        "passed": true,
+        "error": null,
+        "results": [
+          "full_inventory_rejected_without_consuming_pickup",
+          "out_of_range_server_request_rejected",
+          "pickup_through_wall_rejected",
+          "visible_in_range_pickup_accepted",
+          "slide_stopped_by_wall",
+          "low_ceiling_prevents_uncrouch",
+          "standing_recovers_when_clear"
+        ]
+      }
+    },
+    "equipment_network": {
+      "artifact": "Artifacts/BaselineTests/network.json",
+      "result": {
+        "passed": true,
+        "error": null,
+        "mode": "two-player listen-server PIE",
+        "results": [
+          "client_pickup_inventory_equipment_and_ammo_replicated",
+          {
+            "client_fire_and_server_ammo_agree": {
+              "MagazineAmmo": 24,
+              "SpareAmmo": 60,
+              "MagazineSize": 30
+            }
+          },
+          {
+            "client_reload_and_server_ammo_agree": {
+              "MagazineAmmo": 30,
+              "SpareAmmo": 54,
+              "MagazineSize": 30
+            }
+          },
+          "client_drop_removes_equipment_and_replicates_world_pickup",
+          "client_recovery_preserves_server_ammo"
+        ]
+      }
+    },
+    "ownership": {
+      "artifact": "Artifacts/BaselineTests/ownership.json",
+      "result": {
+        "movement_components": 1,
+        "equipment_managers": 1,
+        "inventory_components": 1,
+        "quickbars": 1,
+        "active_cameras": 1,
+        "attribute_sets": "SpawnedAttributes = (\"HealthSet\",\"CombatSet\")",
+        "passed": true
+      }
+    },
+    "armed_traversal": {
+      "artifact": "Artifacts/GymTests/result.json",
+      "result": {
+        "passed": true,
+        "error": null,
+        "pawn": "/Game/Crusader/Characters/B_CRTraversalPawn.B_CRTraversalPawn_C",
+        "results": [
+          {
+            "name": "jog",
+            "start": [
+              -1400.0,
+              -3200.0,
+              88.27499628067017
+            ],
+            "end": [
+              -861.8246456106021,
+              -3200.0,
+              88.27499628067017
+            ],
+            "max_speed": 500.00000000000006,
+            "max_z": 88.27499628067017,
+            "min_capsule_half_height": 86.0,
+            "montage": null
+          },
+          {
+            "name": "walk",
+            "start": [
+              -1400.0,
+              -3200.0,
+              88.27499628067017
+            ],
+            "end": [
+              -1144.5304208129105,
+              -3200.0,
+              88.27499628067017
+            ],
+            "max_speed": 200.00000000000003,
+            "max_z": 88.27499628067017,
+            "min_capsule_half_height": 86.0,
+            "montage": null
+          },
+          {
+            "name": "sprint",
+            "start": [
+              -1400.0,
+              -3200.0,
+              88.27499628067017
+            ],
+            "end": [
+              -754.2919098750705,
+              -3200.0,
+              88.27499628067017
+            ],
+            "max_speed": 700.0,
+            "max_z": 88.27499628067017,
+            "min_capsule_half_height": 86.0,
+            "montage": null
+          },
+          {
+            "name": "crouch",
+            "start": [
+              -1400.0,
+              -3200.0,
+              88.27499628067017
+            ],
+            "end": [
+              -1116.8950725166976,
+              -3200.0,
+              62.274996280670166
+            ],
+            "max_speed": 225.00000000000003,
+            "max_z": 88.27499628067017,
+            "min_capsule_half_height": 60.0,
+            "montage": null
+          },
+          {
+            "name": "jump",
+            "start": [
+              -1400.0,
+              -3200.0,
+              88.27498817443848
+            ],
+            "end": [
+              -1400.0,
+              -3200.0,
+              88.27499797244043
+            ],
+            "max_speed": 0.0,
+            "max_z": 215.8179546083918,
+            "min_capsule_half_height": 86.0,
+            "montage": null
+          },
+          {
+            "name": "hurdle",
+            "start": [
+              2730.0,
+              -800.0,
+              88.27499628067017
+            ],
+            "end": [
+              2940.7420872989505,
+              -799.9999997663923,
+              88.27499104304988
+            ],
+            "max_speed": 487.1997873892017,
+            "max_z": 158.61027575796805,
+            "min_capsule_half_height": 86.0,
+            "montage": "/Game/Characters/UEFN_Mannequin/Animations/Traversal/Catch/Hurdle/AM_M_Neutral_Traversal_Catch_Hurdle_med_stand.AM_M_Neutral_Traversal_Catch_Hurdle_med_stand",
+            "weapon_stowed": true
+          },
+          {
+            "name": "mantle",
+            "start": [
+              4300.0,
+              -970.0,
+              88.27499628067017
+            ],
+            "end": [
+              4300.000004472659,
+              -849.9985653714616,
+              188.49965073842316
+            ],
+            "max_speed": 479.40117085345156,
+            "max_z": 188.49965073842316,
+            "min_capsule_half_height": 86.0,
+            "montage": "/Game/Characters/UEFN_Mannequin/Animations/Traversal/Catch/Mantle/AM_M_Neutral_Traversal_Catch_Mantle_med_stand.AM_M_Neutral_Traversal_Catch_Mantle_med_stand",
+            "weapon_stowed": true
+          },
+          {
+            "name": "climb",
+            "start": [
+              2700.0,
+              -1770.0,
+              88.27499628067017
+            ],
+            "end": [
+              2699.9999996664737,
+              -1649.9990350803316,
+              338.4972785922073
+            ],
+            "max_speed": 104.04220221336381,
+            "max_z": 338.4972785922073,
+            "min_capsule_half_height": 86.0,
+            "montage": "/Game/Characters/UEFN_Mannequin/Animations/Traversal/Climb/AM_M_Neutral_Traversal_Climb_Start_2_5_stand_F_Lfoot.AM_M_Neutral_Traversal_Climb_Start_2_5_stand_F_Lfoot",
+            "weapon_stowed": true
+          },
+          {
+            "name": "vault",
+            "start": [
+              4810.0,
+              -800.0,
+              438.46249532699585
+            ],
+            "end": [
+              5324.020989139605,
+              -799.9999985854422,
+              88.27500183805759
+            ],
+            "max_speed": 470.54237756135757,
+            "max_z": 576.7355778997785,
+            "min_capsule_half_height": 86.0,
+            "montage": "/Game/Characters/UEFN_Mannequin/Animations/Traversal/Catch/Vault/AM_M_Neutral_Traversal_Catch_Vault_high.AM_M_Neutral_Traversal_Catch_Vault_high",
+            "weapon_stowed": true
+          }
+        ],
+        "input_keys": {
+          "Move": [
+            "W",
+            "S",
+            "A",
+            "D",
+            "Gamepad_Left2D"
+          ],
+          "Walk": [
+            "LeftControl",
+            "Gamepad_RightShoulder"
+          ],
+          "Sprint": [
+            "LeftShift",
+            "Gamepad_LeftShoulder"
+          ],
+          "Crouch": [
+            "C",
+            "Gamepad_FaceButton_Right"
+          ],
+          "Jump": [
+            "SpaceBar",
+            "Gamepad_FaceButton_Bottom"
+          ]
+        }
+      }
+    },
+    "play_lifecycle": {
+      "artifact": "Artifacts/GymTests/restarts.json",
+      "result": {
+        "passed": true,
+        "error": null,
+        "cycles": [
+          {
+            "cycle": 1,
+            "pawn": "/Game/Crusader/Characters/B_CRTraversalPawn.B_CRTraversalPawn_C",
+            "active_camera": "LyraCameraComponent",
+            "ability_owner": "LyraPlayerState",
+            "visual_mesh": "/Game/Characters/Heroes/Mannequin/Meshes/SKM_Manny.SKM_Manny"
+          },
+          {
+            "cycle": 2,
+            "pawn": "/Game/Crusader/Characters/B_CRTraversalPawn.B_CRTraversalPawn_C",
+            "active_camera": "LyraCameraComponent",
+            "ability_owner": "LyraPlayerState",
+            "visual_mesh": "/Game/Characters/Heroes/Mannequin/Meshes/SKM_Manny.SKM_Manny"
+          },
+          {
+            "cycle": 3,
+            "pawn": "/Game/Crusader/Characters/B_CRTraversalPawn.B_CRTraversalPawn_C",
+            "active_camera": "LyraCameraComponent",
+            "ability_owner": "LyraPlayerState",
+            "visual_mesh": "/Game/Characters/Heroes/Mannequin/Meshes/SKM_Manny.SKM_Manny"
+          },
+          {
+            "cycle": 4,
+            "pawn": "/Game/Crusader/Characters/B_CRTraversalPawn.B_CRTraversalPawn_C",
+            "active_camera": "LyraCameraComponent",
+            "ability_owner": "LyraPlayerState",
+            "visual_mesh": "/Game/Characters/Heroes/Mannequin/Meshes/SKM_Manny.SKM_Manny"
+          },
+          {
+            "cycle": 5,
+            "pawn": "/Game/Crusader/Characters/B_CRTraversalPawn.B_CRTraversalPawn_C",
+            "active_camera": "LyraCameraComponent",
+            "ability_owner": "LyraPlayerState",
+            "visual_mesh": "/Game/Characters/Heroes/Mannequin/Meshes/SKM_Manny.SKM_Manny"
+          },
+          {
+            "cycle": 6,
+            "pawn": "/Game/Crusader/Characters/B_CRTraversalPawn.B_CRTraversalPawn_C",
+            "active_camera": "LyraCameraComponent",
+            "ability_owner": "LyraPlayerState",
+            "visual_mesh": "/Game/Characters/Heroes/Mannequin/Meshes/SKM_Manny.SKM_Manny"
+          },
+          {
+            "cycle": 7,
+            "pawn": "/Game/Crusader/Characters/B_CRTraversalPawn.B_CRTraversalPawn_C",
+            "active_camera": "LyraCameraComponent",
+            "ability_owner": "LyraPlayerState",
+            "visual_mesh": "/Game/Characters/Heroes/Mannequin/Meshes/SKM_Manny.SKM_Manny"
+          },
+          {
+            "cycle": 8,
+            "pawn": "/Game/Crusader/Characters/B_CRTraversalPawn.B_CRTraversalPawn_C",
+            "active_camera": "LyraCameraComponent",
+            "ability_owner": "LyraPlayerState",
+            "visual_mesh": "/Game/Characters/Heroes/Mannequin/Meshes/SKM_Manny.SKM_Manny"
+          },
+          {
+            "cycle": 9,
+            "pawn": "/Game/Crusader/Characters/B_CRTraversalPawn.B_CRTraversalPawn_C",
+            "active_camera": "LyraCameraComponent",
+            "ability_owner": "LyraPlayerState",
+            "visual_mesh": "/Game/Characters/Heroes/Mannequin/Meshes/SKM_Manny.SKM_Manny"
+          },
+          {
+            "cycle": 10,
+            "pawn": "/Game/Crusader/Characters/B_CRTraversalPawn.B_CRTraversalPawn_C",
+            "active_camera": "LyraCameraComponent",
+            "ability_owner": "LyraPlayerState",
+            "visual_mesh": "/Game/Characters/Heroes/Mannequin/Meshes/SKM_Manny.SKM_Manny"
+          }
+        ]
+      }
+    },
+    "camera": {
+      "artifact": "Artifacts/GymTests/camera.json",
+      "result": {
+        "passed": true,
+        "error": null,
+        "look_rotation": {
+          "yaw": 42.0,
+          "pitch": 14.0
+        },
+        "clear_horizontal_distance_cm": 304.138126514911,
+        "blocked_horizontal_distance_cm": 86.8987540902641
+      }
+    },
+    "independent_export": {
+      "artifact": "Artifacts/TemplateSmoke/Artifacts/export-smoke.json",
+      "result": {
+        "passed": true,
+        "project_root": "C:\\Development\\Game\\CrusaderSilencer\\Artifacts\\TemplateSmoke",
+        "project_id": "18D33E34F2074F8FB7C5DD9294BF11C8",
+        "map": "/Game/Maps/L_TraversalGym.L_TraversalGym",
+        "blueprints_compiled": 24,
+        "pickup_names": [
+          "Pistol",
+          "Rifle",
+          "Shotgun"
+        ],
+        "movement_class": "BaselineCharacterMovement",
+        "slide_gravity_scale": 1.5
+      }
+    }
+  },
+  "limits": [
+    "Editor PIE validation; packaged builds and performance soak not run.",
+    "Equipment replication tested with two-player listen-server PIE; network movement under latency/loss and dedicated servers are not qualified.",
+    "Dual-mesh runtime retargeting remains; final production skeleton consolidation is separate.",
+    "Project-specific opponents, damage/death/restart flow and mission rules are not part of this baseline."
+  ],
+  "sha256": {
+    "src/Config/DefaultEngine.ini": "c9f999157b0b36d3cd7712d39f225101531be6248bea6461abea67e6044b5774",
+    "src/Config/DefaultGame.ini": "0bb0e838f64f44e403f4aeb9697b60e877459a085527189118a438878596e4bb",
+    "src/Content/Baseline/Animations/A_SlideLoop.uasset": "263ade75b75d6501ce05688122c6475a5b2010c0ad2cd45cff41275112442e0b",
+    "src/Content/Baseline/Animations/ABP_BaselineManny.uasset": "7b66dd7355d4d42bf1b17dfc9769bfac86ad36daa304f2494856a098fc0b81aa",
+    "src/Content/Baseline/Input/IA_Cycle.uasset": "bb3c2c48c3021b30c03e21aac09f94887733ce30d079c2e61efc695f6815ced7",
+    "src/Content/Baseline/Input/IA_Drop.uasset": "6aa4ac23cd3b07d6de941aecaec3386c1e2c18f6e89dbb7dd7f390820b7461f7",
+    "src/Content/Baseline/Input/IA_Interact.uasset": "443f434eea217c0b8683fdf03243e8c64181e592a29cfac1de6423e916b89d59",
+    "src/Content/Baseline/Input/IMC_Baseline.uasset": "40758d1b306aec480f177a13e0e77b53059b28d2b7a4266e37be7e60ddc21253",
+    "src/Content/Baseline/Weapons/Pistol/AbilitySet_Pistol.uasset": "acf2e5d01a9c20fcefa0fa6e4d4f1d84d8156cc519a3fee03708036a71ab61d3",
+    "src/Content/Baseline/Weapons/Pistol/B_WeaponInstance_Pistol.uasset": "5ed16a89006ec4a1c931280d42a0c8401fc4d7c2de177615fa5324ee9e091a58",
+    "src/Content/Baseline/Weapons/Pistol/GA_Weapon_AutoReload.uasset": "3232abd38a63311346a1b8adce0eb5228d709f3882dca018bd26e7905b81e5ff",
+    "src/Content/Baseline/Weapons/Pistol/GA_Weapon_Fire_Pistol.uasset": "9bdaaeda79b32accc2be4e9d7146f2f6d82cbc1371c943ee038d60df035f0df8",
+    "src/Content/Baseline/Weapons/Pistol/GA_Weapon_Reload_Pistol.uasset": "c6a1f119261163fc16e6341f4fb7b65e238146e230243581e40f16fe58947414",
+    "src/Content/Baseline/Weapons/Pistol/ID_Pistol.uasset": "f72489c24c34758599ef72674db87d22805992b9321db97b8560680f3d9a6103",
+    "src/Content/Baseline/Weapons/Pistol/WID_Pistol.uasset": "dce890fab881859e4295b1c271d1eac3a9f1d196c429102143f93d697e51a25a",
+    "src/Content/Baseline/Weapons/Rifle/AbilitySet_Rifle.uasset": "d2641435cff364629c9a6bd37e930ee0e11a417bcf1a74015ea3b5dbf7027e88",
+    "src/Content/Baseline/Weapons/Rifle/B_WeaponInstance_Rifle.uasset": "f51bd4ef9dcbc0ebc5e9dd9730544f19870050817edc62511b797a289dfa11e4",
+    "src/Content/Baseline/Weapons/Rifle/GA_Weapon_AutoReload.uasset": "9a72161100f85fb7928f85ea90ef7f1ddc5c4bdea45457d6cc6a125f8eb4d6cc",
+    "src/Content/Baseline/Weapons/Rifle/GA_Weapon_Fire_Rifle_Auto.uasset": "5ca427769498138c3b39750c31f45a079f377c7f56de6298b512ab2f19962036",
+    "src/Content/Baseline/Weapons/Rifle/GA_Weapon_Reload_Rifle.uasset": "356bdc8787dbc0d5e7b4db860f722573ca6e1b8153416037d6b3089dc580628a",
+    "src/Content/Baseline/Weapons/Rifle/ID_Rifle.uasset": "5d7d328f57ab96265b3a4469907662b2ea83bebd4bc6d3c70feef3501ee1ed3e",
+    "src/Content/Baseline/Weapons/Rifle/WID_Rifle.uasset": "b16a9d02adb247895eea2e19006a61cc45995ea6f8a44884dbf2399c768fe26b",
+    "src/Content/Baseline/Weapons/Shotgun/AbilitySet_Shotgun.uasset": "847010f3033ea4f9a9ab6b7d0c3912184bb7980a89a462a591f04523a2a79444",
+    "src/Content/Baseline/Weapons/Shotgun/B_WeaponInstance_Shotgun.uasset": "1a52963f534db5e43d0086eef2fa312e5bf99f5dae4eec3ef93392eb6de4b0a1",
+    "src/Content/Baseline/Weapons/Shotgun/GA_Weapon_AutoReload.uasset": "8a06032043573ffd6db83e4650b279d82b3202f7491d2273a536f9f26c4ce05a",
+    "src/Content/Baseline/Weapons/Shotgun/GA_Weapon_Fire_Shotgun.uasset": "12da2ec12cb554f22950367535a4462aca57d2c857ec7e5610abc38ef25c410f",
+    "src/Content/Baseline/Weapons/Shotgun/GA_Weapon_Reload_Shotgun.uasset": "213a762fee3cbbe1dfbc2a457abc391377f3d9b4cf820ba4b54fe47483e0777c",
+    "src/Content/Baseline/Weapons/Shotgun/ID_Shotgun.uasset": "a51e7a5c2a17d1d2f294329cbe33452c3b76544e82c526a24ac2892329b6d0c9",
+    "src/Content/Baseline/Weapons/Shotgun/WID_Shotgun.uasset": "1ea9e2f323ac1861db4011be9c050f66bd3e2a3e3ccad77e99fc1be462f8b823",
+    "src/Content/Blueprints/SandboxCharacter_CMC.uasset": "40d888248f92cc073de9542c576f128ae0651e60775206256a3dcf38e4d86bb3",
+    "src/Content/Characters/Heroes/Abilities/AN_Reload.uasset": "157f94dcc530935b3bb4b716ee2362c6bd352af147888e64b6588564cbed34ae",
+    "src/Content/Characters/Heroes/Mannequin/Animations/AnimNotifies/AN_PlayWeaponMontage.uasset": "9d364d29b1a9ddc64eca8c09aaa15fca512bef1c5dbdec86a48a9d259752df94",
+    "src/Content/Crusader/Characters/B_CRMannequin.uasset": "3fd0806eff3d9a9bf709501095931fae39e4e09f60b122ba9bf54e555eded5f4",
+    "src/Content/Crusader/Characters/B_CRTraversalPawn.uasset": "b17ef5cacb839e0842221a0dd48f5a3f5f124a69b32d5bee3459f3290cebf6aa",
+    "src/Content/Crusader/System/AbilitySet_CRTraversal.uasset": "86d8e6fb8c18ca8681b6d3f461ecd8ced402ce19c821a2c72267d3c927710c48",
+    "src/Content/Crusader/System/InputConfig_CRTraversal.uasset": "f46cab4a0127fcfebf34b7103f51870b213cf38fc45d210d0552ee885a109d03",
+    "src/Content/Crusader/System/PawnData_CRTraversal.uasset": "c4cc21e9b6a097e39cd9809a22e7bc7a60bc00e3e23bffae315892b3db1e9617",
+    "src/Content/Maps/L_TraversalGym.umap": "47c86fe4de52f682903a3d9e86d36f538cf6cab5f6fdcf41b1cc51864310286b",
+    "src/Source/LyraEditor/Crusader/CRBlueprintTools.cpp": "f8184b068cf094ef1016877fbe3ab33c3944aa06d0784bcc1ae69cb70667443a",
+    "src/Source/LyraEditor/Crusader/CRBlueprintTools.h": "5d43d4c3d3f237b094f4c21c3646ba8e48cfcd37606ff032e407cb82615758a9",
+    "src/Source/LyraEditor/LyraEditor.Build.cs": "2bf08e96802b1b8f63ea75ce1d4c2bac444154669c5c199d399fd18f28f0ec01",
+    "src/Source/LyraGame/Baseline/BaselineCharacterMovement.cpp": "927326f7fe1b04aa4d15dccd413c1df1c72601577e4dbc95b35ebc37e08c5c9e",
+    "src/Source/LyraGame/Baseline/BaselineCharacterMovement.h": "d97c4ea08ba3f59efef2b2501bf86c9f2890201b095be25d55ab75e27f6d4a09",
+    "src/Source/LyraGame/Baseline/BaselineEquipment.cpp": "38920adea8e19a564b156aa5af42384cd7b9653bced6942188f550562cc544d7",
+    "src/Source/LyraGame/Baseline/BaselineEquipment.h": "13faa14b660a8f2d4a059f60ac774cfaf1b73d1eed1506b3ffb2ef920a2356cd",
+    "src/Source/LyraGame/Crusader/CRTraversalCharacter.cpp": "a74a4453ed8e5998920bc30ffcd213077c377f89095f805f0ca94c41bd5eab1d",
+    "src/Source/LyraGame/Crusader/CRTraversalCharacter.h": "c49b27983c1080dc513962b257b8bf4a82055eaca966af270a6caf16526cbb88",
+    "src/Source/LyraGame/Inventory/LyraInventoryItemInstance.h": "daeaa8fc1b6c336725d732c3aa38480af4f2598ae2784e06c8b9891144b50e91",
+    "src/Source/LyraGame/System/GameplayTagStack.h": "48dcfa2a277794308a8d291effbe612bd9d3afeb3cf6a754c98b0e6cb73ef23c"
+  }
+}

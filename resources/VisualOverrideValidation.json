@@ -1,0 +1,189 @@
+{
+  "created_utc": "2026-10-07T02:17:02.412344+00:00",
+  "engine": "5.8.3",
+  "passed": true,
+  "passed_cases": 170,
+  "build": "Artifacts/VisualOverrideBuild6.log",
+  "aggregate_report": "Artifacts/VisualOverride/regressions.json",
+  "validation_scope": "Feature, weapon and combat network checks passed on Build5. Build6 changes only recovery blend timing; all affected get-up, physical interaction and death checks were rerun (50 cases). This report combines those runs.",
+  "changes": [
+    "Use the sandbox visual catalog under Lyra game modes; only the server selects the replicated visual class.",
+    "Retain a persistent Manny weapon animation instance and swap a separate visible character, preserving inventory, montages and reload notifies.",
+    "Use leader poses for Manny/Quinn and Manny-source retargets for other skins; select the full body of modular characters.",
+    "Attach the actual weapon to the visible hand with corrected skeleton axes and preserved shared weapon grip spacing.",
+    "Correct the left-hand weapon roll around its local barrel axis so sights stay above the grip. Add explicit roll assertions for all skins and weapons.",
+    "Advance recovery blending by elapsed world game time instead of accumulating animation-update deltas, preventing extra network updates from consuming the blend early."
+  ],
+  "visual_choices": [
+    "Echo",
+    "Twinblast",
+    "Kellan",
+    "Manny",
+    "Quinn",
+    "UE4_Mannequin"
+  ],
+  "tests": [
+    {
+      "script": "Test-VisualOverrides.py",
+      "report": "Artifacts/VisualOverride/visual-overrides.json",
+      "cases": 48,
+      "passed": true,
+      "build": "Artifacts/VisualOverrideBuild5.log",
+      "recorded_utc": "2026-10-07T01:55:08.408765+00:00"
+    },
+    {
+      "script": "Test-VisualOverrides-Network.py",
+      "report": "Artifacts/VisualOverride/network.json",
+      "cases": 7,
+      "passed": true,
+      "build": "Artifacts/VisualOverrideBuild5.log",
+      "recorded_utc": "2026-10-07T01:56:10.734491+00:00"
+    },
+    {
+      "script": "Test-ShoulderSwap.py",
+      "report": "Artifacts/CombatTests/shoulder-swap.json",
+      "cases": 36,
+      "passed": true,
+      "build": "Artifacts/VisualOverrideBuild5.log",
+      "recorded_utc": "2026-10-07T01:59:03.297488+00:00"
+    },
+    {
+      "script": "Test-Baseline-Aim.py",
+      "report": "Artifacts/AimTests/aim-and-slide.json",
+      "cases": 24,
+      "passed": true,
+      "build": "Artifacts/VisualOverrideBuild5.log",
+      "recorded_utc": "2026-10-07T02:02:17.880417+00:00"
+    },
+    {
+      "script": "Test-CombatShoulder-Network.py",
+      "report": "Artifacts/CombatTests/combat-shoulder-network.json",
+      "cases": 5,
+      "passed": true,
+      "build": "Artifacts/VisualOverrideBuild5.log",
+      "recorded_utc": "2026-10-07T01:57:45.558686+00:00"
+    },
+    {
+      "script": "Test-CombatDeath.py",
+      "report": "Artifacts/CombatTests/combat-death.json",
+      "cases": 10,
+      "passed": true,
+      "build": "Artifacts/VisualOverrideBuild6.log",
+      "recorded_utc": "2026-10-07T02:15:45.055462+00:00"
+    },
+    {
+      "script": "Test-GetUpRegressions.py",
+      "report": "Artifacts/PhysicalTests/getup-regressions.json",
+      "cases": 30,
+      "passed": true,
+      "build": "Artifacts/VisualOverrideBuild6.log",
+      "recorded_utc": "2026-10-07T02:15:07.781867+00:00"
+    },
+    {
+      "script": "Test-PhysicalInteractions-Network.py",
+      "report": "Artifacts/PhysicalTests/network-physical.json",
+      "cases": 3,
+      "passed": true,
+      "build": "Artifacts/VisualOverrideBuild6.log",
+      "recorded_utc": "2026-10-07T02:16:14.949800+00:00"
+    },
+    {
+      "script": "Test-GetUpContinuity.py",
+      "report": "Artifacts/VisualOverride/kellan-recovery.json",
+      "cases": 4,
+      "passed": true,
+      "build": "Artifacts/VisualOverrideBuild6.log",
+      "recorded_utc": "2026-10-07T02:12:49.922594+00:00"
+    },
+    {
+      "script": "Test-PhysicalInteractions-Network.py",
+      "report": "Artifacts/VisualOverride/twinblast-network-physical.json",
+      "cases": 3,
+      "passed": true,
+      "build": "Artifacts/VisualOverrideBuild6.log",
+      "recorded_utc": "2026-10-07T02:12:16.275757+00:00"
+    }
+  ],
+  "asset_checks": {
+    "passed": true,
+    "checks": [
+      {
+        "asset": "/Game/Blueprints/AC_VisualOverrideManager",
+        "blueprint_errors": false
+      },
+      {
+        "asset": "/Game/Blueprints/SandboxCharacter_CMC",
+        "blueprint_errors": false
+      },
+      {
+        "asset": "/Game/Crusader/Characters/B_CRTraversalPawn",
+        "blueprint_errors": false
+      },
+      {
+        "asset": "/Game/Baseline/Characters/B_TrainingPartner",
+        "blueprint_errors": false
+      },
+      {
+        "asset": "/Game/Baseline/Animations/ABP_BaselineVisualRetarget",
+        "blueprint_errors": false
+      },
+      {
+        "asset": "/Game/Widgets/GameAnimationWidget",
+        "blueprint_errors": false
+      }
+    ],
+    "persistent_driver": [
+      "VisualOverride_GEN_VARIABLE"
+    ],
+    "server_authority_gate": true,
+    "lyra_catalog_fallback": true
+  },
+  "measurements": {
+    "max_muzzle_error_degrees": 7.889317499513412,
+    "max_abs_weapon_roll_degrees": 6.345682503680625,
+    "network_visual_roles_per_choice": 4
+  },
+  "recovery_followup": {
+    "initial_failure": "Artifacts/VisualOverride/network-recovery-failure.json",
+    "diagnostic_run": "Artifacts/VisualOverride/network-recovery-diagnostic.json",
+    "final_report": "Artifacts/VisualOverride/recovery-clock-regressions.json",
+    "new_assertion": "Snapshot blend weight may not advance faster than elapsed game time between sampled physical/recovery poses."
+  },
+  "limits": [
+    "Validated in standalone and two-player listen-server editor PIE on this workstation.",
+    "Dedicated servers, latency/loss, packaged builds and selectable-skin performance are not qualified by these checks."
+  ],
+  "sha256": {
+    "src/Source/LyraGame/Crusader/CRTraversalCharacter.h": "586902af25d291e7c50108554b45c44f79d500aa632ef97ca7cf2307541d8cef",
+    "src/Source/LyraGame/Crusader/CRTraversalCharacter.cpp": "57165c351e1fbd6605acb77a5690c944b15e999503330b544e1e242bd72a99ee",
+    "src/Source/LyraGame/Baseline/BaselineEquipment.h": "043aa876fd4ebca93adb13df924c3562338c24a5ba85a71e51f6c8a8e5c780a6",
+    "src/Source/LyraGame/Baseline/BaselineEquipment.cpp": "6823ed9e3b4d7ec9658daceda7f01fa64044d8c90feadaf2e00be3a2bfae8399",
+    "src/Source/LyraGame/Baseline/BaselinePhysicalInteraction.h": "439a66164541be484e14335596d767fef2c91919f806d8ae68185cdbb8a9d9bf",
+    "src/Source/LyraGame/Baseline/BaselinePhysicalInteraction.cpp": "93baf5abf05d83989545ae970d03e66d924fa9bdff9d70eec39e10b10b9bdcfa",
+    "src/Source/LyraEditor/Crusader/CRBlueprintTools.h": "2c9385e7238d6def085a3cbc6bd68cfe5235d1c5bb578d2bfe5900681ac9a302",
+    "src/Source/LyraEditor/Crusader/CRBlueprintTools.cpp": "3b6837c612cfad3eef0688306e4facbd5c6fa3052767b46d82faccdbd1c37dcc",
+    "src/Content/Blueprints/AC_VisualOverrideManager.uasset": "2290fd4a2156ed27d93c0589338cc08feec43bb3aaa8636f046f41c278643dbc",
+    "src/Content/Blueprints/SandboxCharacter_CMC.uasset": "058d3b5d0493cdcf6212560406a34d79f5f1105387f9b08ecab438a8284f6248",
+    "src/Content/Crusader/Characters/B_CRTraversalPawn.uasset": "c6fca3c3fbf500706da269d1dcaf24de42544e289b25dbc7cfb2a883eaef4183",
+    "src/Content/Crusader/Characters/B_CRMannequin.uasset": "4e52786c3d658cb8b9da0a763debcd789f2825d1ddbabe23581c27ee5ae58c5d",
+    "src/Content/Baseline/Characters/B_TrainingPartner.uasset": "495c01803b682994d5918f20c3de81a73dd3b6a655f71a18b82057967fcae129",
+    "src/Content/Baseline/Animations/ABP_BaselineVisualRetarget.uasset": "45b965f0856ee74b9f47ddb2061d2693a73b770f284a49ff3b1d5af051c7239b",
+    "src/Content/Baseline/Animations/ABP_BaselineManny.uasset": "e456585ba454569531c576e3053fd1fdef7b139fc36bca2e5407d7420e3f5a86",
+    "src/Content/Baseline/Animations/MDT_WeaponHands.uasset": "2c8907ff1073fd95143f14c76aec71fe2976deef9a0009b781c9996f3ba83003",
+    "Scripts/Extend-VisualOverrides.py": "a488b39aee5009ddef4a6a6f6ba41d71561ec73771b27d13fa698fb36a5fb04f",
+    "Scripts/Test-VisualOverrides.py": "415786dd7bff004c235f6af6f281987d65eef1fb75287a925d6a31a0462bd380",
+    "Scripts/Test-VisualOverrides-Network.py": "9e651f898e8b8b724d7dd58ed91ef42cb2e86ecc74754dc9aedaf4c5494c4812",
+    "Scripts/Test-VisualOverride-Regressions.py": "c0f8caf4052a46551f69a0a79882eb491d1fa35212cb698c928c96ea6d03ec11",
+    "Scripts/Test-RecoveryClock-Regressions.py": "90398cae4930245a1ce55632693207ba3fed62c6494cbd1f7c077310eaa91f1c",
+    "Scripts/Test-ShoulderSwap.py": "6a191d93335a06fc207a062b90327118dfb6e91043d94b85ea40cbb19c81e698",
+    "Scripts/Test-PhysicalInteractions-Network.py": "01826987364a825b0c46af8d6d554ca28ff8899ebc9c9f96d87cbd4bddddf061",
+    "docs/BaselineTemplate.txt": "ad9ba03e9d6aa682dc483410857219c8b80fb9363b5034735af441d29033cfbc",
+    "docs/TraversalSetup.txt": "1c295b06b50f4dc3c49b1710bd4e5bd93c3372641ade497cdc0480bb6a897200",
+    "src/Content/Baseline/Animations/VisualOverrides/RTG_Manny_to_Echo.uasset": "7c7ab35983db84a86c7530d53da3570f6505d8205e0f823b6273fb54225bb049",
+    "src/Content/Baseline/Animations/VisualOverrides/RTG_Manny_to_Metahuman_nrw.uasset": "85026c765cd8a196da47e27a991ec7d43f50799b6f7d342b22dff18c9b3335db",
+    "src/Content/Baseline/Animations/VisualOverrides/RTG_Manny_to_Metahuman_ovw.uasset": "5760c886d871da95c6fabd647d2dd1630115eeea08c83d420d13311e5b9ef423",
+    "src/Content/Baseline/Animations/VisualOverrides/RTG_Manny_to_TwinBlast.uasset": "3d9213487de6e1a68b2ecdd88df35b8f4a33746288da690572427fb49a22fdd8",
+    "src/Content/Baseline/Animations/VisualOverrides/RTG_Manny_to_UE4_Mannequin.uasset": "bd44edf3a8b71eefb5520452be4cf2aa5ce0f012d9e3b8691a2bc8f41939885b",
+    "src/Content/Baseline/Animations/VisualOverrides/RTG_Manny_to_UE5_Mannequin.uasset": "08c0d61fbe50fa9f3af9d5708457274a35dacb26a653d9fc553d0653f598792b"
+  }
+}

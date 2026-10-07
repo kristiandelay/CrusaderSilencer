@@ -1,0 +1,58 @@
+[
+  {
+    "name": "ObsidianSentinel",
+    "archive": "mockups/Guards/ObsidianSentinel.zip",
+    "original_archive_name": "Meshy_AI_Obsidian_Sentinel_1006134754_texture_fbx.zip",
+    "sha256": "695cb31051000c1af6f9d6c1d1bb36ff707396a9f09f249721b81a227896cc69",
+    "imported": true
+  },
+  {
+    "name": "RegalCommander",
+    "archive": "mockups/Guards/RegalCommander.zip",
+    "original_archive_name": "Meshy_AI_Regal_Commander_1006134909_texture_fbx.zip",
+    "sha256": "ce464017d83a66dd002b82155d2c5fa1bb3f6366cb757cc6729fe7c7bf4eb527",
+    "imported": true
+  },
+  {
+    "name": "TheSteadfastOfficer",
+    "archive": "mockups/Guards/TheSteadfastOfficer.zip",
+    "original_archive_name": "Meshy_AI_The_Steadfast_Officer_1006134825_texture_fbx.zip",
+    "sha256": "02f5b59b91de1dead5c158654173d8177a79429e9d4e7057955a0552418eea7a",
+    "imported": true
+  },
+  {
+    "name": "UrbanTrailblazer",
+    "archive": "mockups/NPC/UrbanTrailblazer.zip",
+    "original_archive_name": "Meshy_AI_Urban_Trailblazer_1006134847_texture_fbx.zip",
+    "sha256": "69a8667c8c94a68a9e0757d9c591252fb5d2d67ccbfb4ec2779111326bf2a682",
+    "imported": true
+  },
+  {
+    "name": "CrimsonSentinel",
+    "archive": "mockups/Playable/CrimsonSentinel.zip",
+    "original_archive_name": "Meshy_AI_Crimson_Sentinel_1006134709_texture_fbx.zip",
+    "sha256": "0758a254e52e603f433357464c7eb230d41c87f9a37868b34ce53ef94e6c5e9f",
+    "imported": true
+  },
+  {
+    "name": "BlackIronRifle",
+    "archive": "mockups/Weapons/BlackIronRifle.zip",
+    "original_archive_name": "Meshy_AI_Black_Iron_Rifle_1006134731_texture_fbx.zip",
+    "sha256": "2520f86eaa303a4973666e7f8f659ed620cb1e540828ae25d68d79550f0f4c4b",
+    "imported": true
+  },
+  {
+    "name": "FuturisticPistol",
+    "archive": "mockups/Weapons/FuturisticPistol.zip",
+    "original_archive_name": "Meshy_AI_Futuristic_Pistol_1007050508_texture_fbx.zip",
+    "sha256": "7d0f18fcd05f3e0829b560d98134a649f950d5eb131b2a27239ab07dcbb51f26",
+    "imported": true
+  },
+  {
+    "name": "TitanBreaker",
+    "archive": "mockups/Weapons/TitanBreaker.zip",
+    "original_archive_name": "Meshy_AI_Titan_Breaker_1007050431_texture_fbx.zip",
+    "sha256": "30dd5b522f0c05056c23dff2070512cb054edb8493f7071eb95a479991bec62a",
+    "imported": true
+  }
+]

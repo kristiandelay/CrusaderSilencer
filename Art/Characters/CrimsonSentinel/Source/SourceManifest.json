@@ -1,0 +1,39 @@
+{
+  "name": "CrimsonSentinel",
+  "archive": "CrimsonSentinel.zip",
+  "archive_sha256": "0758a254e52e603f433357464c7eb230d41c87f9a37868b34ce53ef94e6c5e9f",
+  "files": [
+    {
+      "original": "Meshy_AI_Crimson_Sentinel_1006134709_texture_fbx/Meshy_AI_Crimson_Sentinel_1006134709_texture.fbx",
+      "file": "CrimsonSentinel.fbx",
+      "bytes": 37227804,
+      "sha256": "8fca55f11901b7f1ff43a06a2f4f42f645fa9ee9fdb167e4616a9d3489553835"
+    },
+    {
+      "original": "Meshy_AI_Crimson_Sentinel_1006134709_texture_fbx/Meshy_AI_Crimson_Sentinel_1006134709_texture.png",
+      "file": "CrimsonSentinel_BaseColor.png",
+      "bytes": 6994057,
+      "sha256": "854e95b04960e588f6134972a358fa3e7b1d5736344978a60e0b2e7bfc243508"
+    },
+    {
+      "original": "Meshy_AI_Crimson_Sentinel_1006134709_texture_fbx/Meshy_AI_Crimson_Sentinel_1006134709_texture_metallic.png",
+      "file": "CrimsonSentinel_Metallic.png",
+      "bytes": 484364,
+      "sha256": "241187098d67452d62d7f0015a350a27ac2c8585b5eff2248e54c9104b48567f"
+    },
+    {
+      "original": "Meshy_AI_Crimson_Sentinel_1006134709_texture_fbx/Meshy_AI_Crimson_Sentinel_1006134709_texture_normal.png",
+      "file": "CrimsonSentinel_Normal.png",
+      "bytes": 5203100,
+      "sha256": "e0af23099434f3d5a8a764e99aa7b25f7d821e6b652a4d2532c44ef665ff7ba0"
+    },
+    {
+      "original": "Meshy_AI_Crimson_Sentinel_1006134709_texture_fbx/Meshy_AI_Crimson_Sentinel_1006134709_texture_roughness.png",
+      "file": "CrimsonSentinel_Roughness.png",
+      "bytes": 1605613,
+      "sha256": "7d558cd4bf6aa183af7c49c1fc91bea951ce1c94882e6181ac8246dcd080b073"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Crimson_Sentinel_1006134709_texture_fbx.zip",
+  "archive_path": "mockups/Playable/CrimsonSentinel.zip"
+}

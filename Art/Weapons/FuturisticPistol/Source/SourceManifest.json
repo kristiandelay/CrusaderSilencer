@@ -1,0 +1,39 @@
+{
+  "name": "FuturisticPistol",
+  "archive": "FuturisticPistol.zip",
+  "archive_sha256": "7d0f18fcd05f3e0829b560d98134a649f950d5eb131b2a27239ab07dcbb51f26",
+  "files": [
+    {
+      "original": "Meshy_AI_Futuristic_Pistol_1007050508_texture_fbx/Meshy_AI_Futuristic_Pistol_1007050508_texture.fbx",
+      "file": "FuturisticPistol.fbx",
+      "bytes": 32932860,
+      "sha256": "501cc37f4862bad5a86308139b4ed5fb26521f5c7c4328c619d03a59d3f7f829"
+    },
+    {
+      "original": "Meshy_AI_Futuristic_Pistol_1007050508_texture_fbx/Meshy_AI_Futuristic_Pistol_1007050508_texture.png",
+      "file": "FuturisticPistol_BaseColor.png",
+      "bytes": 6090136,
+      "sha256": "2ecc39faf456a155fb214a3402ed242867f7e12ea1dd62d9133b71c68edd0017"
+    },
+    {
+      "original": "Meshy_AI_Futuristic_Pistol_1007050508_texture_fbx/Meshy_AI_Futuristic_Pistol_1007050508_texture_metallic.png",
+      "file": "FuturisticPistol_Metallic.png",
+      "bytes": 1730652,
+      "sha256": "4932a225d5af86efc2e7030993722e7a1aa905e0acab913167972f7ea974b946"
+    },
+    {
+      "original": "Meshy_AI_Futuristic_Pistol_1007050508_texture_fbx/Meshy_AI_Futuristic_Pistol_1007050508_texture_normal.png",
+      "file": "FuturisticPistol_Normal.png",
+      "bytes": 5918218,
+      "sha256": "a1d49671655bdbd99e52fbaeb7b04d88dc366bdb34210b7e7f3ac871f796243f"
+    },
+    {
+      "original": "Meshy_AI_Futuristic_Pistol_1007050508_texture_fbx/Meshy_AI_Futuristic_Pistol_1007050508_texture_roughness.png",
+      "file": "FuturisticPistol_Roughness.png",
+      "bytes": 1682002,
+      "sha256": "8d30e893faf3e8dbce6f304a3336c04cb7f916c06f787d060b47e632c754bd2a"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Futuristic_Pistol_1007050508_texture_fbx.zip",
+  "archive_path": "mockups/Weapons/FuturisticPistol.zip"
+}

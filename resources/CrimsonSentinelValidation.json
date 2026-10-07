@@ -1,0 +1,905 @@
+{
+  "created_utc": "2026-10-07T04:56:19.190089+00:00",
+  "engine": "5.8.3-58210709+++UE5+Release-5.8",
+  "blender": "5.2.2 LTS",
+  "passed": true,
+  "character": "CrimsonSentinel",
+  "rifle": "BlackIronRifle",
+  "default_visual_index": 6,
+  "character_rig": {
+    "source_triangles": 696788,
+    "game_triangles": 85000,
+    "vertices": 42472,
+    "bones": 64,
+    "unweighted_vertices": 0,
+    "max_influences": 4,
+    "finger_weighted_vertices": {
+      "index_metacarpal_l": 208,
+      "index_01_l": 175,
+      "index_02_l": 161,
+      "index_03_l": 120,
+      "middle_metacarpal_l": 304,
+      "middle_01_l": 255,
+      "middle_02_l": 250,
+      "middle_03_l": 144,
+      "ring_metacarpal_l": 128,
+      "ring_01_l": 199,
+      "ring_02_l": 229,
+      "ring_03_l": 138,
+      "pinky_metacarpal_l": 270,
+      "pinky_01_l": 146,
+      "pinky_02_l": 173,
+      "pinky_03_l": 117,
+      "thumb_01_l": 218,
+      "thumb_02_l": 114,
+      "thumb_03_l": 53,
+      "index_metacarpal_r": 167,
+      "index_01_r": 162,
+      "index_02_r": 156,
+      "index_03_r": 77,
+      "middle_metacarpal_r": 299,
+      "middle_01_r": 253,
+      "middle_02_r": 231,
+      "middle_03_r": 102,
+      "ring_metacarpal_r": 142,
+      "ring_01_r": 210,
+      "ring_02_r": 266,
+      "ring_03_r": 144,
+      "pinky_metacarpal_r": 306,
+      "pinky_01_r": 166,
+      "pinky_02_r": 218,
+      "pinky_03_r": 154,
+      "thumb_01_r": 255,
+      "thumb_02_r": 124,
+      "thumb_03_r": 66
+    }
+  },
+  "rifle_rig": {
+    "source_triangles": 269780,
+    "game_triangles": 22000,
+    "vertices": 11084,
+    "length_m": 0.94,
+    "grip_source": [
+      2.53,
+      0,
+      0.58
+    ],
+    "source_scale": 0.13354420151344273,
+    "muzzle_ue_cm": [
+      0,
+      80.80385709814182,
+      9.882270911994764
+    ],
+    "skeleton": "Lyra rifle Root/Grip hierarchy",
+    "magazine_vertices": 308,
+    "detached_magazine": true,
+    "cross_bone_triangles": 0
+  },
+  "content_validation": {
+    "checked": 22,
+    "valid": 22,
+    "invalid": 0,
+    "warnings": 0,
+    "report": "Artifacts/CrimsonSentinel/asset-validation.txt",
+    "sha256": "0b3201bef912dcc85c43e5a72b3cfbda0aed13efd24c51134dfa6f9aedd39570"
+  },
+  "tests": [
+    {
+      "script": "Scripts/Validate-CrimsonRig.py",
+      "report": "Artifacts/CrimsonSentinel/finger-deformation.json",
+      "report_sha256": "81c1e7655fc03f6c54ea9413a6cb3cf53af167f87a473b004c5c4a0e6693a824",
+      "recorded_utc": "2026-10-07T04:40:51.773780+00:00",
+      "scope": "Ten independent finger deformation checks in Blender.",
+      "result": {
+        "passed": true,
+        "action": "CrimsonSentinel_GripCheck",
+        "fingers": [
+          {
+            "finger": "thumb_l",
+            "weighted_vertices": 155,
+            "maximum_travel_cm": 8.343762572775626,
+            "average_travel_cm": 3.245287610037806
+          },
+          {
+            "finger": "index_l",
+            "weighted_vertices": 220,
+            "maximum_travel_cm": 11.159306468128275,
+            "average_travel_cm": 3.8506345504165376
+          },
+          {
+            "finger": "middle_l",
+            "weighted_vertices": 278,
+            "maximum_travel_cm": 12.4708683059734,
+            "average_travel_cm": 3.910434466518075
+          },
+          {
+            "finger": "ring_l",
+            "weighted_vertices": 261,
+            "maximum_travel_cm": 11.456201824413675,
+            "average_travel_cm": 3.767581336264389
+          },
+          {
+            "finger": "pinky_l",
+            "weighted_vertices": 212,
+            "maximum_travel_cm": 10.968224841639499,
+            "average_travel_cm": 4.188527654586392
+          },
+          {
+            "finger": "thumb_r",
+            "weighted_vertices": 177,
+            "maximum_travel_cm": 8.537757152521749,
+            "average_travel_cm": 3.311569559140353
+          },
+          {
+            "finger": "index_r",
+            "weighted_vertices": 198,
+            "maximum_travel_cm": 11.24642785898716,
+            "average_travel_cm": 4.087287615537955
+          },
+          {
+            "finger": "middle_r",
+            "weighted_vertices": 233,
+            "maximum_travel_cm": 12.68617294211444,
+            "average_travel_cm": 4.5605603357537365
+          },
+          {
+            "finger": "ring_r",
+            "weighted_vertices": 236,
+            "maximum_travel_cm": 11.21706936714657,
+            "average_travel_cm": 4.10602521222572
+          },
+          {
+            "finger": "pinky_r",
+            "weighted_vertices": 258,
+            "maximum_travel_cm": 11.331941032905272,
+            "average_travel_cm": 4.39894108512435
+          }
+        ]
+      }
+    },
+    {
+      "script": null,
+      "report": "Artifacts/CrimsonSentinel/cold-load-validation.json",
+      "report_sha256": "de0880a501344e14697a1de471973b50eefc1b5fddf73a87519c3f389b66c163",
+      "recorded_utc": "2026-10-07T04:55:42.843141+00:00",
+      "scope": "Both meshes and skeletons loaded after restarting Unreal; three LODs each; default visual index 6.",
+      "result": {
+        "passed": true,
+        "engine": "5.8.3-58210709+++UE5+Release-5.8",
+        "meshes": [
+          {
+            "mesh": "/Game/Crusader/Characters/CrimsonSentinel/CrimsonSentinel.CrimsonSentinel",
+            "skeleton": "/Game/Crusader/Characters/CrimsonSentinel/CrimsonSentinel_Skeleton.CrimsonSentinel_Skeleton",
+            "lod_count": 3
+          },
+          {
+            "mesh": "/Game/Crusader/Weapons/BlackIronRifle/BlackIronRifle.BlackIronRifle",
+            "skeleton": "/Game/Crusader/Weapons/BlackIronRifle/BlackIronRifle_Skeleton.BlackIronRifle_Skeleton",
+            "lod_count": 3
+          }
+        ],
+        "default_visual_override": 6
+      }
+    },
+    {
+      "script": "Scripts/Test-CrimsonSentinel.py",
+      "report": "Artifacts/CrimsonSentinel/gameplay-validation.json",
+      "report_sha256": "0e9d874bc9ea4e8821c2d7cea693e60ca0130482b9f44bb4856adcc4bc6c2192",
+      "recorded_utc": "2026-10-07T04:44:37.164590+00:00",
+      "scope": "Final assets after editor restart: widget selection, all finger joints, rifle pickup/material/scale, both shoulders, aim, fire and reload.",
+      "result": {
+        "passed": true,
+        "error": null,
+        "results": [
+          {
+            "case": "default_skin_and_30_finger_joints",
+            "widget_entries": 7
+          },
+          {
+            "case": "widget_switch_away_and_back"
+          },
+          {
+            "case": "rifle_pickup_material_and_unit_scale_sockets"
+          },
+          {
+            "case": "aim_and_hand",
+            "left": false,
+            "pitch": 0,
+            "yaw": 0,
+            "muzzle_error_degrees": 6.073421292274996,
+            "roll_degrees": -1.3845316842560187,
+            "hand_target_error_cm": 1.459287201849321
+          },
+          {
+            "case": "fire_and_reload",
+            "left": false,
+            "rounds_fired": 1
+          },
+          {
+            "case": "aim_and_hand",
+            "left": false,
+            "pitch": 40,
+            "yaw": 35,
+            "muzzle_error_degrees": 1.2475143952243968,
+            "roll_degrees": -4.1990696995115355,
+            "hand_target_error_cm": 2.623672958054015
+          },
+          {
+            "case": "aim_and_hand",
+            "left": false,
+            "pitch": -40,
+            "yaw": -35,
+            "muzzle_error_degrees": 4.164434726087547,
+            "roll_degrees": -2.7007332385045593,
+            "hand_target_error_cm": 1.2175616392202389
+          },
+          {
+            "case": "aim_and_hand",
+            "left": true,
+            "pitch": 0,
+            "yaw": 0,
+            "muzzle_error_degrees": 5.291235700453787,
+            "roll_degrees": 0.8827155192533985,
+            "hand_target_error_cm": 1.6153335965306082
+          },
+          {
+            "case": "fire_and_reload",
+            "left": true,
+            "rounds_fired": 1
+          },
+          {
+            "case": "aim_and_hand",
+            "left": true,
+            "pitch": 40,
+            "yaw": 35,
+            "muzzle_error_degrees": 0.9644039448687275,
+            "roll_degrees": 7.340603701908097,
+            "hand_target_error_cm": 1.9933941565671665
+          },
+          {
+            "case": "aim_and_hand",
+            "left": true,
+            "pitch": -40,
+            "yaw": -35,
+            "muzzle_error_degrees": 4.121127316349167,
+            "roll_degrees": 2.5386866574080282,
+            "hand_target_error_cm": 1.39600157323143
+          }
+        ]
+      }
+    },
+    {
+      "script": "Scripts/Test-CrimsonSlide.py",
+      "report": "Artifacts/CrimsonSentinel/slide-validation.json",
+      "report_sha256": "1cc453c8e78330f0944421ea6dd8bc723503128d47187e4af0d56fec403c27be",
+      "recorded_utc": "2026-10-07T04:36:47.500964+00:00",
+      "scope": "Both shoulders aim and fire while sliding. Run before adding lower LODs and separating the rifle magazine boundary; character LOD0 weights and rifle bind pose unchanged.",
+      "result": {
+        "passed": true,
+        "error": null,
+        "results": [
+          {
+            "left": false,
+            "rounds_fired": 3,
+            "maximum_muzzle_error_degrees": 10.382400870478989,
+            "maximum_hand_error_cm": 1.7892240862843798
+          },
+          {
+            "left": true,
+            "rounds_fired": 2,
+            "maximum_muzzle_error_degrees": 3.7620275808637134,
+            "maximum_hand_error_cm": 1.3281477546754004
+          }
+        ]
+      }
+    },
+    {
+      "script": "Scripts/Test-GetUpContinuity.py",
+      "report": "Artifacts/CrimsonSentinel/getup-continuity.json",
+      "report_sha256": "6d0fe0be2fb33fc92ee25da210045630824f7607982ce0640b5e07f5b4bb8943",
+      "recorded_utc": "2026-10-07T04:34:55.161135+00:00",
+      "scope": "Four ragdoll/get-up directions on Crimson Sentinel. Run before adding lower LODs; character LOD0 unchanged.",
+      "result": {
+        "passed": true,
+        "error": null,
+        "results": [
+          {
+            "case": "forward",
+            "montage": "AM_M_ragdoll_getup_stand_F",
+            "start_time": 0.3629531264305115,
+            "first_source_jump_cm": 0.12836742401147333,
+            "first_visible_jump_cm": 5.35117853288979,
+            "max_early_pelvis_step_cm": 2.1766197712181237,
+            "max_pelvis_speed_cm_s": 126.88794416675746,
+            "minimum_visible_head_z_cm": 3.6347501494341494,
+            "return_to_locomotion_jump_cm": 1.4203957771367959,
+            "visible_return_to_locomotion_jump_cm": 19.307417214670018,
+            "duration": 2.4303811006247997
+          },
+          {
+            "case": "backward",
+            "montage": "AM_M_ragdoll_getup_stand_L",
+            "start_time": 0.3348042964935303,
+            "first_source_jump_cm": 0.9613518714906574,
+            "first_visible_jump_cm": 4.246424421808688,
+            "max_early_pelvis_step_cm": 1.627455672135159,
+            "max_pelvis_speed_cm_s": 149.0693156485624,
+            "minimum_visible_head_z_cm": 8.211211242353333,
+            "return_to_locomotion_jump_cm": 1.5624137628884445,
+            "visible_return_to_locomotion_jump_cm": 15.69490205430564,
+            "duration": 2.461814299225807
+          },
+          {
+            "case": "left",
+            "montage": "AM_M_ragdoll_getup_stand_F",
+            "start_time": 0.3654227554798126,
+            "first_source_jump_cm": 0.13907146453891445,
+            "first_visible_jump_cm": 5.516819046274363,
+            "max_early_pelvis_step_cm": 1.9733857249208633,
+            "max_pelvis_speed_cm_s": 126.56300438676384,
+            "minimum_visible_head_z_cm": 7.4901034555153725,
+            "return_to_locomotion_jump_cm": 1.0843152615082348,
+            "visible_return_to_locomotion_jump_cm": 9.338170892518065,
+            "duration": 2.4275761023163795
+          },
+          {
+            "case": "turned_right",
+            "montage": "AM_M_ragdoll_getup_stand_L",
+            "start_time": 0.3384007215499878,
+            "first_source_jump_cm": 1.0666966438294803,
+            "first_visible_jump_cm": 4.196788014831038,
+            "max_early_pelvis_step_cm": 2.4242887505469457,
+            "max_pelvis_speed_cm_s": 148.9636894350101,
+            "minimum_visible_head_z_cm": 7.009354727849087,
+            "return_to_locomotion_jump_cm": 1.7857365110671068,
+            "visible_return_to_locomotion_jump_cm": 21.188472196141696,
+            "duration": 2.474583398550749
+          }
+        ]
+      }
+    },
+    {
+      "script": "Scripts/Test-TraversalGym.py",
+      "report": "Artifacts/CrimsonSentinel/Traversal/result.json",
+      "report_sha256": "0f07e57c78556ca0f02fbdca2fecf0e8355cc14ea66bf7ab882cf0c2e855b7f0",
+      "recorded_utc": "2026-10-07T04:37:20.469441+00:00",
+      "scope": "Nine locomotion/traversal cases with the new visual and rifle. Run before lower LODs and rifle magazine boundary separation.",
+      "result": {
+        "passed": true,
+        "error": null,
+        "pawn": "/Game/Crusader/Characters/B_CRTraversalPawn.B_CRTraversalPawn_C",
+        "results": [
+          {
+            "name": "jog",
+            "start": [
+              -1400.0,
+              -3200.0,
+              88.27499628067017
+            ],
+            "end": [
+              -847.9407787940697,
+              -3200.0,
+              88.27499628067017
+            ],
+            "max_speed": 500.00000000000006,
+            "max_z": 88.27499628067017,
+            "min_capsule_half_height": 86.0,
+            "montage": null
+          },
+          {
+            "name": "walk",
+            "start": [
+              -1400.0,
+              -3200.0,
+              88.27499628067017
+            ],
+            "end": [
+              -1139.8147087049988,
+              -3200.0,
+              88.27499628067017
+            ],
+            "max_speed": 200.00000000000003,
+            "max_z": 88.27499628067017,
+            "min_capsule_half_height": 86.0,
+            "montage": null
+          },
+          {
+            "name": "sprint",
+            "start": [
+              -1400.0,
+              -3200.0,
+              88.27499628067017
+            ],
+            "end": [
+              -738.0292585484104,
+              -3200.0,
+              88.27499628067017
+            ],
+            "max_speed": 700.0,
+            "max_z": 88.27499628067017,
+            "min_capsule_half_height": 86.0,
+            "montage": null
+          },
+          {
+            "name": "crouch",
+            "start": [
+              -1400.0,
+              -3200.0,
+              88.27499628067017
+            ],
+            "end": [
+              -1120.0578219737567,
+              -3200.0,
+              62.274996280670166
+            ],
+            "max_speed": 225.00000000000003,
+            "max_z": 88.27499628067017,
+            "min_capsule_half_height": 60.0,
+            "montage": null
+          },
+          {
+            "name": "jump",
+            "start": [
+              -1400.0,
+              -3200.0,
+              88.27498817443848
+            ],
+            "end": [
+              -1400.0,
+              -3200.0,
+              88.27499939690522
+            ],
+            "max_speed": 0.0,
+            "max_z": 215.7471930894922,
+            "min_capsule_half_height": 86.0,
+            "montage": null
+          },
+          {
+            "name": "hurdle",
+            "start": [
+              2730.0,
+              -800.0,
+              88.27499628067017
+            ],
+            "end": [
+              2940.7420435386184,
+              -799.9999997653338,
+              88.27499640170724
+            ],
+            "max_speed": 478.89097216511135,
+            "max_z": 147.4179235294988,
+            "min_capsule_half_height": 86.0,
+            "montage": "/Game/Characters/UEFN_Mannequin/Animations/Traversal/Catch/Hurdle/AM_M_Neutral_Traversal_Catch_Hurdle_med_stand.AM_M_Neutral_Traversal_Catch_Hurdle_med_stand",
+            "weapon_hidden_during_action": true,
+            "weapon_restored_after_action": true
+          },
+          {
+            "name": "mantle",
+            "start": [
+              4300.0,
+              -970.0,
+              88.27499628067017
+            ],
+            "end": [
+              4300.000004429945,
+              -849.998565694514,
+              188.49964999441545
+            ],
+            "max_speed": 476.28692658523056,
+            "max_z": 188.49964999441545,
+            "min_capsule_half_height": 86.0,
+            "montage": "/Game/Characters/UEFN_Mannequin/Animations/Traversal/Catch/Mantle/AM_M_Neutral_Traversal_Catch_Mantle_med_stand.AM_M_Neutral_Traversal_Catch_Mantle_med_stand",
+            "weapon_hidden_during_action": true,
+            "weapon_restored_after_action": true
+          },
+          {
+            "name": "climb",
+            "start": [
+              2700.0,
+              -1770.0,
+              88.27499628067017
+            ],
+            "end": [
+              2700.0,
+              -1644.9998626708984,
+              338.27499628067017
+            ],
+            "max_speed": 104.12309711898948,
+            "max_z": 338.27499628067017,
+            "min_capsule_half_height": 86.0,
+            "montage": "/Game/Characters/UEFN_Mannequin/Animations/Traversal/Climb/AM_M_Neutral_Traversal_Climb_Start_2_5_stand_F_Lfoot.AM_M_Neutral_Traversal_Climb_Start_2_5_stand_F_Lfoot",
+            "weapon_hidden_during_action": true,
+            "weapon_restored_after_action": true
+          },
+          {
+            "name": "vault",
+            "start": [
+              4810.0,
+              -800.0,
+              438.46249532699585
+            ],
+            "end": [
+              5328.199754847187,
+              -799.9999968015396,
+              88.27499734676456
+            ],
+            "max_speed": 472.56558431243053,
+            "max_z": 573.045137940096,
+            "min_capsule_half_height": 86.0,
+            "montage": "/Game/Characters/UEFN_Mannequin/Animations/Traversal/Catch/Vault/AM_M_Neutral_Traversal_Catch_Vault_high.AM_M_Neutral_Traversal_Catch_Vault_high",
+            "weapon_hidden_during_action": true,
+            "weapon_restored_after_action": true
+          }
+        ],
+        "input_keys": {
+          "Move": [
+            "W",
+            "S",
+            "A",
+            "D",
+            "Gamepad_Left2D"
+          ],
+          "Walk": [
+            "LeftControl",
+            "Gamepad_RightShoulder"
+          ],
+          "Sprint": [
+            "LeftShift",
+            "Gamepad_LeftShoulder"
+          ],
+          "Crouch": [
+            "C",
+            "Gamepad_FaceButton_Right"
+          ],
+          "Jump": [
+            "SpaceBar",
+            "Gamepad_FaceButton_Bottom"
+          ]
+        }
+      }
+    },
+    {
+      "script": "Scripts/Test-CrimsonNetwork.py",
+      "report": "Artifacts/CrimsonSentinel/network-validation.json",
+      "report_sha256": "3efc9f92c610b7d66d9214eedfe6aa6b187981ddb4e7937586927ae786dafa5a",
+      "recorded_utc": "2026-10-07T04:53:38.687770+00:00",
+      "scope": "Final assets: two-player listen server, four pawn views, selection/clearing, hidden driver, left shoulder, aim, attached rifle and pistol.",
+      "result": {
+        "passed": true,
+        "error": null,
+        "results": [
+          {
+            "visual": "CrimsonSentinel",
+            "roles": 4,
+            "left_muzzle_error_degrees": [
+              6.8404181859019655,
+              4.086324710097994,
+              4.061085987212068,
+              6.840380952633916
+            ],
+            "left_weapon_roll_degrees": [
+              -1.3029671918557277,
+              -0.3926751784168045,
+              -0.3584650449505965,
+              -1.302942370427583
+            ]
+          },
+          {
+            "case": "clear_override",
+            "roles": 4
+          }
+        ]
+      }
+    }
+  ],
+  "visual_inspection": [
+    "Artifacts/CrimsonSentinel/GripRight.png",
+    "Artifacts/CrimsonSentinel/GripLeft.png"
+  ],
+  "limits": [
+    "Validated in Blender and Unreal editor PIE; no packaged build or dedicated-server run in this task.",
+    "Character uses the existing shared gameplay/physics animation driver through retargeting; no facial rig or cloth simulation was added."
+  ],
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 1112,
+      "sha256": "30cd7a1abba1843861a72735b8cf8e7883e9b4378f654db40c5b5703ebf95754"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 232,
+      "sha256": "64144112bd981a4cf1c66309e5103aeab4875a0a5d93352009dced2eb15a3bbc"
+    },
+    {
+      "path": "Art/Characters/CrimsonSentinel/CrimsonSentinel.blend",
+      "bytes": 4759393,
+      "sha256": "7af64f251fee6de906546f150e1c9777395783b9b92217f6c09527c8b81dc3ca"
+    },
+    {
+      "path": "Art/Characters/CrimsonSentinel/Export/CrimsonSentinel.fbx",
+      "bytes": 4002588,
+      "sha256": "a08ab2537c0363290b14b3e67597903c67d0745f677d7eb87a26a021756b11d6"
+    },
+    {
+      "path": "Art/Characters/CrimsonSentinel/Source/CrimsonSentinel.fbx",
+      "bytes": 37227804,
+      "sha256": "8fca55f11901b7f1ff43a06a2f4f42f645fa9ee9fdb167e4616a9d3489553835"
+    },
+    {
+      "path": "Art/Characters/CrimsonSentinel/Source/CrimsonSentinel_BaseColor.png",
+      "bytes": 6994057,
+      "sha256": "854e95b04960e588f6134972a358fa3e7b1d5736344978a60e0b2e7bfc243508"
+    },
+    {
+      "path": "Art/Characters/CrimsonSentinel/Source/CrimsonSentinel_Metallic.png",
+      "bytes": 484364,
+      "sha256": "241187098d67452d62d7f0015a350a27ac2c8585b5eff2248e54c9104b48567f"
+    },
+    {
+      "path": "Art/Characters/CrimsonSentinel/Source/CrimsonSentinel_Normal.png",
+      "bytes": 5203100,
+      "sha256": "e0af23099434f3d5a8a764e99aa7b25f7d821e6b652a4d2532c44ef665ff7ba0"
+    },
+    {
+      "path": "Art/Characters/CrimsonSentinel/Source/CrimsonSentinel_Roughness.png",
+      "bytes": 1605613,
+      "sha256": "7d558cd4bf6aa183af7c49c1fc91bea951ce1c94882e6181ac8246dcd080b073"
+    },
+    {
+      "path": "Art/Characters/CrimsonSentinel/Source/SourceManifest.json",
+      "bytes": 1795,
+      "sha256": "d2dc124027c2f968dfb2bd7f815c8b57eb4c2a370b31f7553a0aed15013731b9"
+    },
+    {
+      "path": "Art/Weapons/BlackIronRifle/BlackIronRifle.blend",
+      "bytes": 1112801,
+      "sha256": "dcfd988a5c07bb6b5534e2ac7ecac12f1bfe03b7eb869de9a42d10d3c5c22c8a"
+    },
+    {
+      "path": "Art/Weapons/BlackIronRifle/Export/BlackIronRifle.fbx",
+      "bytes": 897436,
+      "sha256": "e84217069890a23c9189fa95ee3a5c2154d15adc5ffb5851188781cee626200e"
+    },
+    {
+      "path": "Art/Weapons/BlackIronRifle/Source/BlackIronRifle.fbx",
+      "bytes": 20859532,
+      "sha256": "5b0c0a096b0b9a09365d4da49d3c19bb833233df31d25429b5b4af410e3a2520"
+    },
+    {
+      "path": "Art/Weapons/BlackIronRifle/Source/BlackIronRifle_BaseColor.png",
+      "bytes": 5581934,
+      "sha256": "f3d381a09f1622df44a8ba2b2b8671580c4ca3f2e3f472ffe94d9a6c743dd252"
+    },
+    {
+      "path": "Art/Weapons/BlackIronRifle/Source/BlackIronRifle_Metallic.png",
+      "bytes": 1467260,
+      "sha256": "b557e9a7d12e05275ff58fbd3f70a46c30ebe4d1b45be6d7cceeb0092574c4cc"
+    },
+    {
+      "path": "Art/Weapons/BlackIronRifle/Source/BlackIronRifle_Normal.png",
+      "bytes": 5626247,
+      "sha256": "ab68562a0ae2761f3da38f54c25c0c2b28fb49033cd4b824d17f7a27d51b52a6"
+    },
+    {
+      "path": "Art/Weapons/BlackIronRifle/Source/BlackIronRifle_Roughness.png",
+      "bytes": 1446106,
+      "sha256": "74f5bbefc4559782dff4dff1ea4aadb438e8d40305424aeaeac542fa2649a818"
+    },
+    {
+      "path": "Art/Weapons/BlackIronRifle/Source/SourceManifest.json",
+      "bytes": 1787,
+      "sha256": "e8ad72260ee53aa3249d07dda5de9af399c80bcd3c7d6eb0327a236684cc2b63"
+    },
+    {
+      "path": "docs/CrimsonSentinel.txt",
+      "bytes": 4057,
+      "sha256": "2ed129dc18d16d0bfe1170595b7f500517cbf515c60aeacca4fceea7aeca3af5"
+    },
+    {
+      "path": "mockups/AssetSources.json",
+      "bytes": 1751,
+      "sha256": "f387f3450a012c14841aee26b81906877c217fd91177d8d335cf996f73fb0e23"
+    },
+    {
+      "path": "Scripts/Capture-CrimsonSentinel.py",
+      "bytes": 3108,
+      "sha256": "d1bf0f91703c8bb3f1f08e44f9771baaf6de3081577f3c4e56276ae6545ddf23"
+    },
+    {
+      "path": "Scripts/Export-CrimsonReferences.py",
+      "bytes": 739,
+      "sha256": "fcc0641a617a4f46a0dd8cf9b9cb7aeb01bbd62539d8984bc34e1276e17ed4f0"
+    },
+    {
+      "path": "Scripts/Import-CrimsonAssets.py",
+      "bytes": 5015,
+      "sha256": "ea7e9c323f3d9f0fb63b834f3e24fa00c148838c8c1ff784fe836bb7ebdcc764"
+    },
+    {
+      "path": "Scripts/Integrate-CrimsonSentinel.py",
+      "bytes": 7720,
+      "sha256": "4ae98d8f964bc5c17830ab4c1bb20534b386f5f7ee0eb91ef49f8772c6ee4422"
+    },
+    {
+      "path": "Scripts/Prepare-BlackIronRifle.py",
+      "bytes": 5322,
+      "sha256": "9459d55e2bbc451c5c1dff1d09d402fdfd1c3e4cbd8a48877f2a2784603078e7"
+    },
+    {
+      "path": "Scripts/Prepare-MeshySource.py",
+      "bytes": 2520,
+      "sha256": "52813b0061db922275fdf1eab8453a69127d376cd5f7d91a6ce359cf1c55c9ae"
+    },
+    {
+      "path": "Scripts/Rig-CrimsonSentinel.py",
+      "bytes": 7529,
+      "sha256": "68eae3f27fba92aeef6fed50f94528899f5259f2b2296ceece94a37f3c9d0f63"
+    },
+    {
+      "path": "Scripts/Test-CrimsonNetwork.py",
+      "bytes": 465,
+      "sha256": "68a1043f628629fd05493c77bf48d6c34c28552ec8a045fae89c1d08aad8b73c"
+    },
+    {
+      "path": "Scripts/Test-CrimsonSentinel.py",
+      "bytes": 9231,
+      "sha256": "6eca1842d0425707c8bdcc7d535055adec04e7378d92d4abce2441e4ed094e52"
+    },
+    {
+      "path": "Scripts/Test-CrimsonSlide.py",
+      "bytes": 4505,
+      "sha256": "bbd60ab0855ad7ec80c31456d67721fe96680ce344c6f9c5ae114f41a3fc56b4"
+    },
+    {
+      "path": "Scripts/Test-VisualOverrides-Network.py",
+      "bytes": 7939,
+      "sha256": "9eca815bdd9d8a8d1d9fa6082bd3974384dd059df1a8dc3c700617ba3cdcc1dc"
+    },
+    {
+      "path": "Scripts/Test-VisualOverrides.py",
+      "bytes": 8821,
+      "sha256": "afbf5fe046d414d88b253a7a87489e8ef20e5fd952c6f8d51b209e42749eae0e"
+    },
+    {
+      "path": "Scripts/Validate-CrimsonRig.py",
+      "bytes": 3606,
+      "sha256": "ca18b78d660a846337aaae74fe1dc25ca94344e3b3c6861677821df9a8fbb1a3"
+    },
+    {
+      "path": "src/Config/DefaultEngine.ini",
+      "bytes": 39345,
+      "sha256": "c753ea0208d1e8d546e5bef6849d95528e1bb845e67c3fd17a4b8ae4cf7af76e"
+    },
+    {
+      "path": "src/Config/DefaultGame.ini",
+      "bytes": 13498,
+      "sha256": "01c8a64e04fe07b899a21af57bf27e0f479be54ce91f756c4bfe6f4f01007352"
+    },
+    {
+      "path": "src/Content/Baseline/Animations/ABP_BaselineVisualRetarget.uasset",
+      "bytes": 286458,
+      "sha256": "7a1ff1cf683b8f9820d75a3418406d5747b786e554d35c3d2976a5def3619c90"
+    },
+    {
+      "path": "src/Content/Blueprints/GM_Sandbox.uasset",
+      "bytes": 203345,
+      "sha256": "0e52bee76096b0e209ed5eb1d6fa57f6b86bffcc2163d5f9da4cd8518978e01c"
+    },
+    {
+      "path": "src/Content/Crusader/Characters/CrimsonSentinel/BP_CrimsonSentinel.uasset",
+      "bytes": 53190,
+      "sha256": "2d02562d98ac72167d325b779bf0b03208cd75f96305a4100c25d8d57b0c9d40"
+    },
+    {
+      "path": "src/Content/Crusader/Characters/CrimsonSentinel/CrimsonSentinel.uasset",
+      "bytes": 18054131,
+      "sha256": "ccb903232b2e574e81cba66d0f1443f66c80f5d15d83d744d5c8459e4ceae899"
+    },
+    {
+      "path": "src/Content/Crusader/Characters/CrimsonSentinel/CrimsonSentinel_Skeleton.uasset",
+      "bytes": 20185,
+      "sha256": "854a22a706cf4b5ed3849327fc40d3081b5c9e78c00ee8320815ccb02634a11e"
+    },
+    {
+      "path": "src/Content/Crusader/Characters/CrimsonSentinel/IK_CrimsonSentinel.uasset",
+      "bytes": 142644,
+      "sha256": "e4b7a3e32149b0cf31d2a10c2782e072e24deb6ece75ca91417e694b9c38ee64"
+    },
+    {
+      "path": "src/Content/Crusader/Characters/CrimsonSentinel/M_CrimsonSentinel.uasset",
+      "bytes": 14891,
+      "sha256": "5cac3b8dc00a08a52bc4006b70b33e1913f565607e3881525569d975171bf364"
+    },
+    {
+      "path": "src/Content/Crusader/Characters/CrimsonSentinel/RTG_Manny_to_CrimsonSentinel.uasset",
+      "bytes": 38630,
+      "sha256": "2bd4cee145f4d2fadf7d8b41bde7f8833fc4bb430ac75873e57dff44e4812def"
+    },
+    {
+      "path": "src/Content/Crusader/Characters/CrimsonSentinel/Textures/CrimsonSentinel_BaseColor.uasset",
+      "bytes": 7408120,
+      "sha256": "d446f6fc10181f3694d8665ecd7d6dd9c1b3132168c2feffd635d4e7fa2d0c4e"
+    },
+    {
+      "path": "src/Content/Crusader/Characters/CrimsonSentinel/Textures/CrimsonSentinel_Metallic.uasset",
+      "bytes": 442847,
+      "sha256": "b88537bf73b48d6f23aca5defe3e39b39a6e4c8239069dfbd733c2513d554e11"
+    },
+    {
+      "path": "src/Content/Crusader/Characters/CrimsonSentinel/Textures/CrimsonSentinel_Normal.uasset",
+      "bytes": 4935801,
+      "sha256": "9f6e91362ef265cde6284aac01a8da457b9057db36f17877e209dc3e8eda6e58"
+    },
+    {
+      "path": "src/Content/Crusader/Characters/CrimsonSentinel/Textures/CrimsonSentinel_Roughness.uasset",
+      "bytes": 1511831,
+      "sha256": "d64fc27d14b1eeedde122e0c06ca632bb0d224f71fafefd73a5ab9c8919e0cfc"
+    },
+    {
+      "path": "src/Content/Crusader/Weapons/BlackIronRifle/B_BlackIronRifle.uasset",
+      "bytes": 20830,
+      "sha256": "59fca5993ab0cc024cc63173a54c1fb914eea520968c1ec16fe0c50f8b33158f"
+    },
+    {
+      "path": "src/Content/Crusader/Weapons/BlackIronRifle/BlackIronRifle.uasset",
+      "bytes": 6939019,
+      "sha256": "5444df9b9475f86d5892183c81a341b5ab6ce2b766c077d3f7f001f3b5e98dd1"
+    },
+    {
+      "path": "src/Content/Crusader/Weapons/BlackIronRifle/BlackIronRifle_Skeleton.uasset",
+      "bytes": 13305,
+      "sha256": "3faffa0b0bf334f06e437acbd8fa4029cec7245a906fbdd098b282923aab7f96"
+    },
+    {
+      "path": "src/Content/Crusader/Weapons/BlackIronRifle/ID_BlackIronRifle.uasset",
+      "bytes": 8315,
+      "sha256": "38972bdac36ffc24ea5bdf6ad4922961d037ca46295187d53ccd6019022ce8a4"
+    },
+    {
+      "path": "src/Content/Crusader/Weapons/BlackIronRifle/M_BlackIronRifle.uasset",
+      "bytes": 14105,
+      "sha256": "892bca3ce53d969dc4d70c6df5aa33ddf88eb16463cf7689be951cf911948fc2"
+    },
+    {
+      "path": "src/Content/Crusader/Weapons/BlackIronRifle/Textures/BlackIronRifle_BaseColor.uasset",
+      "bytes": 5324117,
+      "sha256": "438461c78da82fd1d5c1b109e619bb10cbf746b5523e30c261e565551749f02b"
+    },
+    {
+      "path": "src/Content/Crusader/Weapons/BlackIronRifle/Textures/BlackIronRifle_Metallic.uasset",
+      "bytes": 1387045,
+      "sha256": "413672e5b50ab0da8bc24e9d3cef50b7f8602ddef64132a64cb6a9fd4159d614"
+    },
+    {
+      "path": "src/Content/Crusader/Weapons/BlackIronRifle/Textures/BlackIronRifle_Normal.uasset",
+      "bytes": 5530172,
+      "sha256": "97e7b44c9d8901575a1fd50e3d1ed27b5a98e4231fad6383ead7552cbff2d856"
+    },
+    {
+      "path": "src/Content/Crusader/Weapons/BlackIronRifle/Textures/BlackIronRifle_Roughness.uasset",
+      "bytes": 1334580,
+      "sha256": "5d692fc4c2cc31eb3bc9e1783561c4d40102ed740653b6e81ba6d59e01ad4a66"
+    },
+    {
+      "path": "src/Content/Crusader/Weapons/BlackIronRifle/UI/W_AmmoCounter_BlackIronRifle.uasset",
+      "bytes": 119217,
+      "sha256": "ef6d8b5e381685d4e0157717948863c19e82cd6ab17529cb16d679d64bf08c86"
+    },
+    {
+      "path": "src/Content/Crusader/Weapons/BlackIronRifle/UI/W_Reticle_BlackIronRifle.uasset",
+      "bytes": 239692,
+      "sha256": "6f272025b79fa3e2432b2ae158320ba52cea7c042fee2a99a5e5a1b8c16fdece"
+    },
+    {
+      "path": "src/Content/Crusader/Weapons/BlackIronRifle/WID_BlackIronRifle.uasset",
+      "bytes": 5701,
+      "sha256": "2a5dec4aa030fd8016b68fdf6cbe238f528ee38c1255fa2729ab5cb81f95a983"
+    },
+    {
+      "path": "src/Content/Maps/L_TraversalGym.umap",
+      "bytes": 1449735,
+      "sha256": "ebf7453ad2e0ab718213d19b08e169684eee50403f94745db3e8d6fd2b229027"
+    }
+  ]
+}

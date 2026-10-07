@@ -1,0 +1,245 @@
+{
+  "created_utc": "2026-10-07T01:16:40.997813+00:00",
+  "engine": "5.8.3",
+  "passed": true,
+  "passed_cases": 108,
+  "build": "Artifacts/CombatShoulderBuild6.log",
+  "aggregate_report": "Artifacts/CombatTests/combat-regressions.json",
+  "changes": [
+    "Fatal Lyra damage enters passive death ragdoll, cancels actions and drops all carried weapons with their ammunition.",
+    "Players and practice targets respawn after three seconds. Old-avatar cleanup precedes restart; per-pawn weapon blocking tags reset on the persistent ASC.",
+    "Death during paired actions releases the surviving partner. Dead characters cannot use ordinary ragdoll recovery.",
+    "Q / Y / Triangle switches camera shoulder and weapon hand over 0.35 seconds, with replicated choice and server validation.",
+    "Mirror carry, aim, firing, equip and reload animation branches for the left hand, including compatible weapon curves; attach the weapon to the corresponding hand socket.",
+    "Preserve camera collision checks, slide aiming, locomotion and traversal weapon hiding.",
+    "Stop reapplying passive Physics Control modifiers after setup; sleep the whole grounded ragdoll after a quiet interval while preserving simulation and impulse wake-up."
+  ],
+  "tests": [
+    {
+      "script": "Test-CombatDeath.py",
+      "report": "Artifacts/CombatTests/combat-death.json",
+      "cases": 10,
+      "passed": true,
+      "recorded_utc": "2026-10-07T01:09:24.059253+00:00"
+    },
+    {
+      "script": "Test-CombatShoulder-Network.py",
+      "report": "Artifacts/CombatTests/combat-shoulder-network.json",
+      "cases": 5,
+      "passed": true,
+      "recorded_utc": "2026-10-07T01:09:47.723658+00:00"
+    },
+    {
+      "script": "Test-ShoulderSwap.py",
+      "report": "Artifacts/CombatTests/shoulder-swap.json",
+      "cases": 36,
+      "passed": true,
+      "recorded_utc": "2026-10-07T01:11:05.669008+00:00"
+    },
+    {
+      "script": "Test-GetUpRegressions.py",
+      "report": "Artifacts/PhysicalTests/getup-regressions.json",
+      "cases": 30,
+      "passed": true,
+      "recorded_utc": "2026-10-07T01:13:20.959313+00:00"
+    },
+    {
+      "script": "Test-Baseline-Aim.py",
+      "report": "Artifacts/AimTests/aim-and-slide.json",
+      "cases": 24,
+      "passed": true,
+      "recorded_utc": "2026-10-07T01:14:18.890559+00:00"
+    },
+    {
+      "script": "Test-PhysicalInteractions-Network.py",
+      "report": "Artifacts/PhysicalTests/network-physical.json",
+      "cases": 3,
+      "passed": true,
+      "recorded_utc": "2026-10-07T01:14:48.560892+00:00"
+    }
+  ],
+  "asset_checks": {
+    "blueprints_without_errors": 16,
+    "shoulder_keys": [
+      "Q",
+      "Gamepad_FaceButton_Top"
+    ],
+    "duplicate_shoulder_mappings": 0
+  },
+  "weapon_measurements": {
+    "max_muzzle_error_degrees": 7.878107235998341,
+    "max_grip_error_cm": 0.0,
+    "hand_weapon_angle_cases": 30,
+    "fire_reload_cases": 6,
+    "left_slide_aim_cases": 24
+  },
+  "death_results": [
+    {
+      "case": "real_rifle_damage_and_fatal_ragdoll",
+      "health": 0.0,
+      "time_to_kill": 1.7537555016577242
+    },
+    {
+      "case": "training_target_respawns_with_full_health",
+      "passed": true
+    },
+    {
+      "case": "player_combat_death",
+      "drops": 3
+    },
+    {
+      "case": "clean_player_respawn",
+      "cycle": 1,
+      "health": 100.0
+    },
+    {
+      "case": "player_death_while_ragdolled",
+      "drops": 0
+    },
+    {
+      "case": "clean_player_respawn",
+      "cycle": 2,
+      "health": 100.0
+    },
+    {
+      "case": "player_death_during_getup",
+      "drops": 0
+    },
+    {
+      "case": "clean_player_respawn",
+      "cycle": 3,
+      "health": 100.0
+    },
+    {
+      "case": "player_death_during_paired_action",
+      "drops": 0
+    },
+    {
+      "case": "clean_player_respawn",
+      "cycle": 4,
+      "health": 100.0
+    }
+  ],
+  "combat_network_results": [
+    {
+      "case": "host_and_client_left_hand_replication",
+      "roles": 4
+    },
+    {
+      "case": "client_kills_host",
+      "fatal_ragdoll_views": 2
+    },
+    {
+      "case": "replicated_clean_respawn",
+      "victim": "host"
+    },
+    {
+      "case": "host_kills_client",
+      "fatal_ragdoll_views": 2
+    },
+    {
+      "case": "replicated_clean_respawn",
+      "victim": "client"
+    }
+  ],
+  "settling_results": [
+    {
+      "case": "ground_level_fall",
+      "passed": true,
+      "max_settled_linear_cm_s": 0.0,
+      "max_settled_angular_deg_s": 0.0,
+      "settled_rotation_drift_degrees": 4.517745362860617e-06,
+      "settled_drift_cm": 0.0,
+      "verified_settled_after_seconds": 5.167414702475071
+    },
+    {
+      "case": "low_ceiling_blocks_get_up",
+      "passed": true
+    },
+    {
+      "case": "settled_body_reacts_to_impulse",
+      "passed": true,
+      "displacement_cm": 55.67485303708043
+    },
+    {
+      "case": "ground_level_fall_recovery",
+      "passed": true
+    },
+    {
+      "case": "high_speed_fall",
+      "passed": true,
+      "max_settled_linear_cm_s": 0.0,
+      "max_settled_angular_deg_s": 0.0,
+      "settled_rotation_drift_degrees": 3.4150945850063755e-06,
+      "settled_drift_cm": 0.0,
+      "verified_settled_after_seconds": 5.117016799747944
+    },
+    {
+      "case": "high_speed_fall_recovery",
+      "passed": true
+    }
+  ],
+  "screenshots": [
+    "Artifacts/CombatTests/rifle-right.png",
+    "Artifacts/CombatTests/rifle-left.png"
+  ],
+  "source_sha256": {
+    "src/Source/LyraGame/Baseline/BaselineDeathAbility.h": "f3e6073fc261fce06729442e3da99ba036486d334632a91268bc04686d8ddcaf",
+    "src/Source/LyraGame/Baseline/BaselineDeathAbility.cpp": "eb480980fb71ab08df7fba22ade3b14538b949c58e328a5a76f86ec9978ff624",
+    "src/Source/LyraGame/Baseline/BaselineEquipment.h": "51658e8f8caaf8c615871abc8c4dfcd7342132d68424035c9f6c92d951821bc1",
+    "src/Source/LyraGame/Baseline/BaselineEquipment.cpp": "bbee81eae2dc85c058a0283fbe766b0f8f77c5524b29d0acd22753b675b81ef6",
+    "src/Source/LyraGame/Baseline/BaselinePhysicalInteraction.h": "e93f2749ae62b06ccc3b888fab144e0ea6aca234026a3dc07ebea312316346f1",
+    "src/Source/LyraGame/Baseline/BaselinePhysicalInteraction.cpp": "ab4ccd2ddb338b6d3a4f38c89e437f5d8731d28723c2fd7944feb213bd2dfcad",
+    "src/Source/LyraGame/Crusader/CRTraversalCharacter.h": "77022a7915d15de8a747d5d398cf87046d2ab6132deefc0ce58d9be494b5f28d",
+    "src/Source/LyraGame/Crusader/CRTraversalCharacter.cpp": "6860acb2b8317bd0fe06b852105ac3918e90f188967dbfd55f4afd1ce7ae9964",
+    "src/Source/LyraEditor/Crusader/CRBlueprintTools.h": "1202cb30acddfb808e7ac38c2153e36a3de6dd94f67ff2315cc8581990f03b92",
+    "src/Source/LyraEditor/Crusader/CRBlueprintTools.cpp": "6bae42d2d7458ecf25c1aea534f56423d5b82d28b2855413b1a26212a8cffc1b",
+    "Scripts/Extend-CombatShoulder.py": "321f0ddb3e1b800decbf9612ec2d086094f59b3e4a28d9b532f4752f816454f4",
+    "Scripts/Test-CombatDeath.py": "445790d57bb546957b3a1f1edfb9adaf3009f0283ff7099507c64ad53bbbe487",
+    "Scripts/Test-CombatShoulder-Network.py": "0215202f36f17c26dc9bee97deb0e1e6b7cd7cf2524efbca34657ef188a793b4",
+    "Scripts/Test-ShoulderSwap.py": "d5a7c7c26bea173d743841944c8a1feb9b9e28aee4af062a082eaf670d835d76",
+    "Scripts/Test-CombatShoulder-Regressions.py": "7df49765975bef006a516b03709c44bd1dc530fac4fca9a7dc5bdaea97c77155",
+    "Scripts/Test-Baseline-Aim.py": "aeb40febe1726d86dd28daaa564e1e241bddbdf3c9b528fe55d9a7b44a7c7487",
+    "Scripts/Test-RagdollSettling.py": "2981b0238920d2fe7fa58a5f3c8edfcd9b9d60d4ee5f4cf1172407574f102802",
+    "Scripts/Test-PhysicalInteractions-Network.py": "46b6c28b3e6365541f5102583e4edc5efb77556937b0ee92028f43fd928d0ff8",
+    "src/Content/Baseline/Animations/ABP_BaselineManny.uasset": "e456585ba454569531c576e3053fd1fdef7b139fc36bca2e5407d7420e3f5a86",
+    "src/Content/Baseline/Animations/MDT_WeaponHands.uasset": "2c8907ff1073fd95143f14c76aec71fe2976deef9a0009b781c9996f3ba83003",
+    "src/Content/Baseline/Input/IA_Shoulder.uasset": "60e9349339a1cbb0b402d5bf10205d7f049e81d548dac790239f1df613c2d0c3",
+    "src/Content/Baseline/Input/IMC_Baseline.uasset": "a7c6f3815e9a39c4510e6bbb4b5aaf502690ae9746d0d1e97bc6ff631ae068d6",
+    "src/Content/Crusader/System/AbilitySet_CRTraversal.uasset": "12d7514b1ccc84530c9a5a135df3fc4b3a8dc49f2d88e55d72e99044a2b22fda",
+    "src/Content/Blueprints/SandboxCharacter_CMC.uasset": "e21219bdd2c24b527ee58d174773cb62ad44f1dedfb32624efd6a86eedfdb615",
+    "src/Content/Blueprints/SandboxCharacter_CMC_ABP.uasset": "b6185e206ef4df1c14db2726ba57d8888aa308537f500d7199d955aa53865d31",
+    "src/Content/Crusader/Characters/B_CRTraversalPawn.uasset": "55772db35f48d1a5008bf292ab02c86eb75a32aee9395d964386eae03a7d8b38",
+    "src/Content/Baseline/Characters/B_TrainingPartner.uasset": "ac83968fc55de4e4c41d3e191ecae0042e5e6e433f02b7a8ba0a01335879480c",
+    "src/Content/Baseline/Weapons/Pistol/GA_Weapon_AutoReload.uasset": "482310df16269139dfc5e2e948e09e3b3c98ca67c7fe9a34527f612dc78b09d0",
+    "src/Content/Baseline/Weapons/Pistol/GA_Weapon_Fire_Pistol.uasset": "a8908457bbd6bd53ecc8a58f0bb7a92dbfccfe5b3e55c8f5a387d2860a708c5d",
+    "src/Content/Baseline/Weapons/Pistol/GA_Weapon_Reload_Pistol.uasset": "368b33f87559f4ee8f2f127262c8344742c8311b34db055fb10ddd89f76a51aa",
+    "src/Content/Baseline/Weapons/Rifle/GA_Weapon_AutoReload.uasset": "7eca36aea8c7bcefa2a7911f22de7ef9501bbb92068605826d4667228933033f",
+    "src/Content/Baseline/Weapons/Rifle/GA_Weapon_Fire_Rifle_Auto.uasset": "9919b265264a90ad68b1a69438a9c73a32fef383b3c216e85e21a0ca11c3f258",
+    "src/Content/Baseline/Weapons/Rifle/GA_Weapon_Reload_Rifle.uasset": "b47e85a39e29feb4721809ab6edf771b1d1bfd74757f5470837fa7738040f703",
+    "src/Content/Baseline/Weapons/Rifle/GE_Damage_RifleAuto.uasset": "46c4e4e491621a0c2d14e0baf139f1283e57b2b9918567736dc10467d681cddc",
+    "src/Content/Baseline/Weapons/Shotgun/GA_Weapon_AutoReload.uasset": "aa0bdacf032d8596a5a839cfb9b69df1cf3912088305abc7022dd111531ed48b",
+    "src/Content/Baseline/Weapons/Shotgun/GA_Weapon_Fire_Shotgun.uasset": "f971e2de27672f66792a4f8f845013f62806ed687a1ce4794b5848b78811a055",
+    "src/Content/Baseline/Weapons/Shotgun/GA_Weapon_Reload_Shotgun.uasset": "aab3ac0e3d2acc3c2bbfc9b6bbab9df764af3a19acbee3d760c33a33c17bd11d",
+    "src/Content/Baseline/Weapons/Shotgun/GE_Damage_Shotgun.uasset": "8c8b84344cd404215558018562348eca9a6fec9d21df0a3ee1618057b3853352"
+  },
+  "validation_notes": [
+    "All six suites passed sequentially in fresh play sessions on the final build and saved assets. The 30-case get-up suite includes continuity, settling, paired actions, boundaries, parkour and automatic recovery.",
+    "The aim/slide suite explicitly starts on the left shoulder. The shoulder suite covers both hands for rifle, pistol and shotgun. Both shoulder screenshots were inspected.",
+    "Network combat uses mapped weapon input, including firing a recovered pistol after host respawn. Player teams are temporarily opposed only for that test.",
+    "Intermediate regressions exposed residual ragdoll jitter, stale hands-busy state after respawn, and cleanup/restart timer ordering. Final code and reports supersede those failed iterations.",
+    "Shoulder setup removes prior mappings before authoring the two keys, making repeated setup idempotent.",
+    "No Blueprint errors, mirror-curve warnings, missing pose-history bone warnings or tick-cycle warnings were observed in final checks. Existing engine/sample warnings, including Pixel Streaming target-window startup errors, remain.",
+    "Older manifests retain historical snapshots; shared Artifacts report paths now contain the latest runs.",
+    "The editor was left in a fresh standalone gym with a healthy idle player on the right shoulder and two healthy practice targets."
+  ],
+  "limits": [
+    "Network checks use two-player listen-server PIE without injected latency or packet loss.",
+    "Ragdoll bones simulate locally with server pelvis corrections; full bone poses are not replicated.",
+    "Packaged builds, dedicated servers and the packaged performance soak were not tested."
+  ],
+  "visual_override_followup": {
+    "manifest": "resources/VisualOverrideValidation.json",
+    "note": "The later follow-up corrects left-hand weapon roll (not measured by the original shoulder suite), restores widget visual overrides and validates recovery clock timing. Shared per-test reports now contain the latest runs."
+  }
+}

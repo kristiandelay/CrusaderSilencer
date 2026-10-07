@@ -1,0 +1,698 @@
+{
+  "created_utc": "2026-10-07T05:20:51.392072+00:00",
+  "engine": "5.8.3-58210709+++UE5+Release-5.8",
+  "blender": "5.2.2 LTS",
+  "passed": true,
+  "replacements": {
+    "Pistol": "FuturisticPistol",
+    "Shotgun": "TitanBreaker"
+  },
+  "rigs": [
+    {
+      "name": "FuturisticPistol",
+      "kind": "Pistol",
+      "length": 0.31,
+      "grip": [
+        1.17,
+        0,
+        0.43
+      ],
+      "muzzle": [
+        -1.68,
+        0,
+        1.46
+      ],
+      "eject": [
+        0.6,
+        -0.16,
+        1.4
+      ],
+      "triangles": 14000,
+      "source_triangles": 563854,
+      "game_triangles": 14000,
+      "vertices": 7231,
+      "source_scale": 0.09197076083040011,
+      "muzzle_grip_cm": [
+        26.211666107177734,
+        -0.0,
+        9.47298812866211
+      ],
+      "eject_grip_cm": [
+        5.242332935333252,
+        1.4715322256088257,
+        8.921163558959961
+      ],
+      "section_vertices": {
+        "Grip": 5544,
+        "Magazine": 262,
+        "Slide": 1425
+      },
+      "unweighted_vertices": 0,
+      "cross_bone_triangles": 0
+    },
+    {
+      "name": "TitanBreaker",
+      "kind": "Shotgun",
+      "length": 0.68,
+      "grip": [
+        1.97,
+        0,
+        0.44
+      ],
+      "muzzle": [
+        -2.58,
+        0,
+        1.35
+      ],
+      "eject": [
+        0.6,
+        -0.22,
+        1.3
+      ],
+      "triangles": 22000,
+      "source_triangles": 542770,
+      "game_triangles": 22000,
+      "vertices": 11147,
+      "source_scale": 0.13161571322118007,
+      "muzzle_grip_cm": [
+        59.88515090942383,
+        -0.0,
+        11.977030754089355
+      ],
+      "eject_grip_cm": [
+        18.031352996826172,
+        2.895545482635498,
+        11.318950653076172
+      ],
+      "section_vertices": {
+        "Grip": 10101,
+        "Magazine": 346,
+        "Bolt": 700
+      },
+      "unweighted_vertices": 0,
+      "cross_bone_triangles": 0
+    }
+  ],
+  "content_validation": {
+    "checked": 24,
+    "valid": 24,
+    "invalid": 0,
+    "warnings": 0,
+    "report": "Artifacts/WeaponReplacements/asset-validation.txt",
+    "sha256": "b20e346708b9095601bd89f7be195dd7181145f4b339883c6210d1631b0d2641"
+  },
+  "tests": [
+    {
+      "report": "Artifacts/WeaponReplacements/gameplay-validation.json",
+      "script": "Scripts/Test-PistolShotgun.py",
+      "recorded_utc": "2026-10-07T05:16:10.554885+00:00",
+      "sha256": "6affd0d1a10566676e48abcf2287111d5ed1d7c6682a7ed70b79e606f743f0fd",
+      "result": {
+        "passed": true,
+        "error": null,
+        "results": [
+          {
+            "case": "pickup_material_animation_scale",
+            "weapon": "FuturisticPistol"
+          },
+          {
+            "case": "aim_and_grip",
+            "weapon": "FuturisticPistol",
+            "left": false,
+            "angle": [
+              0,
+              0
+            ],
+            "muzzle_error_degrees": 5.20665714272662,
+            "roll_degrees": 1.2995903568277518,
+            "hand_target_error_cm": 1.801347791993048
+          },
+          {
+            "case": "aim_and_grip",
+            "weapon": "FuturisticPistol",
+            "left": false,
+            "angle": [
+              40,
+              35
+            ],
+            "muzzle_error_degrees": 7.114992192613465,
+            "roll_degrees": -12.10818163229112,
+            "hand_target_error_cm": 4.548092432356044
+          },
+          {
+            "case": "aim_and_grip",
+            "weapon": "FuturisticPistol",
+            "left": false,
+            "angle": [
+              -40,
+              -35
+            ],
+            "muzzle_error_degrees": 5.38171309736704,
+            "roll_degrees": -5.0917613651270885,
+            "hand_target_error_cm": 1.195825344909733
+          },
+          {
+            "case": "fire_reload_moving_parts",
+            "weapon": "FuturisticPistol",
+            "left": false,
+            "rounds_fired": 1,
+            "fire_part_travel_cm": 4.549514004839657,
+            "magazine_travel_cm": 166.20283349881723
+          },
+          {
+            "case": "aim_and_grip",
+            "weapon": "FuturisticPistol",
+            "left": true,
+            "angle": [
+              0,
+              0
+            ],
+            "muzzle_error_degrees": 4.644439477159367,
+            "roll_degrees": -0.25148236740257923,
+            "hand_target_error_cm": 2.395170998984042
+          },
+          {
+            "case": "aim_and_grip",
+            "weapon": "FuturisticPistol",
+            "left": true,
+            "angle": [
+              40,
+              35
+            ],
+            "muzzle_error_degrees": 6.81506985222435,
+            "roll_degrees": 10.48729839033473,
+            "hand_target_error_cm": 4.799335776401654
+          },
+          {
+            "case": "aim_and_grip",
+            "weapon": "FuturisticPistol",
+            "left": true,
+            "angle": [
+              -40,
+              -35
+            ],
+            "muzzle_error_degrees": 5.097732203843875,
+            "roll_degrees": 4.8615525063420115,
+            "hand_target_error_cm": 1.35567821098974
+          },
+          {
+            "case": "fire_reload_moving_parts",
+            "weapon": "FuturisticPistol",
+            "left": true,
+            "rounds_fired": 1,
+            "fire_part_travel_cm": 4.703334941740705,
+            "magazine_travel_cm": 167.13777997604848
+          },
+          {
+            "case": "pickup_material_animation_scale",
+            "weapon": "TitanBreaker"
+          },
+          {
+            "case": "aim_and_grip",
+            "weapon": "TitanBreaker",
+            "left": false,
+            "angle": [
+              0,
+              0
+            ],
+            "muzzle_error_degrees": 5.662906240824186,
+            "roll_degrees": -0.6595080648588074,
+            "hand_target_error_cm": 1.308351323165625
+          },
+          {
+            "case": "aim_and_grip",
+            "weapon": "TitanBreaker",
+            "left": false,
+            "angle": [
+              40,
+              35
+            ],
+            "muzzle_error_degrees": 10.653602305508983,
+            "roll_degrees": 16.951224712528692,
+            "hand_target_error_cm": 2.8279889299195347
+          },
+          {
+            "case": "aim_and_grip",
+            "weapon": "TitanBreaker",
+            "left": false,
+            "angle": [
+              -40,
+              -35
+            ],
+            "muzzle_error_degrees": 5.714627264323406,
+            "roll_degrees": -7.753175645956669,
+            "hand_target_error_cm": 1.1402216698434626
+          },
+          {
+            "case": "fire_reload_moving_parts",
+            "weapon": "TitanBreaker",
+            "left": false,
+            "rounds_fired": 1,
+            "fire_part_travel_cm": 5.093529397635518,
+            "magazine_travel_cm": 97.7853985287535
+          },
+          {
+            "case": "aim_and_grip",
+            "weapon": "TitanBreaker",
+            "left": true,
+            "angle": [
+              0,
+              0
+            ],
+            "muzzle_error_degrees": 5.360466469490093,
+            "roll_degrees": 1.109549028089437,
+            "hand_target_error_cm": 1.474252595190899
+          },
+          {
+            "case": "aim_and_grip",
+            "weapon": "TitanBreaker",
+            "left": true,
+            "angle": [
+              40,
+              35
+            ],
+            "muzzle_error_degrees": 3.7272392901423554,
+            "roll_degrees": 12.533342117740368,
+            "hand_target_error_cm": 1.7428130025492086
+          },
+          {
+            "case": "aim_and_grip",
+            "weapon": "TitanBreaker",
+            "left": true,
+            "angle": [
+              -40,
+              -35
+            ],
+            "muzzle_error_degrees": 3.837964317230065,
+            "roll_degrees": 2.5734305037425593,
+            "hand_target_error_cm": 1.3106609583947282
+          },
+          {
+            "case": "fire_reload_moving_parts",
+            "weapon": "TitanBreaker",
+            "left": true,
+            "rounds_fired": 1,
+            "fire_part_travel_cm": 6.810655664762869,
+            "magazine_travel_cm": 98.53174494999735
+          }
+        ]
+      }
+    },
+    {
+      "report": "Artifacts/WeaponReplacements/network-validation.json",
+      "script": "Scripts/Test-PistolShotgun-Network.py",
+      "recorded_utc": "2026-10-07T05:18:38.191452+00:00",
+      "sha256": "13a6ad1d428e4cc61ae59450d4b7f68e678b15cea09597041091d5132ce5f659",
+      "result": {
+        "passed": true,
+        "error": null,
+        "results": [
+          {
+            "visual": "CrimsonSentinel",
+            "roles": 4,
+            "left_muzzle_error_degrees": [
+              6.818254655321895,
+              4.107501185868607,
+              3.9858499294706085,
+              6.818217425450604
+            ],
+            "left_weapon_roll_degrees": [
+              -1.3384785340285883,
+              -0.2787405015620016,
+              -0.38851325956051075,
+              -1.3384540210027855
+            ]
+          },
+          {
+            "case": "clear_override",
+            "roles": 4
+          },
+          {
+            "case": "replicated_model_material_animation",
+            "role": 0,
+            "weapon": "FuturisticPistol"
+          },
+          {
+            "case": "replicated_model_material_animation",
+            "role": 1,
+            "weapon": "TitanBreaker"
+          },
+          {
+            "case": "replicated_model_material_animation",
+            "role": 2,
+            "weapon": "TitanBreaker"
+          },
+          {
+            "case": "replicated_model_material_animation",
+            "role": 3,
+            "weapon": "FuturisticPistol"
+          }
+        ]
+      }
+    },
+    {
+      "report": "Artifacts/WeaponReplacements/mesh-validation.json",
+      "script": null,
+      "recorded_utc": "2026-10-07T05:20:08.128973+00:00",
+      "sha256": "3c7ce4ae9ec4102470e9dd212783d0484594bbdb7b3001a9d64c5ba04fed7070",
+      "result": {
+        "passed": true,
+        "engine": "5.8.3-58210709+++UE5+Release-5.8",
+        "meshes": [
+          {
+            "name": "FuturisticPistol",
+            "kind": "Pistol",
+            "mesh": "/Game/Crusader/Weapons/FuturisticPistol/FuturisticPistol.FuturisticPistol",
+            "skeleton": "/Game/Crusader/Weapons/FuturisticPistol/FuturisticPistol_Skeleton.FuturisticPistol_Skeleton",
+            "lod_count": 3
+          },
+          {
+            "name": "TitanBreaker",
+            "kind": "Shotgun",
+            "mesh": "/Game/Crusader/Weapons/TitanBreaker/TitanBreaker.TitanBreaker",
+            "skeleton": "/Game/Crusader/Weapons/TitanBreaker/TitanBreaker_Skeleton.TitanBreaker_Skeleton",
+            "lod_count": 3
+          }
+        ]
+      }
+    }
+  ],
+  "visual_inspection": [
+    "Artifacts/WeaponReplacements/FuturisticPistol-Grip-left.png",
+    "Artifacts/WeaponReplacements/FuturisticPistol-Grip-right.png",
+    "Artifacts/WeaponReplacements/TitanBreaker-Grip-left.png",
+    "Artifacts/WeaponReplacements/TitanBreaker-Grip-right.png"
+  ],
+  "scope": "Replaced the two baseline weapon models and pickup presentation, preserving their IDs, abilities, damage and ammo. Validated both shoulders on Crimson Sentinel and two-player listen-server replication.",
+  "limits": [
+    "Validated in Unreal editor PIE; no packaged build or dedicated-server run in this task.",
+    "Moving mesh sections reuse existing Lyra weapon animations; no new character reload montages were authored."
+  ],
+  "files": [
+    {
+      "path": "Art/Weapons/FuturisticPistol/Export/FuturisticPistol.fbx",
+      "bytes": 601564,
+      "sha256": "7b369eb58a93ac75d6bf85c8206a0eadde2a6b256f6f29c37abd35fad311e73e"
+    },
+    {
+      "path": "Art/Weapons/FuturisticPistol/FuturisticPistol.blend",
+      "bytes": 12143436,
+      "sha256": "86c37751576ffd909d731c81dc6431082390be82009de2651276f63f26ea6319"
+    },
+    {
+      "path": "Art/Weapons/FuturisticPistol/Source/FuturisticPistol.fbx",
+      "bytes": 32932860,
+      "sha256": "501cc37f4862bad5a86308139b4ed5fb26521f5c7c4328c619d03a59d3f7f829"
+    },
+    {
+      "path": "Art/Weapons/FuturisticPistol/Source/FuturisticPistol_BaseColor.png",
+      "bytes": 6090136,
+      "sha256": "2ecc39faf456a155fb214a3402ed242867f7e12ea1dd62d9133b71c68edd0017"
+    },
+    {
+      "path": "Art/Weapons/FuturisticPistol/Source/FuturisticPistol_Metallic.png",
+      "bytes": 1730652,
+      "sha256": "4932a225d5af86efc2e7030993722e7a1aa905e0acab913167972f7ea974b946"
+    },
+    {
+      "path": "Art/Weapons/FuturisticPistol/Source/FuturisticPistol_Normal.png",
+      "bytes": 5918218,
+      "sha256": "a1d49671655bdbd99e52fbaeb7b04d88dc366bdb34210b7e7f3ac871f796243f"
+    },
+    {
+      "path": "Art/Weapons/FuturisticPistol/Source/FuturisticPistol_Roughness.png",
+      "bytes": 1682002,
+      "sha256": "8d30e893faf3e8dbce6f304a3336c04cb7f916c06f787d060b47e632c754bd2a"
+    },
+    {
+      "path": "Art/Weapons/FuturisticPistol/Source/SourceManifest.json",
+      "bytes": 1814,
+      "sha256": "f2b0e514b93b27db3092112c6a04c04b408728f097572bce29466e3f86de3c62"
+    },
+    {
+      "path": "Art/Weapons/TitanBreaker/Export/TitanBreaker.fbx",
+      "bytes": 917612,
+      "sha256": "28db6e2a5e07efd89cf8b6b2d6f17b918f1928a9389995632e2b8665ad8a6df9"
+    },
+    {
+      "path": "Art/Weapons/TitanBreaker/Source/SourceManifest.json",
+      "bytes": 1738,
+      "sha256": "7f52f614582c529915f31b81445813010924b763e7de9b27cda690c09fd594fd"
+    },
+    {
+      "path": "Art/Weapons/TitanBreaker/Source/TitanBreaker.fbx",
+      "bytes": 31793852,
+      "sha256": "51ce61f4103afd37a31300894eed9ed9e3c4ec9f940bb0d89c65e5456614f8e7"
+    },
+    {
+      "path": "Art/Weapons/TitanBreaker/Source/TitanBreaker_BaseColor.png",
+      "bytes": 5830134,
+      "sha256": "025fdc425b3754c4088da8780ea208b4d5d5bc0bf07101149d63941d4feb0187"
+    },
+    {
+      "path": "Art/Weapons/TitanBreaker/Source/TitanBreaker_Metallic.png",
+      "bytes": 1672169,
+      "sha256": "e0810a9ce35c4edda2ed4e65526f769f59dc8e11e96366d678e39a07405105e1"
+    },
+    {
+      "path": "Art/Weapons/TitanBreaker/Source/TitanBreaker_Normal.png",
+      "bytes": 5995398,
+      "sha256": "20e4d2afdba05728c722ed4e8428b6f989f044c242888e4e947689d869e563a6"
+    },
+    {
+      "path": "Art/Weapons/TitanBreaker/Source/TitanBreaker_Roughness.png",
+      "bytes": 1512932,
+      "sha256": "8e64f798e8292beb4a7ff3bab5d41954068272d5292bab5e298a52c421d2b712"
+    },
+    {
+      "path": "Art/Weapons/TitanBreaker/TitanBreaker.blend",
+      "bytes": 12469071,
+      "sha256": "2fc2c7828c38424d629a8cc6e0d24647191c39d7aaa911a1c04c192190d8c4bd"
+    },
+    {
+      "path": "docs/WeaponModels.txt",
+      "bytes": 2043,
+      "sha256": "76564b0a0c9a01082616a1a77e3acc408823cbe7cf7b60168e4025fa9ecbe42c"
+    },
+    {
+      "path": "mockups/AssetSources.json",
+      "bytes": 2323,
+      "sha256": "35e049732aef18b5a58f932173f19da7768115511a8ee043757a2dc71b2e50a5"
+    },
+    {
+      "path": "mockups/Weapons/FuturisticPistol.zip",
+      "bytes": 48355312,
+      "sha256": "7d0f18fcd05f3e0829b560d98134a649f950d5eb131b2a27239ab07dcbb51f26"
+    },
+    {
+      "path": "mockups/Weapons/TitanBreaker.zip",
+      "bytes": 46805849,
+      "sha256": "30dd5b522f0c05056c23dff2070512cb054edb8493f7071eb95a479991bec62a"
+    },
+    {
+      "path": "Scripts/Capture-WeaponReplacements.py",
+      "bytes": 3468,
+      "sha256": "66b5b6fca63a46ce8f543db66441acb03d5815dffa4f2a5ffca1ca43f2fcbdb6"
+    },
+    {
+      "path": "Scripts/Export-PistolShotgunReferences.py",
+      "bytes": 829,
+      "sha256": "c58aae54416520e60f37c8f4c0100720b309df31c3b18bded9b83c900a5f9edb"
+    },
+    {
+      "path": "Scripts/Import-PistolShotgun.py",
+      "bytes": 8167,
+      "sha256": "f79791a3be639dcf19e1a84e98c663cdcfaca4e87b15181718bfd5a9dea9eeb7"
+    },
+    {
+      "path": "Scripts/Inspect-MeshyWeapons.py",
+      "bytes": 3495,
+      "sha256": "2ad04552140669697754c480545087895118935e9545f9b12be39d73edf9e174"
+    },
+    {
+      "path": "Scripts/Prepare-PistolShotgun.py",
+      "bytes": 5840,
+      "sha256": "4a62c85e800dd660e09a62754165d64724a225ffd317724d43e8b1f7b3b1d91c"
+    },
+    {
+      "path": "Scripts/Test-Baseline-Aim.py",
+      "bytes": 10094,
+      "sha256": "03f6ac473aebad4a26c2e7af9190f559869f76e3ec5501adb7f7bd265bc1cfc4"
+    },
+    {
+      "path": "Scripts/Test-Baseline-Export.py",
+      "bytes": 2238,
+      "sha256": "3a26b1f7b198505659693d7e5a55ca3c36f7bc11841232e709da75de9bb87068"
+    },
+    {
+      "path": "Scripts/Test-Baseline-NetworkAim.py",
+      "bytes": 6679,
+      "sha256": "dc47d7257f7520408232342a52e56cc3fbb14228c038a18bd0fd18a78a4f7f15"
+    },
+    {
+      "path": "Scripts/Test-Baseline.py",
+      "bytes": 15220,
+      "sha256": "ac2fb07b94cb5719ede1e59d1b19695b513b9dd4519e38a1723cc567660da6a7"
+    },
+    {
+      "path": "Scripts/Test-CombatDeath.py",
+      "bytes": 11510,
+      "sha256": "70db6ebb2aa464af9800218502730185100d92c60d302c4102dfb33ce8405f04"
+    },
+    {
+      "path": "Scripts/Test-CombatShoulder-Network.py",
+      "bytes": 9496,
+      "sha256": "1e5d68083134e1b8500a7a51c95d087c80f8d0c81de6396ef22b342812e3a4df"
+    },
+    {
+      "path": "Scripts/Test-PistolShotgun-Network.py",
+      "bytes": 1619,
+      "sha256": "f5c27df0da7c1feebc4001c0881e4f96821912c3c0b3c530e2fe78908711343d"
+    },
+    {
+      "path": "Scripts/Test-PistolShotgun.py",
+      "bytes": 8475,
+      "sha256": "59a42492ff91643f533f2565afba3fe6e4d06f6a7dc5ceef4052f5f105b14a29"
+    },
+    {
+      "path": "Scripts/Test-ShoulderSwap.py",
+      "bytes": 8750,
+      "sha256": "adb8cb40724df3f034a1c38c9179eab6dc2a54be25568b88dc7449f4cb72f82b"
+    },
+    {
+      "path": "Scripts/Test-VisualOverrides-Network.py",
+      "bytes": 8038,
+      "sha256": "a1c7dcc993e30a152547b6a82e766d5f9af146bc1e8ab9c118f89e4c76d8b42e"
+    },
+    {
+      "path": "src/Config/DefaultGame.ini",
+      "bytes": 13599,
+      "sha256": "950cd5d294998a605221c0ab4535a664876fb175d1f91f0c068fafa787e1bac9"
+    },
+    {
+      "path": "src/Content/Baseline/Weapons/Pistol/ID_Pistol.uasset",
+      "bytes": 8180,
+      "sha256": "eda688fa98973dda6bc17e7980b09bc75be7d73c8f8125d7e9de6e16388ff896"
+    },
+    {
+      "path": "src/Content/Baseline/Weapons/Pistol/WID_Pistol.uasset",
+      "bytes": 5577,
+      "sha256": "2d72dc38320bde56e643afe3a78376207e5e5b33b18929217e38a95d00ba0ca6"
+    },
+    {
+      "path": "src/Content/Baseline/Weapons/Shotgun/ID_Shotgun.uasset",
+      "bytes": 8156,
+      "sha256": "01a9181cc135d5d1a1f979ba6c99f59411872e3bffc53c41afbf382f8a2d2344"
+    },
+    {
+      "path": "src/Content/Baseline/Weapons/Shotgun/WID_Shotgun.uasset",
+      "bytes": 5588,
+      "sha256": "efd9f7953fd581dd6ecab6065eb2fc18bf71c97fa62b8df7fc76d02d0e4b0da1"
+    },
+    {
+      "path": "src/Content/Crusader/Weapons/FuturisticPistol/B_FuturisticPistol.uasset",
+      "bytes": 21053,
+      "sha256": "7160653ab5e18a86b7fa95b7ea9f3b74ed236ba52602cfd71c312e202cd1f03e"
+    },
+    {
+      "path": "src/Content/Crusader/Weapons/FuturisticPistol/FuturisticPistol.uasset",
+      "bytes": 4697905,
+      "sha256": "f0c48d20f173e098092af6ac53bdc175561e0546c183e30aa75aad07961814b9"
+    },
+    {
+      "path": "src/Content/Crusader/Weapons/FuturisticPistol/FuturisticPistol_Skeleton.uasset",
+      "bytes": 5030,
+      "sha256": "c04debb712668bc27a5d15a414a849cc78e7da321f5c5b5bb6d3e879ec2e9421"
+    },
+    {
+      "path": "src/Content/Crusader/Weapons/FuturisticPistol/M_FuturisticPistol.uasset",
+      "bytes": 13518,
+      "sha256": "f475bd82ec1a2171a6315368b008a2d69189b5d08f5201b520c902954ef23748"
+    },
+    {
+      "path": "src/Content/Crusader/Weapons/FuturisticPistol/Textures/FuturisticPistol_BaseColor.uasset",
+      "bytes": 5823545,
+      "sha256": "29853b02395e0a67f29990d06b416f37c6a8deb7ccf0d1efc9fd49bc1929b4d1"
+    },
+    {
+      "path": "src/Content/Crusader/Weapons/FuturisticPistol/Textures/FuturisticPistol_Metallic.uasset",
+      "bytes": 1661076,
+      "sha256": "2b041d045c6386e8b68e904f24f68acbf066891c21ebfd89981e85ba6be3108a"
+    },
+    {
+      "path": "src/Content/Crusader/Weapons/FuturisticPistol/Textures/FuturisticPistol_Normal.uasset",
+      "bytes": 5852106,
+      "sha256": "7cad0781dce39c5c0b9bb1a65af47ca019e30a49d4735e4e0fb15e275f6c8eaa"
+    },
+    {
+      "path": "src/Content/Crusader/Weapons/FuturisticPistol/Textures/FuturisticPistol_Roughness.uasset",
+      "bytes": 1590004,
+      "sha256": "fe60ae357a408eca1763e95f1d057569c5f750d72528b0309ed70e074ded632d"
+    },
+    {
+      "path": "src/Content/Crusader/Weapons/FuturisticPistol/UI/W_AmmoCounter_FuturisticPistol.uasset",
+      "bytes": 119025,
+      "sha256": "41ad53e001f6d9b9ec3e961a51e415dc77a45dd6786a2d837c60c7149638d00b"
+    },
+    {
+      "path": "src/Content/Crusader/Weapons/FuturisticPistol/UI/W_Reticle_FuturisticPistol.uasset",
+      "bytes": 241546,
+      "sha256": "f60af0c1c83057d4ee5bd9095db4aa913697f5978644585de08572e17f43a708"
+    },
+    {
+      "path": "src/Content/Crusader/Weapons/TitanBreaker/B_TitanBreaker.uasset",
+      "bytes": 20732,
+      "sha256": "26bb86151439b42312b7f4a74266541a7ad0fa30ced017defb457ea5a7d40b98"
+    },
+    {
+      "path": "src/Content/Crusader/Weapons/TitanBreaker/M_TitanBreaker.uasset",
+      "bytes": 12883,
+      "sha256": "35caa3fe16a4838a71270180b3fe2ac3a319f92c7b811060cc62bf3c9bc1cff8"
+    },
+    {
+      "path": "src/Content/Crusader/Weapons/TitanBreaker/Textures/TitanBreaker_BaseColor.uasset",
+      "bytes": 5592092,
+      "sha256": "f455a2c49725a2989892ace9e28b222ba3e5e0c2ed9c17a62a7501d975b27d82"
+    },
+    {
+      "path": "src/Content/Crusader/Weapons/TitanBreaker/Textures/TitanBreaker_Metallic.uasset",
+      "bytes": 1604818,
+      "sha256": "0b6d8a606d5a49ebafad70744b3972e81115e863eea3cf76cae92677d5d9c9a5"
+    },
+    {
+      "path": "src/Content/Crusader/Weapons/TitanBreaker/Textures/TitanBreaker_Normal.uasset",
+      "bytes": 5958991,
+      "sha256": "a65d89603a33209fa75e3c337c5134bcd0cd4272966a0f257b8a9e327da709cc"
+    },
+    {
+      "path": "src/Content/Crusader/Weapons/TitanBreaker/Textures/TitanBreaker_Roughness.uasset",
+      "bytes": 1412022,
+      "sha256": "4e1a78deaca833e4d595149dc24bbcfafa1d5759c6b142a680b655124c878caa"
+    },
+    {
+      "path": "src/Content/Crusader/Weapons/TitanBreaker/TitanBreaker.uasset",
+      "bytes": 7349274,
+      "sha256": "7c059b4c0693a28116cd2da28d880272d8c114a049bbbf207d8772f5755f8383"
+    },
+    {
+      "path": "src/Content/Crusader/Weapons/TitanBreaker/TitanBreaker_Skeleton.uasset",
+      "bytes": 5447,
+      "sha256": "075a7be2a34b753adf46fb714c2bfa9ff683ec3921ca65a4ffcd95543c3e3abf"
+    },
+    {
+      "path": "src/Content/Crusader/Weapons/TitanBreaker/UI/W_AmmoCounter_TitanBreaker.uasset",
+      "bytes": 118965,
+      "sha256": "ceead5c9ce433418237492f1cda340d593a678f68a6f1ea6f9a43e256457c0eb"
+    },
+    {
+      "path": "src/Content/Crusader/Weapons/TitanBreaker/UI/W_Reticle_TitanBreaker.uasset",
+      "bytes": 263993,
+      "sha256": "6a938671da2866632ce66d2dde51701266cace8fe27fed79b080b951066576c2"
+    },
+    {
+      "path": "src/Content/Maps/L_TraversalGym.umap",
+      "bytes": 1450195,
+      "sha256": "04a22cb08a7ab12a75233a9efd955f0eb3dd3740df3fed8be4a06a914782b6ad"
+    }
+  ]
+}

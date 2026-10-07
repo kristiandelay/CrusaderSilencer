@@ -1,0 +1,39 @@
+{
+  "name": "BlackIronRifle",
+  "archive": "BlackIronRifle.zip",
+  "archive_sha256": "2520f86eaa303a4973666e7f8f659ed620cb1e540828ae25d68d79550f0f4c4b",
+  "files": [
+    {
+      "original": "Meshy_AI_Black_Iron_Rifle_1006134731_texture_fbx/Meshy_AI_Black_Iron_Rifle_1006134731_texture.fbx",
+      "file": "BlackIronRifle.fbx",
+      "bytes": 20859532,
+      "sha256": "5b0c0a096b0b9a09365d4da49d3c19bb833233df31d25429b5b4af410e3a2520"
+    },
+    {
+      "original": "Meshy_AI_Black_Iron_Rifle_1006134731_texture_fbx/Meshy_AI_Black_Iron_Rifle_1006134731_texture.png",
+      "file": "BlackIronRifle_BaseColor.png",
+      "bytes": 5581934,
+      "sha256": "f3d381a09f1622df44a8ba2b2b8671580c4ca3f2e3f472ffe94d9a6c743dd252"
+    },
+    {
+      "original": "Meshy_AI_Black_Iron_Rifle_1006134731_texture_fbx/Meshy_AI_Black_Iron_Rifle_1006134731_texture_metallic.png",
+      "file": "BlackIronRifle_Metallic.png",
+      "bytes": 1467260,
+      "sha256": "b557e9a7d12e05275ff58fbd3f70a46c30ebe4d1b45be6d7cceeb0092574c4cc"
+    },
+    {
+      "original": "Meshy_AI_Black_Iron_Rifle_1006134731_texture_fbx/Meshy_AI_Black_Iron_Rifle_1006134731_texture_normal.png",
+      "file": "BlackIronRifle_Normal.png",
+      "bytes": 5626247,
+      "sha256": "ab68562a0ae2761f3da38f54c25c0c2b28fb49033cd4b824d17f7a27d51b52a6"
+    },
+    {
+      "original": "Meshy_AI_Black_Iron_Rifle_1006134731_texture_fbx/Meshy_AI_Black_Iron_Rifle_1006134731_texture_roughness.png",
+      "file": "BlackIronRifle_Roughness.png",
+      "bytes": 1446106,
+      "sha256": "74f5bbefc4559782dff4dff1ea4aadb438e8d40305424aeaeac542fa2649a818"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Black_Iron_Rifle_1006134731_texture_fbx.zip",
+  "archive_path": "mockups/Weapons/BlackIronRifle.zip"
+}

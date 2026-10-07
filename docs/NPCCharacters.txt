@@ -1,0 +1,37 @@
+Crusader Silencer guards and NPC visuals
+
+Game Animation Widget > Visual Override now includes:
+  7  ObsidianSentinel
+  8  RegalCommander
+  9  TheSteadfastOfficer
+ 10  UrbanTrailblazer
+CrimsonSentinel remains the default at index 6. The catalog contains 11 visuals.
+These entries change appearance while keeping the existing pawn, combat,
+motion matching, traversal, shoulder swapping and physical animation driver.
+
+Every model has its own fitted UE-named 64-bone skeleton, 30 finger joints,
+eight metacarpals, full-body IK rig and Manny retargeter. LOD0 is reduced to
+85,000 triangles and Unreal provides three LODs. Weights are normalized to
+four influences with no unweighted vertices. Root and bone scales are one.
+Arm retargeting preserves the shared weapon driver's hand targets.
+
+Editable Blender files and export FBXs are in Art/Characters/<Name>/.
+The Blender file retains an unassigned GripCheck action for inspecting every
+finger. Source/ preserves the supplied FBX and Name_Type.png PBR textures;
+SourceManifest.json and mockups/AssetSources.json record original names/hashes.
+The rig is for body and finger deformation; facial/cloth simulation is separate.
+
+Rebuild:
+  python Scripts/Prepare-NPCCharacters.py
+  Optional names after the command rebuild only those characters.
+  In the editor bridge, with Play stopped:
+    python Scripts/Send-Editor.py Scripts/Import-NPCAssets.py
+    python Scripts/Send-Editor.py Scripts/Integrate-NPCCharacters.py
+
+Validation:
+  Validate-NPCRig.py checks all ten fingers in Blender.
+  Test-NPCVisuals.py uses real widget clicks, six aim poses per character,
+  both shoulders, firing, reload and clearing a visual during reload.
+  Test-NPCVisuals-Network.py checks all four host/client pawn views.
+  Detailed captures/reports: Artifacts/NPCCharacters/.
+  Durable validation and file hashes: resources/NPCCharacterValidation.json.

@@ -1,0 +1,39 @@
+{
+  "name": "RegalCommander",
+  "archive": "RegalCommander.zip",
+  "archive_sha256": "ce464017d83a66dd002b82155d2c5fa1bb3f6366cb757cc6729fe7c7bf4eb527",
+  "files": [
+    {
+      "original": "Meshy_AI_Regal_Commander_1006134909_texture_fbx/Meshy_AI_Regal_Commander_1006134909_texture.fbx",
+      "file": "RegalCommander.fbx",
+      "bytes": 31504636,
+      "sha256": "72db95216b6e93b5f2ad68d1b493b3ffacbbc47ee7dc2085f33b577d60fc8652"
+    },
+    {
+      "original": "Meshy_AI_Regal_Commander_1006134909_texture_fbx/Meshy_AI_Regal_Commander_1006134909_texture.png",
+      "file": "RegalCommander_BaseColor.png",
+      "bytes": 6742705,
+      "sha256": "56164ec6518d962478e530707cf6e92f60b5b5cd2bb23372b38a61bb96c3ed22"
+    },
+    {
+      "original": "Meshy_AI_Regal_Commander_1006134909_texture_fbx/Meshy_AI_Regal_Commander_1006134909_texture_metallic.png",
+      "file": "RegalCommander_Metallic.png",
+      "bytes": 52994,
+      "sha256": "7e6b77fbbdeb2b1b8e6ed14ab3a351b0e56c8455fdc61ceb84dca2f09a35da63"
+    },
+    {
+      "original": "Meshy_AI_Regal_Commander_1006134909_texture_fbx/Meshy_AI_Regal_Commander_1006134909_texture_normal.png",
+      "file": "RegalCommander_Normal.png",
+      "bytes": 5374388,
+      "sha256": "333d75c50c8b5375ca72d0aa33d94fe4bfaf7dfde400cbe7f8625802288d172d"
+    },
+    {
+      "original": "Meshy_AI_Regal_Commander_1006134909_texture_fbx/Meshy_AI_Regal_Commander_1006134909_texture_roughness.png",
+      "file": "RegalCommander_Roughness.png",
+      "bytes": 1237242,
+      "sha256": "1c8789072c621e7b67f8c3d10c7b85d8022bc60b44ece91795de8e8471515bd0"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Regal_Commander_1006134909_texture_fbx.zip",
+  "archive_path": "mockups/Guards/RegalCommander.zip"
+}

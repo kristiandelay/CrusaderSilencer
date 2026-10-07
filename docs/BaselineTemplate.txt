@@ -1,0 +1,246 @@
+Lyra + GASP reusable movement and equipment baseline
+
+Open Open-Traversal.cmd with Unreal Engine 5.8.3 installed. Press Play in
+L_TraversalGym. Rifle, pistol and shotgun pickups are beside the player start.
+
+Controls
+  WASD / mouse: move / look
+  Shift: sprint; Ctrl: walk
+  C: crouch, or start a momentum slide at sprint speed; C again exits
+  Space: jump / contextual hurdle, mantle, climb or vault
+  E: pick up the weapon named by the on-screen prompt
+  G: drop the active weapon into the world
+  Tab: cycle the three inventory slots
+  Left mouse: fire; hold right mouse: raise weapon and aim; R: reload
+  Q: switch shoulder and weapon hand
+  F: shove; V: tackle; B: takedown (face a nearby, ready character)
+  T: enter ragdoll / request get-up; Space also requests get-up while ragdolled
+  Gamepad: left/right sticks move/look, left shoulder sprint, right shoulder walk,
+  bottom face button jump/traverse, right face button crouch/slide, left face
+  button pick up, left special button drop, D-pad up cycle, D-pad down reload,
+  right trigger fire, left trigger aim.
+  Top face button (Y / Triangle): switch shoulder and weapon hand.
+  Gamepad physical actions: right stick click shove, D-pad left tackle,
+  left stick click takedown, D-pad right ragdoll/get-up.
+
+Physics and character interactions
+The playable Lyra/CMC pawn now has a Physics Control component using the UE 5.8
+sample's PCA_SandboxCharacter profile. Passive ragdolls simulate the source UEFN
+mesh and retarget to the visible character. Fast falls enter ragdoll automatically.
+The camera follows the body. Get-up requires settled motion, walkable ground
+and room for the standing capsule; Pose Search selects one of four get-up
+montages, blending from a snapshot of the physical pose.
+Pose history includes both hands so the get-up search sees their grounded positions.
+Recovery aligns the chosen animation's pelvis to the grounded body and rebases
+the snapshot into the upright mesh without moving the bones. A smooth 0.45-second
+blend hands off to the get-up, bypassing locomotion root offsets and foot planting.
+The blend follows elapsed game time so extra network animation updates cannot
+advance it several times in one frame.
+
+F/V/B request a server-authoritative multi-character motion match. The server
+validates range, facing, visibility and both participants' availability, then
+queries the sample's shove/tackle/takedown databases with Attacker and Victim
+roles. Both animations use the shared match and the sample's motion-warping
+alignment. The victim ragdolls after shoves/takedowns; tackles ragdoll both.
+Input cannot start another traversal/slide or interaction during these actions.
+Weapons are hidden and fire/reload are blocked until the action/get-up finishes.
+
+Two training partners near the starting pickups automatically request get-up
+after three seconds. They remain available for repeated practice. The normal
+locomotion profile is kinematic. During ragdoll, Physics Control and physics-asset
+pose motors and the flail loop are disabled. Rotational damping on all limbs helps
+gravity, collisions and joint limits settle the body. After a quiet grounded
+interval, the whole ragdoll can sleep without disabling simulation; impacts wake
+it normally. Passive body modifiers stop ticking after their initial application.
+Normal damping is restored when recovery starts.
+The server replicates action selections, alignment and recovery. Ragdoll limbs
+simulate locally, with server pelvis corrections; poses are not deterministic
+across machines. High-latency/loss and dedicated-server qualification are separate.
+
+Combat death
+Weapons damage the actual gameplay pawn through Lyra's health/ability system.
+Players share team 0; training partners use team 1. Friendly players do not
+damage each other in this gym. Fatal damage cancels abilities and held weapon
+inputs, stops movement and enters permanent ragdoll. T/Space cannot revive a dead
+character. Death during a paired action releases the surviving participant.
+After three seconds, players respawn through Lyra with full health and cleared
+action state. Their PlayerState and ability system remain the same. Every carried
+weapon drops once with its current ammunition; the new pawn starts unarmed.
+Training partners are replaced at their original stations after the same delay.
+The HUD shows current health and a respawning message while dead.
+
+Shoulder and hand switching
+Q or the top gamepad face button moves the camera to the other shoulder and
+transfers the weapon between weapon_r and weapon_l over 0.35 seconds. The visible
+weapon animation branches mirror carry, aim offsets, firing, equip and reload
+poses for the left hand; locomotion and ragdoll/get-up retain their original pose.
+The left grip also corrects the mirrored wrist's roll so weapon sights stay up.
+Firing pauses during the hand transfer and can resume when it finishes. Traversal,
+physical interactions and death block switching. Camera obstruction checks stay
+active throughout the move. Shoulder choice replicates to the other players;
+a newly spawned pawn starts on the right shoulder.
+
+Visual overrides
+Open /Game/Widgets/GameAnimationWidget as an Editor Utility Widget. Its Visual
+Override buttons select Echo, Twinblast, Kellan, Manny, Quinn or the UE4 mannequin
+during Play. Click the selected button again to return to the baseline Manny.
+The selection also applies when the next play session starts. This debug setting
+is shared by the sample's override managers; it is not a per-player skin menu.
+In multiplayer the server selects the visual class and replicates it to clients.
+
+Appearance changes preserve the gameplay pawn, inventory and weapon animation
+instance. A persistent Manny mesh evaluates carry, aim, hand switching and weapon
+montages, including reload notifies. Selected Manny/Quinn meshes follow its pose;
+other characters retarget it with Manny-source IK assets. Equipment attaches to
+the selected body's hand, accounting for different hand bone axes. Face, hair
+and clothing continue to follow the character's own modular setup. The hidden
+animation source keeps ticking, including during physics and recovery.
+
+After native builds and the other baseline authoring extensions, run
+Scripts/Extend-VisualOverrides.py through Send-Editor.py with Play stopped. It
+connects the sample manager to the visual catalog under Lyra's game mode and
+authors the shared retarget setup. Test-VisualOverrides.py exercises the actual
+widget buttons, both aiming hands, firing and changing appearance during reload.
+Test-VisualOverrides-Network.py checks all six choices on host/client pawn views.
+Test-VisualOverride-Regressions.py runs these checks, Kellan get-up continuity,
+Twinblast network interactions and the full combat/movement regression suite.
+See resources/VisualOverrideValidation.json for the tested build and regressions.
+
+Slide behavior
+The BaselineCharacterMovement component derives from Lyra's movement component.
+It integrates existing momentum with slope gravity, drag and limited steering,
+using CMC's walking floor sweeps, collision response and crouch clearance. Input
+does not continuously accelerate a flat-ground slide. Low speed ends the slide
+in crouch; releasing crouch respects overhead clearance. Falling or traversal
+ends the slide. The source slide animation has root motion disabled so velocity
+is controlled by the movement component. Custom saved moves carry the slide
+request for CMC network prediction, and the presentation state is replicated.
+
+Defaults are editable on the inherited character movement component:
+  Minimum starting speed 550 cm/s; entry boost 100 cm/s; exit speed 180 cm/s
+  Maximum speed 1,400 cm/s; braking 180 cm/s^2; drag 0.15/s
+  Gravity scale multiplier 1.5; steering limit 40 degrees/s
+The added slide test lane is centered around X=-700, Y=-4600; its ramp is 15 degrees.
+
+Equipment behavior
+The player controller owns Lyra inventory, quickbar and weapon-state components.
+The pawn owns one Lyra equipment manager. Items equip real Lyra ranged weapon
+instances, actor meshes and fire/reload ability sets on the PlayerState ASC.
+Pickup requests validate distance and world visibility on the server. A full
+three-slot inventory rejects another pickup. Dropping removes the equipped
+abilities/actor and creates a physical world pickup with a snapshot of every item
+stat stack. Picking it up restores those stats, including an empty magazine.
+The world pickup can outlive the controller that dropped it.
+
+Manny's animation graph retargets the GASP source pose, then layers Lyra weapon
+poses, pitch/yaw aim offsets and weapon montages above the spine. The upper body
+follows the aiming direction while the lower body keeps its traversal/slide pose.
+The weapon rests in a separate looping arm carry when neither aiming nor firing.
+Only the arms are layered in local space, so GASP keeps its normal head, neck,
+spine, breathing and movement. Relaxed carry does not use a downward aim offset.
+Aiming blends into the full upper-body weapon pose; firing raises it promptly
+and keeps it ready for 0.65 seconds after release. Aiming/firing also drives
+GASP's foot-turn animations, starting at 35 degrees of facing difference. The
+weapon overlay follows the animated root, with standing torso yaw limited to
+65 degrees while the feet catch up (85 degrees during a slide).
+Sliding permits aiming and firing. During climbing, vaulting, mantling and other
+parkour actions the weapon is hidden and firing is blocked; it reappears with its
+equip animation when the action finishes. Weapon GAS montages use the visible
+Manny mesh; traversal still uses the GASP source mesh. ShooterCore's assets and cues are
+used directly; Lyra's feature registration supplies the cue paths, while this
+experience supplies its own component and input setup. PlayerState creates the
+single health/combat attribute-set pair; the baseline grants no duplicate sets.
+
+Create another project
+  python Scripts/New-BaselineProject.py C:/Development/Game/MyNextProject --name "My Next Project"
+
+The destination must be new or empty. The exporter copies independent source
+and asset files, creates a fresh project ID, and excludes binaries, caches,
+Saved data, Git history and the original game's root design/art documents.
+In the new folder, run Scripts/Build-Editor.ps1 with PowerShell's process-local
+ExecutionPolicy Bypass, then Open-Traversal.cmd. Install Git LFS before adding
+the copied Unreal assets to a new repository.
+
+Existing Lyra module and CRTraversal integration identifiers remain stable so
+serialized asset references survive copies. Generic new runtime code lives in
+src/Source/LyraGame/Baseline and assets in /Game/Baseline. Engine and original
+sample versions are recorded in resources/IntegrationLock.json.
+
+Build and maintain
+  powershell -ExecutionPolicy Bypass -File Scripts/Build-Editor.ps1
+  powershell -ExecutionPolicy Bypass -File Scripts/Open-Traversal.ps1 -Automation
+
+Scripts/Extend-Baseline.py authors the baseline assets and gym fixtures using
+the editor. For a clean sample bootstrap in the original workspace, run the
+existing bootstrap/configuration/gym authoring steps first, then this extension.
+Run Scripts/Extend-PhysicalInteractions.py afterward to configure Physics Control,
+the source animation recovery blend, standalone get-up database, actions and
+training partners. It is safe to rerun with PIE stopped.
+Then run Scripts/Extend-CombatShoulder.py to configure mirrored weapon animation,
+shoulder inputs, the death ability and combat restrictions. Run it after rerunning
+either earlier extension so their copied weapon assets retain the combat setup.
+Finally run Scripts/Extend-VisualOverrides.py to configure the widget's visual
+catalog fallback, persistent animation source and selected-character retargets.
+It is not necessary to bootstrap samples again in an exported project.
+
+Validation
+resources/CombatShoulderValidation.json records combat death and hand switching.
+Test-CombatShoulder-Regressions.py starts with PIE stopped, then runs independent
+sessions for both weapon hands, combat death/restarts, the get-up/parkour suite,
+left-handed slide shooting and two-player combat/shoulder replication.
+Test-CombatDeath.py fires the real rifle at a practice target and applies Lyra
+damage effects to check deaths during locomotion, ragdoll, get-up and paired actions.
+Test-ShoulderSwap.py checks camera side, actual weapon attachment, muzzle direction
+and upright orientation, plus ammunition conservation through mirrored reloads.
+resources/PhysicalInteractionValidation.json records the UE 5.8 integration.
+Test-PhysicalInteractions.py checks mapped paired actions, passive physics bodies,
+ragdoll/get-up phases, collision restoration and weapon hiding/restoration.
+Test-PhysicalBoundaries.py follows it in the same single-player session and checks
+range, facing, obstruction, dying targets and a fast fall. Neither test uses a
+replacement movement pawn. Test-PhysicalInteractions-Network.py runs separately
+in two-player listen-server PIE and checks requests from both owners, remote
+animation phases, get-ups and server pelvis corrections.
+Test-RagdollSettling.py measures a full quiet second of limb speeds and drift
+within four to eight seconds after ground-level and high-speed falls. It checks
+Physics Control and physics-asset motors, impulses and low-ceiling rejection, and
+verifies T/Space get-up and restored weapons/collision. The passive-ragdoll fix
+and its targeted regressions are recorded in resources/RagdollSettlingValidation.json.
+Test-GetUpContinuity.py measures visible/source bone movement at recovery start,
+ground clearance and the return to locomotion across four landing setups.
+Test-AutoGetUpContinuity.py checks the training partner's automatic recovery,
+including the post-physics update order of the source and visible meshes.
+Test-GetUpRegressions.py runs continuity, settling, paired actions, boundaries,
+the traversal gym and automatic recovery in a fresh standalone PIE session.
+resources/GetUpValidation.json records the recovery correction and its regressions.
+Run Test-TraversalGym.py in a fresh session, or before toggle-based walk tests;
+Test-Baseline-Carry.py intentionally changes the source character's walk toggle.
+Its comparison reference now evaluates after physics, matching the visible mesh.
+
+Test-Baseline.py runs mapped-input equipment and slide checks in an active PIE
+session. Test-TraversalGym.py verifies locomotion and four traversal types.
+Test-GymCamera.py verifies look and camera retraction. Test-GymRestarts.py runs
+ten Play/Stop cycles starting with PIE stopped. Run one script at a time through
+Send-Editor.py; result files and captures are saved in Artifacts for that copy.
+The validation manifest records exactly which scenarios have been exercised.
+Test-Baseline-Aim.py starts with fresh one-player PIE and checks rendered muzzle
+alignment and mapped aiming/firing during slides for all three weapon types.
+The aim/slide update and parkour hide/restore results are recorded separately in
+resources/AimSlideValidation.json. Test-Baseline-NetworkAim.py checks the visible
+aim direction on an observing client in two-player listen-server PIE.
+Test-Baseline-Stance.py checks lowered carry, firing without aim, release, and
+standing/crouched turns with measured foot lifts and bounded torso rotation.
+resources/WeaponStanceValidation.json records the stance update and its
+regression checks, including replicated aim press/release from host and client.
+Test-Baseline-Carry.py compares relaxed head/spine rotations to an unmodified
+retarget during idle, look, walk and crouch. RelaxedCarryValidation.json records
+the carry correction, superseding the downward aiming pose in the stance update.
+Test-Baseline-Boundaries.py follows Test-Baseline.py in the same session and
+checks full inventories, distance/visibility rejection, walls and low ceilings.
+Test-Baseline-Network.py requires two-player listen-server PIE and the helper
+functions loaded by Test-Baseline.py. It checks client equipment transactions,
+fire and reload replication. Network movement under latency/loss, dedicated
+servers and packaged builds still need downstream qualification.
+
+Project-specific combat balance, opponents, mission rules and custom character
+art belong in downstream projects. The GDD's remaining game-mode rules and
+packaged performance acceptance gates are separate from this baseline setup.

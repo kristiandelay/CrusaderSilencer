@@ -1,0 +1,40 @@
+Crusader Silencer weapon models
+
+Current replacements
+  Rifle: Black Iron Rifle
+  Pistol: Futuristic Pistol
+  Shotgun: Titan Breaker
+
+Futuristic Pistol and Titan Breaker replace the original models in the existing
+pistol and shotgun equipment definitions. Pick them up with E at their stations
+in L_TraversalGym. Existing ammo, damage, firing, reload, and inventory behavior
+remain attached to those weapon types. Their names also appear in the HUD.
+
+Editable source
+  Art/Weapons/FuturisticPistol/FuturisticPistol.blend
+  Art/Weapons/TitanBreaker/TitanBreaker.blend
+  Export/ in each folder contains the prepared skeletal FBX.
+  Source/ contains the original geometry and Name_Type.png PBR textures.
+  SourceManifest.json and mockups/AssetSources.json preserve source names/hashes.
+
+Rig and rendering
+  Futuristic Pistol: 31 cm, 14,000 triangles at LOD0.
+  Titan Breaker: 68 cm, 22,000 triangles at LOD0.
+  Each uses three Unreal LODs and its existing Lyra weapon animation hierarchy.
+  Moving sections have separate boundary vertices to prevent stretched faces.
+  Muzzle and shell-ejection sockets are fitted to the new geometry.
+  Unreal assets are under /Game/Crusader/Weapons/FuturisticPistol and TitanBreaker.
+  Baseline ID_Pistol/WID_Pistol and ID_Shotgun/WID_Shotgun now use these assets.
+  Weapon HUD widget copies use the existing scoped CrusaderWeaponUI domain.
+
+Rebuild (stop PIE and run the editor bridge first)
+  python Scripts/Send-Editor.py Scripts/Export-PistolShotgunReferences.py
+  Blender --background --python Scripts/Prepare-PistolShotgun.py
+  python Scripts/Send-Editor.py Scripts/Import-PistolShotgun.py
+
+Validation
+  Test-PistolShotgun.py: standalone PIE, both weapons and both shoulders,
+    multiple aim angles, material/scale, firing, reload, and moving rig parts.
+  Capture-WeaponReplacements.py: close-up grip captures after the standalone test.
+  Test-PistolShotgun-Network.py: two-player listen-server PIE with Crimson Sentinel.
+  resources/WeaponModelValidation.json records the results and final file hashes.

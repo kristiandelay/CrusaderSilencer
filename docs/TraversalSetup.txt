@@ -1,0 +1,128 @@
+Lyra + GASP traversal gym and reusable baseline
+
+Open Open-Traversal.cmd, or open src/CrusaderSilencer.uproject with UE 5.8.3.
+The startup map is /Game/Maps/L_TraversalGym. Press Play and click the viewport.
+The player starts beside rifle, pistol and shotgun pickups and the sample's
+traversal obstacles. BaselineTemplate.txt describes equipment, sliding and
+exporting this foundation into independent projects.
+
+Keyboard/mouse
+  WASD: move; mouse: look
+  Left Shift: sprint
+  Left Ctrl: toggle walk
+  C: toggle crouch; at sprint speed, start a momentum slide
+  Space: contextual traversal, or jump when no valid ledge is found
+  Hold Space during a jump to attempt an airborne ledge catch
+  Middle mouse: toggle strafe; right mouse: aim-facing locomotion
+  E: pick up; G: drop active weapon; Tab: switch weapon; LMB: fire; R: reload
+  Escape: end Play; Shift+F1: release the mouse
+
+Controller
+  Left/right sticks: move/look
+  Left shoulder: sprint; right shoulder: toggle walk
+  Bottom face button: jump/contextual traversal
+  Right face button: crouch/slide; right stick click: strafe
+  Left trigger: aim-facing locomotion
+  Left face button: pick up; left special button: drop; right trigger: fire
+  D-pad up: switch weapon; D-pad down: reload
+
+Orange authored blocks support the sample's hurdle, mantle, climb-up, and vault
+actions. The source requires ledges at least 60 cm wide. This sample does not
+implement persistent ledge hanging, shimmying, or wall running.
+
+Build from PowerShell
+  powershell -ExecutionPolicy Bypass -File Scripts/Build-Editor.ps1
+Use -EngineRoot to select another installation of the locked 5.8.3 engine.
+src/LyraStarterGame.sln is generated locally and is not source controlled.
+
+Integration
+  Runtime host: initial Lyra 5.8 snapshot recorded in resources/IntegrationLock.json.
+  Engine: UE 5.8.3, changelist 58210709.
+  Experience: /Game/System/Experiences/B_CRTraversal.
+  PawnData: /Game/Crusader/System/PawnData_CRTraversal.
+  Pawn: /Game/Crusader/Characters/B_CRTraversalPawn.
+  Native parent: CRTraversalCharacter -> LyraCharacter.
+  Source graph parent: /Game/Blueprints/SandboxCharacter_CMC.
+  Movement: one BaselineCharacterMovement derived from LyraCharacterMovement;
+  GASP's CMC logic supplies locomotion and traversal, with native momentum sliding.
+  The Mover character is not spawned.
+  Initialization: Lyra PawnExtension and Hero components, BaselinePlayerController,
+  LyraPlayerState-owned ability system, and Lyra health/combat attribute sets.
+  Camera: CRTraversalCameraMode in the Lyra stack, with collision avoidance.
+  Input: one Enhanced Input mapping context; GASP CMC binds movement actions,
+  the Hero component binds baseline interaction and Lyra weapon ability inputs.
+  GASP's duplicate input/camera setup functions are replaced by empty stubs, and
+  its unused camera/spring-arm components are removed from the merged pawn.
+  Collision: Traversable/Mouse/Obstacle are moved to custom channels 6/7/8,
+  preserving Lyra's channels 1-5. GASP trace pins are remapped accordingly.
+
+The baseline body is /Game/Characters/UE5_Mannequins/Meshes/SKM_Manny. It uses
+GASP's UEFN-to-Manny IK retarget path. A hidden source mesh evaluates motion
+matching and physics; Manny adds upper-body Lyra weapon poses and montage slots.
+The Game Animation Widget can display one of six character overrides. Manny
+continues driving weapon montages while hidden; a selected Manny/Quinn follows
+its pose, and other skeletons retarget the completed pose. There is one gameplay
+character, capsule, and movement authority. See BaselineTemplate.txt for setup.
+This is an early integration choice to preserve the sample's prepared databases
+and traversal animations without asserting skeleton compatibility by name alone.
+Consolidating/retargeting the databases to one final production skeleton remains
+part of the later animation pipeline.
+
+Initial cost sample (2026-10-06): stat dumpave over 2,627 idle PIE frames on this
+workstation measured about 0.75 ms/frame for the source mesh's parallel animation
+task scope and 0.58 ms/frame for the visible mesh's scope. The latter includes
+about 0.16 ms/frame in IK Retarget plus Manny's post-process graph. These are
+summed worker CPU times, not a measured frame-time delta or packaged benchmark.
+Artifacts/GymTests/animation-profile.log preserves the complete average dump.
+This initial measurement predates selectable visual overrides; the additional
+skin mesh/retarget and MetaHuman costs have not been profiled here.
+
+Source samples at C:/Development/Game/GameAnimationSample and the neighboring
+silencer3d repository were retained. Artifacts/pristine-lyra.tar and
+Artifacts/source-manifest.json record the extracted baseline and SHA-256 inputs.
+Scripts/Bootstrap-Samples.py is for an empty destination; it rejects different
+existing files. It is not an update command for an already integrated project.
+Scripts/Configure-Project.py and Scripts/Create-TraversalGym.py implement the
+initial configuration/asset-authoring steps. Run Scripts/Extend-Baseline.py after
+them to add sliding and equipment. Only the local copies under src are edited.
+
+Validation artifacts
+  Artifacts/editor-build.log: final editor compilation.
+  Artifacts/generate-project-files.log: Visual Studio project generation.
+  Artifacts/GymTests/result.json: actual Enhanced Input movement/traversal tests.
+  Artifacts/GymTests/*.png: rendered traversal captures.
+  Artifacts/GymTests/restarts.json: repeated Play lifecycle checks.
+  Artifacts/GymTests/camera.json: mapped look input and course-wall retraction.
+
+Original traversal integration verified on 2026-10-06:
+  Editor build succeeded; asset-authoring commandlet exited 0 with no errors.
+  All 9 mapped-input cases passed: walk/jog/sprint, crouch, jump, hurdle, mantle,
+  2.5 m climb, and vault. Traversals finished and restored ordinary walking.
+  Ten Play/Stop cycles passed with one movement component, one active Lyra
+  camera, and the PlayerState-owned ability system initialized on the pawn.
+  Look input passed; the camera retracted from 304 cm to 87 cm near a wall.
+  resources/TraversalValidation.json records results and final asset hashes.
+  resources/BaselineValidation.json supersedes this snapshot for the equipment
+  and sliding extension, including rerun traversal checks while armed.
+  Source-sample/engine warnings remain; this is not a warning-free sample import.
+
+Automation: launch Scripts/Open-Traversal.ps1 with -Automation, then use
+Scripts/Send-Editor.py to run a Python file through the project-local editor
+bridge. Test-TraversalGym.py and Test-GymCamera.py require an active PIE session.
+Test-GymRestarts.py requires PIE stopped. Run these scripts separately and wait
+for each result file before the next test. The bridge uses files under Artifacts,
+not a network port.
+
+Scope relative to the GDD
+This foundation includes locomotion, traversal, momentum slides and Lyra weapon
+pickup/drop, firing and reloads. The broader M1 shooter gate is still open:
+packaged Win64 regression and the packaged ten-minute soak are separate work.
+Combat death/restart and shoulder/weapon-hand switching were added afterward;
+see BaselineTemplate.txt and resources/CombatShoulderValidation.json for the
+current implementation and validation. Custom Crusader models have not been imported.
+The gym deliberately retains GASP test controls; the GDD's final game controls
+and movement tuning are proposed values for the later combat integration.
+
+Framework references consulted
+https://dev.epicgames.com/documentation/en-us/unreal-engine/game-animation-sample-project-in-unreal-engine
+https://dev.epicgames.com/documentation/en-us/unreal-engine/lyra-sample-game-in-unreal-engine

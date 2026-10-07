@@ -1,0 +1,146 @@
+[
+  {
+    "id": 0,
+    "name": "Default",
+    "physical_material": "/Game/Crusader/Effects/Surfaces/PM_Default.PM_Default",
+    "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Concrete/NS_Impact_Concrete_Low.NS_Impact_Concrete_Low",
+    "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_Concrete.Cue_Bullet_Impact_Concrete",
+    "decal": "/Game/BulletImpactVFX/BulletHoleDecals/Material_Instances/Inst_BulletDecal_Concrete_01.Inst_BulletDecal_Concrete_01"
+  },
+  {
+    "id": 1,
+    "name": "Character",
+    "physical_material": "/Game/Crusader/Effects/Surfaces/PM_Character.PM_Character",
+    "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Flesh/NS_Impact_Blood_Low.NS_Impact_Blood_Low",
+    "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_Flesh.Cue_Bullet_Impact_Flesh",
+    "decal": null
+  },
+  {
+    "id": 2,
+    "name": "Concrete",
+    "physical_material": "/Game/Crusader/Effects/Surfaces/PM_Concrete.PM_Concrete",
+    "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Concrete/NS_Impact_Concrete_Low.NS_Impact_Concrete_Low",
+    "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_Concrete.Cue_Bullet_Impact_Concrete",
+    "decal": "/Game/BulletImpactVFX/BulletHoleDecals/Material_Instances/Inst_BulletDecal_Concrete_01.Inst_BulletDecal_Concrete_01"
+  },
+  {
+    "id": 3,
+    "name": "Glass",
+    "physical_material": "/Game/Crusader/Effects/Surfaces/PM_Glass.PM_Glass",
+    "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Glass/NS_Impact_Glass_Low.NS_Impact_Glass_Low",
+    "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_Glass_Small.Cue_Bullet_Impact_Glass_Small",
+    "decal": "/Game/BulletImpactVFX/BulletHoleDecals/Material_Instances/Inst_BulletDecal_Glass_Common_01.Inst_BulletDecal_Glass_Common_01"
+  },
+  {
+    "id": 4,
+    "name": "Metal",
+    "physical_material": "/Game/Crusader/Effects/Surfaces/PM_Metal.PM_Metal",
+    "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Metal/NS_Impact_Metal_Low.NS_Impact_Metal_Low",
+    "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_MetalSolid.Cue_Bullet_Impact_MetalSolid",
+    "decal": "/Game/BulletImpactVFX/BulletHoleDecals/Material_Instances/Inst_BulletDecal_Metal_Solid_01.Inst_BulletDecal_Metal_Solid_01"
+  },
+  {
+    "id": 5,
+    "name": "Wood",
+    "physical_material": "/Game/Crusader/Effects/Surfaces/PM_Wood.PM_Wood",
+    "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Plank/NS_Impact_Plank_Low.NS_Impact_Plank_Low",
+    "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_Wood.Cue_Bullet_Impact_Wood",
+    "decal": "/Game/BulletImpactVFX/BulletHoleDecals/Material_Instances/M_BulletDecal_Wood_01_Inst.M_BulletDecal_Wood_01_Inst"
+  },
+  {
+    "id": 6,
+    "name": "Brick",
+    "physical_material": "/Game/Crusader/Effects/Surfaces/PM_Brick.PM_Brick",
+    "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Brickwall/NS_Impact_Brickwall_Low.NS_Impact_Brickwall_Low",
+    "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_Brickwall.Cue_Bullet_Impact_Brickwall",
+    "decal": "/Game/BulletImpactVFX/BulletHoleDecals/Material_Instances/Inst_BulletDecal_Brick_Wall_01.Inst_BulletDecal_Brick_Wall_01"
+  },
+  {
+    "id": 7,
+    "name": "Dirt",
+    "physical_material": "/Game/Crusader/Effects/Surfaces/PM_Dirt.PM_Dirt",
+    "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Dirt/NS_Impact_Dirt_Low.NS_Impact_Dirt_Low",
+    "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_Ground.Cue_Bullet_Impact_Ground",
+    "decal": null
+  },
+  {
+    "id": 8,
+    "name": "Sand",
+    "physical_material": "/Game/Crusader/Effects/Surfaces/PM_Sand.PM_Sand",
+    "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Sand/NS_Impact_Sand_Low.NS_Impact_Sand_Low",
+    "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_Sand.Cue_Bullet_Impact_Sand",
+    "decal": null
+  },
+  {
+    "id": 9,
+    "name": "Water",
+    "physical_material": "/Game/Crusader/Effects/Surfaces/PM_Water.PM_Water",
+    "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Water/NS_Impact_Water_Low.NS_Impact_Water_Low",
+    "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_Water.Cue_Bullet_Impact_Water",
+    "decal": null
+  },
+  {
+    "id": 10,
+    "name": "Rubber",
+    "physical_material": "/Game/Crusader/Effects/Surfaces/PM_Rubber.PM_Rubber",
+    "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Plastic/NS_Impact_Plastic_Low.NS_Impact_Plastic_Low",
+    "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_PlasticRubber.Cue_Bullet_Impact_PlasticRubber",
+    "decal": "/Game/BulletImpactVFX/BulletHoleDecals/Material_Instances/Inst_BulletDecal_Rubber_01.Inst_BulletDecal_Rubber_01"
+  },
+  {
+    "id": 11,
+    "name": "Fabric",
+    "physical_material": "/Game/Crusader/Effects/Surfaces/PM_Fabric.PM_Fabric",
+    "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Fabric/NS_Impact_Fabric_Low.NS_Impact_Fabric_Low",
+    "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_Soft_Materials.Cue_Bullet_Impact_Soft_Materials",
+    "decal": "/Game/BulletImpactVFX/BulletHoleDecals/Material_Instances/Inst_BulletDecal_Sandbag_01.Inst_BulletDecal_Sandbag_01"
+  },
+  {
+    "id": 12,
+    "name": "Rock",
+    "physical_material": "/Game/Crusader/Effects/Surfaces/PM_Rock.PM_Rock",
+    "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Rock/NS_Impact_Rock_Low.NS_Impact_Rock_Low",
+    "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_Rock.Cue_Bullet_Impact_Rock",
+    "decal": "/Game/BulletImpactVFX/BulletHoleDecals/Material_Instances/Inst_BulletDecal_Rock_01.Inst_BulletDecal_Rock_01"
+  },
+  {
+    "id": 13,
+    "name": "Snow",
+    "physical_material": "/Game/Crusader/Effects/Surfaces/PM_Snow.PM_Snow",
+    "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Snow/NS_Impact_Snow_Low.NS_Impact_Snow_Low",
+    "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_Snow.Cue_Bullet_Impact_Snow",
+    "decal": "/Game/BulletImpactVFX/BulletHoleDecals/Material_Instances/Inst_BulletDecal_Snow_01.Inst_BulletDecal_Snow_01"
+  },
+  {
+    "id": 14,
+    "name": "Ice",
+    "physical_material": "/Game/Crusader/Effects/Surfaces/PM_Ice.PM_Ice",
+    "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Ice/NS_Impact_Ice_Low.NS_Impact_Ice_Low",
+    "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_Glass_Medium.Cue_Bullet_Impact_Glass_Medium",
+    "decal": null
+  },
+  {
+    "id": 15,
+    "name": "Mud",
+    "physical_material": "/Game/Crusader/Effects/Surfaces/PM_Mud.PM_Mud",
+    "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Mud/NS_Impact_Mud_Low.NS_Impact_Mud_Low",
+    "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_MudWet.Cue_Bullet_Impact_MudWet",
+    "decal": null
+  },
+  {
+    "id": 16,
+    "name": "Ceramic",
+    "physical_material": "/Game/Crusader/Effects/Surfaces/PM_Ceramic.PM_Ceramic",
+    "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Ceramic/NS_Impact_Ceramic_Low.NS_Impact_Ceramic_Low",
+    "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_Glass_Pottery.Cue_Bullet_Impact_Glass_Pottery",
+    "decal": "/Game/BulletImpactVFX/BulletHoleDecals/Material_Instances/Inst_BulletDecal_Concrete_01.Inst_BulletDecal_Concrete_01"
+  },
+  {
+    "id": 17,
+    "name": "Drywall",
+    "physical_material": "/Game/Crusader/Effects/Surfaces/PM_Drywall.PM_Drywall",
+    "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Drywall/NS_Impact_Drywall_Low.NS_Impact_Drywall_Low",
+    "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_Sheetrock.Cue_Bullet_Impact_Sheetrock",
+    "decal": "/Game/BulletImpactVFX/BulletHoleDecals/Material_Instances/Inst_BulletDecal_Sheetrock_01.Inst_BulletDecal_Sheetrock_01"
+  }
+]

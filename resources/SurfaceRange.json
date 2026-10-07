@@ -1,0 +1,245 @@
+{
+  "map": "/Game/Maps/L_TraversalGym",
+  "targets": [
+    {
+      "name": "Concrete",
+      "actor": "CR_SurfaceRange_Concrete",
+      "target": [
+        -290,
+        -6920,
+        170
+      ],
+      "standing": [
+        -290,
+        -5710,
+        94
+      ],
+      "surface": 2
+    },
+    {
+      "name": "Glass",
+      "actor": "CR_SurfaceRange_Glass",
+      "target": [
+        40,
+        -6920,
+        170
+      ],
+      "standing": [
+        40,
+        -5710,
+        94
+      ],
+      "surface": 3
+    },
+    {
+      "name": "Metal",
+      "actor": "CR_SurfaceRange_Metal",
+      "target": [
+        370,
+        -6920,
+        170
+      ],
+      "standing": [
+        370,
+        -5710,
+        94
+      ],
+      "surface": 4
+    },
+    {
+      "name": "Wood",
+      "actor": "CR_SurfaceRange_Wood",
+      "target": [
+        700,
+        -6920,
+        170
+      ],
+      "standing": [
+        700,
+        -5710,
+        94
+      ],
+      "surface": 5
+    },
+    {
+      "name": "Brick",
+      "actor": "CR_SurfaceRange_Brick",
+      "target": [
+        1030,
+        -6920,
+        170
+      ],
+      "standing": [
+        1030,
+        -5710,
+        94
+      ],
+      "surface": 6
+    },
+    {
+      "name": "Rubber",
+      "actor": "CR_SurfaceRange_Rubber",
+      "target": [
+        1360,
+        -6920,
+        170
+      ],
+      "standing": [
+        1360,
+        -5710,
+        94
+      ],
+      "surface": 10
+    },
+    {
+      "name": "Fabric",
+      "actor": "CR_SurfaceRange_Fabric",
+      "target": [
+        1690,
+        -6920,
+        170
+      ],
+      "standing": [
+        1690,
+        -5710,
+        94
+      ],
+      "surface": 11
+    },
+    {
+      "name": "Rock",
+      "actor": "CR_SurfaceRange_Rock",
+      "target": [
+        2020,
+        -6920,
+        170
+      ],
+      "standing": [
+        2020,
+        -5710,
+        94
+      ],
+      "surface": 12
+    },
+    {
+      "name": "Ceramic",
+      "actor": "CR_SurfaceRange_Ceramic",
+      "target": [
+        2350,
+        -6920,
+        170
+      ],
+      "standing": [
+        2350,
+        -5710,
+        94
+      ],
+      "surface": 16
+    },
+    {
+      "name": "Drywall",
+      "actor": "CR_SurfaceRange_Drywall",
+      "target": [
+        2680,
+        -6920,
+        170
+      ],
+      "standing": [
+        2680,
+        -5710,
+        94
+      ],
+      "surface": 17
+    },
+    {
+      "name": "Dirt",
+      "actor": "CR_SurfaceRange_Dirt",
+      "target": [
+        -150,
+        -6210,
+        31
+      ],
+      "standing": [
+        -150,
+        -5650,
+        94
+      ],
+      "surface": 7
+    },
+    {
+      "name": "Sand",
+      "actor": "CR_SurfaceRange_Sand",
+      "target": [
+        390,
+        -6210,
+        31
+      ],
+      "standing": [
+        390,
+        -5650,
+        94
+      ],
+      "surface": 8
+    },
+    {
+      "name": "Water",
+      "actor": "CR_SurfaceRange_Water",
+      "target": [
+        930,
+        -6210,
+        31
+      ],
+      "standing": [
+        930,
+        -5650,
+        94
+      ],
+      "surface": 9
+    },
+    {
+      "name": "Snow",
+      "actor": "CR_SurfaceRange_Snow",
+      "target": [
+        1470,
+        -6210,
+        31
+      ],
+      "standing": [
+        1470,
+        -5650,
+        94
+      ],
+      "surface": 13
+    },
+    {
+      "name": "Ice",
+      "actor": "CR_SurfaceRange_Ice",
+      "target": [
+        2010,
+        -6210,
+        31
+      ],
+      "standing": [
+        2010,
+        -5650,
+        94
+      ],
+      "surface": 14
+    },
+    {
+      "name": "Mud",
+      "actor": "CR_SurfaceRange_Mud",
+      "target": [
+        2550,
+        -6210,
+        31
+      ],
+      "standing": [
+        2550,
+        -5650,
+        94
+      ],
+      "surface": 15
+    }
+  ]
+}

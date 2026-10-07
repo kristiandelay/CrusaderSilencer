@@ -1,0 +1,69 @@
+Crusader Silencer: Crimson Sentinel and Black Iron Rifle
+
+Playable visual
+  /Game/Crusader/Characters/CrimsonSentinel/BP_CrimsonSentinel
+  Game Animation Widget > Visual Override > CrimsonSentinel
+  Default DDCvar.VisualOverride: 6 (the seventh catalog entry).
+  The previous six visuals remain available. Selecting a visual keeps the pawn,
+  gameplay abilities, equipment, and shared locomotion/physics animation driver.
+
+Character source
+  Art/Characters/CrimsonSentinel/CrimsonSentinel.blend
+  Art/Characters/CrimsonSentinel/Export/CrimsonSentinel.fbx
+  64-bone UE-named deformation skeleton, five spine and two neck joints,
+  ten independently weighted three-joint fingers plus eight metacarpals.
+  Root/bone scales are 1 in Unreal; Blender uses centimetres for the export.
+  Blender automatic heat weights, cleaned/normalized to four influences.
+  LOD0: 85,000 triangles, reduced from the 696,788-triangle source sculpt.
+  Three Unreal LODs. Retarget and full-body IK assets accompany the mesh.
+  The Blender GripCheck action is retained for inspection and is not exported.
+  This is a game deformation rig; it does not add facial or cloth simulation.
+
+Rifle
+  /Game/Crusader/Weapons/BlackIronRifle/ID_BlackIronRifle
+  Available at the rifle station in L_TraversalGym; E picks it up.
+  Uses the existing automatic-rifle abilities, recoil and reload; surface VFX use the
+  Crusader effects profiles described in docs/WeaponEffects.txt.
+  30-round magazine, 60 spare rounds on initial pickup.
+  Art/Weapons/BlackIronRifle/BlackIronRifle.blend
+  Art/Weapons/BlackIronRifle/Export/BlackIronRifle.fbx
+  LOD0: 22,000 triangles, three Unreal LODs, 94 cm total length.
+  Lyra rifle bone hierarchy with an independently moving magazine section.
+  Receiver/magazine boundary vertices are separated to avoid reload stretching.
+  Muzzle socket is positioned at the new barrel; both hand stances stay upright.
+
+Naming and source preservation
+  The supplied archives are retained as mockups/Playable/CrimsonSentinel.zip
+  and mockups/Weapons/BlackIronRifle.zip. SourceManifest.json records the original
+  archive/file names and SHA256 hashes. Original FBX geometry remains in Source/.
+  Textures use Name_BaseColor.png, Name_Normal.png, Name_Metallic.png and
+  Name_Roughness.png. Base color is sRGB; other maps use linear sampling.
+  Meshy OpenGL normals use a flipped green channel in Unreal.
+  Prepare-MeshySource.py applies these names to future imported Meshy archives.
+  Other Meshy archive names are normalized too; mockups/AssetSources.json records
+  their original names and hashes. The four guards/NPCs are now imported; see
+  docs/NPCCharacters.txt.
+  Art files, textures, Unreal packages, and source ZIPs use Git LFS attributes.
+
+Reproduction (Unreal editor bridge must be running; stop PIE for authoring)
+  1. python Scripts/Prepare-MeshySource.py mockups/Playable/CrimsonSentinel.zip
+       CrimsonSentinel Art/Characters/CrimsonSentinel/Source
+     Repeat for BlackIronRifle and its Weapons source directory as needed.
+  2. python Scripts/Send-Editor.py Scripts/Export-CrimsonReferences.py
+  3. Run Blender --background --python Scripts/Rig-CrimsonSentinel.py
+     Run Blender --background --python Scripts/Prepare-BlackIronRifle.py
+     Run Blender --background --python Scripts/Validate-CrimsonRig.py
+  4. python Scripts/Send-Editor.py Scripts/Import-CrimsonAssets.py
+  5. python Scripts/Send-Editor.py Scripts/Integrate-CrimsonSentinel.py
+
+Validation
+  Detailed evidence: Artifacts/CrimsonSentinel/
+  Start standalone PIE, then execute Test-CrimsonSentinel.py using Send-Editor.
+  Test-CrimsonSlide.py and Capture-CrimsonSentinel.py use that script's helpers.
+  Existing GetUpContinuity and TraversalGym suites also run on the new visual.
+  resources/CrimsonSentinelValidation.json records the exact assets and checks.
+  All 22 new packages passed Unreal content validation. Standalone combat and
+  two-player visual/weapon replication passed; both shoulder poses were inspected.
+
+All development is in CrusaderSilencer. The published Lyra/GASP template and its
+separate local repository are not modified by this character/weapon integration.

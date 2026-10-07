@@ -1,0 +1,39 @@
+{
+  "name": "UrbanTrailblazer",
+  "archive": "UrbanTrailblazer.zip",
+  "archive_sha256": "69a8667c8c94a68a9e0757d9c591252fb5d2d67ccbfb4ec2779111326bf2a682",
+  "files": [
+    {
+      "original": "Meshy_AI_Urban_Trailblazer_1006134847_texture_fbx/Meshy_AI_Urban_Trailblazer_1006134847_texture.fbx",
+      "file": "UrbanTrailblazer.fbx",
+      "bytes": 40364332,
+      "sha256": "add287f94f8f12a297976a66f587bfcbacec115f7eb1f1e25ed4656fdfbbea50"
+    },
+    {
+      "original": "Meshy_AI_Urban_Trailblazer_1006134847_texture_fbx/Meshy_AI_Urban_Trailblazer_1006134847_texture.png",
+      "file": "UrbanTrailblazer_BaseColor.png",
+      "bytes": 6837091,
+      "sha256": "dc6e1bd8678a9cb16c7df7ebb4cb89d8fe2e22ab5802dd8d9e536e6bbf4b2c9f"
+    },
+    {
+      "original": "Meshy_AI_Urban_Trailblazer_1006134847_texture_fbx/Meshy_AI_Urban_Trailblazer_1006134847_texture_metallic.png",
+      "file": "UrbanTrailblazer_Metallic.png",
+      "bytes": 34052,
+      "sha256": "e310282b4724c1c6a7c9f9cc93d35a05ceedd6f2fcc232822b38be516bf95019"
+    },
+    {
+      "original": "Meshy_AI_Urban_Trailblazer_1006134847_texture_fbx/Meshy_AI_Urban_Trailblazer_1006134847_texture_normal.png",
+      "file": "UrbanTrailblazer_Normal.png",
+      "bytes": 5442473,
+      "sha256": "b0875cb06a638e53f977b6403fd70c72ed4aea9de3e47b18fbb535ffa03f2b2d"
+    },
+    {
+      "original": "Meshy_AI_Urban_Trailblazer_1006134847_texture_fbx/Meshy_AI_Urban_Trailblazer_1006134847_texture_roughness.png",
+      "file": "UrbanTrailblazer_Roughness.png",
+      "bytes": 1393600,
+      "sha256": "4823fcee4714779cf2da888212e4cc4f745185b72921b4606d3c435059113a1a"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Urban_Trailblazer_1006134847_texture_fbx.zip",
+  "archive_path": "mockups/NPC/UrbanTrailblazer.zip"
+}

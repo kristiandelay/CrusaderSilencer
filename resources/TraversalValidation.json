@@ -1,0 +1,364 @@
+{
+  "verified_utc": "2026-10-06T16:05:22.535890+00:00",
+  "engine": "UE 5.8.3 CL 58210709",
+  "scope": "Local editor traversal integration; broader GDD M1 shooter and packaged regression remain open.",
+  "editor_build": "Succeeded",
+  "asset_authoring": {
+    "exit_code": 0,
+    "errors": 0,
+    "warnings": 251
+  },
+  "movement": {
+    "passed": true,
+    "error": null,
+    "pawn": "/Game/Crusader/Characters/B_CRTraversalPawn.B_CRTraversalPawn_C",
+    "results": [
+      {
+        "name": "jog",
+        "start": [
+          -1400.0,
+          -3200.0,
+          88.27499628067017
+        ],
+        "end": [
+          -853.7070853274618,
+          -3200.0,
+          88.27499628067017
+        ],
+        "max_speed": 500.00000000000006,
+        "max_z": 88.27499628067017,
+        "min_capsule_half_height": 86.0,
+        "montage": null
+      },
+      {
+        "name": "walk",
+        "start": [
+          -1400.0,
+          -3200.0,
+          88.27499628067017
+        ],
+        "end": [
+          -1145.191299900484,
+          -3200.0,
+          88.27499628067017
+        ],
+        "max_speed": 200.00000000000003,
+        "max_z": 88.27499628067017,
+        "min_capsule_half_height": 86.0,
+        "montage": null
+      },
+      {
+        "name": "sprint",
+        "start": [
+          -1400.0,
+          -3200.0,
+          88.27499628067017
+        ],
+        "end": [
+          -750.4836360664603,
+          -3200.0,
+          88.27499628067017
+        ],
+        "max_speed": 700.0,
+        "max_z": 88.27499628067017,
+        "min_capsule_half_height": 86.0,
+        "montage": null
+      },
+      {
+        "name": "crouch",
+        "start": [
+          -1400.0,
+          -3200.0,
+          88.27499628067017
+        ],
+        "end": [
+          -1116.3833064797996,
+          -3200.0,
+          62.274996280670166
+        ],
+        "max_speed": 225.00000000000003,
+        "max_z": 88.27499628067017,
+        "min_capsule_half_height": 60.0,
+        "montage": null
+      },
+      {
+        "name": "jump",
+        "start": [
+          -1400.0,
+          -3200.0,
+          88.27498817443848
+        ],
+        "end": [
+          -1400.0,
+          -3200.0,
+          88.27498942615225
+        ],
+        "max_speed": 0.0,
+        "max_z": 215.81540908500605,
+        "min_capsule_half_height": 86.0,
+        "montage": null
+      },
+      {
+        "name": "hurdle",
+        "start": [
+          2730.0,
+          -800.0,
+          88.27499628067017
+        ],
+        "end": [
+          2940.7417026045277,
+          -800.0000013041291,
+          88.27499940908284
+        ],
+        "max_speed": 487.1999581255806,
+        "max_z": 172.53767311959825,
+        "min_capsule_half_height": 86.0,
+        "montage": "/Game/Characters/UEFN_Mannequin/Animations/Traversal/Catch/Hurdle/AM_M_Neutral_Traversal_Catch_Hurdle_med_stand.AM_M_Neutral_Traversal_Catch_Hurdle_med_stand"
+      },
+      {
+        "name": "mantle",
+        "start": [
+          4300.0,
+          -970.0,
+          88.27499628067017
+        ],
+        "end": [
+          4300.000004474674,
+          -849.9986607328966,
+          188.49931500572478
+        ],
+        "max_speed": 478.863257852027,
+        "max_z": 188.49931500572478,
+        "min_capsule_half_height": 86.0,
+        "montage": "/Game/Characters/UEFN_Mannequin/Animations/Traversal/Catch/Mantle/AM_M_Neutral_Traversal_Catch_Mantle_med_stand.AM_M_Neutral_Traversal_Catch_Mantle_med_stand"
+      },
+      {
+        "name": "climb",
+        "start": [
+          2700.0,
+          -1770.0,
+          88.27499628067017
+        ],
+        "end": [
+          2699.999999588024,
+          -1649.998455221388,
+          338.49727714266305
+        ],
+        "max_speed": 104.12309790815051,
+        "max_z": 338.49727714266305,
+        "min_capsule_half_height": 86.0,
+        "montage": "/Game/Characters/UEFN_Mannequin/Animations/Traversal/Climb/AM_M_Neutral_Traversal_Climb_Start_2_5_stand_F_Lfoot.AM_M_Neutral_Traversal_Climb_Start_2_5_stand_F_Lfoot"
+      },
+      {
+        "name": "vault",
+        "start": [
+          4810.0,
+          -800.0,
+          438.46249532699585
+        ],
+        "end": [
+          5318.242811463084,
+          -800.0000018444521,
+          88.27499952475135
+        ],
+        "max_speed": 472.5672341889491,
+        "max_z": 575.7923344611115,
+        "min_capsule_half_height": 86.0,
+        "montage": "/Game/Characters/UEFN_Mannequin/Animations/Traversal/Catch/Vault/AM_M_Neutral_Traversal_Catch_Vault_high.AM_M_Neutral_Traversal_Catch_Vault_high"
+      }
+    ],
+    "input_keys": {
+      "Move": [
+        "W",
+        "S",
+        "A",
+        "D",
+        "Gamepad_Left2D"
+      ],
+      "Walk": [
+        "LeftControl",
+        "Gamepad_RightShoulder"
+      ],
+      "Sprint": [
+        "LeftShift",
+        "Gamepad_LeftShoulder"
+      ],
+      "Crouch": [
+        "C",
+        "Gamepad_FaceButton_Right"
+      ],
+      "Jump": [
+        "SpaceBar",
+        "Gamepad_FaceButton_Bottom"
+      ]
+    }
+  },
+  "restarts": {
+    "passed": true,
+    "error": null,
+    "cycles": [
+      {
+        "cycle": 1,
+        "pawn": "/Game/Crusader/Characters/B_CRTraversalPawn.B_CRTraversalPawn_C",
+        "active_camera": "LyraCameraComponent",
+        "ability_owner": "LyraPlayerState",
+        "visual_mesh": "/Game/Characters/Heroes/Mannequin/Meshes/SKM_Manny.SKM_Manny"
+      },
+      {
+        "cycle": 2,
+        "pawn": "/Game/Crusader/Characters/B_CRTraversalPawn.B_CRTraversalPawn_C",
+        "active_camera": "LyraCameraComponent",
+        "ability_owner": "LyraPlayerState",
+        "visual_mesh": "/Game/Characters/Heroes/Mannequin/Meshes/SKM_Manny.SKM_Manny"
+      },
+      {
+        "cycle": 3,
+        "pawn": "/Game/Crusader/Characters/B_CRTraversalPawn.B_CRTraversalPawn_C",
+        "active_camera": "LyraCameraComponent",
+        "ability_owner": "LyraPlayerState",
+        "visual_mesh": "/Game/Characters/Heroes/Mannequin/Meshes/SKM_Manny.SKM_Manny"
+      },
+      {
+        "cycle": 4,
+        "pawn": "/Game/Crusader/Characters/B_CRTraversalPawn.B_CRTraversalPawn_C",
+        "active_camera": "LyraCameraComponent",
+        "ability_owner": "LyraPlayerState",
+        "visual_mesh": "/Game/Characters/Heroes/Mannequin/Meshes/SKM_Manny.SKM_Manny"
+      },
+      {
+        "cycle": 5,
+        "pawn": "/Game/Crusader/Characters/B_CRTraversalPawn.B_CRTraversalPawn_C",
+        "active_camera": "LyraCameraComponent",
+        "ability_owner": "LyraPlayerState",
+        "visual_mesh": "/Game/Characters/Heroes/Mannequin/Meshes/SKM_Manny.SKM_Manny"
+      },
+      {
+        "cycle": 6,
+        "pawn": "/Game/Crusader/Characters/B_CRTraversalPawn.B_CRTraversalPawn_C",
+        "active_camera": "LyraCameraComponent",
+        "ability_owner": "LyraPlayerState",
+        "visual_mesh": "/Game/Characters/Heroes/Mannequin/Meshes/SKM_Manny.SKM_Manny"
+      },
+      {
+        "cycle": 7,
+        "pawn": "/Game/Crusader/Characters/B_CRTraversalPawn.B_CRTraversalPawn_C",
+        "active_camera": "LyraCameraComponent",
+        "ability_owner": "LyraPlayerState",
+        "visual_mesh": "/Game/Characters/Heroes/Mannequin/Meshes/SKM_Manny.SKM_Manny"
+      },
+      {
+        "cycle": 8,
+        "pawn": "/Game/Crusader/Characters/B_CRTraversalPawn.B_CRTraversalPawn_C",
+        "active_camera": "LyraCameraComponent",
+        "ability_owner": "LyraPlayerState",
+        "visual_mesh": "/Game/Characters/Heroes/Mannequin/Meshes/SKM_Manny.SKM_Manny"
+      },
+      {
+        "cycle": 9,
+        "pawn": "/Game/Crusader/Characters/B_CRTraversalPawn.B_CRTraversalPawn_C",
+        "active_camera": "LyraCameraComponent",
+        "ability_owner": "LyraPlayerState",
+        "visual_mesh": "/Game/Characters/Heroes/Mannequin/Meshes/SKM_Manny.SKM_Manny"
+      },
+      {
+        "cycle": 10,
+        "pawn": "/Game/Crusader/Characters/B_CRTraversalPawn.B_CRTraversalPawn_C",
+        "active_camera": "LyraCameraComponent",
+        "ability_owner": "LyraPlayerState",
+        "visual_mesh": "/Game/Characters/Heroes/Mannequin/Meshes/SKM_Manny.SKM_Manny"
+      }
+    ]
+  },
+  "camera": {
+    "passed": true,
+    "error": null,
+    "look_rotation": {
+      "yaw": 48.0,
+      "pitch": 16.0
+    },
+    "clear_horizontal_distance_cm": 304.138126514911,
+    "blocked_horizontal_distance_cm": 86.8987540902641
+  },
+  "idle_animation_profile": {
+    "frames": 2627,
+    "source_mesh_parallel_cpu_ms": 0.753,
+    "visible_mesh_parallel_cpu_ms": 0.576,
+    "ik_retarget_cpu_ms": 0.163,
+    "interpretation": "Summed worker CPU scopes from stat dumpave in idle PIE; not packaged frame-time delta.",
+    "raw_log": "Artifacts/GymTests/animation-profile.log"
+  },
+  "sha256": {
+    "Scripts/Bootstrap-Samples.py": "ec9aae86b4065f653ca2a469af8449b80c45fac3f9629300bbcb956e18821ac4",
+    "Scripts/Build-Editor.ps1": "5bc93b4217ee27fd6080516f0add178fda3a843d5aa39b51abd4ca5bb1fd579f",
+    "Scripts/Configure-Project.py": "60f216caa314fe94426a30116acda1698fb697a935f10e000d49d97e5a842a0a",
+    "Scripts/Create-TraversalGym.py": "9611714a83a27a6d1338b673098d2cb4b1364bb23e0abea4a34ebf4a151c62e7",
+    "Scripts/EditorBridge.py": "413a3449a6731c509ab8d7d514a43482e2eb4324c159e8571bb8553f4a57c7cf",
+    "Scripts/Inspect-Gasp.py": "0a9296c39a44d1f56b49497b8e588d84706f9991b807668541c6a5496535afdb",
+    "Scripts/Inspect-MergedAssets.py": "94be2838a9e8b081f73fbb7aab9731306469cadbc0e2a4b3dc6f9620d5f6097b",
+    "Scripts/Inspect-Runtime.py": "cef34e1de1f481be83a8cce175a107ceb88b3dbc7c3207317c7e74f3d7e00f62",
+    "Scripts/Open-Traversal.ps1": "f2f9aaa72b3310b397d38f2cacfa8c096a9c028c18f8bee0369c6abc8cadfbc5",
+    "Scripts/Send-Editor.py": "3070ae1106ef8eda313790b42010a80eb618c0416aa90bd7429434e058ce1308",
+    "Scripts/Test-GymCamera.py": "1a4ec3e547a0f35f496a52ee1c18c0dbb40562bf193719284777e5a672c9398a",
+    "Scripts/Test-GymRestarts.py": "748eb3c8efb1008386fe060219d0888190b47d7512b233dc97277c45526710ea",
+    "Scripts/Test-TraversalGym.py": "e70306cfef7783f1925492a419423546c28d1739a36e4a369288c38e092e69c2",
+    "src/Config/Android/AndroidEngine.ini": "ff2e8586d7f3410853ffd3c3c3f8451ca70d25cebac0236b4b422fd651dffff7",
+    "src/Config/Android/AndroidGame.ini": "4fcb40d33e2a0fef455e3480cc66c08344248d2a6ab53f7612e350c4b9d6b9c3",
+    "src/Config/Android/AndroidInput.ini": "a417bcfcc8b20f18fc000f2169faeee09f6180668bc5478d9abe3c2f52b31d69",
+    "src/Config/Android/AndroidScalability.ini": "b752651e584c0ddd78f4f46672429a27a20a3ad600367b8e730a20200d0a6228",
+    "src/Config/Custom/EOS/DefaultEngine.ini": "340835022f5377eca279f9992da5f893626af612dda7919e12d26444fb68813b",
+    "src/Config/Custom/EOS/DefaultGame.ini": "634dc0f678ffca7929af9c49f2a2047230d3af936c3446c265f088a740a5847c",
+    "src/Config/Custom/Steam/DefaultEngine.ini": "1881805ece94ee4cd5a834be25c1047ae4500c9a8d20ac977676e694f517ad73",
+    "src/Config/Custom/Steam/DefaultGame.ini": "634dc0f678ffca7929af9c49f2a2047230d3af936c3446c265f088a740a5847c",
+    "src/Config/Custom/SteamEOS/DefaultEngine.ini": "fd049a2391c681e3e18b2e191694ae8ed754fc5cd0b37093f699caf09ad12cf0",
+    "src/Config/DefaultDeviceProfiles.ini": "d624208f2c2e8bec8e0f79aeaefed662e2e554d4ce09e2266286b98e3aa63b55",
+    "src/Config/DefaultEditor.ini": "0cb987eeb5e0e3cb0fb93a6bc2c4d6bad8098971f373350283da96817fa42c19",
+    "src/Config/DefaultEditorKeyBindings.ini": "2f972951241c24bd7e421e6607375a3b068102f358287125be84f9d00848a004",
+    "src/Config/DefaultEditorPerProjectUserSettings.ini": "05649310d73bcc3d4e2d9e58661c579da02c9ef06b5bca5a2b1c7272a78c5b56",
+    "src/Config/DefaultEditorSettings.ini": "ea4b8222d76dc48579cc4cee755859e971bd2044f694cfcb586f4f8aaa210f2d",
+    "src/Config/DefaultEngine.ini": "c9f999157b0b36d3cd7712d39f225101531be6248bea6461abea67e6044b5774",
+    "src/Config/DefaultGame.ini": "51d35e96c178084be25533f731d52a10f18fd5b24e589236df2d28a9808e37d5",
+    "src/Config/DefaultGameplayTags.ini": "b9828ecb95a9c7b0bacf4e606cae3604ba9fa28e763ab235e12a0710811d02cc",
+    "src/Config/DefaultInput.ini": "255893d4d22a7418e9707e84934828952515c8ebd150e5eb2dc8e7edb1addb00",
+    "src/Config/DefaultRuntimeOptions.ini": "a1696604210f23e7eda38a357ac230916d7f2183825d7ec6e2f4bbd35bb72922",
+    "src/Config/DefaultScalability.ini": "ae689ff1be52d7c3dcc838badfcfc1f278f5177e3b9077933f1e1d4fb7e8107b",
+    "src/Config/IOS/IOSEngine.ini": "cdb24f8f08c0fed421bced78df82f35f2511dee079c63cc4e273b3616ae8165a",
+    "src/Config/IOS/IOSGame.ini": "16b2161b9b2c9cc97a88c363e2978ca14fb66c2b525ffb76a0e3cbd0a6b0752b",
+    "src/Config/IOS/IOSScalability.ini": "c48da9eaa11d43e30e56e5374b9aa46226f652e99c47722f7c678787d66108c2",
+    "src/Config/Linux/LinuxEngine.ini": "d18f18ec34232c9433735cfcbc5ef76e8c39b2301638df73f28575bc06d0f128",
+    "src/Config/Linux/LinuxGame.ini": "f29d6bb8cd452b1d7fd2c2e008431d28f27a11ac1e8a8697f18571371d88c0c7",
+    "src/Config/Localization/EngineOverrides_Compile.ini": "ca46ad7362d54acb1be13c0ac63ebb43d3accd1e9f88b36b781b84b7e73e6641",
+    "src/Config/Localization/EngineOverrides_Export.ini": "b53c51e06b13392a2cb9d0aec3f8660527aef9b801203f1dfddd3618db37d304",
+    "src/Config/Localization/EngineOverrides_ExportDialogueScript.ini": "a3a4d2d601cdeaa010585486bbdc9536e4a7b3895e7f458b75caad091e6b656d",
+    "src/Config/Localization/EngineOverrides_Gather.ini": "382f670df46e56fed5c36deb374be27fe146baf23953eda38d9139a0327240d4",
+    "src/Config/Localization/EngineOverrides_GenerateReports.ini": "7fbf62dee233ed6f971a0cad1db1f5bafdd83c4c44ed58aabf5e66e1679571a1",
+    "src/Config/Localization/EngineOverrides_Import.ini": "46e1d5ed7b011b5cddcc9c8333c262e6b7d619f097779314c35d329e698a84b8",
+    "src/Config/Localization/EngineOverrides_ImportDialogue.ini": "d17fe851ba562d492639846bd28f56b89762770f376fa507a7a4518e6cd1bbc4",
+    "src/Config/Localization/EngineOverrides_ImportDialogueScript.ini": "1ef414ce3061083b2fd1cf22298b7cc70dc1bcecfd17d775bb9fb5dfbb60f4bd",
+    "src/Config/Localization/Game_Compile.ini": "693c7590dc1497c0666f7dbd6dc0109f6f707532a57ad4a18a24121ab670f190",
+    "src/Config/Localization/Game_Export.ini": "1756d5693d113a7aa1f5b5eddb8c8540ea01033107b62759b320f410a16a1d28",
+    "src/Config/Localization/Game_ExportDialogueScript.ini": "6561c3e2c27ff26e9985515bb5bba9f8a31b73098a9eca63559edf064ea8bc9c",
+    "src/Config/Localization/Game_Gather.ini": "766b85c94149afa59f9ad323f36c58601fa4fcf67ed33a14365d4a5a1ec1f4ec",
+    "src/Config/Localization/Game_GenerateReports.ini": "bd765e63d4090642a0e67967511838c42eef2dffc0ac3933d5a4ee1272076d58",
+    "src/Config/Localization/Game_Import.ini": "d0305e8588f0c6ae0604badacd8872ec6979ab585dc4021597e6c0cf69129986",
+    "src/Config/Localization/Game_ImportDialogue.ini": "de6091fb2625e3f66dfa87bb64b94a17028f69682fd3c10fd28012a16a47539c",
+    "src/Config/Localization/Game_ImportDialogueScript.ini": "559ef7b3298e62cb91c45f45620aa5f1c4fe040897fc6c5a12f128c22654bfd4",
+    "src/Config/Mac/MacEngine.ini": "ef426d8a4e5d4be2a2a259bca5a4457632b941b568985079b1cf2aaea508a127",
+    "src/Config/Mac/MacGame.ini": "fc72c552a997401caeb210be4c0b6b54bba5efbb5e93f0296b75c1413eee2cdd",
+    "src/Config/TVOS/TVOSGame.ini": "2fad645c1d7695e67caef5873595152e316fb052738ae0ac7a2ffda5e3063a09",
+    "src/Config/Windows/WindowsEngine.ini": "bd04b54ec3080e32de2d91c4f63c7723944da18e73826699f30ac8c517a2125d",
+    "src/Config/Windows/WindowsGame.ini": "b6e989801f319f34b2dc5c9c514d6e80fd8f866d8bffe833202813d8212dbb93",
+    "src/Content/Blueprints/SandboxCharacter_CMC.uasset": "5b757ccbce52f5a6aa61bb667640037dd6071038f0977705289f10eb53eb4716",
+    "src/Content/Crusader/Characters/B_CRMannequin.uasset": "eb932fbb6f0718bea46682ff78ceb83ea8a2c73f4eddbc25beb43caee562c681",
+    "src/Content/Crusader/Characters/B_CRTraversalPawn.uasset": "cc0a4bdfa3d410e409b541c7778b9d5653a52692be3b6cd4f3d535748725e787",
+    "src/Content/Crusader/System/AbilitySet_CRTraversal.uasset": "58815c10195b1fa3702546f6e823c29b432945c73a16ccddd9199b7c4c2ce764",
+    "src/Content/Crusader/System/InputConfig_CRTraversal.uasset": "ab246fd12dddb1562e974dc0013b81624d57f7d0ee66c4e6e3e46764738ac46a",
+    "src/Content/Crusader/System/PawnData_CRTraversal.uasset": "c4cc21e9b6a097e39cd9809a22e7bc7a60bc00e3e23bffae315892b3db1e9617",
+    "src/Content/Maps/L_TraversalGym.umap": "e0dbfb86c1f0760c38f649a57e68ca8f12ceb6910e514e086399bee1982989eb",
+    "src/Content/System/Experiences/B_CRTraversal.uasset": "c5988efb29806bbde2b5b084acc1910cc85875b482695a243a60bfc33b0e65fd",
+    "src/LyraStarterGame.uproject": "86920aa3ec81f73194fe6d34b5aef5ee7bd907c9ad04bd03919e4c6f8480d050",
+    "src/Source/LyraEditor/Crusader/CRBlueprintTools.cpp": "6e17bcc2cac1c5bcd8817d215c5107438e598b0a4fe9568bd238bd4ceff53e0c",
+    "src/Source/LyraEditor/Crusader/CRBlueprintTools.h": "be3da4b24aff3e37042880e0b3f17dd5f3081cae059289febdcee2bd17d9d2c0",
+    "src/Source/LyraGame/Crusader/CRTraversalCharacter.cpp": "ca9820f0171da2a143b2780cb4e0481c7d8cbc053f2c63809d3a85350a5b72a7",
+    "src/Source/LyraGame/Crusader/CRTraversalCharacter.h": "e67afe9fe93f51e6961f589f7f046ca3d1826d109d03fed1917df2c64dda99e2"
+  }
+}

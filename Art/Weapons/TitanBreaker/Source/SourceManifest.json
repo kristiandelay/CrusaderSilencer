@@ -1,0 +1,39 @@
+{
+  "name": "TitanBreaker",
+  "archive": "TitanBreaker.zip",
+  "archive_sha256": "30dd5b522f0c05056c23dff2070512cb054edb8493f7071eb95a479991bec62a",
+  "files": [
+    {
+      "original": "Meshy_AI_Titan_Breaker_1007050431_texture_fbx/Meshy_AI_Titan_Breaker_1007050431_texture.fbx",
+      "file": "TitanBreaker.fbx",
+      "bytes": 31793852,
+      "sha256": "51ce61f4103afd37a31300894eed9ed9e3c4ec9f940bb0d89c65e5456614f8e7"
+    },
+    {
+      "original": "Meshy_AI_Titan_Breaker_1007050431_texture_fbx/Meshy_AI_Titan_Breaker_1007050431_texture.png",
+      "file": "TitanBreaker_BaseColor.png",
+      "bytes": 5830134,
+      "sha256": "025fdc425b3754c4088da8780ea208b4d5d5bc0bf07101149d63941d4feb0187"
+    },
+    {
+      "original": "Meshy_AI_Titan_Breaker_1007050431_texture_fbx/Meshy_AI_Titan_Breaker_1007050431_texture_metallic.png",
+      "file": "TitanBreaker_Metallic.png",
+      "bytes": 1672169,
+      "sha256": "e0810a9ce35c4edda2ed4e65526f769f59dc8e11e96366d678e39a07405105e1"
+    },
+    {
+      "original": "Meshy_AI_Titan_Breaker_1007050431_texture_fbx/Meshy_AI_Titan_Breaker_1007050431_texture_normal.png",
+      "file": "TitanBreaker_Normal.png",
+      "bytes": 5995398,
+      "sha256": "20e4d2afdba05728c722ed4e8428b6f989f044c242888e4e947689d869e563a6"
+    },
+    {
+      "original": "Meshy_AI_Titan_Breaker_1007050431_texture_fbx/Meshy_AI_Titan_Breaker_1007050431_texture_roughness.png",
+      "file": "TitanBreaker_Roughness.png",
+      "bytes": 1512932,
+      "sha256": "8e64f798e8292beb4a7ff3bab5d41954068272d5292bab5e298a52c421d2b712"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Titan_Breaker_1007050431_texture_fbx.zip",
+  "archive_path": "mockups/Weapons/TitanBreaker.zip"
+}

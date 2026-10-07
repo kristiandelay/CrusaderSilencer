@@ -1,0 +1,101 @@
+{
+  "created_utc": "2026-10-06T20:00:50.752365+00:00",
+  "engine": "5.8.3",
+  "passed": true,
+  "passed_cases": 19,
+  "build": "Artifacts/RagdollSettleBuild3.log",
+  "change": "Remove the looping flail and disable all Physics Control pose motors during ragdoll. Preserve simulated bodies, gravity, collision, CCD, joint limits, matched get-up and weapon restoration.",
+  "tests": [
+    {
+      "name": "Ragdoll settling, impulses and get-up",
+      "report": "Artifacts/PhysicalTests/ragdoll-settling.json",
+      "passed": true,
+      "cases": 6,
+      "recorded_utc": "2026-10-06T19:56:29.185177+00:00"
+    },
+    {
+      "name": "Paired actions and restored weapon/collision",
+      "report": "Artifacts/PhysicalTests/physical-interactions.json",
+      "passed": true,
+      "cases": 5,
+      "recorded_utc": "2026-10-06T19:58:57.094266+00:00"
+    },
+    {
+      "name": "Interaction boundaries and fast fall",
+      "report": "Artifacts/PhysicalTests/physical-boundaries.json",
+      "passed": true,
+      "cases": 5,
+      "recorded_utc": "2026-10-06T19:59:07.561805+00:00"
+    },
+    {
+      "name": "Two-player physical interactions",
+      "report": "Artifacts/PhysicalTests/network-physical.json",
+      "passed": true,
+      "cases": 3,
+      "recorded_utc": "2026-10-06T19:59:55.033504+00:00"
+    }
+  ],
+  "settling_results": [
+    {
+      "case": "ground_level_fall",
+      "passed": true,
+      "max_settled_linear_cm_s": 10.963618676860216,
+      "max_settled_angular_deg_s": 60.557818523562986,
+      "settled_rotation_drift_degrees": 0.9953569577219056,
+      "settled_drift_cm": 0.37683931418897865
+    },
+    {
+      "case": "low_ceiling_blocks_get_up",
+      "passed": true
+    },
+    {
+      "case": "settled_body_reacts_to_impulse",
+      "passed": true,
+      "displacement_cm": 53.497154061363325
+    },
+    {
+      "case": "ground_level_fall_recovery",
+      "passed": true
+    },
+    {
+      "case": "high_speed_fall",
+      "passed": true,
+      "max_settled_linear_cm_s": 4.405433936057472,
+      "max_settled_angular_deg_s": 38.07801516617158,
+      "settled_rotation_drift_degrees": 3.833679313196022,
+      "settled_drift_cm": 0.4237083541943624
+    },
+    {
+      "case": "high_speed_fall_recovery",
+      "passed": true
+    }
+  ],
+  "source_sha256": {
+    "src/Source/LyraGame/Baseline/BaselinePhysicalInteraction.h": "703b01fd6c29bfaf595cfc79ae88785a4d3628a0175b410fb7f94103e333d50c",
+    "src/Source/LyraGame/Baseline/BaselinePhysicalInteraction.cpp": "c4aa4e0737bf9eebe6dc9e094754337f2e4327478376aab4bbb5f0a2f6f00ce2",
+    "Scripts/Extend-PhysicalInteractions.py": "063ca8b9817fed7e03ae98d562af010bdcaefc8bedb3e260ab26725207e1e897",
+    "Scripts/Test-RagdollSettling.py": "ef436068fc40aa5efa3f44ea7b58aaa48049a43388e2be7c6d2f2f1326766eb0",
+    "Scripts/Test-PhysicalInteractions.py": "68115cad75a34ead31d8975ee1cb93f15295334338cedb7a3d34e4a163c81ef1",
+    "Scripts/Test-PhysicalBoundaries.py": "f3aae84dbc3938a1d65846b77859587861d80e7d804d91c09044a88b19fe28e7",
+    "Scripts/Test-PhysicalInteractions-Network.py": "ef890a53babc05899eb91eff9ded49882f9742d1cdb176aa65fb63ce975a272b"
+  },
+  "validation_notes": [
+    "All four suites passed on the final native build.",
+    "Settling measures limb positions and rotations over one second, four seconds after landing. Actual drift is checked because contact-solver corrections can spike instantaneous angular velocity.",
+    "Paired-action test starts were moved to open floor after passive bodies settled against gym obstacles that correctly blocked get-up. A separate low-ceiling check verifies blocked recovery.",
+    "The prior PhysicsInteractionValidation.json motor-enabled check is superseded by this passive-ragdoll behavior. Weapon aiming, carry and parkour suites were not rerun for this change."
+  ],
+  "limits": [
+    "Network checks used two-player listen-server PIE without injected latency or packet loss.",
+    "Ragdoll limbs simulate locally with server pelvis corrections; full bone poses are not replicated.",
+    "Packaged builds and dedicated servers were not tested."
+  ],
+  "recovery_followup": {
+    "manifest": "resources/GetUpValidation.json",
+    "note": "Adds physics-asset motor disabling, per-limb rotational damping and corrected get-up continuity. Shared Artifacts reports now contain the newer runs; the historical results embedded here are preserved."
+  },
+  "combat_followup": {
+    "manifest": "resources/CombatShoulderValidation.json",
+    "note": "Shared report paths have been rerun for combat death and shoulder switching; original results above remain a historical snapshot."
+  }
+}

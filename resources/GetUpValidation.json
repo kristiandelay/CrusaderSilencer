@@ -1,0 +1,334 @@
+{
+  "created_utc": "2026-10-06T21:02:52.543634+00:00",
+  "engine": "5.8.3",
+  "passed": true,
+  "passed_cases": 33,
+  "build": "Artifacts/GetUpBlendBuild8.log",
+  "changes": [
+    "Align the selected get-up pelvis with the physical landing pose, including heading.",
+    "Rebase the final ragdoll snapshot into the upright mesh while preserving world-space bone positions; flatten the root before blending.",
+    "Use a smooth 0.45-second physical-pose blend and remove the second montage blend from standing locomotion.",
+    "Bypass locomotion root offsets and foot planting during get-up, while continuing to update the normal graph.",
+    "Publish the rebased pose immediately for post-physics automatic recovery and evaluate the visible mesh afterward.",
+    "Collect hand positions for the get-up Pose Search schema.",
+    "Disable both Physics Control and physics-asset pose motors during ragdoll, with rotational damping on every limb; restore asset damping on recovery."
+  ],
+  "tests": [
+    {
+      "name": "Four landing/get-up transitions",
+      "report": "Artifacts/PhysicalTests/getup-continuity.json",
+      "passed": true,
+      "cases": 4,
+      "recorded_utc": "2026-10-06T20:58:58.845121+00:00"
+    },
+    {
+      "name": "Passive settling, impulse and blocked get-up",
+      "report": "Artifacts/PhysicalTests/ragdoll-settling.json",
+      "passed": true,
+      "cases": 6,
+      "recorded_utc": "2026-10-06T20:59:24.392023+00:00"
+    },
+    {
+      "name": "Paired actions and restoration",
+      "report": "Artifacts/PhysicalTests/physical-interactions.json",
+      "passed": true,
+      "cases": 5,
+      "recorded_utc": "2026-10-06T20:59:58.170907+00:00"
+    },
+    {
+      "name": "Interaction boundaries and fast fall",
+      "report": "Artifacts/PhysicalTests/physical-boundaries.json",
+      "passed": true,
+      "cases": 5,
+      "recorded_utc": "2026-10-06T21:00:08.619506+00:00"
+    },
+    {
+      "name": "Locomotion and parkour",
+      "report": "Artifacts/GymTests/result.json",
+      "passed": true,
+      "cases": 9,
+      "recorded_utc": "2026-10-06T21:00:36.840616+00:00"
+    },
+    {
+      "name": "Automatic training partner get-up",
+      "report": "Artifacts/PhysicalTests/auto-getup-continuity.json",
+      "passed": true,
+      "cases": 1,
+      "recorded_utc": "2026-10-06T21:00:42.064960+00:00"
+    },
+    {
+      "name": "Two-player listen-server recovery",
+      "report": "Artifacts/PhysicalTests/network-physical.json",
+      "passed": true,
+      "cases": 3,
+      "recorded_utc": "2026-10-06T21:01:44.093944+00:00"
+    }
+  ],
+  "continuity_results": [
+    {
+      "case": "forward",
+      "montage": "AM_M_ragdoll_getup_stand_F",
+      "start_time": 0.3578382432460785,
+      "first_source_jump_cm": 0.738177620493328,
+      "first_visible_jump_cm": 2.3220712032732393,
+      "max_early_pelvis_step_cm": 1.3751605622191196,
+      "max_pelvis_speed_cm_s": 126.97700796520476,
+      "minimum_visible_head_z_cm": 9.568214403596873,
+      "return_to_locomotion_jump_cm": 1.1828411978843698,
+      "visible_return_to_locomotion_jump_cm": 1.2393240236867784,
+      "duration": 2.4304070994257927
+    },
+    {
+      "case": "backward",
+      "montage": "AM_M_ragdoll_getup_stand_L",
+      "start_time": 0.32953131198883057,
+      "first_source_jump_cm": 1.56542678465732,
+      "first_visible_jump_cm": 2.4740381679266163,
+      "max_early_pelvis_step_cm": 1.0398993743929013,
+      "max_pelvis_speed_cm_s": 149.06891773157582,
+      "minimum_visible_head_z_cm": 9.063593870526205,
+      "return_to_locomotion_jump_cm": 1.5498985999992643,
+      "visible_return_to_locomotion_jump_cm": 1.6834889267084996,
+      "duration": 2.45959759876132
+    },
+    {
+      "case": "left",
+      "montage": "AM_M_ragdoll_getup_stand_F",
+      "start_time": 0.3644261360168457,
+      "first_source_jump_cm": 1.3593177253640534,
+      "first_visible_jump_cm": 3.529844236209429,
+      "max_early_pelvis_step_cm": 2.1564211916337928,
+      "max_pelvis_speed_cm_s": 126.97647727570326,
+      "minimum_visible_head_z_cm": 13.191820509801259,
+      "return_to_locomotion_jump_cm": 1.1562987425853757,
+      "visible_return_to_locomotion_jump_cm": 1.2075918084938806,
+      "duration": 2.426589399576187
+    },
+    {
+      "case": "turned_right",
+      "montage": "AM_M_ragdoll_getup_stand_L",
+      "start_time": 0.3236027956008911,
+      "first_source_jump_cm": 1.4738620983811528,
+      "first_visible_jump_cm": 2.7075101673681816,
+      "max_early_pelvis_step_cm": 1.0358302662314398,
+      "max_pelvis_speed_cm_s": 149.0690802874819,
+      "minimum_visible_head_z_cm": 10.18007096514849,
+      "return_to_locomotion_jump_cm": 1.3186170069443741,
+      "visible_return_to_locomotion_jump_cm": 1.4106171428518879,
+      "duration": 2.455045599490404
+    }
+  ],
+  "automatic_recovery_results": [
+    {
+      "case": "automatic_training_partner_getup",
+      "first_source_jump_cm": 0.04277815273796325,
+      "first_visible_jump_cm": 2.0166265204404845,
+      "return_to_locomotion_jump_cm": 1.5015661544646297,
+      "visible_return_to_locomotion_jump_cm": 1.6138201328968054
+    }
+  ],
+  "settling_results": [
+    {
+      "case": "ground_level_fall",
+      "passed": true,
+      "max_settled_linear_cm_s": 6.626641657967911,
+      "max_settled_angular_deg_s": 38.092828175957486,
+      "settled_rotation_drift_degrees": 2.1920328874562904,
+      "settled_drift_cm": 0.6172400862622203,
+      "verified_settled_after_seconds": 5.153475798666477
+    },
+    {
+      "case": "low_ceiling_blocks_get_up",
+      "passed": true
+    },
+    {
+      "case": "settled_body_reacts_to_impulse",
+      "passed": true,
+      "displacement_cm": 54.89342091555048
+    },
+    {
+      "case": "ground_level_fall_recovery",
+      "passed": true
+    },
+    {
+      "case": "high_speed_fall",
+      "passed": true,
+      "max_settled_linear_cm_s": 4.668697307651388,
+      "max_settled_angular_deg_s": 20.25575044194048,
+      "settled_rotation_drift_degrees": 0.7770563745246288,
+      "settled_drift_cm": 0.1958850443077552,
+      "verified_settled_after_seconds": 5.039170101284981
+    },
+    {
+      "case": "high_speed_fall_recovery",
+      "passed": true
+    }
+  ],
+  "network_results": [
+    {
+      "initiator": "client",
+      "action": "Shove",
+      "all_roles_observed": {
+        "0": [
+          "<BaselinePhysicalPhase.INTERACTION: 1>",
+          "<BaselinePhysicalPhase.RAGDOLL: 2>",
+          "<BaselinePhysicalPhase.RECOVERY: 3>",
+          "<BaselinePhysicalPhase.LOCOMOTION: 0>"
+        ],
+        "1": [
+          "<BaselinePhysicalPhase.INTERACTION: 1>",
+          "<BaselinePhysicalPhase.LOCOMOTION: 0>"
+        ],
+        "2": [
+          "<BaselinePhysicalPhase.LOCOMOTION: 0>",
+          "<BaselinePhysicalPhase.INTERACTION: 1>"
+        ],
+        "3": [
+          "<BaselinePhysicalPhase.LOCOMOTION: 0>",
+          "<BaselinePhysicalPhase.INTERACTION: 1>",
+          "<BaselinePhysicalPhase.RAGDOLL: 2>",
+          "<BaselinePhysicalPhase.RECOVERY: 3>"
+        ]
+      },
+      "max_pelvis_error_cm": 10.504792064584269,
+      "getup_transition_jumps": [
+        {
+          "role_index": 0,
+          "jump_cm": 1.2267567562219293,
+          "visible_jump_cm": 2.373803050592531
+        },
+        {
+          "role_index": 3,
+          "jump_cm": 11.431990508754758,
+          "visible_jump_cm": 11.487740455810059
+        }
+      ]
+    },
+    {
+      "initiator": "host",
+      "action": "Tackle",
+      "all_roles_observed": {
+        "0": [
+          "<BaselinePhysicalPhase.INTERACTION: 1>",
+          "<BaselinePhysicalPhase.RAGDOLL: 2>",
+          "<BaselinePhysicalPhase.RECOVERY: 3>",
+          "<BaselinePhysicalPhase.LOCOMOTION: 0>"
+        ],
+        "1": [
+          "<BaselinePhysicalPhase.INTERACTION: 1>",
+          "<BaselinePhysicalPhase.RAGDOLL: 2>",
+          "<BaselinePhysicalPhase.RECOVERY: 3>",
+          "<BaselinePhysicalPhase.LOCOMOTION: 0>"
+        ],
+        "2": [
+          "<BaselinePhysicalPhase.INTERACTION: 1>",
+          "<BaselinePhysicalPhase.RAGDOLL: 2>",
+          "<BaselinePhysicalPhase.RECOVERY: 3>",
+          "<BaselinePhysicalPhase.LOCOMOTION: 0>"
+        ],
+        "3": [
+          "<BaselinePhysicalPhase.INTERACTION: 1>",
+          "<BaselinePhysicalPhase.RAGDOLL: 2>",
+          "<BaselinePhysicalPhase.RECOVERY: 3>",
+          "<BaselinePhysicalPhase.LOCOMOTION: 0>"
+        ]
+      },
+      "max_pelvis_error_cm": 33.634807651927815,
+      "getup_transition_jumps": [
+        {
+          "role_index": 0,
+          "jump_cm": 3.8243078893354117,
+          "visible_jump_cm": 5.884546455291757
+        },
+        {
+          "role_index": 3,
+          "jump_cm": 11.860902229164463,
+          "visible_jump_cm": 14.099032402019393
+        },
+        {
+          "role_index": 1,
+          "jump_cm": 32.28993538421005,
+          "visible_jump_cm": 30.98781745122666
+        },
+        {
+          "role_index": 2,
+          "jump_cm": 9.01006613250175,
+          "visible_jump_cm": 9.001827153633734
+        }
+      ]
+    },
+    {
+      "initiator": "client",
+      "action": "Takedown",
+      "all_roles_observed": {
+        "0": [
+          "<BaselinePhysicalPhase.INTERACTION: 1>",
+          "<BaselinePhysicalPhase.RAGDOLL: 2>",
+          "<BaselinePhysicalPhase.RECOVERY: 3>",
+          "<BaselinePhysicalPhase.LOCOMOTION: 0>"
+        ],
+        "1": [
+          "<BaselinePhysicalPhase.INTERACTION: 1>",
+          "<BaselinePhysicalPhase.LOCOMOTION: 0>"
+        ],
+        "2": [
+          "<BaselinePhysicalPhase.LOCOMOTION: 0>",
+          "<BaselinePhysicalPhase.INTERACTION: 1>"
+        ],
+        "3": [
+          "<BaselinePhysicalPhase.LOCOMOTION: 0>",
+          "<BaselinePhysicalPhase.INTERACTION: 1>",
+          "<BaselinePhysicalPhase.RAGDOLL: 2>",
+          "<BaselinePhysicalPhase.RECOVERY: 3>"
+        ]
+      },
+      "max_pelvis_error_cm": 4.172588196505968,
+      "getup_transition_jumps": [
+        {
+          "role_index": 0,
+          "jump_cm": 1.3560563982640468,
+          "visible_jump_cm": 2.5154074464094367
+        },
+        {
+          "role_index": 3,
+          "jump_cm": 13.14751890139132,
+          "visible_jump_cm": 12.938794311446333
+        }
+      ]
+    }
+  ],
+  "source_sha256": {
+    "src/Source/LyraGame/Baseline/BaselinePhysicalInteraction.cpp": "eef6099d3c7063cb60f5a9af242db91d2a75d53f3056497fb684965f6f7c4a6f",
+    "src/Source/LyraGame/Baseline/BaselinePhysicalInteraction.h": "62f3c4948cf7d53cf929978a80f4d686218cd700acbdd45def59dcc90d739bb3",
+    "src/Source/LyraEditor/Crusader/CRBlueprintTools.cpp": "8c8f520d646cc133b8a2c23c77ea2a50cb7febcef911b43ed083a609a0184174",
+    "src/Content/Blueprints/SandboxCharacter_CMC_ABP.uasset": "b6185e206ef4df1c14db2726ba57d8888aa308537f500d7199d955aa53865d31",
+    "src/Content/Blueprints/SandboxCharacter_CMC.uasset": "ae85e37e5c032c2be7ebb6048d0d077203cc49f222a3048dd2ffdb0277617020",
+    "Scripts/Extend-PhysicalInteractions.py": "9d159311a5825e0bea1004d47f82fd64aec8463a45751637654f11fa6362dc01",
+    "Scripts/Test-GetUpContinuity.py": "24385ec8256cccaf7400064520d5bd57d48c8f20c7c124301bff246ba471bb18",
+    "Scripts/Test-AutoGetUpContinuity.py": "2575c515a2cc44132913c77e49b0c19f8103e3f5f7848a3abe898a56416c96c4",
+    "Scripts/Test-GetUpRegressions.py": "303757da6a7b72a82f4bb2a702c897f2d31d53dbb63eea66c9a71354028da13c",
+    "Scripts/Test-RagdollSettling.py": "2981b0238920d2fe7fa58a5f3c8edfcd9b9d60d4ee5f4cf1172407574f102802",
+    "Scripts/Test-PhysicalInteractions.py": "34741df7d49132558da875ae807eb4ca1234e814f11c0843a325763953d246c0",
+    "Scripts/Test-PhysicalInteractions-Network.py": "46b6c28b3e6365541f5102583e4edc5efb77556937b0ee92028f43fd928d0ff8",
+    "Scripts/Test-PhysicalBoundaries.py": "f3aae84dbc3938a1d65846b77859587861d80e7d804d91c09044a88b19fe28e7",
+    "Scripts/Test-TraversalGym.py": "3141a460e1542b1d933b80017a79c4457b68722b8e51799646d2bec6d0dd0b0d"
+  },
+  "validation_notes": [
+    "All seven suites passed on the final native build and saved animation asset.",
+    "The original reproduced transition jumped about 144 cm at a source bone; automatic recovery independently reproduced a roughly 155 cm source / 168 cm visible snap before correcting its update order. Landing simulations are not deterministic, so these are diagnostic comparisons rather than identical-input benchmarks.",
+    "Continuity checks include source and visible bones, floor clearance, and the return to locomotion. The four cases are landing setups, not forced animation selections.",
+    "Resting ragdolls must satisfy the same speed and pose-drift limits over a full quiet second, within a bounded four-to-eight-second settling window. Impulse checks ensure bodies remain physical.",
+    "Earlier iterations exposed snapshot-space, montage/IK blending, automatic tick-order, missing hand-history and residual settling issues; the final reports supersede those intermediate results.",
+    "No missing-bone Pose Search warnings, tick-cycle warnings or Blueprint errors were observed in the final session.",
+    "Weapon aiming and relaxed carry suites were not rerun; the nine-case locomotion/parkour suite covers the changed source animation path."
+  ],
+  "limits": [
+    "Multiplayer validation used two-player listen-server PIE without injected latency or packet loss.",
+    "Ragdoll bones simulate locally with server pelvis corrections; full bone poses are not replicated. Network transition measurements include that correction and remaining physical motion.",
+    "Packaged builds and dedicated servers were not tested."
+  ],
+  "combat_followup": {
+    "manifest": "resources/CombatShoulderValidation.json",
+    "note": "Shared report paths have been rerun for combat death and shoulder switching; original results above remain a historical snapshot."
+  }
+}

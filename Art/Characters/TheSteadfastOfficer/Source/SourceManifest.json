@@ -1,0 +1,39 @@
+{
+  "name": "TheSteadfastOfficer",
+  "archive": "TheSteadfastOfficer.zip",
+  "archive_sha256": "02f5b59b91de1dead5c158654173d8177a79429e9d4e7057955a0552418eea7a",
+  "files": [
+    {
+      "original": "Meshy_AI_The_Steadfast_Officer_1006134825_texture_fbx/Meshy_AI_The_Steadfast_Officer_1006134825_texture.fbx",
+      "file": "TheSteadfastOfficer.fbx",
+      "bytes": 30824588,
+      "sha256": "3e824103a5361267ae152c4d3c21dfd2e63443cc059a9890b518c4fa84e801da"
+    },
+    {
+      "original": "Meshy_AI_The_Steadfast_Officer_1006134825_texture_fbx/Meshy_AI_The_Steadfast_Officer_1006134825_texture.png",
+      "file": "TheSteadfastOfficer_BaseColor.png",
+      "bytes": 6360413,
+      "sha256": "2daa9c17e9886c347e9e1f77ead37e9d0db00b0fa8f17b4da09b65bc9fb65c7f"
+    },
+    {
+      "original": "Meshy_AI_The_Steadfast_Officer_1006134825_texture_fbx/Meshy_AI_The_Steadfast_Officer_1006134825_texture_metallic.png",
+      "file": "TheSteadfastOfficer_Metallic.png",
+      "bytes": 48798,
+      "sha256": "52527a8491fb438a4a07f0ae0bd9a7f653b6ad3bb8c3e4bf73e8a7c379d209f6"
+    },
+    {
+      "original": "Meshy_AI_The_Steadfast_Officer_1006134825_texture_fbx/Meshy_AI_The_Steadfast_Officer_1006134825_texture_normal.png",
+      "file": "TheSteadfastOfficer_Normal.png",
+      "bytes": 5059562,
+      "sha256": "591485f0e0252dd9094d881e348660ba6c345df2cd34c62addd5469393bfb9ae"
+    },
+    {
+      "original": "Meshy_AI_The_Steadfast_Officer_1006134825_texture_fbx/Meshy_AI_The_Steadfast_Officer_1006134825_texture_roughness.png",
+      "file": "TheSteadfastOfficer_Roughness.png",
+      "bytes": 1225768,
+      "sha256": "a44f19e19dbc4768223644f21ca2fd4ee85bebea56a03715bfc258248410ec31"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_The_Steadfast_Officer_1006134825_texture_fbx.zip",
+  "archive_path": "mockups/Guards/TheSteadfastOfficer.zip"
+}
