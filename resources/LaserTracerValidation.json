@@ -1,0 +1,280 @@
+{
+  "engine": "UE 5.8.3",
+  "build": "Succeeded",
+  "fab_listing": "https://www.fab.com/listings/3bd50c75-d222-4387-8b45-4cfc4f61bc51",
+  "demo_selection": "WP_Tracers_Items: TextBlock_11 / Button_8 = Laser Trace 5",
+  "asset": "/Game/Bullet_Tracers_Fx/VFX/Lasers/NS_Laser_Trace_Red_2.NS_Laser_Trace_Red_2",
+  "speed_cm_per_second": 18000,
+  "particle_lifetime_seconds": 0.035,
+  "visual_capture": "Artifacts/LaserTracer/LaserTrace5.png",
+  "tests": {
+    "player.json": {
+      "passed": true,
+      "error": null,
+      "results": [
+        {
+          "weapon": "Pistol",
+          "surface": "Concrete",
+          "left": false,
+          "shots": 1,
+          "impacts": 1,
+          "trails": 1,
+          "pellets": 1,
+          "hit_surfaces": [
+            2
+          ],
+          "blocking": [
+            true
+          ],
+          "bullet_holes": 1
+        },
+        {
+          "weapon": "Pistol",
+          "surface": "Concrete",
+          "left": true,
+          "shots": 1,
+          "impacts": 1,
+          "trails": 1,
+          "pellets": 1,
+          "hit_surfaces": [
+            2
+          ],
+          "blocking": [
+            true
+          ],
+          "bullet_holes": 1
+        },
+        {
+          "weapon": "Rifle",
+          "surface": "Metal",
+          "left": false,
+          "shots": 1,
+          "impacts": 1,
+          "trails": 1,
+          "pellets": 1,
+          "hit_surfaces": [
+            4
+          ],
+          "blocking": [
+            true
+          ],
+          "bullet_holes": 1
+        },
+        {
+          "weapon": "Rifle",
+          "surface": "Metal",
+          "left": true,
+          "shots": 1,
+          "impacts": 1,
+          "trails": 1,
+          "pellets": 1,
+          "hit_surfaces": [
+            4
+          ],
+          "blocking": [
+            true
+          ],
+          "bullet_holes": 1
+        },
+        {
+          "weapon": "Shotgun",
+          "surface": "Wood",
+          "left": false,
+          "shots": 1,
+          "impacts": 9,
+          "trails": 9,
+          "pellets": 9,
+          "hit_surfaces": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "blocking": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "bullet_holes": 9
+        },
+        {
+          "weapon": "Shotgun",
+          "surface": "Wood",
+          "left": true,
+          "shots": 1,
+          "impacts": 9,
+          "trails": 9,
+          "pellets": 9,
+          "hit_surfaces": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "blocking": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "bullet_holes": 9
+        },
+        {
+          "weapon": "Pistol",
+          "surface": "Miss",
+          "left": false,
+          "shots": 1,
+          "impacts": 0,
+          "trails": 1,
+          "pellets": 1,
+          "hit_surfaces": [
+            0
+          ],
+          "blocking": [
+            false
+          ],
+          "bullet_holes": 0
+        },
+        {
+          "weapon": "Rifle",
+          "surface": "Miss",
+          "left": false,
+          "shots": 1,
+          "impacts": 0,
+          "trails": 1,
+          "pellets": 1,
+          "hit_surfaces": [
+            0
+          ],
+          "blocking": [
+            false
+          ],
+          "bullet_holes": 0
+        },
+        {
+          "weapon": "Shotgun",
+          "surface": "Miss",
+          "left": false,
+          "shots": 1,
+          "impacts": 0,
+          "trails": 9,
+          "pellets": 9,
+          "hit_surfaces": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "blocking": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "bullet_holes": 0
+        },
+        {
+          "case": "moving_sources_stop_at_hit_and_cleanup",
+          "sources": 33,
+          "moving_sources": 11,
+          "active_after_fade": 0
+        }
+      ]
+    },
+    "guards.json": {
+      "passed": true,
+      "error": null,
+      "results": [
+        {
+          "weapon": "Rifle",
+          "shots": 1,
+          "pellets": 1,
+          "effect": "/Game/Bullet_Tracers_Fx/VFX/Lasers/NS_Laser_Trace_Red_2.NS_Laser_Trace_Red_2"
+        },
+        {
+          "weapon": "Pistol",
+          "shots": 1,
+          "pellets": 1,
+          "effect": "/Game/Bullet_Tracers_Fx/VFX/Lasers/NS_Laser_Trace_Red_2.NS_Laser_Trace_Red_2"
+        },
+        {
+          "weapon": "Shotgun",
+          "shots": 1,
+          "pellets": 9,
+          "effect": "/Game/Bullet_Tracers_Fx/VFX/Lasers/NS_Laser_Trace_Red_2.NS_Laser_Trace_Red_2"
+        }
+      ]
+    },
+    "network.json": {
+      "passed": true,
+      "error": null,
+      "results": [
+        {
+          "shooter": "host",
+          "shot_bursts_by_role": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "bullet_holes_by_role": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "surface": 2,
+          "passed": true
+        },
+        {
+          "shooter": "client",
+          "shot_bursts_by_role": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "bullet_holes_by_role": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "surface": 4,
+          "passed": true
+        }
+      ]
+    }
+  }
+}

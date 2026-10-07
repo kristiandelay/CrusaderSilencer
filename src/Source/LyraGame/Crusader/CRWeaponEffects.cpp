@@ -23,7 +23,54 @@ const FCRSurfaceImpact* UCRWeaponEffectsProfile::FindSurface(EPhysicalSurface Su
 UCRWeaponEffectsComponent::UCRWeaponEffectsComponent()
 {
     SetIsReplicatedByDefault(true);
-    PrimaryComponentTick.bCanEverTick = false;
+    PrimaryComponentTick.bCanEverTick = true;
+    PrimaryComponentTick.bStartWithTickEnabled = false;
+    PrimaryComponentTick.TickGroup = TG_PrePhysics;
+}
+
+void UCRWeaponEffectsComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
+{
+    Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
+    for (int32 Index = MovingTrails.Num() - 1; Index >= 0; --Index)
+    {
+        auto& Flight = MovingTrails[Index];
+        auto* Trail = Flight.Component.Get();
+        if (!Trail) { MovingTrails.RemoveAtSwap(Index); continue; }
+        if (!Flight.bArrived)
+        {
+            Flight.Elapsed += DeltaTime;
+            const float Alpha = FMath::Clamp(Flight.Elapsed / Flight.Duration, 0.f, 1.f);
+            Trail->SetWorldLocation(FMath::Lerp(Flight.Start, Flight.End, Alpha));
+            Flight.bArrived = Alpha >= 1.f;
+        }
+        else
+        {
+            // Niagara ticks after this component. Give it the arrival frame to
+            // finish the ribbon at the wall before stopping particle emission.
+            if (!Flight.bDeactivated) { Trail->Deactivate(); Flight.bDeactivated = true; }
+            Flight.FadeRemaining -= DeltaTime;
+            if (Flight.FadeRemaining <= 0.f)
+            {
+                Trail->DestroyComponent();
+                MovingTrails.RemoveAtSwap(Index);
+            }
+        }
+    }
+    if (MovingTrails.IsEmpty()) SetComponentTickEnabled(false);
+}
+
+void UCRWeaponEffectsComponent::EndPlay(const EEndPlayReason::Type EndPlayReason)
+{
+    for (const auto& Flight : MovingTrails) if (Flight.Component.IsValid()) Flight.Component->DestroyComponent();
+    MovingTrails.Empty();
+    Super::EndPlay(EndPlayReason);
+}
+
+int32 UCRWeaponEffectsComponent::GetActiveTrailCount() const
+{
+    int32 Count = 0;
+    for (const auto& Flight : MovingTrails) if (Flight.Component.IsValid()) ++Count;
+    return Count;
 }
 
 int32 UCRWeaponEffectsComponent::GetActiveBulletHoleCount() const
@@ -92,21 +139,46 @@ void UCRWeaponEffectsComponent::PlayShot(UCRWeaponEffectsProfile* Profile, const
     {
         const FVector Travel = FVector(Hit.Position) - Muzzle.GetLocation();
         const float Distance = Travel.Size();
-        // The pack's projectile moves along local X. Stop it at the actual trace
-        // endpoint so it cannot keep travelling through the wall after a hit.
+        // Both trail styles stop at the accepted trace endpoint. They are only
+        // presentation; hit authority, damage and pellet spread remain in Lyra.
         if (Profile->BulletTrail && Distance > 30.f)
         {
             const float Speed = FMath::Max(Profile->TrailSpeed, 100.f);
             if (auto* Trail = UNiagaraFunctionLibrary::SpawnSystemAtLocation(this, Profile->BulletTrail, Muzzle.GetLocation(), Travel.Rotation(), FVector::OneVector, false, false))
             {
-                Trail->SetVariableFloat(TEXT("User.X_Velocity"), Speed);
-                Trail->SetVariableFloat(TEXT("User.BulletSmoke_Wdith"), 1.2f);
-                Trail->SetVariableFloat(TEXT("User.BulletSmoke_Opacity"), .12f);
-                Trail->SetVariableVec2(TEXT("User.BulletScaleFactor"), FVector2D(.35f, .35f));
-                Trail->Activate(true);
-                FTimerHandle Timer;
-                TWeakObjectPtr<UNiagaraComponent> WeakTrail(Trail);
-                GetWorld()->GetTimerManager().SetTimer(Timer, [WeakTrail] { if (WeakTrail.IsValid()) WeakTrail->DestroyComponent(); }, FMath::Clamp(Distance / Speed, .001f, 2.f), false);
+                if (Profile->bMovementDrivenTrail)
+                {
+                    // Laser Trace 5 from Bullet Tracers & Trails uses Spawn Per
+                    // Unit. Moving its source is essential; X_Velocity does not
+                    // drive this emitter. Solo ticking honors our prerequisite.
+                    Trail->SetForceSolo(true);
+                    Trail->AddTickPrerequisiteComponent(this);
+                    const float Lifetime = FMath::Clamp(Profile->TrailParticleLifetime, .01f, .25f);
+                    Trail->SetVariableFloat(TEXT("User.Lifetime"), Lifetime);
+                    Trail->SetVariableFloat(TEXT("User.Max Movement Threshold"), 250000.f);
+                    Trail->Activate(true);
+                    // Prime the source position before its first movement, so
+                    // even short shots can draw a muzzle-to-endpoint ribbon.
+                    Trail->AdvanceSimulation(1, .001f);
+                    FMovingTrail& Flight = MovingTrails.AddDefaulted_GetRef();
+                    Flight.Component = Trail;
+                    Flight.Start = Muzzle.GetLocation();
+                    Flight.End = Hit.Position;
+                    Flight.Duration = FMath::Clamp(Distance / Speed, .001f, 2.f);
+                    Flight.FadeRemaining = Lifetime + .05f;
+                    SetComponentTickEnabled(true);
+                }
+                else
+                {
+                    Trail->SetVariableFloat(TEXT("User.X_Velocity"), Speed);
+                    Trail->SetVariableFloat(TEXT("User.BulletSmoke_Wdith"), 1.2f);
+                    Trail->SetVariableFloat(TEXT("User.BulletSmoke_Opacity"), .12f);
+                    Trail->SetVariableVec2(TEXT("User.BulletScaleFactor"), FVector2D(.35f, .35f));
+                    Trail->Activate(true);
+                    FTimerHandle Timer;
+                    TWeakObjectPtr<UNiagaraComponent> WeakTrail(Trail);
+                    GetWorld()->GetTimerManager().SetTimer(Timer, [WeakTrail] { if (WeakTrail.IsValid()) WeakTrail->DestroyComponent(); }, FMath::Clamp(Distance / Speed, .001f, 2.f), false);
+                }
                 ++TrailsPlayed;
             }
         }

@@ -77,12 +77,15 @@ for index,name,effect,sound,decal in SURFACES:
     entries.append(entry)
     manifest.append(dict(id=index,name=name,physical_material=physical.get_path_name(),effect=niagara.get_path_name(),sound=cue.get_path_name(),decal=decal_obj.get_path_name() if decal_obj else None))
 
-for kind,muzzle,eject,scale in [('Rifle','AR/NS_Muzzle_AR_01','AR',.55),('Pistol','Pistol/NS_Muzzle_Pistol_01','HandGun',.5),('Shotgun','Shotgun/NS_Muzzle_Shotgun_01','SG',.65)]:
+for kind,muzzle,scale in [('Rifle','AR/NS_Muzzle_AR_01',.55),('Pistol','Pistol/NS_Muzzle_Pistol_01',.5),('Shotgun','Shotgun/NS_Muzzle_Shotgun_01',.65)]:
     factory=u.DataAssetFactory();factory.set_editor_property('data_asset_class',u.CRWeaponEffectsProfile)
     profile=asset('FX_'+kind,u.CRWeaponEffectsProfile,factory)
     profile.set_editor_property('muzzle_flash',load('/Game/GunFX/NiagaraSystem/MuzzleFlashes/'+muzzle))
-    profile.set_editor_property('shell_ejection',load('/Game/GunFX/NiagaraSystem/Ejections/SingleBurst/NS_Ejection_'+eject+'_SingleBurst'))
-    profile.set_editor_property('bullet_trail',load('/Game/GunFX/NiagaraSystem/BulletTrails/NS_BulletTrail'))
+    profile.set_editor_property('shell_ejection',None)
+    profile.set_editor_property('bullet_trail',load('/Game/Bullet_Tracers_Fx/VFX/Lasers/NS_Laser_Trace_Red_2'))
+    profile.set_editor_property('movement_driven_trail',True)
+    profile.set_editor_property('trail_speed',18000.0)
+    profile.set_editor_property('trail_particle_lifetime',.035)
     profile.set_editor_property('impact_attenuation',attenuation)
     profile.set_editor_property('surfaces',entries);profile.set_editor_property('muzzle_scale',scale)
     profile.set_editor_property('decal_size',4 if kind=='Shotgun' else 3)
