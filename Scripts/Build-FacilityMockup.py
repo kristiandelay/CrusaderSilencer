@@ -130,10 +130,12 @@ cx,cy=-540,850
 fm_mesh('ContainmentPlatform','IndustrialLandingPlatform',(cx,cy,42),(590,590,84),section='Containment')
 fm_mesh('ContainmentHatch','RedIndustrialHatch',(cx,cy,64),(275,275,20),section='Containment')
 # Match the user's fitted front-left post and lowered central hatch.
-post_x,post_y=220,200
+post_x,post_y=210,210
+beacon_bounds=fm_meshes['RedBeacon'].get_bounding_box()
+beacon_extent=beacon_bounds.max-beacon_bounds.min
 for i,(dx,dy) in enumerate([(-post_x,-post_y),(post_x,-post_y),(-post_x,post_y),(post_x,post_y)]):
-    post=fm_mesh('ContainmentPost_'+str(i),'IndustrialEnergyCell',(cx+dx,cy+dy,185),(48,48,370),section='Containment')
-    beacon=fm_prop('ContainmentBeacon_'+str(i),'RedBeacon',cx+dx,cy+dy-27,250,scale=.55,section='Containment',collision=False)
+    post=fm_mesh('ContainmentPost_'+str(i),'IndustrialEnergyCell',(cx+dx,cy+dy,185),(72,72,370),section='Containment')
+    beacon=fm_mesh('ContainmentBeacon_'+str(i),'RedBeacon',(cx+dx,cy+dy-40.5,250+beacon_extent.z*.55/2),(beacon_extent.x*.825,beacon_extent.y*.825,beacon_extent.z*.55),u.Rotator(yaw=180),section='Containment',collision=False)
     beacon.attach_to_actor(post,'',u.AttachmentRule.KEEP_WORLD,u.AttachmentRule.KEEP_WORLD,u.AttachmentRule.KEEP_WORLD,False)
 for level,z in enumerate([160,255]):
     fm_mesh('RailRear_'+str(level),'HazardStripeBarrier',(cx,cy+post_y,z),(post_x*2,6,6),section='Containment')

@@ -4051,8 +4051,8 @@
       "model": "IndustrialEnergyCell",
       "section": "Containment",
       "center": [
-        -760.0,
-        650.0,
+        -750.0,
+        640.0,
         185.0
       ],
       "collision": true
@@ -4062,8 +4062,8 @@
       "model": "RedBeacon",
       "section": "Containment",
       "center": [
-        -760.0,
-        623.0,
+        -750.0,
+        599.5,
         262.375
       ],
       "collision": false
@@ -4073,8 +4073,8 @@
       "model": "IndustrialEnergyCell",
       "section": "Containment",
       "center": [
-        -320.0,
-        650.0,
+        -330.0,
+        640.0,
         185.0
       ],
       "collision": true
@@ -4084,8 +4084,8 @@
       "model": "RedBeacon",
       "section": "Containment",
       "center": [
-        -320.0,
-        623.0,
+        -330.0,
+        599.5,
         262.375
       ],
       "collision": false
@@ -4095,8 +4095,8 @@
       "model": "IndustrialEnergyCell",
       "section": "Containment",
       "center": [
-        -760.0,
-        1050.0,
+        -750.0,
+        1060.0,
         185.0
       ],
       "collision": true
@@ -4106,8 +4106,8 @@
       "model": "RedBeacon",
       "section": "Containment",
       "center": [
-        -760.0,
-        1023.0,
+        -750.0,
+        1019.5,
         262.375
       ],
       "collision": false
@@ -4117,8 +4117,8 @@
       "model": "IndustrialEnergyCell",
       "section": "Containment",
       "center": [
-        -320.0,
-        1050.0,
+        -330.0,
+        1060.0,
         185.0
       ],
       "collision": true
@@ -4128,8 +4128,8 @@
       "model": "RedBeacon",
       "section": "Containment",
       "center": [
-        -320.0,
-        1023.0,
+        -330.0,
+        1019.5,
         262.375
       ],
       "collision": false
@@ -4140,7 +4140,7 @@
       "section": "Containment",
       "center": [
         -540.0,
-        1050.0,
+        1060.0,
         160.0
       ],
       "collision": true
@@ -4150,7 +4150,7 @@
       "model": "HazardStripeBarrier",
       "section": "Containment",
       "center": [
-        -760.0,
+        -750.0,
         850.0,
         160.0
       ],
@@ -4161,7 +4161,7 @@
       "model": "HazardStripeBarrier",
       "section": "Containment",
       "center": [
-        -320.0,
+        -330.0,
         850.0,
         160.0
       ],
@@ -4173,7 +4173,7 @@
       "section": "Containment",
       "center": [
         -540.0,
-        1050.0,
+        1060.0,
         255.0
       ],
       "collision": true
@@ -4183,7 +4183,7 @@
       "model": "HazardStripeBarrier",
       "section": "Containment",
       "center": [
-        -760.0,
+        -750.0,
         850.0,
         255.0
       ],
@@ -4194,7 +4194,7 @@
       "model": "HazardStripeBarrier",
       "section": "Containment",
       "center": [
-        -320.0,
+        -330.0,
         850.0,
         255.0
       ],

@@ -10,6 +10,10 @@ fa_platform=fa_actors[fa_prefix+'ContainmentPlatform'].get_actor_bounds(False)[0
 fa_reference=fa_actors[fa_prefix+'ContainmentPost_0']
 fa_centre=fa_reference.get_actor_bounds(False)[0]
 fa_dx=abs(fa_centre.x-fa_platform.x);fa_dy=abs(fa_centre.y-fa_platform.y)
+fa_beacon_reference=fa_actors[fa_prefix+'ContainmentBeacon_0']
+fa_beacon_offset=fa_beacon_reference.get_actor_bounds(False)[0]-fa_centre
+fa_beacon_scale=fa_beacon_reference.get_actor_scale3d()
+fa_beacon_rotation=fa_beacon_reference.get_actor_rotation()
 
 def fa_move_centre(actor,centre):
     actor.set_actor_location(actor.get_actor_location()+centre-actor.get_actor_bounds(False)[0],False,True)
@@ -22,8 +26,9 @@ for index,(sx,sy) in enumerate([(-1,-1),(1,-1),(-1,1),(1,1)]):
         post.set_actor_scale3d(fa_reference.get_actor_scale3d())
         fa_move_centre(post,centre)
     beacon=fa_actors[fa_prefix+'ContainmentBeacon_'+str(index)]
-    old=beacon.get_actor_bounds(False)[0]
-    fa_move_centre(beacon,u.Vector(centre.x,centre.y-27,old.z))
+    beacon.set_actor_scale3d(fa_beacon_scale)
+    beacon.set_actor_rotation(fa_beacon_rotation,False)
+    fa_move_centre(beacon,centre+fa_beacon_offset)
     beacon.attach_to_actor(post,'',u.AttachmentRule.KEEP_WORLD,u.AttachmentRule.KEEP_WORLD,u.AttachmentRule.KEEP_WORLD,False)
 
 for level in range(2):
