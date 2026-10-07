@@ -18,7 +18,15 @@ public:
     bool IsSliding() const { return bSliding; }
     UFUNCTION(BlueprintPure, Category="Baseline|Movement")
     bool CanStartSlide() const;
+    UFUNCTION(BlueprintPure, Category="Baseline|Movement")
+    bool CanCancelSlide() const { return bSliding && SlideMinimumTimeRemaining <= 0.f; }
+    UFUNCTION(BlueprintPure, Category="Baseline|Movement")
+    float GetSlideRecoveryRemaining() const { return SlideRecoveryRemaining; }
 
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Baseline|Slide", meta=(ClampMin="0", Units="s"))
+    float SlideMinimumDuration = .35f;
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Baseline|Slide", meta=(ClampMin="0", Units="s"))
+    float SlideRecoveryDuration = .65f;
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Baseline|Slide", meta=(ClampMin="0"))
     float SlideMinimumStartSpeed = 550.f;
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Baseline|Slide", meta=(ClampMin="0"))
@@ -49,11 +57,20 @@ public:
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 
     bool bWantsToSlide = false;
-    // Saved moves restore this alongside CMC's crouch and velocity state.
-    void RestorePredictedSlide(bool bSavedSliding) { bSliding = bSavedSliding; }
+    // Movement-time clocks must rewind with saved moves, rather than using world
+    // timers which would run ahead when the client replays a correction.
+    float GetSlideMinimumTimeRemaining() const { return SlideMinimumTimeRemaining; }
+    void RestorePredictedSlide(bool bSavedSliding, float MinimumTime, float RecoveryTime)
+    {
+        bSliding = bSavedSliding;
+        SlideMinimumTimeRemaining = MinimumTime;
+        SlideRecoveryRemaining = RecoveryTime;
+    }
 private:
     void SetSliding(bool bNewSliding);
     UFUNCTION() void OnRep_Sliding();
     UPROPERTY(ReplicatedUsing=OnRep_Sliding)
     bool bSliding = false;
+    float SlideMinimumTimeRemaining = 0.f;
+    float SlideRecoveryRemaining = 0.f;
 };

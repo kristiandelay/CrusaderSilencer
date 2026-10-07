@@ -1,0 +1,163 @@
+{
+  "engine": "UE 5.8.3",
+  "build": "Succeeded",
+  "minimum_slide_seconds": 0.35,
+  "recovery_after_slide_seconds": 0.65,
+  "tests": {
+    "SlideCadence/standalone.json": {
+      "passed": true,
+      "error": null,
+      "results": [
+        {
+          "case": "stationary_crouch_toggle",
+          "passed": true
+        },
+        {
+          "case": "entry_spam_ignored",
+          "slide_entries": 1,
+          "initial_speed": 756.2941284179688,
+          "speed_after": 639.2738037109375
+        },
+        {
+          "case": "recovery_spam_ignored",
+          "elapsed_seconds": 0.6700294017791748
+        },
+        {
+          "case": "no_buffered_restart",
+          "passed": true
+        },
+        {
+          "case": "fresh_press_after_recovery",
+          "passed": true
+        },
+        {
+          "case": "physical_interrupt_during_entry",
+          "falling": true,
+          "passed": true
+        }
+      ],
+      "slide_entries": 2
+    },
+    "SlideCadence/combat.json": {
+      "passed": true,
+      "error": null,
+      "results": [
+        {
+          "weapon": "Rifle",
+          "left_shoulder": false,
+          "rounds_fired": 3,
+          "maximum_aim_error_before_recoil_degrees": 8.71259035853455,
+          "maximum_hand_error_cm": 2.104629926116494
+        },
+        {
+          "weapon": "Rifle",
+          "left_shoulder": true,
+          "rounds_fired": 3,
+          "maximum_aim_error_before_recoil_degrees": 2.8812132022378205,
+          "maximum_hand_error_cm": 1.4926115034620784
+        },
+        {
+          "weapon": "Pistol",
+          "left_shoulder": false,
+          "rounds_fired": 1,
+          "maximum_aim_error_before_recoil_degrees": 11.832301969637298,
+          "maximum_hand_error_cm": 3.9053460360505627
+        },
+        {
+          "weapon": "Pistol",
+          "left_shoulder": true,
+          "rounds_fired": 1,
+          "maximum_aim_error_before_recoil_degrees": 6.012672732042065,
+          "maximum_hand_error_cm": 3.952339232441583
+        },
+        {
+          "weapon": "Shotgun",
+          "left_shoulder": false,
+          "rounds_fired": 2,
+          "maximum_aim_error_before_recoil_degrees": 8.856525253288698,
+          "maximum_hand_error_cm": 2.0326136232723107
+        },
+        {
+          "weapon": "Shotgun",
+          "left_shoulder": true,
+          "rounds_fired": 2,
+          "maximum_aim_error_before_recoil_degrees": 3.0316403886394667,
+          "maximum_hand_error_cm": 1.441145951595913
+        }
+      ]
+    },
+    "SlideCadence/npc.json": {
+      "passed": true,
+      "error": null,
+      "results": [
+        {
+          "role": "Guard",
+          "action": "Slide",
+          "start": [
+            8324.825516481204,
+            -1850.0,
+            88.27499628067017
+          ],
+          "end": [
+            8885.98974971566,
+            -1850.0,
+            88.27599573135376
+          ],
+          "max_z": 88.27599573135376,
+          "minimum_capsule": 60.0,
+          "sliding": true,
+          "montage": "/Engine/Transient.AnimMontage_25",
+          "weapon_stowed": false
+        },
+        {
+          "role": "Civilian",
+          "action": "Slide",
+          "start": [
+            8374.06707258115,
+            -1850.0000000000005,
+            88.27499628067017
+          ],
+          "end": [
+            8825.889086174748,
+            -1850.0000000000005,
+            88.27599573135376
+          ],
+          "max_z": 88.27599573135376,
+          "minimum_capsule": 60.0,
+          "sliding": true,
+          "montage": "/Engine/Transient.AnimMontage_26",
+          "weapon_stowed": false
+        }
+      ]
+    },
+    "SlideCadence/network.json": {
+      "passed": true,
+      "error": null,
+      "results": [
+        {
+          "case": "stationary_crouch_toggle",
+          "passed": true
+        },
+        {
+          "case": "entry_spam_ignored",
+          "slide_entries": 1,
+          "initial_speed": 759.4956665039062,
+          "speed_after": 629.5863037109375
+        },
+        {
+          "case": "recovery_spam_ignored",
+          "elapsed_seconds": 0.6553755030035973
+        },
+        {
+          "case": "no_buffered_restart",
+          "passed": true
+        },
+        {
+          "case": "fresh_press_after_recovery",
+          "passed": true
+        }
+      ],
+      "slide_entries": 2
+    }
+  }
+}

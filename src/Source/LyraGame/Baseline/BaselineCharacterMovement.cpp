@@ -12,10 +12,13 @@ public:
     using Super = FSavedMove_Character;
     bool bSavedWantsSlide = false;
     bool bSavedSliding = false;
+    float SavedMinimumTime = 0.f;
+    float SavedRecoveryTime = 0.f;
     virtual void Clear() override
     {
         Super::Clear();
         bSavedWantsSlide = bSavedSliding = false;
+        SavedMinimumTime = SavedRecoveryTime = 0.f;
     }
     virtual uint8 GetCompressedFlags() const override
     {
@@ -24,6 +27,9 @@ public:
     virtual bool CanCombineWith(const FSavedMovePtr& NewMove, ACharacter* Character, float MaxDelta) const override
     {
         const auto* Other = static_cast<const FBaselineSavedMove*>(NewMove.Get());
+        // Preserve the exact movement step where a commitment/recovery expires.
+        if (SavedMinimumTime > 0.f || Other->SavedMinimumTime > 0.f
+            || SavedRecoveryTime > 0.f || Other->SavedRecoveryTime > 0.f) return false;
         return bSavedWantsSlide == Other->bSavedWantsSlide && bSavedSliding == Other->bSavedSliding
             && Super::CanCombineWith(NewMove, Character, MaxDelta);
     }
@@ -34,13 +40,15 @@ public:
         const auto* Movement = CastChecked<UBaselineCharacterMovement>(Character->GetCharacterMovement());
         bSavedWantsSlide = Movement->bWantsToSlide;
         bSavedSliding = Movement->IsSliding();
+        SavedMinimumTime = Movement->GetSlideMinimumTimeRemaining();
+        SavedRecoveryTime = Movement->GetSlideRecoveryRemaining();
     }
     virtual void PrepMoveFor(ACharacter* Character) override
     {
         Super::PrepMoveFor(Character);
         auto* Movement = CastChecked<UBaselineCharacterMovement>(Character->GetCharacterMovement());
         Movement->bWantsToSlide = bSavedWantsSlide;
-        Movement->RestorePredictedSlide(bSavedSliding);
+        Movement->RestorePredictedSlide(bSavedSliding, SavedMinimumTime, SavedRecoveryTime);
     }
 };
 
@@ -67,9 +75,10 @@ void UBaselineCharacterMovement::GetLifetimeReplicatedProps(TArray<FLifetimeProp
 
 bool UBaselineCharacterMovement::CanStartSlide() const
 {
-    return IsMovingOnGround() && CurrentFloor.IsWalkableFloor() && !HasAnimRootMotion()
+    return !bSliding && SlideRecoveryRemaining <= 0.f
+        && IsMovingOnGround() && CurrentFloor.IsWalkableFloor() && !HasAnimRootMotion()
         && Velocity.SizeSquared2D() >= FMath::Square(SlideMinimumStartSpeed)
-        && Super::GetMaxSpeed() > 0.f;
+        && GetMaxSpeed() > 0.f;
 }
 
 void UBaselineCharacterMovement::SetSliding(bool bNewSliding)
@@ -77,6 +86,8 @@ void UBaselineCharacterMovement::SetSliding(bool bNewSliding)
     if (bSliding != bNewSliding)
     {
         bSliding = bNewSliding;
+        SlideMinimumTimeRemaining = bSliding ? SlideMinimumDuration : 0.f;
+        if (!bSliding) SlideRecoveryRemaining = SlideRecoveryDuration;
         OnSlideChanged.Broadcast(bSliding);
     }
 }
@@ -88,6 +99,8 @@ void UBaselineCharacterMovement::OnRep_Sliding()
 
 void UBaselineCharacterMovement::UpdateCharacterStateBeforeMovement(float DeltaSeconds)
 {
+    SlideMinimumTimeRemaining = FMath::Max(0.f, SlideMinimumTimeRemaining - DeltaSeconds);
+    SlideRecoveryRemaining = FMath::Max(0.f, SlideRecoveryRemaining - DeltaSeconds);
     if (bWantsToSlide && !bSliding)
     {
         if (CanStartSlide())

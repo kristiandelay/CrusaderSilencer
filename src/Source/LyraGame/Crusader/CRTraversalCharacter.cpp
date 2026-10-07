@@ -159,6 +159,9 @@ void ACRTraversalCharacter::ToggleSlideCrouch()
 {
     if (!CanUseMovementActions()) return;
     auto* Movement = CastChecked<UBaselineCharacterMovement>(GetCharacterMovement());
+    // Ignore rapid toggle presses during the entry animation. Physical exits
+    // (jump, ledge, impact, ragdoll) still end the slide through movement itself.
+    if (Movement->IsSliding() && !Movement->CanCancelSlide()) return;
     if (Movement->IsSliding() || Movement->bWantsToSlide || bIsCrouched)
     {
         Movement->SetSlideRequested(false);
@@ -166,6 +169,10 @@ void ACRTraversalCharacter::ToggleSlideCrouch()
     }
     else
     {
+        // A rejected repeat slide should not flicker into a crouch or queue up
+        // another entry boost. Slow movement retains the normal crouch toggle.
+        if (Movement->GetSlideRecoveryRemaining() > 0.f
+            && Movement->Velocity.SizeSquared2D() >= FMath::Square(Movement->SlideMinimumStartSpeed)) return;
         if (Movement->CanStartSlide()) Movement->SetSlideRequested(true);
         Crouch();
     }
