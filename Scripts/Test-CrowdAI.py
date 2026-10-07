@@ -4,6 +4,7 @@ from pathlib import Path
 import unreal as u
 
 ai_root=Path(u.Paths.convert_relative_path_to_full(u.Paths.project_dir())).parent
+ai_spawns=[row for name in ['CrowdDistrict','FacilityCrowd'] if (ai_root/f'resources/{name}.json').exists() for row in json.loads((ai_root/f'resources/{name}.json').read_text())['spawns']]
 ai_test=dict(phase='ready',next=0,busy=False,results=[],deadline=time.monotonic()+240)
 def ai_vec(v):return [v.x,v.y,v.z]
 def ai_input(p,name,value):
@@ -24,7 +25,7 @@ def ai_tick(dt):
         w=worlds[0];p=u.GameplayStatics.get_player_pawn(w,0)
         if not p:return
         npcs=[a for a in u.GameplayStatics.get_all_actors_of_class(w,u.CRTraversalCharacter) if a.crowd_agent.enabled]
-        if len(npcs)!=12 or not all(a.crowd_agent.initialized for a in npcs):return
+        if len(npcs)!=len(ai_spawns) or not all(a.crowd_agent.initialized for a in npcs):return
         now=u.GameplayStatics.get_time_seconds(w);phase=ai_test['phase']
         if ai_test.pop('release',False):
             ai_input(p,'Fire',0);ai_input(p,'FireAuto',0)
@@ -42,7 +43,7 @@ def ai_tick(dt):
                 assert bool(item)==data.guard,(a.get_name(),item)
                 assert ('UrbanTrailblazer' in skin)==(not data.guard),(a.get_name(),skin)
                 roles.append(dict(name=a.get_name(),guard=data.guard,skin=skin,weapon=a.equipment_manager.get_first_instance_of_type(u.BaselineWeaponInstance).effects_profile.get_name() if item else None))
-            assert sum(r['guard'] for r in roles)==6
+            assert sum(r['guard'] for r in roles)==sum(r['role'].startswith('Guard') for r in ai_spawns)
             ai_test['results'].append(dict(case='spawn_roles_and_loadouts',npcs=roles))
             p.get_controller().set_ignore_move_input(True);p.get_controller().set_ignore_look_input(True)
             u.SystemLibrary.execute_console_command(w,'God',p.get_controller())

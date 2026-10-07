@@ -34,7 +34,8 @@
       "radius": 1200.0,
       "neighbours": [
         "CR_Crowd_Market",
-        "CR_Crowd_Refuge"
+        "CR_Crowd_Refuge",
+        "CR_FacilityCrowd_Area_Approach"
       ]
     },
     "Refuge": {
@@ -46,7 +47,8 @@
       "radius": 1000.0,
       "neighbours": [
         "CR_Crowd_Commons",
-        "CR_Crowd_Depot"
+        "CR_Crowd_Depot",
+        "CR_FacilityCrowd_Area_Approach"
       ]
     }
   },

@@ -16,7 +16,8 @@ def av_tick(dt):
         ws=u.EditorLevelLibrary.get_pie_worlds(False)
         if not ws:return
         now=u.GameplayStatics.get_time_seconds(ws[0])
-        npcs=sorted([p for p in u.GameplayStatics.get_all_actors_of_class(ws[0],u.CRTraversalCharacter) if p.crowd_agent.enabled],key=lambda p:p.get_name())
+        # This fixture intentionally measures the original twelve-agent crossing.
+        npcs=sorted([p for p in u.GameplayStatics.get_all_actors_of_class(ws[0],u.CRTraversalCharacter) if p.crowd_agent.enabled and p.crowd_agent.home_area and p.crowd_agent.home_area.get_actor_label().startswith('CR_Crowd_')],key=lambda p:p.get_name())
         if len(npcs)!=12 or not all(p.crowd_agent.initialized for p in npcs) or not u.GameplayStatics.get_player_pawn(ws[0],0):return
         if av_test['phase']=='cross':
             positions=[p.get_actor_location() for p in npcs]

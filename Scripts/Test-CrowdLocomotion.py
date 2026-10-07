@@ -4,6 +4,7 @@ from pathlib import Path
 import unreal as u
 
 cl_root=Path(u.Paths.convert_relative_path_to_full(u.Paths.project_dir())).parent
+cl_expected=sum(len(json.loads((cl_root/f'resources/{name}.json').read_text())['spawns']) for name in ['CrowdDistrict','FacilityCrowd'] if (cl_root/f'resources/{name}.json').exists())
 cl_out=cl_root/'Artifacts/Locomotion'
 cl_out.mkdir(exist_ok=True)
 cl_test=dict(phase='setup',index=0,next=0,busy=False,results=[],deadline=time.monotonic()+180)
@@ -27,7 +28,7 @@ def cl_tick(dt):
         worlds=u.EditorLevelLibrary.get_pie_worlds(False)
         if not worlds:return
         groups=[[p for p in u.GameplayStatics.get_all_actors_of_class(w,u.CRTraversalCharacter) if p.crowd_agent.enabled] for w in worlds]
-        if not all(len(ps)==12 and all(p.crowd_agent.initialized for p in ps) for ps in groups):return
+        if not all(len(ps)==cl_expected and all(p.crowd_agent.initialized for p in ps) for ps in groups):return
         server=next(ps for ps in groups if ps[0].get_controller())
         w=server[0].get_world();now=u.GameplayStatics.get_time_seconds(w)
         case,speed,gait=cl_cases[cl_test['index']]

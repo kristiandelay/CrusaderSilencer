@@ -1,0 +1,138 @@
+{
+  "map": "/Game/Maps/L_TraversalGym",
+  "areas": {
+    "Approach": {
+      "position": [
+        11400.0,
+        6060.0,
+        30.0
+      ],
+      "radius": 230.0,
+      "wander_chance": 0.6499999761581421,
+      "neighbours": [
+        "CR_FacilityCrowd_Area_Checkpoint",
+        "CR_Crowd_Refuge",
+        "CR_Crowd_Depot"
+      ]
+    },
+    "Checkpoint": {
+      "position": [
+        11400.0,
+        7200.0,
+        30.0
+      ],
+      "radius": 420.0,
+      "wander_chance": 0.550000011920929,
+      "neighbours": [
+        "CR_FacilityCrowd_Area_Approach",
+        "CR_FacilityCrowd_Area_Laboratory",
+        "CR_FacilityCrowd_Area_Hall"
+      ]
+    },
+    "Laboratory": {
+      "position": [
+        11490.0,
+        8530.0,
+        30.0
+      ],
+      "radius": 340.0,
+      "wander_chance": 0.550000011920929,
+      "neighbours": [
+        "CR_FacilityCrowd_Area_Checkpoint",
+        "CR_FacilityCrowd_Area_Hall"
+      ]
+    },
+    "Hall": {
+      "position": [
+        12950.0,
+        7550.0,
+        30.0
+      ],
+      "radius": 440.0,
+      "wander_chance": 0.550000011920929,
+      "neighbours": [
+        "CR_FacilityCrowd_Area_Checkpoint",
+        "CR_FacilityCrowd_Area_Laboratory",
+        "CR_FacilityCrowd_Area_Office"
+      ]
+    },
+    "Office": {
+      "position": [
+        13750.0,
+        8720.0,
+        30.0
+      ],
+      "radius": 240.0,
+      "wander_chance": 0.6499999761581421,
+      "neighbours": [
+        "CR_FacilityCrowd_Area_Hall"
+      ]
+    }
+  },
+  "district_connections": [
+    "Refuge",
+    "Depot"
+  ],
+  "spawns": [
+    {
+      "actor": "CR_FacilityCrowd_GuardRifle_1",
+      "role": "GuardRifle",
+      "home": "Checkpoint",
+      "position": [
+        11500,
+        7190,
+        120
+      ]
+    },
+    {
+      "actor": "CR_FacilityCrowd_GuardPistol_2",
+      "role": "GuardPistol",
+      "home": "Office",
+      "position": [
+        13860,
+        8630,
+        120
+      ]
+    },
+    {
+      "actor": "CR_FacilityCrowd_GuardShotgun_3",
+      "role": "GuardShotgun",
+      "home": "Laboratory",
+      "position": [
+        11400,
+        8600,
+        120
+      ]
+    },
+    {
+      "actor": "CR_FacilityCrowd_Civilian_4",
+      "role": "Civilian",
+      "home": "Laboratory",
+      "position": [
+        11580,
+        8270,
+        120
+      ]
+    },
+    {
+      "actor": "CR_FacilityCrowd_Civilian_5",
+      "role": "Civilian",
+      "home": "Office",
+      "position": [
+        13570,
+        8810,
+        120
+      ]
+    },
+    {
+      "actor": "CR_FacilityCrowd_Civilian_6",
+      "role": "Civilian",
+      "home": "Hall",
+      "position": [
+        13030,
+        7650,
+        120
+      ]
+    }
+  ]
+}

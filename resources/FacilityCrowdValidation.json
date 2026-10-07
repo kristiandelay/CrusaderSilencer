@@ -1,0 +1,227 @@
+{
+  "passed": true,
+  "loadouts": [
+    {
+      "actor": "CR_FacilityCrowd_GuardRifle_1",
+      "guard": true,
+      "armed": true,
+      "weapon": "FX_Rifle",
+      "visual": "BP_ObsidianSentinel_C"
+    },
+    {
+      "actor": "CR_FacilityCrowd_GuardPistol_2",
+      "guard": true,
+      "armed": true,
+      "weapon": "FX_Pistol",
+      "visual": "BP_ObsidianSentinel_C"
+    },
+    {
+      "actor": "CR_FacilityCrowd_GuardShotgun_3",
+      "guard": true,
+      "armed": true,
+      "weapon": "FX_Shotgun",
+      "visual": "BP_TheSteadfastOfficer_C"
+    },
+    {
+      "actor": "CR_FacilityCrowd_Civilian_4",
+      "guard": false,
+      "armed": false,
+      "weapon": null,
+      "visual": "BP_UrbanTrailblazer_C"
+    },
+    {
+      "actor": "CR_FacilityCrowd_Civilian_5",
+      "guard": false,
+      "armed": false,
+      "weapon": null,
+      "visual": "BP_UrbanTrailblazer_C"
+    },
+    {
+      "actor": "CR_FacilityCrowd_Civilian_6",
+      "guard": false,
+      "armed": false,
+      "weapon": null,
+      "visual": "BP_UrbanTrailblazer_C"
+    }
+  ],
+  "routes": [
+    {
+      "start": "CR_FacilityCrowd_Area_Approach",
+      "end": "CR_FacilityCrowd_Area_Checkpoint",
+      "complete": true,
+      "reciprocal": true
+    },
+    {
+      "start": "CR_FacilityCrowd_Area_Approach",
+      "end": "CR_Crowd_Refuge",
+      "complete": true,
+      "reciprocal": true
+    },
+    {
+      "start": "CR_FacilityCrowd_Area_Approach",
+      "end": "CR_Crowd_Depot",
+      "complete": true,
+      "reciprocal": true
+    },
+    {
+      "start": "CR_FacilityCrowd_Area_Checkpoint",
+      "end": "CR_FacilityCrowd_Area_Approach",
+      "complete": true,
+      "reciprocal": true
+    },
+    {
+      "start": "CR_FacilityCrowd_Area_Checkpoint",
+      "end": "CR_FacilityCrowd_Area_Laboratory",
+      "complete": true,
+      "reciprocal": true
+    },
+    {
+      "start": "CR_FacilityCrowd_Area_Checkpoint",
+      "end": "CR_FacilityCrowd_Area_Hall",
+      "complete": true,
+      "reciprocal": true
+    },
+    {
+      "start": "CR_FacilityCrowd_Area_Laboratory",
+      "end": "CR_FacilityCrowd_Area_Checkpoint",
+      "complete": true,
+      "reciprocal": true
+    },
+    {
+      "start": "CR_FacilityCrowd_Area_Laboratory",
+      "end": "CR_FacilityCrowd_Area_Hall",
+      "complete": true,
+      "reciprocal": true
+    },
+    {
+      "start": "CR_FacilityCrowd_Area_Hall",
+      "end": "CR_FacilityCrowd_Area_Checkpoint",
+      "complete": true,
+      "reciprocal": true
+    },
+    {
+      "start": "CR_FacilityCrowd_Area_Hall",
+      "end": "CR_FacilityCrowd_Area_Laboratory",
+      "complete": true,
+      "reciprocal": true
+    },
+    {
+      "start": "CR_FacilityCrowd_Area_Hall",
+      "end": "CR_FacilityCrowd_Area_Office",
+      "complete": true,
+      "reciprocal": true
+    },
+    {
+      "start": "CR_FacilityCrowd_Area_Office",
+      "end": "CR_FacilityCrowd_Area_Hall",
+      "complete": true,
+      "reciprocal": true
+    }
+  ],
+  "patrols": [
+    {
+      "actor": "CR_FacilityCrowd_GuardRifle_1",
+      "guard": true,
+      "travel_cm": 4410.1,
+      "rooms": [
+        "Checkpoint",
+        "Hall"
+      ],
+      "areas": [
+        "CR_FacilityCrowd_Area_Checkpoint",
+        "CR_FacilityCrowd_Area_Hall"
+      ],
+      "area_visits": 6,
+      "min_z": 117.4,
+      "max_z": 118.4
+    },
+    {
+      "actor": "CR_FacilityCrowd_GuardPistol_2",
+      "guard": true,
+      "travel_cm": 7194.1,
+      "rooms": [
+        "Checkpoint",
+        "Hall",
+        "Laboratory",
+        "Office"
+      ],
+      "areas": [
+        "CR_FacilityCrowd_Area_Checkpoint",
+        "CR_FacilityCrowd_Area_Hall",
+        "CR_FacilityCrowd_Area_Office"
+      ],
+      "area_visits": 8,
+      "min_z": 117.4,
+      "max_z": 118.3
+    },
+    {
+      "actor": "CR_FacilityCrowd_GuardShotgun_3",
+      "guard": true,
+      "travel_cm": 5144.4,
+      "rooms": [
+        "Checkpoint",
+        "Hall",
+        "Laboratory",
+        "Outside"
+      ],
+      "areas": [
+        "CR_FacilityCrowd_Area_Approach",
+        "CR_FacilityCrowd_Area_Checkpoint",
+        "CR_FacilityCrowd_Area_Laboratory"
+      ],
+      "area_visits": 6,
+      "min_z": 117.5,
+      "max_z": 118.3
+    },
+    {
+      "actor": "CR_FacilityCrowd_Civilian_4",
+      "guard": false,
+      "travel_cm": 5538.0,
+      "rooms": [
+        "Hall",
+        "Laboratory",
+        "Office"
+      ],
+      "areas": [
+        "CR_FacilityCrowd_Area_Hall",
+        "CR_FacilityCrowd_Area_Office"
+      ],
+      "area_visits": 4,
+      "min_z": 117.4,
+      "max_z": 118.4
+    },
+    {
+      "actor": "CR_FacilityCrowd_Civilian_5",
+      "guard": false,
+      "travel_cm": 2107.7,
+      "rooms": [
+        "Office"
+      ],
+      "areas": [
+        "CR_FacilityCrowd_Area_Office"
+      ],
+      "area_visits": 3,
+      "min_z": 117.4,
+      "max_z": 118.4
+    },
+    {
+      "actor": "CR_FacilityCrowd_Civilian_6",
+      "guard": false,
+      "travel_cm": 6282.0,
+      "rooms": [
+        "Checkpoint",
+        "Hall",
+        "Laboratory"
+      ],
+      "areas": [
+        "CR_FacilityCrowd_Area_Checkpoint",
+        "CR_FacilityCrowd_Area_Laboratory"
+      ],
+      "area_visits": 6,
+      "min_z": 117.4,
+      "max_z": 118.3
+    }
+  ],
+  "observed_seconds": 75.2,
+  "error": null
+}

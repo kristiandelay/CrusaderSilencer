@@ -56,7 +56,9 @@ for name,pos,radius in [('Commons',(6000,0,0),1100),('Market',(9600,0,0),1100),(
     a.bounds.set_sphere_radius(float(radius),True);areas[name]=a
     sign(name+'Sign',name.upper()+' / CROWD AREA',(pos[0],pos[1]-1250,230),45)
 for name,others in {'Commons':['Market','Refuge'],'Market':['Commons','Depot'],'Depot':['Market','Refuge'],'Refuge':['Commons','Depot']}.items():
-    areas[name].set_editor_property('neighbours',[areas[o] for o in others])
+    # Preserve connections to separately authored extensions such as the facility.
+    extensions=[a for a in areas[name].neighbours if a and a not in areas.values()]
+    areas[name].set_editor_property('neighbours',[areas[o] for o in others]+extensions)
 models={r['name']:r['asset'] for r in json.loads((ROOT/'resources/EnvironmentModels.json').read_text())}
 for name,model,pos,yaw in [
  ('CommonsCrate1','IndustrialCargoCrate01',(6500,450,0),20),('CommonsCrate2','IndustrialStorageCrate',(5400,700,0),0),

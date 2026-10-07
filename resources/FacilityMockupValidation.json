@@ -1,0 +1,244 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "Existing imported kit only",
+      "passed": true,
+      "instances": 422
+    },
+    {
+      "name": "Roof covers room centres and tile seams",
+      "passed": true,
+      "samples": 219,
+      "misses": []
+    },
+    {
+      "name": "Checkpoint imported floor",
+      "passed": true,
+      "height_cm": 28.17
+    },
+    {
+      "name": "Checkpoint reachable from crowd approach",
+      "passed": true,
+      "path_points": 2
+    },
+    {
+      "name": "Laboratory imported floor",
+      "passed": true,
+      "height_cm": 29.32
+    },
+    {
+      "name": "Laboratory reachable from crowd approach",
+      "passed": true,
+      "path_points": 2
+    },
+    {
+      "name": "Main hall imported floor",
+      "passed": true,
+      "height_cm": 28.19
+    },
+    {
+      "name": "Main hall reachable from crowd approach",
+      "passed": true,
+      "path_points": 4
+    },
+    {
+      "name": "Office imported floor",
+      "passed": true,
+      "height_cm": 28.14
+    },
+    {
+      "name": "Office reachable from crowd approach",
+      "passed": true,
+      "path_points": 7
+    },
+    {
+      "name": "Freight bay imported floor",
+      "passed": true,
+      "height_cm": 29.33
+    },
+    {
+      "name": "Freight bay reachable from crowd approach",
+      "passed": true,
+      "path_points": 5
+    },
+    {
+      "name": "Entrance standing capsule clearance",
+      "passed": true,
+      "blocker": null
+    },
+    {
+      "name": "Lab doorway standing capsule clearance",
+      "passed": true,
+      "blocker": null
+    },
+    {
+      "name": "Checkpoint side doorway standing capsule clearance",
+      "passed": true,
+      "blocker": null
+    },
+    {
+      "name": "Office doorway standing capsule clearance",
+      "passed": true,
+      "blocker": null
+    },
+    {
+      "name": "Entrance third-person camera clearance",
+      "passed": true,
+      "camera_distance_cm": 304.1
+    },
+    {
+      "name": "Checkpoint third-person camera clearance",
+      "passed": true,
+      "camera_distance_cm": 304.1
+    },
+    {
+      "name": "Laboratory third-person camera clearance",
+      "passed": true,
+      "camera_distance_cm": 304.1
+    },
+    {
+      "name": "Containment aisle third-person camera clearance",
+      "passed": true,
+      "camera_distance_cm": 304.1
+    },
+    {
+      "name": "Main hall third-person camera clearance",
+      "passed": true,
+      "camera_distance_cm": 304.1
+    },
+    {
+      "name": "Office approach third-person camera clearance",
+      "passed": true,
+      "camera_distance_cm": 304.1
+    },
+    {
+      "name": "Office third-person camera clearance",
+      "passed": true,
+      "camera_distance_cm": 304.1
+    },
+    {
+      "name": "Office exit third-person camera clearance",
+      "passed": true,
+      "camera_distance_cm": 304.1
+    },
+    {
+      "name": "Freight bay third-person camera clearance",
+      "passed": true,
+      "camera_distance_cm": 304.1
+    },
+    {
+      "name": "Checkpoint side doorway third-person camera clearance",
+      "passed": true,
+      "camera_distance_cm": 304.1
+    },
+    {
+      "name": "Exit third-person camera clearance",
+      "passed": true,
+      "camera_distance_cm": 303.8
+    }
+  ],
+  "walkthrough": [
+    {
+      "stop": "Entrance",
+      "position": [
+        11400.0,
+        6810.8,
+        117.6
+      ],
+      "camera_distance_cm": 304.1
+    },
+    {
+      "stop": "Checkpoint",
+      "position": [
+        11400.0,
+        7312.0,
+        117.5
+      ],
+      "camera_distance_cm": 304.1
+    },
+    {
+      "stop": "Laboratory",
+      "position": [
+        11400.0,
+        8240.2,
+        117.6
+      ],
+      "camera_distance_cm": 304.1
+    },
+    {
+      "stop": "Containment aisle",
+      "position": [
+        11532.3,
+        8469.3,
+        117.6
+      ],
+      "camera_distance_cm": 304.1
+    },
+    {
+      "stop": "Main hall",
+      "position": [
+        12576.4,
+        8108.2,
+        118.4
+      ],
+      "camera_distance_cm": 304.1
+    },
+    {
+      "stop": "Office approach",
+      "position": [
+        13709.7,
+        8100.3,
+        117.5
+      ],
+      "camera_distance_cm": 304.1
+    },
+    {
+      "stop": "Office",
+      "position": [
+        13747.7,
+        8665.7,
+        117.5
+      ],
+      "camera_distance_cm": 304.1
+    },
+    {
+      "stop": "Office exit",
+      "position": [
+        13749.8,
+        8139.3,
+        117.5
+      ],
+      "camera_distance_cm": 304.1
+    },
+    {
+      "stop": "Freight bay",
+      "position": [
+        13463.0,
+        7240.6,
+        118.3
+      ],
+      "camera_distance_cm": 304.1
+    },
+    {
+      "stop": "Checkpoint side doorway",
+      "position": [
+        11792.5,
+        7201.0,
+        117.5
+      ],
+      "camera_distance_cm": 304.1
+    },
+    {
+      "stop": "Exit",
+      "position": [
+        11414.6,
+        6333.5,
+        118.2
+      ],
+      "camera_distance_cm": 303.8
+    }
+  ],
+  "error": null,
+  "walkthrough_completed": true
+}

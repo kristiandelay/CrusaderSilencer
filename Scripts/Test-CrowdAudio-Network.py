@@ -3,6 +3,7 @@ import json,time,traceback
 from pathlib import Path
 import unreal as u
 cn_root=Path(u.Paths.convert_relative_path_to_full(u.Paths.project_dir())).parent
+cn_expected=sum(len(json.loads((cn_root/f'resources/{name}.json').read_text())['spawns']) for name in ['CrowdDistrict','FacilityCrowd'] if (cn_root/f'resources/{name}.json').exists())
 cn_test=dict(phase='spawn',next=0,busy=False,results=[],deadline=time.monotonic()+120)
 def cn_finish(error=None):
     u.unregister_slate_post_tick_callback(cn_test['handle']);cn_test.update(finished=True,error=error)
@@ -24,7 +25,7 @@ def cn_tick(dt):
             ws=u.EditorLevelLibrary.get_pie_worlds(False);groups=[]
             for w in ws:
                 npcs=[p for p in u.GameplayStatics.get_all_actors_of_class(w,u.CRTraversalCharacter) if p.crowd_agent.enabled]
-                assert len(npcs)==12 and all(p.crowd_agent.initialized for p in npcs)
+                assert len(npcs)==cn_expected and all(p.crowd_agent.initialized for p in npcs)
                 rows={}
                 for p in npcs:
                     data=p.crowd_agent;visual=p.selected_visual_override.child_actor.get_class().get_name()
