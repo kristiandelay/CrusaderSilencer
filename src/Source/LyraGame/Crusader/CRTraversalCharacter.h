@@ -15,6 +15,8 @@ class UPhysicsControlComponent;
 class UBaselinePhysicalInteractionComponent;
 class UChildActorComponent;
 class UCRWeaponEffectsComponent;
+class UCRFootstepComponent;
+class UCRCrowdAgentComponent;
 
 /** Lyra lifecycle and ability ownership for the GASP CMC animation/traversal graph. */
 UCLASS()
@@ -33,10 +35,14 @@ public:
     bool IsSlideMontage(const UAnimMontage* Montage) const { return Montage && Montage == SlideMontage; }
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Baseline") TObjectPtr<UBaselineEquipmentComponent> BaselineEquipment;
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Crusader") TObjectPtr<UCRWeaponEffectsComponent> WeaponEffects;
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Crusader") TObjectPtr<UCRFootstepComponent> Footsteps;
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Crusader") TObjectPtr<UCRCrowdAgentComponent> CrowdAgent;
+    UFUNCTION(BlueprintCallable, Category="Crusader|Movement") bool RequestAITraversal();
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Baseline") TObjectPtr<ULyraEquipmentManagerComponent> EquipmentManager;
     UPROPERTY(EditDefaultsOnly, Category="Baseline|Slide") TObjectPtr<UAnimSequence> SlideAnimation;
 protected:
     virtual void BeginPlay() override;
+    virtual void OnMovementModeChanged(EMovementMode PreviousMovementMode, uint8 PreviousCustomMode = 0) override;
     virtual void OnAbilitySystemInitialized() override;
     virtual void OnDeathStarted(AActor* OwningActor) override;
     virtual void OnDeathFinished(AActor* OwningActor) override;

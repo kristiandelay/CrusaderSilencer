@@ -14,7 +14,7 @@ def np_input(pawn,name,value):
     sub.inject_input_vector_for_action(u.load_asset('/Game/Baseline/Input/IA_'+name),u.Vector(value,0,0),[],[])
 
 def np_context():
-    pawns=[p for w in u.EditorLevelLibrary.get_pie_worlds(False) for p in u.GameplayStatics.get_all_actors_of_class(w,u.CRTraversalCharacter) if 'TrainingPartner' not in p.get_class().get_name()]
+    pawns=[p for w in u.EditorLevelLibrary.get_pie_worlds(False) for p in u.GameplayStatics.get_all_actors_of_class(w,u.CRTraversalCharacter) if 'TrainingPartner' not in p.get_class().get_name() and not p.crowd_agent.enabled]
     host=next(p for p in pawns if p.has_authority() and p.is_locally_controlled())
     server_client=next(p for p in pawns if p.has_authority() and not p.is_locally_controlled())
     client=next(p for p in pawns if not p.has_authority() and p.is_locally_controlled())

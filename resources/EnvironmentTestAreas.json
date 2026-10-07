@@ -1,0 +1,411 @@
+{
+  "map": "/Game/Maps/L_TraversalGym",
+  "footstep_surfaces": [
+    {
+      "name": "Default",
+      "surface": 0,
+      "actor": "CR_Additions_Walk_Default",
+      "start": [
+        5000,
+        -4480,
+        100
+      ],
+      "end": [
+        5000,
+        -5320,
+        100
+      ]
+    },
+    {
+      "name": "Concrete",
+      "surface": 2,
+      "actor": "CR_Additions_Walk_Concrete",
+      "start": [
+        5700,
+        -4480,
+        100
+      ],
+      "end": [
+        5700,
+        -5320,
+        100
+      ]
+    },
+    {
+      "name": "Glass",
+      "surface": 3,
+      "actor": "CR_Additions_Walk_Glass",
+      "start": [
+        6400,
+        -4480,
+        100
+      ],
+      "end": [
+        6400,
+        -5320,
+        100
+      ]
+    },
+    {
+      "name": "Metal",
+      "surface": 4,
+      "actor": "CR_Additions_Walk_Metal",
+      "start": [
+        7100,
+        -4480,
+        100
+      ],
+      "end": [
+        7100,
+        -5320,
+        100
+      ]
+    },
+    {
+      "name": "Wood",
+      "surface": 5,
+      "actor": "CR_Additions_Walk_Wood",
+      "start": [
+        7800,
+        -4480,
+        100
+      ],
+      "end": [
+        7800,
+        -5320,
+        100
+      ]
+    },
+    {
+      "name": "Brick",
+      "surface": 6,
+      "actor": "CR_Additions_Walk_Brick",
+      "start": [
+        8500,
+        -4480,
+        100
+      ],
+      "end": [
+        8500,
+        -5320,
+        100
+      ]
+    },
+    {
+      "name": "Dirt",
+      "surface": 7,
+      "actor": "CR_Additions_Walk_Dirt",
+      "start": [
+        9200,
+        -4480,
+        100
+      ],
+      "end": [
+        9200,
+        -5320,
+        100
+      ]
+    },
+    {
+      "name": "Sand",
+      "surface": 8,
+      "actor": "CR_Additions_Walk_Sand",
+      "start": [
+        9900,
+        -4480,
+        100
+      ],
+      "end": [
+        9900,
+        -5320,
+        100
+      ]
+    },
+    {
+      "name": "Water",
+      "surface": 9,
+      "actor": "CR_Additions_Walk_Water",
+      "start": [
+        10600,
+        -4480,
+        100
+      ],
+      "end": [
+        10600,
+        -5320,
+        100
+      ]
+    },
+    {
+      "name": "Rubber",
+      "surface": 10,
+      "actor": "CR_Additions_Walk_Rubber",
+      "start": [
+        5000,
+        -5880,
+        100
+      ],
+      "end": [
+        5000,
+        -6720,
+        100
+      ]
+    },
+    {
+      "name": "Fabric",
+      "surface": 11,
+      "actor": "CR_Additions_Walk_Fabric",
+      "start": [
+        5700,
+        -5880,
+        100
+      ],
+      "end": [
+        5700,
+        -6720,
+        100
+      ]
+    },
+    {
+      "name": "Rock",
+      "surface": 12,
+      "actor": "CR_Additions_Walk_Rock",
+      "start": [
+        6400,
+        -5880,
+        100
+      ],
+      "end": [
+        6400,
+        -6720,
+        100
+      ]
+    },
+    {
+      "name": "Snow",
+      "surface": 13,
+      "actor": "CR_Additions_Walk_Snow",
+      "start": [
+        7100,
+        -5880,
+        100
+      ],
+      "end": [
+        7100,
+        -6720,
+        100
+      ]
+    },
+    {
+      "name": "Ice",
+      "surface": 14,
+      "actor": "CR_Additions_Walk_Ice",
+      "start": [
+        7800,
+        -5880,
+        100
+      ],
+      "end": [
+        7800,
+        -6720,
+        100
+      ]
+    },
+    {
+      "name": "Mud",
+      "surface": 15,
+      "actor": "CR_Additions_Walk_Mud",
+      "start": [
+        8500,
+        -5880,
+        100
+      ],
+      "end": [
+        8500,
+        -6720,
+        100
+      ]
+    },
+    {
+      "name": "Ceramic",
+      "surface": 16,
+      "actor": "CR_Additions_Walk_Ceramic",
+      "start": [
+        9200,
+        -5880,
+        100
+      ],
+      "end": [
+        9200,
+        -6720,
+        100
+      ]
+    },
+    {
+      "name": "Drywall",
+      "surface": 17,
+      "actor": "CR_Additions_Walk_Drywall",
+      "start": [
+        9900,
+        -5880,
+        100
+      ],
+      "end": [
+        9900,
+        -6720,
+        100
+      ]
+    },
+    {
+      "name": "Grass",
+      "surface": 18,
+      "actor": "CR_Additions_Walk_Grass",
+      "start": [
+        10600,
+        -5880,
+        100
+      ],
+      "end": [
+        10600,
+        -6720,
+        100
+      ]
+    },
+    {
+      "name": "Gravel",
+      "surface": 19,
+      "actor": "CR_Additions_Walk_Gravel",
+      "start": [
+        5000,
+        -7280,
+        100
+      ],
+      "end": [
+        5000,
+        -8120,
+        100
+      ]
+    },
+    {
+      "name": "Leaves",
+      "surface": 20,
+      "actor": "CR_Additions_Walk_Leaves",
+      "start": [
+        5700,
+        -7280,
+        100
+      ],
+      "end": [
+        5700,
+        -8120,
+        100
+      ]
+    },
+    {
+      "name": "Carpet",
+      "surface": 21,
+      "actor": "CR_Additions_Walk_Carpet",
+      "start": [
+        6400,
+        -7280,
+        100
+      ],
+      "end": [
+        6400,
+        -8120,
+        100
+      ]
+    },
+    {
+      "name": "BrokenGlass",
+      "surface": 22,
+      "actor": "CR_Additions_Walk_BrokenGlass",
+      "start": [
+        7100,
+        -7280,
+        100
+      ],
+      "end": [
+        7100,
+        -8120,
+        100
+      ]
+    },
+    {
+      "name": "WetSand",
+      "surface": 23,
+      "actor": "CR_Additions_Walk_WetSand",
+      "start": [
+        7800,
+        -7280,
+        100
+      ],
+      "end": [
+        7800,
+        -8120,
+        100
+      ]
+    },
+    {
+      "name": "DeepWater",
+      "surface": 24,
+      "actor": "CR_Additions_Walk_DeepWater",
+      "start": [
+        8500,
+        -7280,
+        100
+      ],
+      "end": [
+        8500,
+        -8120,
+        100
+      ]
+    },
+    {
+      "name": "GlassOnMetal",
+      "surface": 25,
+      "actor": "CR_Additions_Walk_GlassOnMetal",
+      "start": [
+        9200,
+        -7280,
+        100
+      ],
+      "end": [
+        9200,
+        -8120,
+        100
+      ]
+    },
+    {
+      "name": "GlassOnWood",
+      "surface": 26,
+      "actor": "CR_Additions_Walk_GlassOnWood",
+      "start": [
+        9900,
+        -7280,
+        100
+      ],
+      "end": [
+        9900,
+        -8120,
+        100
+      ]
+    },
+    {
+      "name": "HighGrass",
+      "surface": 27,
+      "actor": "CR_Additions_Walk_HighGrass",
+      "start": [
+        10600,
+        -7280,
+        100
+      ],
+      "end": [
+        10600,
+        -8120,
+        100
+      ]
+    }
+  ],
+  "gallery_models": 33
+}

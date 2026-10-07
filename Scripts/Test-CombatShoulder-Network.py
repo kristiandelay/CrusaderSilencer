@@ -11,7 +11,7 @@ combat_net_out=Path(u.Paths.convert_relative_path_to_full(u.Paths.project_dir())
 
 def cn_context():
     pawns=[p for w in u.EditorLevelLibrary.get_pie_worlds(False) for p in u.GameplayStatics.get_all_actors_of_class(w,u.CRTraversalCharacter)
-           if 'TrainingPartner' not in p.get_class().get_name()]
+           if 'TrainingPartner' not in p.get_class().get_name() and not p.crowd_agent.enabled]
     return (next(p for p in pawns if p.has_authority() and p.is_locally_controlled()),
             next(p for p in pawns if p.has_authority() and not p.is_locally_controlled()),
             next(p for p in pawns if not p.has_authority() and p.is_locally_controlled()),

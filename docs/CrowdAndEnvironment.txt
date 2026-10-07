@@ -1,0 +1,84 @@
+Crusader Silencer: crowd district, environment and surface audio
+
+Open src/CrusaderSilencer.uproject and /Game/Maps/L_TraversalGym.
+The crowd district connects to the east side of the original gym. It has six
+guards (two rifles, two pistols, two shotguns) and six unarmed civilians.
+Commons, Market, Depot and Refuge are connected navigation tethers. NPCs pick
+local destinations, pause, and have a 28 percent chance at each area-change
+check to visit a neighbour. Home areas, connections, radii, speeds, loadouts
+and visual choices are editable on the CrowdAgent component and crowd areas.
+
+NPCs inherit B_CRTraversalPawn. CRCrowdController drives the same Lyra ability,
+inventory, equipment, GASP animation, sliding and physics components as players.
+Detour crowd following provides obstacle avoidance and agent separation.
+Players register as passive crowd agents so NPCs can steer around them.
+Blocked opposing traffic can sidestep and retry its route instead of remaining
+stuck or aborting merely because another agent briefly occupies the path.
+Guards detect sight and hearing, investigate footsteps or unseen gunshots,
+react to damage and near misses, pursue a last known position, and eventually
+resume patrol after losing the threat. Combat uses ranged bursts, lateral
+repositioning, available low cover, crouched pauses, shoulder changes and
+reloads. A shot trace prevents intentionally firing through another pawn.
+Civilians flee nearby gunfire and damage, choosing reachable positions farther
+from the threat. They calm down after combat noise stops. Dead NPCs use the
+shared combat ragdoll and respawn with their role and a new loadout/appearance.
+
+Both roles can jump, slide, hurdle, mantle, climb and vault. Parkour uses the
+player's obstacle checks and motion-matched montages; weapons are stowed during
+the action and restored afterward. CRCrowdTraversalLink connects navmesh edges
+to these actions. Four links are authored on the original gym obstacles. New
+maps need navigation bounds and suitable traversal links for disconnected
+ledges; agents do not teleport across arbitrary geometry.
+
+The widget still selects the player visual, defaulting to CrimsonSentinel.
+CrowdAgent owns NPC visual selection so the widget cannot replace every NPC
+with the player's appearance. Visuals and crowd state replicate from authority.
+Weapon grip updates wait for both the source and retargeted skeleton poses.
+
+The footstep test pads are southeast of the firing range, near (7800,-6300).
+They cover 27 physical materials. A gallery of all 33 imported environment
+models is farther south, near (7100,-11600). Labels identify each model and
+surface. Model archives retain their original bytes under their new names.
+Editable Blender files and FBX exports are under Art/Environment. Textures use
+Name_BaseColor.png, Name_Normal.png, Name_Metallic.png and Name_Roughness.png.
+Blender texture references are relative. Imported meshes use Nanite and exact
+static collision; make simple collision before using them as simulated bodies.
+
+Footsteps use TWSFX_FS_Ultimate1:
+https://www.fab.com/listings/2dfec8e4-075a-4893-af6d-5ca0589a2bdd
+DA_Footsteps maps all 31 source categories to the 27 physical-surface profiles.
+Animation foot contacts trace the ground and choose walk, run, sprint or sneak
+samples. Jump and landing use their own samples; ground transition supplies a
+landing when a selected animation has no notify. Contacts are debounced and
+suppressed during sliding, airborne steps, ragdoll, recovery and death.
+Spatial attenuation and owner concurrency limit stacked audio. Server footstep
+noise also feeds guard hearing. Proxies use local animation contacts rather
+than a second audio multicast.
+
+Bullet holes use Bullet Impact VFX:
+https://www.fab.com/listings/eb49911a-44bb-4114-abd5-b4124fa6f3c9
+Each receiving surface selects a decal variant with varied size and rotation.
+Holes attach to the hit component, fade during the last 20 seconds of their
+120-second lifetime, and are capped at 96 per shooter. Unsupported receivers,
+skeletal characters, misses and loose/fluid surface profiles produce no holes.
+
+Authoring scripts (PIE stopped, after Scripts/Build-Editor.ps1):
+  Configure-Footsteps.py
+  Configure-WeaponEffects.py
+  Create-EnvironmentTestAreas.py
+  Configure-CrowdDistrict.py
+Run them with python Scripts/Send-Editor.py Scripts/<script>.
+Prepare-EnvironmentSources.py and Blender's Prepare-EnvironmentModels.py build
+named source assets; Import-EnvironmentModels.py imports their UE assets.
+
+Validation scripts exercise real PIE animation, navigation and weapon abilities:
+  Test-Footsteps.py, Test-WeaponEffects.py, Test-BulletHoles.py
+  Test-CrowdTraversal.py, Test-CrowdLinks.py, Test-CrowdAI.py
+  Test-CrowdAvoidance.py, Test-CrowdSensesDeath.py
+  Test-CrowdAudio-Network.py (after the two-player weapon test)
+  Validate-EnvironmentCrowd.py (PIE stopped)
+Detailed reports are in Artifacts/Environment and Artifacts/WeaponFX.
+resources/CrowdEnvironmentValidation.json records the completed validation.
+The two-client automation temporarily lowers preview rendering quality to fit
+both worlds on the test GPU, then restores the previous console settings.
+Validation uses editor PIE; a packaged-game performance/soak pass is separate.

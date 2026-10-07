@@ -8,6 +8,10 @@ class UCRBlueprintTools : public UBlueprintFunctionLibrary
     GENERATED_BODY()
 public:
     UFUNCTION(BlueprintCallable, Category="Crusader|Editor")
+    static bool ConfigureCrowdVisualGate(UBlueprint* Manager);
+    UFUNCTION(BlueprintCallable, Category="Crusader|Editor")
+    static bool ConfigureFootstepEvents(UBlueprint* FoleyComponent);
+    UFUNCTION(BlueprintCallable, Category="Crusader|Editor")
     static bool ConfigureWeaponEffectsGate(UBlueprint* Weapon);
     UFUNCTION(BlueprintCallable, Category="Baseline|Editor")
     static bool ConfigureVisualOverrideFallback(UBlueprint* Manager, UClass* Catalog);

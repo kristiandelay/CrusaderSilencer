@@ -14,7 +14,7 @@ visual_net_names=['Echo','Twinblast','Kellan','Manny','Quinn','UE4_Mannequin','C
 
 def vn_context():
     pawns=[p for w in u.EditorLevelLibrary.get_pie_worlds(False) for p in u.GameplayStatics.get_all_actors_of_class(w,u.CRTraversalCharacter)
-           if 'TrainingPartner' not in p.get_class().get_name()]
+           if 'TrainingPartner' not in p.get_class().get_name() and not p.crowd_agent.enabled]
     return (next(p for p in pawns if p.has_authority() and p.is_locally_controlled()),
             next(p for p in pawns if p.has_authority() and not p.is_locally_controlled()),
             next(p for p in pawns if not p.has_authority() and p.is_locally_controlled()),
@@ -75,9 +75,15 @@ def vn_tick(dt):
             visual_net.update(phase='pickup',next=now+1)
         elif phase=='pickup':
             for p in [host,client]:vn_input(p,'Interact',1)
-            visual_net.update(phase='equip',next=now+1.5,release=True)
+            visual_net.update(phase='equip',next=now+1.5,release=True,equip_deadline=now+30)
         elif phase=='equip':
+            if not all(p.equipment_manager.get_first_instance_of_type(u.BaselineWeaponInstance) for p in pawns):
+                assert now<visual_net['equip_deadline'],'Pickup/equipment replication timed out'
+                for p in [host,client]:
+                    if not p.equipment_manager.get_first_instance_of_type(u.BaselineWeaponInstance):vn_input(p,'Interact',int(now*4)%2)
+                return
             for p in [host,client]:
+                vn_input(p,'Interact',0)
                 assert p.equipment_manager.get_first_instance_of_type(u.BaselineWeaponInstance),'Pickup failed'
                 if not p.baseline_equipment.is_left_shoulder():vn_input(p,'Shoulder',1)
                 p.get_controller().set_control_rotation(u.Rotator(pitch=25,yaw=90))
@@ -95,6 +101,10 @@ def vn_tick(dt):
                     return
             errors=[]
             rolls=[]
+            if not all(p.baseline_equipment.is_left_shoulder() and p.baseline_equipment.is_weapon_ready()
+                       and abs(p.baseline_equipment.get_weapon_animation_mesh().get_anim_instance().aim_pitch-25)<2 for p in pawns):
+                assert now<visual_net['load_deadline'],'Aim/shoulder state did not settle on all replicas'
+                return
             for role,p in enumerate(pawns):
                 eq=p.baseline_equipment
                 mesh=eq.get_presentation_mesh()
@@ -120,9 +130,12 @@ def vn_tick(dt):
             visual_net['index']+=1
             if visual_net['index']==visual_net.get('last_index',len(visual_net_names)):
                 vn_click(index)
-                visual_net.update(phase='clear',next=now+2)
+                visual_net.update(phase='clear',next=now+2,load_deadline=now+30)
             else:visual_net.update(phase='select',next=now+.1)
         elif phase=='clear':
+            if any(p.selected_visual_override.get_editor_property('child_actor') is not None for p in pawns):
+                assert now<visual_net['load_deadline'],'Clearing the override did not replicate'
+                return
             for p in pawns:
                 assert p.selected_visual_override.get_editor_property('child_actor') is None
                 assert p.baseline_equipment.get_presentation_mesh()==p.baseline_equipment.get_weapon_animation_mesh()

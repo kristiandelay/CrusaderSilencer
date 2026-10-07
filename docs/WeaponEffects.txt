@@ -24,7 +24,9 @@ CRWeaponEffectsComponent uses committed Lyra target data. It predicts locally
 once and multicasts cosmetics to observers, skipping the predicted owner.
 Every pellet retains its own trace endpoint, including misses. Misses emit
 trails without impact particles, sounds or marks. Trails expire at their
-trace endpoint; decals fade after 15 seconds and are bounded per shooter.
+trace endpoint; attached decals last 120 seconds, fade over their last 20
+seconds, and are capped at 96 per shooter. See CrowdAndEnvironment.txt for
+surface footsteps, moving bullet-hole receivers and the environment gallery.
 Nearby shotgun impact sounds are combined to avoid overlapping nine cues.
 The old B_Weapon cosmetic path is skipped when a Crusader effects profile is
 active; fire audio and animation still run through the existing gameplay cues.

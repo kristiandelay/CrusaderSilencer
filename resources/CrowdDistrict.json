@@ -1,0 +1,237 @@
+{
+  "map": "/Game/Maps/L_TraversalGym",
+  "areas": {
+    "Commons": {
+      "position": [
+        10500.0,
+        0.0,
+        0.0
+      ],
+      "radius": 1100.0,
+      "neighbours": [
+        "CR_Crowd_Market",
+        "CR_Crowd_Refuge"
+      ]
+    },
+    "Market": {
+      "position": [
+        14100.0,
+        0.0,
+        0.0
+      ],
+      "radius": 1100.0,
+      "neighbours": [
+        "CR_Crowd_Commons",
+        "CR_Crowd_Depot"
+      ]
+    },
+    "Depot": {
+      "position": [
+        14300.0,
+        3500.0,
+        0.0
+      ],
+      "radius": 1200.0,
+      "neighbours": [
+        "CR_Crowd_Market",
+        "CR_Crowd_Refuge"
+      ]
+    },
+    "Refuge": {
+      "position": [
+        10200.0,
+        3400.0,
+        0.0
+      ],
+      "radius": 1000.0,
+      "neighbours": [
+        "CR_Crowd_Commons",
+        "CR_Crowd_Depot"
+      ]
+    }
+  },
+  "spawns": [
+    {
+      "actor": "CR_Crowd_GuardRifle_1",
+      "role": "GuardRifle",
+      "area": "Commons",
+      "position": [
+        10750,
+        -300,
+        94
+      ]
+    },
+    {
+      "actor": "CR_Crowd_GuardPistol_2",
+      "role": "GuardPistol",
+      "area": "Market",
+      "position": [
+        13800,
+        -350,
+        94
+      ]
+    },
+    {
+      "actor": "CR_Crowd_GuardShotgun_3",
+      "role": "GuardShotgun",
+      "area": "Depot",
+      "position": [
+        14400,
+        3300,
+        94
+      ]
+    },
+    {
+      "actor": "CR_Crowd_GuardRifle_4",
+      "role": "GuardRifle",
+      "area": "Depot",
+      "position": [
+        13900,
+        3650,
+        94
+      ]
+    },
+    {
+      "actor": "CR_Crowd_GuardPistol_5",
+      "role": "GuardPistol",
+      "area": "Refuge",
+      "position": [
+        10300,
+        3700,
+        94
+      ]
+    },
+    {
+      "actor": "CR_Crowd_GuardShotgun_6",
+      "role": "GuardShotgun",
+      "area": "Market",
+      "position": [
+        14500,
+        -100,
+        94
+      ]
+    },
+    {
+      "actor": "CR_Crowd_Civilian_7",
+      "role": "Civilian",
+      "area": "Commons",
+      "position": [
+        10100,
+        -350,
+        94
+      ]
+    },
+    {
+      "actor": "CR_Crowd_Civilian_8",
+      "role": "Civilian",
+      "area": "Commons",
+      "position": [
+        10600,
+        400,
+        94
+      ]
+    },
+    {
+      "actor": "CR_Crowd_Civilian_9",
+      "role": "Civilian",
+      "area": "Market",
+      "position": [
+        13800,
+        450,
+        94
+      ]
+    },
+    {
+      "actor": "CR_Crowd_Civilian_10",
+      "role": "Civilian",
+      "area": "Market",
+      "position": [
+        14500,
+        650,
+        94
+      ]
+    },
+    {
+      "actor": "CR_Crowd_Civilian_11",
+      "role": "Civilian",
+      "area": "Refuge",
+      "position": [
+        10000,
+        3500,
+        94
+      ]
+    },
+    {
+      "actor": "CR_Crowd_Civilian_12",
+      "role": "Civilian",
+      "area": "Refuge",
+      "position": [
+        10700,
+        3200,
+        94
+      ]
+    }
+  ],
+  "traversal_links": [
+    {
+      "name": "Hurdle",
+      "action": "Vault",
+      "start": [
+        2730,
+        -800,
+        0
+      ],
+      "end": [
+        3020,
+        -800,
+        0
+      ],
+      "bidirectional": true
+    },
+    {
+      "name": "Mantle",
+      "action": "Climb",
+      "start": [
+        4300,
+        -970,
+        0
+      ],
+      "end": [
+        4300,
+        -800,
+        100
+      ],
+      "bidirectional": false
+    },
+    {
+      "name": "Climb",
+      "action": "Climb",
+      "start": [
+        2700,
+        -1770,
+        0
+      ],
+      "end": [
+        2700,
+        -1590,
+        250
+      ],
+      "bidirectional": false
+    },
+    {
+      "name": "Vault",
+      "action": "Vault",
+      "start": [
+        4810,
+        -800,
+        350
+      ],
+      "end": [
+        5350,
+        -800,
+        0
+      ],
+      "bidirectional": false
+    }
+  ]
+}

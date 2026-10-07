@@ -43,6 +43,88 @@
 #include "K2Node_CustomEvent.h"
 #include "K2Node_Self.h"
 #include "Crusader/CRWeaponEffects.h"
+#include "Crusader/CRFootsteps.h"
+#include "Crusader/CRCrowdAI.h"
+
+bool UCRBlueprintTools::ConfigureCrowdVisualGate(UBlueprint* Manager)
+{
+    if (!Manager) return false;
+    for (UEdGraph* Graph:Manager->FunctionGraphs)
+    {
+        if (Graph->GetFName()!=TEXT("ApplyVisualOverride")) continue;
+        UEdGraphNode* Entry=nullptr;
+        for (UEdGraphNode* Node:Graph->Nodes)
+        {
+            if (Node->NodeComment==TEXT("Crowd owns its character visual")) return true;
+            if (Node->GetClass()->GetName()==TEXT("K2Node_FunctionEntry")) Entry=Node;
+        }
+        if (!Entry || Entry->FindPinChecked(TEXT("then"))->LinkedTo.IsEmpty()) return false;
+        Manager->Modify();
+        auto* Continue=Entry->FindPinChecked(TEXT("then"))->LinkedTo[0];
+        auto* Check=NewObject<UK2Node_CallFunction>(Graph);
+        Check->SetFromFunction(UCRCrowdAgentComponent::StaticClass()->FindFunctionByName(TEXT("OwnsVisualOverride")));
+        Graph->AddNode(Check,false,false);Check->CreateNewGuid();Check->AllocateDefaultPins();
+        auto* Self=NewObject<UK2Node_Self>(Graph);Graph->AddNode(Self,false,false);Self->CreateNewGuid();Self->AllocateDefaultPins();
+        auto* Gate=NewObject<UK2Node_IfThenElse>(Graph);Graph->AddNode(Gate,false,false);Gate->CreateNewGuid();Gate->AllocateDefaultPins();
+        Gate->NodeComment=TEXT("Crowd owns its character visual");
+        const auto* Schema=Graph->GetSchema();Entry->FindPinChecked(TEXT("then"))->BreakAllPinLinks();
+        const bool bOK=Schema->TryCreateConnection(Entry->FindPinChecked(TEXT("then")),Gate->FindPinChecked(TEXT("execute")))
+            && Schema->TryCreateConnection(Gate->FindPinChecked(TEXT("else")),Continue)
+            && Schema->TryCreateConnection(Check->FindPinChecked(TEXT("ReturnValue")),Gate->FindPinChecked(TEXT("Condition")))
+            && Schema->TryCreateConnection(Self->FindPinChecked(TEXT("self")),Check->FindPinChecked(TEXT("Source")));
+        FBlueprintEditorUtils::MarkBlueprintAsStructurallyModified(Manager);return bOK;
+    }
+    return false;
+}
+
+bool UCRBlueprintTools::ConfigureFootstepEvents(UBlueprint* FoleyComponent)
+{
+    if (!FoleyComponent) return false;
+    for (UEdGraph* Graph : FoleyComponent->FunctionGraphs)
+    {
+        if (Graph->GetFName() != TEXT("PlayFoleyEvent")) continue;
+        UEdGraphNode* Entry = nullptr;
+        UEdGraphNode* Params = nullptr;
+        for (UEdGraphNode* Node : Graph->Nodes)
+        {
+            if (Node->NodeComment == TEXT("Crusader surface foot contacts")) return true;
+            if (Node->GetClass()->GetName() == TEXT("K2Node_FunctionEntry")) Entry = Node;
+            if (Node->GetFName() == TEXT("K2Node_VariableGet_18")) Params = Node;
+        }
+        if (!Entry || !Params || Entry->FindPinChecked(TEXT("then"))->LinkedTo.IsEmpty()) return false;
+        FoleyComponent->Modify();
+        UEdGraphPin* Continue = Entry->FindPinChecked(TEXT("then"))->LinkedTo[0];
+        auto* Call = NewObject<UK2Node_CallFunction>(Graph);
+        Call->SetFromFunction(UCRFootstepComponent::StaticClass()->FindFunctionByName(TEXT("HandleFoleyEvent")));
+        Graph->AddNode(Call, false, false); Call->CreateNewGuid(); Call->AllocateDefaultPins();
+        auto* Self = NewObject<UK2Node_Self>(Graph);
+        Graph->AddNode(Self, false, false); Self->CreateNewGuid(); Self->AllocateDefaultPins();
+        auto* Gate = NewObject<UK2Node_IfThenElse>(Graph);
+        Graph->AddNode(Gate, false, false); Gate->CreateNewGuid(); Gate->AllocateDefaultPins();
+        Gate->NodeComment = TEXT("Crusader surface foot contacts");
+        Call->NodePosX = Entry->NodePosX+250; Call->NodePosY=Entry->NodePosY;
+        Gate->NodePosX = Entry->NodePosX+650; Gate->NodePosY=Entry->NodePosY;
+        const auto* Schema = Graph->GetSchema();
+        Entry->FindPinChecked(TEXT("then"))->BreakAllPinLinks();
+        bool bOK = Schema->TryCreateConnection(Entry->FindPinChecked(TEXT("then")), Call->FindPinChecked(TEXT("execute")))
+            && Schema->TryCreateConnection(Call->FindPinChecked(TEXT("then")), Gate->FindPinChecked(TEXT("execute")))
+            && Schema->TryCreateConnection(Call->FindPinChecked(TEXT("ReturnValue")), Gate->FindPinChecked(TEXT("Condition")))
+            && Schema->TryCreateConnection(Gate->FindPinChecked(TEXT("else")), Continue)
+            && Schema->TryCreateConnection(Self->FindPinChecked(TEXT("self")), Call->FindPinChecked(TEXT("Source")))
+            && Schema->TryCreateConnection(Entry->FindPinChecked(TEXT("Event")), Call->FindPinChecked(TEXT("Event")));
+        for (const TCHAR* Name : {TEXT("Side"),TEXT("Volume"),TEXT("Pitch")})
+        {
+            UEdGraphPin* SourcePin = nullptr;
+            for (UEdGraphPin* Pin : Params->Pins)
+                if (Pin->PinName.ToString().StartsWith(FString(TEXT("Params_"))+Name+TEXT("_"))) SourcePin=Pin;
+            if (!SourcePin) return false;
+            bOK &= Schema->TryCreateConnection(SourcePin, Call->FindPinChecked(Name));
+        }
+        FBlueprintEditorUtils::MarkBlueprintAsStructurallyModified(FoleyComponent);
+        return bOK;
+    }
+    return false;
+}
 
 bool UCRBlueprintTools::ConfigureWeaponEffectsGate(UBlueprint* Weapon)
 {

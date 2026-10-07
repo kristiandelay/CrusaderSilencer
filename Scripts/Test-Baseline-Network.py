@@ -5,7 +5,7 @@ network_out=Path(u.Paths.convert_relative_path_to_full(u.Paths.project_dir())).p
 def network_context():
     worlds=u.EditorLevelLibrary.get_pie_worlds(False)
     assert len(worlds)==2
-    pawns=[p for w in worlds for p in u.GameplayStatics.get_all_actors_of_class(w,u.CRTraversalCharacter) if 'TrainingPartner' not in p.get_class().get_name()]
+    pawns=[p for w in worlds for p in u.GameplayStatics.get_all_actors_of_class(w,u.CRTraversalCharacter) if 'TrainingPartner' not in p.get_class().get_name() and not p.crowd_agent.enabled]
     client=next(p for p in pawns if p.is_locally_controlled() and not p.has_authority())
     server=next(p for p in pawns if p.has_authority() and not p.is_locally_controlled())
     host=next(p for p in pawns if p.has_authority() and p.is_locally_controlled())

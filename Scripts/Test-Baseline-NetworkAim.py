@@ -11,7 +11,7 @@ def net_aim_input(pawn,value,name='Aim'):
 
 def net_aim_context():
     worlds=u.EditorLevelLibrary.get_pie_worlds(False)
-    pawns=[p for w in worlds for p in u.GameplayStatics.get_all_actors_of_class(w,u.CRTraversalCharacter) if 'TrainingPartner' not in p.get_class().get_name()]
+    pawns=[p for w in worlds for p in u.GameplayStatics.get_all_actors_of_class(w,u.CRTraversalCharacter) if 'TrainingPartner' not in p.get_class().get_name() and not p.crowd_agent.enabled]
     host=next(p for p in pawns if p.has_authority() and p.is_locally_controlled())
     client=next(p for p in pawns if not p.has_authority() and p.is_locally_controlled())
     observer=next(p for p in pawns if not p.has_authority() and not p.is_locally_controlled())

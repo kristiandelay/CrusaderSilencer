@@ -1,5 +1,6 @@
 """Execute a Python file in the task-owned Unreal editor and print its result."""
 import json
+import os
 from pathlib import Path
 import sys
 import time
@@ -11,7 +12,7 @@ identifier = uuid.uuid4().hex
 temporary = root / 'request.tmp'
 temporary.write_text(json.dumps({'id': identifier, 'code': code}), encoding='utf-8')
 temporary.replace(root / 'request.json')
-deadline = time.monotonic() + 120
+deadline = time.monotonic() + float(os.environ.get("CR_EDITOR_TIMEOUT", "120"))
 while time.monotonic() < deadline:
     try:
         response = json.loads((root / 'response.json').read_text())

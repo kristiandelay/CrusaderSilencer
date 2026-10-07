@@ -1,9 +1,11 @@
 #include "CRWeaponEffects.h"
+#include "CRCrowdAI.h"
 #include "Baseline/BaselineEquipment.h"
 #include "Equipment/LyraEquipmentManagerComponent.h"
 #include "Abilities/GameplayAbilityTargetTypes.h"
 #include "Components/SkeletalMeshComponent.h"
 #include "Components/DecalComponent.h"
+#include "Components/PrimitiveComponent.h"
 #include "GameFramework/Pawn.h"
 #include "NiagaraFunctionLibrary.h"
 #include "NiagaraComponent.h"
@@ -22,6 +24,13 @@ UCRWeaponEffectsComponent::UCRWeaponEffectsComponent()
 {
     SetIsReplicatedByDefault(true);
     PrimaryComponentTick.bCanEverTick = false;
+}
+
+int32 UCRWeaponEffectsComponent::GetActiveBulletHoleCount() const
+{
+    int32 Count = 0;
+    for (const auto& Decal : Decals) if (Decal.IsValid()) ++Count;
+    return Count;
 }
 
 bool UCRWeaponEffectsComponent::UsesCustomWeaponEffects(AActor* WeaponActor)
@@ -53,7 +62,11 @@ void UCRWeaponEffectsComponent::SubmitShot(UBaselineWeaponInstance* Weapon, cons
         Impact.Normal = Hit->ImpactNormal.GetSafeNormal();
         Impact.Surface = UPhysicalMaterial::DetermineSurfaceType(Hit->PhysMaterial.Get());
     }
-    if (GetOwner()->HasAuthority()) MulticastShot(Weapon->EffectsProfile, Muzzle, Ejection, Hits);
+    if (GetOwner()->HasAuthority())
+    {
+        UCRCrowdAgentComponent::ReportGunshot(Cast<APawn>(GetOwner()), Muzzle.GetLocation(), Hits);
+        MulticastShot(Weapon->EffectsProfile, Muzzle, Ejection, Hits);
+    }
     else PlayShot(Weapon->EffectsProfile, Muzzle, Ejection, Hits);
 }
 
@@ -110,16 +123,34 @@ void UCRWeaponEffectsComponent::PlayShot(UCRWeaponEffectsProfile* Profile, const
             UGameplayStatics::PlaySoundAtLocation(this, Surface->Sound, Position, FRotator::ZeroRotator, .75f, FMath::FRandRange(.94f, 1.06f), 0.f, Profile->ImpactAttenuation, nullptr, GetOwner());
             SoundPositions.Add(Position);
         }
-        if (Surface->Decal)
+        UMaterialInterface* DecalMaterial = Surface->Decal;
+        if (!Surface->DecalVariants.IsEmpty()) DecalMaterial = Surface->DecalVariants[FMath::RandRange(0, Surface->DecalVariants.Num()-1)];
+        if (DecalMaterial)
         {
+            // Resolve the receiving component in this world: a replicated shot
+            // cannot safely serialize arbitrary, non-replicated prop components.
+            // Attaching locally lets holes move with doors and physics props.
+            FHitResult Receiver;
+            FCollisionQueryParams Query(SCENE_QUERY_STAT(CrusaderBulletHole), true, GetOwner());
+            if (!GetWorld()->LineTraceSingleByChannel(Receiver, FVector(Hit.Position)+FVector(Hit.Normal)*8.f,
+                FVector(Hit.Position)-FVector(Hit.Normal)*8.f, ECC_Visibility, Query)
+                || !Receiver.GetComponent() || !Receiver.GetComponent()->bReceivesDecals
+                || Receiver.GetComponent()->IsA<USkeletalMeshComponent>()) continue;
             FRotator Rotation = (-FVector(Hit.Normal)).Rotation();
             Rotation.Roll = FMath::FRandRange(-180.f,180.f);
-            if (auto* Decal = UGameplayStatics::SpawnDecalAtLocation(this, Surface->Decal, FVector(2.f, Profile->DecalSize, Profile->DecalSize), Position, Rotation, 20.f))
+            const float Lifetime = FMath::Max(Profile->DecalLifetime, 1.f);
+            const float Size = Profile->DecalSize*FMath::FRandRange(.85f,1.15f);
+            if (auto* Decal = UGameplayStatics::SpawnDecalAttached(DecalMaterial, FVector(1.5f, Size, Size),
+                Receiver.GetComponent(), NAME_None, Receiver.ImpactPoint+FVector(Hit.Normal)*.15f, Rotation,
+                EAttachLocation::KeepWorldPosition, Lifetime))
             {
-                Decal->SetFadeOut(15.f, 5.f, false);
+                const float FadeDuration = FMath::Min(20.f, Lifetime*.25f);
+                Decal->SetFadeOut(Lifetime-FadeDuration, FadeDuration, false);
+                Decal->SetFadeScreenSize(.0005f);
                 Decals.RemoveAll([](const auto& Item){return !Item.IsValid();});
-                while (Decals.Num() >= 96) { if (Decals[0].IsValid()) Decals[0]->DestroyComponent(); Decals.RemoveAt(0); }
+                while (Decals.Num() >= FMath::Max(Profile->MaxBulletHoles, 1)) { if (Decals[0].IsValid()) Decals[0]->DestroyComponent(); Decals.RemoveAt(0); }
                 Decals.Add(Decal);
+                LastDecal = Decal; ++DecalsSpawned;
             }
         }
     }

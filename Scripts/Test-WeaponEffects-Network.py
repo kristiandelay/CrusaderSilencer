@@ -40,6 +40,7 @@ def nfx_tick(dt):
             net_fx.update(phase='fire_host',next=now+2)
         elif phase in ['fire_host','fire_client']:
             net_fx['before']=[p.weapon_effects.shots_played for p in pawns]
+            net_fx['before_holes']=[p.weapon_effects.decals_spawned for p in pawns]
             shooter=host if phase=='fire_host' else client
             for action in ['Fire','FireAuto']:nfx_input(shooter,action,1)
             net_fx.update(phase='check_host' if phase=='fire_host' else 'check_client',next=now+.7,release=True)
@@ -47,12 +48,14 @@ def nfx_tick(dt):
             expected=[1,0,0,1] if phase=='check_host' else [0,1,1,0]
             deltas=[p.weapon_effects.shots_played-before for p,before in zip(pawns,net_fx['before'])]
             assert deltas==expected,(phase,deltas,expected)
+            holes=[p.weapon_effects.decals_spawned-before for p,before in zip(pawns,net_fx['before_holes'])]
+            assert holes==expected,('Bullet holes duplicated or missing',phase,holes,expected)
             surface=2 if phase=='check_host' else 4
             for role,count in enumerate(expected):
                 if count:
                     hits=pawns[role].weapon_effects.last_impacts
                     assert hits and all(h.blocking_hit and h.surface==surface for h in hits),(role,[(h.blocking_hit,h.surface) for h in hits])
-            net_fx['results'].append(dict(shooter='host' if phase=='check_host' else 'client',shot_bursts_by_role=deltas,surface=surface,passed=True))
+            net_fx['results'].append(dict(shooter='host' if phase=='check_host' else 'client',shot_bursts_by_role=deltas,bullet_holes_by_role=holes,surface=surface,passed=True))
             if phase=='check_host':net_fx.update(phase='fire_client',next=now+.4)
             else:
                 for pawn in [host,client]:nfx_input(pawn,'Aim',0)

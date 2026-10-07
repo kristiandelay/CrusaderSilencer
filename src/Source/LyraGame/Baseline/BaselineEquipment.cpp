@@ -195,9 +195,10 @@ void UBaselineEquipmentComponent::HandleDeath()
     bAimRequested = bFireRequested = bWeaponReady = false;
     FireReadyUntil = 0.0;
     if (!GetOwner()->HasAuthority()) return;
-    auto* Controller = GetBaselineController();
-    if (!Controller) return;
-    const auto Slots = Controller->QuickBar->GetSlots();
+    auto* QuickBar = GetQuickBar();
+    auto* Inventory = GetInventory();
+    if (!QuickBar || !Inventory) return;
+    const auto Slots = QuickBar->GetSlots();
     for (int32 Index = 0; Index < Slots.Num(); ++Index)
     {
         auto* Item = Slots[Index];
@@ -212,8 +213,8 @@ void UBaselineEquipmentComponent::HandleDeath()
             const FVector Direction = FRotator(0, GetOwner()->GetActorRotation().Yaw + Index * 100.f, 0).Vector();
             Pickup->LaunchDrop(Direction * 100.f + FVector(0,0,80));
         }
-        Controller->QuickBar->RemoveItemFromSlot(Index);
-        Controller->Inventory->RemoveItemInstance(Item);
+        QuickBar->RemoveItemFromSlot(Index);
+        Inventory->RemoveItemInstance(Item);
     }
 }
 
@@ -246,10 +247,18 @@ FRotator UBaselineEquipmentComponent::GetWeaponAimRotation() const
         ? Pawn->GetBaseAimRotation() : ReplicatedAimRotation;
 }
 
-ABaselinePlayerController* UBaselineEquipmentComponent::GetBaselineController() const
+ULyraQuickBarComponent* UBaselineEquipmentComponent::GetQuickBar() const
 {
-    const APawn* Pawn = Cast<APawn>(GetOwner());
-    return Pawn ? Cast<ABaselinePlayerController>(Pawn->GetController()) : nullptr;
+    const auto* Pawn=Cast<APawn>(GetOwner());
+    const auto* Controller=Pawn ? Pawn->GetController() : nullptr;
+    return Controller ? Controller->FindComponentByClass<ULyraQuickBarComponent>() : nullptr;
+}
+
+ULyraInventoryManagerComponent* UBaselineEquipmentComponent::GetInventory() const
+{
+    const auto* Pawn=Cast<APawn>(GetOwner());
+    const auto* Controller=Pawn ? Pawn->GetController() : nullptr;
+    return Controller ? Controller->FindComponentByClass<ULyraInventoryManagerComponent>() : nullptr;
 }
 
 USkeletalMeshComponent* UBaselineEquipmentComponent::GetPresentationMesh() const
@@ -284,21 +293,31 @@ void UBaselineEquipmentComponent::RefreshVisualOverride()
     if (!Character || !Driver || Driver == Character->GetMesh()) return;
     if (PreparedAnimationMesh != Driver)
     {
+        if (auto* Previous = PreparedAnimationMesh.Get()) RemoveTickPrerequisiteComponent(Previous);
         Driver->VisibilityBasedAnimTickOption = EVisibilityBasedAnimTickOption::AlwaysTickPoseAndRefreshBones;
         Driver->AddTickPrerequisiteComponent(Character->PhysicalInteraction);
+        AddTickPrerequisiteComponent(Driver);
         Character->SelectedVisualOverride->AttachToComponent(Driver, FAttachmentTransformRules::SnapToTargetNotIncludingScale);
         PreparedAnimationMesh = Driver;
     }
     auto* Visual = GetPresentationMesh();
     Character->GetMesh()->SetVisibility(false, false);
     Driver->SetVisibility(Visual == Driver, false);
-    if (Visual != Driver && PreparedVisual != Visual)
+    if (PreparedVisual != Visual)
     {
-        Visual->AddTickPrerequisiteComponent(Driver);
-        Visual->VisibilityBasedAnimTickOption = EVisibilityBasedAnimTickOption::AlwaysTickPoseAndRefreshBones;
-        if (Visual->GetSkeletalMeshAsset()->GetSkeleton() == Driver->GetSkeletalMeshAsset()->GetSkeleton())
-            Visual->SetLeaderPoseComponent(Driver);
-        else if (VisualRetargetAnimation) Visual->SetAnimInstanceClass(VisualRetargetAnimation);
+        if (auto* Previous = PreparedVisual.Get()) RemoveTickPrerequisiteComponent(Previous);
+        if (Visual != Driver)
+        {
+            Visual->AddTickPrerequisiteComponent(Driver);
+            Visual->VisibilityBasedAnimTickOption = EVisibilityBasedAnimTickOption::AlwaysTickPoseAndRefreshBones;
+            if (Visual->GetSkeletalMeshAsset()->GetSkeleton() == Driver->GetSkeletalMeshAsset()->GetSkeleton())
+                Visual->SetLeaderPoseComponent(Driver);
+            else if (VisualRetargetAnimation) Visual->SetAnimInstanceClass(VisualRetargetAnimation);
+        }
+        // Grip conversion reads both poses. They must be from the same frame,
+        // especially on clients with independent retargeted hand orientations.
+        AddTickPrerequisiteComponent(Driver);
+        AddTickPrerequisiteComponent(Visual);
         PreparedVisual = Visual;
     }
 }
@@ -341,36 +360,39 @@ void UBaselineEquipmentComponent::Interact()
 
 void UBaselineEquipmentComponent::ServerPickup_Implementation(ABaselineWeaponPickup* Pickup)
 {
-    ABaselinePlayerController* Controller = GetBaselineController();
-    if (!Controller || !CanReachPickup(Pickup) || AreHandsBusy()) return;
-    const int32 Slot = Controller->QuickBar->GetNextFreeItemSlot();
+    auto* QuickBar = GetQuickBar();
+    auto* Inventory = GetInventory();
+    if (!QuickBar || !Inventory || !CanReachPickup(Pickup) || AreHandsBusy()) return;
+    const int32 Slot = QuickBar->GetNextFreeItemSlot();
     if (Slot == INDEX_NONE) { LastInteractionResult = TEXT("Inventory full - drop a weapon first"); return; }
-    auto* ASC = Controller->GetLyraAbilitySystemComponent();
+    auto* ASC = Cast<ULyraAbilitySystemComponent>(UAbilitySystemGlobals::GetAbilitySystemComponentFromActor(GetOwner()));
     if (!ASC || !ASC->GetAvatarActor()) return;
     const auto* Definition = GetDefault<ULyraInventoryItemDefinition>(Pickup->ItemDefinition);
     if (!Definition->FindFragmentByClass(UInventoryFragment_EquippableItem::StaticClass())) return;
     Pickup->bClaimed = true;
-    ULyraInventoryItemInstance* Item = Controller->Inventory->AddItemDefinition(Pickup->ItemDefinition, 1);
+    ULyraInventoryItemInstance* Item = Inventory->AddItemDefinition(Pickup->ItemDefinition, 1);
     if (!Item) { Pickup->bClaimed = false; return; }
     Pickup->RestoreItem(Item);
-    Controller->QuickBar->AddItemToSlot(Slot, Item);
-    Controller->QuickBar->SetActiveSlotIndex(Slot);
+    QuickBar->AddItemToSlot(Slot, Item);
+    QuickBar->SetActiveSlotIndex(Slot);
     LastInteractionResult = TEXT("Picked up ") + Pickup->GetItemName().ToString();
     Pickup->Destroy();
 }
 
 ULyraInventoryItemInstance* UBaselineEquipmentComponent::GetActiveItem() const
 {
-    const ABaselinePlayerController* Controller = GetBaselineController();
-    return Controller ? Controller->QuickBar->GetActiveSlotItem() : nullptr;
+    const auto* QuickBar = GetQuickBar();
+    return QuickBar ? QuickBar->GetActiveSlotItem() : nullptr;
 }
 
 void UBaselineEquipmentComponent::DropActiveWeapon_Implementation()
 {
-    ABaselinePlayerController* Controller = GetBaselineController();
+    auto* QuickBar = GetQuickBar();
+    auto* Inventory = GetInventory();
+    auto* Pawn = Cast<APawn>(GetOwner());
     ULyraInventoryItemInstance* Item = GetActiveItem();
-    if (!Controller || !Item || AreHandsBusy()) return;
-    const FVector Forward = Controller->GetControlRotation().Vector().GetSafeNormal2D();
+    if (!QuickBar || !Inventory || !Pawn || !Item || AreHandsBusy()) return;
+    const FVector Forward = Pawn->GetBaseAimRotation().Vector().GetSafeNormal2D();
     const FVector Start = GetOwner()->GetActorLocation() + FVector(0, 0, 25);
     FVector Location = Start + Forward * 105.f;
     FCollisionQueryParams Params(SCENE_QUERY_STAT(BaselineDrop), false, GetOwner());
@@ -385,17 +407,17 @@ void UBaselineEquipmentComponent::DropActiveWeapon_Implementation()
     Pickup->FinishSpawning(Transform);
     if (Pickup->IsActorBeingDestroyed()) return;
     const FString ItemName = Pickup->GetItemName().ToString();
-    Controller->QuickBar->RemoveItemFromSlot(Controller->QuickBar->GetActiveSlotIndex());
-    Controller->Inventory->RemoveItemInstance(Item);
-    Controller->QuickBar->CycleActiveSlotForward();
+    QuickBar->RemoveItemFromSlot(QuickBar->GetActiveSlotIndex());
+    Inventory->RemoveItemInstance(Item);
+    QuickBar->CycleActiveSlotForward();
     Pickup->LaunchDrop(GetOwner()->GetVelocity() + Forward * 120.f + FVector(0, 0, 80.f));
     LastInteractionResult = TEXT("Dropped ") + ItemName;
 }
 
 void UBaselineEquipmentComponent::CycleWeapon()
 {
-    if (auto* Controller = GetBaselineController())
-        if (!AreHandsBusy()) Controller->QuickBar->CycleActiveSlotForward();
+    if (auto* QuickBar = GetQuickBar())
+        if (!AreHandsBusy()) QuickBar->CycleActiveSlotForward();
 }
 
 bool UBaselineEquipmentComponent::AreHandsBusy() const

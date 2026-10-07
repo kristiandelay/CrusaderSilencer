@@ -1,0 +1,424 @@
+{
+  "profile": "/Game/Crusader/Audio/DA_Footsteps.DA_Footsteps",
+  "unique_samples": 3720,
+  "surfaces": [
+    {
+      "id": 0,
+      "name": "Default",
+      "groups": [
+        "Concrete1",
+        "Concrete2"
+      ],
+      "samples": {
+        "sneak": 50,
+        "walk": 50,
+        "run": 50,
+        "sprint": 50,
+        "jump": 20,
+        "land": 20
+      }
+    },
+    {
+      "id": 2,
+      "name": "Concrete",
+      "groups": [
+        "Concrete1",
+        "Concrete2"
+      ],
+      "samples": {
+        "sneak": 50,
+        "walk": 50,
+        "run": 50,
+        "sprint": 50,
+        "jump": 20,
+        "land": 20
+      }
+    },
+    {
+      "id": 3,
+      "name": "Glass",
+      "groups": [
+        "Glass1"
+      ],
+      "samples": {
+        "sneak": 25,
+        "walk": 25,
+        "run": 25,
+        "sprint": 25,
+        "jump": 10,
+        "land": 10
+      }
+    },
+    {
+      "id": 4,
+      "name": "Metal",
+      "groups": [
+        "Metal1",
+        "Metal2"
+      ],
+      "samples": {
+        "sneak": 50,
+        "walk": 50,
+        "run": 50,
+        "sprint": 50,
+        "jump": 20,
+        "land": 20
+      }
+    },
+    {
+      "id": 5,
+      "name": "Wood",
+      "groups": [
+        "Wood1",
+        "Wood2"
+      ],
+      "samples": {
+        "sneak": 50,
+        "walk": 50,
+        "run": 50,
+        "sprint": 50,
+        "jump": 20,
+        "land": 20
+      }
+    },
+    {
+      "id": 6,
+      "name": "Brick",
+      "groups": [
+        "Concrete2"
+      ],
+      "samples": {
+        "sneak": 25,
+        "walk": 25,
+        "run": 25,
+        "sprint": 25,
+        "jump": 10,
+        "land": 10
+      }
+    },
+    {
+      "id": 7,
+      "name": "Dirt",
+      "groups": [
+        "Dirt1",
+        "Dirt2"
+      ],
+      "samples": {
+        "sneak": 50,
+        "walk": 50,
+        "run": 50,
+        "sprint": 50,
+        "jump": 20,
+        "land": 20
+      }
+    },
+    {
+      "id": 8,
+      "name": "Sand",
+      "groups": [
+        "Sand1"
+      ],
+      "samples": {
+        "sneak": 25,
+        "walk": 25,
+        "run": 25,
+        "sprint": 25,
+        "jump": 10,
+        "land": 10
+      }
+    },
+    {
+      "id": 9,
+      "name": "Water",
+      "groups": [
+        "ShallowWater-WetSurface1"
+      ],
+      "samples": {
+        "sneak": 25,
+        "walk": 25,
+        "run": 25,
+        "sprint": 25,
+        "jump": 10,
+        "land": 10
+      }
+    },
+    {
+      "id": 10,
+      "name": "Rubber",
+      "groups": [
+        "CarpetHard1"
+      ],
+      "samples": {
+        "sneak": 25,
+        "walk": 25,
+        "run": 25,
+        "sprint": 25,
+        "jump": 10,
+        "land": 10
+      }
+    },
+    {
+      "id": 11,
+      "name": "Fabric",
+      "groups": [
+        "CarpetWood1"
+      ],
+      "samples": {
+        "sneak": 25,
+        "walk": 25,
+        "run": 25,
+        "sprint": 25,
+        "jump": 10,
+        "land": 10
+      }
+    },
+    {
+      "id": 12,
+      "name": "Rock",
+      "groups": [
+        "Gravel1",
+        "Gravel2"
+      ],
+      "samples": {
+        "sneak": 50,
+        "walk": 50,
+        "run": 50,
+        "sprint": 50,
+        "jump": 20,
+        "land": 20
+      }
+    },
+    {
+      "id": 13,
+      "name": "Snow",
+      "groups": [
+        "Snow1"
+      ],
+      "samples": {
+        "sneak": 25,
+        "walk": 25,
+        "run": 25,
+        "sprint": 25,
+        "jump": 10,
+        "land": 10
+      }
+    },
+    {
+      "id": 14,
+      "name": "Ice",
+      "groups": [
+        "Ice1"
+      ],
+      "samples": {
+        "sneak": 25,
+        "walk": 25,
+        "run": 25,
+        "sprint": 25,
+        "jump": 10,
+        "land": 10
+      }
+    },
+    {
+      "id": 15,
+      "name": "Mud",
+      "groups": [
+        "Mud1"
+      ],
+      "samples": {
+        "sneak": 25,
+        "walk": 25,
+        "run": 25,
+        "sprint": 25,
+        "jump": 10,
+        "land": 10
+      }
+    },
+    {
+      "id": 16,
+      "name": "Ceramic",
+      "groups": [
+        "Concrete1"
+      ],
+      "samples": {
+        "sneak": 25,
+        "walk": 25,
+        "run": 25,
+        "sprint": 25,
+        "jump": 10,
+        "land": 10
+      }
+    },
+    {
+      "id": 17,
+      "name": "Drywall",
+      "groups": [
+        "Concrete2"
+      ],
+      "samples": {
+        "sneak": 25,
+        "walk": 25,
+        "run": 25,
+        "sprint": 25,
+        "jump": 10,
+        "land": 10
+      }
+    },
+    {
+      "id": 18,
+      "name": "Grass",
+      "groups": [
+        "Grass1",
+        "Grass2"
+      ],
+      "samples": {
+        "sneak": 50,
+        "walk": 50,
+        "run": 50,
+        "sprint": 50,
+        "jump": 20,
+        "land": 20
+      }
+    },
+    {
+      "id": 19,
+      "name": "Gravel",
+      "groups": [
+        "Gravel1",
+        "Gravel2"
+      ],
+      "samples": {
+        "sneak": 50,
+        "walk": 50,
+        "run": 50,
+        "sprint": 50,
+        "jump": 20,
+        "land": 20
+      }
+    },
+    {
+      "id": 20,
+      "name": "Leaves",
+      "groups": [
+        "Undergrowth-Leaves1"
+      ],
+      "samples": {
+        "sneak": 25,
+        "walk": 25,
+        "run": 25,
+        "sprint": 25,
+        "jump": 10,
+        "land": 10
+      }
+    },
+    {
+      "id": 21,
+      "name": "Carpet",
+      "groups": [
+        "CarpetHard1",
+        "CarpetWood1"
+      ],
+      "samples": {
+        "sneak": 50,
+        "walk": 50,
+        "run": 50,
+        "sprint": 50,
+        "jump": 20,
+        "land": 20
+      }
+    },
+    {
+      "id": 22,
+      "name": "BrokenGlass",
+      "groups": [
+        "BrokenGlass-GlassShards1",
+        "GlassShardsConcrete1",
+        "GlassShardsConcrete2"
+      ],
+      "samples": {
+        "sneak": 75,
+        "walk": 75,
+        "run": 75,
+        "sprint": 75,
+        "jump": 30,
+        "land": 30
+      }
+    },
+    {
+      "id": 23,
+      "name": "WetSand",
+      "groups": [
+        "WetSand1"
+      ],
+      "samples": {
+        "sneak": 25,
+        "walk": 25,
+        "run": 25,
+        "sprint": 25,
+        "jump": 10,
+        "land": 10
+      }
+    },
+    {
+      "id": 24,
+      "name": "DeepWater",
+      "groups": [
+        "DeepWater1"
+      ],
+      "samples": {
+        "sneak": 25,
+        "walk": 25,
+        "run": 25,
+        "sprint": 25,
+        "jump": 10,
+        "land": 10
+      }
+    },
+    {
+      "id": 25,
+      "name": "GlassOnMetal",
+      "groups": [
+        "GlassShardsMetal1",
+        "GlassShardsMetal2"
+      ],
+      "samples": {
+        "sneak": 50,
+        "walk": 50,
+        "run": 50,
+        "sprint": 50,
+        "jump": 20,
+        "land": 20
+      }
+    },
+    {
+      "id": 26,
+      "name": "GlassOnWood",
+      "groups": [
+        "GlassShardsWood1",
+        "GlassShardsWood2"
+      ],
+      "samples": {
+        "sneak": 50,
+        "walk": 50,
+        "run": 50,
+        "sprint": 50,
+        "jump": 20,
+        "land": 20
+      }
+    },
+    {
+      "id": 27,
+      "name": "HighGrass",
+      "groups": [
+        "HighGrass1"
+      ],
+      "samples": {
+        "sneak": 25,
+        "walk": 25,
+        "run": 25,
+        "sprint": 25,
+        "jump": 10,
+        "land": 10
+      }
+    }
+  ]
+}

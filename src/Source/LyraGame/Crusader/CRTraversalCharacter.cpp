@@ -1,5 +1,9 @@
 #include "CRTraversalCharacter.h"
 #include "CRWeaponEffects.h"
+#include "CRFootsteps.h"
+#include "CRCrowdAI.h"
+#include "UObject/StructOnScope.h"
+#include "UObject/UnrealType.h"
 #include "InputMappingContext.h"
 #include "Kismet/GameplayStatics.h"
 #include "Camera/CameraComponent.h"
@@ -30,6 +34,8 @@ ACRTraversalCharacter::ACRTraversalCharacter(const FObjectInitializer& ObjectIni
     EquipmentManager = CreateDefaultSubobject<ULyraEquipmentManagerComponent>(TEXT("EquipmentManager"));
     BaselineEquipment = CreateDefaultSubobject<UBaselineEquipmentComponent>(TEXT("BaselineEquipment"));
     WeaponEffects = CreateDefaultSubobject<UCRWeaponEffectsComponent>(TEXT("WeaponEffects"));
+    Footsteps = CreateDefaultSubobject<UCRFootstepComponent>(TEXT("Footsteps"));
+    CrowdAgent = CreateDefaultSubobject<UCRCrowdAgentComponent>(TEXT("CrowdAgent"));
     PhysicsControl = CreateDefaultSubobject<UPhysicsControlComponent>(TEXT("PhysicsControl"));
     PhysicalInteraction = CreateDefaultSubobject<UBaselinePhysicalInteractionComponent>(TEXT("PhysicalInteraction"));
     SelectedVisualOverride = CreateDefaultSubobject<UChildActorComponent>(TEXT("SelectedVisualOverride"));
@@ -40,6 +46,13 @@ ACRTraversalCharacter::ACRTraversalCharacter(const FObjectInitializer& ObjectIni
 FPoseSearchBlueprintResult ACRTraversalCharacter::GetPhysicalInteractionResult() const
 {
     return PhysicalInteraction->GetInteractionResult();
+}
+
+void ACRTraversalCharacter::OnMovementModeChanged(EMovementMode PreviousMovementMode, uint8 PreviousCustomMode)
+{
+    Super::OnMovementModeChanged(PreviousMovementMode, PreviousCustomMode);
+    if (PreviousMovementMode == MOVE_Falling && GetCharacterMovement()->IsMovingOnGround() && Footsteps)
+        Footsteps->GroundContact();
 }
 
 bool ACRTraversalCharacter::CanUseMovementActions() const
@@ -70,6 +83,42 @@ void ACRTraversalCharacter::OnDeathFinished(AActor* OwningActor)
     // End the death ability before tearing down its avatar. Keep cleanup and
     // restart sequential: independent next-tick timers can run in either order.
     GetWorld()->GetTimerManager().SetTimerForNextTick(this, &ThisClass::FinishCombatDeath);
+}
+
+bool ACRTraversalCharacter::RequestAITraversal()
+{
+    if (!HasAuthority() || !CanUseMovementActions() || BaselineEquipment->AreHandsBusy()) return false;
+    // Call the same GASP check/selection path as Space. Its input struct is a
+    // content-defined type, so copy reflected parameters without duplicating it.
+    auto Find = [](UObject* Object, const TCHAR* Name) -> UFunction*
+    {
+        for (TFieldIterator<UFunction> It(Object->GetClass()); It; ++It)
+            if (It->GetName().Replace(TEXT("_"),TEXT("")).Replace(TEXT(" "),TEXT("")) == Name) return *It;
+        return nullptr;
+    };
+    UFunction* InputsFunction = Find(this,TEXT("GetTraversalCheckInputs"));
+    if (!InputsFunction) return false;
+    FStructOnScope InputParams(InputsFunction);
+    ProcessEvent(InputsFunction, InputParams.GetStructMemory());
+    FStructProperty* Output = nullptr;
+    for (TFieldIterator<FStructProperty> It(InputsFunction); It; ++It)
+        if (It->HasAnyPropertyFlags(CPF_OutParm|CPF_ReturnParm)) { Output=*It; break; }
+    if (!Output) return false;
+    for (UActorComponent* Component : GetComponents())
+    {
+        UFunction* Action = Find(Component,TEXT("TryTraversalAction"));
+        if (!Action) continue;
+        FStructOnScope Params(Action);
+        auto* Inputs = FindFProperty<FStructProperty>(Action,TEXT("Inputs"));
+        if (!Inputs || Inputs->Struct != Output->Struct) return false;
+        Inputs->CopyCompleteValue(Inputs->ContainerPtrToValuePtr<void>(Params.GetStructMemory()),Output->ContainerPtrToValuePtr<void>(InputParams.GetStructMemory()));
+        Component->ProcessEvent(Action,Params.GetStructMemory());
+        auto* CheckFailed=FindFProperty<FBoolProperty>(Action,TEXT("TraversalCheckFailed"));
+        auto* MontageFailed=FindFProperty<FBoolProperty>(Action,TEXT("MontageSelectionFailed"));
+        return CheckFailed && MontageFailed && !CheckFailed->GetPropertyValue_InContainer(Params.GetStructMemory())
+            && !MontageFailed->GetPropertyValue_InContainer(Params.GetStructMemory());
+    }
+    return false;
 }
 
 void ACRTraversalCharacter::FinishCombatDeath()

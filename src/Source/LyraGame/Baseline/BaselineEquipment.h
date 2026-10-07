@@ -114,7 +114,8 @@ private:
     TWeakObjectPtr<USkeletalMeshComponent> PreparedVisual;
     TWeakObjectPtr<USkeletalMeshComponent> PreparedAnimationMesh;
     bool CanReachPickup(const ABaselineWeaponPickup* Pickup) const;
-    ABaselinePlayerController* GetBaselineController() const;
+    ULyraQuickBarComponent* GetQuickBar() const;
+    ULyraInventoryManagerComponent* GetInventory() const;
     bool bWasHandsBusy = false;
     bool bAimRequested = false;
     bool bFireRequested = false;

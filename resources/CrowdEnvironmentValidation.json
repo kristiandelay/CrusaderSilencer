@@ -1,0 +1,2111 @@
+{
+  "created_utc": "2026-10-07T08:49:17.195430+00:00",
+  "engine": "UE 5.8.3",
+  "passed": true,
+  "scope": "Editor standalone and two-player listen-server PIE",
+  "build": "Succeeded",
+  "assets_checked": 257,
+  "asset_failures": 0,
+  "asset_warnings": 0,
+  "model_count": 33,
+  "footstep_surfaces": 27,
+  "npcs": 12,
+  "tether_areas": 4,
+  "case_counts": {
+    "crowd_combat": 4,
+    "crowd_avoidance": 1,
+    "navigation_links": 2,
+    "senses_and_death": 5,
+    "npc_movement": 12,
+    "footsteps": 34,
+    "bullet_holes": 2,
+    "weapon_surfaces": 23,
+    "network_visuals": 5,
+    "network_shots": 2,
+    "network_crowd_audio": 2
+  },
+  "results": {
+    "crowd_combat": [
+      {
+        "case": "spawn_roles_and_loadouts",
+        "npcs": [
+          {
+            "name": "B_GuardRifle_C_0",
+            "guard": true,
+            "skin": "BP_ObsidianSentinel_C",
+            "weapon": "FX_Rifle"
+          },
+          {
+            "name": "B_GuardRifle_C_1",
+            "guard": true,
+            "skin": "BP_TheSteadfastOfficer_C",
+            "weapon": "FX_Rifle"
+          },
+          {
+            "name": "B_GuardPistol_C_0",
+            "guard": true,
+            "skin": "BP_RegalCommander_C",
+            "weapon": "FX_Pistol"
+          },
+          {
+            "name": "B_GuardPistol_C_1",
+            "guard": true,
+            "skin": "BP_TheSteadfastOfficer_C",
+            "weapon": "FX_Pistol"
+          },
+          {
+            "name": "B_GuardShotgun_C_0",
+            "guard": true,
+            "skin": "BP_TheSteadfastOfficer_C",
+            "weapon": "FX_Shotgun"
+          },
+          {
+            "name": "B_GuardShotgun_C_1",
+            "guard": true,
+            "skin": "BP_TheSteadfastOfficer_C",
+            "weapon": "FX_Shotgun"
+          },
+          {
+            "name": "B_Civilian_C_4",
+            "guard": false,
+            "skin": "BP_UrbanTrailblazer_C",
+            "weapon": null
+          },
+          {
+            "name": "B_Civilian_C_5",
+            "guard": false,
+            "skin": "BP_UrbanTrailblazer_C",
+            "weapon": null
+          },
+          {
+            "name": "B_Civilian_C_0",
+            "guard": false,
+            "skin": "BP_UrbanTrailblazer_C",
+            "weapon": null
+          },
+          {
+            "name": "B_Civilian_C_1",
+            "guard": false,
+            "skin": "BP_UrbanTrailblazer_C",
+            "weapon": null
+          },
+          {
+            "name": "B_Civilian_C_2",
+            "guard": false,
+            "skin": "BP_UrbanTrailblazer_C",
+            "weapon": null
+          },
+          {
+            "name": "B_Civilian_C_3",
+            "guard": false,
+            "skin": "BP_UrbanTrailblazer_C",
+            "weapon": null
+          }
+        ]
+      },
+      {
+        "case": "patrol_navigation_and_linked_area_visits",
+        "distance": {
+          "B_GuardRifle_C_0": 3627.0293039718954,
+          "B_GuardRifle_C_1": 3951.1105458728193,
+          "B_GuardPistol_C_0": 3019.1202002453847,
+          "B_GuardPistol_C_1": 2426.9692056784415,
+          "B_GuardShotgun_C_0": 3281.351070510095,
+          "B_GuardShotgun_C_1": 3666.3480404972893,
+          "B_Civilian_C_4": 4110.719671298738,
+          "B_Civilian_C_5": 2949.1414820361965,
+          "B_Civilian_C_0": 2508.9327112967894,
+          "B_Civilian_C_1": 2869.7695297675887,
+          "B_Civilian_C_2": 2474.662823484157,
+          "B_Civilian_C_3": 3694.600450674731
+        },
+        "visits": {
+          "B_GuardRifle_C_0": 2,
+          "B_GuardRifle_C_1": 2,
+          "B_GuardPistol_C_0": 3,
+          "B_GuardPistol_C_1": 2,
+          "B_GuardShotgun_C_0": 2,
+          "B_GuardShotgun_C_1": 3,
+          "B_Civilian_C_4": 2,
+          "B_Civilian_C_5": 2,
+          "B_Civilian_C_0": 2,
+          "B_Civilian_C_1": 2,
+          "B_Civilian_C_2": 3,
+          "B_Civilian_C_3": 3
+        }
+      },
+      {
+        "case": "damage_pursuit_and_civilian_fear",
+        "guard_health": 82.0,
+        "damage_reactions": 1,
+        "civilian_state": "<CRCrowdState.FLEE: 6>"
+      },
+      {
+        "case": "return_fire_tactical_movement_and_fleeing",
+        "shots": 8,
+        "tactical_moves": 9,
+        "guard_displacement": 1180.061791717202,
+        "civilian_distance": 7521.6063182594025,
+        "hearing": 2,
+        "sight": 15
+      }
+    ],
+    "crowd_avoidance": [
+      {
+        "case": "twelve_agent_opposing_streams",
+        "goal_distances": {
+          "B_Civilian_C_0": 24.583767012165513,
+          "B_Civilian_C_1": 76.54235201473057,
+          "B_Civilian_C_2": 66.01935907049882,
+          "B_Civilian_C_3": 41.07093103620226,
+          "B_Civilian_C_4": 58.57757288854875,
+          "B_Civilian_C_5": 77.09585930273387,
+          "B_GuardPistol_C_0": 47.25888653759554,
+          "B_GuardPistol_C_1": 58.574250428657066,
+          "B_GuardRifle_C_0": 42.60452578305777,
+          "B_GuardRifle_C_1": 46.76203036828109,
+          "B_GuardShotgun_C_0": 43.39448153959551,
+          "B_GuardShotgun_C_1": 76.158842601025
+        },
+        "minimum_separation": 60.16641413005706,
+        "lateral_avoidance": {
+          "B_Civilian_C_0": 94.54301814843029,
+          "B_Civilian_C_1": 82.08958613918344,
+          "B_Civilian_C_2": 24.457931456804317,
+          "B_Civilian_C_3": 91.74323767560259,
+          "B_Civilian_C_4": 13.626339454410981,
+          "B_Civilian_C_5": 83.72678822979788,
+          "B_GuardPistol_C_0": 83.7227702573839,
+          "B_GuardPistol_C_1": 13.626339454409617,
+          "B_GuardRifle_C_0": 124.01372746914171,
+          "B_GuardRifle_C_1": 120.18588491310447,
+          "B_GuardShotgun_C_0": 117.93476438245943,
+          "B_GuardShotgun_C_1": 137.06168503915694
+        }
+      }
+    ],
+    "navigation_links": [
+      {
+        "role": "Guard",
+        "smart_link_traversed": true,
+        "path_resumed": true,
+        "ended_x": 3030.9511704057545
+      },
+      {
+        "role": "Civilian",
+        "smart_link_traversed": true,
+        "path_resumed": true,
+        "ended_x": 3060.344463758296
+      }
+    ],
+    "senses_and_death": [
+      {
+        "case": "occluded_footstep_investigation",
+        "heard": true,
+        "no_blind_fire": true
+      },
+      {
+        "case": "occluded_gunfire_investigation",
+        "no_blind_fire": true
+      },
+      {
+        "case": "sight_reacquisition_after_gunfire",
+        "shots": 3
+      },
+      {
+        "case": "guard_and_civilian_death",
+        "ragdolls": 2,
+        "weapon_drops": 1
+      },
+      {
+        "case": "role_preserving_respawn",
+        "replacements": 2
+      }
+    ],
+    "npc_movement": [
+      {
+        "role": "Guard",
+        "action": "Jump",
+        "start": [
+          8000.0,
+          -1850.0,
+          88.27499628067017
+        ],
+        "end": [
+          8134.601886334976,
+          -1850.0,
+          88.27499190167231
+        ],
+        "max_z": 209.87499611973763,
+        "minimum_capsule": 86.0,
+        "sliding": false,
+        "montage": null,
+        "weapon_stowed": false
+      },
+      {
+        "role": "Guard",
+        "action": "Slide",
+        "start": [
+          8610.3538140515,
+          -1850.0,
+          88.27499628067017
+        ],
+        "end": [
+          9068.762354132657,
+          -1850.0,
+          88.27599573135376
+        ],
+        "max_z": 88.27599573135376,
+        "minimum_capsule": 60.0,
+        "sliding": true,
+        "montage": "/Engine/Transient.AnimMontage_0",
+        "weapon_stowed": false
+      },
+      {
+        "role": "Guard",
+        "action": "Hurdle",
+        "start": [
+          2730.0,
+          -800.0,
+          88.27499628067017
+        ],
+        "end": [
+          2945.0,
+          -800.0,
+          88.27499628067017
+        ],
+        "max_z": 179.5115532875061,
+        "minimum_capsule": 86.0,
+        "sliding": false,
+        "montage": "/Game/Characters/UEFN_Mannequin/Animations/Traversal/Hurdle/AM_M_Neutral_Traversal_Hurdle_1_0_stand_F_V2_Rfoot.AM_M_Neutral_Traversal_Hurdle_1_0_stand_F_V2_Rfoot",
+        "weapon_stowed": true
+      },
+      {
+        "role": "Guard",
+        "action": "Mantle",
+        "start": [
+          4300.0,
+          -970.0,
+          88.27499628067017
+        ],
+        "end": [
+          4300.000004086429,
+          -850.0003089270695,
+          188.5006181589059
+        ],
+        "max_z": 188.5006181589059,
+        "minimum_capsule": 86.0,
+        "sliding": false,
+        "montage": "/Game/Characters/UEFN_Mannequin/Animations/Traversal/Mantle/AM_M_Neutral_Traversal_Mantle_1_0_stand_F_Lfoot.AM_M_Neutral_Traversal_Mantle_1_0_stand_F_Lfoot",
+        "weapon_stowed": true
+      },
+      {
+        "role": "Guard",
+        "action": "Climb",
+        "start": [
+          2700.0,
+          -1770.0,
+          88.27499628067017
+        ],
+        "end": [
+          2700.000001427503,
+          -1649.9984541094707,
+          338.4972791397868
+        ],
+        "max_z": 338.4972791397868,
+        "minimum_capsule": 86.0,
+        "sliding": false,
+        "montage": "/Game/Characters/UEFN_Mannequin/Animations/Traversal/Climb/AM_M_Neutral_Traversal_Climb_Start_2_5_stand_F_Lfoot.AM_M_Neutral_Traversal_Climb_Start_2_5_stand_F_Lfoot",
+        "weapon_stowed": true
+      },
+      {
+        "role": "Guard",
+        "action": "Vault",
+        "start": [
+          4810.0,
+          -800.0,
+          438.46249532699585
+        ],
+        "end": [
+          5484.144950557845,
+          -800.0,
+          88.27499319653411
+        ],
+        "max_z": 582.1923858813132,
+        "minimum_capsule": 86.0,
+        "sliding": false,
+        "montage": "/Game/Characters/UEFN_Mannequin/Animations/Traversal/Vault/AM_M_Neutral_Traversal_Vault_1_0_stand_F_Lfoot.AM_M_Neutral_Traversal_Vault_1_0_stand_F_Lfoot",
+        "weapon_stowed": true
+      },
+      {
+        "role": "Civilian",
+        "action": "Jump",
+        "start": [
+          8000.0,
+          -1849.9999999999995,
+          88.27499628067017
+        ],
+        "end": [
+          8146.0902765985975,
+          -1849.9999999999995,
+          88.27499969871545
+        ],
+        "max_z": 214.51809433468486,
+        "minimum_capsule": 86.0,
+        "sliding": false,
+        "montage": null,
+        "weapon_stowed": false
+      },
+      {
+        "role": "Civilian",
+        "action": "Slide",
+        "start": [
+          8590.930550728881,
+          -1850.0,
+          88.27499628067017
+        ],
+        "end": [
+          9015.263909965965,
+          -1850.0,
+          88.27599573135376
+        ],
+        "max_z": 88.27599573135376,
+        "minimum_capsule": 60.0,
+        "sliding": true,
+        "montage": "/Engine/Transient.AnimMontage_1",
+        "weapon_stowed": false
+      },
+      {
+        "role": "Civilian",
+        "action": "Hurdle",
+        "start": [
+          2730.0,
+          -800.0,
+          88.27499628067017
+        ],
+        "end": [
+          2945.0,
+          -800.0,
+          88.27499628067017
+        ],
+        "max_z": 185.43734216690063,
+        "minimum_capsule": 86.0,
+        "sliding": false,
+        "montage": "/Game/Characters/UEFN_Mannequin/Animations/Traversal/Hurdle/AM_M_Neutral_Traversal_Hurdle_1_0_stand_F_V2_Rfoot.AM_M_Neutral_Traversal_Hurdle_1_0_stand_F_V2_Rfoot",
+        "weapon_stowed": false
+      },
+      {
+        "role": "Civilian",
+        "action": "Mantle",
+        "start": [
+          4300.0,
+          -970.0,
+          88.27499628067017
+        ],
+        "end": [
+          4300.0,
+          -851.9998016357422,
+          188.27549982070923
+        ],
+        "max_z": 188.27549982070923,
+        "minimum_capsule": 86.0,
+        "sliding": false,
+        "montage": "/Game/Characters/UEFN_Mannequin/Animations/Traversal/Mantle/AM_M_Neutral_Traversal_Mantle_1_0_stand_F_Lfoot.AM_M_Neutral_Traversal_Mantle_1_0_stand_F_Lfoot",
+        "weapon_stowed": false
+      },
+      {
+        "role": "Civilian",
+        "action": "Climb",
+        "start": [
+          2700.0,
+          -1770.0,
+          88.27499628067017
+        ],
+        "end": [
+          2981.600325587601,
+          -1523.1862202553125,
+          338.27499628067017
+        ],
+        "max_z": 338.27499628067017,
+        "minimum_capsule": 86.0,
+        "sliding": false,
+        "montage": "/Game/Characters/UEFN_Mannequin/Animations/Traversal/Climb/AM_M_Neutral_Traversal_Climb_Start_2_5_stand_F_Lfoot.AM_M_Neutral_Traversal_Climb_Start_2_5_stand_F_Lfoot",
+        "weapon_stowed": false
+      },
+      {
+        "role": "Civilian",
+        "action": "Vault",
+        "start": [
+          4810.0,
+          -800.0,
+          438.4624922389126
+        ],
+        "end": [
+          5351.5650420999045,
+          -800.0,
+          88.27500273336788
+        ],
+        "max_z": 538.2676756495571,
+        "minimum_capsule": 86.0,
+        "sliding": false,
+        "montage": "/Game/Characters/UEFN_Mannequin/Animations/Traversal/Vault/AM_M_Neutral_Traversal_Vault_1_0_stand_F_Lfoot.AM_M_Neutral_Traversal_Vault_1_0_stand_F_Lfoot",
+        "weapon_stowed": false
+      }
+    ],
+    "footsteps": [
+      {
+        "surface": "Default",
+        "gait": "walk",
+        "sounds": 2,
+        "steps": [
+          {
+            "surface": 0,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Concrete2/WAV/WAV_TomWinandySFX_-_FS_concrete2_walk_11.WAV_TomWinandySFX_-_FS_concrete2_walk_11"
+          },
+          {
+            "surface": 0,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Concrete2/WAV/WAV_TomWinandySFX_-_FS_concrete2_walk_13.WAV_TomWinandySFX_-_FS_concrete2_walk_13"
+          }
+        ],
+        "max_speed": 200.0,
+        "jump": 0,
+        "land": 0
+      },
+      {
+        "surface": "Concrete",
+        "gait": "walk",
+        "sounds": 5,
+        "steps": [
+          {
+            "surface": 2,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Concrete1/WAV/WAV_TomWinandySFX_-_FS_Concrete_walk_100.WAV_TomWinandySFX_-_FS_Concrete_walk_100"
+          },
+          {
+            "surface": 2,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Concrete2/WAV/WAV_TomWinandySFX_-_FS_concrete2_walk_20.WAV_TomWinandySFX_-_FS_concrete2_walk_20"
+          },
+          {
+            "surface": 2,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Concrete1/WAV/WAV_TomWinandySFX_-_FS_Concrete_walk_115.WAV_TomWinandySFX_-_FS_Concrete_walk_115"
+          },
+          {
+            "surface": 2,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Concrete1/WAV/WAV_TomWinandySFX_-_FS_Concrete_walk_99.WAV_TomWinandySFX_-_FS_Concrete_walk_99"
+          },
+          {
+            "surface": 2,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Concrete2/WAV/WAV_TomWinandySFX_-_FS_concrete2_walk_10.WAV_TomWinandySFX_-_FS_concrete2_walk_10"
+          }
+        ],
+        "max_speed": 200.0,
+        "jump": 0,
+        "land": 0
+      },
+      {
+        "surface": "Glass",
+        "gait": "walk",
+        "sounds": 3,
+        "steps": [
+          {
+            "surface": 3,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Glass1/WAV/WAV_TomWinandySFX_-_FS_Glass_walk_03.WAV_TomWinandySFX_-_FS_Glass_walk_03"
+          },
+          {
+            "surface": 3,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Glass1/WAV/WAV_TomWinandySFX_-_FS_Glass_walk_19.WAV_TomWinandySFX_-_FS_Glass_walk_19"
+          },
+          {
+            "surface": 3,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Glass1/WAV/WAV_TomWinandySFX_-_FS_Glass_walk_07.WAV_TomWinandySFX_-_FS_Glass_walk_07"
+          }
+        ],
+        "max_speed": 200.0,
+        "jump": 0,
+        "land": 0
+      },
+      {
+        "surface": "Metal",
+        "gait": "walk",
+        "sounds": 4,
+        "steps": [
+          {
+            "surface": 4,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Metal2/WAV/WAV_TomWinandySFX_-_FS_Metal2_walk_09.WAV_TomWinandySFX_-_FS_Metal2_walk_09"
+          },
+          {
+            "surface": 4,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Metal2/WAV/WAV_TomWinandySFX_-_FS_Metal2_walk_14.WAV_TomWinandySFX_-_FS_Metal2_walk_14"
+          },
+          {
+            "surface": 4,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Metal2/WAV/WAV_TomWinandySFX_-_FS_Metal2_walk_06.WAV_TomWinandySFX_-_FS_Metal2_walk_06"
+          },
+          {
+            "surface": 4,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Metal1/WAV/WAV_TomWinandySFX_-_FS_metal_walk_22.WAV_TomWinandySFX_-_FS_metal_walk_22"
+          }
+        ],
+        "max_speed": 200.0,
+        "jump": 0,
+        "land": 0
+      },
+      {
+        "surface": "Wood",
+        "gait": "walk",
+        "sounds": 4,
+        "steps": [
+          {
+            "surface": 5,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Wood1/WAV/WAV_TomWinandySFX_-_FS_Wood_walk_19.WAV_TomWinandySFX_-_FS_Wood_walk_19"
+          },
+          {
+            "surface": 5,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Wood1/WAV/WAV_TomWinandySFX_-_FS_Wood_walk_18.WAV_TomWinandySFX_-_FS_Wood_walk_18"
+          },
+          {
+            "surface": 5,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Wood1/WAV/WAV_TomWinandySFX_-_FS_Wood_walk_12.WAV_TomWinandySFX_-_FS_Wood_walk_12"
+          },
+          {
+            "surface": 5,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Wood2/WAV/WAV_TomWinandySFX_-_FS_Wood2_walk_15.WAV_TomWinandySFX_-_FS_Wood2_walk_15"
+          }
+        ],
+        "max_speed": 200.0,
+        "jump": 0,
+        "land": 0
+      },
+      {
+        "surface": "Brick",
+        "gait": "walk",
+        "sounds": 4,
+        "steps": [
+          {
+            "surface": 6,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Concrete2/WAV/WAV_TomWinandySFX_-_FS_concrete2_walk_20.WAV_TomWinandySFX_-_FS_concrete2_walk_20"
+          },
+          {
+            "surface": 6,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Concrete2/WAV/WAV_TomWinandySFX_-_FS_concrete2_walk_12.WAV_TomWinandySFX_-_FS_concrete2_walk_12"
+          },
+          {
+            "surface": 6,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Concrete2/WAV/WAV_TomWinandySFX_-_FS_concrete2_walk_06.WAV_TomWinandySFX_-_FS_concrete2_walk_06"
+          },
+          {
+            "surface": 6,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Concrete2/WAV/WAV_TomWinandySFX_-_FS_concrete2_walk_10.WAV_TomWinandySFX_-_FS_concrete2_walk_10"
+          }
+        ],
+        "max_speed": 200.0,
+        "jump": 0,
+        "land": 0
+      },
+      {
+        "surface": "Dirt",
+        "gait": "walk",
+        "sounds": 4,
+        "steps": [
+          {
+            "surface": 7,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Dirt1/WAV/WAV_TomWinandySFX_-_FS_Dirt_walk_13.WAV_TomWinandySFX_-_FS_Dirt_walk_13"
+          },
+          {
+            "surface": 7,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Dirt1/WAV/WAV_TomWinandySFX_-_FS_Dirt_walk_14.WAV_TomWinandySFX_-_FS_Dirt_walk_14"
+          },
+          {
+            "surface": 7,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Dirt1/WAV/WAV_TomWinandySFX_-_FS_Dirt_walk_02.WAV_TomWinandySFX_-_FS_Dirt_walk_02"
+          },
+          {
+            "surface": 7,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Dirt2/WAV/WAV_TomWinandySFX_-_FS_Dirt2_walk_02.WAV_TomWinandySFX_-_FS_Dirt2_walk_02"
+          }
+        ],
+        "max_speed": 200.0,
+        "jump": 0,
+        "land": 0
+      },
+      {
+        "surface": "Sand",
+        "gait": "walk",
+        "sounds": 4,
+        "steps": [
+          {
+            "surface": 8,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Sand1/WAV/WAV_TomWinandySFX_-_FS_Sand_walk_23.WAV_TomWinandySFX_-_FS_Sand_walk_23"
+          },
+          {
+            "surface": 8,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Sand1/WAV/WAV_TomWinandySFX_-_FS_Sand_walk_03.WAV_TomWinandySFX_-_FS_Sand_walk_03"
+          },
+          {
+            "surface": 8,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Sand1/WAV/WAV_TomWinandySFX_-_FS_Sand_walk_10.WAV_TomWinandySFX_-_FS_Sand_walk_10"
+          },
+          {
+            "surface": 8,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Sand1/WAV/WAV_TomWinandySFX_-_FS_Sand_walk_16.WAV_TomWinandySFX_-_FS_Sand_walk_16"
+          }
+        ],
+        "max_speed": 200.00000000000003,
+        "jump": 0,
+        "land": 0
+      },
+      {
+        "surface": "Water",
+        "gait": "walk",
+        "sounds": 4,
+        "steps": [
+          {
+            "surface": 9,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/ShallowWater-WetSurface1/WAV/WAV_TomWinandySFX_-_FS_ShallowWater_walk_11.WAV_TomWinandySFX_-_FS_ShallowWater_walk_11"
+          },
+          {
+            "surface": 9,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/ShallowWater-WetSurface1/WAV/WAV_TomWinandySFX_-_FS_ShallowWater_walk_17.WAV_TomWinandySFX_-_FS_ShallowWater_walk_17"
+          },
+          {
+            "surface": 9,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/ShallowWater-WetSurface1/WAV/WAV_TomWinandySFX_-_FS_ShallowWater_walk_02.WAV_TomWinandySFX_-_FS_ShallowWater_walk_02"
+          },
+          {
+            "surface": 9,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/ShallowWater-WetSurface1/WAV/WAV_TomWinandySFX_-_FS_ShallowWater_walk_18.WAV_TomWinandySFX_-_FS_ShallowWater_walk_18"
+          }
+        ],
+        "max_speed": 200.0,
+        "jump": 0,
+        "land": 0
+      },
+      {
+        "surface": "Rubber",
+        "gait": "walk",
+        "sounds": 4,
+        "steps": [
+          {
+            "surface": 10,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/CarpetHard1/WAV/WAV_TomWinandySFX_-_FS_CarpentHardSurface_walk_07.WAV_TomWinandySFX_-_FS_CarpentHardSurface_walk_07"
+          },
+          {
+            "surface": 10,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/CarpetHard1/WAV/WAV_TomWinandySFX_-_FS_CarpentHardSurface_walk_08.WAV_TomWinandySFX_-_FS_CarpentHardSurface_walk_08"
+          },
+          {
+            "surface": 10,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/CarpetHard1/WAV/WAV_TomWinandySFX_-_FS_CarpentHardSurface_walk_10.WAV_TomWinandySFX_-_FS_CarpentHardSurface_walk_10"
+          },
+          {
+            "surface": 10,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/CarpetHard1/WAV/WAV_TomWinandySFX_-_FS_CarpentHardSurface_walk_08.WAV_TomWinandySFX_-_FS_CarpentHardSurface_walk_08"
+          }
+        ],
+        "max_speed": 200.0,
+        "jump": 0,
+        "land": 0
+      },
+      {
+        "surface": "Fabric",
+        "gait": "walk",
+        "sounds": 4,
+        "steps": [
+          {
+            "surface": 11,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/CarpetWood1/WAV/WAV_TomWinandySFX_-_FS_CarpentWood1_walk_15.WAV_TomWinandySFX_-_FS_CarpentWood1_walk_15"
+          },
+          {
+            "surface": 11,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/CarpetWood1/WAV/WAV_TomWinandySFX_-_FS_CarpentWood1_walk_11.WAV_TomWinandySFX_-_FS_CarpentWood1_walk_11"
+          },
+          {
+            "surface": 11,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/CarpetWood1/WAV/WAV_TomWinandySFX_-_FS_CarpentWood1_walk_04.WAV_TomWinandySFX_-_FS_CarpentWood1_walk_04"
+          },
+          {
+            "surface": 11,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/CarpetWood1/WAV/WAV_TomWinandySFX_-_FS_CarpentWood1_walk_23.WAV_TomWinandySFX_-_FS_CarpentWood1_walk_23"
+          }
+        ],
+        "max_speed": 200.0,
+        "jump": 0,
+        "land": 0
+      },
+      {
+        "surface": "Rock",
+        "gait": "walk",
+        "sounds": 4,
+        "steps": [
+          {
+            "surface": 12,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Gravel2/WAV/WAV_TomWinandySFX_-_FS_Gravel2_walk_07.WAV_TomWinandySFX_-_FS_Gravel2_walk_07"
+          },
+          {
+            "surface": 12,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Gravel2/WAV/WAV_TomWinandySFX_-_FS_Gravel2_walk_03.WAV_TomWinandySFX_-_FS_Gravel2_walk_03"
+          },
+          {
+            "surface": 12,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Gravel1/WAV/WAV_TomWinandySFX_-_FS_Gravel_walk_15.WAV_TomWinandySFX_-_FS_Gravel_walk_15"
+          },
+          {
+            "surface": 12,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Gravel2/WAV/WAV_TomWinandySFX_-_FS_Gravel2_walk_02.WAV_TomWinandySFX_-_FS_Gravel2_walk_02"
+          }
+        ],
+        "max_speed": 200.0,
+        "jump": 0,
+        "land": 0
+      },
+      {
+        "surface": "Snow",
+        "gait": "walk",
+        "sounds": 3,
+        "steps": [
+          {
+            "surface": 13,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Snow1/WAV/WAV_TomWinandySFX_-_FS_Snow_walk_18.WAV_TomWinandySFX_-_FS_Snow_walk_18"
+          },
+          {
+            "surface": 13,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Snow1/WAV/WAV_TomWinandySFX_-_FS_Snow_walk_22.WAV_TomWinandySFX_-_FS_Snow_walk_22"
+          },
+          {
+            "surface": 13,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Snow1/WAV/WAV_TomWinandySFX_-_FS_Snow_walk_24.WAV_TomWinandySFX_-_FS_Snow_walk_24"
+          }
+        ],
+        "max_speed": 200.0,
+        "jump": 0,
+        "land": 0
+      },
+      {
+        "surface": "Ice",
+        "gait": "walk",
+        "sounds": 4,
+        "steps": [
+          {
+            "surface": 14,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Ice1/WAV/WAV_TomWinandySFX_-_FS_Ice_walk_11.WAV_TomWinandySFX_-_FS_Ice_walk_11"
+          },
+          {
+            "surface": 14,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Ice1/WAV/WAV_TomWinandySFX_-_FS_Ice_walk_15.WAV_TomWinandySFX_-_FS_Ice_walk_15"
+          },
+          {
+            "surface": 14,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Ice1/WAV/WAV_TomWinandySFX_-_FS_Ice_walk_13.WAV_TomWinandySFX_-_FS_Ice_walk_13"
+          },
+          {
+            "surface": 14,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Ice1/WAV/WAV_TomWinandySFX_-_FS_Ice_walk_24.WAV_TomWinandySFX_-_FS_Ice_walk_24"
+          }
+        ],
+        "max_speed": 200.00000000000003,
+        "jump": 0,
+        "land": 0
+      },
+      {
+        "surface": "Mud",
+        "gait": "walk",
+        "sounds": 4,
+        "steps": [
+          {
+            "surface": 15,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Mud1/WAV/WAV_TomWinandySFX_-_FS_Mud_walk_14.WAV_TomWinandySFX_-_FS_Mud_walk_14"
+          },
+          {
+            "surface": 15,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Mud1/WAV/WAV_TomWinandySFX_-_FS_Mud_walk_02.WAV_TomWinandySFX_-_FS_Mud_walk_02"
+          },
+          {
+            "surface": 15,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Mud1/WAV/WAV_TomWinandySFX_-_FS_Mud_walk_11.WAV_TomWinandySFX_-_FS_Mud_walk_11"
+          },
+          {
+            "surface": 15,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Mud1/WAV/WAV_TomWinandySFX_-_FS_Mud_walk_25.WAV_TomWinandySFX_-_FS_Mud_walk_25"
+          }
+        ],
+        "max_speed": 200.0,
+        "jump": 0,
+        "land": 0
+      },
+      {
+        "surface": "Ceramic",
+        "gait": "walk",
+        "sounds": 4,
+        "steps": [
+          {
+            "surface": 16,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Concrete1/WAV/WAV_TomWinandySFX_-_FS_Concrete_walk_104.WAV_TomWinandySFX_-_FS_Concrete_walk_104"
+          },
+          {
+            "surface": 16,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Concrete1/WAV/WAV_TomWinandySFX_-_FS_Concrete_walk_120.WAV_TomWinandySFX_-_FS_Concrete_walk_120"
+          },
+          {
+            "surface": 16,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Concrete1/WAV/WAV_TomWinandySFX_-_FS_Concrete_walk_110.WAV_TomWinandySFX_-_FS_Concrete_walk_110"
+          },
+          {
+            "surface": 16,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Concrete1/WAV/WAV_TomWinandySFX_-_FS_Concrete_walk_106.WAV_TomWinandySFX_-_FS_Concrete_walk_106"
+          }
+        ],
+        "max_speed": 200.0,
+        "jump": 0,
+        "land": 0
+      },
+      {
+        "surface": "Drywall",
+        "gait": "walk",
+        "sounds": 4,
+        "steps": [
+          {
+            "surface": 17,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Concrete2/WAV/WAV_TomWinandySFX_-_FS_concrete2_walk_14.WAV_TomWinandySFX_-_FS_concrete2_walk_14"
+          },
+          {
+            "surface": 17,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Concrete2/WAV/WAV_TomWinandySFX_-_FS_concrete2_walk_08.WAV_TomWinandySFX_-_FS_concrete2_walk_08"
+          },
+          {
+            "surface": 17,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Concrete2/WAV/WAV_TomWinandySFX_-_FS_concrete2_walk_03.WAV_TomWinandySFX_-_FS_concrete2_walk_03"
+          },
+          {
+            "surface": 17,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Concrete2/WAV/WAV_TomWinandySFX_-_FS_concrete2_walk_21.WAV_TomWinandySFX_-_FS_concrete2_walk_21"
+          }
+        ],
+        "max_speed": 200.0,
+        "jump": 0,
+        "land": 0
+      },
+      {
+        "surface": "Grass",
+        "gait": "walk",
+        "sounds": 4,
+        "steps": [
+          {
+            "surface": 18,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Grass2/WAV/WAV_TomWinandySFX_-_FS_Grass2_walk_04.WAV_TomWinandySFX_-_FS_Grass2_walk_04"
+          },
+          {
+            "surface": 18,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Grass1/WAV/WAV_TomWinandySFX_-_FS_Grass_walk_18.WAV_TomWinandySFX_-_FS_Grass_walk_18"
+          },
+          {
+            "surface": 18,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Grass1/WAV/WAV_TomWinandySFX_-_FS_Grass_walk_21.WAV_TomWinandySFX_-_FS_Grass_walk_21"
+          },
+          {
+            "surface": 18,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Grass2/WAV/WAV_TomWinandySFX_-_FS_Grass2_walk_24.WAV_TomWinandySFX_-_FS_Grass2_walk_24"
+          }
+        ],
+        "max_speed": 200.0,
+        "jump": 0,
+        "land": 0
+      },
+      {
+        "surface": "Gravel",
+        "gait": "walk",
+        "sounds": 4,
+        "steps": [
+          {
+            "surface": 19,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Gravel1/WAV/WAV_TomWinandySFX_-_FS_Gravel_walk_20.WAV_TomWinandySFX_-_FS_Gravel_walk_20"
+          },
+          {
+            "surface": 19,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Gravel2/WAV/WAV_TomWinandySFX_-_FS_Gravel2_walk_17.WAV_TomWinandySFX_-_FS_Gravel2_walk_17"
+          },
+          {
+            "surface": 19,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Gravel1/WAV/WAV_TomWinandySFX_-_FS_Gravel_walk_22.WAV_TomWinandySFX_-_FS_Gravel_walk_22"
+          },
+          {
+            "surface": 19,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Gravel1/WAV/WAV_TomWinandySFX_-_FS_Gravel_walk_13.WAV_TomWinandySFX_-_FS_Gravel_walk_13"
+          }
+        ],
+        "max_speed": 200.0,
+        "jump": 0,
+        "land": 0
+      },
+      {
+        "surface": "Leaves",
+        "gait": "walk",
+        "sounds": 4,
+        "steps": [
+          {
+            "surface": 20,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Undergrowth-Leaves1/WAV/WAV_TomWinandySFX_-_FS_UndergrowthLeaves_walk_10.WAV_TomWinandySFX_-_FS_UndergrowthLeaves_walk_10"
+          },
+          {
+            "surface": 20,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Undergrowth-Leaves1/WAV/WAV_TomWinandySFX_-_FS_UndergrowthLeaves_walk_16.WAV_TomWinandySFX_-_FS_UndergrowthLeaves_walk_16"
+          },
+          {
+            "surface": 20,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Undergrowth-Leaves1/WAV/WAV_TomWinandySFX_-_FS_UndergrowthLeaves_walk_12.WAV_TomWinandySFX_-_FS_UndergrowthLeaves_walk_12"
+          },
+          {
+            "surface": 20,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Undergrowth-Leaves1/WAV/WAV_TomWinandySFX_-_FS_UndergrowthLeaves_walk_25.WAV_TomWinandySFX_-_FS_UndergrowthLeaves_walk_25"
+          }
+        ],
+        "max_speed": 200.0,
+        "jump": 0,
+        "land": 0
+      },
+      {
+        "surface": "Carpet",
+        "gait": "walk",
+        "sounds": 4,
+        "steps": [
+          {
+            "surface": 21,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/CarpetWood1/WAV/WAV_TomWinandySFX_-_FS_CarpentWood1_walk_15.WAV_TomWinandySFX_-_FS_CarpentWood1_walk_15"
+          },
+          {
+            "surface": 21,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/CarpetHard1/WAV/WAV_TomWinandySFX_-_FS_CarpentHardSurface_walk_17.WAV_TomWinandySFX_-_FS_CarpentHardSurface_walk_17"
+          },
+          {
+            "surface": 21,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/CarpetHard1/WAV/WAV_TomWinandySFX_-_FS_CarpentHardSurface_walk_08.WAV_TomWinandySFX_-_FS_CarpentHardSurface_walk_08"
+          },
+          {
+            "surface": 21,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/CarpetWood1/WAV/WAV_TomWinandySFX_-_FS_CarpentWood1_walk_05.WAV_TomWinandySFX_-_FS_CarpentWood1_walk_05"
+          }
+        ],
+        "max_speed": 200.0,
+        "jump": 0,
+        "land": 0
+      },
+      {
+        "surface": "BrokenGlass",
+        "gait": "walk",
+        "sounds": 3,
+        "steps": [
+          {
+            "surface": 22,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/GlassShardsConcrete2/WAV/WAV_TomWinandySFX_-_FS_GlassShardsConcrete2_walk_23.WAV_TomWinandySFX_-_FS_GlassShardsConcrete2_walk_23"
+          },
+          {
+            "surface": 22,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/GlassShardsConcrete2/WAV/WAV_TomWinandySFX_-_FS_GlassShardsConcrete2_walk_19.WAV_TomWinandySFX_-_FS_GlassShardsConcrete2_walk_19"
+          },
+          {
+            "surface": 22,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/BrokenGlass-GlassShards1/WAV/WAV_TomWinandySFX_-_FS_BrokenGlass_walk_16.WAV_TomWinandySFX_-_FS_BrokenGlass_walk_16"
+          }
+        ],
+        "max_speed": 200.0,
+        "jump": 0,
+        "land": 0
+      },
+      {
+        "surface": "WetSand",
+        "gait": "walk",
+        "sounds": 4,
+        "steps": [
+          {
+            "surface": 23,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/WetSand1/WAV/WAV_TomWinandySFX_-_FS_WetSand_walk_19.WAV_TomWinandySFX_-_FS_WetSand_walk_19"
+          },
+          {
+            "surface": 23,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/WetSand1/WAV/WAV_TomWinandySFX_-_FS_WetSand_walk_24.WAV_TomWinandySFX_-_FS_WetSand_walk_24"
+          },
+          {
+            "surface": 23,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/WetSand1/WAV/WAV_TomWinandySFX_-_FS_WetSand_walk_06.WAV_TomWinandySFX_-_FS_WetSand_walk_06"
+          },
+          {
+            "surface": 23,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/WetSand1/WAV/WAV_TomWinandySFX_-_FS_WetSand_walk_04.WAV_TomWinandySFX_-_FS_WetSand_walk_04"
+          }
+        ],
+        "max_speed": 200.0,
+        "jump": 0,
+        "land": 0
+      },
+      {
+        "surface": "DeepWater",
+        "gait": "walk",
+        "sounds": 4,
+        "steps": [
+          {
+            "surface": 24,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/DeepWater1/WAV/WAV_TomWinandySFX_-_FS_DeepWater_walk_14.WAV_TomWinandySFX_-_FS_DeepWater_walk_14"
+          },
+          {
+            "surface": 24,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/DeepWater1/WAV/WAV_TomWinandySFX_-_FS_DeepWater_walk_21.WAV_TomWinandySFX_-_FS_DeepWater_walk_21"
+          },
+          {
+            "surface": 24,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/DeepWater1/WAV/WAV_TomWinandySFX_-_FS_DeepWater_walk_22.WAV_TomWinandySFX_-_FS_DeepWater_walk_22"
+          },
+          {
+            "surface": 24,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/DeepWater1/WAV/WAV_TomWinandySFX_-_FS_DeepWater_walk_13.WAV_TomWinandySFX_-_FS_DeepWater_walk_13"
+          }
+        ],
+        "max_speed": 200.0,
+        "jump": 0,
+        "land": 0
+      },
+      {
+        "surface": "GlassOnMetal",
+        "gait": "walk",
+        "sounds": 3,
+        "steps": [
+          {
+            "surface": 25,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/GlassShardsMetal1/WAV/WAV_TomWinandySFX_-_FS_GlassShardsMetal_walk_21.WAV_TomWinandySFX_-_FS_GlassShardsMetal_walk_21"
+          },
+          {
+            "surface": 25,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/GlassShardsMetal1/WAV/WAV_TomWinandySFX_-_FS_GlassShardsMetal_walk_03.WAV_TomWinandySFX_-_FS_GlassShardsMetal_walk_03"
+          },
+          {
+            "surface": 25,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/GlassShardsMetal2/WAV/WAV_TomWinandySFX_-_FS_GlassShardsMetal2_walk_11.WAV_TomWinandySFX_-_FS_GlassShardsMetal2_walk_11"
+          }
+        ],
+        "max_speed": 200.0,
+        "jump": 0,
+        "land": 0
+      },
+      {
+        "surface": "GlassOnWood",
+        "gait": "walk",
+        "sounds": 4,
+        "steps": [
+          {
+            "surface": 26,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/GlassShardsWood1/WAV/WAV_TomWinandySFX_-_FS_GlassShardsWood_walk_11.WAV_TomWinandySFX_-_FS_GlassShardsWood_walk_11"
+          },
+          {
+            "surface": 26,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/GlassShardsWood1/WAV/WAV_TomWinandySFX_-_FS_GlassShardsWood_walk_23.WAV_TomWinandySFX_-_FS_GlassShardsWood_walk_23"
+          },
+          {
+            "surface": 26,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/GlassShardsWood1/WAV/WAV_TomWinandySFX_-_FS_GlassShardsWood_walk_18.WAV_TomWinandySFX_-_FS_GlassShardsWood_walk_18"
+          },
+          {
+            "surface": 26,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/GlassShardsWood1/WAV/WAV_TomWinandySFX_-_FS_GlassShardsWood_walk_19.WAV_TomWinandySFX_-_FS_GlassShardsWood_walk_19"
+          }
+        ],
+        "max_speed": 200.0,
+        "jump": 0,
+        "land": 0
+      },
+      {
+        "surface": "HighGrass",
+        "gait": "walk",
+        "sounds": 4,
+        "steps": [
+          {
+            "surface": 27,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/HighGrass1/WAV/WAV_TomWinandySFX_-_FS_HighGrass_walk_05.WAV_TomWinandySFX_-_FS_HighGrass_walk_05"
+          },
+          {
+            "surface": 27,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/HighGrass1/WAV/WAV_TomWinandySFX_-_FS_HighGrass_walk_24.WAV_TomWinandySFX_-_FS_HighGrass_walk_24"
+          },
+          {
+            "surface": 27,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/HighGrass1/WAV/WAV_TomWinandySFX_-_FS_HighGrass_walk_21.WAV_TomWinandySFX_-_FS_HighGrass_walk_21"
+          },
+          {
+            "surface": 27,
+            "gait": "<CRFootstepGait.WALK: 1>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/HighGrass1/WAV/WAV_TomWinandySFX_-_FS_HighGrass_walk_06.WAV_TomWinandySFX_-_FS_HighGrass_walk_06"
+          }
+        ],
+        "max_speed": 200.00000000000003,
+        "jump": 0,
+        "land": 0
+      },
+      {
+        "surface": "Metal",
+        "gait": "run",
+        "sounds": 3,
+        "steps": [
+          {
+            "surface": 4,
+            "gait": "<CRFootstepGait.RUN: 2>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Metal1/WAV/WAV_TomWinandySFX_-_FS_metal_run_25.WAV_TomWinandySFX_-_FS_metal_run_25"
+          },
+          {
+            "surface": 4,
+            "gait": "<CRFootstepGait.RUN: 2>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Metal2/WAV/WAV_TomWinandySFX_-_FS_Metal2_run_20.WAV_TomWinandySFX_-_FS_Metal2_run_20"
+          },
+          {
+            "surface": 4,
+            "gait": "<CRFootstepGait.RUN: 2>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Metal1/WAV/WAV_TomWinandySFX_-_FS_metal_run_13.WAV_TomWinandySFX_-_FS_metal_run_13"
+          }
+        ],
+        "max_speed": 500.00000000000006,
+        "jump": 0,
+        "land": 0
+      },
+      {
+        "surface": "Metal",
+        "gait": "sprint",
+        "sounds": 2,
+        "steps": [
+          {
+            "surface": 4,
+            "gait": "<CRFootstepGait.SPRINT: 3>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Metal1/WAV/WAV_TomWinandySFX_-_FS_metal_sprint_12.WAV_TomWinandySFX_-_FS_metal_sprint_12"
+          },
+          {
+            "surface": 4,
+            "gait": "<CRFootstepGait.SPRINT: 3>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Metal1/WAV/WAV_TomWinandySFX_-_FS_metal_sprint_04.WAV_TomWinandySFX_-_FS_metal_sprint_04"
+          }
+        ],
+        "max_speed": 700.0,
+        "jump": 0,
+        "land": 0
+      },
+      {
+        "surface": "Metal",
+        "gait": "sneak",
+        "sounds": 5,
+        "steps": [
+          {
+            "surface": 4,
+            "gait": "<CRFootstepGait.SNEAK: 0>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Metal2/WAV/WAV_TomWinandySFX_-_FS_Metal2_sneak_03.WAV_TomWinandySFX_-_FS_Metal2_sneak_03"
+          },
+          {
+            "surface": 4,
+            "gait": "<CRFootstepGait.SNEAK: 0>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Metal2/WAV/WAV_TomWinandySFX_-_FS_Metal2_sneak_23.WAV_TomWinandySFX_-_FS_Metal2_sneak_23"
+          },
+          {
+            "surface": 4,
+            "gait": "<CRFootstepGait.SNEAK: 0>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Metal1/WAV/WAV_TomWinandySFX_-_FS_metal_sneak_08.WAV_TomWinandySFX_-_FS_metal_sneak_08"
+          },
+          {
+            "surface": 4,
+            "gait": "<CRFootstepGait.SNEAK: 0>",
+            "foot": "foot_r",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Metal1/WAV/WAV_TomWinandySFX_-_FS_metal_sneak_03.WAV_TomWinandySFX_-_FS_metal_sneak_03"
+          },
+          {
+            "surface": 4,
+            "gait": "<CRFootstepGait.SNEAK: 0>",
+            "foot": "foot_l",
+            "sound": "/Game/TWSFX_FS_Ultimate1/Metal2/WAV/WAV_TomWinandySFX_-_FS_Metal2_sneak_02.WAV_TomWinandySFX_-_FS_Metal2_sneak_02"
+          }
+        ],
+        "max_speed": 225.0,
+        "jump": 0,
+        "land": 0
+      },
+      {
+        "surface": "Metal",
+        "gait": "jump",
+        "sounds": 2,
+        "steps": [],
+        "max_speed": 0,
+        "jump": 1,
+        "land": 1
+      },
+      {
+        "surface": "Metal",
+        "gait": "idle",
+        "sounds": 0,
+        "steps": [],
+        "max_speed": 0,
+        "jump": 0,
+        "land": 0
+      },
+      {
+        "surface": "Metal",
+        "gait": "air",
+        "sounds": 0,
+        "steps": [],
+        "max_speed": 0,
+        "jump": 0,
+        "land": 0
+      },
+      {
+        "surface": "Metal",
+        "gait": "ragdoll",
+        "sounds": 0,
+        "steps": [],
+        "max_speed": 0,
+        "jump": 0,
+        "land": 0
+      }
+    ],
+    "bullet_holes": [
+      {
+        "case": "pellet_cap_and_moving_receiver",
+        "spawned": 9,
+        "active": 3,
+        "moved_with_prop": true,
+        "material": "/Game/BulletImpactVFX/BulletHoleDecals/Material_Instances/Inst_BulletDecal_Metal_Solid_02.Inst_BulletDecal_Metal_Solid_02"
+      },
+      {
+        "case": "timed_fade_and_cleanup",
+        "active": 0
+      }
+    ],
+    "weapon_surfaces": [
+      {
+        "weapon": "Pistol",
+        "surface": "Concrete",
+        "left": false,
+        "shots": 1,
+        "impacts": 1,
+        "trails": 1,
+        "pellets": 1,
+        "hit_surfaces": [
+          2
+        ],
+        "blocking": [
+          true
+        ],
+        "bullet_holes": 1
+      },
+      {
+        "weapon": "Pistol",
+        "surface": "Glass",
+        "left": true,
+        "shots": 1,
+        "impacts": 1,
+        "trails": 1,
+        "pellets": 1,
+        "hit_surfaces": [
+          3
+        ],
+        "blocking": [
+          true
+        ],
+        "bullet_holes": 1
+      },
+      {
+        "weapon": "Pistol",
+        "surface": "Metal",
+        "left": false,
+        "shots": 1,
+        "impacts": 1,
+        "trails": 1,
+        "pellets": 1,
+        "hit_surfaces": [
+          4
+        ],
+        "blocking": [
+          true
+        ],
+        "bullet_holes": 1
+      },
+      {
+        "weapon": "Pistol",
+        "surface": "Wood",
+        "left": true,
+        "shots": 1,
+        "impacts": 1,
+        "trails": 1,
+        "pellets": 1,
+        "hit_surfaces": [
+          5
+        ],
+        "blocking": [
+          true
+        ],
+        "bullet_holes": 1
+      },
+      {
+        "weapon": "Pistol",
+        "surface": "Brick",
+        "left": false,
+        "shots": 1,
+        "impacts": 1,
+        "trails": 1,
+        "pellets": 1,
+        "hit_surfaces": [
+          6
+        ],
+        "blocking": [
+          true
+        ],
+        "bullet_holes": 1
+      },
+      {
+        "weapon": "Pistol",
+        "surface": "Rubber",
+        "left": true,
+        "shots": 1,
+        "impacts": 1,
+        "trails": 1,
+        "pellets": 1,
+        "hit_surfaces": [
+          10
+        ],
+        "blocking": [
+          true
+        ],
+        "bullet_holes": 1
+      },
+      {
+        "weapon": "Pistol",
+        "surface": "Fabric",
+        "left": false,
+        "shots": 1,
+        "impacts": 1,
+        "trails": 1,
+        "pellets": 1,
+        "hit_surfaces": [
+          11
+        ],
+        "blocking": [
+          true
+        ],
+        "bullet_holes": 1
+      },
+      {
+        "weapon": "Pistol",
+        "surface": "Rock",
+        "left": true,
+        "shots": 1,
+        "impacts": 1,
+        "trails": 1,
+        "pellets": 1,
+        "hit_surfaces": [
+          12
+        ],
+        "blocking": [
+          true
+        ],
+        "bullet_holes": 1
+      },
+      {
+        "weapon": "Pistol",
+        "surface": "Ceramic",
+        "left": false,
+        "shots": 1,
+        "impacts": 1,
+        "trails": 1,
+        "pellets": 1,
+        "hit_surfaces": [
+          16
+        ],
+        "blocking": [
+          true
+        ],
+        "bullet_holes": 1
+      },
+      {
+        "weapon": "Pistol",
+        "surface": "Drywall",
+        "left": true,
+        "shots": 1,
+        "impacts": 1,
+        "trails": 1,
+        "pellets": 1,
+        "hit_surfaces": [
+          17
+        ],
+        "blocking": [
+          true
+        ],
+        "bullet_holes": 1
+      },
+      {
+        "weapon": "Pistol",
+        "surface": "Dirt",
+        "left": false,
+        "shots": 1,
+        "impacts": 1,
+        "trails": 1,
+        "pellets": 1,
+        "hit_surfaces": [
+          7
+        ],
+        "blocking": [
+          true
+        ],
+        "bullet_holes": 0
+      },
+      {
+        "weapon": "Pistol",
+        "surface": "Sand",
+        "left": true,
+        "shots": 1,
+        "impacts": 1,
+        "trails": 1,
+        "pellets": 1,
+        "hit_surfaces": [
+          8
+        ],
+        "blocking": [
+          true
+        ],
+        "bullet_holes": 0
+      },
+      {
+        "weapon": "Pistol",
+        "surface": "Water",
+        "left": false,
+        "shots": 1,
+        "impacts": 1,
+        "trails": 1,
+        "pellets": 1,
+        "hit_surfaces": [
+          9
+        ],
+        "blocking": [
+          true
+        ],
+        "bullet_holes": 0
+      },
+      {
+        "weapon": "Pistol",
+        "surface": "Snow",
+        "left": true,
+        "shots": 1,
+        "impacts": 1,
+        "trails": 1,
+        "pellets": 1,
+        "hit_surfaces": [
+          13
+        ],
+        "blocking": [
+          true
+        ],
+        "bullet_holes": 1
+      },
+      {
+        "weapon": "Pistol",
+        "surface": "Ice",
+        "left": false,
+        "shots": 1,
+        "impacts": 1,
+        "trails": 1,
+        "pellets": 1,
+        "hit_surfaces": [
+          14
+        ],
+        "blocking": [
+          true
+        ],
+        "bullet_holes": 0
+      },
+      {
+        "weapon": "Pistol",
+        "surface": "Mud",
+        "left": true,
+        "shots": 1,
+        "impacts": 1,
+        "trails": 1,
+        "pellets": 1,
+        "hit_surfaces": [
+          15
+        ],
+        "blocking": [
+          true
+        ],
+        "bullet_holes": 0
+      },
+      {
+        "weapon": "Rifle",
+        "surface": "Metal",
+        "left": false,
+        "shots": 1,
+        "impacts": 1,
+        "trails": 1,
+        "pellets": 1,
+        "hit_surfaces": [
+          4
+        ],
+        "blocking": [
+          true
+        ],
+        "bullet_holes": 1
+      },
+      {
+        "weapon": "Rifle",
+        "surface": "Metal",
+        "left": true,
+        "shots": 1,
+        "impacts": 1,
+        "trails": 1,
+        "pellets": 1,
+        "hit_surfaces": [
+          4
+        ],
+        "blocking": [
+          true
+        ],
+        "bullet_holes": 1
+      },
+      {
+        "weapon": "Shotgun",
+        "surface": "Metal",
+        "left": false,
+        "shots": 1,
+        "impacts": 9,
+        "trails": 9,
+        "pellets": 9,
+        "hit_surfaces": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "blocking": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "bullet_holes": 9
+      },
+      {
+        "weapon": "Shotgun",
+        "surface": "Metal",
+        "left": true,
+        "shots": 1,
+        "impacts": 9,
+        "trails": 9,
+        "pellets": 9,
+        "hit_surfaces": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "blocking": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "bullet_holes": 9
+      },
+      {
+        "weapon": "Pistol",
+        "surface": "Miss",
+        "left": false,
+        "shots": 1,
+        "impacts": 0,
+        "trails": 1,
+        "pellets": 1,
+        "hit_surfaces": [
+          0
+        ],
+        "blocking": [
+          false
+        ],
+        "bullet_holes": 0
+      },
+      {
+        "weapon": "Rifle",
+        "surface": "Miss",
+        "left": false,
+        "shots": 1,
+        "impacts": 0,
+        "trails": 1,
+        "pellets": 1,
+        "hit_surfaces": [
+          0
+        ],
+        "blocking": [
+          false
+        ],
+        "bullet_holes": 0
+      },
+      {
+        "weapon": "Shotgun",
+        "surface": "Miss",
+        "left": false,
+        "shots": 1,
+        "impacts": 0,
+        "trails": 9,
+        "pellets": 9,
+        "hit_surfaces": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "blocking": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "bullet_holes": 0
+      }
+    ],
+    "network_visuals": [
+      {
+        "visual": "ObsidianSentinel",
+        "roles": 4,
+        "left_muzzle_error_degrees": [
+          6.8511423653042,
+          4.140186059260843,
+          4.140146240986933,
+          6.851105213627304
+        ],
+        "left_weapon_roll_degrees": [
+          -1.3484895312468272,
+          -0.06882807967176097,
+          -0.0688466662109117,
+          -1.3484650868884756
+        ]
+      },
+      {
+        "visual": "RegalCommander",
+        "roles": 4,
+        "left_muzzle_error_degrees": [
+          6.552308059564113,
+          4.402820463593718,
+          4.4027832271418506,
+          6.552270455489309
+        ],
+        "left_weapon_roll_degrees": [
+          -1.4646312510406545,
+          -0.27475243773613756,
+          -0.27477339488880476,
+          -1.4646069243094906
+        ]
+      },
+      {
+        "visual": "TheSteadfastOfficer",
+        "roles": 4,
+        "left_muzzle_error_degrees": [
+          6.83502509223927,
+          4.319255603646304,
+          4.319214328852708,
+          6.834987615478123
+        ],
+        "left_weapon_roll_degrees": [
+          -1.7551506078792969,
+          0.15398186107816994,
+          0.1539630594185139,
+          -1.7551240478310957
+        ]
+      },
+      {
+        "visual": "UrbanTrailblazer",
+        "roles": 4,
+        "left_muzzle_error_degrees": [
+          6.938609620596586,
+          4.123357652796468,
+          4.123317359993865,
+          6.938572505706682
+        ],
+        "left_weapon_roll_degrees": [
+          -1.429891539074579,
+          0.2987523949592662,
+          0.29873407127064533,
+          -1.4298661944132567
+        ]
+      },
+      {
+        "case": "clear_override",
+        "roles": 4
+      }
+    ],
+    "network_shots": [
+      {
+        "shooter": "host",
+        "shot_bursts_by_role": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "bullet_holes_by_role": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "surface": 2,
+        "passed": true
+      },
+      {
+        "shooter": "client",
+        "shot_bursts_by_role": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "bullet_holes_by_role": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "surface": 4,
+        "passed": true
+      }
+    ],
+    "network_crowd_audio": [
+      {
+        "case": "replicated_npc_roles_visuals_loadouts",
+        "npcs": {
+          "B_GuardRifle_C_0": {
+            "visual": "BP_ObsidianSentinel_C",
+            "guard": true,
+            "weapon": "B_WeaponInstance_Rifle_C"
+          },
+          "B_GuardRifle_C_1": {
+            "visual": "BP_TheSteadfastOfficer_C",
+            "guard": true,
+            "weapon": "B_WeaponInstance_Rifle_C"
+          },
+          "B_GuardPistol_C_0": {
+            "visual": "BP_TheSteadfastOfficer_C",
+            "guard": true,
+            "weapon": "B_WeaponInstance_Pistol_C"
+          },
+          "B_GuardPistol_C_1": {
+            "visual": "BP_TheSteadfastOfficer_C",
+            "guard": true,
+            "weapon": "B_WeaponInstance_Pistol_C"
+          },
+          "B_GuardShotgun_C_0": {
+            "visual": "BP_RegalCommander_C",
+            "guard": true,
+            "weapon": "B_WeaponInstance_Shotgun_C"
+          },
+          "B_GuardShotgun_C_1": {
+            "visual": "BP_ObsidianSentinel_C",
+            "guard": true,
+            "weapon": "B_WeaponInstance_Shotgun_C"
+          },
+          "B_Civilian_C_4": {
+            "visual": "BP_UrbanTrailblazer_C",
+            "guard": false,
+            "weapon": null
+          },
+          "B_Civilian_C_5": {
+            "visual": "BP_UrbanTrailblazer_C",
+            "guard": false,
+            "weapon": null
+          },
+          "B_Civilian_C_0": {
+            "visual": "BP_UrbanTrailblazer_C",
+            "guard": false,
+            "weapon": null
+          },
+          "B_Civilian_C_1": {
+            "visual": "BP_UrbanTrailblazer_C",
+            "guard": false,
+            "weapon": null
+          },
+          "B_Civilian_C_2": {
+            "visual": "BP_UrbanTrailblazer_C",
+            "guard": false,
+            "weapon": null
+          },
+          "B_Civilian_C_3": {
+            "visual": "BP_UrbanTrailblazer_C",
+            "guard": false,
+            "weapon": null
+          }
+        }
+      },
+      {
+        "case": "owner_and_observer_foot_contacts",
+        "counts": [
+          7,
+          5
+        ],
+        "surface": "Metal",
+        "no_audio_multicast": true
+      }
+    ]
+  },
+  "notes": [
+    "Both rendered network worlds used reduced preview quality; previous rendering settings restored.",
+    "Packaged performance and soak testing are not included.",
+    "Parkour routes use authored navigation links and the same movement actions as the player."
+  ],
+  "file_sha256": {
+    "src/Source/LyraGame/Crusader/CRCrowdAI.cpp": "5bbf30af871c8967ad2d2180759ca9bf29bcf337916bc7a7e58f69b5908503b0",
+    "src/Source/LyraGame/Crusader/CRCrowdAI.h": "2c9c1a902798e38549890f4c4caf6d7c80934f528288f8f1fa3339a5a68ff32b",
+    "src/Source/LyraGame/Crusader/CRFootsteps.cpp": "38e66ac67975a662b08e0a3099d64959c129999128d022092f558f6a00649403",
+    "src/Source/LyraGame/Crusader/CRFootsteps.h": "ec940a5c41e367784bf4791c965b8bf8d3bf0b87af43f00c58f1f746bc9c6bdd",
+    "src/Source/LyraGame/Crusader/CRTraversalCharacter.cpp": "afef778be9a052d44ad867aad454b185ff604f38c09574e84f49cf4a97907c3a",
+    "src/Source/LyraGame/Crusader/CRTraversalCharacter.h": "259a850e6f607be1c205a9a045f2fef61ef79da40c7763615faaeb868ec0b2ca",
+    "src/Source/LyraGame/Crusader/CRWeaponEffects.cpp": "30cf79ff41e808b3475e179c4564ce3afa8d2222c2cf0273c2c118e328410295",
+    "src/Source/LyraGame/Crusader/CRWeaponEffects.h": "2addd93165cbb4c598cf31e132a308d38664aef3f07a4ba117ce101ddcacba96",
+    "src/Content/Crusader/AI/B_Civilian.uasset": "db3d46b485245e13b25e0c91747dcbe0b5186f582dea6fc3053bc009327c439b",
+    "src/Content/Crusader/AI/B_GuardPistol.uasset": "3fbd840f14d15c5e5c28410224f42e5d195ed0b164ab8b5948171411d76d16b0",
+    "src/Content/Crusader/AI/B_GuardRifle.uasset": "00c72a8cfba926f885cbbc8b99d2c9f3d0b1a214589a89b9ca94fccc37f26d20",
+    "src/Content/Crusader/AI/B_GuardShotgun.uasset": "3996cebebe72827eda711fc3863762e3215dc37d44f057f587d1d03a6c80148f",
+    "src/Content/Crusader/Audio/DA_Footsteps.uasset": "8e1ccc6bc8510b2f5d3e05ac87d2e095fbb6c51098a199df66297a61d39bf683",
+    "src/Content/Crusader/Audio/SA_Footsteps.uasset": "44bd198bbc6e26e3c080c009b4eeccdf116ec49a5411d0b22e84508d25ecf78d",
+    "src/Content/Crusader/Audio/SC_Footsteps.uasset": "4aa39286ae0b2821707973f1a73247fea2311caf610dc04f3cc5b014386e43ec",
+    "src/Config/DefaultEngine.ini": "0749f924ab9901a4653d4b2c439efa5b1b84c630ef4dca596d6453dc880e2ece",
+    "src/Content/Maps/L_TraversalGym.umap": "55ea387e085d7a9663dd4443d7f4a3b2e2728659ba51c168fd7befe1678c6b5b",
+    "src/Source/LyraGame/Baseline/BaselineEquipment.cpp": "40a8f15966d6340f6b661e0281673d665aaefa87a3a2329005cab236ff1edd7a",
+    "src/Source/LyraGame/Baseline/BaselineCharacterMovement.cpp": "a89349afabe29e77245a34e599f3956cc67e60a3f8731906a8657dcd8de078e6"
+  }
+}

@@ -68,17 +68,22 @@ def fx_tick(dt):
             fx_test.update(phase='settle',next=now+1.3,release=True)
         elif phase=='settle':fx_test.update(phase='fire',next=now+.3)
         elif phase=='fire':
-            fx_test.update(before_shots=effects.shots_played,before_impacts=effects.impacts_played,before_trails=effects.trails_played)
+            fx_test.update(before_shots=effects.shots_played,before_impacts=effects.impacts_played,before_trails=effects.trails_played,before_decals=effects.decals_spawned)
             for action in ['Fire','FireAuto']:fx_input(pawn,action,1)
             fx_test.update(phase='check',next=now+.35,release=True)
         elif phase=='check':
             hits=effects.last_impacts
             result=dict(weapon=case['weapon'],surface=case['target']['name'] if case['target'] else 'Miss',left=case['left'],shots=effects.shots_played-fx_test['before_shots'],impacts=effects.impacts_played-fx_test['before_impacts'],trails=effects.trails_played-fx_test['before_trails'],pellets=len(hits),hit_surfaces=[h.surface for h in hits],blocking=[h.blocking_hit for h in hits])
+            result['bullet_holes']=effects.decals_spawned-fx_test['before_decals']
             fx_test['results'].append(result)
             assert result['shots']==1,result
             assert result['trails']==len(hits)>0,result
             if case['target']:
                 assert result['impacts']>0 and all(h.surface==case['target']['surface'] for h in hits if h.blocking_hit),result
+                row=next(s for s in effects.last_profile.surfaces if s.surface.value==case['target']['surface'])
+                if row.decal or row.decal_variants:
+                    assert result['bullet_holes']>0 and effects.last_decal.get_attach_parent(),result
+                else:assert result['bullet_holes']==0,result
             else:assert result['impacts']==0 and not any(result['blocking']),result
             if case['weapon']=='Shotgun':assert len(hits)>1,result
             legacy=[a for a in u.GameplayStatics.get_all_actors_of_class(world,u.Actor) if a.get_class().get_name() in ['B_WeaponFire_C','B_WeaponImpacts_C','B_WeaponDecals_C']]

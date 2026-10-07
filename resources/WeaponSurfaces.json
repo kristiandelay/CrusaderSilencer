@@ -142,5 +142,85 @@
     "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Drywall/NS_Impact_Drywall_Low.NS_Impact_Drywall_Low",
     "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_Sheetrock.Cue_Bullet_Impact_Sheetrock",
     "decal": "/Game/BulletImpactVFX/BulletHoleDecals/Material_Instances/Inst_BulletDecal_Sheetrock_01.Inst_BulletDecal_Sheetrock_01"
+  },
+  {
+    "id": 18,
+    "name": "Grass",
+    "physical_material": "/Game/Crusader/Effects/Surfaces/PM_Grass.PM_Grass",
+    "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Dirt/NS_Impact_Dirt_Low.NS_Impact_Dirt_Low",
+    "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_Ground.Cue_Bullet_Impact_Ground",
+    "decal": null
+  },
+  {
+    "id": 19,
+    "name": "Gravel",
+    "physical_material": "/Game/Crusader/Effects/Surfaces/PM_Gravel.PM_Gravel",
+    "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Rock/NS_Impact_Rock_Low.NS_Impact_Rock_Low",
+    "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_Rock.Cue_Bullet_Impact_Rock",
+    "decal": null
+  },
+  {
+    "id": 20,
+    "name": "Leaves",
+    "physical_material": "/Game/Crusader/Effects/Surfaces/PM_Leaves.PM_Leaves",
+    "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Dirt/NS_Impact_Dirt_Low.NS_Impact_Dirt_Low",
+    "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_Ground.Cue_Bullet_Impact_Ground",
+    "decal": null
+  },
+  {
+    "id": 21,
+    "name": "Carpet",
+    "physical_material": "/Game/Crusader/Effects/Surfaces/PM_Carpet.PM_Carpet",
+    "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Fabric/NS_Impact_Fabric_Low.NS_Impact_Fabric_Low",
+    "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_Soft_Materials.Cue_Bullet_Impact_Soft_Materials",
+    "decal": "/Game/BulletImpactVFX/BulletHoleDecals/Material_Instances/Inst_BulletDecal_Sandbag_01.Inst_BulletDecal_Sandbag_01"
+  },
+  {
+    "id": 22,
+    "name": "BrokenGlass",
+    "physical_material": "/Game/Crusader/Effects/Surfaces/PM_BrokenGlass.PM_BrokenGlass",
+    "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Glass/NS_Impact_Glass_Low.NS_Impact_Glass_Low",
+    "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_Glass_Small.Cue_Bullet_Impact_Glass_Small",
+    "decal": null
+  },
+  {
+    "id": 23,
+    "name": "WetSand",
+    "physical_material": "/Game/Crusader/Effects/Surfaces/PM_WetSand.PM_WetSand",
+    "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Sand/NS_Impact_Sand_Low.NS_Impact_Sand_Low",
+    "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_Sand.Cue_Bullet_Impact_Sand",
+    "decal": null
+  },
+  {
+    "id": 24,
+    "name": "DeepWater",
+    "physical_material": "/Game/Crusader/Effects/Surfaces/PM_DeepWater.PM_DeepWater",
+    "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Water/NS_Impact_Water_Low.NS_Impact_Water_Low",
+    "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_Water.Cue_Bullet_Impact_Water",
+    "decal": null
+  },
+  {
+    "id": 25,
+    "name": "GlassOnMetal",
+    "physical_material": "/Game/Crusader/Effects/Surfaces/PM_GlassOnMetal.PM_GlassOnMetal",
+    "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Metal/NS_Impact_Metal_Low.NS_Impact_Metal_Low",
+    "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_MetalSolid.Cue_Bullet_Impact_MetalSolid",
+    "decal": "/Game/BulletImpactVFX/BulletHoleDecals/Material_Instances/Inst_BulletDecal_Metal_Solid_01.Inst_BulletDecal_Metal_Solid_01"
+  },
+  {
+    "id": 26,
+    "name": "GlassOnWood",
+    "physical_material": "/Game/Crusader/Effects/Surfaces/PM_GlassOnWood.PM_GlassOnWood",
+    "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Plank/NS_Impact_Plank_Low.NS_Impact_Plank_Low",
+    "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_Wood.Cue_Bullet_Impact_Wood",
+    "decal": "/Game/BulletImpactVFX/BulletHoleDecals/Material_Instances/M_BulletDecal_Wood_01_Inst.M_BulletDecal_Wood_01_Inst"
+  },
+  {
+    "id": 27,
+    "name": "HighGrass",
+    "physical_material": "/Game/Crusader/Effects/Surfaces/PM_HighGrass.PM_HighGrass",
+    "effect": "/Game/GunFX/NiagaraSystem/ImpactFX/Dirt/NS_Impact_Dirt_Low.NS_Impact_Dirt_Low",
+    "sound": "/Game/BulletImpactVFX/BulletHitVFX_SFX/ESounds/Cue/Cue_Bullet_Impact_Ground.Cue_Bullet_Impact_Ground",
+    "decal": null
   }
 ]

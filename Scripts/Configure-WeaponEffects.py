@@ -38,7 +38,12 @@ SURFACES=[
  (14,'Ice','Ice','Glass_Medium',None),
  (15,'Mud','Mud','MudWet',None),
  (16,'Ceramic','Ceramic','Glass_Pottery','Concrete'),
- (17,'Drywall','Drywall','Sheetrock','Sheetrock')]
+ (17,'Drywall','Drywall','Sheetrock','Sheetrock'),
+ (18,'Grass','Dirt','Ground',None),(19,'Gravel','Rock','Rock',None),
+ (20,'Leaves','Dirt','Ground',None),(21,'Carpet','Fabric','Soft_Materials','Sandbag'),
+ (22,'BrokenGlass','Glass','Glass_Small',None),(23,'WetSand','Sand','Sand',None),
+ (24,'DeepWater','Water','Water',None),(25,'GlassOnMetal','Metal','MetalSolid','Metal_Solid'),
+ (26,'GlassOnWood','Plank','Wood','Wood'),(27,'HighGrass','Dirt','Ground',None)]
 
 attenuation=asset('SA_BulletImpact',u.SoundAttenuation,u.SoundAttenuationFactory())
 settings=attenuation.get_editor_property('attenuation')
@@ -61,6 +66,13 @@ for index,name,effect,sound,decal in SURFACES:
     entry=u.CRSurfaceImpact()
     assert entry.import_text('(Surface='+('SurfaceType_Default' if index==0 else 'SurfaceType'+str(index))+')')
     entry.set_editor_property('effect',niagara);entry.set_editor_property('sound',cue);entry.set_editor_property('decal',decal_obj)
+    variants=[]
+    if decal_obj:
+        for path in lib.list_assets('/Game/BulletImpactVFX/BulletHoleDecals/Material_Instances',recursive=False):
+            asset_name=path.rsplit('/',1)[-1].split('.')[0]
+            if (decal=='Wood' and asset_name.startswith('M_BulletDecal_Wood_') and asset_name.endswith('_Inst')) or (decal!='Wood' and asset_name.startswith('Inst_BulletDecal_'+decal+'_')):
+                variants.append(load(path))
+    entry.set_editor_property('decal_variants',variants or ([decal_obj] if decal_obj else []))
     entry.set_editor_property('scale',.7 if name=='Character' else .65)
     entries.append(entry)
     manifest.append(dict(id=index,name=name,physical_material=physical.get_path_name(),effect=niagara.get_path_name(),sound=cue.get_path_name(),decal=decal_obj.get_path_name() if decal_obj else None))
@@ -74,6 +86,7 @@ for kind,muzzle,eject,scale in [('Rifle','AR/NS_Muzzle_AR_01','AR',.55),('Pistol
     profile.set_editor_property('impact_attenuation',attenuation)
     profile.set_editor_property('surfaces',entries);profile.set_editor_property('muzzle_scale',scale)
     profile.set_editor_property('decal_size',4 if kind=='Shotgun' else 3)
+    profile.set_editor_property('decal_lifetime',120.0);profile.set_editor_property('max_bullet_holes',96)
     save(profile)
     instance=load(f'/Game/Baseline/Weapons/{kind}/B_WeaponInstance_{kind}')
     u.get_default_object(instance.generated_class()).set_editor_property('effects_profile',profile);save(instance)

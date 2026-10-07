@@ -21,6 +21,7 @@ struct FCRSurfaceImpact
     UPROPERTY(EditAnywhere, BlueprintReadOnly) TObjectPtr<UNiagaraSystem> Effect;
     UPROPERTY(EditAnywhere, BlueprintReadOnly) TObjectPtr<USoundBase> Sound;
     UPROPERTY(EditAnywhere, BlueprintReadOnly) TObjectPtr<UMaterialInterface> Decal;
+    UPROPERTY(EditAnywhere, BlueprintReadOnly) TArray<TObjectPtr<UMaterialInterface>> DecalVariants;
     UPROPERTY(EditAnywhere, BlueprintReadOnly) float Scale = 1.f;
 };
 
@@ -38,6 +39,8 @@ public:
     UPROPERTY(EditAnywhere, BlueprintReadOnly) float MuzzleScale = .6f;
     UPROPERTY(EditAnywhere, BlueprintReadOnly) float TrailSpeed = 18000.f;
     UPROPERTY(EditAnywhere, BlueprintReadOnly) float DecalSize = 3.f;
+    UPROPERTY(EditAnywhere, BlueprintReadOnly) float DecalLifetime = 120.f;
+    UPROPERTY(EditAnywhere, BlueprintReadOnly) int32 MaxBulletHoles = 96;
     const FCRSurfaceImpact* FindSurface(EPhysicalSurface Surface) const;
 };
 
@@ -65,6 +68,9 @@ public:
     UPROPERTY(BlueprintReadOnly, Transient) int32 ShotsPlayed = 0;
     UPROPERTY(BlueprintReadOnly, Transient) int32 ImpactsPlayed = 0;
     UPROPERTY(BlueprintReadOnly, Transient) int32 TrailsPlayed = 0;
+    UPROPERTY(BlueprintReadOnly, Transient) int32 DecalsSpawned = 0;
+    UPROPERTY(BlueprintReadOnly, Transient) TObjectPtr<UDecalComponent> LastDecal;
+    UFUNCTION(BlueprintPure, Category="Crusader|Weapons") int32 GetActiveBulletHoleCount() const;
     UPROPERTY(BlueprintReadOnly, Transient) TArray<FCRShotImpact> LastImpacts;
     UPROPERTY(BlueprintReadOnly, Transient) TObjectPtr<UCRWeaponEffectsProfile> LastProfile;
 private:

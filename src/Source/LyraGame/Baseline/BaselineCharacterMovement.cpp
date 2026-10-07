@@ -1,5 +1,6 @@
 #include "BaselineCharacterMovement.h"
 #include "BaselinePhysicalInteraction.h"
+#include "Crusader/CRCrowdAI.h"
 #include "GameFramework/Character.h"
 #include "Net/UnrealNetwork.h"
 
@@ -120,7 +121,10 @@ float UBaselineCharacterMovement::GetMaxSpeed() const
     if (CharacterOwner)
         if (auto* Physical = CharacterOwner->FindComponentByClass<UBaselinePhysicalInteractionComponent>())
             if (Physical->IsBusy()) return 0.f;
-    const float NormalSpeed = Super::GetMaxSpeed();
+    float NormalSpeed = Super::GetMaxSpeed();
+    if (NormalSpeed>0.f && CharacterOwner)
+        if (const auto* Agent=CharacterOwner->FindComponentByClass<UCRCrowdAgentComponent>();Agent && Agent->bEnabled)
+            NormalSpeed=IsCrouching() ? FMath::Min(Agent->DesiredSpeed,MaxWalkSpeedCrouched) : Agent->DesiredSpeed;
     return bSliding && NormalSpeed > 0.f ? SlideMaximumSpeed : NormalSpeed;
 }
 
