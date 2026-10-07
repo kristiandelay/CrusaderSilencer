@@ -1,0 +1,1256 @@
+{
+  "validated_utc": "2026-10-07T14:25:40.181830+00:00",
+  "engine": "5.8.3",
+  "map": "/Game/Maps/L_TraversalGym",
+  "base_commit": "b3fa6231604d0c7751a8e0967943a5441c483539",
+  "build": "LyraEditor Win64 Development: passed",
+  "cases": 73,
+  "suite": [
+    {
+      "script": "Test-CrowdLocomotion.py",
+      "report": "Locomotion/standalone.json",
+      "cases": 20,
+      "passed": true
+    },
+    {
+      "script": "Test-CrowdAvoidance.py",
+      "report": "Environment/crowd-avoidance.json",
+      "cases": 1,
+      "passed": true
+    },
+    {
+      "script": "Test-CrowdTraversal.py",
+      "report": "Environment/crowd-traversal.json",
+      "cases": 12,
+      "passed": true
+    },
+    {
+      "script": "Test-CrowdLocomotion.py",
+      "report": "Locomotion/network.json",
+      "cases": 40,
+      "passed": true
+    }
+  ],
+  "source_sha256": {
+    "src/Source/LyraGame/Crusader/CRCrowdAI.cpp": "4f19992608a4a2e6c33a004f52a12cc5ac2cf8f7fd107f900fc5bbf56fd15066",
+    "src/Source/LyraGame/Crusader/CRCrowdAI.h": "a0d7fbc56d9b9e3f4e0f9dcd5ee4ad26928934fc197dc1d6dc9343da9d526c26",
+    "Scripts/Test-CrowdLocomotion.py": "e84810e72aa85c6f57fe92f571f8831544468b7fa15f80c45514692ea8f29361",
+    "Scripts/Test-CrowdLocomotionSuite.py": "72f2bbb672554047e4b303505e9ef501ba95d564bebf7dbc8418038e12c4a69e",
+    "Scripts/Test-CrowdAvoidance.py": "eb843e2f55775bceb6cffa9bd28f8cfb50d580fd10b8f4fbe63cec8ad1338e13",
+    "Scripts/Test-CrowdTraversal.py": "c4e31fdf3c80a73794583583c7d926c35cd94b917713106739d6d147b82a21df"
+  },
+  "reports": {
+    "Locomotion/standalone.json": {
+      "passed": true,
+      "error": null,
+      "results": [
+        {
+          "case": "patrol",
+          "pawn": "B_GuardRifle_C_0",
+          "world": "0",
+          "samples": 60,
+          "speed": 219.99197921752256,
+          "source_lean": 7.280934884619784,
+          "visual_lean": 6.526400984536872,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Walk_Starts"
+          ]
+        },
+        {
+          "case": "patrol",
+          "pawn": "B_GuardPistol_C_0",
+          "world": "0",
+          "samples": 60,
+          "speed": 219.94918670654667,
+          "source_lean": 7.223930467042867,
+          "visual_lean": 8.721546373402118,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Walk_Loops",
+            "PSD_Dense_Stand_Walk_Starts"
+          ]
+        },
+        {
+          "case": "patrol",
+          "pawn": "B_GuardShotgun_C_0",
+          "world": "0",
+          "samples": 60,
+          "speed": 209.05517298380803,
+          "source_lean": 6.304953041922407,
+          "visual_lean": 5.159172179928633,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Walk_Loops"
+          ]
+        },
+        {
+          "case": "patrol",
+          "pawn": "B_Civilian_C_4",
+          "world": "0",
+          "samples": 60,
+          "speed": 174.99030532837384,
+          "source_lean": 7.1768961811962475,
+          "visual_lean": 7.668148390135192,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Walk_Loops"
+          ]
+        },
+        {
+          "case": "jog",
+          "pawn": "B_GuardRifle_C_0",
+          "world": "0",
+          "samples": 80,
+          "speed": 449.9960674285897,
+          "source_lean": 29.758363516067114,
+          "visual_lean": 28.588350881159112,
+          "gaits": [
+            "<E_Gait.RUN: 1>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Run_Loops",
+            "PSD_Dense_Stand_Run_Starts"
+          ]
+        },
+        {
+          "case": "jog",
+          "pawn": "B_GuardPistol_C_0",
+          "world": "0",
+          "samples": 80,
+          "speed": 449.9920623779308,
+          "source_lean": 29.761303581016676,
+          "visual_lean": 30.867428541797523,
+          "gaits": [
+            "<E_Gait.RUN: 1>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Run_Loops",
+            "PSD_Dense_Stand_Run_Starts"
+          ]
+        },
+        {
+          "case": "jog",
+          "pawn": "B_GuardShotgun_C_0",
+          "world": "0",
+          "samples": 80,
+          "speed": 449.9955646514927,
+          "source_lean": 29.644529874319353,
+          "visual_lean": 28.47449550320942,
+          "gaits": [
+            "<E_Gait.RUN: 1>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Run_Loops",
+            "PSD_Dense_Stand_Run_Starts"
+          ]
+        },
+        {
+          "case": "jog",
+          "pawn": "B_Civilian_C_4",
+          "world": "0",
+          "samples": 80,
+          "speed": 449.9961395263675,
+          "source_lean": 29.70329457831079,
+          "visual_lean": 28.92665396614705,
+          "gaits": [
+            "<E_Gait.RUN: 1>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Run_Loops",
+            "PSD_Dense_Stand_Run_Starts"
+          ]
+        },
+        {
+          "case": "escape",
+          "pawn": "B_GuardRifle_C_0",
+          "world": "0",
+          "samples": 79,
+          "speed": 699.9921125581019,
+          "source_lean": 34.59620245473917,
+          "visual_lean": 33.4044062543509,
+          "gaits": [
+            "<E_Gait.SPRINT: 2>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Sprint_Loops",
+            "PSD_Dense_Stand_Sprint_Starts"
+          ]
+        },
+        {
+          "case": "escape",
+          "pawn": "B_GuardPistol_C_0",
+          "world": "0",
+          "samples": 79,
+          "speed": 699.9353405916239,
+          "source_lean": 34.61717229524376,
+          "visual_lean": 35.85012289331651,
+          "gaits": [
+            "<E_Gait.SPRINT: 2>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Sprint_Loops",
+            "PSD_Dense_Stand_Sprint_Starts"
+          ]
+        },
+        {
+          "case": "escape",
+          "pawn": "B_GuardShotgun_C_0",
+          "world": "0",
+          "samples": 79,
+          "speed": 675.2899976233408,
+          "source_lean": 34.291401300527596,
+          "visual_lean": 33.157794071728574,
+          "gaits": [
+            "<E_Gait.SPRINT: 2>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Sprint_Loops",
+            "PSD_Dense_Stand_Sprint_Starts"
+          ]
+        },
+        {
+          "case": "escape",
+          "pawn": "B_Civilian_C_4",
+          "world": "0",
+          "samples": 79,
+          "speed": 677.2102236147535,
+          "source_lean": 33.99645086311228,
+          "visual_lean": 32.92547591041012,
+          "gaits": [
+            "<E_Gait.SPRINT: 2>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Sprint_Loops",
+            "PSD_Dense_Stand_Sprint_Starts"
+          ]
+        },
+        {
+          "case": "turn",
+          "pawn": "B_GuardRifle_C_0",
+          "world": "0",
+          "samples": 73,
+          "speed": 217.6019264116684,
+          "source_lean": 7.267536590923276,
+          "visual_lean": 6.497368305652941,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Walk_Starts"
+          ]
+        },
+        {
+          "case": "turn",
+          "pawn": "B_GuardPistol_C_0",
+          "world": "0",
+          "samples": 73,
+          "speed": 212.3569444630245,
+          "source_lean": 7.21844762941796,
+          "visual_lean": 9.077748931465713,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Walk_Starts"
+          ]
+        },
+        {
+          "case": "turn",
+          "pawn": "B_GuardShotgun_C_0",
+          "world": "0",
+          "samples": 73,
+          "speed": 216.33678739364862,
+          "source_lean": 7.245778215219821,
+          "visual_lean": 6.463474050094591,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Walk_Starts"
+          ]
+        },
+        {
+          "case": "turn",
+          "pawn": "B_Civilian_C_4",
+          "world": "0",
+          "samples": 73,
+          "speed": 172.01333137407698,
+          "source_lean": 7.825641214084804,
+          "visual_lean": 8.544651271061078,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Walk_Starts"
+          ]
+        },
+        {
+          "case": "stop",
+          "pawn": "B_GuardRifle_C_0",
+          "world": "0",
+          "samples": 71,
+          "speed": 0.0,
+          "source_lean": 4.3512077702253045,
+          "visual_lean": 4.552847063353215,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Idles"
+          ]
+        },
+        {
+          "case": "stop",
+          "pawn": "B_GuardPistol_C_0",
+          "world": "0",
+          "samples": 71,
+          "speed": 0.0,
+          "source_lean": 4.351207749374229,
+          "visual_lean": 6.988969606687885,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Idles"
+          ]
+        },
+        {
+          "case": "stop",
+          "pawn": "B_GuardShotgun_C_0",
+          "world": "0",
+          "samples": 71,
+          "speed": 0.0,
+          "source_lean": 4.3512077589191325,
+          "visual_lean": 4.54789118485579,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Idles"
+          ]
+        },
+        {
+          "case": "stop",
+          "pawn": "B_Civilian_C_4",
+          "world": "0",
+          "samples": 71,
+          "speed": 0.0,
+          "source_lean": 4.439693114028848,
+          "visual_lean": 5.602639215795152,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Idles"
+          ]
+        }
+      ]
+    },
+    "Environment/crowd-avoidance.json": {
+      "passed": true,
+      "error": null,
+      "results": [
+        {
+          "case": "twelve_agent_opposing_streams",
+          "goal_distances": {
+            "B_Civilian_C_0": 70.07581280922241,
+            "B_Civilian_C_1": 67.18203808991333,
+            "B_Civilian_C_2": 63.77727267327968,
+            "B_Civilian_C_3": 63.02435849320851,
+            "B_Civilian_C_4": 64.42382477496275,
+            "B_Civilian_C_5": 64.99397519199462,
+            "B_GuardPistol_C_0": 64.99397519199455,
+            "B_GuardPistol_C_1": 64.42382477496275,
+            "B_GuardRifle_C_0": 63.02435849320851,
+            "B_GuardRifle_C_1": 63.77727267327968,
+            "B_GuardShotgun_C_0": 67.18203808991333,
+            "B_GuardShotgun_C_1": 70.07581280922241
+          },
+          "minimum_separation": 62.07025599668225,
+          "lateral_avoidance": {
+            "B_Civilian_C_0": 9.142326038024294,
+            "B_Civilian_C_1": 56.76249952248236,
+            "B_Civilian_C_2": 17.810178310049878,
+            "B_Civilian_C_3": 45.61835505515114,
+            "B_Civilian_C_4": 13.086175481439113,
+            "B_Civilian_C_5": 71.08857433461492,
+            "B_GuardPistol_C_0": 71.08857433461367,
+            "B_GuardPistol_C_1": 13.086175481439113,
+            "B_GuardRifle_C_0": 45.61835505515114,
+            "B_GuardRifle_C_1": 17.810178310049423,
+            "B_GuardShotgun_C_0": 56.76249952248236,
+            "B_GuardShotgun_C_1": 9.142326038024294
+          }
+        }
+      ]
+    },
+    "Environment/crowd-traversal.json": {
+      "passed": true,
+      "error": null,
+      "results": [
+        {
+          "role": "Guard",
+          "action": "Jump",
+          "start": [
+            8000.0,
+            -1850.0,
+            88.27499628067017
+          ],
+          "end": [
+            8123.350916465611,
+            -1850.0,
+            88.27498993767692
+          ],
+          "max_z": 215.8203420095178,
+          "minimum_capsule": 86.0,
+          "sliding": false,
+          "montage": null,
+          "weapon_stowed": false
+        },
+        {
+          "role": "Guard",
+          "action": "Slide",
+          "start": [
+            8367.622869432218,
+            -1850.0,
+            88.27499628067017
+          ],
+          "end": [
+            8952.798212578984,
+            -1850.0,
+            88.27599573135376
+          ],
+          "max_z": 88.27599573135376,
+          "minimum_capsule": 60.0,
+          "sliding": true,
+          "montage": "/Engine/Transient.AnimMontage_0",
+          "weapon_stowed": false
+        },
+        {
+          "role": "Guard",
+          "action": "Hurdle",
+          "start": [
+            2730.0,
+            -800.0,
+            88.27499628067017
+          ],
+          "end": [
+            2929.9765510510742,
+            -800.0000000003473,
+            88.27499145507852
+          ],
+          "max_z": 188.38782481394844,
+          "minimum_capsule": 86.0,
+          "sliding": false,
+          "montage": "/Game/Characters/UEFN_Mannequin/Animations/Traversal/Hurdle/AM_M_Neutral_Traversal_Hurdle_1_0_stand_F_V2_Rfoot.AM_M_Neutral_Traversal_Hurdle_1_0_stand_F_V2_Rfoot",
+          "weapon_stowed": true
+        },
+        {
+          "role": "Guard",
+          "action": "Mantle",
+          "start": [
+            4300.0,
+            -970.0,
+            88.27499628067017
+          ],
+          "end": [
+            4300.000004469379,
+            -850.0003094750246,
+            188.50061484029757
+          ],
+          "max_z": 188.50061484029757,
+          "minimum_capsule": 86.0,
+          "sliding": false,
+          "montage": "/Game/Characters/UEFN_Mannequin/Animations/Traversal/Mantle/AM_M_Neutral_Traversal_Mantle_1_0_stand_F_Lfoot.AM_M_Neutral_Traversal_Mantle_1_0_stand_F_Lfoot",
+          "weapon_stowed": true
+        },
+        {
+          "role": "Guard",
+          "action": "Climb",
+          "start": [
+            2700.0,
+            -1770.0,
+            88.27499628067017
+          ],
+          "end": [
+            2699.999999999933,
+            -1649.99933244356,
+            338.49727731551525
+          ],
+          "max_z": 338.49727731551525,
+          "minimum_capsule": 86.0,
+          "sliding": false,
+          "montage": "/Game/Characters/UEFN_Mannequin/Animations/Traversal/Climb/AM_M_Neutral_Traversal_Climb_Start_2_5_stand_F_Lfoot.AM_M_Neutral_Traversal_Climb_Start_2_5_stand_F_Lfoot",
+          "weapon_stowed": true
+        },
+        {
+          "role": "Guard",
+          "action": "Vault",
+          "start": [
+            4810.0,
+            -800.0,
+            438.46249532699585
+          ],
+          "end": [
+            5301.393719236797,
+            -799.999999999949,
+            88.27499846363295
+          ],
+          "max_z": 539.7545832809299,
+          "minimum_capsule": 86.0,
+          "sliding": false,
+          "montage": "/Game/Characters/UEFN_Mannequin/Animations/Traversal/Vault/AM_M_Neutral_Traversal_Vault_1_0_stand_F_Lfoot.AM_M_Neutral_Traversal_Vault_1_0_stand_F_Lfoot",
+          "weapon_stowed": true
+        },
+        {
+          "role": "Civilian",
+          "action": "Jump",
+          "start": [
+            8000.0,
+            -1850.0,
+            88.27499628067017
+          ],
+          "end": [
+            8116.078424101272,
+            -1850.0,
+            88.27499421625649
+          ],
+          "max_z": 215.82398546785757,
+          "minimum_capsule": 86.0,
+          "sliding": false,
+          "montage": null,
+          "weapon_stowed": false
+        },
+        {
+          "role": "Civilian",
+          "action": "Slide",
+          "start": [
+            8374.157220498073,
+            -1850.0,
+            88.27499628067017
+          ],
+          "end": [
+            8953.62744911907,
+            -1850.0,
+            88.27599573135376
+          ],
+          "max_z": 88.27599573135376,
+          "minimum_capsule": 60.0,
+          "sliding": true,
+          "montage": "/Engine/Transient.AnimMontage_1",
+          "weapon_stowed": false
+        },
+        {
+          "role": "Civilian",
+          "action": "Hurdle",
+          "start": [
+            2730.0,
+            -800.0,
+            88.27499628067017
+          ],
+          "end": [
+            2929.9765509507033,
+            -800.0000000102723,
+            88.27499148850909
+          ],
+          "max_z": 188.39016753119955,
+          "minimum_capsule": 86.0,
+          "sliding": false,
+          "montage": "/Game/Characters/UEFN_Mannequin/Animations/Traversal/Hurdle/AM_M_Neutral_Traversal_Hurdle_1_0_stand_F_V2_Rfoot.AM_M_Neutral_Traversal_Hurdle_1_0_stand_F_V2_Rfoot",
+          "weapon_stowed": false
+        },
+        {
+          "role": "Civilian",
+          "action": "Mantle",
+          "start": [
+            4300.0,
+            -970.0,
+            88.27499628067017
+          ],
+          "end": [
+            4300.000004469827,
+            -850.0003094451263,
+            188.50061489935848
+          ],
+          "max_z": 188.50061489935848,
+          "minimum_capsule": 86.0,
+          "sliding": false,
+          "montage": "/Game/Characters/UEFN_Mannequin/Animations/Traversal/Mantle/AM_M_Neutral_Traversal_Mantle_1_0_stand_F_Lfoot.AM_M_Neutral_Traversal_Mantle_1_0_stand_F_Lfoot",
+          "weapon_stowed": false
+        },
+        {
+          "role": "Civilian",
+          "action": "Climb",
+          "start": [
+            2700.0,
+            -1770.0,
+            88.27499628067017
+          ],
+          "end": [
+            2699.9999999976612,
+            -1649.9993782111997,
+            338.4972773162731
+          ],
+          "max_z": 338.4972773162731,
+          "minimum_capsule": 86.0,
+          "sliding": false,
+          "montage": "/Game/Characters/UEFN_Mannequin/Animations/Traversal/Climb/AM_M_Neutral_Traversal_Climb_Start_2_5_stand_F_Lfoot.AM_M_Neutral_Traversal_Climb_Start_2_5_stand_F_Lfoot",
+          "weapon_stowed": false
+        },
+        {
+          "role": "Civilian",
+          "action": "Vault",
+          "start": [
+            4810.0,
+            -800.0,
+            438.46249532699585
+          ],
+          "end": [
+            5240.924511248235,
+            -800.000000001632,
+            88.27500213856587
+          ],
+          "max_z": 539.6983318789162,
+          "minimum_capsule": 86.0,
+          "sliding": false,
+          "montage": "/Game/Characters/UEFN_Mannequin/Animations/Traversal/Vault/AM_M_Neutral_Traversal_Vault_1_0_stand_F_Lfoot.AM_M_Neutral_Traversal_Vault_1_0_stand_F_Lfoot",
+          "weapon_stowed": false
+        }
+      ]
+    },
+    "Locomotion/network.json": {
+      "passed": true,
+      "error": null,
+      "results": [
+        {
+          "case": "patrol",
+          "pawn": "B_GuardRifle_C_0",
+          "world": "0",
+          "samples": 40,
+          "speed": 219.99197998046958,
+          "source_lean": 6.657326906058283,
+          "visual_lean": 6.078885712871128,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Walk_Starts"
+          ]
+        },
+        {
+          "case": "patrol",
+          "pawn": "B_GuardPistol_C_0",
+          "world": "0",
+          "samples": 40,
+          "speed": 219.96769981384097,
+          "source_lean": 7.0426218762756845,
+          "visual_lean": 10.321601810904102,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Walk_Loops"
+          ]
+        },
+        {
+          "case": "patrol",
+          "pawn": "B_GuardShotgun_C_0",
+          "world": "0",
+          "samples": 40,
+          "speed": 212.62234878540022,
+          "source_lean": 7.2141831195542325,
+          "visual_lean": 5.971116841340473,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Walk_Loops",
+            "PSD_Dense_Stand_Walk_Starts"
+          ]
+        },
+        {
+          "case": "patrol",
+          "pawn": "B_Civilian_C_4",
+          "world": "0",
+          "samples": 40,
+          "speed": 174.98946533203323,
+          "source_lean": 7.2304150487675525,
+          "visual_lean": 7.4794933816833264,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Walk_Loops"
+          ]
+        },
+        {
+          "case": "patrol",
+          "pawn": "B_GuardRifle_C_0",
+          "world": "1",
+          "samples": 40,
+          "speed": 220.00909072126987,
+          "source_lean": 7.405927019340416,
+          "visual_lean": 6.355734918413324,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Walk_Loops",
+            "PSD_Dense_Stand_Walk_Starts"
+          ]
+        },
+        {
+          "case": "patrol",
+          "pawn": "B_GuardPistol_C_0",
+          "world": "1",
+          "samples": 40,
+          "speed": 220.0,
+          "source_lean": 7.120079740399504,
+          "visual_lean": 10.353820963810715,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Walk_Loops"
+          ]
+        },
+        {
+          "case": "patrol",
+          "pawn": "B_GuardShotgun_C_0",
+          "world": "1",
+          "samples": 40,
+          "speed": 212.71520928261853,
+          "source_lean": 6.712947037958966,
+          "visual_lean": 5.807939877453869,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Walk_Loops"
+          ]
+        },
+        {
+          "case": "patrol",
+          "pawn": "B_Civilian_C_4",
+          "world": "1",
+          "samples": 40,
+          "speed": 175.02214134715297,
+          "source_lean": 8.08346688713837,
+          "visual_lean": 8.300451476715779,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Walk_Loops",
+            "PSD_Dense_Stand_Walk_Starts"
+          ]
+        },
+        {
+          "case": "jog",
+          "pawn": "B_GuardRifle_C_0",
+          "world": "0",
+          "samples": 56,
+          "speed": 449.99606813702775,
+          "source_lean": 28.17412741423068,
+          "visual_lean": 27.200448086363085,
+          "gaits": [
+            "<E_Gait.RUN: 1>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Run_Loops",
+            "PSD_Dense_Stand_Run_Starts"
+          ]
+        },
+        {
+          "case": "jog",
+          "pawn": "B_GuardPistol_C_0",
+          "world": "0",
+          "samples": 56,
+          "speed": 449.98968505859193,
+          "source_lean": 28.176901850925884,
+          "visual_lean": 30.922106025256674,
+          "gaits": [
+            "<E_Gait.RUN: 1>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Run_Loops",
+            "PSD_Dense_Stand_Run_Starts"
+          ]
+        },
+        {
+          "case": "jog",
+          "pawn": "B_GuardShotgun_C_0",
+          "world": "0",
+          "samples": 56,
+          "speed": 449.99534116472165,
+          "source_lean": 28.090089714551986,
+          "visual_lean": 26.951683418978337,
+          "gaits": [
+            "<E_Gait.RUN: 1>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Run_Loops",
+            "PSD_Dense_Stand_Run_Starts"
+          ]
+        },
+        {
+          "case": "jog",
+          "pawn": "B_Civilian_C_4",
+          "world": "0",
+          "samples": 56,
+          "speed": 449.9961667742041,
+          "source_lean": 29.68311971961614,
+          "visual_lean": 28.95168500469946,
+          "gaits": [
+            "<E_Gait.RUN: 1>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Run_Loops",
+            "PSD_Dense_Stand_Run_Starts"
+          ]
+        },
+        {
+          "case": "jog",
+          "pawn": "B_GuardRifle_C_0",
+          "world": "1",
+          "samples": 56,
+          "speed": 450.0044444224962,
+          "source_lean": 28.59663149454524,
+          "visual_lean": 27.7471554244462,
+          "gaits": [
+            "<E_Gait.RUN: 1>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Run_Loops",
+            "PSD_Dense_Stand_Run_Starts"
+          ]
+        },
+        {
+          "case": "jog",
+          "pawn": "B_GuardPistol_C_0",
+          "world": "1",
+          "samples": 56,
+          "speed": 450.0,
+          "source_lean": 29.434126676038034,
+          "visual_lean": 32.24058284929883,
+          "gaits": [
+            "<E_Gait.RUN: 1>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Run_Loops",
+            "PSD_Dense_Stand_Run_Starts"
+          ]
+        },
+        {
+          "case": "jog",
+          "pawn": "B_GuardShotgun_C_0",
+          "world": "1",
+          "samples": 56,
+          "speed": 450.0,
+          "source_lean": 27.917104773275856,
+          "visual_lean": 26.81111605082083,
+          "gaits": [
+            "<E_Gait.RUN: 1>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Run_Loops",
+            "PSD_Dense_Stand_Run_Starts"
+          ]
+        },
+        {
+          "case": "jog",
+          "pawn": "B_Civilian_C_4",
+          "world": "1",
+          "samples": 56,
+          "speed": 450.00111110973984,
+          "source_lean": 29.31053921705618,
+          "visual_lean": 28.671342132150226,
+          "gaits": [
+            "<E_Gait.RUN: 1>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Run_Loops",
+            "PSD_Dense_Stand_Run_Starts"
+          ]
+        },
+        {
+          "case": "escape",
+          "pawn": "B_GuardRifle_C_0",
+          "world": "0",
+          "samples": 51,
+          "speed": 699.9924687404206,
+          "source_lean": 34.67899594652932,
+          "visual_lean": 33.69616402276285,
+          "gaits": [
+            "<E_Gait.SPRINT: 2>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Sprint_Loops",
+            "PSD_Dense_Stand_Sprint_Starts"
+          ]
+        },
+        {
+          "case": "escape",
+          "pawn": "B_GuardPistol_C_0",
+          "world": "0",
+          "samples": 51,
+          "speed": 699.9842397652369,
+          "source_lean": 34.691911122645045,
+          "visual_lean": 37.6162279593168,
+          "gaits": [
+            "<E_Gait.SPRINT: 2>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Sprint_Loops",
+            "PSD_Dense_Stand_Sprint_Starts"
+          ]
+        },
+        {
+          "case": "escape",
+          "pawn": "B_GuardShotgun_C_0",
+          "world": "0",
+          "samples": 51,
+          "speed": 699.9682557349078,
+          "source_lean": 34.69284039945074,
+          "visual_lean": 33.488390820463174,
+          "gaits": [
+            "<E_Gait.SPRINT: 2>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Sprint_Loops",
+            "PSD_Dense_Stand_Sprint_Starts"
+          ]
+        },
+        {
+          "case": "escape",
+          "pawn": "B_Civilian_C_4",
+          "world": "0",
+          "samples": 51,
+          "speed": 682.6471928615159,
+          "source_lean": 34.48430135146284,
+          "visual_lean": 33.33538556285823,
+          "gaits": [
+            "<E_Gait.SPRINT: 2>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Sprint_Loops",
+            "PSD_Dense_Stand_Sprint_Starts"
+          ]
+        },
+        {
+          "case": "escape",
+          "pawn": "B_GuardRifle_C_0",
+          "world": "1",
+          "samples": 51,
+          "speed": 700.0023949533316,
+          "source_lean": 34.65881972783834,
+          "visual_lean": 33.70101065374097,
+          "gaits": [
+            "<E_Gait.SPRINT: 2>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Sprint_Loops",
+            "PSD_Dense_Stand_Sprint_Starts"
+          ]
+        },
+        {
+          "case": "escape",
+          "pawn": "B_GuardPistol_C_0",
+          "world": "1",
+          "samples": 51,
+          "speed": 700.0,
+          "source_lean": 35.40645869200111,
+          "visual_lean": 38.084639116432385,
+          "gaits": [
+            "<E_Gait.SPRINT: 2>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Sprint_Loops",
+            "PSD_Dense_Stand_Sprint_Starts"
+          ]
+        },
+        {
+          "case": "escape",
+          "pawn": "B_GuardShotgun_C_0",
+          "world": "1",
+          "samples": 51,
+          "speed": 700.0,
+          "source_lean": 34.657676976340376,
+          "visual_lean": 33.47391469419733,
+          "gaits": [
+            "<E_Gait.SPRINT: 2>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Sprint_Loops",
+            "PSD_Dense_Stand_Sprint_Starts"
+          ]
+        },
+        {
+          "case": "escape",
+          "pawn": "B_Civilian_C_4",
+          "world": "1",
+          "samples": 51,
+          "speed": 682.4521231935377,
+          "source_lean": 34.4408025410005,
+          "visual_lean": 33.31722838473855,
+          "gaits": [
+            "<E_Gait.SPRINT: 2>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Sprint_Loops",
+            "PSD_Dense_Stand_Sprint_Starts"
+          ]
+        },
+        {
+          "case": "turn",
+          "pawn": "B_GuardRifle_C_0",
+          "world": "0",
+          "samples": 52,
+          "speed": 219.9924372159512,
+          "source_lean": 7.331964088637211,
+          "visual_lean": 6.772003103160892,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Walk_Starts"
+          ]
+        },
+        {
+          "case": "turn",
+          "pawn": "B_GuardPistol_C_0",
+          "world": "0",
+          "samples": 52,
+          "speed": 216.48241806030262,
+          "source_lean": 7.344174345025129,
+          "visual_lean": 10.974325367781526,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Walk_Starts"
+          ]
+        },
+        {
+          "case": "turn",
+          "pawn": "B_GuardShotgun_C_0",
+          "world": "0",
+          "samples": 52,
+          "speed": 218.19245118361266,
+          "source_lean": 7.322527448900429,
+          "visual_lean": 6.54492116465366,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Walk_Starts"
+          ]
+        },
+        {
+          "case": "turn",
+          "pawn": "B_Civilian_C_4",
+          "world": "0",
+          "samples": 52,
+          "speed": 170.0260734558105,
+          "source_lean": 7.776232309478867,
+          "visual_lean": 8.494682406430076,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Walk_Starts"
+          ]
+        },
+        {
+          "case": "turn",
+          "pawn": "B_GuardRifle_C_0",
+          "world": "1",
+          "samples": 52,
+          "speed": 220.0058128284788,
+          "source_lean": 7.350049503161912,
+          "visual_lean": 6.807365682646254,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Walk_Starts"
+          ]
+        },
+        {
+          "case": "turn",
+          "pawn": "B_GuardPistol_C_0",
+          "world": "1",
+          "samples": 52,
+          "speed": 216.19335433715716,
+          "source_lean": 7.317626469198897,
+          "visual_lean": 10.93983106101112,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Walk_Starts"
+          ]
+        },
+        {
+          "case": "turn",
+          "pawn": "B_GuardShotgun_C_0",
+          "world": "1",
+          "samples": 52,
+          "speed": 217.94703342011138,
+          "source_lean": 7.296534512740556,
+          "visual_lean": 6.53054223333013,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Walk_Starts"
+          ]
+        },
+        {
+          "case": "turn",
+          "pawn": "B_Civilian_C_4",
+          "world": "1",
+          "samples": 52,
+          "speed": 170.24683584195256,
+          "source_lean": 7.9547894160686745,
+          "visual_lean": 8.656548967159615,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Walk_Starts"
+          ]
+        },
+        {
+          "case": "stop",
+          "pawn": "B_GuardRifle_C_0",
+          "world": "0",
+          "samples": 48,
+          "speed": 0.0,
+          "source_lean": 4.351099550092496,
+          "visual_lean": 4.926212020444747,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Idles"
+          ]
+        },
+        {
+          "case": "stop",
+          "pawn": "B_GuardPistol_C_0",
+          "world": "0",
+          "samples": 48,
+          "speed": 0.0,
+          "source_lean": 4.35109955710942,
+          "visual_lean": 8.86165729985231,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Idles"
+          ]
+        },
+        {
+          "case": "stop",
+          "pawn": "B_GuardShotgun_C_0",
+          "world": "0",
+          "samples": 48,
+          "speed": 0.0,
+          "source_lean": 4.351099535779826,
+          "visual_lean": 4.631106873664852,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Idles"
+          ]
+        },
+        {
+          "case": "stop",
+          "pawn": "B_Civilian_C_4",
+          "world": "0",
+          "samples": 48,
+          "speed": 0.0,
+          "source_lean": 4.417588210854849,
+          "visual_lean": 5.523338111673418,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Idles"
+          ]
+        },
+        {
+          "case": "stop",
+          "pawn": "B_GuardRifle_C_0",
+          "world": "1",
+          "samples": 48,
+          "speed": 0.0,
+          "source_lean": 4.52737798030677,
+          "visual_lean": 4.474429840708039,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Idles"
+          ]
+        },
+        {
+          "case": "stop",
+          "pawn": "B_GuardPistol_C_0",
+          "world": "1",
+          "samples": 48,
+          "speed": 0.0,
+          "source_lean": 4.527377979649167,
+          "visual_lean": 9.537339133811114,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Idles"
+          ]
+        },
+        {
+          "case": "stop",
+          "pawn": "B_GuardShotgun_C_0",
+          "world": "1",
+          "samples": 48,
+          "speed": 0.0,
+          "source_lean": 4.527377980033584,
+          "visual_lean": 4.169453829674619,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Idles"
+          ]
+        },
+        {
+          "case": "stop",
+          "pawn": "B_Civilian_C_4",
+          "world": "1",
+          "samples": 48,
+          "speed": 0.0,
+          "source_lean": 4.5376856670159365,
+          "visual_lean": 5.610606039198402,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "databases": [
+            "PSD_Dense_Stand_Idles"
+          ]
+        }
+      ]
+    }
+  }
+}

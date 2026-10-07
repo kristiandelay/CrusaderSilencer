@@ -71,9 +71,10 @@ public:
     UPROPERTY(BlueprintReadOnly, Replicated) int32 HearingDetections = 0;
     UPROPERTY(BlueprintReadOnly, Replicated) int32 DamageReactions = 0;
     UPROPERTY(BlueprintReadOnly, Replicated) bool bInitialized = false;
-    UPROPERTY(BlueprintReadOnly, Transient) float DesiredSpeed = 190.f;
+    UPROPERTY(BlueprintReadOnly, Replicated) float DesiredSpeed = 190.f;
     UPROPERTY(BlueprintReadOnly, ReplicatedUsing=OnRep_Visual) TSubclassOf<AActor> SelectedVisual;
     void SetVisual(TSubclassOf<AActor> Visual);
+    void UpdateLocomotionIntent();
     UFUNCTION() void OnRep_Visual();
     UFUNCTION(BlueprintPure, Category="Crowd") static bool OwnsVisualOverride(UActorComponent* Source);
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& Out) const override;
@@ -132,6 +133,7 @@ private:
     FName ActiveAction;
     FVector LastProgressPosition;
     double LastProgressTime = 0.;
+    float LastCrowdMaxSpeed = -1.f;
 };
 
 /** Authored route links invoke the same movement action on either NPC role. */

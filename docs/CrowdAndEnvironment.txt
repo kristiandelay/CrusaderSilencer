@@ -12,6 +12,13 @@ NPCs inherit B_CRTraversalPawn. CRCrowdController drives the same Lyra ability,
 inventory, equipment, GASP animation, sliding and physics components as players.
 Detour crowd following provides obstacle avoidance and agent separation.
 Players register as passive crowd agents so NPCs can steer around them.
+AI supplies GASP's replicated walk, sprint and strafe intent: patrol uses walk
+databases, pursuit/escape can sprint, and weapon readiness enables strafing.
+Desired movement speed also replicates for observer trajectory prediction.
+Avoidance uses a 650 cm collision query and the default velocity range multiplier
+of 1; doubling that multiplier throttled clear-path movement to about 35 percent
+and left the running poses out of step with the capsule. Cached crowd limits
+refresh when movement speed changes, including crouch, slide and recovery.
 Blocked opposing traffic can sidestep and retry its route instead of remaining
 stuck or aborting merely because another agent briefly occupies the path.
 Guards detect sight and hearing, investigate footsteps or unseen gunshots,
@@ -75,10 +82,17 @@ Validation scripts exercise real PIE animation, navigation and weapon abilities:
   Test-Footsteps.py, Test-WeaponEffects.py, Test-BulletHoles.py
   Test-CrowdTraversal.py, Test-CrowdLinks.py, Test-CrowdAI.py
   Test-CrowdAvoidance.py, Test-CrowdSensesDeath.py
+  Test-CrowdLocomotionSuite.py (standalone posture/speed, avoidance, traversal,
+    and two-player NPC animation; restores preview and Play settings)
   Test-CrowdAudio-Network.py (after the two-player weapon test)
   Validate-EnvironmentCrowd.py (PIE stopped)
 Detailed reports are in Artifacts/Environment and Artifacts/WeaponFX.
 resources/CrowdEnvironmentValidation.json records the completed validation.
+resources/CrowdLocomotionValidation.json records the locomotion regression.
+The locomotion test samples actual source/retargeted bone posture and selected
+motion-matching databases at patrol, jog, sprint, turn and stop. Runtime test
+fixtures use direct property assignment: editor PostEditChange reconstructs
+Blueprint components in PIE and drops their BeginPlay animation bindings.
 The two-client automation temporarily lowers preview rendering quality to fit
 both worlds on the test GPU, then restores the previous console settings.
 Validation uses editor PIE; a packaged-game performance/soak pass is separate.

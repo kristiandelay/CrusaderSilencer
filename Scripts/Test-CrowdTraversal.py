@@ -40,7 +40,9 @@ def ct_tick(dt):
         if now<ct_test['next']:return
         if phase=='place':
             ctrl.stop_movement();p.character_movement.stop_movement_immediately();p.un_crouch()
-            p.crowd_agent.set_editor_property('current_area',None);p.crowd_agent.set_editor_property('threat',None);p.crowd_agent.set_editor_property('desired_speed',700.0)
+            # Avoid PostEditChange reconstructing the pawn and losing GASP tick bindings.
+            for key,value in [('CurrentArea','None'),('Threat','None'),('DesiredSpeed','700')]:
+                assert u.CRBlueprintTools.set_property_text(p.crowd_agent,key,value)
             p.set_actor_location(u.Vector(*case['start']),False,True);p.set_actor_rotation(u.Rotator(yaw=case['yaw']),False);ctrl.set_control_rotation(u.Rotator(yaw=case['yaw']))
             ct_test.update(pawn=p.get_name(),phase='warm',next=now+1,heights=[],capsules=[],sliding=False,montage=None,stowed=False)
         elif phase=='warm':

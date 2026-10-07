@@ -28,10 +28,12 @@ def av_tick(dt):
             av_test.update(start={},goals={},lateral={},minimum_separation=9999.)
             for i,p in enumerate(npcs):
                 p.get_controller().stop_movement();p.character_movement.stop_movement_immediately();p.un_crouch()
-                p.crowd_agent.set_editor_property('threat',None);p.crowd_agent.set_editor_property('current_area',None);p.crowd_agent.set_editor_property('desired_speed',220.)
+                for key,value in [('Threat','None'),('CurrentArea','None'),('DesiredSpeed','220')]:
+                    assert u.CRBlueprintTools.set_property_text(p.crowd_agent,key,value)
                 # Six opposing pairs occupy a clear part of the authored district.
                 y=-1700+(i%6)*125;start=u.Vector(11200 if i<6 else 12400,y,94);goal=u.Vector(12400 if i<6 else 11200,y,0)
-                p.set_actor_location(start,False,True);p.crowd_agent.set_editor_property('destination',goal)
+                p.set_actor_location(start,False,True)
+                assert u.CRBlueprintTools.set_property_text(p.crowd_agent,'Destination',goal.export_text())
                 av_test['start'][p.get_name()]=av_vec(start);av_test['goals'][p.get_name()]=av_vec(goal);av_test['lateral'][p.get_name()]=0
             av_test.update(phase='move',next=now+1)
         elif av_test['phase']=='move':

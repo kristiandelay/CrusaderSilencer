@@ -29,6 +29,7 @@
 #include "Perception/AISense_Hearing.h"
 #include "EngineUtils.h"
 #include "Net/UnrealNetwork.h"
+#include "UObject/UnrealType.h"
 
 namespace
 {
@@ -87,6 +88,7 @@ void UCRCrowdAgentComponent::GetLifetimeReplicatedProps(TArray<FLifetimeProperty
     DOREPLIFETIME(ThisClass,ShotsRequested);DOREPLIFETIME(ThisClass,SightDetections);DOREPLIFETIME(ThisClass,HearingDetections);
     DOREPLIFETIME(ThisClass,DamageReactions);DOREPLIFETIME(ThisClass,bInitialized);
     DOREPLIFETIME(ThisClass,SelectedVisual);
+    DOREPLIFETIME(ThisClass,DesiredSpeed);
 }
 void UCRCrowdAgentComponent::BeginPlay()
 {
@@ -123,6 +125,28 @@ void UCRCrowdAgentComponent::OnRep_Visual()
 {
     if (auto* Character=Cast<ACRTraversalCharacter>(GetOwner()))
         Character->SelectedVisualOverride->SetChildActorClass(SelectedVisual);
+}
+
+void UCRCrowdAgentComponent::UpdateLocomotionIntent()
+{
+    auto* ControlledCharacter=Cast<ACRTraversalCharacter>(GetOwner());
+    if (!bEnabled || !ControlledCharacter || !ControlledCharacter->HasAuthority()) return;
+    // GASP chooses its motion-matching databases from input intent, not speed.
+    // AI has no Enhanced Input actions: leaving the player defaults here selects
+    // running/strafe poses for a 175 cm/s patrol and produces a hunched shuffle.
+    // Use its existing replicated input struct, preserving equipment-owned aim.
+    const auto* Input=FindFProperty<FStructProperty>(ControlledCharacter->GetClass(),TEXT("CharacterInputState"));
+    if (!Input) return;
+    void* Values=Input->ContainerPtrToValuePtr<void>(ControlledCharacter);
+    const bool bReady=ControlledCharacter->BaselineEquipment->IsWeaponReady();
+    for (TFieldIterator<FBoolProperty> It(Input->Struct);It;++It)
+    {
+        // User-defined struct members have generated GUID suffixes.
+        const FString Name=It->GetName();
+        if (Name.StartsWith(TEXT("WantsToWalk_"))) It->SetPropertyValue_InContainer(Values,DesiredSpeed<=300.f);
+        else if (Name.StartsWith(TEXT("WantsToSprint_"))) It->SetPropertyValue_InContainer(Values,DesiredSpeed>550.f && !bReady);
+        else if (Name.StartsWith(TEXT("WantsToStrafe_"))) It->SetPropertyValue_InContainer(Values,bReady);
+    }
 }
 
 void UCRCrowdAgentComponent::ReportGunshot(APawn* Shooter, const FVector& Origin, const TArray<FCRShotImpact>& Hits)
@@ -211,7 +235,10 @@ void ACRCrowdController::InitializeAgent()
         Crowd->SetCrowdAvoidanceQuality(ECrowdAvoidanceQuality::High);
         Crowd->SetCrowdObstacleAvoidance(true);Crowd->SetCrowdAnticipateTurns(true);
         Crowd->SetCrowdSeparation(true);Crowd->SetCrowdSeparationWeight(4.f);
-        Crowd->SetCrowdAvoidanceRangeMultiplier(2.f);
+        // This multiplier also expands avoidance velocity samples. At 2 it
+        // selected ~35% speed even on clear paths, mismatching run animations.
+        // Use the query distance below for lookahead, preserving full strides.
+        Crowd->SetCrowdAvoidanceRangeMultiplier(1.f);
         Crowd->SetCrowdCollisionQueryRange(650.f);
         // The controller distinguishes traffic from geometry and can yield.
         // The generic blocked-path timer would abort before that recovery.
@@ -240,6 +267,15 @@ void ACRCrowdController::Tick(float DeltaSeconds)
     {
         if (ActiveAction==TEXT("Slide")) { CastChecked<UBaselineCharacterMovement>(ControlledCharacter->GetCharacterMovement())->SetSlideRequested(false);ControlledCharacter->UnCrouch(); }
         ControlledCharacter->StopJumping();ActionUntil=0.;ActiveAction=NAME_None;NextPatrol=Now;
+    }
+    Data->UpdateLocomotionIntent();
+    // Detour caches movement limits. Refresh when patrol/chase, crouch, slide
+    // or recovery changes the limit, so the trajectory matches the chosen gait.
+    const float MaxSpeed=ControlledCharacter->GetCharacterMovement()->GetMaxSpeed();
+    if (!FMath::IsNearlyEqual(MaxSpeed,LastCrowdMaxSpeed))
+    {
+        if (auto* Crowd=Cast<UCrowdFollowingComponent>(GetPathFollowingComponent())) Crowd->UpdateCrowdAgentParams();
+        LastCrowdMaxSpeed=MaxSpeed;
     }
 }
 
