@@ -6,6 +6,7 @@ import unreal as u
 assert not u.EditorLevelLibrary.get_pie_worlds(False)
 root=Path(u.Paths.convert_relative_path_to_full(u.Paths.project_dir())).parent
 names=['ObsidianSentinel','RegalCommander','TheSteadfastOfficer','UrbanTrailblazer']
+names += [r['name'] for r in json.loads((root/'resources/NPCAdditions.json').read_text()) if r.get('imported')]
 paths=[];characters=[]
 for name in names:
     folder='/Game/Crusader/Characters/'+name
@@ -27,7 +28,7 @@ paths+=['/Game/Blueprints/GM_Sandbox','/Game/Baseline/Animations/ABP_BaselineVis
 for kind in ['Rifle','Pistol','Shotgun']:
     paths+=[f'/Game/Baseline/Weapons/{kind}/B_WeaponInstance_{kind}',f'/Game/Baseline/Weapons/{kind}/GA_Weapon_Fire_{kind}'+('_Auto' if kind=='Rifle' else '')]
 catalog=u.get_default_object(u.load_asset('/Game/Blueprints/GM_Sandbox').generated_class()).get_editor_property('VisualOverrides_Soft')
-assert len(catalog)==11 and 'CrimsonSentinel' in catalog[6].get_name()
+assert len(catalog)==7+len(names) and 'CrimsonSentinel' in catalog[6].get_name()
 for i,name in enumerate(names,7):assert name in catalog[i].get_name()
 settings=u.ValidateAssetsSettings();settings.set_editor_property('load_assets_for_validation',True);settings.set_editor_property('collect_per_asset_details',True);settings.set_editor_property('show_if_no_failures',False)
 asset_data=[u.EditorAssetLibrary.find_asset_data(p) for p in sorted(set(paths))]

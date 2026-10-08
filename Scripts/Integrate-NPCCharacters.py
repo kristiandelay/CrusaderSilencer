@@ -1,4 +1,4 @@
-"""Register four fitted guards/NPCs in the existing visual override catalog."""
+"""Register fitted guards/NPCs in the existing visual override catalog."""
 import json
 from pathlib import Path
 import unreal as u
@@ -20,7 +20,7 @@ def duplicate(source,target):
 
 def cdo(asset):return u.get_default_object(asset.generated_class())
 
-for name in ['ObsidianSentinel','RegalCommander','TheSteadfastOfficer','UrbanTrailblazer']:
+for name in globals().get('NPC_IMPORT_NAMES',list(json.loads((Path(u.Paths.convert_relative_path_to_full(u.Paths.project_dir())).parent/'resources/NPCCharacterRigs.json').read_text()))):
     character_folder='/Game/Crusader/Characters/'+name
     mesh=u.load_asset(character_folder+'/'+name)
     rig_path=character_folder+'/IK_'+name

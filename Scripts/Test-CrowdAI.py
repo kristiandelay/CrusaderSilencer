@@ -2,9 +2,10 @@
 import json,time,traceback,math
 from pathlib import Path
 import unreal as u
+# Humanoid fixtures; mechanical pawns are covered by Test-RobotGameplay.py.
 
 ai_root=Path(u.Paths.convert_relative_path_to_full(u.Paths.project_dir())).parent
-ai_spawns=[row for name in ['CrowdDistrict','FacilityCrowd'] if (ai_root/f'resources/{name}.json').exists() for row in json.loads((ai_root/f'resources/{name}.json').read_text())['spawns']]
+ai_spawns=[row for name in ['CrowdDistrict','FacilityCrowd','ControlRoomCrowd'] if (ai_root/f'resources/{name}.json').exists() for row in json.loads((ai_root/f'resources/{name}.json').read_text())['spawns']]
 ai_test=dict(phase='ready',next=0,busy=False,results=[],deadline=time.monotonic()+240)
 def ai_vec(v):return [v.x,v.y,v.z]
 def ai_input(p,name,value):
@@ -24,7 +25,7 @@ def ai_tick(dt):
         if not worlds:return
         w=worlds[0];p=u.GameplayStatics.get_player_pawn(w,0)
         if not p:return
-        npcs=[a for a in u.GameplayStatics.get_all_actors_of_class(w,u.CRTraversalCharacter) if a.crowd_agent.enabled]
+        npcs=[a for a in u.GameplayStatics.get_all_actors_of_class(w,u.CRTraversalCharacter) if a.crowd_agent.enabled and not isinstance(a,u.CRRobotCharacter)]
         if len(npcs)!=len(ai_spawns) or not all(a.crowd_agent.initialized for a in npcs):return
         now=u.GameplayStatics.get_time_seconds(w);phase=ai_test['phase']
         if ai_test.pop('release',False):
@@ -41,7 +42,7 @@ def ai_tick(dt):
                 data=a.crowd_agent;item=a.baseline_equipment.get_active_item();skin=a.selected_visual_override.child_actor.get_class().get_name()
                 assert isinstance(a.get_controller(),u.CRCrowdController)
                 assert bool(item)==data.guard,(a.get_name(),item)
-                assert ('UrbanTrailblazer' in skin)==(not data.guard),(a.get_name(),skin)
+                assert a.selected_visual_override.child_actor.get_class() in data.visuals,(a.get_name(),skin)
                 roles.append(dict(name=a.get_name(),guard=data.guard,skin=skin,weapon=a.equipment_manager.get_first_instance_of_type(u.BaselineWeaponInstance).effects_profile.get_name() if item else None))
             assert sum(r['guard'] for r in roles)==sum(r['role'].startswith('Guard') for r in ai_spawns)
             ai_test['results'].append(dict(case='spawn_roles_and_loadouts',npcs=roles))
@@ -65,7 +66,7 @@ def ai_tick(dt):
         elif phase=='position':
             guard=next(a for a in npcs if 'GuardRifle' in a.get_name())
             civ=next(a for a in npcs if not a.crowd_agent.guard)
-            guard.crowd_agent.set_editor_property('current_area',None);guard.crowd_agent.set_editor_property('threat',None)
+            u.CRBlueprintTools.set_property_text(guard.crowd_agent,'CurrentArea','None');u.CRBlueprintTools.set_property_text(guard.crowd_agent,'Threat','None')
             for a,loc in [(p,(9900,-1000,94)),(guard,(10900,-1000,94)),(civ,(10600,-1450,94))]:
                 a.character_movement.stop_movement_immediately();a.set_actor_location(u.Vector(*loc),False,True)
             guard.get_controller().stop_movement();guard.get_controller().set_control_rotation(u.Rotator(yaw=180));guard.set_actor_rotation(u.Rotator(yaw=180),False)

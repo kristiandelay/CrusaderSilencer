@@ -1,0 +1,199 @@
+{
+  "name": "IroncladSentinel",
+  "rig_type": "three-link mechanical legs",
+  "parts": [
+    {
+      "name": "IroncladSentinel_Chassis",
+      "bone": "chassis",
+      "vertices": 105466,
+      "triangles": 211464
+    },
+    {
+      "name": "IroncladSentinel_foot_r",
+      "bone": "foot_r",
+      "vertices": 11922,
+      "triangles": 23860
+    },
+    {
+      "name": "IroncladSentinel_JointHousing_0_r",
+      "bone": "upper_leg_r",
+      "vertices": 5000,
+      "triangles": 9988
+    },
+    {
+      "name": "IroncladSentinel_JointHousing_3_r",
+      "bone": "foot_r",
+      "vertices": 2378,
+      "triangles": 4764
+    },
+    {
+      "name": "IroncladSentinel_upper_leg_r",
+      "bone": "upper_leg_r",
+      "vertices": 30084,
+      "triangles": 60232
+    },
+    {
+      "name": "IroncladSentinel_JointHousing_2_r",
+      "bone": "lower_leg_r",
+      "vertices": 4682,
+      "triangles": 9364
+    },
+    {
+      "name": "IroncladSentinel_lower_leg_r",
+      "bone": "lower_leg_r",
+      "vertices": 9584,
+      "triangles": 19176
+    },
+    {
+      "name": "IroncladSentinel_middle_leg_r",
+      "bone": "middle_leg_r",
+      "vertices": 13052,
+      "triangles": 26148
+    },
+    {
+      "name": "IroncladSentinel_JointHousing_1_r",
+      "bone": "middle_leg_r",
+      "vertices": 5058,
+      "triangles": 10104
+    },
+    {
+      "name": "IroncladSentinel_JointHousing_0_l",
+      "bone": "upper_leg_l",
+      "vertices": 5246,
+      "triangles": 10460
+    },
+    {
+      "name": "IroncladSentinel_upper_leg_l",
+      "bone": "upper_leg_l",
+      "vertices": 29684,
+      "triangles": 59428
+    },
+    {
+      "name": "IroncladSentinel_JointHousing_1_l",
+      "bone": "middle_leg_l",
+      "vertices": 5020,
+      "triangles": 10024
+    },
+    {
+      "name": "IroncladSentinel_foot_l",
+      "bone": "foot_l",
+      "vertices": 12372,
+      "triangles": 24788
+    },
+    {
+      "name": "IroncladSentinel_JointHousing_2_l",
+      "bone": "lower_leg_l",
+      "vertices": 4716,
+      "triangles": 9432
+    },
+    {
+      "name": "IroncladSentinel_middle_leg_l",
+      "bone": "middle_leg_l",
+      "vertices": 12856,
+      "triangles": 25728
+    },
+    {
+      "name": "IroncladSentinel_lower_leg_l",
+      "bone": "lower_leg_l",
+      "vertices": 9582,
+      "triangles": 19172
+    },
+    {
+      "name": "IroncladSentinel_JointHousing_3_l",
+      "bone": "foot_l",
+      "vertices": 2350,
+      "triangles": 4704
+    },
+    {
+      "name": "IroncladSentinel_Axle_0_l",
+      "bone": "upper_leg_l",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "IroncladSentinel_Axle_1_l",
+      "bone": "middle_leg_l",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "IroncladSentinel_Axle_2_l",
+      "bone": "lower_leg_l",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "IroncladSentinel_Axle_3_l",
+      "bone": "foot_l",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "IroncladSentinel_Piston_housing_l",
+      "bone": "piston_housing_l",
+      "vertices": 40,
+      "triangles": 76
+    },
+    {
+      "name": "IroncladSentinel_Piston_rod_l",
+      "bone": "piston_rod_l",
+      "vertices": 40,
+      "triangles": 76
+    },
+    {
+      "name": "IroncladSentinel_Axle_0_r",
+      "bone": "upper_leg_r",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "IroncladSentinel_Axle_1_r",
+      "bone": "middle_leg_r",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "IroncladSentinel_Axle_2_r",
+      "bone": "lower_leg_r",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "IroncladSentinel_Axle_3_r",
+      "bone": "foot_r",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "IroncladSentinel_Piston_housing_r",
+      "bone": "piston_housing_r",
+      "vertices": 40,
+      "triangles": 76
+    },
+    {
+      "name": "IroncladSentinel_Piston_rod_r",
+      "bone": "piston_rod_r",
+      "vertices": 40,
+      "triangles": 76
+    }
+  ],
+  "bones": [
+    "chassis",
+    "upper_leg_l",
+    "middle_leg_l",
+    "lower_leg_l",
+    "foot_l",
+    "piston_rod_l",
+    "piston_housing_l",
+    "upper_leg_r",
+    "middle_leg_r",
+    "lower_leg_r",
+    "foot_r",
+    "piston_rod_r",
+    "piston_housing_r"
+  ],
+  "closed_cut_faces": 13043,
+  "height_cm": 180,
+  "preview_action": "IroncladSentinel_JointCheck",
+  "has_hydraulic_constraints": true
+}

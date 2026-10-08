@@ -1,0 +1,171 @@
+{
+  "name": "SentinelWalker",
+  "rig_type": "three-link mechanical legs",
+  "parts": [
+    {
+      "name": "SentinelWalker_Chassis",
+      "bone": "chassis",
+      "vertices": 100174,
+      "triangles": 202196
+    },
+    {
+      "name": "SentinelWalker_foot_r",
+      "bone": "foot_r",
+      "vertices": 12678,
+      "triangles": 25352
+    },
+    {
+      "name": "SentinelWalker_JointHousing_3_r",
+      "bone": "foot_r",
+      "vertices": 3792,
+      "triangles": 7608
+    },
+    {
+      "name": "SentinelWalker_JointHousing_1_r",
+      "bone": "middle_leg_r",
+      "vertices": 5178,
+      "triangles": 10376
+    },
+    {
+      "name": "SentinelWalker_lower_leg_r",
+      "bone": "lower_leg_r",
+      "vertices": 14438,
+      "triangles": 28976
+    },
+    {
+      "name": "SentinelWalker_JointHousing_0_r",
+      "bone": "upper_leg_r",
+      "vertices": 4972,
+      "triangles": 9952
+    },
+    {
+      "name": "SentinelWalker_JointHousing_2_r",
+      "bone": "lower_leg_r",
+      "vertices": 2770,
+      "triangles": 5552
+    },
+    {
+      "name": "SentinelWalker_middle_leg_r",
+      "bone": "middle_leg_r",
+      "vertices": 9218,
+      "triangles": 18456
+    },
+    {
+      "name": "SentinelWalker_upper_leg_r",
+      "bone": "upper_leg_r",
+      "vertices": 17460,
+      "triangles": 34932
+    },
+    {
+      "name": "SentinelWalker_upper_leg_l",
+      "bone": "upper_leg_l",
+      "vertices": 15178,
+      "triangles": 30360
+    },
+    {
+      "name": "SentinelWalker_JointHousing_1_l",
+      "bone": "middle_leg_l",
+      "vertices": 4736,
+      "triangles": 9488
+    },
+    {
+      "name": "SentinelWalker_JointHousing_0_l",
+      "bone": "upper_leg_l",
+      "vertices": 4586,
+      "triangles": 9192
+    },
+    {
+      "name": "SentinelWalker_JointHousing_3_l",
+      "bone": "foot_l",
+      "vertices": 3678,
+      "triangles": 7380
+    },
+    {
+      "name": "SentinelWalker_foot_l",
+      "bone": "foot_l",
+      "vertices": 12436,
+      "triangles": 24876
+    },
+    {
+      "name": "SentinelWalker_lower_leg_l",
+      "bone": "lower_leg_l",
+      "vertices": 14646,
+      "triangles": 29384
+    },
+    {
+      "name": "SentinelWalker_JointHousing_2_l",
+      "bone": "lower_leg_l",
+      "vertices": 2406,
+      "triangles": 4800
+    },
+    {
+      "name": "SentinelWalker_middle_leg_l",
+      "bone": "middle_leg_l",
+      "vertices": 8734,
+      "triangles": 17496
+    },
+    {
+      "name": "SentinelWalker_Axle_0_l",
+      "bone": "upper_leg_l",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "SentinelWalker_Axle_1_l",
+      "bone": "middle_leg_l",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "SentinelWalker_Axle_2_l",
+      "bone": "lower_leg_l",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "SentinelWalker_Axle_3_l",
+      "bone": "foot_l",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "SentinelWalker_Axle_0_r",
+      "bone": "upper_leg_r",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "SentinelWalker_Axle_1_r",
+      "bone": "middle_leg_r",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "SentinelWalker_Axle_2_r",
+      "bone": "lower_leg_r",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "SentinelWalker_Axle_3_r",
+      "bone": "foot_r",
+      "vertices": 48,
+      "triangles": 92
+    }
+  ],
+  "bones": [
+    "chassis",
+    "upper_leg_l",
+    "middle_leg_l",
+    "lower_leg_l",
+    "foot_l",
+    "upper_leg_r",
+    "middle_leg_r",
+    "lower_leg_r",
+    "foot_r"
+  ],
+  "closed_cut_faces": 8576,
+  "height_cm": 180,
+  "preview_action": "SentinelWalker_JointCheck",
+  "has_hydraulic_constraints": false
+}

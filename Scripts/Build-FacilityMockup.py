@@ -201,3 +201,5 @@ u.get_editor_subsystem(u.UnrealEditorSubsystem).set_level_viewport_camera_info(c
 manifest=dict(map='/Game/Maps/L_TraversalGym',origin=[12600,8100,30],footprint_cm=[3600,3000],wall_height_cm=600,roof_underside_cm=600,minimum_beam_headroom_cm=570,door_frame_width_cm=600,entrance=[11400,6550,130],approach_from=[11400,5400,100],sections=['Laboratory','Containment','Office','Checkpoint','Freight Bay'],mesh_actors=fm_records,actor_count=len(fm_used))
 (FM_ROOT/'resources/FacilityMockup.json').write_text(json.dumps(manifest,indent=2)+'\n')
 print('FACILITY_BUILT',len(fm_used),'actors',len(fm_records),'kit mesh instances')
+if (FM_ROOT/'resources/BuildingDestruction.json').exists():
+    exec(compile((FM_ROOT/'Scripts/Build-BuildingDestruction.py').read_text(),'Build-BuildingDestruction.py','exec'),globals())

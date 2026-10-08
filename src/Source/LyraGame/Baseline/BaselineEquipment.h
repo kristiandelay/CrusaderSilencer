@@ -93,6 +93,7 @@ public:
     UFUNCTION(BlueprintPure) USkeletalMeshComponent* GetWeaponAnimationMesh() const;
     UPROPERTY(EditDefaultsOnly, Category="Baseline|Animation") TSubclassOf<UAnimInstance> VisualRetargetAnimation;
     UFUNCTION(BlueprintPure) bool AreHandsBusy() const;
+    UFUNCTION(BlueprintPure) bool ShouldHideWeapon() const;
     UFUNCTION(BlueprintPure) FRotator GetWeaponAimRotation() const;
     UFUNCTION(BlueprintPure) bool IsWeaponReady() const { return bWeaponReady; }
     bool IsFireRequested() const { return bFireRequested; }
@@ -101,6 +102,7 @@ public:
     void BeginFire();
     void EndFire();
     UFUNCTION(BlueprintCallable) void ToggleShoulder();
+    bool CanChangeShoulder() const;
     UFUNCTION(BlueprintPure) bool IsLeftShoulder() const { return bLeftShoulder; }
     UFUNCTION(BlueprintPure) bool IsChangingShoulder() const { return ShoulderAge < .35f; }
     void HandleDeath();
@@ -117,6 +119,7 @@ private:
     ULyraQuickBarComponent* GetQuickBar() const;
     ULyraInventoryManagerComponent* GetInventory() const;
     bool bWasHandsBusy = false;
+    bool bWasWeaponHidden = false;
     bool bAimRequested = false;
     bool bFireRequested = false;
     double FireReadyUntil = 0.0;

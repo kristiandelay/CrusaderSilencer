@@ -1,0 +1,47 @@
+Crusader Silencer: Level2 control-room mockup
+
+Map: /Game/Maps/L_TraversalGym
+Outliner: Crusader/Control Room
+Main entrance: (20600, 5800, 130), east of the first facility.
+
+The supplied blue control-room reference guides the U-shaped consoles,
+terminals, service lockers, warning panels, crates and barrel storage. The
+cross-shaped shell occupies 60 x 42 metres overall, with a 42 x 30 metre
+central hall, command alcove, entry lobby and two side bays. Walls are 6.6 m
+tall; entrances are 8 m wide and 5.1 m high. The roof remains on during play.
+All visible building geometry comes from the 19 imported Level2 models.
+Kit-panel backing closes the decorative tile openings in the floor and roof.
+Metal physical materials support the existing footsteps and impact effects.
+
+New characters: ArmoredSentinel (rifle), AstronautSentinel (pistol),
+CrimsonVanguard (shotgun); MaintenanceWorker, RuggedMiner, RustboundExplorer,
+CrimsonAuthority, CrusaderOperative, GraySentinel and RuggedSurvivor (unarmed).
+Every model has a fitted body/finger rig and a player visual override entry.
+They inherit existing human movement, avoidance, detection, combat and flight
+behaviour. Each named resident is guaranteed to spawn with its own visual.
+
+Nine connected crowd areas cover the two outside walks, entrance, lobby,
+central hall, operations, command, service and storage. Reciprocal links to
+Depot let existing guards, civilians and robots visit the new building.
+Each new area has a 65 percent chance to choose a neighbouring area when
+the existing AI considers an area change. Furniture stays outside broad routes.
+
+Source FBXs/textures: Art/Environment/Level2/<Name>/Source and
+Art/Characters/<Name>/Source. Texture files use Name_BaseColor.png,
+Name_Normal.png, Name_Metallic.png and Name_Roughness.png. Original archive
+bytes and names are recorded in each SourceManifest.json. Clean archives
+remain under mockups; editable Blender rigs/models and FBX exports are in Art.
+
+Author with PIE stopped through Scripts/Send-Editor.py:
+  Build-ControlRoomMockup.py
+  Configure-ControlRoomCrowd.py
+These update only their own actor prefixes. Rebuilding the new shell resets
+its managed placements; it does not rebuild the first facility.
+
+Validation and capture scripts:
+  Test-ControlRoom.py: collision, connected navigation and real player walking.
+  Test-ControlRoomCrowd.py: all ten visuals/loadouts, live patrols and posture.
+  Test-AdditionalNPCVisuals.py: actual widget clicks, aim, shoulders and reload.
+  Capture-ControlRoom.py: human-height interiors and roof exterior.
+Reports/screenshots: Artifacts/ControlRoom and Artifacts/NPCCharacters/Additions.
+Durable results: resources/ControlRoomValidation.json.

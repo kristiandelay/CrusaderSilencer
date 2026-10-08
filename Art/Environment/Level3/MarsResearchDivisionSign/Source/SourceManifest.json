@@ -1,0 +1,39 @@
+{
+  "name": "MarsResearchDivisionSign",
+  "archive": "MarsResearchDivisionSign.zip",
+  "archive_sha256": "d85715d3c2b4d62a0855ef0e932901f4f88e88ff4ac228e11d8e93d4311a11e1",
+  "files": [
+    {
+      "original": "Meshy_AI_Mars_Research_Divisio_1008204952_texture_fbx/Meshy_AI_Mars_Research_Divisio_1008204952_texture.fbx",
+      "file": "MarsResearchDivisionSign.fbx",
+      "bytes": 24411596,
+      "sha256": "9eb01e76ec13ffb9b24c4b4ac02651a6563e2d7acde7093ac08a730bec93163f"
+    },
+    {
+      "original": "Meshy_AI_Mars_Research_Divisio_1008204952_texture_fbx/Meshy_AI_Mars_Research_Divisio_1008204952_texture.png",
+      "file": "MarsResearchDivisionSign_BaseColor.png",
+      "bytes": 4957047,
+      "sha256": "82d6e87d45a7482ed9157ebe1bb3f2c011c00b2b0d2ec50cd3a928f2750ccada"
+    },
+    {
+      "original": "Meshy_AI_Mars_Research_Divisio_1008204952_texture_fbx/Meshy_AI_Mars_Research_Divisio_1008204952_texture_metallic.png",
+      "file": "MarsResearchDivisionSign_Metallic.png",
+      "bytes": 26147,
+      "sha256": "c0d8eecff7a87b9c620b5e22037d74f04a1626f3ce17c8e9cf7cb8d76ebf0f41"
+    },
+    {
+      "original": "Meshy_AI_Mars_Research_Divisio_1008204952_texture_fbx/Meshy_AI_Mars_Research_Divisio_1008204952_texture_normal.png",
+      "file": "MarsResearchDivisionSign_Normal.png",
+      "bytes": 4308674,
+      "sha256": "01156fd82c08fbbc3e333d7807c1858070108075540a0fcf7774ae6297201261"
+    },
+    {
+      "original": "Meshy_AI_Mars_Research_Divisio_1008204952_texture_fbx/Meshy_AI_Mars_Research_Divisio_1008204952_texture_roughness.png",
+      "file": "MarsResearchDivisionSign_Roughness.png",
+      "bytes": 1399987,
+      "sha256": "c335317d0b13b02b5fa3b2d5464fa60336e0619f6ad24e4dbad6b9dea1d84286"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Mars_Research_Divisio_1008204952_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level3/props/MarsResearchDivisionSign.zip"
+}

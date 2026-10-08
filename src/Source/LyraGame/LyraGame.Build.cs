@@ -27,6 +27,8 @@ public class LyraGame : ModuleRules
 				"ApplicationCore",
 				"Engine",
 				"PhysicsCore",
+				"GeometryCollectionEngine",
+				"FieldSystemEngine",
 				"PhysicsControl",
 				"PoseSearch",
 				"GameplayTags",

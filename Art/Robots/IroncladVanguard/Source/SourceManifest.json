@@ -1,0 +1,39 @@
+{
+  "name": "IroncladVanguard",
+  "archive": "IroncladVanguard.zip",
+  "archive_sha256": "2edb28656ed928174060349e2f61d74adbbe84fabc50c9d88f477843ab7aa2e5",
+  "files": [
+    {
+      "original": "Meshy_AI_Ironclad_Vanguard_1007164231_texture_fbx/Meshy_AI_Ironclad_Vanguard_1007164231_texture.fbx",
+      "file": "IroncladVanguard.fbx",
+      "bytes": 139208572,
+      "sha256": "8c70c0dbe84bdd4115742489ad1f924b9da5543ccf2c25fd75ae1957fac3e0d0"
+    },
+    {
+      "original": "Meshy_AI_Ironclad_Vanguard_1007164231_texture_fbx/Meshy_AI_Ironclad_Vanguard_1007164231_texture.png",
+      "file": "IroncladVanguard_BaseColor.png",
+      "bytes": 6875158,
+      "sha256": "e295112282a2a85b9796110594946c9635d662cb616616e3e696f74642964f7e"
+    },
+    {
+      "original": "Meshy_AI_Ironclad_Vanguard_1007164231_texture_fbx/Meshy_AI_Ironclad_Vanguard_1007164231_texture_metallic.png",
+      "file": "IroncladVanguard_Metallic.png",
+      "bytes": 2178154,
+      "sha256": "47441e1d521271f5f4ebf35b472b9839d4fbabd832c6ba1520e6249e949fe701"
+    },
+    {
+      "original": "Meshy_AI_Ironclad_Vanguard_1007164231_texture_fbx/Meshy_AI_Ironclad_Vanguard_1007164231_texture_normal.png",
+      "file": "IroncladVanguard_Normal.png",
+      "bytes": 6093788,
+      "sha256": "707c68183ba403ec3460b0b46b6f632470e42cc6b48cfa229bfd85a0e1b444dd"
+    },
+    {
+      "original": "Meshy_AI_Ironclad_Vanguard_1007164231_texture_fbx/Meshy_AI_Ironclad_Vanguard_1007164231_texture_roughness.png",
+      "file": "IroncladVanguard_Roughness.png",
+      "bytes": 2068366,
+      "sha256": "21c1e593480f7ed68cdb712f4a294de26b2885d6a9f01c4c7dc4a39a0cd53010"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Ironclad_Vanguard_1007164231_texture_fbx.zip",
+  "archive_path": "mockups/Robots/IroncladVanguard.zip"
+}

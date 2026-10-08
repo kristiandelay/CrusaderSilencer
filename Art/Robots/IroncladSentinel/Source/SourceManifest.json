@@ -1,0 +1,39 @@
+{
+  "name": "IroncladSentinel",
+  "archive": "IroncladSentinel.zip",
+  "archive_sha256": "e2294ee2ac66baf5c6c9555f4f6ca26a8ad30c02bb276df1b81e484459b8b66b",
+  "files": [
+    {
+      "original": "Meshy_AI_Ironclad_Sentinel_1007164401_texture_fbx/Meshy_AI_Ironclad_Sentinel_1007164401_texture.fbx",
+      "file": "IroncladSentinel.fbx",
+      "bytes": 129537452,
+      "sha256": "46be6c099144ae1ef64dc6740bb0b4ebbaa597e5fffb61658c5abcc5e3451f45"
+    },
+    {
+      "original": "Meshy_AI_Ironclad_Sentinel_1007164401_texture_fbx/Meshy_AI_Ironclad_Sentinel_1007164401_texture.png",
+      "file": "IroncladSentinel_BaseColor.png",
+      "bytes": 6941753,
+      "sha256": "7112eeb14bc6e8159bb1684714df0de73eb4c1f20b7716ce4523f6fa4e8e2950"
+    },
+    {
+      "original": "Meshy_AI_Ironclad_Sentinel_1007164401_texture_fbx/Meshy_AI_Ironclad_Sentinel_1007164401_texture_metallic.png",
+      "file": "IroncladSentinel_Metallic.png",
+      "bytes": 1699766,
+      "sha256": "606a2e98823bc9be4f003a5cd6b9823411aebf2fce65f1d782fd30bb3c742753"
+    },
+    {
+      "original": "Meshy_AI_Ironclad_Sentinel_1007164401_texture_fbx/Meshy_AI_Ironclad_Sentinel_1007164401_texture_normal.png",
+      "file": "IroncladSentinel_Normal.png",
+      "bytes": 5982961,
+      "sha256": "bb0ffd45dcf684c602137658bf050a67fd5f41c83d289a9458737676a5718135"
+    },
+    {
+      "original": "Meshy_AI_Ironclad_Sentinel_1007164401_texture_fbx/Meshy_AI_Ironclad_Sentinel_1007164401_texture_roughness.png",
+      "file": "IroncladSentinel_Roughness.png",
+      "bytes": 1957095,
+      "sha256": "740508d25abefdff9924becd9e4a2c79bf64f02ce4f3534809ab2efc1e139424"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Ironclad_Sentinel_1007164401_texture_fbx.zip",
+  "archive_path": "mockups/Robots/IroncladSentinel.zip"
+}

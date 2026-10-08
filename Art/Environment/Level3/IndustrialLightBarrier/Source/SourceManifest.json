@@ -1,0 +1,39 @@
+{
+  "name": "IndustrialLightBarrier",
+  "archive": "IndustrialLightBarrier.zip",
+  "archive_sha256": "d54d2d51975254e289736d0d0aef9fbc6d406f822fca1070c81f1bb0d293585a",
+  "files": [
+    {
+      "original": "Meshy_AI_Industrial_Light_Barr_1008204420_texture_fbx/Meshy_AI_Industrial_Light_Barr_1008204420_texture.fbx",
+      "file": "IndustrialLightBarrier.fbx",
+      "bytes": 17113356,
+      "sha256": "4e9f8c80819ba45b6fea6739f46e64392b6e568b31debb07edb82f384e421a94"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Light_Barr_1008204420_texture_fbx/Meshy_AI_Industrial_Light_Barr_1008204420_texture.png",
+      "file": "IndustrialLightBarrier_BaseColor.png",
+      "bytes": 5390160,
+      "sha256": "395cd372a8a951ed1bae1f42151d7423e1cdeebe047508067b9b68ad063df29f"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Light_Barr_1008204420_texture_fbx/Meshy_AI_Industrial_Light_Barr_1008204420_texture_metallic.png",
+      "file": "IndustrialLightBarrier_Metallic.png",
+      "bytes": 1572783,
+      "sha256": "85c4f4c4a8d75527fd4bd7e5cfa35b343957d077269f1b11a6d0a39999aafd2e"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Light_Barr_1008204420_texture_fbx/Meshy_AI_Industrial_Light_Barr_1008204420_texture_normal.png",
+      "file": "IndustrialLightBarrier_Normal.png",
+      "bytes": 4963715,
+      "sha256": "c8869207f357e5521892dd0cbe12ee5270415d83b0796f03998e509575b22d4d"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Light_Barr_1008204420_texture_fbx/Meshy_AI_Industrial_Light_Barr_1008204420_texture_roughness.png",
+      "file": "IndustrialLightBarrier_Roughness.png",
+      "bytes": 1501650,
+      "sha256": "9d04dc78e094657251c214eab1ce77847d774458788dbccf2ee0ff1860111381"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Industrial_Light_Barr_1008204420_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level3/IndustrialLightBarrier.zip"
+}

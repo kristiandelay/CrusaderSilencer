@@ -1,0 +1,39 @@
+{
+  "name": "BlueSteelVault",
+  "archive": "BlueSteelVault.zip",
+  "archive_sha256": "8d4176580d33632d40bb8e3a954fbf7f250f606f184f6e6fb707093579d53f23",
+  "files": [
+    {
+      "original": "Meshy_AI_Blue_Steel_Vault_1007205140_texture_fbx/Meshy_AI_Blue_Steel_Vault_1007205140_texture.fbx",
+      "file": "BlueSteelVault.fbx",
+      "bytes": 14727548,
+      "sha256": "83f7a7e086bf259f1059a5002d7997d028775e238c8c56a9a168db88ee4ea537"
+    },
+    {
+      "original": "Meshy_AI_Blue_Steel_Vault_1007205140_texture_fbx/Meshy_AI_Blue_Steel_Vault_1007205140_texture.png",
+      "file": "BlueSteelVault_BaseColor.png",
+      "bytes": 4852722,
+      "sha256": "5947e6805d556ac27979336bcff5c8a5a116c22ba41d62b95e9153f5f3381e13"
+    },
+    {
+      "original": "Meshy_AI_Blue_Steel_Vault_1007205140_texture_fbx/Meshy_AI_Blue_Steel_Vault_1007205140_texture_metallic.png",
+      "file": "BlueSteelVault_Metallic.png",
+      "bytes": 1266468,
+      "sha256": "7cbd51057fe27276aa4389135a9cb04be22789207d89f51020c5d3190de36f4d"
+    },
+    {
+      "original": "Meshy_AI_Blue_Steel_Vault_1007205140_texture_fbx/Meshy_AI_Blue_Steel_Vault_1007205140_texture_normal.png",
+      "file": "BlueSteelVault_Normal.png",
+      "bytes": 3811027,
+      "sha256": "7b90c28e49f53b62e422e14a9146aa484de8c0dd4511da7451216a75ded9ee4f"
+    },
+    {
+      "original": "Meshy_AI_Blue_Steel_Vault_1007205140_texture_fbx/Meshy_AI_Blue_Steel_Vault_1007205140_texture_roughness.png",
+      "file": "BlueSteelVault_Roughness.png",
+      "bytes": 1259752,
+      "sha256": "bb8bce30ce68318a09d140844c188bf78e04b3ffea4c12256b561aab271ca81f"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Blue_Steel_Vault_1007205140_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level2/BlueSteelVault.zip"
+}

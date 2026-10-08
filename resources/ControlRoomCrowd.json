@@ -1,0 +1,234 @@
+{
+  "map": "/Game/Maps/L_TraversalGym",
+  "areas": {
+    "SouthWalk": {
+      "position": [
+        17600.0,
+        4750.0,
+        30.0
+      ],
+      "radius": 300.0,
+      "neighbours": [
+        "CR_ControlCrowd_Area_Entrance",
+        "CR_ControlCrowd_Area_WestWalk",
+        "CR_Crowd_Depot"
+      ]
+    },
+    "WestWalk": {
+      "position": [
+        16300.0,
+        8050.0,
+        30.0
+      ],
+      "radius": 250.0,
+      "neighbours": [
+        "CR_ControlCrowd_Area_SouthWalk",
+        "CR_ControlCrowd_Area_Service",
+        "CR_Crowd_Depot"
+      ]
+    },
+    "Entrance": {
+      "position": [
+        20600.0,
+        5450.0,
+        30.0
+      ],
+      "radius": 140.0,
+      "neighbours": [
+        "CR_ControlCrowd_Area_SouthWalk",
+        "CR_ControlCrowd_Area_Lobby"
+      ]
+    },
+    "Lobby": {
+      "position": [
+        20600.0,
+        6180.0,
+        30.0
+      ],
+      "radius": 260.0,
+      "neighbours": [
+        "CR_ControlCrowd_Area_Entrance",
+        "CR_ControlCrowd_Area_Hall"
+      ]
+    },
+    "Hall": {
+      "position": [
+        20600.0,
+        7400.0,
+        30.0
+      ],
+      "radius": 650.0,
+      "neighbours": [
+        "CR_ControlCrowd_Area_Lobby",
+        "CR_ControlCrowd_Area_Operations",
+        "CR_ControlCrowd_Area_Service",
+        "CR_ControlCrowd_Area_Storage"
+      ]
+    },
+    "Operations": {
+      "position": [
+        20600.0,
+        8550.0,
+        30.0
+      ],
+      "radius": 650.0,
+      "neighbours": [
+        "CR_ControlCrowd_Area_Hall",
+        "CR_ControlCrowd_Area_Command",
+        "CR_ControlCrowd_Area_Service",
+        "CR_ControlCrowd_Area_Storage"
+      ]
+    },
+    "Command": {
+      "position": [
+        20600.0,
+        9270.0,
+        30.0
+      ],
+      "radius": 170.0,
+      "neighbours": [
+        "CR_ControlCrowd_Area_Operations"
+      ]
+    },
+    "Service": {
+      "position": [
+        18120.0,
+        7900.0,
+        30.0
+      ],
+      "radius": 280.0,
+      "neighbours": [
+        "CR_ControlCrowd_Area_WestWalk",
+        "CR_ControlCrowd_Area_Hall",
+        "CR_ControlCrowd_Area_Operations"
+      ]
+    },
+    "Storage": {
+      "position": [
+        23090.0,
+        7900.0,
+        30.0
+      ],
+      "radius": 260.0,
+      "neighbours": [
+        "CR_ControlCrowd_Area_Hall",
+        "CR_ControlCrowd_Area_Operations"
+      ]
+    }
+  },
+  "spawns": [
+    {
+      "actor": "CR_ControlCrowd_ArmoredSentinel",
+      "visual": "ArmoredSentinel",
+      "role": "GuardRifle",
+      "home": "Lobby",
+      "position": [
+        20420.0,
+        6240.0,
+        124.0
+      ]
+    },
+    {
+      "actor": "CR_ControlCrowd_AstronautSentinel",
+      "visual": "AstronautSentinel",
+      "role": "GuardPistol",
+      "home": "Service",
+      "position": [
+        18150.0,
+        7820.0,
+        124.0
+      ]
+    },
+    {
+      "actor": "CR_ControlCrowd_CrimsonVanguard",
+      "visual": "CrimsonVanguard",
+      "role": "GuardShotgun",
+      "home": "Command",
+      "position": [
+        20250.0,
+        9180.0,
+        124.0
+      ]
+    },
+    {
+      "actor": "CR_ControlCrowd_MaintenanceWorker",
+      "visual": "MaintenanceWorker",
+      "role": "Civilian",
+      "home": "Service",
+      "position": [
+        18290.0,
+        8030.0,
+        124.0
+      ]
+    },
+    {
+      "actor": "CR_ControlCrowd_RuggedMiner",
+      "visual": "RuggedMiner",
+      "role": "Civilian",
+      "home": "Storage",
+      "position": [
+        23080.0,
+        8070.0,
+        124.0
+      ]
+    },
+    {
+      "actor": "CR_ControlCrowd_RustboundExplorer",
+      "visual": "RustboundExplorer",
+      "role": "Civilian",
+      "home": "Hall",
+      "position": [
+        19980.0,
+        7340.0,
+        124.0
+      ]
+    },
+    {
+      "actor": "CR_ControlCrowd_CrimsonAuthority",
+      "visual": "CrimsonAuthority",
+      "role": "Civilian",
+      "home": "Command",
+      "position": [
+        20950.0,
+        9190.0,
+        124.0
+      ]
+    },
+    {
+      "actor": "CR_ControlCrowd_CrusaderOperative",
+      "visual": "CrusaderOperative",
+      "role": "Civilian",
+      "home": "Operations",
+      "position": [
+        19900.0,
+        8450.0,
+        124.0
+      ]
+    },
+    {
+      "actor": "CR_ControlCrowd_GraySentinel",
+      "visual": "GraySentinel",
+      "role": "Civilian",
+      "home": "Hall",
+      "position": [
+        21150.0,
+        7290.0,
+        124.0
+      ]
+    },
+    {
+      "actor": "CR_ControlCrowd_RuggedSurvivor",
+      "visual": "RuggedSurvivor",
+      "role": "Civilian",
+      "home": "Operations",
+      "position": [
+        21330.0,
+        8510.0,
+        124.0
+      ]
+    }
+  ],
+  "district_connections": [
+    "Depot"
+  ]
+}

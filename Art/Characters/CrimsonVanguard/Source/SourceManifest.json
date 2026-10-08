@@ -1,0 +1,39 @@
+{
+  "name": "CrimsonVanguard",
+  "archive": "CrimsonVanguard.zip",
+  "archive_sha256": "c2daab4639ba2a86272d847feadf15e2384525484867daf565e00cb812e95346",
+  "files": [
+    {
+      "original": "Meshy_AI_Crimson_Vanguard_1007202501_texture_fbx/Meshy_AI_Crimson_Vanguard_1007202501_texture.fbx",
+      "file": "CrimsonVanguard.fbx",
+      "bytes": 41290492,
+      "sha256": "c5559a2d4acacd57e21b14528cb13f6ae71e27f3e30a37ba4d42bce80a9d5e04"
+    },
+    {
+      "original": "Meshy_AI_Crimson_Vanguard_1007202501_texture_fbx/Meshy_AI_Crimson_Vanguard_1007202501_texture.png",
+      "file": "CrimsonVanguard_BaseColor.png",
+      "bytes": 6820204,
+      "sha256": "0c2a421974e8413ac38d12bbf0d85094fcfea8469565abc24aa1292e5d4487e2"
+    },
+    {
+      "original": "Meshy_AI_Crimson_Vanguard_1007202501_texture_fbx/Meshy_AI_Crimson_Vanguard_1007202501_texture_metallic.png",
+      "file": "CrimsonVanguard_Metallic.png",
+      "bytes": 163727,
+      "sha256": "54f25f67e977d9e1db981fe7224d2cf1242d1f418bd6af391b57696e4604cfe7"
+    },
+    {
+      "original": "Meshy_AI_Crimson_Vanguard_1007202501_texture_fbx/Meshy_AI_Crimson_Vanguard_1007202501_texture_normal.png",
+      "file": "CrimsonVanguard_Normal.png",
+      "bytes": 5207176,
+      "sha256": "f46eb120c6f72e0ad411caf72804f11838012e47f665bea5752d90ce5d329cb2"
+    },
+    {
+      "original": "Meshy_AI_Crimson_Vanguard_1007202501_texture_fbx/Meshy_AI_Crimson_Vanguard_1007202501_texture_roughness.png",
+      "file": "CrimsonVanguard_Roughness.png",
+      "bytes": 1545518,
+      "sha256": "a856f57ca0994d444e4966f3737e60948abe02b155db4f11f7934c0ca020a80a"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Crimson_Vanguard_1007202501_texture_fbx.zip",
+  "archive_path": "mockups/Guards/CrimsonVanguard.zip"
+}

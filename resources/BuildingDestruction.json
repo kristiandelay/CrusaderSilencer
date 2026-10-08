@@ -1,0 +1,692 @@
+{
+  "map": "/Game/Maps/L_TraversalGym",
+  "blueprint": "/Game/Crusader/Destruction/Furniture/B_CRDestructibleFurniture",
+  "collections": {
+    "LabSupplyStack": {
+      "asset": "/Game/Crusader/Destruction/Furniture/GC_LabSupplyStack",
+      "pieces": 41,
+      "convex_hulls": 44
+    },
+    "OfficeDeskSet": {
+      "asset": "/Game/Crusader/Destruction/Furniture/GC_OfficeDeskSet",
+      "pieces": 46,
+      "convex_hulls": 48
+    },
+    "OfficeStorageSet": {
+      "asset": "/Game/Crusader/Destruction/Furniture/GC_OfficeStorageSet",
+      "pieces": 33,
+      "convex_hulls": 36
+    },
+    "IndustrialCargoCrate02": {
+      "asset": "/Game/Crusader/Destruction/Furniture/GC_IndustrialCargoCrate02",
+      "pieces": 24,
+      "convex_hulls": 26
+    },
+    "OliveExecutiveOfficeChair": {
+      "asset": "/Game/Crusader/Destruction/Furniture/GC_OliveExecutiveOfficeChair",
+      "pieces": 22,
+      "convex_hulls": 22
+    },
+    "IndustrialCargoCrate01": {
+      "asset": "/Game/Crusader/Destruction/Furniture/GC_IndustrialCargoCrate01",
+      "pieces": 24,
+      "convex_hulls": 26
+    },
+    "IndustrialCargoCrate01_S100": {
+      "asset": "/Game/Crusader/Destruction/Furniture/GC_IndustrialCargoCrate01_S100",
+      "pieces": 24,
+      "convex_hulls": 26
+    },
+    "IndustrialCargoCrate02_S90": {
+      "asset": "/Game/Crusader/Destruction/Furniture/GC_IndustrialCargoCrate02_S90",
+      "pieces": 24,
+      "convex_hulls": 26
+    },
+    "RetroCyberConsole": {
+      "asset": "/Game/Crusader/Destruction/Furniture/GC_RetroCyberConsole",
+      "pieces": 23,
+      "convex_hulls": 25
+    },
+    "BlueSteelVault": {
+      "asset": "/Game/Crusader/Destruction/Furniture/GC_BlueSteelVault",
+      "pieces": 22,
+      "convex_hulls": 22
+    },
+    "BlackEquipmentCase": {
+      "asset": "/Game/Crusader/Destruction/Furniture/GC_BlackEquipmentCase",
+      "pieces": 24,
+      "convex_hulls": 26
+    },
+    "RetroCyberConsole_S90": {
+      "asset": "/Game/Crusader/Destruction/Furniture/GC_RetroCyberConsole_S90",
+      "pieces": 23,
+      "convex_hulls": 25
+    },
+    "RustyRadioactiveBarrel": {
+      "asset": "/Game/Crusader/Destruction/Furniture/GC_RustyRadioactiveBarrel",
+      "pieces": 24,
+      "convex_hulls": 26
+    },
+    "IndustrialCargoCrate": {
+      "asset": "/Game/Crusader/Destruction/Furniture/GC_IndustrialCargoCrate",
+      "pieces": 24,
+      "convex_hulls": 26
+    },
+    "BlueSteelVault_S90": {
+      "asset": "/Game/Crusader/Destruction/Furniture/GC_BlueSteelVault_S90",
+      "pieces": 22,
+      "convex_hulls": 22
+    },
+    "RetroCyberConsole_S85": {
+      "asset": "/Game/Crusader/Destruction/Furniture/GC_RetroCyberConsole_S85",
+      "pieces": 23,
+      "convex_hulls": 25
+    },
+    "IndustrialCargoCrate_S80": {
+      "asset": "/Game/Crusader/Destruction/Furniture/GC_IndustrialCargoCrate_S80",
+      "pieces": 24,
+      "convex_hulls": 26
+    }
+  },
+  "targets": [
+    {
+      "actor": "CR_Breakable_Facility_LabSupplyA",
+      "name": "LabSupplyStack",
+      "building": "Facility",
+      "sources": [
+        "CR_Facility_LabSupplyA",
+        "CR_Facility_LabSupplyB"
+      ],
+      "geometry": "/Game/Crusader/Destruction/Furniture/GC_LabSupplyStack",
+      "preset": "/Game/Crusader/Destruction/Furniture/DA_LabSupplyStack",
+      "pieces": 41,
+      "center": [
+        11150.0,
+        9300.0,
+        104.70371086822229
+      ],
+      "extent": [
+        82.50000178813934,
+        50.02852929784058,
+        74.70371086822229
+      ],
+      "transform": "(Rotation=(X=0.000000,Y=-0.000000,Z=1.000000,W=0.000000),Translation=(X=11150.000000,Y=9300.000000,Z=30.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))"
+    },
+    {
+      "actor": "CR_Breakable_Facility_OfficeDesk",
+      "name": "OfficeDeskSet",
+      "building": "Facility",
+      "sources": [
+        "CR_Facility_OfficeDesk",
+        "CR_Facility_OfficeMonitor",
+        "CR_Facility_OfficeKeyboard",
+        "CR_Facility_OfficeTerminal"
+      ],
+      "geometry": "/Game/Crusader/Destruction/Furniture/GC_OfficeDeskSet",
+      "preset": "/Game/Crusader/Destruction/Furniture/DA_OfficeDeskSet",
+      "pieces": 46,
+      "center": [
+        13793.466692742595,
+        9020.0,
+        116.651047466833
+      ],
+      "extent": [
+        167.46668892789785,
+        61.322042748079184,
+        86.651047466833
+      ],
+      "transform": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=13770.000000,Y=9020.000014,Z=30.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))"
+    },
+    {
+      "actor": "CR_Breakable_Facility_OfficeDrawer",
+      "name": "OfficeStorageSet",
+      "building": "Facility",
+      "sources": [
+        "CR_Facility_OfficeDrawer",
+        "CR_Facility_OfficeStorage"
+      ],
+      "geometry": "/Game/Crusader/Destruction/Furniture/GC_OfficeStorageSet",
+      "preset": "/Game/Crusader/Destruction/Furniture/DA_OfficeStorageSet",
+      "pieces": 33,
+      "center": [
+        14149.999999237061,
+        9490.0,
+        89.37543020548128
+      ],
+      "extent": [
+        40.00000235239713,
+        33.426338379635126,
+        59.37543020548128
+      ],
+      "transform": "(Rotation=(X=0.000000,Y=-0.000000,Z=1.000000,W=0.000000),Translation=(X=14150.000002,Y=9490.000001,Z=30.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))"
+    },
+    {
+      "actor": "CR_Breakable_Facility_ContainmentCrate",
+      "name": "IndustrialCargoCrate02",
+      "building": "Facility",
+      "sources": [
+        "CR_Facility_ContainmentCrate"
+      ],
+      "geometry": "/Game/Crusader/Destruction/Furniture/GC_IndustrialCargoCrate02",
+      "preset": "/Game/Crusader/Destruction/Furniture/DA_IndustrialCargoCrate02",
+      "pieces": 24,
+      "center": [
+        12630.0,
+        9320.0,
+        109.24043273925781
+      ],
+      "extent": [
+        89.8897476196289,
+        90.0,
+        79.24043273925781
+      ],
+      "transform": "(Rotation=(X=0.000000,Y=-0.000000,Z=1.000000,W=0.000000),Translation=(X=12629.999992,Y=9320.000000,Z=30.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))"
+    },
+    {
+      "actor": "CR_Breakable_Facility_OfficeChair",
+      "name": "OliveExecutiveOfficeChair",
+      "building": "Facility",
+      "sources": [
+        "CR_Facility_OfficeChair"
+      ],
+      "geometry": "/Game/Crusader/Destruction/Furniture/GC_OliveExecutiveOfficeChair",
+      "preset": "/Game/Crusader/Destruction/Furniture/DA_OliveExecutiveOfficeChair",
+      "pieces": 22,
+      "center": [
+        13770.0,
+        9260.0,
+        96.00000562667856
+      ],
+      "extent": [
+        50.03878892635839,
+        48.35127935303899,
+        66.00000562667856
+      ],
+      "transform": "(Rotation=(X=0.000000,Y=-0.000000,Z=1.000000,W=0.000000),Translation=(X=13770.000000,Y=9260.000000,Z=30.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))"
+    },
+    {
+      "actor": "CR_Breakable_Facility_OfficeCrate",
+      "name": "IndustrialCargoCrate01",
+      "building": "Facility",
+      "sources": [
+        "CR_Facility_OfficeCrate"
+      ],
+      "geometry": "/Game/Crusader/Destruction/Furniture/GC_IndustrialCargoCrate01",
+      "preset": "/Game/Crusader/Destruction/Furniture/DA_IndustrialCargoCrate01",
+      "pieces": 24,
+      "center": [
+        14260.0,
+        8620.0,
+        69.57829147726761
+      ],
+      "extent": [
+        38.65840924931763,
+        63.75000178813934,
+        39.57829147726761
+      ],
+      "transform": "(Rotation=(X=0.000000,Y=-0.000000,Z=0.707107,W=0.707107),Translation=(X=14260.000000,Y=8620.000000,Z=30.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))"
+    },
+    {
+      "actor": "CR_Breakable_Facility_CheckpointCrate",
+      "name": "IndustrialCargoCrate01_S100",
+      "building": "Facility",
+      "sources": [
+        "CR_Facility_CheckpointCrate"
+      ],
+      "geometry": "/Game/Crusader/Destruction/Furniture/GC_IndustrialCargoCrate01_S100",
+      "preset": "/Game/Crusader/Destruction/Furniture/DA_IndustrialCargoCrate01_S100",
+      "pieces": 24,
+      "center": [
+        11980.0,
+        6760.0,
+        76.56269454956055
+      ],
+      "extent": [
+        75.0,
+        45.4804801940918,
+        46.56269454956055
+      ],
+      "transform": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=11980.000000,Y=6760.000000,Z=30.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))"
+    },
+    {
+      "actor": "CR_Breakable_Facility_FreightSupplies_0",
+      "name": "IndustrialCargoCrate02_S90",
+      "building": "Facility",
+      "sources": [
+        "CR_Facility_FreightSupplies_0"
+      ],
+      "geometry": "/Game/Crusader/Destruction/Furniture/GC_IndustrialCargoCrate02_S90",
+      "preset": "/Game/Crusader/Destruction/Furniture/DA_IndustrialCargoCrate02_S90",
+      "pieces": 24,
+      "center": [
+        11899.999999999998,
+        6830.0,
+        101.3163875760929
+      ],
+      "extent": [
+        80.90077071452652,
+        80.99999785423279,
+        71.3163875760929
+      ],
+      "transform": "(Rotation=(X=0.000000,Y=-0.000000,Z=1.000000,W=0.000000),Translation=(X=11899.999993,Y=6830.000000,Z=30.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))"
+    },
+    {
+      "actor": "CR_Breakable_Facility_FreightSupplies_1",
+      "name": "IndustrialCargoCrate02_S90",
+      "building": "Facility",
+      "sources": [
+        "CR_Facility_FreightSupplies_1"
+      ],
+      "geometry": "/Game/Crusader/Destruction/Furniture/GC_IndustrialCargoCrate02_S90",
+      "preset": "/Game/Crusader/Destruction/Furniture/DA_IndustrialCargoCrate02_S90",
+      "pieces": 24,
+      "center": [
+        14149.999999999998,
+        6830.0,
+        101.3163875760929
+      ],
+      "extent": [
+        80.90077071452652,
+        80.99999785423279,
+        71.3163875760929
+      ],
+      "transform": "(Rotation=(X=0.000000,Y=-0.000000,Z=1.000000,W=0.000000),Translation=(X=14149.999993,Y=6830.000000,Z=30.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))"
+    },
+    {
+      "actor": "CR_Breakable_ControlRoom_CommandTerminal_0",
+      "name": "RetroCyberConsole",
+      "building": "ControlRoom",
+      "sources": [
+        "CR_ControlRoom_CommandTerminal_0"
+      ],
+      "geometry": "/Game/Crusader/Destruction/Furniture/GC_RetroCyberConsole",
+      "preset": "/Game/Crusader/Destruction/Furniture/DA_RetroCyberConsole",
+      "pieces": 23,
+      "center": [
+        19970.0,
+        9730.0,
+        120.0
+      ],
+      "extent": [
+        63.95736122131348,
+        54.62202072143555,
+        90.0
+      ],
+      "transform": "(Rotation=(X=0.000000,Y=-0.000000,Z=1.000000,W=0.000000),Translation=(X=19969.999998,Y=9730.000000,Z=30.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))"
+    },
+    {
+      "actor": "CR_Breakable_ControlRoom_CommandTerminal_1",
+      "name": "RetroCyberConsole",
+      "building": "ControlRoom",
+      "sources": [
+        "CR_ControlRoom_CommandTerminal_1"
+      ],
+      "geometry": "/Game/Crusader/Destruction/Furniture/GC_RetroCyberConsole",
+      "preset": "/Game/Crusader/Destruction/Furniture/DA_RetroCyberConsole",
+      "pieces": 23,
+      "center": [
+        21230.0,
+        9730.0,
+        120.0
+      ],
+      "extent": [
+        63.95736122131348,
+        54.62202072143555,
+        90.0
+      ],
+      "transform": "(Rotation=(X=0.000000,Y=-0.000000,Z=1.000000,W=0.000000),Translation=(X=21229.999998,Y=9730.000000,Z=30.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))"
+    },
+    {
+      "actor": "CR_Breakable_ControlRoom_OperationsCrate_0",
+      "name": "BlueSteelVault",
+      "building": "ControlRoom",
+      "sources": [
+        "CR_ControlRoom_OperationsCrate_0"
+      ],
+      "geometry": "/Game/Crusader/Destruction/Furniture/GC_BlueSteelVault",
+      "preset": "/Game/Crusader/Destruction/Furniture/DA_BlueSteelVault",
+      "pieces": 22,
+      "center": [
+        18950.0,
+        8050.0,
+        79.9999976933002
+      ],
+      "extent": [
+        41.78540711679307,
+        28.73326458831525,
+        49.9999976933002
+      ],
+      "transform": "(Rotation=(X=0.000000,Y=-0.000000,Z=1.000000,W=0.000000),Translation=(X=18950.000000,Y=8050.000000,Z=30.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))"
+    },
+    {
+      "actor": "CR_Breakable_ControlRoom_OperationsCrate_1",
+      "name": "BlueSteelVault",
+      "building": "ControlRoom",
+      "sources": [
+        "CR_ControlRoom_OperationsCrate_1"
+      ],
+      "geometry": "/Game/Crusader/Destruction/Furniture/GC_BlueSteelVault",
+      "preset": "/Game/Crusader/Destruction/Furniture/DA_BlueSteelVault",
+      "pieces": 22,
+      "center": [
+        22250.0,
+        8050.0,
+        79.9999976933002
+      ],
+      "extent": [
+        41.78540711679307,
+        28.73326458831525,
+        49.9999976933002
+      ],
+      "transform": "(Rotation=(X=0.000000,Y=-0.000000,Z=1.000000,W=0.000000),Translation=(X=22250.000000,Y=8050.000000,Z=30.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))"
+    },
+    {
+      "actor": "CR_Breakable_ControlRoom_ServiceLocker_0",
+      "name": "BlackEquipmentCase",
+      "building": "ControlRoom",
+      "sources": [
+        "CR_ControlRoom_ServiceLocker_0"
+      ],
+      "geometry": "/Game/Crusader/Destruction/Furniture/GC_BlackEquipmentCase",
+      "preset": "/Game/Crusader/Destruction/Furniture/DA_BlackEquipmentCase",
+      "pieces": 24,
+      "center": [
+        17910.0,
+        7370.000000000001,
+        109.75000262260437
+      ],
+      "extent": [
+        23.706696526976884,
+        27.84025231362193,
+        79.75000262260437
+      ],
+      "transform": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=17910.000000,Y=7370.000001,Z=30.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))"
+    },
+    {
+      "actor": "CR_Breakable_ControlRoom_ServiceLocker_1",
+      "name": "BlackEquipmentCase",
+      "building": "ControlRoom",
+      "sources": [
+        "CR_ControlRoom_ServiceLocker_1"
+      ],
+      "geometry": "/Game/Crusader/Destruction/Furniture/GC_BlackEquipmentCase",
+      "preset": "/Game/Crusader/Destruction/Furniture/DA_BlackEquipmentCase",
+      "pieces": 24,
+      "center": [
+        18110.0,
+        7370.000000000001,
+        109.75000262260437
+      ],
+      "extent": [
+        23.706696526976884,
+        27.84025231362193,
+        79.75000262260437
+      ],
+      "transform": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=18110.000000,Y=7370.000001,Z=30.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))"
+    },
+    {
+      "actor": "CR_Breakable_ControlRoom_ServiceLocker_2",
+      "name": "BlackEquipmentCase",
+      "building": "ControlRoom",
+      "sources": [
+        "CR_ControlRoom_ServiceLocker_2"
+      ],
+      "geometry": "/Game/Crusader/Destruction/Furniture/GC_BlackEquipmentCase",
+      "preset": "/Game/Crusader/Destruction/Furniture/DA_BlackEquipmentCase",
+      "pieces": 24,
+      "center": [
+        18310.0,
+        7370.000000000001,
+        109.75000262260437
+      ],
+      "extent": [
+        23.706696526976884,
+        27.84025231362193,
+        79.75000262260437
+      ],
+      "transform": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=18310.000000,Y=7370.000001,Z=30.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))"
+    },
+    {
+      "actor": "CR_Breakable_ControlRoom_ServiceWorkstation",
+      "name": "RetroCyberConsole_S90",
+      "building": "ControlRoom",
+      "sources": [
+        "CR_ControlRoom_ServiceWorkstation"
+      ],
+      "geometry": "/Game/Crusader/Destruction/Furniture/GC_RetroCyberConsole_S90",
+      "preset": "/Game/Crusader/Destruction/Furniture/DA_RetroCyberConsole_S90",
+      "pieces": 23,
+      "center": [
+        18210.0,
+        8250.0,
+        110.99999785423279
+      ],
+      "extent": [
+        57.56162357431822,
+        49.15981734700108,
+        80.99999785423279
+      ],
+      "transform": "(Rotation=(X=0.000000,Y=-0.000000,Z=1.000000,W=0.000000),Translation=(X=18209.999998,Y=8250.000000,Z=30.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))"
+    },
+    {
+      "actor": "CR_Breakable_ControlRoom_StorageBarrel_0",
+      "name": "RustyRadioactiveBarrel",
+      "building": "ControlRoom",
+      "sources": [
+        "CR_ControlRoom_StorageBarrel_0"
+      ],
+      "geometry": "/Game/Crusader/Destruction/Furniture/GC_RustyRadioactiveBarrel",
+      "preset": "/Game/Crusader/Destruction/Furniture/DA_RustyRadioactiveBarrel",
+      "pieces": 24,
+      "center": [
+        23340.0,
+        8540.0,
+        88.49999845027924
+      ],
+      "extent": [
+        38.280146156943374,
+        38.20309423332401,
+        58.499998450279236
+      ],
+      "transform": "(Rotation=(X=0.000000,Y=-0.000000,Z=1.000000,W=0.000000),Translation=(X=23340.000000,Y=8540.000000,Z=30.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))"
+    },
+    {
+      "actor": "CR_Breakable_ControlRoom_StorageBarrel_1",
+      "name": "RustyRadioactiveBarrel",
+      "building": "ControlRoom",
+      "sources": [
+        "CR_ControlRoom_StorageBarrel_1"
+      ],
+      "geometry": "/Game/Crusader/Destruction/Furniture/GC_RustyRadioactiveBarrel",
+      "preset": "/Game/Crusader/Destruction/Furniture/DA_RustyRadioactiveBarrel",
+      "pieces": 24,
+      "center": [
+        23460.0,
+        8520.0,
+        88.49999845027924
+      ],
+      "extent": [
+        38.280146156943374,
+        38.20309423332401,
+        58.499998450279236
+      ],
+      "transform": "(Rotation=(X=0.000000,Y=-0.000000,Z=1.000000,W=0.000000),Translation=(X=23460.000000,Y=8520.000000,Z=30.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))"
+    },
+    {
+      "actor": "CR_Breakable_ControlRoom_StorageBarrel_2",
+      "name": "RustyRadioactiveBarrel",
+      "building": "ControlRoom",
+      "sources": [
+        "CR_ControlRoom_StorageBarrel_2"
+      ],
+      "geometry": "/Game/Crusader/Destruction/Furniture/GC_RustyRadioactiveBarrel",
+      "preset": "/Game/Crusader/Destruction/Furniture/DA_RustyRadioactiveBarrel",
+      "pieces": 24,
+      "center": [
+        23400.0,
+        8330.0,
+        88.49999845027924
+      ],
+      "extent": [
+        38.280146156943374,
+        38.20309423332401,
+        58.499998450279236
+      ],
+      "transform": "(Rotation=(X=0.000000,Y=-0.000000,Z=1.000000,W=0.000000),Translation=(X=23400.000000,Y=8330.000000,Z=30.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))"
+    },
+    {
+      "actor": "CR_Breakable_ControlRoom_StorageCrate_0",
+      "name": "IndustrialCargoCrate",
+      "building": "ControlRoom",
+      "sources": [
+        "CR_ControlRoom_StorageCrate_0"
+      ],
+      "geometry": "/Game/Crusader/Destruction/Furniture/GC_IndustrialCargoCrate",
+      "preset": "/Game/Crusader/Destruction/Furniture/DA_IndustrialCargoCrate",
+      "pieces": 24,
+      "center": [
+        23240.0,
+        7245.0,
+        86.2258457547864
+      ],
+      "extent": [
+        56.250001943109964,
+        54.775516584832985,
+        56.225845754786405
+      ],
+      "transform": "(Rotation=(X=0.000000,Y=-0.000000,Z=1.000000,W=0.000000),Translation=(X=23239.999997,Y=7245.000000,Z=30.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))"
+    },
+    {
+      "actor": "CR_Breakable_ControlRoom_StorageCrate_1",
+      "name": "BlueSteelVault_S90",
+      "building": "ControlRoom",
+      "sources": [
+        "CR_ControlRoom_StorageCrate_1"
+      ],
+      "geometry": "/Game/Crusader/Destruction/Furniture/GC_BlueSteelVault_S90",
+      "preset": "/Game/Crusader/Destruction/Furniture/DA_BlueSteelVault_S90",
+      "pieces": 22,
+      "center": [
+        23410.0,
+        7250.0,
+        86.24999507665643
+      ],
+      "extent": [
+        47.00858106060696,
+        32.32492132385778,
+        56.24999507665643
+      ],
+      "transform": "(Rotation=(X=0.000000,Y=-0.000000,Z=1.000000,W=0.000000),Translation=(X=23410.000000,Y=7250.000000,Z=30.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))"
+    },
+    {
+      "actor": "CR_Breakable_ControlRoom_StorageCrate_2",
+      "name": "IndustrialCargoCrate",
+      "building": "ControlRoom",
+      "sources": [
+        "CR_ControlRoom_StorageCrate_2"
+      ],
+      "geometry": "/Game/Crusader/Destruction/Furniture/GC_IndustrialCargoCrate",
+      "preset": "/Game/Crusader/Destruction/Furniture/DA_IndustrialCargoCrate",
+      "pieces": 24,
+      "center": [
+        23370.0,
+        7420.0,
+        86.2258457547864
+      ],
+      "extent": [
+        56.250001943109964,
+        54.775516584832985,
+        56.225845754786405
+      ],
+      "transform": "(Rotation=(X=0.000000,Y=-0.000000,Z=1.000000,W=0.000000),Translation=(X=23369.999997,Y=7420.000000,Z=30.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))"
+    },
+    {
+      "actor": "CR_Breakable_ControlRoom_LobbyTerminal_0",
+      "name": "RetroCyberConsole_S85",
+      "building": "ControlRoom",
+      "sources": [
+        "CR_ControlRoom_LobbyTerminal_0"
+      ],
+      "geometry": "/Game/Crusader/Destruction/Furniture/GC_RetroCyberConsole_S85",
+      "preset": "/Game/Crusader/Destruction/Furniture/DA_RetroCyberConsole_S85",
+      "pieces": 23,
+      "center": [
+        19930.0,
+        6160.0,
+        106.50000214576721
+      ],
+      "extent": [
+        46.428718915511126,
+        54.363758562978546,
+        76.50000214576721
+      ],
+      "transform": "(Rotation=(X=-0.000000,Y=0.000000,Z=-0.707107,W=0.707107),Translation=(X=19930.000000,Y=6159.999998,Z=30.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))"
+    },
+    {
+      "actor": "CR_Breakable_ControlRoom_LobbyTerminal_1",
+      "name": "RetroCyberConsole_S85",
+      "building": "ControlRoom",
+      "sources": [
+        "CR_ControlRoom_LobbyTerminal_1"
+      ],
+      "geometry": "/Game/Crusader/Destruction/Furniture/GC_RetroCyberConsole_S85",
+      "preset": "/Game/Crusader/Destruction/Furniture/DA_RetroCyberConsole_S85",
+      "pieces": 23,
+      "center": [
+        21270.0,
+        6160.0,
+        106.50000214576721
+      ],
+      "extent": [
+        46.428718915511126,
+        54.363758562978546,
+        76.50000214576721
+      ],
+      "transform": "(Rotation=(X=0.000000,Y=-0.000000,Z=0.707107,W=0.707107),Translation=(X=21270.000000,Y=6160.000002,Z=30.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))"
+    },
+    {
+      "actor": "CR_Breakable_ControlRoom_LobbySupply_0",
+      "name": "IndustrialCargoCrate_S80",
+      "building": "ControlRoom",
+      "sources": [
+        "CR_ControlRoom_LobbySupply_0"
+      ],
+      "geometry": "/Game/Crusader/Destruction/Furniture/GC_IndustrialCargoCrate_S80",
+      "preset": "/Game/Crusader/Destruction/Furniture/DA_IndustrialCargoCrate_S80",
+      "pieces": 24,
+      "center": [
+        19930.0,
+        5940.0,
+        79.97853162852721
+      ],
+      "extent": [
+        50.0000037968166,
+        48.689350090761764,
+        49.97853162852721
+      ],
+      "transform": "(Rotation=(X=0.000000,Y=-0.000000,Z=1.000000,W=0.000000),Translation=(X=19929.999997,Y=5940.000000,Z=30.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))"
+    },
+    {
+      "actor": "CR_Breakable_ControlRoom_LobbySupply_1",
+      "name": "IndustrialCargoCrate_S80",
+      "building": "ControlRoom",
+      "sources": [
+        "CR_ControlRoom_LobbySupply_1"
+      ],
+      "geometry": "/Game/Crusader/Destruction/Furniture/GC_IndustrialCargoCrate_S80",
+      "preset": "/Game/Crusader/Destruction/Furniture/DA_IndustrialCargoCrate_S80",
+      "pieces": 24,
+      "center": [
+        21270.0,
+        5940.0,
+        79.97853162852721
+      ],
+      "extent": [
+        50.0000037968166,
+        48.689350090761764,
+        49.97853162852721
+      ],
+      "transform": "(Rotation=(X=0.000000,Y=-0.000000,Z=1.000000,W=0.000000),Translation=(X=21269.999997,Y=5940.000000,Z=30.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))"
+    }
+  ]
+}

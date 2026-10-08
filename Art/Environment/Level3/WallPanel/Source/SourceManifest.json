@@ -1,0 +1,39 @@
+{
+  "name": "WallPanel",
+  "archive": "WallPanel.zip",
+  "archive_sha256": "5acb9ff72aec68dd2872a1e1d35d48f45c474429f8248bbda465d2d060b5f038",
+  "files": [
+    {
+      "original": "Meshy_AI_Wall_Panel_1008201252_texture_fbx/Meshy_AI_Wall_Panel_1008201252_texture.fbx",
+      "file": "WallPanel.fbx",
+      "bytes": 11638556,
+      "sha256": "93f32e9fa50b2e3d67645e8fc2e75ba6b47b1673d40db954aa17e8a08f0845fc"
+    },
+    {
+      "original": "Meshy_AI_Wall_Panel_1008201252_texture_fbx/Meshy_AI_Wall_Panel_1008201252_texture.png",
+      "file": "WallPanel_BaseColor.png",
+      "bytes": 4537150,
+      "sha256": "5caadd0e1e3bf0a9b6d1244d18b52562a45e3fad5bd05e5b5fd39a16d229e742"
+    },
+    {
+      "original": "Meshy_AI_Wall_Panel_1008201252_texture_fbx/Meshy_AI_Wall_Panel_1008201252_texture_metallic.png",
+      "file": "WallPanel_Metallic.png",
+      "bytes": 112415,
+      "sha256": "3929271a61a68a721e58d4477782a603c96731dd323493e37bfc3d7e7cd64e9c"
+    },
+    {
+      "original": "Meshy_AI_Wall_Panel_1008201252_texture_fbx/Meshy_AI_Wall_Panel_1008201252_texture_normal.png",
+      "file": "WallPanel_Normal.png",
+      "bytes": 3693400,
+      "sha256": "9228c1ed20b7dda5fe80ae5c25c9828fb9d92969ddc8123e52ef047bb3e0f706"
+    },
+    {
+      "original": "Meshy_AI_Wall_Panel_1008201252_texture_fbx/Meshy_AI_Wall_Panel_1008201252_texture_roughness.png",
+      "file": "WallPanel_Roughness.png",
+      "bytes": 1272691,
+      "sha256": "38480de21b6c0a64d1c8205d6d0d2b812e0a570a315d5019af80a5c3025459bf"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Wall_Panel_1008201252_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level3/WallPanel.zip"
+}

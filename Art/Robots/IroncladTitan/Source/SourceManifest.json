@@ -1,0 +1,39 @@
+{
+  "name": "IroncladTitan",
+  "archive": "IroncladTitan.zip",
+  "archive_sha256": "69c97717f6954b52c5f5dcd77df6386b824b39a2644ef434390b1a1cb4bb9ae5",
+  "files": [
+    {
+      "original": "Meshy_AI_Ironclad_Titan_1007164137_texture_fbx/Meshy_AI_Ironclad_Titan_1007164137_texture.fbx",
+      "file": "IroncladTitan.fbx",
+      "bytes": 131300124,
+      "sha256": "4172843037c87fffa44f3cfbda48a34636f5e5b5e1d68e4988824466b00d2d92"
+    },
+    {
+      "original": "Meshy_AI_Ironclad_Titan_1007164137_texture_fbx/Meshy_AI_Ironclad_Titan_1007164137_texture.png",
+      "file": "IroncladTitan_BaseColor.png",
+      "bytes": 7002809,
+      "sha256": "b968427d12f85d613aa09b41f0570ebb9e8e44328a3fca7603a63ae62db19d54"
+    },
+    {
+      "original": "Meshy_AI_Ironclad_Titan_1007164137_texture_fbx/Meshy_AI_Ironclad_Titan_1007164137_texture_metallic.png",
+      "file": "IroncladTitan_Metallic.png",
+      "bytes": 958614,
+      "sha256": "766a12c4d0d18614205518173907c97ea7741944c1d3f8f4d1743310d5e20857"
+    },
+    {
+      "original": "Meshy_AI_Ironclad_Titan_1007164137_texture_fbx/Meshy_AI_Ironclad_Titan_1007164137_texture_normal.png",
+      "file": "IroncladTitan_Normal.png",
+      "bytes": 6048025,
+      "sha256": "72b4b91a33e5aaac3c90f2da805823022554bbb337e37713bad3cce0db1be139"
+    },
+    {
+      "original": "Meshy_AI_Ironclad_Titan_1007164137_texture_fbx/Meshy_AI_Ironclad_Titan_1007164137_texture_roughness.png",
+      "file": "IroncladTitan_Roughness.png",
+      "bytes": 2044024,
+      "sha256": "3598b832531f870165c6e849623794f9ed63dd0410738772f7d91a0968b5a2ca"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Ironclad_Titan_1007164137_texture_fbx.zip",
+  "archive_path": "mockups/Robots/IroncladTitan.zip"
+}

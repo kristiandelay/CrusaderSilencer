@@ -1,0 +1,19 @@
+{
+  "animations": [
+    {
+      "name": "Aim",
+      "left_animation": "/Game/Crusader/Equipment/Throw/Animations/GASP_Left_AS_Aim.GASP_Left_AS_Aim",
+      "left_montage": "/Game/Crusader/Equipment/Throw/AM_Left_Aim.AM_Left_Aim",
+      "maximum_hand_mirror_error_cm": 1.8282774668509572e-06,
+      "minimum_pelvis_height_cm": 93.08876037597656
+    },
+    {
+      "name": "Throw",
+      "left_animation": "/Game/Crusader/Equipment/Throw/Animations/GASP_Left_AS_Throw.GASP_Left_AS_Throw",
+      "left_montage": "/Game/Crusader/Equipment/Throw/AM_Left_Throw.AM_Left_Throw",
+      "maximum_hand_mirror_error_cm": 6.370084563258622e-06,
+      "minimum_pelvis_height_cm": 93.08876037597656
+    }
+  ],
+  "left_grip": "(Rotation=(X=-1.000000,Y=0.000000,Z=-0.000000,W=-0.000000),Translation=(X=-3.999999,Y=-0.000000,Z=0.000001),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))"
+}

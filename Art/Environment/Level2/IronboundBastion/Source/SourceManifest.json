@@ -1,0 +1,39 @@
+{
+  "name": "IronboundBastion",
+  "archive": "IronboundBastion.zip",
+  "archive_sha256": "99acdcc0e2aa7a73196f5e82fa1f324237b9cc89443542a9baf3a8a328f3c43d",
+  "files": [
+    {
+      "original": "Meshy_AI_Ironbound_Bastion_1007205217_texture_fbx/Meshy_AI_Ironbound_Bastion_1007205217_texture.fbx",
+      "file": "IronboundBastion.fbx",
+      "bytes": 14813980,
+      "sha256": "5c80ff9429f69426401a7594832a332858f03d61675f3154a1830119f8d3e92b"
+    },
+    {
+      "original": "Meshy_AI_Ironbound_Bastion_1007205217_texture_fbx/Meshy_AI_Ironbound_Bastion_1007205217_texture.png",
+      "file": "IronboundBastion_BaseColor.png",
+      "bytes": 5051757,
+      "sha256": "8c5bec170a7e03fdedc70784ef4a971f94e1dda78891836e1be37c6a52b70a3e"
+    },
+    {
+      "original": "Meshy_AI_Ironbound_Bastion_1007205217_texture_fbx/Meshy_AI_Ironbound_Bastion_1007205217_texture_metallic.png",
+      "file": "IronboundBastion_Metallic.png",
+      "bytes": 689531,
+      "sha256": "4ffa5b164ea84ba0009ccec3fd458b80a2c6ad935d066c830202337b18e916b6"
+    },
+    {
+      "original": "Meshy_AI_Ironbound_Bastion_1007205217_texture_fbx/Meshy_AI_Ironbound_Bastion_1007205217_texture_normal.png",
+      "file": "IronboundBastion_Normal.png",
+      "bytes": 3798160,
+      "sha256": "dba1746e02111f51645feb47bec69a73b9dc0f80a54422a5f46f36bbd420279d"
+    },
+    {
+      "original": "Meshy_AI_Ironbound_Bastion_1007205217_texture_fbx/Meshy_AI_Ironbound_Bastion_1007205217_texture_roughness.png",
+      "file": "IronboundBastion_Roughness.png",
+      "bytes": 1285206,
+      "sha256": "28fa0a0572bf99ec88e85e9b809e52c9d9fa6dae715bf489c0ab534a532197a3"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Ironbound_Bastion_1007205217_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level2/IronboundBastion.zip"
+}

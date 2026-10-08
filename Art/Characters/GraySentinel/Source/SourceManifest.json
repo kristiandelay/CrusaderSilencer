@@ -1,0 +1,39 @@
+{
+  "name": "GraySentinel",
+  "archive": "GraySentinel.zip",
+  "archive_sha256": "de05637b09ca7a781c0df992f4f547fa06ced3da3d30c7e6f392df37bf5e0914",
+  "files": [
+    {
+      "original": "Meshy_AI_Gray_Sentinel_1007202451_texture_fbx/Meshy_AI_Gray_Sentinel_1007202451_texture.fbx",
+      "file": "GraySentinel.fbx",
+      "bytes": 89465452,
+      "sha256": "cf121a553a2a60d30158a94b01b73d2d834cfe0428ec59fcf7faa5881ef13fe8"
+    },
+    {
+      "original": "Meshy_AI_Gray_Sentinel_1007202451_texture_fbx/Meshy_AI_Gray_Sentinel_1007202451_texture.png",
+      "file": "GraySentinel_BaseColor.png",
+      "bytes": 5107779,
+      "sha256": "fa4a22d9091161a9c1873dbaed6b504e2afda80dd76ce8598adb0cfb4ab77139"
+    },
+    {
+      "original": "Meshy_AI_Gray_Sentinel_1007202451_texture_fbx/Meshy_AI_Gray_Sentinel_1007202451_texture_metallic.png",
+      "file": "GraySentinel_Metallic.png",
+      "bytes": 35298,
+      "sha256": "4564c8d9141edc22c749a57c41b447035728d285dd47ed4c8211bb5f0136a296"
+    },
+    {
+      "original": "Meshy_AI_Gray_Sentinel_1007202451_texture_fbx/Meshy_AI_Gray_Sentinel_1007202451_texture_normal.png",
+      "file": "GraySentinel_Normal.png",
+      "bytes": 4338528,
+      "sha256": "fc33da822f861ab5ca445a3e596104f525ace0f87becced003576fa3d2d84d68"
+    },
+    {
+      "original": "Meshy_AI_Gray_Sentinel_1007202451_texture_fbx/Meshy_AI_Gray_Sentinel_1007202451_texture_roughness.png",
+      "file": "GraySentinel_Roughness.png",
+      "bytes": 1475033,
+      "sha256": "3bec6cbe5b3cbe30a571c8ac253ddd807cc64cce6807d6603c5e9bb520ca57ff"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Gray_Sentinel_1007202451_texture_fbx.zip",
+  "archive_path": "mockups/NPC/GraySentinel.zip"
+}

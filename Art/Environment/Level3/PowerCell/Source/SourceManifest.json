@@ -1,0 +1,39 @@
+{
+  "name": "PowerCell",
+  "archive": "PowerCell.zip",
+  "archive_sha256": "4a5d0d9be5e942166a0d5843bad77b3a81b73ca44d3934240352703ab6c0adcb",
+  "files": [
+    {
+      "original": "Meshy_AI_Power_Cell_1008201313_texture_fbx/Meshy_AI_Power_Cell_1008201313_texture.fbx",
+      "file": "PowerCell.fbx",
+      "bytes": 12441948,
+      "sha256": "ae44f0dfaa3128b4b2fe03dffd436a866e5e193c3fbc70ff460c6b5cc7d7ad5d"
+    },
+    {
+      "original": "Meshy_AI_Power_Cell_1008201313_texture_fbx/Meshy_AI_Power_Cell_1008201313_texture.png",
+      "file": "PowerCell_BaseColor.png",
+      "bytes": 4455411,
+      "sha256": "b35da90e3c748a7686de3e4b1e1b61934c7687e766ecf96d9989f8bf30411e67"
+    },
+    {
+      "original": "Meshy_AI_Power_Cell_1008201313_texture_fbx/Meshy_AI_Power_Cell_1008201313_texture_metallic.png",
+      "file": "PowerCell_Metallic.png",
+      "bytes": 27989,
+      "sha256": "7f93b11615ccb791630b093191be469621a2e80498457907df5faae55c6ef0a5"
+    },
+    {
+      "original": "Meshy_AI_Power_Cell_1008201313_texture_fbx/Meshy_AI_Power_Cell_1008201313_texture_normal.png",
+      "file": "PowerCell_Normal.png",
+      "bytes": 3805886,
+      "sha256": "bd43b05c186a138695d0a85ad735ae13ecc29f2d1cabfc40859cfd087b44a85e"
+    },
+    {
+      "original": "Meshy_AI_Power_Cell_1008201313_texture_fbx/Meshy_AI_Power_Cell_1008201313_texture_roughness.png",
+      "file": "PowerCell_Roughness.png",
+      "bytes": 1313933,
+      "sha256": "0564e9a83556ff64d18fbb7a728ddecb9c7bf0b1916543c26f890f9e01a5a2d9"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Power_Cell_1008201313_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level3/PowerCell.zip"
+}

@@ -1,6 +1,8 @@
 #include "BaselineCharacterMovement.h"
 #include "BaselinePhysicalInteraction.h"
 #include "Crusader/CRCrowdAI.h"
+#include "Crusader/CRRoll.h"
+#include "Crusader/CRThrowable.h"
 #include "GameFramework/Character.h"
 #include "Net/UnrealNetwork.h"
 
@@ -144,6 +146,8 @@ float UBaselineCharacterMovement::GetMaxSpeed() const
 float UBaselineCharacterMovement::GetMaxAcceleration() const
 {
     if (CharacterOwner)
+        if (const auto* Roll=CharacterOwner->FindComponentByClass<UCRRollComponent>();Roll && Roll->IsRolling()) return 0.f;
+    if (CharacterOwner)
         if (auto* Physical = CharacterOwner->FindComponentByClass<UBaselinePhysicalInteractionComponent>())
             if (Physical->IsBusy()) return 0.f;
     return Super::GetMaxAcceleration();
@@ -176,6 +180,10 @@ void UBaselineCharacterMovement::CalcVelocity(float DeltaTime, float Friction, b
 
 void UBaselineCharacterMovement::PhysicsRotation(float DeltaTime)
 {
+    if (CharacterOwner)
+        if (const auto* Throwable=CharacterOwner->FindComponentByClass<UCRThrowableComponent>();Throwable && Throwable->IsBusy() && !bSliding) return;
+    if (CharacterOwner)
+        if (const auto* Roll=CharacterOwner->FindComponentByClass<UCRRollComponent>();Roll && Roll->IsRolling()) return;
     if (CharacterOwner)
         if (auto* Physical = CharacterOwner->FindComponentByClass<UBaselinePhysicalInteractionComponent>())
             if (Physical->IsBusy()) return;

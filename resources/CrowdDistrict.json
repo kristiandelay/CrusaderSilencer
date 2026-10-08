@@ -35,7 +35,9 @@
       "neighbours": [
         "CR_Crowd_Market",
         "CR_Crowd_Refuge",
-        "CR_FacilityCrowd_Area_Approach"
+        "CR_FacilityCrowd_Area_Approach",
+        "CR_ControlCrowd_Area_SouthWalk",
+        "CR_ControlCrowd_Area_WestWalk"
       ]
     },
     "Refuge": {

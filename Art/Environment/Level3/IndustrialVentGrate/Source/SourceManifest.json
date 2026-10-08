@@ -1,0 +1,39 @@
+{
+  "name": "IndustrialVentGrate",
+  "archive": "IndustrialVentGrate.zip",
+  "archive_sha256": "c78d1ae8175f4ee2e24ad01663e09b57a9dd36f41b0f05ca82515adb8bc93773",
+  "files": [
+    {
+      "original": "Meshy_AI_Industrial_Vent_Grate_1008205131_texture_fbx/Meshy_AI_Industrial_Vent_Grate_1008205131_texture.fbx",
+      "file": "IndustrialVentGrate.fbx",
+      "bytes": 13735564,
+      "sha256": "24a4acc44ed744efb9ecf4058710bd09922735f6c4c7a90aff40235ea687db7c"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Vent_Grate_1008205131_texture_fbx/Meshy_AI_Industrial_Vent_Grate_1008205131_texture.png",
+      "file": "IndustrialVentGrate_BaseColor.png",
+      "bytes": 4859354,
+      "sha256": "48ed35adaeee7e4d47a7bdd79cbf02f1b2b9cd4ec2188d0146eada86968e40bf"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Vent_Grate_1008205131_texture_fbx/Meshy_AI_Industrial_Vent_Grate_1008205131_texture_metallic.png",
+      "file": "IndustrialVentGrate_Metallic.png",
+      "bytes": 1534914,
+      "sha256": "1d68e726f2b53422d09bfda9d7205999aa6df28f0ca430047da1ce6bfb2ef575"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Vent_Grate_1008205131_texture_fbx/Meshy_AI_Industrial_Vent_Grate_1008205131_texture_normal.png",
+      "file": "IndustrialVentGrate_Normal.png",
+      "bytes": 3929806,
+      "sha256": "293ca5a94a145dc3e83a59e4771ec0337d4ff3a961cb595c066d46cb2be24e50"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Vent_Grate_1008205131_texture_fbx/Meshy_AI_Industrial_Vent_Grate_1008205131_texture_roughness.png",
+      "file": "IndustrialVentGrate_Roughness.png",
+      "bytes": 1552875,
+      "sha256": "9d8036565abf3d2e414a91c9827f52401f20dab7b3054b7fd5981803a42c1d14"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Industrial_Vent_Grate_1008205131_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level3/props/IndustrialVentGrate.zip"
+}

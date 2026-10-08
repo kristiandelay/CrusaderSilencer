@@ -1,0 +1,39 @@
+{
+  "name": "ReactorModule",
+  "archive": "ReactorModule.zip",
+  "archive_sha256": "be31994d04953866eb6026bb3229471738e78fe5ee30d36eaee1b3c556edbb98",
+  "files": [
+    {
+      "original": "Meshy_AI_Reactor_Module_1008204937_texture_fbx/Meshy_AI_Reactor_Module_1008204937_texture.fbx",
+      "file": "ReactorModule.fbx",
+      "bytes": 48754956,
+      "sha256": "20bceed0fd543298fe5bf6f94fd06e0e79a601d27e9d68c4c1b279051164c5f7"
+    },
+    {
+      "original": "Meshy_AI_Reactor_Module_1008204937_texture_fbx/Meshy_AI_Reactor_Module_1008204937_texture.png",
+      "file": "ReactorModule_BaseColor.png",
+      "bytes": 5772880,
+      "sha256": "3b7929e06874bbe0ebce13d27159f1a0410b9aa5274644ce3438e6cc318f90d6"
+    },
+    {
+      "original": "Meshy_AI_Reactor_Module_1008204937_texture_fbx/Meshy_AI_Reactor_Module_1008204937_texture_metallic.png",
+      "file": "ReactorModule_Metallic.png",
+      "bytes": 409717,
+      "sha256": "9ce3e2d31b139b023d06914f110a02259c95d5ba29f12ed8e7f50ad4a9ad7e12"
+    },
+    {
+      "original": "Meshy_AI_Reactor_Module_1008204937_texture_fbx/Meshy_AI_Reactor_Module_1008204937_texture_normal.png",
+      "file": "ReactorModule_Normal.png",
+      "bytes": 4774289,
+      "sha256": "9dc41cfa755acce5ff774b32868a2e93a64b0b19f15e2b9a48e061f6566af489"
+    },
+    {
+      "original": "Meshy_AI_Reactor_Module_1008204937_texture_fbx/Meshy_AI_Reactor_Module_1008204937_texture_roughness.png",
+      "file": "ReactorModule_Roughness.png",
+      "bytes": 1645523,
+      "sha256": "dd21cf3d71ab2697c90db92437aadaa2d6d532a6dee5de28ca3e5e30c3548d39"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Reactor_Module_1008204937_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level3/props/ReactorModule.zip"
+}

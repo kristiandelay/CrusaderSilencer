@@ -1,6 +1,7 @@
 #include "BaselinePhysicalInteraction.h"
 #include "BaselineCharacterMovement.h"
 #include "BaselineEquipment.h"
+#include "Crusader/CRRoll.h"
 #include "PhysicsControlComponent.h"
 #include "PhysicsControlAsset.h"
 #include "PoseSearch/PoseSearchDatabase.h"
@@ -599,6 +600,16 @@ void UBaselinePhysicalInteractionComponent::TickComponent(float Dt, ELevelTick T
 void UBaselineSourceAnimInstance::NativeUpdateAnimation(float DeltaSeconds)
 {
     Super::NativeUpdateAnimation(DeltaSeconds);
+    const APawn* Pawn = TryGetPawnOwner();
+    const auto* Roll = Pawn ? Pawn->FindComponentByClass<UCRRollComponent>() : nullptr;
+    const auto* Movement = Pawn ? Pawn->FindComponentByClass<UBaselineCharacterMovement>() : nullptr;
+    const auto* Equipment = Pawn ? Pawn->FindComponentByClass<UBaselineEquipmentComponent>() : nullptr;
+    const float ThrowWeight = GetSlotMontageLocalWeight(TEXT("ThrowUpperBody"));
+    ThrowRootRotation = FRotator::ZeroRotator;
+    if (Movement && Movement->IsSliding() && Equipment && ThrowWeight > 0.f)
+        ThrowRootRotation.Yaw = FMath::Clamp(FRotator::NormalizeAxis(Equipment->GetWeaponAimRotation().Yaw-Pawn->GetActorRotation().Yaw),-85.f,85.f)*ThrowWeight;
+    LocomotionCorrectionBypassWeight = FMath::Max(RecoveryAnimationWeight,
+        Roll && Roll->IsRolling() ? 1.f : 0.f);
     if (RecoveryPoseWeight > 0.f && GetWorld())
     {
         // Network root-motion updates/replays can tick animation repeatedly in

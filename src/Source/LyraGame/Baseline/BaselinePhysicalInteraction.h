@@ -118,6 +118,10 @@ public:
     void StartRecoveryBlend();
     UPROPERTY(BlueprintReadOnly, Transient) float RecoveryPoseWeight = 0.f;
     UPROPERTY(BlueprintReadOnly, Transient) float RecoveryAnimationWeight = 0.f;
+    /** Full-body rolls/get-ups keep their authored pose instead of standing foot IK. */
+    UPROPERTY(BlueprintReadOnly, Transient) float LocomotionCorrectionBypassWeight = 0.f;
+    /** Independent upper-body aim while the sliding legs follow momentum. */
+    UPROPERTY(BlueprintReadOnly, Transient) FRotator ThrowRootRotation = FRotator::ZeroRotator;
 private:
     double RecoveryBlendStartTime = 0.0;
 };

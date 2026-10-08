@@ -1,0 +1,39 @@
+{
+  "name": "CommandNexus",
+  "archive": "CommandNexus.zip",
+  "archive_sha256": "e6dbfa088fdcf5a8bb382ff975d4b4ddb91571c054d93d8719054d6565d0fe58",
+  "files": [
+    {
+      "original": "Meshy_AI_Command_Nexus_1007204828_texture_fbx/Meshy_AI_Command_Nexus_1007204828_texture.fbx",
+      "file": "CommandNexus.fbx",
+      "bytes": 48832188,
+      "sha256": "7093cb3bb3e70f5f89f0f2c60c661262bf7b2d037fd8b5c0d29b5394d9505f0b"
+    },
+    {
+      "original": "Meshy_AI_Command_Nexus_1007204828_texture_fbx/Meshy_AI_Command_Nexus_1007204828_texture.png",
+      "file": "CommandNexus_BaseColor.png",
+      "bytes": 6129871,
+      "sha256": "90b149f3686019e6ce6c26c2edaa6e1b9be6492d3070e65c1d67efc8204e1721"
+    },
+    {
+      "original": "Meshy_AI_Command_Nexus_1007204828_texture_fbx/Meshy_AI_Command_Nexus_1007204828_texture_metallic.png",
+      "file": "CommandNexus_Metallic.png",
+      "bytes": 1122170,
+      "sha256": "9408f28a618587d839e1bae54873e0ae89955a44fae2cb7e8efd2b686fcb602a"
+    },
+    {
+      "original": "Meshy_AI_Command_Nexus_1007204828_texture_fbx/Meshy_AI_Command_Nexus_1007204828_texture_normal.png",
+      "file": "CommandNexus_Normal.png",
+      "bytes": 4954850,
+      "sha256": "18cc2db28ce96b26c0768455fb1e75880ef3db8b257ab09ba43601cd0c26328f"
+    },
+    {
+      "original": "Meshy_AI_Command_Nexus_1007204828_texture_fbx/Meshy_AI_Command_Nexus_1007204828_texture_roughness.png",
+      "file": "CommandNexus_Roughness.png",
+      "bytes": 1700827,
+      "sha256": "c381e33506d8566d4d9e6a7c487f10e824c14f604cccd2b733c342dedfb52c9f"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Command_Nexus_1007204828_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level2/CommandNexus.zip"
+}

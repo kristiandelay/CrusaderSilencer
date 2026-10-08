@@ -1,0 +1,39 @@
+{
+  "name": "WallDControlPanel",
+  "archive": "WallDControlPanel.zip",
+  "archive_sha256": "7fece4de2491fa0ccb6e77873ea8dfa5936508939777bfdc32e3c702f0c77dc6",
+  "files": [
+    {
+      "original": "Meshy_AI_Wall_D_Control_Panel_1008202003_texture_fbx/Meshy_AI_Wall_D_Control_Panel_1008202003_texture.fbx",
+      "file": "WallDControlPanel.fbx",
+      "bytes": 15977388,
+      "sha256": "5d291aeb5b8a175481d4149167af5558a38a59fd1434e9201d75db0fc498fb2e"
+    },
+    {
+      "original": "Meshy_AI_Wall_D_Control_Panel_1008202003_texture_fbx/Meshy_AI_Wall_D_Control_Panel_1008202003_texture.png",
+      "file": "WallDControlPanel_BaseColor.png",
+      "bytes": 5042254,
+      "sha256": "5beaf13fc00dca57437748cd6e5c6a5660a4e66d84b5f9a426080aef7bf5537c"
+    },
+    {
+      "original": "Meshy_AI_Wall_D_Control_Panel_1008202003_texture_fbx/Meshy_AI_Wall_D_Control_Panel_1008202003_texture_metallic.png",
+      "file": "WallDControlPanel_Metallic.png",
+      "bytes": 230924,
+      "sha256": "90d911826e8a9052cf00eb52a6b86513d64631581f004742b80c0b411a7e300a"
+    },
+    {
+      "original": "Meshy_AI_Wall_D_Control_Panel_1008202003_texture_fbx/Meshy_AI_Wall_D_Control_Panel_1008202003_texture_normal.png",
+      "file": "WallDControlPanel_Normal.png",
+      "bytes": 4112192,
+      "sha256": "84208bccc94d2676daea5ea8adf23f3d8aae146f289b30894ce043508fdb5ed6"
+    },
+    {
+      "original": "Meshy_AI_Wall_D_Control_Panel_1008202003_texture_fbx/Meshy_AI_Wall_D_Control_Panel_1008202003_texture_roughness.png",
+      "file": "WallDControlPanel_Roughness.png",
+      "bytes": 1471965,
+      "sha256": "95cc22a06c334ac23b9cd56bc1bd2850159f404c348e00c788fedfbd1494b87a"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Wall_D_Control_Panel_1008202003_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level3/WallDControlPanel.zip"
+}

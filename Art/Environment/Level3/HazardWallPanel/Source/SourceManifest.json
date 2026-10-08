@@ -1,0 +1,39 @@
+{
+  "name": "HazardWallPanel",
+  "archive": "HazardWallPanel.zip",
+  "archive_sha256": "a58e62ba5199cde15b5625432ad0f6c031bbea8f47adfc17a52402a794a52424",
+  "files": [
+    {
+      "original": "Meshy_AI_Hazard_Wall_Panel_1008201917_texture_fbx/Meshy_AI_Hazard_Wall_Panel_1008201917_texture.fbx",
+      "file": "HazardWallPanel.fbx",
+      "bytes": 11362380,
+      "sha256": "bfa1ed184cdb1f4a6b765b6d267d7777e9cd5bfa30d9da3f8d50997d5b2aa5b1"
+    },
+    {
+      "original": "Meshy_AI_Hazard_Wall_Panel_1008201917_texture_fbx/Meshy_AI_Hazard_Wall_Panel_1008201917_texture.png",
+      "file": "HazardWallPanel_BaseColor.png",
+      "bytes": 4668807,
+      "sha256": "42f1b269ab1aa72e8d96b9f6dfb526af2ed0025645c0bc78a273eca2357827ed"
+    },
+    {
+      "original": "Meshy_AI_Hazard_Wall_Panel_1008201917_texture_fbx/Meshy_AI_Hazard_Wall_Panel_1008201917_texture_metallic.png",
+      "file": "HazardWallPanel_Metallic.png",
+      "bytes": 185785,
+      "sha256": "ceffebcea48bc51faa1505e4c7d552468c5dbe8c748d586b127c341df7afa66d"
+    },
+    {
+      "original": "Meshy_AI_Hazard_Wall_Panel_1008201917_texture_fbx/Meshy_AI_Hazard_Wall_Panel_1008201917_texture_normal.png",
+      "file": "HazardWallPanel_Normal.png",
+      "bytes": 3932532,
+      "sha256": "9a2f7d98f68464a8647815c1e5d51717f41d700a6a327da8c12634f7c1323ddb"
+    },
+    {
+      "original": "Meshy_AI_Hazard_Wall_Panel_1008201917_texture_fbx/Meshy_AI_Hazard_Wall_Panel_1008201917_texture_roughness.png",
+      "file": "HazardWallPanel_Roughness.png",
+      "bytes": 1361709,
+      "sha256": "dba55c32f044265ab10d857828ce5eda5d2065fe2b710fa6f7fedda19b41924b"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Hazard_Wall_Panel_1008201917_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level3/HazardWallPanel.zip"
+}

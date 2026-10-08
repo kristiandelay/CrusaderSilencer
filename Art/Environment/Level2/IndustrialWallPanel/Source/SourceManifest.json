@@ -1,0 +1,39 @@
+{
+  "name": "IndustrialWallPanel",
+  "archive": "IndustrialWallPanel.zip",
+  "archive_sha256": "c25383e29c79ba3a917428b0ef7a0de2cd7c611ae5b6a847f7650eb9b47b36e8",
+  "files": [
+    {
+      "original": "Meshy_AI_Industrial_Wall_Panel_1007205102_texture_fbx/Meshy_AI_Industrial_Wall_Panel_1007205102_texture.fbx",
+      "file": "IndustrialWallPanel.fbx",
+      "bytes": 16832556,
+      "sha256": "c6a71c27739e20ce1e23379823f165c6dfd1650d61a09c123263fd28cca471db"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Wall_Panel_1007205102_texture_fbx/Meshy_AI_Industrial_Wall_Panel_1007205102_texture.png",
+      "file": "IndustrialWallPanel_BaseColor.png",
+      "bytes": 4331942,
+      "sha256": "abfe928d50e9c3fc09607fe47b8217c8e95ce2945c510cdf34f80eeee4cb8c4d"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Wall_Panel_1007205102_texture_fbx/Meshy_AI_Industrial_Wall_Panel_1007205102_texture_metallic.png",
+      "file": "IndustrialWallPanel_Metallic.png",
+      "bytes": 1155720,
+      "sha256": "ebefbe1b65c76253d9914ac4b5868fa06f041288bc7cbc0a83b745c6db984174"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Wall_Panel_1007205102_texture_fbx/Meshy_AI_Industrial_Wall_Panel_1007205102_texture_normal.png",
+      "file": "IndustrialWallPanel_Normal.png",
+      "bytes": 3810317,
+      "sha256": "a651127a7afcf104b753b487ad21be28bdc1314d22ba64cc759e9c86a3f9fb97"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Wall_Panel_1007205102_texture_fbx/Meshy_AI_Industrial_Wall_Panel_1007205102_texture_roughness.png",
+      "file": "IndustrialWallPanel_Roughness.png",
+      "bytes": 1342750,
+      "sha256": "512b4e47f6b927c33f419c4e4d76d076f464ab63713f97ca8d3ec5c5462ce1c5"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Industrial_Wall_Panel_1007205102_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level2/IndustrialWallPanel.zip"
+}

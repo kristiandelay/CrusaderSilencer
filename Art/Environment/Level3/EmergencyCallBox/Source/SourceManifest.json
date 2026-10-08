@@ -1,0 +1,39 @@
+{
+  "name": "EmergencyCallBox",
+  "archive": "EmergencyCallBox.zip",
+  "archive_sha256": "c45638713745c629c1ceb0a9de3a970b49bed030e43746abdfb88e2f09254b79",
+  "files": [
+    {
+      "original": "Meshy_AI_Emergency_Call_Box_1008205144_texture_fbx/Meshy_AI_Emergency_Call_Box_1008205144_texture.fbx",
+      "file": "EmergencyCallBox.fbx",
+      "bytes": 15995100,
+      "sha256": "487a427574ff07b6a74b55d2076ce02a3a92b0e892775b57efc96c4607ae1271"
+    },
+    {
+      "original": "Meshy_AI_Emergency_Call_Box_1008205144_texture_fbx/Meshy_AI_Emergency_Call_Box_1008205144_texture.png",
+      "file": "EmergencyCallBox_BaseColor.png",
+      "bytes": 5044198,
+      "sha256": "2b8aa11fa4c6a4bf6cd18a27a5c60cc81ba092b58686c358d85613812a60abe8"
+    },
+    {
+      "original": "Meshy_AI_Emergency_Call_Box_1008205144_texture_fbx/Meshy_AI_Emergency_Call_Box_1008205144_texture_metallic.png",
+      "file": "EmergencyCallBox_Metallic.png",
+      "bytes": 168623,
+      "sha256": "7b50c524971875856a5eb79078c9bfb79da59e80c33919e9621a212acba62c7f"
+    },
+    {
+      "original": "Meshy_AI_Emergency_Call_Box_1008205144_texture_fbx/Meshy_AI_Emergency_Call_Box_1008205144_texture_normal.png",
+      "file": "EmergencyCallBox_Normal.png",
+      "bytes": 4458629,
+      "sha256": "5209ed1196c0d839dff5e7b0ccea5ce1125fde0ba68d93f78724b6e4a0aec621"
+    },
+    {
+      "original": "Meshy_AI_Emergency_Call_Box_1008205144_texture_fbx/Meshy_AI_Emergency_Call_Box_1008205144_texture_roughness.png",
+      "file": "EmergencyCallBox_Roughness.png",
+      "bytes": 1442990,
+      "sha256": "6a6cf4c854ab469ab91a1f9cfff80544abcda9685f5e2714d88a83d5d4b1c19e"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Emergency_Call_Box_1008205144_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level3/props/EmergencyCallBox.zip"
+}

@@ -1,0 +1,39 @@
+{
+  "name": "BronzeVentilationPanel",
+  "archive": "BronzeVentilationPanel.zip",
+  "archive_sha256": "d4edce9fc9270f9a150677e218c14cddc7932c9e2e31a89b7291c54ec9c85d06",
+  "files": [
+    {
+      "original": "Meshy_AI_Bronze_Ventilation_Pa_1007204952_texture_fbx/Meshy_AI_Bronze_Ventilation_Pa_1007204952_texture.fbx",
+      "file": "BronzeVentilationPanel.fbx",
+      "bytes": 17293676,
+      "sha256": "796189e6157b01fb7f5606e39bb78ca6cb7ebbaac88bf523d0dd9ffbb7e5bd05"
+    },
+    {
+      "original": "Meshy_AI_Bronze_Ventilation_Pa_1007204952_texture_fbx/Meshy_AI_Bronze_Ventilation_Pa_1007204952_texture.png",
+      "file": "BronzeVentilationPanel_BaseColor.png",
+      "bytes": 4597723,
+      "sha256": "92a215f08063a22ce851626a8036b151e4fe260677edd66b7f48a5cf8df44156"
+    },
+    {
+      "original": "Meshy_AI_Bronze_Ventilation_Pa_1007204952_texture_fbx/Meshy_AI_Bronze_Ventilation_Pa_1007204952_texture_metallic.png",
+      "file": "BronzeVentilationPanel_Metallic.png",
+      "bytes": 954633,
+      "sha256": "c90413a31764feb589bfa8953fade91a971f5051f34427d81ba510fca8968695"
+    },
+    {
+      "original": "Meshy_AI_Bronze_Ventilation_Pa_1007204952_texture_fbx/Meshy_AI_Bronze_Ventilation_Pa_1007204952_texture_normal.png",
+      "file": "BronzeVentilationPanel_Normal.png",
+      "bytes": 3734892,
+      "sha256": "9e5c6baeb5c33997876d0fd6b7204514ec8e02c3a8e20869277482663d928817"
+    },
+    {
+      "original": "Meshy_AI_Bronze_Ventilation_Pa_1007204952_texture_fbx/Meshy_AI_Bronze_Ventilation_Pa_1007204952_texture_roughness.png",
+      "file": "BronzeVentilationPanel_Roughness.png",
+      "bytes": 1424950,
+      "sha256": "051399764c75dd074f12007612269272284ad36dbffdbeccaedda46745fffcb9"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Bronze_Ventilation_Pa_1007204952_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level2/BronzeVentilationPanel.zip"
+}

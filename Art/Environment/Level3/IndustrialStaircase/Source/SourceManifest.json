@@ -1,0 +1,39 @@
+{
+  "name": "IndustrialStaircase",
+  "archive": "IndustrialStaircase.zip",
+  "archive_sha256": "d0b06e136a15951324197c5d617dfb3a4537c87363222f728b6936060eed5d4e",
+  "files": [
+    {
+      "original": "Meshy_AI_Industrial_Staircase_1008204457_texture_fbx/Meshy_AI_Industrial_Staircase_1008204457_texture.fbx",
+      "file": "IndustrialStaircase.fbx",
+      "bytes": 72307180,
+      "sha256": "1870cac62cfc69a893d4257eb7061d659d1ed8dd7791c3e4d86c9e065893ad46"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Staircase_1008204457_texture_fbx/Meshy_AI_Industrial_Staircase_1008204457_texture.png",
+      "file": "IndustrialStaircase_BaseColor.png",
+      "bytes": 6784632,
+      "sha256": "98c6fd7d32d52b8741b4d5a27cb0e334fe5624d94b22078b24d28d5d24fd02a3"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Staircase_1008204457_texture_fbx/Meshy_AI_Industrial_Staircase_1008204457_texture_metallic.png",
+      "file": "IndustrialStaircase_Metallic.png",
+      "bytes": 246560,
+      "sha256": "7d30aa9069148b4bbe88b8e8b9f8143fdf1636cc27141ce3cbefef4e6826316e"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Staircase_1008204457_texture_fbx/Meshy_AI_Industrial_Staircase_1008204457_texture_normal.png",
+      "file": "IndustrialStaircase_Normal.png",
+      "bytes": 6261723,
+      "sha256": "ca6e78035186edb42a7fe7586c263d1df1db5fc15267fd358826f88d27ebc48c"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Staircase_1008204457_texture_fbx/Meshy_AI_Industrial_Staircase_1008204457_texture_roughness.png",
+      "file": "IndustrialStaircase_Roughness.png",
+      "bytes": 2007767,
+      "sha256": "cb08bb320d3ee74ae64a4af9a776a5e8e0d9bb66185eda178bd4e03ab885bbf0"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Industrial_Staircase_1008204457_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level3/IndustrialStaircase.zip"
+}

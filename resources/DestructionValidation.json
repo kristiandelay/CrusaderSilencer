@@ -1,0 +1,292 @@
+{
+  "passed": true,
+  "map": "/Game/Maps/L_TraversalGym",
+  "targets": 19,
+  "geometry_collections": 14,
+  "native_build": "Artifacts/Destruction/build.log",
+  "reports": {
+    "standalone": {
+      "passed": true,
+      "error": null,
+      "results": [
+        {
+          "case": "intact_at_start",
+          "count": 19
+        },
+        {
+          "case": "weapon_fracture",
+          "name": "Concrete_Pillar",
+          "weapon": "Rifle",
+          "trigger_presses": 1,
+          "server_hits": 1,
+          "server_breaks": 6,
+          "client_hits": 1,
+          "client_breaks": 6
+        },
+        {
+          "case": "weapon_fracture",
+          "name": "Concrete_5m",
+          "weapon": "Rifle",
+          "trigger_presses": 1,
+          "server_hits": 1,
+          "server_breaks": 7,
+          "client_hits": 1,
+          "client_breaks": 7
+        },
+        {
+          "case": "weapon_fracture",
+          "name": "Concrete_LowCost",
+          "weapon": "Rifle",
+          "trigger_presses": 1,
+          "server_hits": 1,
+          "server_breaks": 27,
+          "client_hits": 1,
+          "client_breaks": 27
+        },
+        {
+          "case": "weapon_fracture",
+          "name": "Wood_Wall",
+          "weapon": "Rifle",
+          "trigger_presses": 1,
+          "server_hits": 1,
+          "server_breaks": 18,
+          "client_hits": 1,
+          "client_breaks": 18
+        },
+        {
+          "case": "weapon_fracture",
+          "name": "Plaster_Wall",
+          "weapon": "Rifle",
+          "trigger_presses": 1,
+          "server_hits": 1,
+          "server_breaks": 15,
+          "client_hits": 1,
+          "client_breaks": 15
+        },
+        {
+          "case": "weapon_fracture",
+          "name": "Wood_Beams",
+          "weapon": "Rifle",
+          "trigger_presses": 2,
+          "server_hits": 1,
+          "server_breaks": 2,
+          "client_hits": 1,
+          "client_breaks": 2
+        },
+        {
+          "case": "weapon_fracture",
+          "name": "Tall_Window",
+          "weapon": "Rifle",
+          "trigger_presses": 1,
+          "server_hits": 1,
+          "server_breaks": 42,
+          "client_hits": 1,
+          "client_breaks": 42
+        },
+        {
+          "case": "weapon_fracture",
+          "name": "Small_Window",
+          "weapon": "Rifle",
+          "trigger_presses": 1,
+          "server_hits": 1,
+          "server_breaks": 15,
+          "client_hits": 1,
+          "client_breaks": 15
+        },
+        {
+          "case": "weapon_fracture",
+          "name": "Wood_Chair",
+          "weapon": "Rifle",
+          "trigger_presses": 6,
+          "server_hits": 1,
+          "server_breaks": 31,
+          "client_hits": 1,
+          "client_breaks": 31
+        },
+        {
+          "case": "weapon_fracture",
+          "name": "Coffee_Table",
+          "weapon": "Rifle",
+          "trigger_presses": 3,
+          "server_hits": 1,
+          "server_breaks": 7,
+          "client_hits": 1,
+          "client_breaks": 7
+        },
+        {
+          "case": "weapon_fracture",
+          "name": "Wood_Desk",
+          "weapon": "Rifle",
+          "trigger_presses": 1,
+          "server_hits": 1,
+          "server_breaks": 8,
+          "client_hits": 1,
+          "client_breaks": 8
+        },
+        {
+          "case": "weapon_fracture",
+          "name": "Dining_Table",
+          "weapon": "Rifle",
+          "trigger_presses": 2,
+          "server_hits": 1,
+          "server_breaks": 8,
+          "client_hits": 1,
+          "client_breaks": 8
+        },
+        {
+          "case": "weapon_fracture",
+          "name": "Ceramic_Vase",
+          "weapon": "Pistol",
+          "trigger_presses": 1,
+          "server_hits": 1,
+          "server_breaks": 77,
+          "client_hits": 1,
+          "client_breaks": 77
+        },
+        {
+          "case": "weapon_fracture",
+          "name": "Ceramic_Mug_1",
+          "weapon": "Shotgun",
+          "trigger_presses": 1,
+          "server_hits": 1,
+          "server_breaks": 58,
+          "client_hits": 1,
+          "client_breaks": 58
+        },
+        {
+          "case": "weapon_fracture",
+          "name": "Ceramic_Mug_2",
+          "weapon": "Rifle",
+          "trigger_presses": 3,
+          "server_hits": 1,
+          "server_breaks": 58,
+          "client_hits": 1,
+          "client_breaks": 58
+        },
+        {
+          "case": "grenade_fracture_and_range",
+          "hits": 1,
+          "breaks": 65
+        },
+        {
+          "case": "smoke_does_not_destroy"
+        }
+      ]
+    },
+    "network": {
+      "passed": true,
+      "error": null,
+      "results": [
+        {
+          "case": "intact_at_start",
+          "count": 19
+        },
+        {
+          "case": "weapon_fracture",
+          "name": "Concrete_Pillar",
+          "weapon": "Rifle",
+          "trigger_presses": 1,
+          "server_hits": 1,
+          "server_breaks": 4,
+          "client_hits": 1,
+          "client_breaks": 0,
+          "client_transform_count": 887,
+          "client_piece_motion_cm": 126.41573623633279,
+          "client_break_effect_updates": 1
+        },
+        {
+          "case": "weapon_fracture",
+          "name": "Wood_Wall",
+          "weapon": "Pistol",
+          "trigger_presses": 1,
+          "server_hits": 1,
+          "server_breaks": 21,
+          "client_hits": 1,
+          "client_breaks": 0,
+          "client_transform_count": 492,
+          "client_piece_motion_cm": 1021.1942688842895,
+          "client_break_effect_updates": 1
+        },
+        {
+          "case": "weapon_fracture",
+          "name": "Plaster_Wall",
+          "weapon": "Shotgun",
+          "trigger_presses": 1,
+          "server_hits": 1,
+          "server_breaks": 12,
+          "client_hits": 1,
+          "client_breaks": 0,
+          "client_transform_count": 1035,
+          "client_piece_motion_cm": 866.8983183632535,
+          "client_break_effect_updates": 1
+        },
+        {
+          "case": "weapon_fracture",
+          "name": "Tall_Window",
+          "weapon": "Rifle",
+          "trigger_presses": 1,
+          "server_hits": 1,
+          "server_breaks": 68,
+          "client_hits": 1,
+          "client_breaks": 135,
+          "client_transform_count": 310,
+          "client_piece_motion_cm": 467.1914441971172,
+          "client_break_effect_updates": 5
+        },
+        {
+          "case": "weapon_fracture",
+          "name": "Wood_Chair",
+          "weapon": "Pistol",
+          "trigger_presses": 1,
+          "server_hits": 1,
+          "server_breaks": 33,
+          "client_hits": 1,
+          "client_breaks": 0,
+          "client_transform_count": 189,
+          "client_piece_motion_cm": 1552.1511108537736,
+          "client_break_effect_updates": 1
+        },
+        {
+          "case": "weapon_fracture",
+          "name": "Ceramic_Vase",
+          "weapon": "Shotgun",
+          "trigger_presses": 1,
+          "server_hits": 1,
+          "server_breaks": 95,
+          "client_hits": 1,
+          "client_breaks": 0,
+          "client_transform_count": 126,
+          "client_piece_motion_cm": 1768.941458196477,
+          "client_break_effect_updates": 1
+        },
+        {
+          "case": "grenade_fracture_and_range",
+          "hits": 1,
+          "breaks": 65
+        },
+        {
+          "case": "smoke_does_not_destroy"
+        }
+      ]
+    },
+    "suite": {
+      "passed": true,
+      "error": null,
+      "results": [
+        {
+          "script": "Test-Destruction.py",
+          "report": "Destruction/standalone.json",
+          "cases": 18,
+          "passed": true
+        },
+        {
+          "script": "Test-Destruction.py",
+          "report": "Destruction/network.json",
+          "cases": 9,
+          "passed": true
+        }
+      ]
+    }
+  },
+  "controls": "E pickup; LMB fire; H hold/release grenade; X type; restart Play to reset targets"
+}

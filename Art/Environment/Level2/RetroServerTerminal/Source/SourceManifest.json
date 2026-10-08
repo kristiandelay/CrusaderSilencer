@@ -1,0 +1,39 @@
+{
+  "name": "RetroServerTerminal",
+  "archive": "RetroServerTerminal.zip",
+  "archive_sha256": "7fd7e4da701f44298a04cfa504cca384d3c2ed60acc692fdd9eb0fbc8f93acb6",
+  "files": [
+    {
+      "original": "Meshy_AI_Retro_Server_Terminal_1007204853_texture_fbx/Meshy_AI_Retro_Server_Terminal_1007204853_texture.fbx",
+      "file": "RetroServerTerminal.fbx",
+      "bytes": 12077884,
+      "sha256": "715a5c90dd4c4a3326a13a7a4835dd7c0fa59fb868e5350fd507d4bc3b70b082"
+    },
+    {
+      "original": "Meshy_AI_Retro_Server_Terminal_1007204853_texture_fbx/Meshy_AI_Retro_Server_Terminal_1007204853_texture.png",
+      "file": "RetroServerTerminal_BaseColor.png",
+      "bytes": 4362083,
+      "sha256": "812b7586d3bbf109f65ca150876bddb51e55003b3cb551e3be16b503cf1f5d6c"
+    },
+    {
+      "original": "Meshy_AI_Retro_Server_Terminal_1007204853_texture_fbx/Meshy_AI_Retro_Server_Terminal_1007204853_texture_metallic.png",
+      "file": "RetroServerTerminal_Metallic.png",
+      "bytes": 26654,
+      "sha256": "0a3120c837eaf5005cfaea1f07d41902038dfbaa70b12ef745ca913aa963d118"
+    },
+    {
+      "original": "Meshy_AI_Retro_Server_Terminal_1007204853_texture_fbx/Meshy_AI_Retro_Server_Terminal_1007204853_texture_normal.png",
+      "file": "RetroServerTerminal_Normal.png",
+      "bytes": 3536062,
+      "sha256": "9e550c1ead8d6ec457a22b49c2231888d25ab6bbce1c0c92b03f8f43f67ef366"
+    },
+    {
+      "original": "Meshy_AI_Retro_Server_Terminal_1007204853_texture_fbx/Meshy_AI_Retro_Server_Terminal_1007204853_texture_roughness.png",
+      "file": "RetroServerTerminal_Roughness.png",
+      "bytes": 1179948,
+      "sha256": "38aad94231fdb15ec9a356233a3f9e8ef6062130a28b8cf2c9c6d6a0ade59797"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Retro_Server_Terminal_1007204853_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level2/RetroServerTerminal.zip"
+}

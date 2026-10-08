@@ -1,0 +1,39 @@
+{
+  "name": "BlueCrate",
+  "archive": "BlueCrate.zip",
+  "archive_sha256": "c0dada4184b2d5dfbcb21754ea51d67b1610880217f24767a2940733fcf3df18",
+  "files": [
+    {
+      "original": "Meshy_AI_Blue_Crate_1008205039_texture_fbx/Meshy_AI_Blue_Crate_1008205039_texture.fbx",
+      "file": "BlueCrate.fbx",
+      "bytes": 28635500,
+      "sha256": "c84797f55fead22c0eec09f0eb5f49495be1f946cb11c65f247467f5043b7491"
+    },
+    {
+      "original": "Meshy_AI_Blue_Crate_1008205039_texture_fbx/Meshy_AI_Blue_Crate_1008205039_texture.png",
+      "file": "BlueCrate_BaseColor.png",
+      "bytes": 5367942,
+      "sha256": "51f1e9cdad807e6ed68ce76be089d52d4990cc6d056f2656b6f2dd1e8be9993f"
+    },
+    {
+      "original": "Meshy_AI_Blue_Crate_1008205039_texture_fbx/Meshy_AI_Blue_Crate_1008205039_texture_metallic.png",
+      "file": "BlueCrate_Metallic.png",
+      "bytes": 1260295,
+      "sha256": "ee855585c5ea40f10bb07a574b783924a4ddb52f96f20776dbe87916bf2c7a9d"
+    },
+    {
+      "original": "Meshy_AI_Blue_Crate_1008205039_texture_fbx/Meshy_AI_Blue_Crate_1008205039_texture_normal.png",
+      "file": "BlueCrate_Normal.png",
+      "bytes": 4098475,
+      "sha256": "3584169cee8bb7c9cc661cb95f8836ea0da7a32857514fbdde6685f156aa7d77"
+    },
+    {
+      "original": "Meshy_AI_Blue_Crate_1008205039_texture_fbx/Meshy_AI_Blue_Crate_1008205039_texture_roughness.png",
+      "file": "BlueCrate_Roughness.png",
+      "bytes": 1662616,
+      "sha256": "dbf656514f8ea9a5adb35409046feb0b8ace21ba29170421e851a8bef8e3e9cb"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Blue_Crate_1008205039_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level3/props/BlueCrate.zip"
+}

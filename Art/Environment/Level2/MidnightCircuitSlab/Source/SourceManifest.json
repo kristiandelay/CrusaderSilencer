@@ -1,0 +1,39 @@
+{
+  "name": "MidnightCircuitSlab",
+  "archive": "MidnightCircuitSlab.zip",
+  "archive_sha256": "7cf929bab376ac47507df23705aa082c2c2825df638709371a652b1c619d6e98",
+  "files": [
+    {
+      "original": "Meshy_AI_Midnight_Circuit_Slab_1007205047_texture_fbx/Meshy_AI_Midnight_Circuit_Slab_1007205047_texture.fbx",
+      "file": "MidnightCircuitSlab.fbx",
+      "bytes": 23237660,
+      "sha256": "0d57f00ba2efa9cc8247bcb1e5983e77ae3faf15ceb9d312df22e97ebccb375f"
+    },
+    {
+      "original": "Meshy_AI_Midnight_Circuit_Slab_1007205047_texture_fbx/Meshy_AI_Midnight_Circuit_Slab_1007205047_texture.png",
+      "file": "MidnightCircuitSlab_BaseColor.png",
+      "bytes": 4424589,
+      "sha256": "a402bea72af36e65c3cee7654d6b9b7e60355534f47a8a73fe7ae73234543c04"
+    },
+    {
+      "original": "Meshy_AI_Midnight_Circuit_Slab_1007205047_texture_fbx/Meshy_AI_Midnight_Circuit_Slab_1007205047_texture_metallic.png",
+      "file": "MidnightCircuitSlab_Metallic.png",
+      "bytes": 88727,
+      "sha256": "732484fd68be0a63a2c40b55990e6094ad5f429ecfb92d4bfb8520df01d843e2"
+    },
+    {
+      "original": "Meshy_AI_Midnight_Circuit_Slab_1007205047_texture_fbx/Meshy_AI_Midnight_Circuit_Slab_1007205047_texture_normal.png",
+      "file": "MidnightCircuitSlab_Normal.png",
+      "bytes": 3551359,
+      "sha256": "0c0732307ebeaaa977314fe5719885dcad560e1912d5966c7657cc831b6a3a88"
+    },
+    {
+      "original": "Meshy_AI_Midnight_Circuit_Slab_1007205047_texture_fbx/Meshy_AI_Midnight_Circuit_Slab_1007205047_texture_roughness.png",
+      "file": "MidnightCircuitSlab_Roughness.png",
+      "bytes": 1275698,
+      "sha256": "625e584e0dc60d8f1a3358ea4cb982feb1cd5d6070de4c977f10e48eae5668bd"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Midnight_Circuit_Slab_1007205047_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level2/MidnightCircuitSlab.zip"
+}

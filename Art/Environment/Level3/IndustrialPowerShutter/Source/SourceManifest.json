@@ -1,0 +1,39 @@
+{
+  "name": "IndustrialPowerShutter",
+  "archive": "IndustrialPowerShutter.zip",
+  "archive_sha256": "d51064fa1fa75f5346ec6122d8ad2c0ff92ca50bab532f9256471a7fe3c45e87",
+  "files": [
+    {
+      "original": "Meshy_AI_Industrial_Power_Shut_1008201724_texture_fbx/Meshy_AI_Industrial_Power_Shut_1008201724_texture.fbx",
+      "file": "IndustrialPowerShutter.fbx",
+      "bytes": 19632300,
+      "sha256": "d2308d61501bedb303cbb65de55aabe66c9c1cbccaee8efc2f611b84cc16c743"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Power_Shut_1008201724_texture_fbx/Meshy_AI_Industrial_Power_Shut_1008201724_texture.png",
+      "file": "IndustrialPowerShutter_BaseColor.png",
+      "bytes": 5385845,
+      "sha256": "a873680229ee695cf1bee9bed4c3acfc6247a7ce551e8da66726e3049a624364"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Power_Shut_1008201724_texture_fbx/Meshy_AI_Industrial_Power_Shut_1008201724_texture_metallic.png",
+      "file": "IndustrialPowerShutter_Metallic.png",
+      "bytes": 789291,
+      "sha256": "4677cc24645b2792266ff7c5d7aebbe7c59e4b5b7ab7f845e39bac784703085b"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Power_Shut_1008201724_texture_fbx/Meshy_AI_Industrial_Power_Shut_1008201724_texture_normal.png",
+      "file": "IndustrialPowerShutter_Normal.png",
+      "bytes": 5107244,
+      "sha256": "29691521ea7a4b20a2ef324bd97a94bc19dfbcdbbbae32ee76b91072f75449c6"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Power_Shut_1008201724_texture_fbx/Meshy_AI_Industrial_Power_Shut_1008201724_texture_roughness.png",
+      "file": "IndustrialPowerShutter_Roughness.png",
+      "bytes": 1642208,
+      "sha256": "d2cf2c1f6a27ec95518e8292d0a878bd03a565a34534853a782893463cdf0b91"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Industrial_Power_Shut_1008201724_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level3/IndustrialPowerShutter.zip"
+}

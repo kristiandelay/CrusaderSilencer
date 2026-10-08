@@ -1,0 +1,39 @@
+{
+  "name": "ArmoredSentinel",
+  "archive": "ArmoredSentinel.zip",
+  "archive_sha256": "0ca1c4793072f589f0dfb55bb644a7048a204cba50712de521090834f63d045c",
+  "files": [
+    {
+      "original": "Meshy_AI_Armored_Sentinel_1007191946_texture_fbx/Meshy_AI_Armored_Sentinel_1007191946_texture.fbx",
+      "file": "ArmoredSentinel.fbx",
+      "bytes": 73506716,
+      "sha256": "bde1f31d3a506c717158092725b90cdb45570f4a15d3e4a3d830feee48db7b85"
+    },
+    {
+      "original": "Meshy_AI_Armored_Sentinel_1007191946_texture_fbx/Meshy_AI_Armored_Sentinel_1007191946_texture.png",
+      "file": "ArmoredSentinel_BaseColor.png",
+      "bytes": 5900352,
+      "sha256": "03fcdfaf24809dc6429b6654c6db4e27a923d56f80e7793cf27dd71ba1864cd4"
+    },
+    {
+      "original": "Meshy_AI_Armored_Sentinel_1007191946_texture_fbx/Meshy_AI_Armored_Sentinel_1007191946_texture_metallic.png",
+      "file": "ArmoredSentinel_Metallic.png",
+      "bytes": 237079,
+      "sha256": "d526bcf10e4d3e5cc456bec5efdc2e464ce51c2a31753ec5be0f3a92e3d85b51"
+    },
+    {
+      "original": "Meshy_AI_Armored_Sentinel_1007191946_texture_fbx/Meshy_AI_Armored_Sentinel_1007191946_texture_normal.png",
+      "file": "ArmoredSentinel_Normal.png",
+      "bytes": 4873447,
+      "sha256": "c3317b7f25e0facbaa34788f9d1dc1333bc5241cab73321d993755011a4d2ef6"
+    },
+    {
+      "original": "Meshy_AI_Armored_Sentinel_1007191946_texture_fbx/Meshy_AI_Armored_Sentinel_1007191946_texture_roughness.png",
+      "file": "ArmoredSentinel_Roughness.png",
+      "bytes": 1593869,
+      "sha256": "cd3f104673630519cd2b8d16bb601928be191c1bbfa6ab71cdac0c6296bee0cd"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Armored_Sentinel_1007191946_texture_fbx.zip",
+  "archive_path": "mockups/Guards/ArmoredSentinel.zip"
+}

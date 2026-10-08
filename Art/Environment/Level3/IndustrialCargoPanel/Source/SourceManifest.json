@@ -1,0 +1,39 @@
+{
+  "name": "IndustrialCargoPanel",
+  "archive": "IndustrialCargoPanel.zip",
+  "archive_sha256": "64b00aa205bdad25c6bc6410d8dd06771cfa57c8db3e243c3552718cb850d61a",
+  "files": [
+    {
+      "original": "Meshy_AI_Industrial_Cargo_Pane_1008201807_texture_fbx/Meshy_AI_Industrial_Cargo_Pane_1008201807_texture.fbx",
+      "file": "IndustrialCargoPanel.fbx",
+      "bytes": 11865788,
+      "sha256": "0258f60961e722b08351d98136320b0f5f662047cb4f79b79d15f930336cc892"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Cargo_Pane_1008201807_texture_fbx/Meshy_AI_Industrial_Cargo_Pane_1008201807_texture.png",
+      "file": "IndustrialCargoPanel_BaseColor.png",
+      "bytes": 4229829,
+      "sha256": "d2c1005e2b401bdef06be10ebcad4bb88c86e7d074e9704833064f648b6a755e"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Cargo_Pane_1008201807_texture_fbx/Meshy_AI_Industrial_Cargo_Pane_1008201807_texture_metallic.png",
+      "file": "IndustrialCargoPanel_Metallic.png",
+      "bytes": 154966,
+      "sha256": "8ad8e798b5a25e146268b5769d129d60c5049e353817e6e73dba00a8f991106c"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Cargo_Pane_1008201807_texture_fbx/Meshy_AI_Industrial_Cargo_Pane_1008201807_texture_normal.png",
+      "file": "IndustrialCargoPanel_Normal.png",
+      "bytes": 3664752,
+      "sha256": "3e197b6f6bde9eefd609f65b8708c9e8659c6d1589270ba5144dac1e8a85df08"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Cargo_Pane_1008201807_texture_fbx/Meshy_AI_Industrial_Cargo_Pane_1008201807_texture_roughness.png",
+      "file": "IndustrialCargoPanel_Roughness.png",
+      "bytes": 1412684,
+      "sha256": "124b3f3bb58a6219df017011b56d37af8e590e03f5eac8979d3cf32de0fef32d"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Industrial_Cargo_Pane_1008201807_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level3/IndustrialCargoPanel.zip"
+}

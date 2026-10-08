@@ -1,0 +1,39 @@
+{
+  "name": "MarsToolLocker",
+  "archive": "MarsToolLocker.zip",
+  "archive_sha256": "aaf0c333fbd30ef3a0f704bba6146623ab6e53e725f7c47b74dc740904ed78ec",
+  "files": [
+    {
+      "original": "Meshy_AI_Mars_Tool_Locker_1008205403_texture_fbx/Meshy_AI_Mars_Tool_Locker_1008205403_texture.fbx",
+      "file": "MarsToolLocker.fbx",
+      "bytes": 42842284,
+      "sha256": "dd8f227a0a743abbb0f5e790c2288c4c1b554d92a0253c0d11b0f7c1b527bbb8"
+    },
+    {
+      "original": "Meshy_AI_Mars_Tool_Locker_1008205403_texture_fbx/Meshy_AI_Mars_Tool_Locker_1008205403_texture.png",
+      "file": "MarsToolLocker_BaseColor.png",
+      "bytes": 5350839,
+      "sha256": "65ee6648f42aaf8994f7f43dbe56f26d90642ce8219639951747eec51f4fa6a0"
+    },
+    {
+      "original": "Meshy_AI_Mars_Tool_Locker_1008205403_texture_fbx/Meshy_AI_Mars_Tool_Locker_1008205403_texture_metallic.png",
+      "file": "MarsToolLocker_Metallic.png",
+      "bytes": 199103,
+      "sha256": "fff4702272cb125434197ed849dab7328e2e06d8bcfb63dbd27aba329e20008c"
+    },
+    {
+      "original": "Meshy_AI_Mars_Tool_Locker_1008205403_texture_fbx/Meshy_AI_Mars_Tool_Locker_1008205403_texture_normal.png",
+      "file": "MarsToolLocker_Normal.png",
+      "bytes": 4951237,
+      "sha256": "7a280d5e0980e14013859057edc92803b2e768b2f9fca6edf411e72b4ac3b48c"
+    },
+    {
+      "original": "Meshy_AI_Mars_Tool_Locker_1008205403_texture_fbx/Meshy_AI_Mars_Tool_Locker_1008205403_texture_roughness.png",
+      "file": "MarsToolLocker_Roughness.png",
+      "bytes": 1608804,
+      "sha256": "e312d25c9688752c94e00434691ce83e6f4f1ae6fd54df67b1d082163607d69d"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Mars_Tool_Locker_1008205403_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level3/props/MarsToolLocker.zip"
+}

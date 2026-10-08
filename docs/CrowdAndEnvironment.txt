@@ -8,7 +8,20 @@ local destinations, pause, and have a 28 percent chance at each area-change
 check to visit a neighbour. Home areas, connections, radii, speeds, loadouts
 and visual choices are editable on the CrowdAgent component and crowd areas.
 
-NPCs inherit B_CRTraversalPawn. CRCrowdController drives the same Lyra ability,
+Six mechanical robots also use these crowd areas: four outdoors and two in
+the facility. They share patrol, avoidance, sensing and tactical movement, but
+shoot only after damage or a directed near miss. Their native rigid gait,
+mounted laser weapons and shutdown lifecycle are described in RobotRigs.txt.
+
+The second control-room building adds three guards and seven civilians, each
+using a distinct new visual. Nine new tethers connect its lobby, operations,
+command, service and storage areas to Depot through two wide outside paths.
+The traversal level now has 28 human NPCs plus the six robots. The original
+facility, its six residents and the user's fitted containment posts remain.
+Level2 adds 19 meshes (52 environment models total); the original 33-model
+gallery remains unchanged. See ControlRoomMockup.txt for the new building.
+
+Human NPCs inherit B_CRTraversalPawn. CRCrowdController drives the same Lyra ability,
 inventory, equipment, GASP animation, sliding and physics components as players.
 Detour crowd following provides obstacle avoidance and agent separation.
 Players register as passive crowd agents so NPCs can steer around them.
@@ -30,7 +43,7 @@ Civilians flee nearby gunfire and damage, choosing reachable positions farther
 from the threat. They calm down after combat noise stops. Dead NPCs use the
 shared combat ragdoll and respawn with their role and a new loadout/appearance.
 
-Both roles can jump, slide, hurdle, mantle, climb and vault. Parkour uses the
+Both human roles can jump, slide, hurdle, mantle, climb and vault. Parkour uses the
 player's obstacle checks and motion-matched montages; weapons are stowed during
 the action and restored afterward. CRCrowdTraversalLink connects navmesh edges
 to these actions. Four links are authored on the original gym obstacles. New

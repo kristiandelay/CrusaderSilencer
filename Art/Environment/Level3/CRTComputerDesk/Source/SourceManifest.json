@@ -1,0 +1,39 @@
+{
+  "name": "CRTComputerDesk",
+  "archive": "CRTComputerDesk.zip",
+  "archive_sha256": "46f65cb4442eca128e80137b88adcec9d8c789bb5be0e1f34f1491cba4bc52d5",
+  "files": [
+    {
+      "original": "Meshy_AI_CRT_Computer_Desk_1008204726_texture_fbx/Meshy_AI_CRT_Computer_Desk_1008204726_texture.fbx",
+      "file": "CRTComputerDesk.fbx",
+      "bytes": 25756332,
+      "sha256": "7e164aa803664adc9390ca91c331275e71c70a1c1d8967bf5c556a4096dcdfb2"
+    },
+    {
+      "original": "Meshy_AI_CRT_Computer_Desk_1008204726_texture_fbx/Meshy_AI_CRT_Computer_Desk_1008204726_texture.png",
+      "file": "CRTComputerDesk_BaseColor.png",
+      "bytes": 4762932,
+      "sha256": "849c6c4b0dd0bdcf9c317cfb7823b659cca1c020ef5aa2b86c3d5c14515220d9"
+    },
+    {
+      "original": "Meshy_AI_CRT_Computer_Desk_1008204726_texture_fbx/Meshy_AI_CRT_Computer_Desk_1008204726_texture_metallic.png",
+      "file": "CRTComputerDesk_Metallic.png",
+      "bytes": 145555,
+      "sha256": "ecfe2832afb0a1dd2aeeb58fa8f99d36165296b723841d0de8684289faf3ef3a"
+    },
+    {
+      "original": "Meshy_AI_CRT_Computer_Desk_1008204726_texture_fbx/Meshy_AI_CRT_Computer_Desk_1008204726_texture_normal.png",
+      "file": "CRTComputerDesk_Normal.png",
+      "bytes": 4148572,
+      "sha256": "e4516c7ebc7c14c33abc5308bd4daff27bb9b3cb01674129951e8f4c9a8920d7"
+    },
+    {
+      "original": "Meshy_AI_CRT_Computer_Desk_1008204726_texture_fbx/Meshy_AI_CRT_Computer_Desk_1008204726_texture_roughness.png",
+      "file": "CRTComputerDesk_Roughness.png",
+      "bytes": 1472831,
+      "sha256": "6c2d1eb799787cba3edf24d613abdece7b1f93319b520c81f9a9e476ced90248"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_CRT_Computer_Desk_1008204726_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level3/props/CRTComputerDesk.zip"
+}

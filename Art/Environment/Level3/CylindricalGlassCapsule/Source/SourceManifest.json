@@ -1,0 +1,39 @@
+{
+  "name": "CylindricalGlassCapsule",
+  "archive": "CylindricalGlassCapsule.zip",
+  "archive_sha256": "0aac790496d1b4ef24eeb10d0f0a4749f716cd60735605af63c5f3c188de69b7",
+  "files": [
+    {
+      "original": "Meshy_AI_Cylindrical_Glass_Cap_1008201357_texture_fbx/Meshy_AI_Cylindrical_Glass_Cap_1008201357_texture.fbx",
+      "file": "CylindricalGlassCapsule.fbx",
+      "bytes": 13039164,
+      "sha256": "6ce3546913533bf702ad387486fb58fb12556a43a6eb2106d5113a581b8cb84b"
+    },
+    {
+      "original": "Meshy_AI_Cylindrical_Glass_Cap_1008201357_texture_fbx/Meshy_AI_Cylindrical_Glass_Cap_1008201357_texture.png",
+      "file": "CylindricalGlassCapsule_BaseColor.png",
+      "bytes": 3883571,
+      "sha256": "d91cc031841835ae85985ca1dbf6752a2d32c9d0f05a4213f69051373ee007b9"
+    },
+    {
+      "original": "Meshy_AI_Cylindrical_Glass_Cap_1008201357_texture_fbx/Meshy_AI_Cylindrical_Glass_Cap_1008201357_texture_metallic.png",
+      "file": "CylindricalGlassCapsule_Metallic.png",
+      "bytes": 1174156,
+      "sha256": "0274994012f820a1691ccee23f5745f9f7e4e5a6d158519d4e7c90ef20ca4fee"
+    },
+    {
+      "original": "Meshy_AI_Cylindrical_Glass_Cap_1008201357_texture_fbx/Meshy_AI_Cylindrical_Glass_Cap_1008201357_texture_normal.png",
+      "file": "CylindricalGlassCapsule_Normal.png",
+      "bytes": 2788162,
+      "sha256": "2ce2152768925754ebce8ab227c65af7fbb06159a58f3a6902c81715fd584c71"
+    },
+    {
+      "original": "Meshy_AI_Cylindrical_Glass_Cap_1008201357_texture_fbx/Meshy_AI_Cylindrical_Glass_Cap_1008201357_texture_roughness.png",
+      "file": "CylindricalGlassCapsule_Roughness.png",
+      "bytes": 1112234,
+      "sha256": "547cd756ae2445c769df8fc0b1e150be95140dbf9a03937b75e1517032a48e86"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Cylindrical_Glass_Cap_1008201357_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level3/CylindricalGlassCapsule.zip"
+}

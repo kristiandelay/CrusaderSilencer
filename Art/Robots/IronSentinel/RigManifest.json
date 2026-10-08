@@ -1,0 +1,199 @@
+{
+  "name": "IronSentinel",
+  "rig_type": "three-link mechanical legs",
+  "parts": [
+    {
+      "name": "IronSentinel_Chassis",
+      "bone": "chassis",
+      "vertices": 101042,
+      "triangles": 202836
+    },
+    {
+      "name": "IronSentinel_foot_r",
+      "bone": "foot_r",
+      "vertices": 10710,
+      "triangles": 21468
+    },
+    {
+      "name": "IronSentinel_JointHousing_3_r",
+      "bone": "foot_r",
+      "vertices": 3474,
+      "triangles": 6936
+    },
+    {
+      "name": "IronSentinel_JointHousing_1_r",
+      "bone": "middle_leg_r",
+      "vertices": 4880,
+      "triangles": 9760
+    },
+    {
+      "name": "IronSentinel_JointHousing_0_r",
+      "bone": "upper_leg_r",
+      "vertices": 5778,
+      "triangles": 11572
+    },
+    {
+      "name": "IronSentinel_lower_leg_r",
+      "bone": "lower_leg_r",
+      "vertices": 13472,
+      "triangles": 27016
+    },
+    {
+      "name": "IronSentinel_middle_leg_r",
+      "bone": "middle_leg_r",
+      "vertices": 12026,
+      "triangles": 24124
+    },
+    {
+      "name": "IronSentinel_JointHousing_2_r",
+      "bone": "lower_leg_r",
+      "vertices": 3308,
+      "triangles": 6608
+    },
+    {
+      "name": "IronSentinel_upper_leg_r",
+      "bone": "upper_leg_r",
+      "vertices": 22230,
+      "triangles": 44640
+    },
+    {
+      "name": "IronSentinel_upper_leg_l",
+      "bone": "upper_leg_l",
+      "vertices": 22564,
+      "triangles": 45368
+    },
+    {
+      "name": "IronSentinel_JointHousing_0_l",
+      "bone": "upper_leg_l",
+      "vertices": 5472,
+      "triangles": 10968
+    },
+    {
+      "name": "IronSentinel_JointHousing_1_l",
+      "bone": "middle_leg_l",
+      "vertices": 4934,
+      "triangles": 9904
+    },
+    {
+      "name": "IronSentinel_middle_leg_l",
+      "bone": "middle_leg_l",
+      "vertices": 12068,
+      "triangles": 24196
+    },
+    {
+      "name": "IronSentinel_foot_l",
+      "bone": "foot_l",
+      "vertices": 10640,
+      "triangles": 21304
+    },
+    {
+      "name": "IronSentinel_JointHousing_2_l",
+      "bone": "lower_leg_l",
+      "vertices": 3632,
+      "triangles": 7276
+    },
+    {
+      "name": "IronSentinel_lower_leg_l",
+      "bone": "lower_leg_l",
+      "vertices": 13836,
+      "triangles": 27744
+    },
+    {
+      "name": "IronSentinel_JointHousing_3_l",
+      "bone": "foot_l",
+      "vertices": 3646,
+      "triangles": 7292
+    },
+    {
+      "name": "IronSentinel_Axle_0_l",
+      "bone": "upper_leg_l",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "IronSentinel_Axle_1_l",
+      "bone": "middle_leg_l",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "IronSentinel_Axle_2_l",
+      "bone": "lower_leg_l",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "IronSentinel_Axle_3_l",
+      "bone": "foot_l",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "IronSentinel_Piston_housing_l",
+      "bone": "piston_housing_l",
+      "vertices": 40,
+      "triangles": 76
+    },
+    {
+      "name": "IronSentinel_Piston_rod_l",
+      "bone": "piston_rod_l",
+      "vertices": 40,
+      "triangles": 76
+    },
+    {
+      "name": "IronSentinel_Axle_0_r",
+      "bone": "upper_leg_r",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "IronSentinel_Axle_1_r",
+      "bone": "middle_leg_r",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "IronSentinel_Axle_2_r",
+      "bone": "lower_leg_r",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "IronSentinel_Axle_3_r",
+      "bone": "foot_r",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "IronSentinel_Piston_housing_r",
+      "bone": "piston_housing_r",
+      "vertices": 40,
+      "triangles": 76
+    },
+    {
+      "name": "IronSentinel_Piston_rod_r",
+      "bone": "piston_rod_r",
+      "vertices": 40,
+      "triangles": 76
+    }
+  ],
+  "bones": [
+    "chassis",
+    "upper_leg_l",
+    "middle_leg_l",
+    "lower_leg_l",
+    "foot_l",
+    "piston_rod_l",
+    "piston_housing_l",
+    "upper_leg_r",
+    "middle_leg_r",
+    "lower_leg_r",
+    "foot_r",
+    "piston_rod_r",
+    "piston_housing_r"
+  ],
+  "closed_cut_faces": 10062,
+  "height_cm": 180,
+  "preview_action": "IronSentinel_JointCheck",
+  "has_hydraulic_constraints": true
+}

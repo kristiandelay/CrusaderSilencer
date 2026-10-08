@@ -1,6 +1,6 @@
 """Blender: consistent centimetres, floor pivots, named materials and UE exports."""
 import bpy
-import json
+import json,sys
 from pathlib import Path
 from mathutils import Vector
 
@@ -8,7 +8,9 @@ ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'Artifacts/Environment'
 OUT.mkdir(exist_ok=True,parents=True)
 records=json.loads((ROOT/'resources/EnvironmentModels.json').read_text())
-reports=[]
+selected=sys.argv[sys.argv.index('--')+1:] if '--' in sys.argv else []
+if selected:records=[r for r in records if r['name'] in selected or r['category'] in selected]
+reports=json.loads((OUT/'models.json').read_text()) if (OUT/'models.json').exists() else []
 for entry in records:
     name=entry['name'];folder=ROOT/'Art/Environment'/entry['category']/name
     bpy.ops.wm.read_factory_settings(use_empty=True)
@@ -64,6 +66,6 @@ for entry in records:
     scene.render.filepath=str(OUT/(name+'.png'))
     bpy.ops.render.render(write_still=True)
     mesh.data.calc_loop_triangles()
-    reports.append(dict(name=name,dimensions_cm=[round(v*100,2) for v in dims],triangles=len(mesh.data.loop_triangles),vertices=len(mesh.data.vertices)))
+    reports=[r for r in reports if r['name']!=name]+[dict(name=name,dimensions_cm=[round(v*100,2) for v in dims],triangles=len(mesh.data.loop_triangles),vertices=len(mesh.data.vertices))]
     (OUT/'models.json').write_text(json.dumps(reports,indent=2))
     print('ENVIRONMENT_READY',name,flush=True)

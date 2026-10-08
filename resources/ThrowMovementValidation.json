@@ -1,0 +1,441 @@
+{
+  "passed": true,
+  "validated_utc": "2026-10-08T02:13:22.063658+00:00",
+  "checks": {
+    "movement": [
+      {
+        "case": "aim_walk",
+        "keys": [
+          "W"
+        ],
+        "left": false,
+        "type": "<CRThrowableType.GRENADE: 0>",
+        "distance_cm": 350.45281482383325,
+        "direction_agreement": 1.0,
+        "foot_motion_cm": [
+          64.18388334435468,
+          62.24724103490244
+        ],
+        "preview_origin_error_cm": 0.0
+      },
+      {
+        "case": "aim_walk",
+        "keys": [
+          "W",
+          "D"
+        ],
+        "left": true,
+        "type": "<CRThrowableType.GRENADE: 0>",
+        "distance_cm": 342.6806199804269,
+        "direction_agreement": 1.0000000000000002,
+        "foot_motion_cm": [
+          84.69230593406428,
+          84.6767279014978
+        ],
+        "preview_origin_error_cm": 0.0
+      },
+      {
+        "case": "aim_walk",
+        "keys": [
+          "D"
+        ],
+        "left": false,
+        "type": "<CRThrowableType.SMOKE: 1>",
+        "distance_cm": 307.5963756602464,
+        "direction_agreement": 1.0,
+        "foot_motion_cm": [
+          91.95238335007454,
+          91.00385854175099
+        ],
+        "preview_origin_error_cm": 0.0
+      },
+      {
+        "case": "aim_walk",
+        "keys": [
+          "S",
+          "D"
+        ],
+        "left": true,
+        "type": "<CRThrowableType.SMOKE: 1>",
+        "distance_cm": 246.07587975449746,
+        "direction_agreement": 1.0,
+        "foot_motion_cm": [
+          73.7550130640251,
+          71.99734694596805
+        ],
+        "preview_origin_error_cm": 0.0
+      },
+      {
+        "case": "aim_walk",
+        "keys": [
+          "S"
+        ],
+        "left": false,
+        "type": "<CRThrowableType.GRENADE: 0>",
+        "distance_cm": 263.7887453227677,
+        "direction_agreement": 1.0,
+        "foot_motion_cm": [
+          68.63656275851582,
+          66.20025420593393
+        ],
+        "preview_origin_error_cm": 0.0
+      },
+      {
+        "case": "aim_walk",
+        "keys": [
+          "S",
+          "A"
+        ],
+        "left": true,
+        "type": "<CRThrowableType.GRENADE: 0>",
+        "distance_cm": 262.26473238094235,
+        "direction_agreement": 1.0000000000000002,
+        "foot_motion_cm": [
+          78.18079825234447,
+          76.56702002687807
+        ],
+        "preview_origin_error_cm": 0.0
+      },
+      {
+        "case": "aim_walk",
+        "keys": [
+          "A"
+        ],
+        "left": false,
+        "type": "<CRThrowableType.SMOKE: 1>",
+        "distance_cm": 282.2590019053723,
+        "direction_agreement": 1.0,
+        "foot_motion_cm": [
+          58.318636946194616,
+          56.82046450577251
+        ],
+        "preview_origin_error_cm": 0.0
+      },
+      {
+        "case": "aim_walk",
+        "keys": [
+          "W",
+          "A"
+        ],
+        "left": true,
+        "type": "<CRThrowableType.SMOKE: 1>",
+        "distance_cm": 382.249566488367,
+        "direction_agreement": 1.0,
+        "foot_motion_cm": [
+          83.91833739797764,
+          81.66567370126442
+        ],
+        "preview_origin_error_cm": 0.0
+      },
+      {
+        "case": "turn_swap_moving_release",
+        "left": false,
+        "current_origin_error_cm": 4.547473508864641e-13,
+        "stale_origin_error_cm": 98.70362617545591,
+        "travel_before_release_cm": 98.70362617545564,
+        "projectile_age_seconds": 0.027183599770069122
+      },
+      {
+        "case": "turn_swap_moving_release",
+        "left": true,
+        "current_origin_error_cm": 1.016845989170083e-12,
+        "stale_origin_error_cm": 106.89002970951233,
+        "travel_before_release_cm": 106.89002970951334,
+        "projectile_age_seconds": 0.025561198592185974
+      }
+    ],
+    "movement-network": [
+      {
+        "case": "aim_walk",
+        "keys": [
+          "W"
+        ],
+        "left": false,
+        "type": "<CRThrowableType.GRENADE: 0>",
+        "distance_cm": 460.0560558068537,
+        "direction_agreement": 1.0,
+        "foot_motion_cm": [
+          85.52756649744086,
+          82.85845520968257
+        ],
+        "preview_origin_error_cm": 0.0
+      },
+      {
+        "case": "aim_walk",
+        "keys": [
+          "W",
+          "D"
+        ],
+        "left": true,
+        "type": "<CRThrowableType.GRENADE: 0>",
+        "distance_cm": 337.0884655753187,
+        "direction_agreement": 1.0000000000000002,
+        "foot_motion_cm": [
+          85.58688974766761,
+          85.47434746050342
+        ],
+        "preview_origin_error_cm": 0.0
+      },
+      {
+        "case": "aim_walk",
+        "keys": [
+          "D"
+        ],
+        "left": false,
+        "type": "<CRThrowableType.SMOKE: 1>",
+        "distance_cm": 375.44273966741457,
+        "direction_agreement": 1.0,
+        "foot_motion_cm": [
+          89.17696077981576,
+          88.9866566754952
+        ],
+        "preview_origin_error_cm": 0.0
+      },
+      {
+        "case": "aim_walk",
+        "keys": [
+          "S",
+          "D"
+        ],
+        "left": true,
+        "type": "<CRThrowableType.SMOKE: 1>",
+        "distance_cm": 271.21698705413803,
+        "direction_agreement": 1.0,
+        "foot_motion_cm": [
+          73.94230375982798,
+          73.12612842830221
+        ],
+        "preview_origin_error_cm": 0.0
+      },
+      {
+        "case": "aim_walk",
+        "keys": [
+          "S"
+        ],
+        "left": false,
+        "type": "<CRThrowableType.GRENADE: 0>",
+        "distance_cm": 253.03580078452796,
+        "direction_agreement": 1.0,
+        "foot_motion_cm": [
+          69.24946247170016,
+          66.7102918536501
+        ],
+        "preview_origin_error_cm": 0.0
+      },
+      {
+        "case": "aim_walk",
+        "keys": [
+          "S",
+          "A"
+        ],
+        "left": true,
+        "type": "<CRThrowableType.GRENADE: 0>",
+        "distance_cm": 250.49460880327675,
+        "direction_agreement": 1.0000000000000002,
+        "foot_motion_cm": [
+          81.54117109914635,
+          79.84987810229616
+        ],
+        "preview_origin_error_cm": 0.0
+      },
+      {
+        "case": "aim_walk",
+        "keys": [
+          "A"
+        ],
+        "left": false,
+        "type": "<CRThrowableType.SMOKE: 1>",
+        "distance_cm": 270.4933036773582,
+        "direction_agreement": 1.0,
+        "foot_motion_cm": [
+          56.307199100253754,
+          54.54625077222075
+        ],
+        "preview_origin_error_cm": 0.0
+      },
+      {
+        "case": "aim_walk",
+        "keys": [
+          "W",
+          "A"
+        ],
+        "left": true,
+        "type": "<CRThrowableType.SMOKE: 1>",
+        "distance_cm": 381.74730341489214,
+        "direction_agreement": 1.0,
+        "foot_motion_cm": [
+          84.84982841254336,
+          82.45140453801206
+        ],
+        "preview_origin_error_cm": 0.0
+      },
+      {
+        "case": "turn_swap_moving_release",
+        "left": false,
+        "current_origin_error_cm": 0.001915107267614488,
+        "stale_origin_error_cm": 148.36593084661823,
+        "travel_before_release_cm": 148.36696341318626,
+        "projectile_age_seconds": 0.0502662006765604
+      },
+      {
+        "case": "turn_swap_moving_release",
+        "left": true,
+        "current_origin_error_cm": 0.001915107258873471,
+        "stale_origin_error_cm": 169.55184019708256,
+        "travel_before_release_cm": 169.55082613548998,
+        "projectile_age_seconds": 0.0539024043828249
+      }
+    ],
+    "shoulders": [
+      {
+        "type": "<CRThrowableType.GRENADE: 0>",
+        "left": false,
+        "swap_while_aiming": false,
+        "trajectory_side_cm": 23.99999999999951,
+        "impact_error_cm": 0.4313886779511693,
+        "release_locked": true,
+        "weapon_hand_restored": true
+      },
+      {
+        "type": "<CRThrowableType.GRENADE: 0>",
+        "left": true,
+        "swap_while_aiming": false,
+        "trajectory_side_cm": -24.000000000000252,
+        "impact_error_cm": 0.40088098783335935,
+        "release_locked": true,
+        "weapon_hand_restored": true
+      },
+      {
+        "type": "<CRThrowableType.GRENADE: 0>",
+        "left": false,
+        "swap_while_aiming": true,
+        "trajectory_side_cm": 23.99999999999951,
+        "impact_error_cm": 0.39690268119459415,
+        "release_locked": true,
+        "weapon_hand_restored": true
+      },
+      {
+        "type": "<CRThrowableType.GRENADE: 0>",
+        "left": true,
+        "swap_while_aiming": true,
+        "trajectory_side_cm": -24.000000000000252,
+        "impact_error_cm": 0.4269086278848203,
+        "release_locked": true,
+        "weapon_hand_restored": true
+      },
+      {
+        "type": "<CRThrowableType.SMOKE: 1>",
+        "left": false,
+        "swap_while_aiming": false,
+        "trajectory_side_cm": 23.99999999999951,
+        "impact_error_cm": 0.379690715083616,
+        "release_locked": true,
+        "weapon_hand_restored": true
+      },
+      {
+        "type": "<CRThrowableType.SMOKE: 1>",
+        "left": true,
+        "swap_while_aiming": false,
+        "trajectory_side_cm": -24.000000000000252,
+        "impact_error_cm": 0.3770290160004267,
+        "release_locked": true,
+        "weapon_hand_restored": true
+      },
+      {
+        "type": "<CRThrowableType.SMOKE: 1>",
+        "left": false,
+        "swap_while_aiming": true,
+        "trajectory_side_cm": 23.99999999999951,
+        "impact_error_cm": 0.39233998537073383,
+        "release_locked": true,
+        "weapon_hand_restored": true
+      },
+      {
+        "type": "<CRThrowableType.SMOKE: 1>",
+        "left": true,
+        "swap_while_aiming": true,
+        "trajectory_side_cm": -24.000000000000252,
+        "impact_error_cm": 0.3878809871033253,
+        "release_locked": true,
+        "weapon_hand_restored": true
+      },
+      {
+        "case": "cancel_after_hand_swap",
+        "no_extra_throw": true
+      }
+    ],
+    "standalone": [
+      {
+        "case": "standing_throw_aim_pose",
+        "pelvis_heights_cm": [
+          88.38417019219335,
+          84.65461232415235
+        ]
+      },
+      {
+        "case": "cancel_and_type_lock",
+        "remaining": 6
+      },
+      {
+        "case": "close_cover_cancels_release"
+      },
+      {
+        "case": "standing_throw_release_pose",
+        "pelvis_heights_cm": [
+          90.79280288343682,
+          87.01579353922207
+        ]
+      },
+      {
+        "case": "grenade_arc_bounce_fuse_damage_cover",
+        "arc_error_cm": 0.4140625,
+        "health_before": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "health_after": [
+          18.315292358398438,
+          100.0,
+          100.0
+        ],
+        "bounces": 16
+      },
+      {
+        "case": "smoke_fuse_and_sight_obstruction",
+        "duration": 12.0,
+        "remaining": 5
+      },
+      {
+        "case": "roll_weapon_visible_throw_blocked"
+      },
+      {
+        "case": "knockdown_cancels_without_consuming"
+      },
+      {
+        "case": "airborne_throw_blocked"
+      },
+      {
+        "case": "empty_inventory_blocked"
+      },
+      {
+        "case": "smoke_expiry_restores_sight"
+      }
+    ]
+  },
+  "build": "Artifacts/Throw/movement-build.log",
+  "scope": "Standalone and owning multiplayer client: eight movement directions, moving feet, aim hand, live trajectory, turning/hand swap, release without stopping and current-position launch. Existing stationary shoulder, throw, smoke, damage, interruption and armed-roll checks.",
+  "captures": [
+    "Artifacts/Throw/ThrowWalkingRight.png",
+    "Artifacts/Throw/ThrowWalkingLeft.png"
+  ],
+  "hashes": {
+    "src/Source/LyraGame/Crusader/CRThrowable.h": "105f7d5495639effeaac8014c4da8d39fef8294f7427069c80bf2575ab1e3371",
+    "src/Source/LyraGame/Crusader/CRThrowable.cpp": "cff6cf6e87edc417a643bfd492fa55d8484cf81ab0a04d91a6c5b47afed37a98",
+    "src/Source/LyraGame/Baseline/BaselineCharacterMovement.cpp": "fba6eb498f2264e4e8f49c9fe23fd39c9d0ffbd592734dbed7c4fb3007510ab5",
+    "src/Source/LyraGame/Baseline/BaselineEquipment.cpp": "5c4e52172fde67d8dbeb87e328ce374b20b4886bac16541ff6bef8810f137ed1",
+    "src/Source/LyraEditor/Crusader/CRBlueprintTools.cpp": "cf2f56d03efb7aa06246accb6b546fe2573d19528a38fb6cc0e1e7d102401df7",
+    "Scripts/Configure-Throw.py": "24b6276494400c4ff91843d7945912f06070d918dac82732abf706faf31c2a94",
+    "src/Content/Blueprints/SandboxCharacter_CMC_ABP.uasset": "8bc2c9e1529245ed3e78e3cd64b5085d9b7a6015d4181102bba891e1e60bfed0"
+  }
+}

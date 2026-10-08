@@ -1,0 +1,542 @@
+{
+  "passed": true,
+  "validated_utc": "2026-10-08T03:07:07.413947+00:00",
+  "checks": {
+    "Throw/slide.json": [
+      {
+        "case": "slide_throw",
+        "aim_before_slide": false,
+        "type": "<CRThrowableType.GRENADE: 0>",
+        "left": false,
+        "slide_pelvis_height_cm": [
+          21.601130674156696,
+          19.187237838821186
+        ],
+        "torso_yaw_degrees": 35.0,
+        "preview_error_cm": 7.20044880865225e-13,
+        "one_replicated_projectile": true
+      },
+      {
+        "case": "slide_throw",
+        "aim_before_slide": false,
+        "type": "<CRThrowableType.GRENADE: 0>",
+        "left": true,
+        "slide_pelvis_height_cm": [
+          21.618967506241,
+          19.204723274855887
+        ],
+        "torso_yaw_degrees": -35.0,
+        "preview_error_cm": 7.20044880865225e-13,
+        "one_replicated_projectile": true
+      },
+      {
+        "case": "slide_throw",
+        "aim_before_slide": false,
+        "type": "<CRThrowableType.SMOKE: 1>",
+        "left": false,
+        "slide_pelvis_height_cm": [
+          21.66423194547577,
+          19.24909597809967
+        ],
+        "torso_yaw_degrees": 35.0,
+        "preview_error_cm": 7.20044880865225e-13,
+        "one_replicated_projectile": true
+      },
+      {
+        "case": "slide_throw",
+        "aim_before_slide": false,
+        "type": "<CRThrowableType.SMOKE: 1>",
+        "left": true,
+        "slide_pelvis_height_cm": [
+          21.596465180211727,
+          19.182664257842276
+        ],
+        "torso_yaw_degrees": -35.0,
+        "preview_error_cm": 7.20044880865225e-13,
+        "one_replicated_projectile": true
+      },
+      {
+        "case": "slide_throw",
+        "aim_before_slide": true,
+        "type": "<CRThrowableType.GRENADE: 0>",
+        "left": false,
+        "slide_pelvis_height_cm": [
+          20.85273430038894,
+          18.453585312393653
+        ],
+        "torso_yaw_degrees": 35.0,
+        "preview_error_cm": 7.20044880865225e-13,
+        "one_replicated_projectile": true
+      },
+      {
+        "case": "slide_throw",
+        "aim_before_slide": true,
+        "type": "<CRThrowableType.GRENADE: 0>",
+        "left": true,
+        "slide_pelvis_height_cm": [
+          20.929284602433682,
+          18.528627528607487
+        ],
+        "torso_yaw_degrees": -35.0,
+        "preview_error_cm": 7.20044880865225e-13,
+        "one_replicated_projectile": true
+      },
+      {
+        "case": "slide_throw",
+        "aim_before_slide": true,
+        "type": "<CRThrowableType.SMOKE: 1>",
+        "left": false,
+        "slide_pelvis_height_cm": [
+          21.022047232496963,
+          18.61956268047274
+        ],
+        "torso_yaw_degrees": 35.0,
+        "preview_error_cm": 7.20044880865225e-13,
+        "one_replicated_projectile": true
+      },
+      {
+        "case": "slide_throw",
+        "aim_before_slide": true,
+        "type": "<CRThrowableType.SMOKE: 1>",
+        "left": true,
+        "slide_pelvis_height_cm": [
+          20.939467841273704,
+          18.538610151672014
+        ],
+        "torso_yaw_degrees": -35.0,
+        "preview_error_cm": 7.20044880865225e-13,
+        "one_replicated_projectile": true
+      },
+      {
+        "case": "cancel_preserves_slide",
+        "no_inventory_spent": true
+      },
+      {
+        "case": "aim_survives_slide_exit",
+        "one_release": true
+      }
+    ],
+    "Throw/slide-network.json": [
+      {
+        "case": "slide_throw",
+        "aim_before_slide": false,
+        "type": "<CRThrowableType.GRENADE: 0>",
+        "left": false,
+        "slide_pelvis_height_cm": [
+          21.664792846712906,
+          19.24964582925357
+        ],
+        "torso_yaw_degrees": 35.0,
+        "preview_error_cm": 7.20044880865225e-13,
+        "one_replicated_projectile": true
+      },
+      {
+        "case": "slide_throw",
+        "aim_before_slide": false,
+        "type": "<CRThrowableType.GRENADE: 0>",
+        "left": true,
+        "slide_pelvis_height_cm": [
+          21.675174618176396,
+          19.259823073732488
+        ],
+        "torso_yaw_degrees": -35.0,
+        "preview_error_cm": 7.20044880865225e-13,
+        "one_replicated_projectile": true
+      },
+      {
+        "case": "slide_throw",
+        "aim_before_slide": false,
+        "type": "<CRThrowableType.SMOKE: 1>",
+        "left": false,
+        "slide_pelvis_height_cm": [
+          21.4223376193165,
+          19.011967111985843
+        ],
+        "torso_yaw_degrees": 35.0,
+        "preview_error_cm": 7.20044880865225e-13,
+        "one_replicated_projectile": true
+      },
+      {
+        "case": "slide_throw",
+        "aim_before_slide": false,
+        "type": "<CRThrowableType.SMOKE: 1>",
+        "left": true,
+        "slide_pelvis_height_cm": [
+          21.660118556625633,
+          19.2450636254215
+        ],
+        "torso_yaw_degrees": -35.0,
+        "preview_error_cm": 7.20044880865225e-13,
+        "one_replicated_projectile": true
+      },
+      {
+        "case": "slide_throw",
+        "aim_before_slide": true,
+        "type": "<CRThrowableType.GRENADE: 0>",
+        "left": false,
+        "slide_pelvis_height_cm": [
+          21.172409716874267,
+          18.76696293575184
+        ],
+        "torso_yaw_degrees": 35.0,
+        "preview_error_cm": 7.20044880865225e-13,
+        "one_replicated_projectile": true
+      },
+      {
+        "case": "slide_throw",
+        "aim_before_slide": true,
+        "type": "<CRThrowableType.GRENADE: 0>",
+        "left": true,
+        "slide_pelvis_height_cm": [
+          21.207748257884976,
+          18.80160528678602
+        ],
+        "torso_yaw_degrees": -35.0,
+        "preview_error_cm": 7.20044880865225e-13,
+        "one_replicated_projectile": true
+      },
+      {
+        "case": "slide_throw",
+        "aim_before_slide": true,
+        "type": "<CRThrowableType.SMOKE: 1>",
+        "left": false,
+        "slide_pelvis_height_cm": [
+          21.08989485531452,
+          18.686073665342423
+        ],
+        "torso_yaw_degrees": 35.0,
+        "preview_error_cm": 7.20044880865225e-13,
+        "one_replicated_projectile": true
+      },
+      {
+        "case": "slide_throw",
+        "aim_before_slide": true,
+        "type": "<CRThrowableType.SMOKE: 1>",
+        "left": true,
+        "slide_pelvis_height_cm": [
+          21.148210825727404,
+          18.743240776948138
+        ],
+        "torso_yaw_degrees": -35.0,
+        "preview_error_cm": 7.20044880865225e-13,
+        "one_replicated_projectile": true
+      },
+      {
+        "case": "cancel_preserves_slide",
+        "no_inventory_spent": true
+      },
+      {
+        "case": "aim_survives_slide_exit",
+        "one_release": true
+      }
+    ],
+    "SlideCadence/standalone.json": [
+      {
+        "case": "stationary_crouch_toggle",
+        "passed": true
+      },
+      {
+        "case": "entry_spam_ignored",
+        "slide_entries": 1,
+        "initial_speed": 753.664306640625,
+        "speed_after": 630.1152954101562
+      },
+      {
+        "case": "recovery_spam_ignored",
+        "elapsed_seconds": 0.694810900837183
+      },
+      {
+        "case": "no_buffered_restart",
+        "passed": true
+      },
+      {
+        "case": "fresh_press_after_recovery",
+        "passed": true
+      },
+      {
+        "case": "physical_interrupt_during_entry",
+        "falling": true,
+        "passed": true
+      }
+    ],
+    "SlideCadence/network.json": [
+      {
+        "case": "stationary_crouch_toggle",
+        "passed": true
+      },
+      {
+        "case": "entry_spam_ignored",
+        "slide_entries": 1,
+        "initial_speed": 754.1375732421875,
+        "speed_after": 628.5562744140625
+      },
+      {
+        "case": "recovery_spam_ignored",
+        "elapsed_seconds": 0.719534806907177
+      },
+      {
+        "case": "no_buffered_restart",
+        "passed": true
+      },
+      {
+        "case": "fresh_press_after_recovery",
+        "passed": true
+      }
+    ],
+    "SlideCadence/combat.json": [
+      {
+        "weapon": "Rifle",
+        "left_shoulder": false,
+        "rounds_fired": 3,
+        "maximum_aim_error_before_recoil_degrees": 8.820788645491179,
+        "maximum_hand_error_cm": 2.367240469238676
+      },
+      {
+        "weapon": "Rifle",
+        "left_shoulder": true,
+        "rounds_fired": 3,
+        "maximum_aim_error_before_recoil_degrees": 3.1299960067577417,
+        "maximum_hand_error_cm": 1.476479004883755
+      },
+      {
+        "weapon": "Pistol",
+        "left_shoulder": false,
+        "rounds_fired": 1,
+        "maximum_aim_error_before_recoil_degrees": 11.837175496858007,
+        "maximum_hand_error_cm": 3.904600153735721
+      },
+      {
+        "weapon": "Pistol",
+        "left_shoulder": true,
+        "rounds_fired": 1,
+        "maximum_aim_error_before_recoil_degrees": 5.442735854485481,
+        "maximum_hand_error_cm": 4.13385188852293
+      },
+      {
+        "weapon": "Shotgun",
+        "left_shoulder": false,
+        "rounds_fired": 2,
+        "maximum_aim_error_before_recoil_degrees": 9.013714366334545,
+        "maximum_hand_error_cm": 2.1789558537499722
+      },
+      {
+        "weapon": "Shotgun",
+        "left_shoulder": true,
+        "rounds_fired": 2,
+        "maximum_aim_error_before_recoil_degrees": 2.6587315266388134,
+        "maximum_hand_error_cm": 1.4583716410707062
+      }
+    ],
+    "Throw/movement.json": [
+      {
+        "case": "aim_walk",
+        "keys": [
+          "W"
+        ],
+        "left": false,
+        "type": "<CRThrowableType.GRENADE: 0>",
+        "distance_cm": 354.0046892027285,
+        "direction_agreement": 1.0,
+        "foot_motion_cm": [
+          63.198843629633004,
+          61.621737704347986
+        ],
+        "preview_origin_error_cm": 0.0
+      },
+      {
+        "case": "aim_walk",
+        "keys": [
+          "W",
+          "D"
+        ],
+        "left": true,
+        "type": "<CRThrowableType.GRENADE: 0>",
+        "distance_cm": 359.64540925177397,
+        "direction_agreement": 1.0000000000000002,
+        "foot_motion_cm": [
+          85.21691934623227,
+          85.19845611507917
+        ],
+        "preview_origin_error_cm": 0.0
+      },
+      {
+        "case": "aim_walk",
+        "keys": [
+          "D"
+        ],
+        "left": false,
+        "type": "<CRThrowableType.SMOKE: 1>",
+        "distance_cm": 269.9323666371479,
+        "direction_agreement": 1.0,
+        "foot_motion_cm": [
+          91.64540765586281,
+          88.87082583661937
+        ],
+        "preview_origin_error_cm": 0.0
+      },
+      {
+        "case": "aim_walk",
+        "keys": [
+          "S",
+          "D"
+        ],
+        "left": true,
+        "type": "<CRThrowableType.SMOKE: 1>",
+        "distance_cm": 259.71523060983947,
+        "direction_agreement": 1.0000000000000002,
+        "foot_motion_cm": [
+          70.20616698933657,
+          69.05327471165764
+        ],
+        "preview_origin_error_cm": 0.0
+      },
+      {
+        "case": "aim_walk",
+        "keys": [
+          "S"
+        ],
+        "left": false,
+        "type": "<CRThrowableType.GRENADE: 0>",
+        "distance_cm": 242.57883863753068,
+        "direction_agreement": 1.0,
+        "foot_motion_cm": [
+          56.043298328803935,
+          53.80600286487082
+        ],
+        "preview_origin_error_cm": 0.0
+      },
+      {
+        "case": "aim_walk",
+        "keys": [
+          "S",
+          "A"
+        ],
+        "left": true,
+        "type": "<CRThrowableType.GRENADE: 0>",
+        "distance_cm": 243.78263304375068,
+        "direction_agreement": 1.0000000000000002,
+        "foot_motion_cm": [
+          83.82692797904718,
+          82.02250307355634
+        ],
+        "preview_origin_error_cm": 0.0
+      },
+      {
+        "case": "aim_walk",
+        "keys": [
+          "A"
+        ],
+        "left": false,
+        "type": "<CRThrowableType.SMOKE: 1>",
+        "distance_cm": 285.62448897222885,
+        "direction_agreement": 1.0,
+        "foot_motion_cm": [
+          57.69642543977096,
+          56.32997180090504
+        ],
+        "preview_origin_error_cm": 0.0
+      },
+      {
+        "case": "aim_walk",
+        "keys": [
+          "W",
+          "A"
+        ],
+        "left": true,
+        "type": "<CRThrowableType.SMOKE: 1>",
+        "distance_cm": 339.67829170902723,
+        "direction_agreement": 1.0,
+        "foot_motion_cm": [
+          60.93933253434057,
+          60.197126463522444
+        ],
+        "preview_origin_error_cm": 0.0
+      },
+      {
+        "case": "turn_swap_moving_release",
+        "left": false,
+        "current_origin_error_cm": 1.016845989170083e-12,
+        "stale_origin_error_cm": 105.36862593779738,
+        "travel_before_release_cm": 105.36862593779637,
+        "projectile_age_seconds": 0.027874600142240524
+      },
+      {
+        "case": "turn_swap_moving_release",
+        "left": true,
+        "current_origin_error_cm": 2.842170943040401e-14,
+        "stale_origin_error_cm": 108.07124477306182,
+        "travel_before_release_cm": 108.07124477306182,
+        "projectile_age_seconds": 0.02784309908747673
+      }
+    ],
+    "Throw/standalone.json": [
+      {
+        "case": "standing_throw_aim_pose",
+        "pelvis_heights_cm": [
+          88.40809574216618,
+          84.6780665267634
+        ]
+      },
+      {
+        "case": "cancel_and_type_lock",
+        "remaining": 6
+      },
+      {
+        "case": "close_cover_cancels_release"
+      },
+      {
+        "case": "standing_throw_release_pose",
+        "pelvis_heights_cm": [
+          90.79310939137406,
+          87.01609400877325
+        ]
+      },
+      {
+        "case": "grenade_arc_bounce_fuse_damage_cover",
+        "arc_error_cm": 0.453125,
+        "health_before": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "health_after": [
+          18.315017700195312,
+          100.0,
+          100.0
+        ],
+        "bounces": 8
+      },
+      {
+        "case": "smoke_fuse_and_sight_obstruction",
+        "duration": 12.0,
+        "remaining": 5
+      },
+      {
+        "case": "roll_weapon_visible_throw_blocked"
+      },
+      {
+        "case": "knockdown_cancels_without_consuming"
+      },
+      {
+        "case": "airborne_throw_blocked"
+      },
+      {
+        "case": "empty_inventory_blocked"
+      },
+      {
+        "case": "smoke_expiry_restores_sight"
+      }
+    ]
+  },
+  "build": "Artifacts/Throw/slide-build.log",
+  "scope": "Standalone and owning network client: aim before/during slide, grenade/smoke, both hands, shoulder swap, sideways torso aim, slide leg pose, one replicated release, cancel while sliding and aim through slide exit. Slide cadence/prediction, firearm sliding, walking throws and interruption regression checks.",
+  "hashes": {
+    "src/Source/LyraGame/Crusader/CRThrowable.cpp": "27587a7d772bf2182ed5c4c4f14252ab90a3d167707209122cfb7105561c48c2",
+    "src/Source/LyraGame/Crusader/CRTraversalCharacter.cpp": "731243c68e97f61e76a9c4c513cdc8e0a700466a2a0aae5d39d47e36d715594e",
+    "src/Source/LyraGame/Baseline/BaselineCharacterMovement.cpp": "201669caa9877379400cfc86121236be3e6dffbd9a23525bbfcbb8fd91ffe816",
+    "src/Source/LyraGame/Baseline/BaselinePhysicalInteraction.cpp": "91aa82279fff6d84a8791c9f527423e86ebee75b3765bb727725bd830bedaf06",
+    "src/Source/LyraEditor/Crusader/CRBlueprintTools.cpp": "c3874d9605025621af2e026181ed0507b5e4efb800f90ddd280d487bc394f53f",
+    "Scripts/Configure-Throw.py": "2c8fdd91467d769dd839b9abdafc2d5c0635d75167e6a5fa9129dacfd89b4f71",
+    "src/Content/Blueprints/SandboxCharacter_CMC_ABP.uasset": "e39f0f16845512d29600424da714cddaa21cc99fc6b11507489915b5014c8e89"
+  }
+}

@@ -21,6 +21,8 @@
 #include "GameFramework/Character.h"
 #include "Net/UnrealNetwork.h"
 #include "NativeGameplayTags.h"
+#include "Crusader/CRRoll.h"
+#include "Crusader/CRThrowable.h"
 #include "Weapons/LyraWeaponStateComponent.h"
 #include "Character/LyraHealthComponent.h"
 
@@ -157,10 +159,16 @@ void UBaselineEquipmentComponent::GetLifetimeReplicatedProps(TArray<FLifetimePro
 
 void UBaselineEquipmentComponent::ToggleShoulder()
 {
-    if (AreHandsBusy() || IsChangingShoulder()) return;
+    if (!CanChangeShoulder()) return;
     const bool bLeft = !bLeftShoulder;
     SetShoulder(bLeft);
     if (!GetOwner()->HasAuthority()) ServerSetShoulder(bLeft);
+}
+
+bool UBaselineEquipmentComponent::CanChangeShoulder() const
+{
+    const auto* Throwable=GetOwner()->FindComponentByClass<UCRThrowableComponent>();
+    return !IsChangingShoulder() && (!AreHandsBusy() || (Throwable && Throwable->CanSwapShoulder()));
 }
 
 void UBaselineEquipmentComponent::SetShoulder(bool bLeft)
@@ -174,6 +182,7 @@ void UBaselineEquipmentComponent::SetShoulder(bool bLeft)
 void UBaselineEquipmentComponent::OnRep_Shoulder()
 {
     ShoulderAge = 0.f;
+    if (auto* Throwable=GetOwner()->FindComponentByClass<UCRThrowableComponent>()) Throwable->ShoulderChanged();
     if (auto* ASC = UAbilitySystemGlobals::GetAbilitySystemComponentFromActor(GetOwner()))
     {
         ASC->SetLooseGameplayTagCount(TAG_Baseline_ChangingShoulder, 1);
@@ -184,7 +193,7 @@ void UBaselineEquipmentComponent::OnRep_Shoulder()
 
 void UBaselineEquipmentComponent::ServerSetShoulder_Implementation(bool bLeft)
 {
-    if (!AreHandsBusy() && !IsChangingShoulder()) SetShoulder(bLeft);
+    if (CanChangeShoulder()) SetShoulder(bLeft);
     ClientConfirmShoulder(bLeftShoulder);
 }
 
@@ -424,6 +433,8 @@ bool UBaselineEquipmentComponent::AreHandsBusy() const
 {
     const ACharacter* Character = Cast<ACharacter>(GetOwner());
     if (!Character) return false;
+    if (const auto* Roll=Character->FindComponentByClass<UCRRollComponent>();Roll && Roll->IsRolling()) return true;
+    if (const auto* Throwable=Character->FindComponentByClass<UCRThrowableComponent>();Throwable && Throwable->IsBusy()) return true;
     if (const auto* Health = ULyraHealthComponent::FindHealthComponent(Character))
         if (Health->IsDeadOrDying()) return true;
     if (const auto* Physical = Character->FindComponentByClass<UBaselinePhysicalInteractionComponent>())
@@ -434,6 +445,15 @@ bool UBaselineEquipmentComponent::AreHandsBusy() const
     // Sliding keeps both hands available for the weapon. Other source montages
     // (vaults, mantles, climbs and smart-object actions) put it away completely.
     return Montage && (!TraversalCharacter || !TraversalCharacter->IsSlideMontage(Montage));
+}
+
+bool UBaselineEquipmentComponent::ShouldHideWeapon() const
+{
+    const auto* Character = Cast<ACRTraversalCharacter>(GetOwner());
+    const auto* Health = ULyraHealthComponent::FindHealthComponent(GetOwner());
+    if (Character && Character->Roll && Character->Roll->IsRolling()
+        && !Character->PhysicalInteraction->IsBusy() && (!Health || !Health->IsDeadOrDying())) return false;
+    return AreHandsBusy();
 }
 
 void UBaselineEquipmentComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
@@ -449,13 +469,14 @@ void UBaselineEquipmentComponent::TickComponent(float DeltaTime, ELevelTick Tick
     if (!Character || !Manager || !Mesh || !AnimationMesh) return;
     if (Character->HasAuthority()) ReplicatedAimRotation = Character->GetBaseAimRotation();
     const bool bBusy = AreHandsBusy();
+    const bool bHideWeapon = ShouldHideWeapon();
     if (Character->HasAuthority() || Character->IsLocallyControlled())
         bWeaponReady = !bBusy && Manager->GetFirstInstanceOfType<UBaselineWeaponInstance>()
             && (bAimRequested || bFireRequested || GetWorld()->GetTimeSeconds() < FireReadyUntil);
     // Feed the same stance to GASP on owners and simulated proxies. Its existing
     // motion-matched turn-in-place poses then move the feet during aim or fire.
     if (auto* TraversalCharacter = Cast<ACRTraversalCharacter>(Character))
-        TraversalCharacter->SetWeaponReadyForAnimation(bWeaponReady);
+        TraversalCharacter->SetWeaponReadyForAnimation(bWeaponReady || TraversalCharacter->Throwable->IsBusy());
     if (auto* ASC = Cast<ULyraAbilitySystemComponent>(UAbilitySystemGlobals::GetAbilitySystemComponentFromActor(GetOwner())))
         {
             // Weapon GAS montages belong on Manny. GASP traversal montages still run
@@ -479,12 +500,12 @@ void UBaselineEquipmentComponent::TickComponent(float DeltaTime, ELevelTick Tick
     if (auto* Weapon = Manager->GetFirstInstanceOfType<UBaselineWeaponInstance>())
     {
         Weapon->Tick(DeltaTime);
-        if (bWasHandsBusy && !bBusy && Weapon->WeaponEquipMontage)
+        if (bWasWeaponHidden && !bHideWeapon && Weapon->WeaponEquipMontage)
             if (UAnimInstance* Anim = AnimationMesh->GetAnimInstance()) Anim->Montage_Play(Weapon->WeaponEquipMontage);
         for (AActor* Actor : Weapon->GetSpawnedActors())
         {
             if (!Actor) continue;
-            Actor->SetActorHiddenInGame(bBusy);
+            Actor->SetActorHiddenInGame(bHideWeapon);
             FName Socket(bLeftShoulder ? TEXT("weapon_l") : TEXT("weapon_r"));
             FTransform Grip(FRotator(0, bLeftShoulder ? 90.f : -90.f, 0));
             // Mirrored wrist axes reverse both forward and up. Yaw fixes the
@@ -528,6 +549,7 @@ void UBaselineEquipmentComponent::TickComponent(float DeltaTime, ELevelTick Tick
         }
     }
     bWasHandsBusy = bBusy;
+    bWasWeaponHidden = bHideWeapon;
 }
 
 void UBaselineEquipmentComponent::EndPlay(const EEndPlayReason::Type Reason)
@@ -607,9 +629,18 @@ void ABaselineHUD::DrawHUD()
         }
     }
     DrawText(TEXT("MOVEMENT + EQUIPMENT BASELINE"), FLinearColor(0.5f, 0.8f, 1.f), 24, 24);
-    DrawText(TEXT("WASD Move   Shift Sprint   C Crouch / Slide   Space Jump / Traverse"), FLinearColor::White, 24, H - 76);
+    DrawText(TEXT("WASD Move   Shift Sprint   C Crouch / Slide   Alt Roll   Space Jump / Traverse"), FLinearColor::White, 24, H - 76);
     DrawText(TEXT("E Pick up   G Drop   Tab Switch   Q Shoulder / Hand   LMB Fire   RMB Aim   R Reload"), FLinearColor::White, 24, H - 54);
     DrawText(TEXT("F Shove   V Tackle   B Takedown   T Ragdoll / Get up"), FLinearColor::White, 24, H - 32);
+    if (const auto* Throwable=PlayerOwner->GetPawn()->FindComponentByClass<UCRThrowableComponent>())
+    {
+        const TCHAR* Kind=Throwable->SelectedType==ECRThrowableType::Grenade ? TEXT("GRENADE") : TEXT("SMOKE");
+        DrawText(FString::Printf(TEXT("%s  %d   Hold H: aim / release: throw   X: switch   Z: cancel"),Kind,Throwable->GetRemaining()),
+            FLinearColor(.45f,.9f,1.f),24,H-142);
+        if (Throwable->Phase==ECRThrowPhase::Aiming)
+            DrawText(Throwable->bLaunchBlocked ? TEXT("Throw blocked - move away from cover") : TEXT("Release H to throw  |  Z to cancel"),
+                Throwable->bLaunchBlocked ? FLinearColor::Red : FLinearColor(.4f,1.f,.75f),W*.5f-135,H*.6f);
+    }
     if (const auto* Physical = PlayerOwner->GetPawn()->FindComponentByClass<UBaselinePhysicalInteractionComponent>())
     {
         if (Physical->GetPhase() == EBaselinePhysicalPhase::Ragdoll)

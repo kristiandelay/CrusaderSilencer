@@ -1,0 +1,2867 @@
+{
+  "created_utc": "2026-10-07T21:56:51.373687+00:00",
+  "passed": true,
+  "scope": "Ten humanoid additions, nineteen Level2 assets and the roofed traversal control room",
+  "map": "/Game/Maps/L_TraversalGym",
+  "catalog_size": 21,
+  "default_visual": "CrimsonSentinel",
+  "characters": [
+    {
+      "name": "ArmoredSentinel",
+      "role": "Guard",
+      "rig": {
+        "source_triangles": 1578042,
+        "game_triangles": 85000,
+        "vertices": 42112,
+        "bones": 64,
+        "unweighted_vertices": 0,
+        "repaired_small_islands": [
+          {
+            "vertex": 1354,
+            "neighbour": 19876,
+            "distance_cm": 0.17619492718949914
+          },
+          {
+            "vertex": 19880,
+            "neighbour": 19876,
+            "distance_cm": 0.07338534924201667
+          },
+          {
+            "vertex": 30410,
+            "neighbour": 19876,
+            "distance_cm": 0.10890892008319497
+          }
+        ],
+        "max_influences": 4,
+        "finger_weighted_vertices": {
+          "index_metacarpal_l": 218,
+          "index_01_l": 73,
+          "index_02_l": 43,
+          "index_03_l": 26,
+          "middle_metacarpal_l": 64,
+          "middle_01_l": 100,
+          "middle_02_l": 45,
+          "middle_03_l": 27,
+          "ring_metacarpal_l": 66,
+          "ring_01_l": 68,
+          "ring_02_l": 43,
+          "ring_03_l": 27,
+          "pinky_metacarpal_l": 214,
+          "pinky_01_l": 55,
+          "pinky_02_l": 50,
+          "pinky_03_l": 22,
+          "thumb_01_l": 223,
+          "thumb_02_l": 61,
+          "thumb_03_l": 29,
+          "index_metacarpal_r": 280,
+          "index_01_r": 69,
+          "index_02_r": 30,
+          "index_03_r": 28,
+          "middle_metacarpal_r": 59,
+          "middle_01_r": 101,
+          "middle_02_r": 45,
+          "middle_03_r": 29,
+          "ring_metacarpal_r": 43,
+          "ring_01_r": 73,
+          "ring_02_r": 35,
+          "ring_03_r": 31,
+          "pinky_metacarpal_r": 202,
+          "pinky_01_r": 50,
+          "pinky_02_r": 40,
+          "pinky_03_r": 25,
+          "thumb_01_r": 249,
+          "thumb_02_r": 60,
+          "thumb_03_r": 29
+        }
+      },
+      "fingers": {
+        "passed": true,
+        "action": "ArmoredSentinel_GripCheck",
+        "fingers": [
+          {
+            "finger": "thumb_l",
+            "weighted_vertices": 101,
+            "maximum_travel_cm": 9.47143934475744,
+            "average_travel_cm": 2.986680369299408
+          },
+          {
+            "finger": "index_l",
+            "weighted_vertices": 72,
+            "maximum_travel_cm": 9.696423364731732,
+            "average_travel_cm": 3.557784544446731
+          },
+          {
+            "finger": "middle_l",
+            "weighted_vertices": 81,
+            "maximum_travel_cm": 10.634960038971354,
+            "average_travel_cm": 3.5804351236231096
+          },
+          {
+            "finger": "ring_l",
+            "weighted_vertices": 66,
+            "maximum_travel_cm": 8.80099862241268,
+            "average_travel_cm": 3.2660463024206714
+          },
+          {
+            "finger": "pinky_l",
+            "weighted_vertices": 55,
+            "maximum_travel_cm": 6.194549398098647,
+            "average_travel_cm": 2.283557697131755
+          },
+          {
+            "finger": "thumb_r",
+            "weighted_vertices": 104,
+            "maximum_travel_cm": 9.600612459911815,
+            "average_travel_cm": 3.0295169521105736
+          },
+          {
+            "finger": "index_r",
+            "weighted_vertices": 72,
+            "maximum_travel_cm": 9.820723471163952,
+            "average_travel_cm": 3.571374352113336
+          },
+          {
+            "finger": "middle_r",
+            "weighted_vertices": 92,
+            "maximum_travel_cm": 10.749943932675373,
+            "average_travel_cm": 3.2458571778719945
+          },
+          {
+            "finger": "ring_r",
+            "weighted_vertices": 68,
+            "maximum_travel_cm": 8.84013222608458,
+            "average_travel_cm": 3.2441468058976985
+          },
+          {
+            "finger": "pinky_r",
+            "weighted_vertices": 46,
+            "maximum_travel_cm": 6.060461665152953,
+            "average_travel_cm": 2.3895127231463875
+          }
+        ]
+      },
+      "archive_sha256": "0ca1c4793072f589f0dfb55bb644a7048a204cba50712de521090834f63d045c",
+      "export_sha256": "b1533ab8fd32b868402e7aa2919ca5c571d8561614dfbb93a9be54f31f9e399d"
+    },
+    {
+      "name": "AstronautSentinel",
+      "role": "Guard",
+      "rig": {
+        "source_triangles": 484458,
+        "game_triangles": 85000,
+        "vertices": 42502,
+        "bones": 64,
+        "unweighted_vertices": 0,
+        "repaired_small_islands": [],
+        "max_influences": 4,
+        "finger_weighted_vertices": {
+          "index_metacarpal_l": 208,
+          "index_01_l": 97,
+          "index_02_l": 103,
+          "index_03_l": 103,
+          "middle_metacarpal_l": 77,
+          "middle_01_l": 113,
+          "middle_02_l": 114,
+          "middle_03_l": 132,
+          "ring_metacarpal_l": 83,
+          "ring_01_l": 102,
+          "ring_02_l": 112,
+          "ring_03_l": 129,
+          "pinky_metacarpal_l": 525,
+          "pinky_01_l": 99,
+          "pinky_02_l": 86,
+          "pinky_03_l": 80,
+          "thumb_01_l": 484,
+          "thumb_02_l": 132,
+          "thumb_03_l": 84,
+          "index_metacarpal_r": 225,
+          "index_01_r": 84,
+          "index_02_r": 86,
+          "index_03_r": 94,
+          "middle_metacarpal_r": 71,
+          "middle_01_r": 94,
+          "middle_02_r": 85,
+          "middle_03_r": 129,
+          "ring_metacarpal_r": 72,
+          "ring_01_r": 105,
+          "ring_02_r": 119,
+          "ring_03_r": 124,
+          "pinky_metacarpal_r": 487,
+          "pinky_01_r": 112,
+          "pinky_02_r": 92,
+          "pinky_03_r": 89,
+          "thumb_01_r": 480,
+          "thumb_02_r": 123,
+          "thumb_03_r": 76
+        }
+      },
+      "fingers": {
+        "passed": true,
+        "action": "AstronautSentinel_GripCheck",
+        "fingers": [
+          {
+            "finger": "thumb_l",
+            "weighted_vertices": 289,
+            "maximum_travel_cm": 8.39892031679058,
+            "average_travel_cm": 2.6732298425476047
+          },
+          {
+            "finger": "index_l",
+            "weighted_vertices": 149,
+            "maximum_travel_cm": 9.415961337610568,
+            "average_travel_cm": 3.8307138793336373
+          },
+          {
+            "finger": "middle_l",
+            "weighted_vertices": 166,
+            "maximum_travel_cm": 10.700162112710315,
+            "average_travel_cm": 4.195511797051595
+          },
+          {
+            "finger": "ring_l",
+            "weighted_vertices": 147,
+            "maximum_travel_cm": 9.81369905374281,
+            "average_travel_cm": 4.058444534291133
+          },
+          {
+            "finger": "pinky_l",
+            "weighted_vertices": 122,
+            "maximum_travel_cm": 7.255309429865531,
+            "average_travel_cm": 2.917708550000884
+          },
+          {
+            "finger": "thumb_r",
+            "weighted_vertices": 279,
+            "maximum_travel_cm": 8.432436631770928,
+            "average_travel_cm": 2.683457806454703
+          },
+          {
+            "finger": "index_r",
+            "weighted_vertices": 132,
+            "maximum_travel_cm": 9.365079793758145,
+            "average_travel_cm": 4.014562776837377
+          },
+          {
+            "finger": "middle_r",
+            "weighted_vertices": 138,
+            "maximum_travel_cm": 10.766058349746054,
+            "average_travel_cm": 4.664059986270225
+          },
+          {
+            "finger": "ring_r",
+            "weighted_vertices": 152,
+            "maximum_travel_cm": 9.945826083434925,
+            "average_travel_cm": 4.034876881460567
+          },
+          {
+            "finger": "pinky_r",
+            "weighted_vertices": 136,
+            "maximum_travel_cm": 7.28863072726407,
+            "average_travel_cm": 3.023111477348681
+          }
+        ]
+      },
+      "archive_sha256": "2e53c85a213b508db8362256bf5d6a38c09f4898ec748bc5c13b09fdd7f70bad",
+      "export_sha256": "c30e043a7822fa1a5517bec9ea24a608b9305a311c4583f1a2001c22c90babf2"
+    },
+    {
+      "name": "CrimsonVanguard",
+      "role": "Guard",
+      "rig": {
+        "source_triangles": 805204,
+        "game_triangles": 85000,
+        "vertices": 42410,
+        "bones": 64,
+        "unweighted_vertices": 0,
+        "repaired_small_islands": [],
+        "max_influences": 4,
+        "finger_weighted_vertices": {
+          "index_metacarpal_l": 329,
+          "index_01_l": 71,
+          "index_02_l": 64,
+          "index_03_l": 60,
+          "middle_metacarpal_l": 61,
+          "middle_01_l": 67,
+          "middle_02_l": 78,
+          "middle_03_l": 89,
+          "ring_metacarpal_l": 65,
+          "ring_01_l": 72,
+          "ring_02_l": 97,
+          "ring_03_l": 97,
+          "pinky_metacarpal_l": 237,
+          "pinky_01_l": 79,
+          "pinky_02_l": 82,
+          "pinky_03_l": 93,
+          "thumb_01_l": 426,
+          "thumb_02_l": 99,
+          "thumb_03_l": 52,
+          "index_metacarpal_r": 326,
+          "index_01_r": 79,
+          "index_02_r": 61,
+          "index_03_r": 59,
+          "middle_metacarpal_r": 54,
+          "middle_01_r": 57,
+          "middle_02_r": 70,
+          "middle_03_r": 91,
+          "ring_metacarpal_r": 42,
+          "ring_01_r": 79,
+          "ring_02_r": 86,
+          "ring_03_r": 97,
+          "pinky_metacarpal_r": 255,
+          "pinky_01_r": 92,
+          "pinky_02_r": 83,
+          "pinky_03_r": 96,
+          "thumb_01_r": 434,
+          "thumb_02_r": 85,
+          "thumb_03_r": 56
+        }
+      },
+      "fingers": {
+        "passed": true,
+        "action": "CrimsonVanguard_GripCheck",
+        "fingers": [
+          {
+            "finger": "thumb_l",
+            "weighted_vertices": 203,
+            "maximum_travel_cm": 7.741244962195713,
+            "average_travel_cm": 2.2312465542312396
+          },
+          {
+            "finger": "index_l",
+            "weighted_vertices": 91,
+            "maximum_travel_cm": 7.746686780950507,
+            "average_travel_cm": 2.968259426401183
+          },
+          {
+            "finger": "middle_l",
+            "weighted_vertices": 89,
+            "maximum_travel_cm": 8.075259262977669,
+            "average_travel_cm": 3.454781580007932
+          },
+          {
+            "finger": "ring_l",
+            "weighted_vertices": 105,
+            "maximum_travel_cm": 7.386571437873699,
+            "average_travel_cm": 3.0133610862266766
+          },
+          {
+            "finger": "pinky_l",
+            "weighted_vertices": 99,
+            "maximum_travel_cm": 5.4693934470793995,
+            "average_travel_cm": 2.4939047670669217
+          },
+          {
+            "finger": "thumb_r",
+            "weighted_vertices": 205,
+            "maximum_travel_cm": 7.884064014544616,
+            "average_travel_cm": 2.1610292694081386
+          },
+          {
+            "finger": "index_r",
+            "weighted_vertices": 87,
+            "maximum_travel_cm": 7.640911822405963,
+            "average_travel_cm": 2.991773036687255
+          },
+          {
+            "finger": "middle_r",
+            "weighted_vertices": 86,
+            "maximum_travel_cm": 8.24023530087101,
+            "average_travel_cm": 3.3831845397171434
+          },
+          {
+            "finger": "ring_r",
+            "weighted_vertices": 112,
+            "maximum_travel_cm": 7.3930092447770805,
+            "average_travel_cm": 3.0915036965761105
+          },
+          {
+            "finger": "pinky_r",
+            "weighted_vertices": 104,
+            "maximum_travel_cm": 5.12864690213544,
+            "average_travel_cm": 2.3723217314136775
+          }
+        ]
+      },
+      "archive_sha256": "c2daab4639ba2a86272d847feadf15e2384525484867daf565e00cb812e95346",
+      "export_sha256": "7db56c739593040baf75ce93735a4f91c390e277bd94062196d25b2352c2834a"
+    },
+    {
+      "name": "MaintenanceWorker",
+      "role": "Civilian",
+      "rig": {
+        "source_triangles": 258242,
+        "game_triangles": 85000,
+        "vertices": 42500,
+        "bones": 64,
+        "unweighted_vertices": 0,
+        "repaired_small_islands": [],
+        "max_influences": 4,
+        "finger_weighted_vertices": {
+          "index_metacarpal_l": 1059,
+          "index_01_l": 350,
+          "index_02_l": 180,
+          "index_03_l": 150,
+          "middle_metacarpal_l": 321,
+          "middle_01_l": 434,
+          "middle_02_l": 184,
+          "middle_03_l": 154,
+          "ring_metacarpal_l": 243,
+          "ring_01_l": 450,
+          "ring_02_l": 178,
+          "ring_03_l": 151,
+          "pinky_metacarpal_l": 670,
+          "pinky_01_l": 292,
+          "pinky_02_l": 210,
+          "pinky_03_l": 125,
+          "thumb_01_l": 573,
+          "thumb_02_l": 311,
+          "thumb_03_l": 161,
+          "index_metacarpal_r": 1033,
+          "index_01_r": 317,
+          "index_02_r": 175,
+          "index_03_r": 154,
+          "middle_metacarpal_r": 310,
+          "middle_01_r": 405,
+          "middle_02_r": 174,
+          "middle_03_r": 162,
+          "ring_metacarpal_r": 274,
+          "ring_01_r": 429,
+          "ring_02_r": 183,
+          "ring_03_r": 155,
+          "pinky_metacarpal_r": 717,
+          "pinky_01_r": 273,
+          "pinky_02_r": 188,
+          "pinky_03_r": 114,
+          "thumb_01_r": 553,
+          "thumb_02_r": 314,
+          "thumb_03_r": 152
+        }
+      },
+      "fingers": {
+        "passed": true,
+        "action": "MaintenanceWorker_GripCheck",
+        "fingers": [
+          {
+            "finger": "thumb_l",
+            "weighted_vertices": 470,
+            "maximum_travel_cm": 8.140929877197363,
+            "average_travel_cm": 2.877994754614335
+          },
+          {
+            "finger": "index_l",
+            "weighted_vertices": 397,
+            "maximum_travel_cm": 10.588949280395717,
+            "average_travel_cm": 3.921872643913165
+          },
+          {
+            "finger": "middle_l",
+            "weighted_vertices": 469,
+            "maximum_travel_cm": 11.800161224815596,
+            "average_travel_cm": 3.892033710363872
+          },
+          {
+            "finger": "ring_l",
+            "weighted_vertices": 494,
+            "maximum_travel_cm": 11.52856678745678,
+            "average_travel_cm": 3.7136619487761475
+          },
+          {
+            "finger": "pinky_l",
+            "weighted_vertices": 316,
+            "maximum_travel_cm": 8.797095721170841,
+            "average_travel_cm": 3.384334034181509
+          },
+          {
+            "finger": "thumb_r",
+            "weighted_vertices": 463,
+            "maximum_travel_cm": 8.276033190624437,
+            "average_travel_cm": 2.9568598187647006
+          },
+          {
+            "finger": "index_r",
+            "weighted_vertices": 376,
+            "maximum_travel_cm": 10.546727248675722,
+            "average_travel_cm": 4.073457846865138
+          },
+          {
+            "finger": "middle_r",
+            "weighted_vertices": 453,
+            "maximum_travel_cm": 11.952592027537786,
+            "average_travel_cm": 4.20195033625148
+          },
+          {
+            "finger": "ring_r",
+            "weighted_vertices": 452,
+            "maximum_travel_cm": 11.677975777317542,
+            "average_travel_cm": 3.8784888392408496
+          },
+          {
+            "finger": "pinky_r",
+            "weighted_vertices": 316,
+            "maximum_travel_cm": 8.195959947464923,
+            "average_travel_cm": 3.0651700386316034
+          }
+        ]
+      },
+      "archive_sha256": "8c900b978c957c773f895b19bf36e6f01131f0d72fa5247697b01f52385774e0",
+      "export_sha256": "0465ec5e522803bf619705955f1d0262f391f552f04a580ad4d0b24816300bdf"
+    },
+    {
+      "name": "RuggedMiner",
+      "role": "Civilian",
+      "rig": {
+        "source_triangles": 919840,
+        "game_triangles": 85000,
+        "vertices": 42316,
+        "bones": 64,
+        "unweighted_vertices": 0,
+        "repaired_small_islands": [],
+        "max_influences": 4,
+        "finger_weighted_vertices": {
+          "index_metacarpal_l": 236,
+          "index_01_l": 141,
+          "index_02_l": 122,
+          "index_03_l": 69,
+          "middle_metacarpal_l": 55,
+          "middle_01_l": 204,
+          "middle_02_l": 160,
+          "middle_03_l": 67,
+          "ring_metacarpal_l": 70,
+          "ring_01_l": 152,
+          "ring_02_l": 162,
+          "ring_03_l": 110,
+          "pinky_metacarpal_l": 471,
+          "pinky_01_l": 132,
+          "pinky_02_l": 120,
+          "pinky_03_l": 123,
+          "thumb_01_l": 356,
+          "thumb_02_l": 98,
+          "thumb_03_l": 72,
+          "index_metacarpal_r": 259,
+          "index_01_r": 131,
+          "index_02_r": 130,
+          "index_03_r": 96,
+          "middle_metacarpal_r": 60,
+          "middle_01_r": 185,
+          "middle_02_r": 189,
+          "middle_03_r": 83,
+          "ring_metacarpal_r": 82,
+          "ring_01_r": 151,
+          "ring_02_r": 181,
+          "ring_03_r": 112,
+          "pinky_metacarpal_r": 537,
+          "pinky_01_r": 166,
+          "pinky_02_r": 128,
+          "pinky_03_r": 133,
+          "thumb_01_r": 371,
+          "thumb_02_r": 93,
+          "thumb_03_r": 68
+        }
+      },
+      "fingers": {
+        "passed": true,
+        "action": "RuggedMiner_GripCheck",
+        "fingers": [
+          {
+            "finger": "thumb_l",
+            "weighted_vertices": 229,
+            "maximum_travel_cm": 11.000018835051623,
+            "average_travel_cm": 3.123312633912411
+          },
+          {
+            "finger": "index_l",
+            "weighted_vertices": 155,
+            "maximum_travel_cm": 10.992970301145643,
+            "average_travel_cm": 3.988373514238711
+          },
+          {
+            "finger": "middle_l",
+            "weighted_vertices": 206,
+            "maximum_travel_cm": 10.64469197843107,
+            "average_travel_cm": 3.5010430699111494
+          },
+          {
+            "finger": "ring_l",
+            "weighted_vertices": 195,
+            "maximum_travel_cm": 12.197152408902186,
+            "average_travel_cm": 4.330553228952978
+          },
+          {
+            "finger": "pinky_l",
+            "weighted_vertices": 174,
+            "maximum_travel_cm": 14.106047076251796,
+            "average_travel_cm": 5.7913264200247125
+          },
+          {
+            "finger": "thumb_r",
+            "weighted_vertices": 243,
+            "maximum_travel_cm": 11.11484972137919,
+            "average_travel_cm": 2.8736280942444683
+          },
+          {
+            "finger": "index_r",
+            "weighted_vertices": 166,
+            "maximum_travel_cm": 11.020814709326158,
+            "average_travel_cm": 4.043697270631199
+          },
+          {
+            "finger": "middle_r",
+            "weighted_vertices": 212,
+            "maximum_travel_cm": 10.803572922023095,
+            "average_travel_cm": 3.3743577608036874
+          },
+          {
+            "finger": "ring_r",
+            "weighted_vertices": 201,
+            "maximum_travel_cm": 12.256996103285429,
+            "average_travel_cm": 4.402827524971876
+          },
+          {
+            "finger": "pinky_r",
+            "weighted_vertices": 173,
+            "maximum_travel_cm": 14.155774106411773,
+            "average_travel_cm": 5.924489835926374
+          }
+        ]
+      },
+      "archive_sha256": "a662f814c6a1cb299a192d3a27ca1d7be4c94ace03b80f3e03e2875070dab611",
+      "export_sha256": "66d6d0aba8216c696b7fdf391939f7535adf7d56c20a1717751ca6518a87df29"
+    },
+    {
+      "name": "RustboundExplorer",
+      "role": "Civilian",
+      "rig": {
+        "source_triangles": 762130,
+        "game_triangles": 85000,
+        "vertices": 42488,
+        "bones": 64,
+        "unweighted_vertices": 0,
+        "repaired_small_islands": [],
+        "max_influences": 4,
+        "finger_weighted_vertices": {
+          "index_metacarpal_l": 510,
+          "index_01_l": 170,
+          "index_02_l": 99,
+          "index_03_l": 67,
+          "middle_metacarpal_l": 215,
+          "middle_01_l": 192,
+          "middle_02_l": 83,
+          "middle_03_l": 66,
+          "ring_metacarpal_l": 195,
+          "ring_01_l": 187,
+          "ring_02_l": 92,
+          "ring_03_l": 59,
+          "pinky_metacarpal_l": 434,
+          "pinky_01_l": 83,
+          "pinky_02_l": 63,
+          "pinky_03_l": 54,
+          "thumb_01_l": 544,
+          "thumb_02_l": 123,
+          "thumb_03_l": 61,
+          "index_metacarpal_r": 552,
+          "index_01_r": 214,
+          "index_02_r": 128,
+          "index_03_r": 73,
+          "middle_metacarpal_r": 225,
+          "middle_01_r": 217,
+          "middle_02_r": 108,
+          "middle_03_r": 78,
+          "ring_metacarpal_r": 219,
+          "ring_01_r": 208,
+          "ring_02_r": 105,
+          "ring_03_r": 60,
+          "pinky_metacarpal_r": 475,
+          "pinky_01_r": 109,
+          "pinky_02_r": 75,
+          "pinky_03_r": 57,
+          "thumb_01_r": 552,
+          "thumb_02_r": 148,
+          "thumb_03_r": 78
+        }
+      },
+      "fingers": {
+        "passed": true,
+        "action": "RustboundExplorer_GripCheck",
+        "fingers": [
+          {
+            "finger": "thumb_l",
+            "weighted_vertices": 305,
+            "maximum_travel_cm": 8.667274863348307,
+            "average_travel_cm": 2.2700153793845654
+          },
+          {
+            "finger": "index_l",
+            "weighted_vertices": 172,
+            "maximum_travel_cm": 9.103168133084447,
+            "average_travel_cm": 3.2898022659955783
+          },
+          {
+            "finger": "middle_l",
+            "weighted_vertices": 190,
+            "maximum_travel_cm": 11.383501669521992,
+            "average_travel_cm": 3.757145292172962
+          },
+          {
+            "finger": "ring_l",
+            "weighted_vertices": 185,
+            "maximum_travel_cm": 9.508407085198423,
+            "average_travel_cm": 3.028560509984957
+          },
+          {
+            "finger": "pinky_l",
+            "weighted_vertices": 85,
+            "maximum_travel_cm": 6.315587034871372,
+            "average_travel_cm": 3.1096316501065617
+          },
+          {
+            "finger": "thumb_r",
+            "weighted_vertices": 302,
+            "maximum_travel_cm": 8.69407454432717,
+            "average_travel_cm": 2.393563957350004
+          },
+          {
+            "finger": "index_r",
+            "weighted_vertices": 216,
+            "maximum_travel_cm": 9.401601054420182,
+            "average_travel_cm": 2.9348193644061293
+          },
+          {
+            "finger": "middle_r",
+            "weighted_vertices": 205,
+            "maximum_travel_cm": 11.680016064567502,
+            "average_travel_cm": 4.206408408225341
+          },
+          {
+            "finger": "ring_r",
+            "weighted_vertices": 200,
+            "maximum_travel_cm": 9.899947511167817,
+            "average_travel_cm": 3.021393300546533
+          },
+          {
+            "finger": "pinky_r",
+            "weighted_vertices": 115,
+            "maximum_travel_cm": 6.568993398583286,
+            "average_travel_cm": 2.5385896046497507
+          }
+        ]
+      },
+      "archive_sha256": "3afa216eb3bf2f891c7f20d1a7f8cbf3497ffc7535faaf14566e4f656d8569e2",
+      "export_sha256": "ea57fc54b57b886d4776d0516d10a757cea5b11797eafe4383d4c7397588e7ee"
+    },
+    {
+      "name": "CrimsonAuthority",
+      "role": "Civilian",
+      "rig": {
+        "source_triangles": 282914,
+        "game_triangles": 85000,
+        "vertices": 42496,
+        "bones": 64,
+        "unweighted_vertices": 0,
+        "repaired_small_islands": [],
+        "max_influences": 4,
+        "finger_weighted_vertices": {
+          "index_metacarpal_l": 1256,
+          "index_01_l": 260,
+          "index_02_l": 141,
+          "index_03_l": 118,
+          "middle_metacarpal_l": 291,
+          "middle_01_l": 357,
+          "middle_02_l": 144,
+          "middle_03_l": 116,
+          "ring_metacarpal_l": 217,
+          "ring_01_l": 396,
+          "ring_02_l": 176,
+          "ring_03_l": 134,
+          "pinky_metacarpal_l": 810,
+          "pinky_01_l": 255,
+          "pinky_02_l": 204,
+          "pinky_03_l": 126,
+          "thumb_01_l": 882,
+          "thumb_02_l": 280,
+          "thumb_03_l": 176,
+          "index_metacarpal_r": 1190,
+          "index_01_r": 278,
+          "index_02_r": 139,
+          "index_03_r": 119,
+          "middle_metacarpal_r": 296,
+          "middle_01_r": 352,
+          "middle_02_r": 160,
+          "middle_03_r": 115,
+          "ring_metacarpal_r": 237,
+          "ring_01_r": 430,
+          "ring_02_r": 246,
+          "ring_03_r": 130,
+          "pinky_metacarpal_r": 837,
+          "pinky_01_r": 269,
+          "pinky_02_r": 248,
+          "pinky_03_r": 147,
+          "thumb_01_r": 816,
+          "thumb_02_r": 279,
+          "thumb_03_r": 187
+        }
+      },
+      "fingers": {
+        "passed": true,
+        "action": "CrimsonAuthority_GripCheck",
+        "fingers": [
+          {
+            "finger": "thumb_l",
+            "weighted_vertices": 455,
+            "maximum_travel_cm": 10.059916857760744,
+            "average_travel_cm": 3.2847466959599543
+          },
+          {
+            "finger": "index_l",
+            "weighted_vertices": 257,
+            "maximum_travel_cm": 8.801160727157786,
+            "average_travel_cm": 3.6064251320436056
+          },
+          {
+            "finger": "middle_l",
+            "weighted_vertices": 330,
+            "maximum_travel_cm": 8.89002256581518,
+            "average_travel_cm": 2.9089283276552864
+          },
+          {
+            "finger": "ring_l",
+            "weighted_vertices": 378,
+            "maximum_travel_cm": 9.07473875568254,
+            "average_travel_cm": 2.9267499378523407
+          },
+          {
+            "finger": "pinky_l",
+            "weighted_vertices": 287,
+            "maximum_travel_cm": 7.964539137137327,
+            "average_travel_cm": 3.040961928722609
+          },
+          {
+            "finger": "thumb_r",
+            "weighted_vertices": 456,
+            "maximum_travel_cm": 10.246203207812222,
+            "average_travel_cm": 3.3995266448961763
+          },
+          {
+            "finger": "index_r",
+            "weighted_vertices": 274,
+            "maximum_travel_cm": 8.937537773426019,
+            "average_travel_cm": 3.557680489213308
+          },
+          {
+            "finger": "middle_r",
+            "weighted_vertices": 324,
+            "maximum_travel_cm": 9.04548594825281,
+            "average_travel_cm": 3.0163554548900016
+          },
+          {
+            "finger": "ring_r",
+            "weighted_vertices": 407,
+            "maximum_travel_cm": 9.276854427885127,
+            "average_travel_cm": 2.7443082116094732
+          },
+          {
+            "finger": "pinky_r",
+            "weighted_vertices": 330,
+            "maximum_travel_cm": 8.142816933076098,
+            "average_travel_cm": 2.803628447764657
+          }
+        ]
+      },
+      "archive_sha256": "b81c655eca5c55e9f980ad0a40ebd5688b1d4995f30a8cd0b1158253708eb7ac",
+      "export_sha256": "3812b70238bba3d3fa09fbf712ce05b6c0d8fb483cc328e3cfa95ad92dd11f44"
+    },
+    {
+      "name": "CrusaderOperative",
+      "role": "Civilian",
+      "rig": {
+        "source_triangles": 622650,
+        "game_triangles": 85000,
+        "vertices": 42444,
+        "bones": 64,
+        "unweighted_vertices": 0,
+        "repaired_small_islands": [],
+        "max_influences": 4,
+        "finger_weighted_vertices": {
+          "index_metacarpal_l": 359,
+          "index_01_l": 206,
+          "index_02_l": 118,
+          "index_03_l": 64,
+          "middle_metacarpal_l": 134,
+          "middle_01_l": 306,
+          "middle_02_l": 136,
+          "middle_03_l": 70,
+          "ring_metacarpal_l": 92,
+          "ring_01_l": 296,
+          "ring_02_l": 126,
+          "ring_03_l": 56,
+          "pinky_metacarpal_l": 341,
+          "pinky_01_l": 247,
+          "pinky_02_l": 155,
+          "pinky_03_l": 53,
+          "thumb_01_l": 246,
+          "thumb_02_l": 88,
+          "thumb_03_l": 55,
+          "index_metacarpal_r": 338,
+          "index_01_r": 196,
+          "index_02_r": 112,
+          "index_03_r": 65,
+          "middle_metacarpal_r": 114,
+          "middle_01_r": 289,
+          "middle_02_r": 117,
+          "middle_03_r": 67,
+          "ring_metacarpal_r": 101,
+          "ring_01_r": 303,
+          "ring_02_r": 139,
+          "ring_03_r": 66,
+          "pinky_metacarpal_r": 291,
+          "pinky_01_r": 251,
+          "pinky_02_r": 160,
+          "pinky_03_r": 55,
+          "thumb_01_r": 239,
+          "thumb_02_r": 83,
+          "thumb_03_r": 61
+        }
+      },
+      "fingers": {
+        "passed": true,
+        "action": "CrusaderOperative_GripCheck",
+        "fingers": [
+          {
+            "finger": "thumb_l",
+            "weighted_vertices": 189,
+            "maximum_travel_cm": 6.539112086318861,
+            "average_travel_cm": 2.139803382876436
+          },
+          {
+            "finger": "index_l",
+            "weighted_vertices": 185,
+            "maximum_travel_cm": 9.042590350479339,
+            "average_travel_cm": 2.9488250220284455
+          },
+          {
+            "finger": "middle_l",
+            "weighted_vertices": 259,
+            "maximum_travel_cm": 11.220382529145017,
+            "average_travel_cm": 3.1902849456712343
+          },
+          {
+            "finger": "ring_l",
+            "weighted_vertices": 224,
+            "maximum_travel_cm": 11.157672695196993,
+            "average_travel_cm": 3.1254399733221425
+          },
+          {
+            "finger": "pinky_l",
+            "weighted_vertices": 217,
+            "maximum_travel_cm": 9.12843299980793,
+            "average_travel_cm": 2.7015816379199116
+          },
+          {
+            "finger": "thumb_r",
+            "weighted_vertices": 177,
+            "maximum_travel_cm": 6.698632217399637,
+            "average_travel_cm": 2.2738837083694916
+          },
+          {
+            "finger": "index_r",
+            "weighted_vertices": 189,
+            "maximum_travel_cm": 9.21341667428348,
+            "average_travel_cm": 3.0086384751841675
+          },
+          {
+            "finger": "middle_r",
+            "weighted_vertices": 235,
+            "maximum_travel_cm": 11.37340391929464,
+            "average_travel_cm": 3.2769945607042343
+          },
+          {
+            "finger": "ring_r",
+            "weighted_vertices": 238,
+            "maximum_travel_cm": 11.33355708929843,
+            "average_travel_cm": 3.2595418927279907
+          },
+          {
+            "finger": "pinky_r",
+            "weighted_vertices": 224,
+            "maximum_travel_cm": 9.243194138306194,
+            "average_travel_cm": 2.8106137817313384
+          }
+        ]
+      },
+      "archive_sha256": "6bb15ea66702006141385465b776fbf08bc5b73551811b4f39cbf87c075c391d",
+      "export_sha256": "a50866066165626dad03a982f8960a5959f153ac9423eceedf2efba402f8ecd7"
+    },
+    {
+      "name": "GraySentinel",
+      "role": "Civilian",
+      "rig": {
+        "source_triangles": 1980690,
+        "game_triangles": 85000,
+        "vertices": 39993,
+        "bones": 64,
+        "unweighted_vertices": 0,
+        "repaired_small_islands": [],
+        "max_influences": 4,
+        "finger_weighted_vertices": {
+          "index_metacarpal_l": 42,
+          "index_01_l": 37,
+          "index_02_l": 36,
+          "index_03_l": 33,
+          "middle_metacarpal_l": 34,
+          "middle_01_l": 56,
+          "middle_02_l": 55,
+          "middle_03_l": 42,
+          "ring_metacarpal_l": 14,
+          "ring_01_l": 50,
+          "ring_02_l": 47,
+          "ring_03_l": 28,
+          "pinky_metacarpal_l": 46,
+          "pinky_01_l": 21,
+          "pinky_02_l": 23,
+          "pinky_03_l": 26,
+          "thumb_01_l": 58,
+          "thumb_02_l": 24,
+          "thumb_03_l": 23,
+          "index_metacarpal_r": 53,
+          "index_01_r": 43,
+          "index_02_r": 36,
+          "index_03_r": 30,
+          "middle_metacarpal_r": 33,
+          "middle_01_r": 69,
+          "middle_02_r": 48,
+          "middle_03_r": 40,
+          "ring_metacarpal_r": 22,
+          "ring_01_r": 57,
+          "ring_02_r": 47,
+          "ring_03_r": 29,
+          "pinky_metacarpal_r": 71,
+          "pinky_01_r": 20,
+          "pinky_02_r": 23,
+          "pinky_03_r": 24,
+          "thumb_01_r": 97,
+          "thumb_02_r": 31,
+          "thumb_03_r": 25
+        }
+      },
+      "fingers": {
+        "passed": true,
+        "action": "GraySentinel_GripCheck",
+        "fingers": [
+          {
+            "finger": "thumb_l",
+            "weighted_vertices": 44,
+            "maximum_travel_cm": 9.325444946718955,
+            "average_travel_cm": 3.898615591422039
+          },
+          {
+            "finger": "index_l",
+            "weighted_vertices": 43,
+            "maximum_travel_cm": 9.814795158841056,
+            "average_travel_cm": 3.902485953866888
+          },
+          {
+            "finger": "middle_l",
+            "weighted_vertices": 62,
+            "maximum_travel_cm": 10.461612830609742,
+            "average_travel_cm": 3.414419982571112
+          },
+          {
+            "finger": "ring_l",
+            "weighted_vertices": 59,
+            "maximum_travel_cm": 9.510617396453238,
+            "average_travel_cm": 3.0667639830556817
+          },
+          {
+            "finger": "pinky_l",
+            "weighted_vertices": 25,
+            "maximum_travel_cm": 6.603880273363305,
+            "average_travel_cm": 3.065491022564089
+          },
+          {
+            "finger": "thumb_r",
+            "weighted_vertices": 50,
+            "maximum_travel_cm": 9.560364229135153,
+            "average_travel_cm": 3.545381207643167
+          },
+          {
+            "finger": "index_r",
+            "weighted_vertices": 47,
+            "maximum_travel_cm": 9.629812647501332,
+            "average_travel_cm": 3.7739211364778638
+          },
+          {
+            "finger": "middle_r",
+            "weighted_vertices": 75,
+            "maximum_travel_cm": 10.54703106800039,
+            "average_travel_cm": 3.1294115745546813
+          },
+          {
+            "finger": "ring_r",
+            "weighted_vertices": 60,
+            "maximum_travel_cm": 9.4924623802792,
+            "average_travel_cm": 2.8609304193490623
+          },
+          {
+            "finger": "pinky_r",
+            "weighted_vertices": 22,
+            "maximum_travel_cm": 6.9564378025858264,
+            "average_travel_cm": 3.687008798767549
+          }
+        ]
+      },
+      "archive_sha256": "de05637b09ca7a781c0df992f4f547fa06ced3da3d30c7e6f392df37bf5e0914",
+      "export_sha256": "376fa54cbb51749f365ea6e4819db5e4d1fdaa4e043f2717b50ddea40a06e1e5"
+    },
+    {
+      "name": "RuggedSurvivor",
+      "role": "Civilian",
+      "rig": {
+        "source_triangles": 415598,
+        "game_triangles": 85000,
+        "vertices": 42482,
+        "bones": 64,
+        "unweighted_vertices": 0,
+        "repaired_small_islands": [],
+        "max_influences": 4,
+        "finger_weighted_vertices": {
+          "index_metacarpal_l": 669,
+          "index_01_l": 226,
+          "index_02_l": 126,
+          "index_03_l": 100,
+          "middle_metacarpal_l": 266,
+          "middle_01_l": 335,
+          "middle_02_l": 183,
+          "middle_03_l": 108,
+          "ring_metacarpal_l": 419,
+          "ring_01_l": 344,
+          "ring_02_l": 253,
+          "ring_03_l": 126,
+          "pinky_metacarpal_l": 647,
+          "pinky_01_l": 185,
+          "pinky_02_l": 163,
+          "pinky_03_l": 125,
+          "thumb_01_l": 391,
+          "thumb_02_l": 197,
+          "thumb_03_l": 123,
+          "index_metacarpal_r": 690,
+          "index_01_r": 262,
+          "index_02_r": 133,
+          "index_03_r": 107,
+          "middle_metacarpal_r": 276,
+          "middle_01_r": 356,
+          "middle_02_r": 170,
+          "middle_03_r": 112,
+          "ring_metacarpal_r": 340,
+          "ring_01_r": 342,
+          "ring_02_r": 227,
+          "ring_03_r": 129,
+          "pinky_metacarpal_r": 627,
+          "pinky_01_r": 189,
+          "pinky_02_r": 154,
+          "pinky_03_r": 137,
+          "thumb_01_r": 353,
+          "thumb_02_r": 198,
+          "thumb_03_r": 95
+        }
+      },
+      "fingers": {
+        "passed": true,
+        "action": "RuggedSurvivor_GripCheck",
+        "fingers": [
+          {
+            "finger": "thumb_l",
+            "weighted_vertices": 300,
+            "maximum_travel_cm": 9.246509615172469,
+            "average_travel_cm": 3.2475116302237814
+          },
+          {
+            "finger": "index_l",
+            "weighted_vertices": 224,
+            "maximum_travel_cm": 9.780572739819316,
+            "average_travel_cm": 3.8478709276178438
+          },
+          {
+            "finger": "middle_l",
+            "weighted_vertices": 289,
+            "maximum_travel_cm": 10.876720073201353,
+            "average_travel_cm": 3.8339035265176675
+          },
+          {
+            "finger": "ring_l",
+            "weighted_vertices": 320,
+            "maximum_travel_cm": 9.146622214621729,
+            "average_travel_cm": 2.8061262188120963
+          },
+          {
+            "finger": "pinky_l",
+            "weighted_vertices": 205,
+            "maximum_travel_cm": 6.06834578105876,
+            "average_travel_cm": 2.1280444139841395
+          },
+          {
+            "finger": "thumb_r",
+            "weighted_vertices": 264,
+            "maximum_travel_cm": 7.072643523824764,
+            "average_travel_cm": 2.6480285835250172
+          },
+          {
+            "finger": "index_r",
+            "weighted_vertices": 253,
+            "maximum_travel_cm": 9.895212661285294,
+            "average_travel_cm": 3.642818849702548
+          },
+          {
+            "finger": "middle_r",
+            "weighted_vertices": 310,
+            "maximum_travel_cm": 11.177859281474923,
+            "average_travel_cm": 3.71028003276625
+          },
+          {
+            "finger": "ring_r",
+            "weighted_vertices": 304,
+            "maximum_travel_cm": 9.447941340898275,
+            "average_travel_cm": 2.9546969648069963
+          },
+          {
+            "finger": "pinky_r",
+            "weighted_vertices": 212,
+            "maximum_travel_cm": 6.3436569432541265,
+            "average_travel_cm": 2.2941588369137556
+          }
+        ]
+      },
+      "archive_sha256": "d6e1b5df26e67cf9905c5636bb7adad505d0463d7511552c16f8530842113551",
+      "export_sha256": "832e2e5f2e46c7118e2fcae46999d7d1ea95b7fbc66a01beb6dd8810fb27d8ed"
+    }
+  ],
+  "environment": [
+    {
+      "name": "BlackEquipmentCase",
+      "asset": "/Game/Crusader/Environment/Level2/BlackEquipmentCase/BlackEquipmentCase.BlackEquipmentCase",
+      "archive_sha256": "0f2033b8a113af0b2ec7b833157d3dbd96499ffbb3278ab6bbf5857921bff384"
+    },
+    {
+      "name": "BlueSlateShowcase",
+      "asset": "/Game/Crusader/Environment/Level2/BlueSlateShowcase/BlueSlateShowcase.BlueSlateShowcase",
+      "archive_sha256": "e5d494f8f786f22525fe7623a28aa0de1fe854dce93f63c0847549f68b89dd5e"
+    },
+    {
+      "name": "BlueSteelVault",
+      "asset": "/Game/Crusader/Environment/Level2/BlueSteelVault/BlueSteelVault.BlueSteelVault",
+      "archive_sha256": "8d4176580d33632d40bb8e3a954fbf7f250f606f184f6e6fb707093579d53f23"
+    },
+    {
+      "name": "BronzeVentilationPanel",
+      "asset": "/Game/Crusader/Environment/Level2/BronzeVentilationPanel/BronzeVentilationPanel.BronzeVentilationPanel",
+      "archive_sha256": "d4edce9fc9270f9a150677e218c14cddc7932c9e2e31a89b7291c54ec9c85d06"
+    },
+    {
+      "name": "CommandNexus",
+      "asset": "/Game/Crusader/Environment/Level2/CommandNexus/CommandNexus.CommandNexus",
+      "archive_sha256": "e6dbfa088fdcf5a8bb382ff975d4b4ddb91571c054d93d8719054d6565d0fe58"
+    },
+    {
+      "name": "IndustrialAirlockDoor",
+      "asset": "/Game/Crusader/Environment/Level2/IndustrialAirlockDoor/IndustrialAirlockDoor.IndustrialAirlockDoor",
+      "archive_sha256": "addf7ec57408883b13cee4e8c523a1f5cbed890460dc9bd49d86098db77cd3e4"
+    },
+    {
+      "name": "IndustrialCargoCrate",
+      "asset": "/Game/Crusader/Environment/Level2/IndustrialCargoCrate/IndustrialCargoCrate.IndustrialCargoCrate",
+      "archive_sha256": "0b10444660ac03067f55228c12f67ff93d398c6e2ec3dc46ae643e3bd8b026d0"
+    },
+    {
+      "name": "IndustrialVentWall",
+      "asset": "/Game/Crusader/Environment/Level2/IndustrialVentWall/IndustrialVentWall.IndustrialVentWall",
+      "archive_sha256": "d9ae1d854373dcc2df52a4bae70189a1c090e196a3f807e852d9b54778d9a6c5"
+    },
+    {
+      "name": "IndustrialWallPanel",
+      "asset": "/Game/Crusader/Environment/Level2/IndustrialWallPanel/IndustrialWallPanel.IndustrialWallPanel",
+      "archive_sha256": "c25383e29c79ba3a917428b0ef7a0de2cd7c611ae5b6a847f7650eb9b47b36e8"
+    },
+    {
+      "name": "IronboundBastion",
+      "asset": "/Game/Crusader/Environment/Level2/IronboundBastion/IronboundBastion.IronboundBastion",
+      "archive_sha256": "99acdcc0e2aa7a73196f5e82fa1f324237b9cc89443542a9baf3a8a328f3c43d"
+    },
+    {
+      "name": "MidnightCircuitSlab",
+      "asset": "/Game/Crusader/Environment/Level2/MidnightCircuitSlab/MidnightCircuitSlab.MidnightCircuitSlab",
+      "archive_sha256": "7cf929bab376ac47507df23705aa082c2c2825df638709371a652b1c619d6e98"
+    },
+    {
+      "name": "OldBattery",
+      "asset": "/Game/Crusader/Environment/Level2/OldBattery/OldBattery.OldBattery",
+      "archive_sha256": "07bf3e01061365e1317f95a763c2bf8ada3fe32a653fdc0c47189f7a4c2d5766"
+    },
+    {
+      "name": "RetroCyberConsole",
+      "asset": "/Game/Crusader/Environment/Level2/RetroCyberConsole/RetroCyberConsole.RetroCyberConsole",
+      "archive_sha256": "3c1e0e0fc466b5fff969e6e247a8b6c9aa5771655edbafef5b423b4172e54313"
+    },
+    {
+      "name": "RetroServerTerminal",
+      "asset": "/Game/Crusader/Environment/Level2/RetroServerTerminal/RetroServerTerminal.RetroServerTerminal",
+      "archive_sha256": "7fd7e4da701f44298a04cfa504cca384d3c2ed60acc692fdd9eb0fbc8f93acb6"
+    },
+    {
+      "name": "RuneChocolateBar",
+      "asset": "/Game/Crusader/Environment/Level2/RuneChocolateBar/RuneChocolateBar.RuneChocolateBar",
+      "archive_sha256": "c167cb138ef9b20419d41a1fa2f9bd0a90afe1a81fcbaf0975722b772ef01c31"
+    },
+    {
+      "name": "RustyRadioactiveBarrel",
+      "asset": "/Game/Crusader/Environment/Level2/RustyRadioactiveBarrel/RustyRadioactiveBarrel.RustyRadioactiveBarrel",
+      "archive_sha256": "d05970293b776b9df8accd5618046b0b9a4f52aa94373cec98578ef8d76a5e5b"
+    },
+    {
+      "name": "TriangularBastion",
+      "asset": "/Game/Crusader/Environment/Level2/TriangularBastion/TriangularBastion.TriangularBastion",
+      "archive_sha256": "f253ac809f31e6740cbf0880180594e1541c94411da7c0bb686a9aec98d09a69"
+    },
+    {
+      "name": "WallCControlPanel",
+      "asset": "/Game/Crusader/Environment/Level2/WallCControlPanel/WallCControlPanel.WallCControlPanel",
+      "archive_sha256": "7649f35c899b094c3d9487553cad81942c463d169893963424eb8b5e5f01ac8d"
+    },
+    {
+      "name": "WallG",
+      "asset": "/Game/Crusader/Environment/Level2/WallG/WallG.WallG",
+      "archive_sha256": "9535a4353dcfeed9a58a7169404dae1df3076c15c0cb9f5d9ad967fb7c6a558c"
+    }
+  ],
+  "checks": {
+    "walkthrough": {
+      "passed": true,
+      "checks": [
+        {
+          "name": "Imported Level2 kit only",
+          "passed": true,
+          "instances": 705
+        },
+        {
+          "name": "Solid roof at tile centres and seams",
+          "passed": true,
+          "samples": 359,
+          "misses": []
+        },
+        {
+          "name": "Lobby walkable kit floor",
+          "passed": true,
+          "height": 29.33329200744629
+        },
+        {
+          "name": "Lobby reachable from district",
+          "passed": true,
+          "points": 6
+        },
+        {
+          "name": "Hall walkable kit floor",
+          "passed": true,
+          "height": 29.277889251708984
+        },
+        {
+          "name": "Hall reachable from district",
+          "passed": true,
+          "points": 5
+        },
+        {
+          "name": "Operations walkable kit floor",
+          "passed": true,
+          "height": 29.446081161499023
+        },
+        {
+          "name": "Operations reachable from district",
+          "passed": true,
+          "points": 6
+        },
+        {
+          "name": "Command walkable kit floor",
+          "passed": true,
+          "height": 29.246557235717773
+        },
+        {
+          "name": "Command reachable from district",
+          "passed": true,
+          "points": 7
+        },
+        {
+          "name": "Service walkable kit floor",
+          "passed": true,
+          "height": 29.327985763549805
+        },
+        {
+          "name": "Service reachable from district",
+          "passed": true,
+          "points": 5
+        },
+        {
+          "name": "Storage walkable kit floor",
+          "passed": true,
+          "height": 29.53157615661621
+        },
+        {
+          "name": "Storage reachable from district",
+          "passed": true,
+          "points": 7
+        },
+        {
+          "name": "Main entrance standing clearance",
+          "passed": true,
+          "blocker": null
+        },
+        {
+          "name": "West entrance standing clearance",
+          "passed": true,
+          "blocker": null
+        },
+        {
+          "name": "Service route standing clearance",
+          "passed": true,
+          "blocker": null
+        },
+        {
+          "name": "Storage route standing clearance",
+          "passed": true,
+          "blocker": null
+        },
+        {
+          "name": "Entrance camera clearance",
+          "passed": true,
+          "distance_cm": 304.1381265149107
+        },
+        {
+          "name": "Main hall camera clearance",
+          "passed": true,
+          "distance_cm": 304.1381265149113
+        },
+        {
+          "name": "Operations camera clearance",
+          "passed": true,
+          "distance_cm": 304.1381265149107
+        },
+        {
+          "name": "Command camera clearance",
+          "passed": true,
+          "distance_cm": 304.1381265149098
+        },
+        {
+          "name": "Command exit camera clearance",
+          "passed": true,
+          "distance_cm": 304.1381265149104
+        },
+        {
+          "name": "Storage approach camera clearance",
+          "passed": true,
+          "distance_cm": 304.1381265149117
+        },
+        {
+          "name": "Storage camera clearance",
+          "passed": true,
+          "distance_cm": 304.13812651490997
+        },
+        {
+          "name": "Storage exit camera clearance",
+          "passed": true,
+          "distance_cm": 304.13812651490974
+        },
+        {
+          "name": "Cross hall camera clearance",
+          "passed": true,
+          "distance_cm": 304.1381265149114
+        },
+        {
+          "name": "Service approach camera clearance",
+          "passed": true,
+          "distance_cm": 304.1381265149114
+        },
+        {
+          "name": "Service camera clearance",
+          "passed": true,
+          "distance_cm": 304.1381265149114
+        },
+        {
+          "name": "West exit camera clearance",
+          "passed": true,
+          "distance_cm": 304.1381265149114
+        }
+      ],
+      "walkthrough": [
+        {
+          "stop": "Entrance",
+          "position": [
+            20600.0,
+            6070.741667026046,
+            117.71027530579539
+          ],
+          "camera_distance_cm": 304.1381265149107
+        },
+        {
+          "stop": "Main hall",
+          "position": [
+            20600.0,
+            7292.753759201346,
+            117.80944269566521
+          ],
+          "camera_distance_cm": 304.1381265149113
+        },
+        {
+          "stop": "Operations",
+          "position": [
+            20600.0,
+            8464.713861305794,
+            117.71064939465131
+          ],
+          "camera_distance_cm": 304.1381265149107
+        },
+        {
+          "stop": "Command",
+          "position": [
+            20600.0,
+            9147.04606329424,
+            117.63832477410969
+          ],
+          "camera_distance_cm": 304.1381265149098
+        },
+        {
+          "stop": "Command exit",
+          "position": [
+            20600.0,
+            8426.86124125937,
+            117.56622532596506
+          ],
+          "camera_distance_cm": 304.1381265149104
+        },
+        {
+          "stop": "Storage approach",
+          "position": [
+            22011.097577339286,
+            7914.135295648982,
+            117.7005939557864
+          ],
+          "camera_distance_cm": 304.1381265149117
+        },
+        {
+          "stop": "Storage",
+          "position": [
+            23062.931370049453,
+            7900.481196508285,
+            117.7005939557864
+          ],
+          "camera_distance_cm": 304.13812651490997
+        },
+        {
+          "stop": "Storage exit",
+          "position": [
+            22090.178349658217,
+            7900.019086862288,
+            117.57896714982348
+          ],
+          "camera_distance_cm": 304.13812651490974
+        },
+        {
+          "stop": "Cross hall",
+          "position": [
+            20639.669909648037,
+            7900.000508109718,
+            117.71788527127926
+          ],
+          "camera_distance_cm": 304.1381265149114
+        },
+        {
+          "stop": "Service approach",
+          "position": [
+            19179.749175084933,
+            7900.0000101471105,
+            117.56560933263168
+          ],
+          "camera_distance_cm": 304.1381265149114
+        },
+        {
+          "stop": "Service",
+          "position": [
+            18144.83588061818,
+            7900.000000421352,
+            117.74868471287516
+          ],
+          "camera_distance_cm": 304.1381265149114
+        },
+        {
+          "stop": "West exit",
+          "position": [
+            17265.445867158527,
+            7900.000000016326,
+            116.46140332095469
+          ],
+          "camera_distance_cm": 304.1381265149114
+        }
+      ],
+      "error": null,
+      "walkthrough_completed": true
+    },
+    "patrols": {
+      "passed": true,
+      "loadouts": [
+        {
+          "actor": "CR_ControlCrowd_ArmoredSentinel",
+          "guard": true,
+          "armed": true,
+          "weapon": "FX_Rifle",
+          "visual": "BP_ArmoredSentinel_C"
+        },
+        {
+          "actor": "CR_ControlCrowd_AstronautSentinel",
+          "guard": true,
+          "armed": true,
+          "weapon": "FX_Pistol",
+          "visual": "BP_AstronautSentinel_C"
+        },
+        {
+          "actor": "CR_ControlCrowd_CrimsonVanguard",
+          "guard": true,
+          "armed": true,
+          "weapon": "FX_Shotgun",
+          "visual": "BP_CrimsonVanguard_C"
+        },
+        {
+          "actor": "CR_ControlCrowd_MaintenanceWorker",
+          "guard": false,
+          "armed": false,
+          "weapon": null,
+          "visual": "BP_MaintenanceWorker_C"
+        },
+        {
+          "actor": "CR_ControlCrowd_RuggedMiner",
+          "guard": false,
+          "armed": false,
+          "weapon": null,
+          "visual": "BP_RuggedMiner_C"
+        },
+        {
+          "actor": "CR_ControlCrowd_RustboundExplorer",
+          "guard": false,
+          "armed": false,
+          "weapon": null,
+          "visual": "BP_RustboundExplorer_C"
+        },
+        {
+          "actor": "CR_ControlCrowd_CrimsonAuthority",
+          "guard": false,
+          "armed": false,
+          "weapon": null,
+          "visual": "BP_CrimsonAuthority_C"
+        },
+        {
+          "actor": "CR_ControlCrowd_CrusaderOperative",
+          "guard": false,
+          "armed": false,
+          "weapon": null,
+          "visual": "BP_CrusaderOperative_C"
+        },
+        {
+          "actor": "CR_ControlCrowd_GraySentinel",
+          "guard": false,
+          "armed": false,
+          "weapon": null,
+          "visual": "BP_GraySentinel_C"
+        },
+        {
+          "actor": "CR_ControlCrowd_RuggedSurvivor",
+          "guard": false,
+          "armed": false,
+          "weapon": null,
+          "visual": "BP_RuggedSurvivor_C"
+        }
+      ],
+      "routes": [
+        {
+          "start": "CR_ControlCrowd_Area_SouthWalk",
+          "end": "CR_ControlCrowd_Area_Entrance",
+          "complete": true,
+          "reciprocal": true
+        },
+        {
+          "start": "CR_ControlCrowd_Area_SouthWalk",
+          "end": "CR_ControlCrowd_Area_WestWalk",
+          "complete": true,
+          "reciprocal": true
+        },
+        {
+          "start": "CR_ControlCrowd_Area_SouthWalk",
+          "end": "CR_Crowd_Depot",
+          "complete": true,
+          "reciprocal": true
+        },
+        {
+          "start": "CR_ControlCrowd_Area_WestWalk",
+          "end": "CR_ControlCrowd_Area_SouthWalk",
+          "complete": true,
+          "reciprocal": true
+        },
+        {
+          "start": "CR_ControlCrowd_Area_WestWalk",
+          "end": "CR_ControlCrowd_Area_Service",
+          "complete": true,
+          "reciprocal": true
+        },
+        {
+          "start": "CR_ControlCrowd_Area_WestWalk",
+          "end": "CR_Crowd_Depot",
+          "complete": true,
+          "reciprocal": true
+        },
+        {
+          "start": "CR_ControlCrowd_Area_Entrance",
+          "end": "CR_ControlCrowd_Area_SouthWalk",
+          "complete": true,
+          "reciprocal": true
+        },
+        {
+          "start": "CR_ControlCrowd_Area_Entrance",
+          "end": "CR_ControlCrowd_Area_Lobby",
+          "complete": true,
+          "reciprocal": true
+        },
+        {
+          "start": "CR_ControlCrowd_Area_Lobby",
+          "end": "CR_ControlCrowd_Area_Entrance",
+          "complete": true,
+          "reciprocal": true
+        },
+        {
+          "start": "CR_ControlCrowd_Area_Lobby",
+          "end": "CR_ControlCrowd_Area_Hall",
+          "complete": true,
+          "reciprocal": true
+        },
+        {
+          "start": "CR_ControlCrowd_Area_Hall",
+          "end": "CR_ControlCrowd_Area_Lobby",
+          "complete": true,
+          "reciprocal": true
+        },
+        {
+          "start": "CR_ControlCrowd_Area_Hall",
+          "end": "CR_ControlCrowd_Area_Operations",
+          "complete": true,
+          "reciprocal": true
+        },
+        {
+          "start": "CR_ControlCrowd_Area_Hall",
+          "end": "CR_ControlCrowd_Area_Service",
+          "complete": true,
+          "reciprocal": true
+        },
+        {
+          "start": "CR_ControlCrowd_Area_Hall",
+          "end": "CR_ControlCrowd_Area_Storage",
+          "complete": true,
+          "reciprocal": true
+        },
+        {
+          "start": "CR_ControlCrowd_Area_Operations",
+          "end": "CR_ControlCrowd_Area_Hall",
+          "complete": true,
+          "reciprocal": true
+        },
+        {
+          "start": "CR_ControlCrowd_Area_Operations",
+          "end": "CR_ControlCrowd_Area_Command",
+          "complete": true,
+          "reciprocal": true
+        },
+        {
+          "start": "CR_ControlCrowd_Area_Operations",
+          "end": "CR_ControlCrowd_Area_Service",
+          "complete": true,
+          "reciprocal": true
+        },
+        {
+          "start": "CR_ControlCrowd_Area_Operations",
+          "end": "CR_ControlCrowd_Area_Storage",
+          "complete": true,
+          "reciprocal": true
+        },
+        {
+          "start": "CR_ControlCrowd_Area_Command",
+          "end": "CR_ControlCrowd_Area_Operations",
+          "complete": true,
+          "reciprocal": true
+        },
+        {
+          "start": "CR_ControlCrowd_Area_Service",
+          "end": "CR_ControlCrowd_Area_WestWalk",
+          "complete": true,
+          "reciprocal": true
+        },
+        {
+          "start": "CR_ControlCrowd_Area_Service",
+          "end": "CR_ControlCrowd_Area_Hall",
+          "complete": true,
+          "reciprocal": true
+        },
+        {
+          "start": "CR_ControlCrowd_Area_Service",
+          "end": "CR_ControlCrowd_Area_Operations",
+          "complete": true,
+          "reciprocal": true
+        },
+        {
+          "start": "CR_ControlCrowd_Area_Storage",
+          "end": "CR_ControlCrowd_Area_Hall",
+          "complete": true,
+          "reciprocal": true
+        },
+        {
+          "start": "CR_ControlCrowd_Area_Storage",
+          "end": "CR_ControlCrowd_Area_Operations",
+          "complete": true,
+          "reciprocal": true
+        }
+      ],
+      "patrols": [
+        {
+          "actor": "CR_ControlCrowd_ArmoredSentinel",
+          "travel_cm": 9283.373132569508,
+          "areas": [
+            "CR_ControlCrowd_Area_Entrance",
+            "CR_ControlCrowd_Area_SouthWalk",
+            "CR_Crowd_Depot"
+          ],
+          "min_z": 88.27498898293965,
+          "max_z": 118.22586612837836,
+          "mean_lean": 6.813260688894218,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "steps": 101
+        },
+        {
+          "actor": "CR_ControlCrowd_AstronautSentinel",
+          "travel_cm": 7989.924315534042,
+          "areas": [
+            "CR_ControlCrowd_Area_Hall",
+            "CR_ControlCrowd_Area_Operations",
+            "CR_ControlCrowd_Area_Service",
+            "CR_ControlCrowd_Area_WestWalk"
+          ],
+          "min_z": 116.01838708954928,
+          "max_z": 118.72308832517137,
+          "mean_lean": 8.784489961711431,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "steps": 82
+        },
+        {
+          "actor": "CR_ControlCrowd_CrimsonVanguard",
+          "travel_cm": 4933.950104745555,
+          "areas": [
+            "CR_ControlCrowd_Area_Command",
+            "CR_ControlCrowd_Area_Operations"
+          ],
+          "min_z": 116.76481457177154,
+          "max_z": 118.72309318294465,
+          "mean_lean": 7.694994500242856,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "steps": 61
+        },
+        {
+          "actor": "CR_ControlCrowd_MaintenanceWorker",
+          "travel_cm": 6571.403293977069,
+          "areas": [
+            "CR_ControlCrowd_Area_Command",
+            "CR_ControlCrowd_Area_Operations",
+            "CR_ControlCrowd_Area_Service"
+          ],
+          "min_z": 116.64658834407834,
+          "max_z": 118.86379910385106,
+          "mean_lean": 9.469185723368733,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "steps": 64
+        },
+        {
+          "actor": "CR_ControlCrowd_RuggedMiner",
+          "travel_cm": 9920.91383639099,
+          "areas": [
+            "CR_ControlCrowd_Area_Hall",
+            "CR_ControlCrowd_Area_Lobby",
+            "CR_ControlCrowd_Area_Storage"
+          ],
+          "min_z": 116.68090001504069,
+          "max_z": 118.74459175399606,
+          "mean_lean": 8.091773516762267,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "steps": 95
+        },
+        {
+          "actor": "CR_ControlCrowd_RustboundExplorer",
+          "travel_cm": 9126.92623678217,
+          "areas": [
+            "CR_ControlCrowd_Area_Hall",
+            "CR_ControlCrowd_Area_Operations",
+            "CR_ControlCrowd_Area_Service"
+          ],
+          "min_z": 116.53658112377141,
+          "max_z": 118.91346795974032,
+          "mean_lean": 8.039798398141174,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "steps": 96
+        },
+        {
+          "actor": "CR_ControlCrowd_CrimsonAuthority",
+          "travel_cm": 9941.875812407055,
+          "areas": [
+            "CR_ControlCrowd_Area_Operations",
+            "CR_ControlCrowd_Area_Service"
+          ],
+          "min_z": 116.7628802707305,
+          "max_z": 118.90913766145052,
+          "mean_lean": 7.755610569549495,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "steps": 100
+        },
+        {
+          "actor": "CR_ControlCrowd_CrusaderOperative",
+          "travel_cm": 6062.343045554199,
+          "areas": [
+            "CR_ControlCrowd_Area_Hall",
+            "CR_ControlCrowd_Area_Service",
+            "CR_ControlCrowd_Area_Storage"
+          ],
+          "min_z": 116.49204954911092,
+          "max_z": 118.95605781914838,
+          "mean_lean": 6.5224367174872295,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "steps": 63
+        },
+        {
+          "actor": "CR_ControlCrowd_GraySentinel",
+          "travel_cm": 6904.135184522809,
+          "areas": [
+            "CR_ControlCrowd_Area_Hall",
+            "CR_ControlCrowd_Area_Operations",
+            "CR_ControlCrowd_Area_Service"
+          ],
+          "min_z": 116.6465869478629,
+          "max_z": 118.94176232803432,
+          "mean_lean": 10.384532079242978,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "steps": 74
+        },
+        {
+          "actor": "CR_ControlCrowd_RuggedSurvivor",
+          "travel_cm": 9515.334883646836,
+          "areas": [
+            "CR_ControlCrowd_Area_Hall",
+            "CR_ControlCrowd_Area_Operations",
+            "CR_ControlCrowd_Area_Service"
+          ],
+          "min_z": 116.7112014072294,
+          "max_z": 118.96921885601516,
+          "mean_lean": 7.0492811799551385,
+          "gaits": [
+            "<E_Gait.WALK: 0>"
+          ],
+          "steps": 93
+        }
+      ],
+      "error": null
+    },
+    "visuals": {
+      "passed": true,
+      "error": null,
+      "results": [
+        {
+          "case": "widget_select",
+          "visual": "ArmoredSentinel",
+          "mesh": "Manny"
+        },
+        {
+          "case": "aim",
+          "visual": "ArmoredSentinel",
+          "left": false,
+          "pitch": 0.0,
+          "muzzle_error_degrees": 5.635790996299082,
+          "weapon_roll_degrees": -1.3962379720663423
+        },
+        {
+          "case": "aim",
+          "visual": "ArmoredSentinel",
+          "left": false,
+          "pitch": 40.0,
+          "muzzle_error_degrees": 3.1436152146982455,
+          "weapon_roll_degrees": 0.05383032592732778
+        },
+        {
+          "case": "aim",
+          "visual": "ArmoredSentinel",
+          "left": false,
+          "pitch": -40.0,
+          "muzzle_error_degrees": 3.9938881365146437,
+          "weapon_roll_degrees": -2.8407309453399905
+        },
+        {
+          "case": "aim",
+          "visual": "ArmoredSentinel",
+          "left": true,
+          "pitch": 0.0,
+          "muzzle_error_degrees": 5.708883723626739,
+          "weapon_roll_degrees": 1.1664226931253394
+        },
+        {
+          "case": "aim",
+          "visual": "ArmoredSentinel",
+          "left": true,
+          "pitch": 40.0,
+          "muzzle_error_degrees": 3.4090329759160367,
+          "weapon_roll_degrees": -0.901766224950092
+        },
+        {
+          "case": "aim",
+          "visual": "ArmoredSentinel",
+          "left": true,
+          "pitch": -40.0,
+          "muzzle_error_degrees": 3.8395030016851845,
+          "weapon_roll_degrees": 3.035353008437963
+        },
+        {
+          "case": "fire_reload_and_clear",
+          "visual": "ArmoredSentinel"
+        },
+        {
+          "case": "widget_select",
+          "visual": "AstronautSentinel",
+          "mesh": "Manny"
+        },
+        {
+          "case": "aim",
+          "visual": "AstronautSentinel",
+          "left": false,
+          "pitch": 0.0,
+          "muzzle_error_degrees": 6.332299925041624,
+          "weapon_roll_degrees": -1.0816631869726725
+        },
+        {
+          "case": "aim",
+          "visual": "AstronautSentinel",
+          "left": false,
+          "pitch": 40.0,
+          "muzzle_error_degrees": 3.108425316517931,
+          "weapon_roll_degrees": 0.4636975045062259
+        },
+        {
+          "case": "aim",
+          "visual": "AstronautSentinel",
+          "left": false,
+          "pitch": -40.0,
+          "muzzle_error_degrees": 4.386700127413649,
+          "weapon_roll_degrees": -3.442741631030186
+        },
+        {
+          "case": "aim",
+          "visual": "AstronautSentinel",
+          "left": true,
+          "pitch": 0.0,
+          "muzzle_error_degrees": 5.581732160940822,
+          "weapon_roll_degrees": 1.0695339849540333
+        },
+        {
+          "case": "aim",
+          "visual": "AstronautSentinel",
+          "left": true,
+          "pitch": 40.0,
+          "muzzle_error_degrees": 3.4805832327568584,
+          "weapon_roll_degrees": -1.3170401241414562
+        },
+        {
+          "case": "aim",
+          "visual": "AstronautSentinel",
+          "left": true,
+          "pitch": -40.0,
+          "muzzle_error_degrees": 3.879504180598005,
+          "weapon_roll_degrees": 3.397142460273519
+        },
+        {
+          "case": "fire_reload_and_clear",
+          "visual": "AstronautSentinel"
+        },
+        {
+          "case": "widget_select",
+          "visual": "CrimsonVanguard",
+          "mesh": "Manny"
+        },
+        {
+          "case": "aim",
+          "visual": "CrimsonVanguard",
+          "left": false,
+          "pitch": 0.0,
+          "muzzle_error_degrees": 6.123673490210711,
+          "weapon_roll_degrees": -1.2027805281282449
+        },
+        {
+          "case": "aim",
+          "visual": "CrimsonVanguard",
+          "left": false,
+          "pitch": 40.0,
+          "muzzle_error_degrees": 3.077486556140242,
+          "weapon_roll_degrees": 0.810640057165331
+        },
+        {
+          "case": "aim",
+          "visual": "CrimsonVanguard",
+          "left": false,
+          "pitch": -40.0,
+          "muzzle_error_degrees": 4.2814408056298126,
+          "weapon_roll_degrees": -3.7638593581128883
+        },
+        {
+          "case": "aim",
+          "visual": "CrimsonVanguard",
+          "left": true,
+          "pitch": 0.0,
+          "muzzle_error_degrees": 5.846263762593157,
+          "weapon_roll_degrees": 0.6353044428498567
+        },
+        {
+          "case": "aim",
+          "visual": "CrimsonVanguard",
+          "left": true,
+          "pitch": 40.0,
+          "muzzle_error_degrees": 3.354340419139846,
+          "weapon_roll_degrees": -0.5406808246787195
+        },
+        {
+          "case": "aim",
+          "visual": "CrimsonVanguard",
+          "left": true,
+          "pitch": -40.0,
+          "muzzle_error_degrees": 4.372867125431296,
+          "weapon_roll_degrees": 3.7752826604956424
+        },
+        {
+          "case": "fire_reload_and_clear",
+          "visual": "CrimsonVanguard"
+        },
+        {
+          "case": "widget_select",
+          "visual": "MaintenanceWorker",
+          "mesh": "Manny"
+        },
+        {
+          "case": "aim",
+          "visual": "MaintenanceWorker",
+          "left": false,
+          "pitch": 0.0,
+          "muzzle_error_degrees": 5.813171655402324,
+          "weapon_roll_degrees": -0.8109661939759993
+        },
+        {
+          "case": "aim",
+          "visual": "MaintenanceWorker",
+          "left": false,
+          "pitch": 40.0,
+          "muzzle_error_degrees": 3.06038132670328,
+          "weapon_roll_degrees": 0.22105963400717138
+        },
+        {
+          "case": "aim",
+          "visual": "MaintenanceWorker",
+          "left": false,
+          "pitch": -40.0,
+          "muzzle_error_degrees": 4.272629731491656,
+          "weapon_roll_degrees": -3.5844058885836305
+        },
+        {
+          "case": "aim",
+          "visual": "MaintenanceWorker",
+          "left": true,
+          "pitch": 0.0,
+          "muzzle_error_degrees": 5.8333250482072785,
+          "weapon_roll_degrees": 0.18848406100846243
+        },
+        {
+          "case": "aim",
+          "visual": "MaintenanceWorker",
+          "left": true,
+          "pitch": 40.0,
+          "muzzle_error_degrees": 2.8847609917376666,
+          "weapon_roll_degrees": -0.10947379364324891
+        },
+        {
+          "case": "aim",
+          "visual": "MaintenanceWorker",
+          "left": true,
+          "pitch": -40.0,
+          "muzzle_error_degrees": 4.996012067241928,
+          "weapon_roll_degrees": 3.7631264151258583
+        },
+        {
+          "case": "fire_reload_and_clear",
+          "visual": "MaintenanceWorker"
+        },
+        {
+          "case": "widget_select",
+          "visual": "RuggedMiner",
+          "mesh": "Manny"
+        },
+        {
+          "case": "aim",
+          "visual": "RuggedMiner",
+          "left": false,
+          "pitch": 0.0,
+          "muzzle_error_degrees": 5.420750914977294,
+          "weapon_roll_degrees": -0.2883563162053376
+        },
+        {
+          "case": "aim",
+          "visual": "RuggedMiner",
+          "left": false,
+          "pitch": 40.0,
+          "muzzle_error_degrees": 3.116375067295046,
+          "weapon_roll_degrees": 0.04526187350724336
+        },
+        {
+          "case": "aim",
+          "visual": "RuggedMiner",
+          "left": false,
+          "pitch": -40.0,
+          "muzzle_error_degrees": 4.443869479348516,
+          "weapon_roll_degrees": -3.335279998675674
+        },
+        {
+          "case": "aim",
+          "visual": "RuggedMiner",
+          "left": true,
+          "pitch": 0.0,
+          "muzzle_error_degrees": 5.3096440507997755,
+          "weapon_roll_degrees": 0.5163628317157106
+        },
+        {
+          "case": "aim",
+          "visual": "RuggedMiner",
+          "left": true,
+          "pitch": 40.0,
+          "muzzle_error_degrees": 2.965807902887461,
+          "weapon_roll_degrees": 0.2992126128916842
+        },
+        {
+          "case": "aim",
+          "visual": "RuggedMiner",
+          "left": true,
+          "pitch": -40.0,
+          "muzzle_error_degrees": 4.771751565484056,
+          "weapon_roll_degrees": 3.655165462017025
+        },
+        {
+          "case": "fire_reload_and_clear",
+          "visual": "RuggedMiner"
+        },
+        {
+          "case": "widget_select",
+          "visual": "RustboundExplorer",
+          "mesh": "Manny"
+        },
+        {
+          "case": "aim",
+          "visual": "RustboundExplorer",
+          "left": false,
+          "pitch": 0.0,
+          "muzzle_error_degrees": 5.790670053815521,
+          "weapon_roll_degrees": -1.0068913353146953
+        },
+        {
+          "case": "aim",
+          "visual": "RustboundExplorer",
+          "left": false,
+          "pitch": 40.0,
+          "muzzle_error_degrees": 3.463058094111726,
+          "weapon_roll_degrees": 0.6419656908639684
+        },
+        {
+          "case": "aim",
+          "visual": "RustboundExplorer",
+          "left": false,
+          "pitch": -40.0,
+          "muzzle_error_degrees": 4.392936730676391,
+          "weapon_roll_degrees": -3.0485701754746937
+        },
+        {
+          "case": "aim",
+          "visual": "RustboundExplorer",
+          "left": true,
+          "pitch": 0.0,
+          "muzzle_error_degrees": 5.331401819232287,
+          "weapon_roll_degrees": 0.9700488237708251
+        },
+        {
+          "case": "aim",
+          "visual": "RustboundExplorer",
+          "left": true,
+          "pitch": 40.0,
+          "muzzle_error_degrees": 3.2897048670195326,
+          "weapon_roll_degrees": -0.061283561481550036
+        },
+        {
+          "case": "aim",
+          "visual": "RustboundExplorer",
+          "left": true,
+          "pitch": -40.0,
+          "muzzle_error_degrees": 4.443047771629248,
+          "weapon_roll_degrees": 3.413549038748759
+        },
+        {
+          "case": "fire_reload_and_clear",
+          "visual": "RustboundExplorer"
+        },
+        {
+          "case": "widget_select",
+          "visual": "CrimsonAuthority",
+          "mesh": "Manny"
+        },
+        {
+          "case": "aim",
+          "visual": "CrimsonAuthority",
+          "left": false,
+          "pitch": 0.0,
+          "muzzle_error_degrees": 5.661239931004716,
+          "weapon_roll_degrees": -1.1662339705069873
+        },
+        {
+          "case": "aim",
+          "visual": "CrimsonAuthority",
+          "left": false,
+          "pitch": 40.0,
+          "muzzle_error_degrees": 3.401323608084952,
+          "weapon_roll_degrees": 0.9323830426689945
+        },
+        {
+          "case": "aim",
+          "visual": "CrimsonAuthority",
+          "left": false,
+          "pitch": -40.0,
+          "muzzle_error_degrees": 3.837630690009396,
+          "weapon_roll_degrees": -3.0697765431019968
+        },
+        {
+          "case": "aim",
+          "visual": "CrimsonAuthority",
+          "left": true,
+          "pitch": 0.0,
+          "muzzle_error_degrees": 5.715399235073316,
+          "weapon_roll_degrees": 1.422880008371851
+        },
+        {
+          "case": "aim",
+          "visual": "CrimsonAuthority",
+          "left": true,
+          "pitch": 40.0,
+          "muzzle_error_degrees": 3.113196668982834,
+          "weapon_roll_degrees": -0.03363511448118305
+        },
+        {
+          "case": "aim",
+          "visual": "CrimsonAuthority",
+          "left": true,
+          "pitch": -40.0,
+          "muzzle_error_degrees": 3.986606772289084,
+          "weapon_roll_degrees": 2.8096694162393394
+        },
+        {
+          "case": "fire_reload_and_clear",
+          "visual": "CrimsonAuthority"
+        },
+        {
+          "case": "widget_select",
+          "visual": "CrusaderOperative",
+          "mesh": "Manny"
+        },
+        {
+          "case": "aim",
+          "visual": "CrusaderOperative",
+          "left": false,
+          "pitch": 0.0,
+          "muzzle_error_degrees": 5.7672910006059555,
+          "weapon_roll_degrees": -0.6917496102161425
+        },
+        {
+          "case": "aim",
+          "visual": "CrusaderOperative",
+          "left": false,
+          "pitch": 40.0,
+          "muzzle_error_degrees": 3.481352216163944,
+          "weapon_roll_degrees": 1.208279945218326
+        },
+        {
+          "case": "aim",
+          "visual": "CrusaderOperative",
+          "left": false,
+          "pitch": -40.0,
+          "muzzle_error_degrees": 4.014179445270615,
+          "weapon_roll_degrees": -3.3611458787200994
+        },
+        {
+          "case": "aim",
+          "visual": "CrusaderOperative",
+          "left": true,
+          "pitch": 0.0,
+          "muzzle_error_degrees": 6.223378221189332,
+          "weapon_roll_degrees": 1.218018969869716
+        },
+        {
+          "case": "aim",
+          "visual": "CrusaderOperative",
+          "left": true,
+          "pitch": 40.0,
+          "muzzle_error_degrees": 3.0995048219957506,
+          "weapon_roll_degrees": -0.49963400344839903
+        },
+        {
+          "case": "aim",
+          "visual": "CrusaderOperative",
+          "left": true,
+          "pitch": -40.0,
+          "muzzle_error_degrees": 4.484068986349955,
+          "weapon_roll_degrees": 3.608022565567085
+        },
+        {
+          "case": "fire_reload_and_clear",
+          "visual": "CrusaderOperative"
+        },
+        {
+          "case": "widget_select",
+          "visual": "GraySentinel",
+          "mesh": "Manny"
+        },
+        {
+          "case": "aim",
+          "visual": "GraySentinel",
+          "left": false,
+          "pitch": 0.0,
+          "muzzle_error_degrees": 5.853415022198284,
+          "weapon_roll_degrees": -0.5729801488683742
+        },
+        {
+          "case": "aim",
+          "visual": "GraySentinel",
+          "left": false,
+          "pitch": 40.0,
+          "muzzle_error_degrees": 3.3249394753039216,
+          "weapon_roll_degrees": 0.38444814133939637
+        },
+        {
+          "case": "aim",
+          "visual": "GraySentinel",
+          "left": false,
+          "pitch": -40.0,
+          "muzzle_error_degrees": 4.603582560419602,
+          "weapon_roll_degrees": -3.7962722508122186
+        },
+        {
+          "case": "aim",
+          "visual": "GraySentinel",
+          "left": true,
+          "pitch": 0.0,
+          "muzzle_error_degrees": 5.968481025872304,
+          "weapon_roll_degrees": 1.1675004887388767
+        },
+        {
+          "case": "aim",
+          "visual": "GraySentinel",
+          "left": true,
+          "pitch": 40.0,
+          "muzzle_error_degrees": 3.0615287124356243,
+          "weapon_roll_degrees": -0.8431901693309736
+        },
+        {
+          "case": "aim",
+          "visual": "GraySentinel",
+          "left": true,
+          "pitch": -40.0,
+          "muzzle_error_degrees": 4.205562588234077,
+          "weapon_roll_degrees": 3.783564941116244
+        },
+        {
+          "case": "fire_reload_and_clear",
+          "visual": "GraySentinel"
+        },
+        {
+          "case": "widget_select",
+          "visual": "RuggedSurvivor",
+          "mesh": "Manny"
+        },
+        {
+          "case": "aim",
+          "visual": "RuggedSurvivor",
+          "left": false,
+          "pitch": 0.0,
+          "muzzle_error_degrees": 5.828144305507045,
+          "weapon_roll_degrees": -0.21072075278638364
+        },
+        {
+          "case": "aim",
+          "visual": "RuggedSurvivor",
+          "left": false,
+          "pitch": 40.0,
+          "muzzle_error_degrees": 2.8761668206509183,
+          "weapon_roll_degrees": 0.11127405661757224
+        },
+        {
+          "case": "aim",
+          "visual": "RuggedSurvivor",
+          "left": false,
+          "pitch": -40.0,
+          "muzzle_error_degrees": 4.9771455935247495,
+          "weapon_roll_degrees": -3.771290881192456
+        },
+        {
+          "case": "aim",
+          "visual": "RuggedSurvivor",
+          "left": true,
+          "pitch": 0.0,
+          "muzzle_error_degrees": 5.781408108175453,
+          "weapon_roll_degrees": 0.7678762313999391
+        },
+        {
+          "case": "aim",
+          "visual": "RuggedSurvivor",
+          "left": true,
+          "pitch": 40.0,
+          "muzzle_error_degrees": 3.0730743647557826,
+          "weapon_roll_degrees": -0.17271931608317598
+        },
+        {
+          "case": "aim",
+          "visual": "RuggedSurvivor",
+          "left": true,
+          "pitch": -40.0,
+          "muzzle_error_degrees": 4.29332660561104,
+          "weapon_roll_degrees": 3.577554993135532
+        },
+        {
+          "case": "fire_reload_and_clear",
+          "visual": "RuggedSurvivor"
+        }
+      ]
+    },
+    "network": {
+      "passed": true,
+      "error": null,
+      "results": [
+        {
+          "visual": "ArmoredSentinel",
+          "roles": 4,
+          "left_muzzle_error_degrees": [
+            6.861263644163221,
+            4.135440357926235,
+            4.02323293779733,
+            6.861227434355655
+          ],
+          "left_weapon_roll_degrees": [
+            -1.3732180148039184,
+            -0.05323825013093542,
+            0.07306395984132427,
+            -1.3731933172111892
+          ]
+        },
+        {
+          "visual": "AstronautSentinel",
+          "roles": 4,
+          "left_muzzle_error_degrees": [
+            6.5454738823179275,
+            4.4190553268048145,
+            4.4288593160506595,
+            6.545437047125173
+          ],
+          "left_weapon_roll_degrees": [
+            -1.4615187128229297,
+            -0.321192706524511,
+            -0.32787038333251783,
+            -1.4614946061746545
+          ]
+        },
+        {
+          "visual": "CrimsonVanguard",
+          "roles": 4,
+          "left_muzzle_error_degrees": [
+            6.857213545915557,
+            3.952703734996196,
+            3.814862359667038,
+            6.857176930119264
+          ],
+          "left_weapon_roll_degrees": [
+            -1.713776972233331,
+            0.67314666963251,
+            0.5847388584515876,
+            -1.7137502017656656
+          ]
+        },
+        {
+          "visual": "MaintenanceWorker",
+          "roles": 4,
+          "left_muzzle_error_degrees": [
+            6.95869533264284,
+            4.074753248195493,
+            4.031311017956749,
+            6.958659151886809
+          ],
+          "left_weapon_roll_degrees": [
+            -1.694439128342617,
+            -0.08701984661627218,
+            -0.30184163599591607,
+            -1.6944133187526749
+          ]
+        },
+        {
+          "visual": "RuggedMiner",
+          "roles": 4,
+          "left_muzzle_error_degrees": [
+            6.568774727059048,
+            4.467369248571605,
+            4.469417208181131,
+            6.56873794455122
+          ],
+          "left_weapon_roll_degrees": [
+            -1.5388583601358508,
+            -0.6727741222493508,
+            -0.7706690393932518,
+            -1.5388343266543456
+          ]
+        },
+        {
+          "visual": "RustboundExplorer",
+          "roles": 4,
+          "left_muzzle_error_degrees": [
+            6.856693781549525,
+            4.202154566953836,
+            4.246804487541693,
+            6.856657313354775
+          ],
+          "left_weapon_roll_degrees": [
+            -1.5496122780347446,
+            0.3808468378222024,
+            0.3814276577001026,
+            -1.5495863348082652
+          ]
+        },
+        {
+          "visual": "CrimsonAuthority",
+          "roles": 4,
+          "left_muzzle_error_degrees": [
+            6.759941036345458,
+            4.228524814164923,
+            4.108892752546946,
+            6.759904518355397
+          ],
+          "left_weapon_roll_degrees": [
+            -1.9277114121648533,
+            0.38846481057910326,
+            0.34543727625852283,
+            -1.927686459183198
+          ]
+        },
+        {
+          "visual": "CrusaderOperative",
+          "roles": 4,
+          "left_muzzle_error_degrees": [
+            6.685335703027707,
+            3.932225955546399,
+            4.115229110187404,
+            6.6852991056133835
+          ],
+          "left_weapon_roll_degrees": [
+            -1.9931611029740586,
+            0.21110521971350615,
+            0.19865758583571685,
+            -1.9931366822668428
+          ]
+        },
+        {
+          "visual": "GraySentinel",
+          "roles": 4,
+          "left_muzzle_error_degrees": [
+            6.844011016555094,
+            4.067178572347359,
+            4.123790223618517,
+            6.843974687923365
+          ],
+          "left_weapon_roll_degrees": [
+            -1.2565548857890267,
+            -0.15711049840292354,
+            -0.08899601669766033,
+            -1.2565298266165228
+          ]
+        },
+        {
+          "visual": "RuggedSurvivor",
+          "roles": 4,
+          "left_muzzle_error_degrees": [
+            6.527524092571876,
+            4.402823356521141,
+            4.409919955508508,
+            6.527487239632691
+          ],
+          "left_weapon_roll_degrees": [
+            -1.532796385786252,
+            -0.43761496193269644,
+            -0.2816475474638696,
+            -1.5327723772753046
+          ]
+        },
+        {
+          "case": "clear_override",
+          "roles": 4
+        },
+        {
+          "case": "all_ten_replicated_residents",
+          "residents": {
+            "CR_ControlCrowd_ArmoredSentinel": {
+              "visual": "BP_ArmoredSentinel_C",
+              "guard": true,
+              "weapon": "FX_Rifle"
+            },
+            "CR_ControlCrowd_AstronautSentinel": {
+              "visual": "BP_AstronautSentinel_C",
+              "guard": true,
+              "weapon": "FX_Pistol"
+            },
+            "CR_ControlCrowd_CrimsonVanguard": {
+              "visual": "BP_CrimsonVanguard_C",
+              "guard": true,
+              "weapon": "FX_Shotgun"
+            },
+            "CR_ControlCrowd_MaintenanceWorker": {
+              "visual": "BP_MaintenanceWorker_C",
+              "guard": false,
+              "weapon": null
+            },
+            "CR_ControlCrowd_RuggedMiner": {
+              "visual": "BP_RuggedMiner_C",
+              "guard": false,
+              "weapon": null
+            },
+            "CR_ControlCrowd_RustboundExplorer": {
+              "visual": "BP_RustboundExplorer_C",
+              "guard": false,
+              "weapon": null
+            },
+            "CR_ControlCrowd_CrimsonAuthority": {
+              "visual": "BP_CrimsonAuthority_C",
+              "guard": false,
+              "weapon": null
+            },
+            "CR_ControlCrowd_CrusaderOperative": {
+              "visual": "BP_CrusaderOperative_C",
+              "guard": false,
+              "weapon": null
+            },
+            "CR_ControlCrowd_GraySentinel": {
+              "visual": "BP_GraySentinel_C",
+              "guard": false,
+              "weapon": null
+            },
+            "CR_ControlCrowd_RuggedSurvivor": {
+              "visual": "BP_RuggedSurvivor_C",
+              "guard": false,
+              "weapon": null
+            }
+          }
+        }
+      ]
+    },
+    "assets": {
+      "passed": true,
+      "assets": 217,
+      "failures": 0,
+      "characters": [
+        {
+          "name": "ArmoredSentinel",
+          "bones": 64,
+          "lods": 3,
+          "retarget_chains": 29,
+          "catalog_index": 11
+        },
+        {
+          "name": "AstronautSentinel",
+          "bones": 64,
+          "lods": 3,
+          "retarget_chains": 29,
+          "catalog_index": 12
+        },
+        {
+          "name": "CrimsonVanguard",
+          "bones": 64,
+          "lods": 3,
+          "retarget_chains": 29,
+          "catalog_index": 13
+        },
+        {
+          "name": "MaintenanceWorker",
+          "bones": 64,
+          "lods": 3,
+          "retarget_chains": 29,
+          "catalog_index": 14
+        },
+        {
+          "name": "RuggedMiner",
+          "bones": 64,
+          "lods": 3,
+          "retarget_chains": 29,
+          "catalog_index": 15
+        },
+        {
+          "name": "RustboundExplorer",
+          "bones": 64,
+          "lods": 3,
+          "retarget_chains": 29,
+          "catalog_index": 16
+        },
+        {
+          "name": "CrimsonAuthority",
+          "bones": 64,
+          "lods": 3,
+          "retarget_chains": 29,
+          "catalog_index": 17
+        },
+        {
+          "name": "CrusaderOperative",
+          "bones": 64,
+          "lods": 3,
+          "retarget_chains": 29,
+          "catalog_index": 18
+        },
+        {
+          "name": "GraySentinel",
+          "bones": 64,
+          "lods": 3,
+          "retarget_chains": 29,
+          "catalog_index": 19
+        },
+        {
+          "name": "RuggedSurvivor",
+          "bones": 64,
+          "lods": 3,
+          "retarget_chains": 29,
+          "catalog_index": 20
+        }
+      ],
+      "catalog_size": 21,
+      "default_visual": "BP_CrimsonSentinel_C",
+      "validation": "(NumRequested=217,NumExternalObjects=0,NumChecked=217,NumValid=217,NumInvalid=0,NumSkipped=0,NumWarnings=0,NumUnableToValidate=0,bAssetLimitReached=False,ValidatorStatistics=((\"/Script/DataValidation.DirtyFilesChangelistValidator\", (TotalDurationSeconds=0.000299)),(\"/Script/DataValidation.EditorValidator_ActionUtility\", (TotalDurationSeconds=0.000289)),(\"/Script/DataValidation.EditorValidator_Localization\", (AssetsValidated=217,TotalDurationSeconds=0.001072)),(\"/Script/DataValidation.EditorValidator_Material\", (TotalDurationSeconds=0.000135)),(\"/Script/DataValidation.PackageFileValidator\", (AssetsValidated=217,TotalDurationSeconds=1.377849)),(\"/Script/DataValidation.WorldPartitionChangelistValidator\", (TotalDurationSeconds=0.000651)),(\"/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator\", (TotalDurationSeconds=0.000408)),(\"/Script/MutableValidation.AssetValidator_CustomizableObjects\", (TotalDurationSeconds=0.000349)),(\"/Script/MutableValidation.AssetValidator_ReferencedCustomizableObjects\", (TotalDurationSeconds=0.000103)),(\"/Script/GameFeaturesEditor.IllegalPluginDependenciesValidator\", (TotalDurationSeconds=0.000238)),(\"/Script/AssetReferenceRestrictions.AssetValidator_AssetReferenceRestrictions\", (AssetsValidated=217,TotalDurationSeconds=0.010310)),(\"/Script/AssetReferenceRestrictions.EditorValidator_PluginAssetReferences\", (TotalDurationSeconds=0.000132)),(\"/Script/LyraEditor.EditorValidator_Blueprints\", (AssetsValidated=12,TotalDurationSeconds=0.000526)),(\"/Script/LyraEditor.EditorValidator_Load\", (AssetsValidated=217,TotalDurationSeconds=0.035740)),(\"/Script/LyraEditor.EditorValidator_MaterialFunctions\", (TotalDurationSeconds=0.000473)),(\"/Script/LyraEditor.EditorValidator_SourceControl\", (AssetsValidated=217,TotalDurationSeconds=0.004423))),AssetsDetails=((\"/Game/Baseline/Animations/ABP_BaselineVisualRetarget.ABP_BaselineVisualRetarget\", ()),(\"/Game/Blueprints/GM_Sandbox.GM_Sandbox\", ()),(\"/Game/Crusader/Characters/ArmoredSentinel/ArmoredSentinel.ArmoredSentinel\", ()),(\"/Game/Crusader/Characters/ArmoredSentinel/ArmoredSentinel_Skeleton.ArmoredSentinel_Skeleton\", ()),(\"/Game/Crusader/Characters/ArmoredSentinel/BP_ArmoredSentinel.BP_ArmoredSentinel\", ()),(\"/Game/Crusader/Characters/ArmoredSentinel/IK_ArmoredSentinel.IK_ArmoredSentinel\", ()),(\"/Game/Crusader/Characters/ArmoredSentinel/M_ArmoredSentinel.M_ArmoredSentinel\", ()),(\"/Game/Crusader/Characters/ArmoredSentinel/RTG_Manny_to_ArmoredSentinel.RTG_Manny_to_ArmoredSentinel\", ()),(\"/Game/Crusader/Characters/ArmoredSentinel/Textures/ArmoredSentinel_BaseColor.ArmoredSentinel_BaseColor\", ()),(\"/Game/Crusader/Characters/ArmoredSentinel/Textures/ArmoredSentinel_Metallic.ArmoredSentinel_Metallic\", ()),(\"/Game/Crusader/Characters/ArmoredSentinel/Textures/ArmoredSentinel_Normal.ArmoredSentinel_Normal\", ()),(\"/Game/Crusader/Characters/ArmoredSentinel/Textures/ArmoredSentinel_Roughness.ArmoredSentinel_Roughness\", ()),(\"/Game/Crusader/Characters/AstronautSentinel/AstronautSentinel.AstronautSentinel\", ()),(\"/Game/Crusader/Characters/AstronautSentinel/AstronautSentinel_Skeleton.AstronautSentinel_Skeleton\", ()),(\"/Game/Crusader/Characters/AstronautSentinel/BP_AstronautSentinel.BP_AstronautSentinel\", ()),(\"/Game/Crusader/Characters/AstronautSentinel/IK_AstronautSentinel.IK_AstronautSentinel\", ()),(\"/Game/Crusader/Characters/AstronautSentinel/M_AstronautSentinel.M_AstronautSentinel\", ()),(\"/Game/Crusader/Characters/AstronautSentinel/RTG_Manny_to_AstronautSentinel.RTG_Manny_to_AstronautSentinel\", ()),(\"/Game/Crusader/Characters/AstronautSentinel/Textures/AstronautSentinel_BaseColor.AstronautSentinel_BaseColor\", ()),(\"/Game/Crusader/Characters/AstronautSentinel/Textures/AstronautSentinel_Metallic.AstronautSentinel_Metallic\", ()),(\"/Game/Crusader/Characters/AstronautSentinel/Textures/AstronautSentinel_Normal.AstronautSentinel_Normal\", ()),(\"/Game/Crusader/Characters/AstronautSentinel/Textures/AstronautSentinel_Roughness.AstronautSentinel_Roughness\", ()),(\"/Game/Crusader/Characters/CrimsonAuthority/BP_CrimsonAuthority.BP_CrimsonAuthority\", ()),(\"/Game/Crusader/Characters/CrimsonAuthority/CrimsonAuthority.CrimsonAuthority\", ()),(\"/Game/Crusader/Characters/CrimsonAuthority/CrimsonAuthority_Skeleton.CrimsonAuthority_Skeleton\", ()),(\"/Game/Crusader/Characters/CrimsonAuthority/IK_CrimsonAuthority.IK_CrimsonAuthority\", ()),(\"/Game/Crusader/Characters/CrimsonAuthority/M_CrimsonAuthority.M_CrimsonAuthority\", ()),(\"/Game/Crusader/Characters/CrimsonAuthority/RTG_Manny_to_CrimsonAuthority.RTG_Manny_to_CrimsonAuthority\", ()),(\"/Game/Crusader/Characters/CrimsonAuthority/Textures/CrimsonAuthority_BaseColor.CrimsonAuthority_BaseColor\", ()),(\"/Game/Crusader/Characters/CrimsonAuthority/Textures/CrimsonAuthority_Metallic.CrimsonAuthority_Metallic\", ()),(\"/Game/Crusader/Characters/CrimsonAuthority/Textures/CrimsonAuthority_Normal.CrimsonAuthority_Normal\", ()),(\"/Game/Crusader/Characters/CrimsonAuthority/Textures/CrimsonAuthority_Roughness.CrimsonAuthority_Roughness\", ()),(\"/Game/Crusader/Characters/CrimsonVanguard/BP_CrimsonVanguard.BP_CrimsonVanguard\", ()),(\"/Game/Crusader/Characters/CrimsonVanguard/CrimsonVanguard.CrimsonVanguard\", ()),(\"/Game/Crusader/Characters/CrimsonVanguard/CrimsonVanguard_Skeleton.CrimsonVanguard_Skeleton\", ()),(\"/Game/Crusader/Characters/CrimsonVanguard/IK_CrimsonVanguard.IK_CrimsonVanguard\", ()),(\"/Game/Crusader/Characters/CrimsonVanguard/M_CrimsonVanguard.M_CrimsonVanguard\", ()),(\"/Game/Crusader/Characters/CrimsonVanguard/RTG_Manny_to_CrimsonVanguard.RTG_Manny_to_CrimsonVanguard\", ()),(\"/Game/Crusader/Characters/CrimsonVanguard/Textures/CrimsonVanguard_BaseColor.CrimsonVanguard_BaseColor\", ()),(\"/Game/Crusader/Characters/CrimsonVanguard/Textures/CrimsonVanguard_Metallic.CrimsonVanguard_Metallic\", ()),(\"/Game/Crusader/Characters/CrimsonVanguard/Textures/CrimsonVanguard_Normal.CrimsonVanguard_Normal\", ()),(\"/Game/Crusader/Characters/CrimsonVanguard/Textures/CrimsonVanguard_Roughness.CrimsonVanguard_Roughness\", ()),(\"/Game/Crusader/Characters/CrusaderOperative/BP_CrusaderOperative.BP_CrusaderOperative\", ()),(\"/Game/Crusader/Characters/CrusaderOperative/CrusaderOperative.CrusaderOperative\", ()),(\"/Game/Crusader/Characters/CrusaderOperative/CrusaderOperative_Skeleton.CrusaderOperative_Skeleton\", ()),(\"/Game/Crusader/Characters/CrusaderOperative/IK_CrusaderOperative.IK_CrusaderOperative\", ()),(\"/Game/Crusader/Characters/CrusaderOperative/M_CrusaderOperative.M_CrusaderOperative\", ()),(\"/Game/Crusader/Characters/CrusaderOperative/RTG_Manny_to_CrusaderOperative.RTG_Manny_to_CrusaderOperative\", ()),(\"/Game/Crusader/Characters/CrusaderOperative/Textures/CrusaderOperative_BaseColor.CrusaderOperative_BaseColor\", ()),(\"/Game/Crusader/Characters/CrusaderOperative/Textures/CrusaderOperative_Metallic.CrusaderOperative_Metallic\", ()),(\"/Game/Crusader/Characters/CrusaderOperative/Textures/CrusaderOperative_Normal.CrusaderOperative_Normal\", ()),(\"/Game/Crusader/Characters/CrusaderOperative/Textures/CrusaderOperative_Roughness.CrusaderOperative_Roughness\", ()),(\"/Game/Crusader/Characters/GraySentinel/BP_GraySentinel.BP_GraySentinel\", ()),(\"/Game/Crusader/Characters/GraySentinel/GraySentinel.GraySentinel\", ()),(\"/Game/Crusader/Characters/GraySentinel/GraySentinel_Skeleton.GraySentinel_Skeleton\", ()),(\"/Game/Crusader/Characters/GraySentinel/IK_GraySentinel.IK_GraySentinel\", ()),(\"/Game/Crusader/Characters/GraySentinel/M_GraySentinel.M_GraySentinel\", ()),(\"/Game/Crusader/Characters/GraySentinel/RTG_Manny_to_GraySentinel.RTG_Manny_to_GraySentinel\", ()),(\"/Game/Crusader/Characters/GraySentinel/Textures/GraySentinel_BaseColor.GraySentinel_BaseColor\", ()),(\"/Game/Crusader/Characters/GraySentinel/Textures/GraySentinel_Metallic.GraySentinel_Metallic\", ()),(\"/Game/Crusader/Characters/GraySentinel/Textures/GraySentinel_Normal.GraySentinel_Normal\", ()),(\"/Game/Crusader/Characters/GraySentinel/Textures/GraySentinel_Roughness.GraySentinel_Roughness\", ()),(\"/Game/Crusader/Characters/MaintenanceWorker/BP_MaintenanceWorker.BP_MaintenanceWorker\", ()),(\"/Game/Crusader/Characters/MaintenanceWorker/IK_MaintenanceWorker.IK_MaintenanceWorker\", ()),(\"/Game/Crusader/Characters/MaintenanceWorker/M_MaintenanceWorker.M_MaintenanceWorker\", ()),(\"/Game/Crusader/Characters/MaintenanceWorker/MaintenanceWorker.MaintenanceWorker\", ()),(\"/Game/Crusader/Characters/MaintenanceWorker/MaintenanceWorker_Skeleton.MaintenanceWorker_Skeleton\", ()),(\"/Game/Crusader/Characters/MaintenanceWorker/RTG_Manny_to_MaintenanceWorker.RTG_Manny_to_MaintenanceWorker\", ()),(\"/Game/Crusader/Characters/MaintenanceWorker/Textures/MaintenanceWorker_BaseColor.MaintenanceWorker_BaseColor\", ()),(\"/Game/Crusader/Characters/MaintenanceWorker/Textures/MaintenanceWorker_Metallic.MaintenanceWorker_Metallic\", ()),(\"/Game/Crusader/Characters/MaintenanceWorker/Textures/MaintenanceWorker_Normal.MaintenanceWorker_Normal\", ()),(\"/Game/Crusader/Characters/MaintenanceWorker/Textures/MaintenanceWorker_Roughness.MaintenanceWorker_Roughness\", ()),(\"/Game/Crusader/Characters/RuggedMiner/BP_RuggedMiner.BP_RuggedMiner\", ()),(\"/Game/Crusader/Characters/RuggedMiner/IK_RuggedMiner.IK_RuggedMiner\", ()),(\"/Game/Crusader/Characters/RuggedMiner/M_RuggedMiner.M_RuggedMiner\", ()),(\"/Game/Crusader/Characters/RuggedMiner/RTG_Manny_to_RuggedMiner.RTG_Manny_to_RuggedMiner\", ()),(\"/Game/Crusader/Characters/RuggedMiner/RuggedMiner.RuggedMiner\", ()),(\"/Game/Crusader/Characters/RuggedMiner/RuggedMiner_Skeleton.RuggedMiner_Skeleton\", ()),(\"/Game/Crusader/Characters/RuggedMiner/Textures/RuggedMiner_BaseColor.RuggedMiner_BaseColor\", ()),(\"/Game/Crusader/Characters/RuggedMiner/Textures/RuggedMiner_Metallic.RuggedMiner_Metallic\", ()),(\"/Game/Crusader/Characters/RuggedMiner/Textures/RuggedMiner_Normal.RuggedMiner_Normal\", ()),(\"/Game/Crusader/Characters/RuggedMiner/Textures/RuggedMiner_Roughness.RuggedMiner_Roughness\", ()),(\"/Game/Crusader/Characters/RuggedSurvivor/BP_RuggedSurvivor.BP_RuggedSurvivor\", ()),(\"/Game/Crusader/Characters/RuggedSurvivor/IK_RuggedSurvivor.IK_RuggedSurvivor\", ()),(\"/Game/Crusader/Characters/RuggedSurvivor/M_RuggedSurvivor.M_RuggedSurvivor\", ()),(\"/Game/Crusader/Characters/RuggedSurvivor/RTG_Manny_to_RuggedSurvivor.RTG_Manny_to_RuggedSurvivor\", ()),(\"/Game/Crusader/Characters/RuggedSurvivor/RuggedSurvivor.RuggedSurvivor\", ()),(\"/Game/Crusader/Characters/RuggedSurvivor/RuggedSurvivor_Skeleton.RuggedSurvivor_Skeleton\", ()),(\"/Game/Crusader/Characters/RuggedSurvivor/Textures/RuggedSurvivor_BaseColor.RuggedSurvivor_BaseColor\", ()),(\"/Game/Crusader/Characters/RuggedSurvivor/Textures/RuggedSurvivor_Metallic.RuggedSurvivor_Metallic\", ()),(\"/Game/Crusader/Characters/RuggedSurvivor/Textures/RuggedSurvivor_Normal.RuggedSurvivor_Normal\", ()),(\"/Game/Crusader/Characters/RuggedSurvivor/Textures/RuggedSurvivor_Roughness.RuggedSurvivor_Roughness\", ()),(\"/Game/Crusader/Characters/RustboundExplorer/BP_RustboundExplorer.BP_RustboundExplorer\", ()),(\"/Game/Crusader/Characters/RustboundExplorer/IK_RustboundExplorer.IK_RustboundExplorer\", ()),(\"/Game/Crusader/Characters/RustboundExplorer/M_RustboundExplorer.M_RustboundExplorer\", ()),(\"/Game/Crusader/Characters/RustboundExplorer/RTG_Manny_to_RustboundExplorer.RTG_Manny_to_RustboundExplorer\", ()),(\"/Game/Crusader/Characters/RustboundExplorer/RustboundExplorer.RustboundExplorer\", ()),(\"/Game/Crusader/Characters/RustboundExplorer/RustboundExplorer_Skeleton.RustboundExplorer_Skeleton\", ()),(\"/Game/Crusader/Characters/RustboundExplorer/Textures/RustboundExplorer_BaseColor.RustboundExplorer_BaseColor\", ()),(\"/Game/Crusader/Characters/RustboundExplorer/Textures/RustboundExplorer_Metallic.RustboundExplorer_Metallic\", ()),(\"/Game/Crusader/Characters/RustboundExplorer/Textures/RustboundExplorer_Normal.RustboundExplorer_Normal\", ()),(\"/Game/Crusader/Characters/RustboundExplorer/Textures/RustboundExplorer_Roughness.RustboundExplorer_Roughness\", ()),(\"/Game/Crusader/Environment/Level2/BlackEquipmentCase/BlackEquipmentCase.BlackEquipmentCase\", ()),(\"/Game/Crusader/Environment/Level2/BlackEquipmentCase/M_BlackEquipmentCase.M_BlackEquipmentCase\", ()),(\"/Game/Crusader/Environment/Level2/BlackEquipmentCase/Textures/BlackEquipmentCase_BaseColor.BlackEquipmentCase_BaseColor\", ()),(\"/Game/Crusader/Environment/Level2/BlackEquipmentCase/Textures/BlackEquipmentCase_Metallic.BlackEquipmentCase_Metallic\", ()),(\"/Game/Crusader/Environment/Level2/BlackEquipmentCase/Textures/BlackEquipmentCase_Normal.BlackEquipmentCase_Normal\", ()),(\"/Game/Crusader/Environment/Level2/BlackEquipmentCase/Textures/BlackEquipmentCase_Roughness.BlackEquipmentCase_Roughness\", ()),(\"/Game/Crusader/Environment/Level2/BlueSlateShowcase/BlueSlateShowcase.BlueSlateShowcase\", ()),(\"/Game/Crusader/Environment/Level2/BlueSlateShowcase/M_BlueSlateShowcase.M_BlueSlateShowcase\", ()),(\"/Game/Crusader/Environment/Level2/BlueSlateShowcase/Textures/BlueSlateShowcase_BaseColor.BlueSlateShowcase_BaseColor\", ()),(\"/Game/Crusader/Environment/Level2/BlueSlateShowcase/Textures/BlueSlateShowcase_Metallic.BlueSlateShowcase_Metallic\", ()),(\"/Game/Crusader/Environment/Level2/BlueSlateShowcase/Textures/BlueSlateShowcase_Normal.BlueSlateShowcase_Normal\", ()),(\"/Game/Crusader/Environment/Level2/BlueSlateShowcase/Textures/BlueSlateShowcase_Roughness.BlueSlateShowcase_Roughness\", ()),(\"/Game/Crusader/Environment/Level2/BlueSteelVault/BlueSteelVault.BlueSteelVault\", ()),(\"/Game/Crusader/Environment/Level2/BlueSteelVault/M_BlueSteelVault.M_BlueSteelVault\", ()),(\"/Game/Crusader/Environment/Level2/BlueSteelVault/Textures/BlueSteelVault_BaseColor.BlueSteelVault_BaseColor\", ()),(\"/Game/Crusader/Environment/Level2/BlueSteelVault/Textures/BlueSteelVault_Metallic.BlueSteelVault_Metallic\", ()),(\"/Game/Crusader/Environment/Level2/BlueSteelVault/Textures/BlueSteelVault_Normal.BlueSteelVault_Normal\", ()),(\"/Game/Crusader/Environment/Level2/BlueSteelVault/Textures/BlueSteelVault_Roughness.BlueSteelVault_Roughness\", ()),(\"/Game/Crusader/Environment/Level2/BronzeVentilationPanel/BronzeVentilationPanel.BronzeVentilationPanel\", ()),(\"/Game/Crusader/Environment/Level2/BronzeVentilationPanel/M_BronzeVentilationPanel.M_BronzeVentilationPanel\", ()),(\"/Game/Crusader/Environment/Level2/BronzeVentilationPanel/Textures/BronzeVentilationPanel_BaseColor.BronzeVentilationPanel_BaseColor\", ()),(\"/Game/Crusader/Environment/Level2/BronzeVentilationPanel/Textures/BronzeVentilationPanel_Metallic.BronzeVentilationPanel_Metallic\", ()),(\"/Game/Crusader/Environment/Level2/BronzeVentilationPanel/Textures/BronzeVentilationPanel_Normal.BronzeVentilationPanel_Normal\", ()),(\"/Game/Crusader/Environment/Level2/BronzeVentilationPanel/Textures/BronzeVentilationPanel_Roughness.BronzeVentilationPanel_Roughness\", ()),(\"/Game/Crusader/Environment/Level2/CommandNexus/CommandNexus.CommandNexus\", ()),(\"/Game/Crusader/Environment/Level2/CommandNexus/M_CommandNexus.M_CommandNexus\", ()),(\"/Game/Crusader/Environment/Level2/CommandNexus/Textures/CommandNexus_BaseColor.CommandNexus_BaseColor\", ()),(\"/Game/Crusader/Environment/Level2/CommandNexus/Textures/CommandNexus_Metallic.CommandNexus_Metallic\", ()),(\"/Game/Crusader/Environment/Level2/CommandNexus/Textures/CommandNexus_Normal.CommandNexus_Normal\", ()),(\"/Game/Crusader/Environment/Level2/CommandNexus/Textures/CommandNexus_Roughness.CommandNexus_Roughness\", ()),(\"/Game/Crusader/Environment/Level2/IndustrialAirlockDoor/IndustrialAirlockDoor.IndustrialAirlockDoor\", ()),(\"/Game/Crusader/Environment/Level2/IndustrialAirlockDoor/M_IndustrialAirlockDoor.M_IndustrialAirlockDoor\", ()),(\"/Game/Crusader/Environment/Level2/IndustrialAirlockDoor/Textures/IndustrialAirlockDoor_BaseColor.IndustrialAirlockDoor_BaseColor\", ()),(\"/Game/Crusader/Environment/Level2/IndustrialAirlockDoor/Textures/IndustrialAirlockDoor_Metallic.IndustrialAirlockDoor_Metallic\", ()),(\"/Game/Crusader/Environment/Level2/IndustrialAirlockDoor/Textures/IndustrialAirlockDoor_Normal.IndustrialAirlockDoor_Normal\", ()),(\"/Game/Crusader/Environment/Level2/IndustrialAirlockDoor/Textures/IndustrialAirlockDoor_Roughness.IndustrialAirlockDoor_Roughness\", ()),(\"/Game/Crusader/Environment/Level2/IndustrialCargoCrate/IndustrialCargoCrate.IndustrialCargoCrate\", ()),(\"/Game/Crusader/Environment/Level2/IndustrialCargoCrate/M_IndustrialCargoCrate.M_IndustrialCargoCrate\", ()),(\"/Game/Crusader/Environment/Level2/IndustrialCargoCrate/Textures/IndustrialCargoCrate_BaseColor.IndustrialCargoCrate_BaseColor\", ()),(\"/Game/Crusader/Environment/Level2/IndustrialCargoCrate/Textures/IndustrialCargoCrate_Metallic.IndustrialCargoCrate_Metallic\", ()),(\"/Game/Crusader/Environment/Level2/IndustrialCargoCrate/Textures/IndustrialCargoCrate_Normal.IndustrialCargoCrate_Normal\", ()),(\"/Game/Crusader/Environment/Level2/IndustrialCargoCrate/Textures/IndustrialCargoCrate_Roughness.IndustrialCargoCrate_Roughness\", ()),(\"/Game/Crusader/Environment/Level2/IndustrialVentWall/IndustrialVentWall.IndustrialVentWall\", ()),(\"/Game/Crusader/Environment/Level2/IndustrialVentWall/M_IndustrialVentWall.M_IndustrialVentWall\", ()),(\"/Game/Crusader/Environment/Level2/IndustrialVentWall/Textures/IndustrialVentWall_BaseColor.IndustrialVentWall_BaseColor\", ()),(\"/Game/Crusader/Environment/Level2/IndustrialVentWall/Textures/IndustrialVentWall_Metallic.IndustrialVentWall_Metallic\", ()),(\"/Game/Crusader/Environment/Level2/IndustrialVentWall/Textures/IndustrialVentWall_Normal.IndustrialVentWall_Normal\", ()),(\"/Game/Crusader/Environment/Level2/IndustrialVentWall/Textures/IndustrialVentWall_Roughness.IndustrialVentWall_Roughness\", ()),(\"/Game/Crusader/Environment/Level2/IndustrialWallPanel/IndustrialWallPanel.IndustrialWallPanel\", ()),(\"/Game/Crusader/Environment/Level2/IndustrialWallPanel/M_IndustrialWallPanel.M_IndustrialWallPanel\", ()),(\"/Game/Crusader/Environment/Level2/IndustrialWallPanel/Textures/IndustrialWallPanel_BaseColor.IndustrialWallPanel_BaseColor\", ()),(\"/Game/Crusader/Environment/Level2/IndustrialWallPanel/Textures/IndustrialWallPanel_Metallic.IndustrialWallPanel_Metallic\", ()),(\"/Game/Crusader/Environment/Level2/IndustrialWallPanel/Textures/IndustrialWallPanel_Normal.IndustrialWallPanel_Normal\", ()),(\"/Game/Crusader/Environment/Level2/IndustrialWallPanel/Textures/IndustrialWallPanel_Roughness.IndustrialWallPanel_Roughness\", ()),(\"/Game/Crusader/Environment/Level2/IronboundBastion/IronboundBastion.IronboundBastion\", ()),(\"/Game/Crusader/Environment/Level2/IronboundBastion/M_IronboundBastion.M_IronboundBastion\", ()),(\"/Game/Crusader/Environment/Level2/IronboundBastion/Textures/IronboundBastion_BaseColor.IronboundBastion_BaseColor\", ()),(\"/Game/Crusader/Environment/Level2/IronboundBastion/Textures/IronboundBastion_Metallic.IronboundBastion_Metallic\", ()),(\"/Game/Crusader/Environment/Level2/IronboundBastion/Textures/IronboundBastion_Normal.IronboundBastion_Normal\", ()),(\"/Game/Crusader/Environment/Level2/IronboundBastion/Textures/IronboundBastion_Roughness.IronboundBastion_Roughness\", ()),(\"/Game/Crusader/Environment/Level2/MidnightCircuitSlab/M_MidnightCircuitSlab.M_MidnightCircuitSlab\", ()),(\"/Game/Crusader/Environment/Level2/MidnightCircuitSlab/MidnightCircuitSlab.MidnightCircuitSlab\", ()),(\"/Game/Crusader/Environment/Level2/MidnightCircuitSlab/Textures/MidnightCircuitSlab_BaseColor.MidnightCircuitSlab_BaseColor\", ()),(\"/Game/Crusader/Environment/Level2/MidnightCircuitSlab/Textures/MidnightCircuitSlab_Metallic.MidnightCircuitSlab_Metallic\", ()),(\"/Game/Crusader/Environment/Level2/MidnightCircuitSlab/Textures/MidnightCircuitSlab_Normal.MidnightCircuitSlab_Normal\", ()),(\"/Game/Crusader/Environment/Level2/MidnightCircuitSlab/Textures/MidnightCircuitSlab_Roughness.MidnightCircuitSlab_Roughness\", ()),(\"/Game/Crusader/Environment/Level2/OldBattery/M_OldBattery.M_OldBattery\", ()),(\"/Game/Crusader/Environment/Level2/OldBattery/OldBattery.OldBattery\", ()),(\"/Game/Crusader/Environment/Level2/OldBattery/Textures/OldBattery_BaseColor.OldBattery_BaseColor\", ()),(\"/Game/Crusader/Environment/Level2/OldBattery/Textures/OldBattery_Metallic.OldBattery_Metallic\", ()),(\"/Game/Crusader/Environment/Level2/OldBattery/Textures/OldBattery_Normal.OldBattery_Normal\", ()),(\"/Game/Crusader/Environment/Level2/OldBattery/Textures/OldBattery_Roughness.OldBattery_Roughness\", ()),(\"/Game/Crusader/Environment/Level2/RetroCyberConsole/M_RetroCyberConsole.M_RetroCyberConsole\", ()),(\"/Game/Crusader/Environment/Level2/RetroCyberConsole/RetroCyberConsole.RetroCyberConsole\", ()),(\"/Game/Crusader/Environment/Level2/RetroCyberConsole/Textures/RetroCyberConsole_BaseColor.RetroCyberConsole_BaseColor\", ()),(\"/Game/Crusader/Environment/Level2/RetroCyberConsole/Textures/RetroCyberConsole_Metallic.RetroCyberConsole_Metallic\", ()),(\"/Game/Crusader/Environment/Level2/RetroCyberConsole/Textures/RetroCyberConsole_Normal.RetroCyberConsole_Normal\", ()),(\"/Game/Crusader/Environment/Level2/RetroCyberConsole/Textures/RetroCyberConsole_Roughness.RetroCyberConsole_Roughness\", ()),(\"/Game/Crusader/Environment/Level2/RetroServerTerminal/M_RetroServerTerminal.M_RetroServerTerminal\", ()),(\"/Game/Crusader/Environment/Level2/RetroServerTerminal/RetroServerTerminal.RetroServerTerminal\", ()),(\"/Game/Crusader/Environment/Level2/RetroServerTerminal/Textures/RetroServerTerminal_BaseColor.RetroServerTerminal_BaseColor\", ()),(\"/Game/Crusader/Environment/Level2/RetroServerTerminal/Textures/RetroServerTerminal_Metallic.RetroServerTerminal_Metallic\", ()),(\"/Game/Crusader/Environment/Level2/RetroServerTerminal/Textures/RetroServerTerminal_Normal.RetroServerTerminal_Normal\", ()),(\"/Game/Crusader/Environment/Level2/RetroServerTerminal/Textures/RetroServerTerminal_Roughness.RetroServerTerminal_Roughness\", ()),(\"/Game/Crusader/Environment/Level2/RuneChocolateBar/M_RuneChocolateBar.M_RuneChocolateBar\", ()),(\"/Game/Crusader/Environment/Level2/RuneChocolateBar/RuneChocolateBar.RuneChocolateBar\", ()),(\"/Game/Crusader/Environment/Level2/RuneChocolateBar/Textures/RuneChocolateBar_BaseColor.RuneChocolateBar_BaseColor\", ()),(\"/Game/Crusader/Environment/Level2/RuneChocolateBar/Textures/RuneChocolateBar_Metallic.RuneChocolateBar_Metallic\", ()),(\"/Game/Crusader/Environment/Level2/RuneChocolateBar/Textures/RuneChocolateBar_Normal.RuneChocolateBar_Normal\", ()),(\"/Game/Crusader/Environment/Level2/RuneChocolateBar/Textures/RuneChocolateBar_Roughness.RuneChocolateBar_Roughness\", ()),(\"/Game/Crusader/Environment/Level2/RustyRadioactiveBarrel/M_RustyRadioactiveBarrel.M_RustyRadioactiveBarrel\", ()),(\"/Game/Crusader/Environment/Level2/RustyRadioactiveBarrel/RustyRadioactiveBarrel.RustyRadioactiveBarrel\", ()),(\"/Game/Crusader/Environment/Level2/RustyRadioactiveBarrel/Textures/RustyRadioactiveBarrel_BaseColor.RustyRadioactiveBarrel_BaseColor\", ()),(\"/Game/Crusader/Environment/Level2/RustyRadioactiveBarrel/Textures/RustyRadioactiveBarrel_Metallic.RustyRadioactiveBarrel_Metallic\", ()),(\"/Game/Crusader/Environment/Level2/RustyRadioactiveBarrel/Textures/RustyRadioactiveBarrel_Normal.RustyRadioactiveBarrel_Normal\", ()),(\"/Game/Crusader/Environment/Level2/RustyRadioactiveBarrel/Textures/RustyRadioactiveBarrel_Roughness.RustyRadioactiveBarrel_Roughness\", ()),(\"/Game/Crusader/Environment/Level2/TriangularBastion/M_TriangularBastion.M_TriangularBastion\", ()),(\"/Game/Crusader/Environment/Level2/TriangularBastion/Textures/TriangularBastion_BaseColor.TriangularBastion_BaseColor\", ()),(\"/Game/Crusader/Environment/Level2/TriangularBastion/Textures/TriangularBastion_Metallic.TriangularBastion_Metallic\", ()),(\"/Game/Crusader/Environment/Level2/TriangularBastion/Textures/TriangularBastion_Normal.TriangularBastion_Normal\", ()),(\"/Game/Crusader/Environment/Level2/TriangularBastion/Textures/TriangularBastion_Roughness.TriangularBastion_Roughness\", ()),(\"/Game/Crusader/Environment/Level2/TriangularBastion/TriangularBastion.TriangularBastion\", ()),(\"/Game/Crusader/Environment/Level2/WallCControlPanel/M_WallCControlPanel.M_WallCControlPanel\", ()),(\"/Game/Crusader/Environment/Level2/WallCControlPanel/Textures/WallCControlPanel_BaseColor.WallCControlPanel_BaseColor\", ()),(\"/Game/Crusader/Environment/Level2/WallCControlPanel/Textures/WallCControlPanel_Metallic.WallCControlPanel_Metallic\", ()),(\"/Game/Crusader/Environment/Level2/WallCControlPanel/Textures/WallCControlPanel_Normal.WallCControlPanel_Normal\", ()),(\"/Game/Crusader/Environment/Level2/WallCControlPanel/Textures/WallCControlPanel_Roughness.WallCControlPanel_Roughness\", ()),(\"/Game/Crusader/Environment/Level2/WallCControlPanel/WallCControlPanel.WallCControlPanel\", ()),(\"/Game/Crusader/Environment/Level2/WallG/M_WallG.M_WallG\", ()),(\"/Game/Crusader/Environment/Level2/WallG/Textures/WallG_BaseColor.WallG_BaseColor\", ()),(\"/Game/Crusader/Environment/Level2/WallG/Textures/WallG_Metallic.WallG_Metallic\", ()),(\"/Game/Crusader/Environment/Level2/WallG/Textures/WallG_Normal.WallG_Normal\", ()),(\"/Game/Crusader/Environment/Level2/WallG/Textures/WallG_Roughness.WallG_Roughness\", ()),(\"/Game/Crusader/Environment/Level2/WallG/WallG.WallG\", ()),(\"/Game/Maps/L_TraversalGym.L_TraversalGym\", ())))"
+    }
+  }
+}

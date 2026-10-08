@@ -17,6 +17,8 @@ class UChildActorComponent;
 class UCRWeaponEffectsComponent;
 class UCRFootstepComponent;
 class UCRCrowdAgentComponent;
+class UCRRollComponent;
+class UCRThrowableComponent;
 
 /** Lyra lifecycle and ability ownership for the GASP CMC animation/traversal graph. */
 UCLASS()
@@ -37,6 +39,8 @@ public:
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Crusader") TObjectPtr<UCRWeaponEffectsComponent> WeaponEffects;
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Crusader") TObjectPtr<UCRFootstepComponent> Footsteps;
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Crusader") TObjectPtr<UCRCrowdAgentComponent> CrowdAgent;
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Crusader") TObjectPtr<UCRRollComponent> Roll;
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Crusader") TObjectPtr<UCRThrowableComponent> Throwable;
     UFUNCTION(BlueprintCallable, Category="Crusader|Movement") bool RequestAITraversal();
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Baseline") TObjectPtr<ULyraEquipmentManagerComponent> EquipmentManager;
     UPROPERTY(EditDefaultsOnly, Category="Baseline|Slide") TObjectPtr<UAnimSequence> SlideAnimation;

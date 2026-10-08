@@ -1,0 +1,39 @@
+{
+  "name": "IndustrialAccessPanel",
+  "archive": "IndustrialAccessPanel.zip",
+  "archive_sha256": "5b0b3b4786872e2ebc4ddfdf33f7cf09c49994c8d8493472029a61bff2841e41",
+  "files": [
+    {
+      "original": "Meshy_AI_Industrial_Access_Pan_1008205224_texture_fbx/Meshy_AI_Industrial_Access_Pan_1008205224_texture.fbx",
+      "file": "IndustrialAccessPanel.fbx",
+      "bytes": 26789644,
+      "sha256": "7b4543b4290e1fadac76e7c4696d4de3312c25a3f1f14b0c51b082486f1dbb16"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Access_Pan_1008205224_texture_fbx/Meshy_AI_Industrial_Access_Pan_1008205224_texture.png",
+      "file": "IndustrialAccessPanel_BaseColor.png",
+      "bytes": 5207951,
+      "sha256": "f0a5808ed06e67ed9145fb474444031df950e8b1d4d796114a702d27398ae416"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Access_Pan_1008205224_texture_fbx/Meshy_AI_Industrial_Access_Pan_1008205224_texture_metallic.png",
+      "file": "IndustrialAccessPanel_Metallic.png",
+      "bytes": 1370901,
+      "sha256": "32714a4e83da13bac564735ccc3de8a702a04bceadb8438fa54a80fdeeb7f58d"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Access_Pan_1008205224_texture_fbx/Meshy_AI_Industrial_Access_Pan_1008205224_texture_normal.png",
+      "file": "IndustrialAccessPanel_Normal.png",
+      "bytes": 4922742,
+      "sha256": "4b574431563a7013710d87bceda6ec530d03c55db27a03b413fa0ef461b7679a"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Access_Pan_1008205224_texture_fbx/Meshy_AI_Industrial_Access_Pan_1008205224_texture_roughness.png",
+      "file": "IndustrialAccessPanel_Roughness.png",
+      "bytes": 1650959,
+      "sha256": "0342987e0d91ef035ff298d83c3e5f4d0fd6a55ea79dc5cf5e2ca728fcc1ef54"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Industrial_Access_Pan_1008205224_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level3/props/IndustrialAccessPanel.zip"
+}

@@ -18,6 +18,10 @@ PROFILES={
   fingers=[(.781,.020,1.375,.870,.012,1.357),(.789,.049,1.374,.884,.051,1.357),(.781,.077,1.377,.870,.083,1.365),(.766,.100,1.382,.850,.107,1.374)],thumb=[(.717,.003,1.358),(.749,-.015,1.329),(.773,-.027,1.322),(.790,-.032,1.322)])
 }
 
+PROFILES['UrbanTrailblazer']['straight_fingers']=True
+if (ROOT/'resources/NPCAdditionalProfiles.json').exists():
+    PROFILES.update(json.loads((ROOT/'resources/NPCAdditionalProfiles.json').read_text()))
+
 def skeleton(c):
     result=[]
     def bone(name,a,b,parent=None): result.append(dict(name=name,head=a,tail=b,parent=parent))
@@ -44,7 +48,7 @@ def skeleton(c):
         for digit,coords in zip(['index','middle','ring','pinky'],c['fingers']):
             a=coords[:3];b=coords[3:]
             # Curled source fingers bend more at the first joint than the tip.
-            if c is PROFILES['UrbanTrailblazer']:
+            if c.get('straight_fingers',False):
                 points=[tuple(a[k]+(b[k]-a[k])*t for k in range(3)) for t in [0,.44,.76,1]]
             else:
                 points=[a,(a[0]+(b[0]-a[0])*.70,a[1]+(b[1]-a[1])*.38,a[2]+(b[2]-a[2])*.37),(a[0]+(b[0]-a[0])*.94,a[1]+(b[1]-a[1])*.73,a[2]+(b[2]-a[2])*.75),b]

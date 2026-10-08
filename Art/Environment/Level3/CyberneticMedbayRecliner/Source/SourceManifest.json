@@ -1,0 +1,39 @@
+{
+  "name": "CyberneticMedbayRecliner",
+  "archive": "CyberneticMedbayRecliner.zip",
+  "archive_sha256": "04b4023b0ee92f9f9d312cb334cd7be3c7c76a8b7e9443e5502acfd2c6418129",
+  "files": [
+    {
+      "original": "Meshy_AI_Cybernetic_Medbay_Rec_1008204816_texture_fbx/Meshy_AI_Cybernetic_Medbay_Rec_1008204816_texture.fbx",
+      "file": "CyberneticMedbayRecliner.fbx",
+      "bytes": 50156348,
+      "sha256": "309961137d11ac67bf42637678aa08756d46eaea71fff94ccd78c927e518251c"
+    },
+    {
+      "original": "Meshy_AI_Cybernetic_Medbay_Rec_1008204816_texture_fbx/Meshy_AI_Cybernetic_Medbay_Rec_1008204816_texture.png",
+      "file": "CyberneticMedbayRecliner_BaseColor.png",
+      "bytes": 6089938,
+      "sha256": "5ac6ab9530a49885c4c685a16d0dbc329b104b6dc96e532489155b32d779cafb"
+    },
+    {
+      "original": "Meshy_AI_Cybernetic_Medbay_Rec_1008204816_texture_fbx/Meshy_AI_Cybernetic_Medbay_Rec_1008204816_texture_metallic.png",
+      "file": "CyberneticMedbayRecliner_Metallic.png",
+      "bytes": 1807519,
+      "sha256": "b2eb5f73987df73088f9a78261874f3a85e7a09910606b92e904a723180e4f73"
+    },
+    {
+      "original": "Meshy_AI_Cybernetic_Medbay_Rec_1008204816_texture_fbx/Meshy_AI_Cybernetic_Medbay_Rec_1008204816_texture_normal.png",
+      "file": "CyberneticMedbayRecliner_Normal.png",
+      "bytes": 5289230,
+      "sha256": "5b9b7c60011b20667bbe3c5675c45ba6784ac54fadc40673aa2279a214099772"
+    },
+    {
+      "original": "Meshy_AI_Cybernetic_Medbay_Rec_1008204816_texture_fbx/Meshy_AI_Cybernetic_Medbay_Rec_1008204816_texture_roughness.png",
+      "file": "CyberneticMedbayRecliner_Roughness.png",
+      "bytes": 1833249,
+      "sha256": "482abaa65146bdf1d8b130a1ee627420c3d582f626d03fede2861554e41da50a"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Cybernetic_Medbay_Rec_1008204816_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level3/props/CyberneticMedbayRecliner.zip"
+}

@@ -1,0 +1,39 @@
+{
+  "name": "IndustrialFloorPanel",
+  "archive": "IndustrialFloorPanel.zip",
+  "archive_sha256": "67cea63d058ca0f25d023a7e11eadc75bdc66eee80c97c407a1b9944fc9c6fc0",
+  "files": [
+    {
+      "original": "Meshy_AI_Industrial_Floor_Pane_1008201430_texture_fbx/Meshy_AI_Industrial_Floor_Pane_1008201430_texture.fbx",
+      "file": "IndustrialFloorPanel.fbx",
+      "bytes": 17866300,
+      "sha256": "491d859a5b606d7a182c48f4f566c4f9fc2ad96ca0b0ed6c2fcb2c2242a92ef6"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Floor_Pane_1008201430_texture_fbx/Meshy_AI_Industrial_Floor_Pane_1008201430_texture.png",
+      "file": "IndustrialFloorPanel_BaseColor.png",
+      "bytes": 4404308,
+      "sha256": "a09f5fdb70f2775081376ca2b0e7639865d8b170274a6432342e21f28bed720e"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Floor_Pane_1008201430_texture_fbx/Meshy_AI_Industrial_Floor_Pane_1008201430_texture_metallic.png",
+      "file": "IndustrialFloorPanel_Metallic.png",
+      "bytes": 1212860,
+      "sha256": "60102ac8268ee1e47c58a6b77eee45a9da7136a460d15f013b37d51634619f2d"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Floor_Pane_1008201430_texture_fbx/Meshy_AI_Industrial_Floor_Pane_1008201430_texture_normal.png",
+      "file": "IndustrialFloorPanel_Normal.png",
+      "bytes": 3736992,
+      "sha256": "ad2542e538484e965c21a89be5edecd9b417f1238a816299d9805826c79406ab"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Floor_Pane_1008201430_texture_fbx/Meshy_AI_Industrial_Floor_Pane_1008201430_texture_roughness.png",
+      "file": "IndustrialFloorPanel_Roughness.png",
+      "bytes": 1429269,
+      "sha256": "242c8f67c15fb6e9d05e396cd71c97e25a92ff52ecf8230e14a5933700671271"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Industrial_Floor_Pane_1008201430_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level3/IndustrialFloorPanel.zip"
+}

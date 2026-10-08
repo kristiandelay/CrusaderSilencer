@@ -8,6 +8,7 @@ import json
 import math
 from pathlib import Path
 from mathutils import Vector, Matrix
+from mathutils.kdtree import KDTree
 
 ROOT = Path(__file__).resolve().parents[1]
 import sys
@@ -18,18 +19,21 @@ OUT.mkdir(parents=True, exist_ok=True)
 (ASSET / 'Export').mkdir(parents=True, exist_ok=True)
 bpy.ops.wm.read_factory_settings(use_empty=True)
 bpy.context.scene.unit_settings.system = 'METRIC'
-bpy.ops.import_scene.fbx(filepath=str(ASSET / ('Source/'+NAME+'.fbx')))
+cache=OUT/'Working.blend'
+if cache.exists():bpy.ops.wm.open_mainfile(filepath=str(cache))
+else:bpy.ops.import_scene.fbx(filepath=str(ASSET / ('Source/'+NAME+'.fbx')))
 mesh = next(o for o in bpy.context.scene.objects if o.type == 'MESH')
 mesh.name = NAME
 mesh.data.name = NAME
 bpy.context.view_layer.objects.active = mesh
 bpy.ops.object.transform_apply(location=True, rotation=True, scale=True)
-source_triangles = len(mesh.data.polygons)
+source_triangles = json.loads((OUT/'source-inspection.json').read_text())['source_triangles'] if cache.exists() else len(mesh.data.polygons)
 # Preserve UVs and the silhouette while reducing the generated sculpt for play.
-decimate = mesh.modifiers.new('Game topology', 'DECIMATE')
-decimate.ratio = 85000 / source_triangles
-decimate.use_collapse_triangulate = True
-bpy.ops.object.modifier_apply(modifier=decimate.name)
+if not cache.exists():
+    decimate = mesh.modifiers.new('Game topology', 'DECIMATE')
+    decimate.ratio = min(1,85000 / source_triangles)
+    decimate.use_collapse_triangulate = True
+    bpy.ops.object.modifier_apply(modifier=decimate.name)
 bpy.ops.object.mode_set(mode='EDIT')
 bpy.ops.mesh.select_all(action='SELECT')
 bpy.ops.mesh.remove_doubles(threshold=0.00001)
@@ -95,11 +99,30 @@ bpy.ops.object.vertex_group_clean(group_select_mode='ALL', limit=.001, keep_sing
 bpy.ops.object.vertex_group_limit_total(group_select_mode='ALL', limit=4)
 bpy.ops.object.vertex_group_normalize_all(group_select_mode='ALL', lock_active=False)
 unweighted=[v.index for v in mesh.data.vertices if sum(g.weight for g in v.groups)<.99]
+# Heat weighting can miss a few detached sculpt triangles. Bind only tiny,
+# nearby islands to an already weighted neighbour; reject larger unexplained
+# gaps instead of silently assigning a whole unsupported region to the pelvis.
+repaired=[]
+if unweighted:
+    missing=set(unweighted);tree=KDTree(len(mesh.data.vertices)-len(missing))
+    for v in mesh.data.vertices:
+        if v.index not in missing:tree.insert(v.co,v.index)
+    tree.balance()
+    assert len(missing)<len(mesh.data.vertices)*.005,'Heat weighting failed on a substantial region'
+    for index in unweighted:
+        v=mesh.data.vertices[index];_,nearest,distance=tree.find(v.co)
+        assert distance<.035,(index,'Unweighted island is too far from skin',distance)
+        weights=[(g.group,g.weight) for g in mesh.data.vertices[nearest].groups]
+        for group in list(v.groups):mesh.vertex_groups[group.group].remove([index])
+        total=sum(weight for _,weight in weights)
+        for group,weight in weights:mesh.vertex_groups[group].add([index],weight/total,'REPLACE')
+        repaired.append(dict(vertex=index,neighbour=nearest,distance_cm=distance*100))
+    unweighted=[v.index for v in mesh.data.vertices if sum(g.weight for g in v.groups)<.99]
 assert not unweighted, 'Automatic weighting left unweighted vertices: '+str(len(unweighted))
 finger_groups={g.name:sum(1 for v in mesh.data.vertices for w in v.groups if w.group==g.index and w.weight>.01)
                for g in mesh.vertex_groups if any(g.name.startswith(n+'_') for n in ['thumb','index','middle','ring','pinky'])}
 assert all(count>0 for count in finger_groups.values()), finger_groups
-report={'source_triangles':source_triangles,'game_triangles':len(mesh.data.polygons),'vertices':len(mesh.data.vertices),'bones':len(armature.bones),'unweighted_vertices':len(unweighted),'max_influences':max(len(v.groups) for v in mesh.data.vertices),'finger_weighted_vertices':finger_groups}
+report={'source_triangles':source_triangles,'game_triangles':len(mesh.data.polygons),'vertices':len(mesh.data.vertices),'bones':len(armature.bones),'unweighted_vertices':len(unweighted),'repaired_small_islands':repaired,'max_influences':max(len(v.groups) for v in mesh.data.vertices),'finger_weighted_vertices':finger_groups}
 (OUT/'rig-report.json').write_text(json.dumps(report,indent=2))
 
 # Keep editable source and export only the deform rig; no test animation.

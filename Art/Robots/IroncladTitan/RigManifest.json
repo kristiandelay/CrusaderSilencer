@@ -1,0 +1,199 @@
+{
+  "name": "IroncladTitan",
+  "rig_type": "three-link mechanical legs",
+  "parts": [
+    {
+      "name": "IroncladTitan_Chassis",
+      "bone": "chassis",
+      "vertices": 106588,
+      "triangles": 213748
+    },
+    {
+      "name": "IroncladTitan_foot_r",
+      "bone": "foot_r",
+      "vertices": 15380,
+      "triangles": 30752
+    },
+    {
+      "name": "IroncladTitan_JointHousing_3_r",
+      "bone": "foot_r",
+      "vertices": 2444,
+      "triangles": 4884
+    },
+    {
+      "name": "IroncladTitan_lower_leg_r",
+      "bone": "lower_leg_r",
+      "vertices": 12306,
+      "triangles": 24636
+    },
+    {
+      "name": "IroncladTitan_JointHousing_2_r",
+      "bone": "lower_leg_r",
+      "vertices": 5864,
+      "triangles": 11752
+    },
+    {
+      "name": "IroncladTitan_JointHousing_0_r",
+      "bone": "upper_leg_r",
+      "vertices": 3404,
+      "triangles": 6804
+    },
+    {
+      "name": "IroncladTitan_middle_leg_r",
+      "bone": "middle_leg_r",
+      "vertices": 7524,
+      "triangles": 15040
+    },
+    {
+      "name": "IroncladTitan_JointHousing_1_r",
+      "bone": "middle_leg_r",
+      "vertices": 7902,
+      "triangles": 15840
+    },
+    {
+      "name": "IroncladTitan_upper_leg_r",
+      "bone": "upper_leg_r",
+      "vertices": 26674,
+      "triangles": 53420
+    },
+    {
+      "name": "IroncladTitan_upper_leg_l",
+      "bone": "upper_leg_l",
+      "vertices": 26566,
+      "triangles": 53176
+    },
+    {
+      "name": "IroncladTitan_JointHousing_1_l",
+      "bone": "middle_leg_l",
+      "vertices": 7964,
+      "triangles": 15976
+    },
+    {
+      "name": "IroncladTitan_JointHousing_0_l",
+      "bone": "upper_leg_l",
+      "vertices": 3330,
+      "triangles": 6652
+    },
+    {
+      "name": "IroncladTitan_middle_leg_l",
+      "bone": "middle_leg_l",
+      "vertices": 7694,
+      "triangles": 15392
+    },
+    {
+      "name": "IroncladTitan_JointHousing_3_l",
+      "bone": "foot_l",
+      "vertices": 2560,
+      "triangles": 5120
+    },
+    {
+      "name": "IroncladTitan_JointHousing_2_l",
+      "bone": "lower_leg_l",
+      "vertices": 5894,
+      "triangles": 11796
+    },
+    {
+      "name": "IroncladTitan_foot_l",
+      "bone": "foot_l",
+      "vertices": 15856,
+      "triangles": 31716
+    },
+    {
+      "name": "IroncladTitan_lower_leg_l",
+      "bone": "lower_leg_l",
+      "vertices": 12338,
+      "triangles": 24704
+    },
+    {
+      "name": "IroncladTitan_Axle_0_l",
+      "bone": "upper_leg_l",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "IroncladTitan_Axle_1_l",
+      "bone": "middle_leg_l",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "IroncladTitan_Axle_2_l",
+      "bone": "lower_leg_l",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "IroncladTitan_Axle_3_l",
+      "bone": "foot_l",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "IroncladTitan_Piston_housing_l",
+      "bone": "piston_housing_l",
+      "vertices": 40,
+      "triangles": 76
+    },
+    {
+      "name": "IroncladTitan_Piston_rod_l",
+      "bone": "piston_rod_l",
+      "vertices": 40,
+      "triangles": 76
+    },
+    {
+      "name": "IroncladTitan_Axle_0_r",
+      "bone": "upper_leg_r",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "IroncladTitan_Axle_1_r",
+      "bone": "middle_leg_r",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "IroncladTitan_Axle_2_r",
+      "bone": "lower_leg_r",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "IroncladTitan_Axle_3_r",
+      "bone": "foot_r",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "IroncladTitan_Piston_housing_r",
+      "bone": "piston_housing_r",
+      "vertices": 40,
+      "triangles": 76
+    },
+    {
+      "name": "IroncladTitan_Piston_rod_r",
+      "bone": "piston_rod_r",
+      "vertices": 40,
+      "triangles": 76
+    }
+  ],
+  "bones": [
+    "chassis",
+    "upper_leg_l",
+    "middle_leg_l",
+    "lower_leg_l",
+    "foot_l",
+    "piston_rod_l",
+    "piston_housing_l",
+    "upper_leg_r",
+    "middle_leg_r",
+    "lower_leg_r",
+    "foot_r",
+    "piston_rod_r",
+    "piston_housing_r"
+  ],
+  "closed_cut_faces": 12352,
+  "height_cm": 180,
+  "preview_action": "IroncladTitan_JointCheck",
+  "has_hydraulic_constraints": true
+}

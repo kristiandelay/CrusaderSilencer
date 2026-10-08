@@ -2,6 +2,7 @@
 import json,time,traceback
 from pathlib import Path
 import unreal as u
+# Humanoid fixtures; mechanical pawns are covered by Test-RobotGameplay.py.
 nl_root=Path(u.Paths.convert_relative_path_to_full(u.Paths.project_dir())).parent
 nl_test=dict(index=0,phase='place',next=0,busy=False,results=[],deadline=time.monotonic()+180)
 nl_cases=[dict(role=role,start=[2590,-800,94],goal=[3110,-800,0]) for role in ['Guard','Civilian']]
@@ -16,7 +17,7 @@ def nl_tick(dt):
         ws=u.EditorLevelLibrary.get_pie_worlds(False)
         if not ws:return
         case=nl_cases[nl_test['index']];now=u.GameplayStatics.get_time_seconds(ws[0])
-        p=next(a for a in u.GameplayStatics.get_all_actors_of_class(ws[0],u.CRTraversalCharacter) if a.crowd_agent.enabled and a.crowd_agent.guard==(case['role']=='Guard'))
+        p=next(a for a in u.GameplayStatics.get_all_actors_of_class(ws[0],u.CRTraversalCharacter) if a.crowd_agent.enabled and not isinstance(a,u.CRRobotCharacter) and a.crowd_agent.guard==(case['role']=='Guard'))
         ctrl=p.get_controller()
         if now<nl_test['next']:return
         if nl_test['phase']=='place':

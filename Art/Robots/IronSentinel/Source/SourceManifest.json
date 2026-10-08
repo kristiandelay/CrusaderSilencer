@@ -1,0 +1,39 @@
+{
+  "name": "IronSentinel",
+  "archive": "IronSentinel.zip",
+  "archive_sha256": "038647c56a05c974a3b3a9ecbc5ebba9f983a52340ca9472e6336c03fc75edf4",
+  "files": [
+    {
+      "original": "Meshy_AI_Iron_Sentinel_1007164125_texture_fbx/Meshy_AI_Iron_Sentinel_1007164125_texture.fbx",
+      "file": "IronSentinel.fbx",
+      "bytes": 122135228,
+      "sha256": "28b5e364c7f2bc0d6cca01f3c12d073a66255ef316c248f8f226306351c9ecc0"
+    },
+    {
+      "original": "Meshy_AI_Iron_Sentinel_1007164125_texture_fbx/Meshy_AI_Iron_Sentinel_1007164125_texture.png",
+      "file": "IronSentinel_BaseColor.png",
+      "bytes": 6974885,
+      "sha256": "a70f3d2311888a826472ee21033ac39f77f86ec4e93e4dc0959f3a21dc5034f9"
+    },
+    {
+      "original": "Meshy_AI_Iron_Sentinel_1007164125_texture_fbx/Meshy_AI_Iron_Sentinel_1007164125_texture_metallic.png",
+      "file": "IronSentinel_Metallic.png",
+      "bytes": 2104296,
+      "sha256": "ef0fd96790bea4a48ed27c6454c0775badf3651195a993fab03fbb827578684c"
+    },
+    {
+      "original": "Meshy_AI_Iron_Sentinel_1007164125_texture_fbx/Meshy_AI_Iron_Sentinel_1007164125_texture_normal.png",
+      "file": "IronSentinel_Normal.png",
+      "bytes": 6283928,
+      "sha256": "92928e91663294b1496b0946180c3040713e75244458c65ce4dd1b1441f2da8d"
+    },
+    {
+      "original": "Meshy_AI_Iron_Sentinel_1007164125_texture_fbx/Meshy_AI_Iron_Sentinel_1007164125_texture_roughness.png",
+      "file": "IronSentinel_Roughness.png",
+      "bytes": 1934182,
+      "sha256": "31c89cbe548d4b75043baa4a48dab4ad3095c0516a9f40eed554f936396bc4c6"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Iron_Sentinel_1007164125_texture_fbx.zip",
+  "archive_path": "mockups/Robots/IronSentinel.zip"
+}

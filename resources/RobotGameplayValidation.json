@@ -1,0 +1,352 @@
+{
+  "date": "2026-10-07",
+  "map": "/Game/Maps/L_TraversalGym",
+  "native_build": "LyraEditor Win64 Development: succeeded",
+  "passed": true,
+  "robots": 6,
+  "placement": "Four outdoor district tethers; two facility tethers",
+  "behavior": "Patrol, avoidance, investigation, pursuit and tactical repositioning; only damage or a directed near miss authorizes return fire against that attacker.",
+  "validation_scope": "Full native gameplay suite plus final fitted-barrel asset validation and a real player shot/return-fire check for all six final Blueprints.",
+  "suite": {
+    "passed": true,
+    "error": null,
+    "results": [
+      {
+        "script": "Test-RobotGameplay.py",
+        "report": "RobotGameplay/standalone.json",
+        "cases": 11,
+        "passed": true
+      },
+      {
+        "script": "Test-CrowdAI.py",
+        "report": "Environment/crowd-ai.json",
+        "cases": 4,
+        "passed": true
+      },
+      {
+        "script": "Test-RobotGameplay-Network.py",
+        "report": "RobotGameplay/network.json",
+        "cases": 5,
+        "passed": true
+      }
+    ]
+  },
+  "standalone": {
+    "passed": true,
+    "error": null,
+    "results": [
+      {
+        "case": "six_robot_roles_and_health",
+        "robots": [
+          {
+            "name": "B_Robot_IronSentinel_C_0",
+            "health": 240.0,
+            "home": "CR_Crowd_Commons"
+          },
+          {
+            "name": "B_Robot_SentinelWalker_C_0",
+            "health": 180.0,
+            "home": "CR_Crowd_Market"
+          },
+          {
+            "name": "B_Robot_APP5200IndustrialM_C_0",
+            "health": 240.0,
+            "home": "CR_FacilityCrowd_Area_Checkpoint"
+          },
+          {
+            "name": "B_Robot_IroncladTitan_C_0",
+            "health": 300.0,
+            "home": "CR_Crowd_Depot"
+          },
+          {
+            "name": "B_Robot_IroncladVanguard_C_0",
+            "health": 280.0,
+            "home": "CR_Crowd_Refuge"
+          },
+          {
+            "name": "B_Robot_IroncladSentinel_C_0",
+            "health": 260.0,
+            "home": "CR_FacilityCrowd_Area_Hall"
+          }
+        ]
+      },
+      {
+        "case": "grounded_rigid_patrol_and_area_visits",
+        "robots": [
+          {
+            "name": "B_Robot_IronSentinel_C_0",
+            "distance": 5255.154315356442,
+            "plants": 91,
+            "foot_error_95_cm": 0.04906856268644333,
+            "foot_error_max_cm": 0.15208494663238525,
+            "area_visits": 2
+          },
+          {
+            "name": "B_Robot_SentinelWalker_C_0",
+            "distance": 4718.110351957819,
+            "plants": 91,
+            "foot_error_95_cm": 0.40381884574890137,
+            "foot_error_max_cm": 1.8545808792114258,
+            "area_visits": 2
+          },
+          {
+            "name": "B_Robot_APP5200IndustrialM_C_0",
+            "distance": 1806.2474062323586,
+            "plants": 45,
+            "foot_error_95_cm": 0.4716234803199768,
+            "foot_error_max_cm": 2.637611150741577,
+            "area_visits": 2
+          },
+          {
+            "name": "B_Robot_IroncladTitan_C_0",
+            "distance": 4987.687636920397,
+            "plants": 91,
+            "foot_error_95_cm": 0.049654290080070496,
+            "foot_error_max_cm": 14.313567161560059,
+            "area_visits": 3
+          },
+          {
+            "name": "B_Robot_IroncladVanguard_C_0",
+            "distance": 4696.522737213625,
+            "plants": 122,
+            "foot_error_95_cm": 0.04946717247366905,
+            "foot_error_max_cm": 18.23287582397461,
+            "area_visits": 2
+          },
+          {
+            "name": "B_Robot_IroncladSentinel_C_0",
+            "distance": 3068.3485039504603,
+            "plants": 53,
+            "foot_error_95_cm": 0.049260202795267105,
+            "foot_error_max_cm": 9.945788383483887,
+            "area_visits": 3
+          }
+        ]
+      },
+      {
+        "case": "sight_and_ambient_gunfire_do_not_attack",
+        "heard": 1,
+        "state": "<CRCrowdState.INVESTIGATE: 2>",
+        "shots": 0
+      },
+      {
+        "case": "player_hit_provokes_robot_and_civilian_flight",
+        "health": 222.0,
+        "damage_reactions": 1
+      },
+      {
+        "case": "retaliation_damage_and_tactics",
+        "shots": 3,
+        "player_health": 91.0,
+        "tactical_moves": 2,
+        "displacement": 151.4084813970667,
+        "laser": "/Game/Bullet_Tracers_Fx/VFX/Lasers/NS_Laser_Trace_Red_2.NS_Laser_Trace_Red_2"
+      },
+      {
+        "case": "cover_blocks_fire_and_noise_cannot_change_aggressor",
+        "shots": 3
+      },
+      {
+        "case": "civilian_blocks_firing_lane",
+        "no_friendly_fire": true
+      },
+      {
+        "case": "losing_attacker_returns_to_peaceful_state",
+        "provoked": false
+      },
+      {
+        "case": "aimed_near_miss_provokes_without_damage",
+        "health": 222.0
+      },
+      {
+        "case": "mechanical_shutdown_stops_combat",
+        "blend": 0.6598935723304749
+      },
+      {
+        "case": "robot_respawn_preserves_model_and_home",
+        "name": "B_Robot_IronSentinel_C_1",
+        "health": 240.0
+      }
+    ]
+  },
+  "network": {
+    "passed": true,
+    "error": null,
+    "results": [
+      {
+        "case": "six_replicated_peaceful_robots_and_remote_gait",
+        "moving_observers": 6
+      },
+      {
+        "case": "client_shot_provokes_only_attacked_robot",
+        "health": 222.0,
+        "replicated_attacker": true
+      },
+      {
+        "case": "authoritative_damage_replicated_laser_and_sound",
+        "shots": 3,
+        "observer_shots": 3,
+        "client_health": 73.0,
+        "sound": "/Game/Bullet_Tracers_Fx/Sources/Sounds/SW_LaserGun_BW_47473_Cue.SW_LaserGun_BW_47473_Cue"
+      },
+      {
+        "case": "replicated_mechanical_shutdown",
+        "observer_blend": 0.6017699837684631
+      },
+      {
+        "case": "replicated_neutral_respawn",
+        "health": 240.0
+      }
+    ]
+  },
+  "human_regression": {
+    "passed": true,
+    "cases": [
+      "spawn_roles_and_loadouts",
+      "patrol_navigation_and_linked_area_visits",
+      "damage_pursuit_and_civilian_fear",
+      "return_fire_tactical_movement_and_fleeing"
+    ]
+  },
+  "assets": {
+    "passed": true,
+    "assets": 9,
+    "failures": 0,
+    "robots": [
+      {
+        "name": "IronSentinel",
+        "home": "CR_Crowd_Commons",
+        "blueprint": "/Game/Crusader/Robots/IronSentinel/B_Robot_IronSentinel",
+        "position": [
+          10400.0,
+          -650.0,
+          94.0
+        ],
+        "barrels": 2,
+        "health": 240
+      },
+      {
+        "name": "SentinelWalker",
+        "home": "CR_Crowd_Market",
+        "blueprint": "/Game/Crusader/Robots/SentinelWalker/B_Robot_SentinelWalker",
+        "position": [
+          14100.0,
+          -750.0,
+          94.0
+        ],
+        "barrels": 2,
+        "health": 180
+      },
+      {
+        "name": "APP5200IndustrialM",
+        "home": "CR_FacilityCrowd_Area_Checkpoint",
+        "blueprint": "/Game/Crusader/Robots/APP5200IndustrialM/B_Robot_APP5200IndustrialM",
+        "position": [
+          11170.0,
+          7310.0,
+          122.0
+        ],
+        "barrels": 4,
+        "health": 240
+      },
+      {
+        "name": "IroncladTitan",
+        "home": "CR_Crowd_Depot",
+        "blueprint": "/Game/Crusader/Robots/IroncladTitan/B_Robot_IroncladTitan",
+        "position": [
+          14900.0,
+          4000.0,
+          94.0
+        ],
+        "barrels": 2,
+        "health": 300
+      },
+      {
+        "name": "IroncladVanguard",
+        "home": "CR_Crowd_Refuge",
+        "blueprint": "/Game/Crusader/Robots/IroncladVanguard/B_Robot_IroncladVanguard",
+        "position": [
+          10000.0,
+          3050.0,
+          94.0
+        ],
+        "barrels": 2,
+        "health": 280
+      },
+      {
+        "name": "IroncladSentinel",
+        "home": "CR_FacilityCrowd_Area_Hall",
+        "blueprint": "/Game/Crusader/Robots/IroncladSentinel/B_Robot_IroncladSentinel",
+        "position": [
+          12900.0,
+          7360.0,
+          122.0
+        ],
+        "barrels": 2,
+        "health": 260
+      }
+    ]
+  },
+  "final_mounted_weapons": {
+    "passed": true,
+    "error": null,
+    "results": [
+      {
+        "name": "IronSentinel",
+        "barrels": 2,
+        "shots": 3,
+        "health": 222.0,
+        "muzzle_pose_offset_cm": 1.7344915224642392
+      },
+      {
+        "name": "SentinelWalker",
+        "barrels": 2,
+        "shots": 3,
+        "health": 162.0,
+        "muzzle_pose_offset_cm": 2.617414919520398
+      },
+      {
+        "name": "APP5200IndustrialM",
+        "barrels": 4,
+        "shots": 4,
+        "health": 222.0,
+        "muzzle_pose_offset_cm": 1.1756062981965278
+      },
+      {
+        "name": "IroncladTitan",
+        "barrels": 2,
+        "shots": 3,
+        "health": 282.0,
+        "muzzle_pose_offset_cm": 1.6290148027355684
+      },
+      {
+        "name": "IroncladVanguard",
+        "barrels": 2,
+        "shots": 3,
+        "health": 262.0,
+        "muzzle_pose_offset_cm": 2.1516609623223313
+      },
+      {
+        "name": "IroncladSentinel",
+        "barrels": 2,
+        "shots": 3,
+        "health": 242.0,
+        "muzzle_pose_offset_cm": 2.117524260877337
+      }
+    ]
+  },
+  "limitations": [
+    "Mechanical rigs use navigation and hops; robot-specific vault, climb and slide are not implemented.",
+    "Damage collision is one capsule, not per-module hit zones.",
+    "Validation uses editor PIE; no packaged-game performance or dedicated-server soak test."
+  ],
+  "source_sha256": {
+    "src/Source/LyraGame/Crusader/CRRobotCharacter.cpp": "5d7ef53cbd27934e85fcc9160240ff8d7740c57302ca7776109cded0ab4050f6",
+    "src/Source/LyraGame/Crusader/CRRobotCharacter.h": "4d75dda325c7b35f76dabd2ba8662aadaec809dacb6aa115e57a3b338582d2b4",
+    "src/Source/LyraGame/Crusader/CRCrowdAI.cpp": "dcf49bac0260af928afabccf3afd9f2d053e69009af6e8fd547eca1019a152c9",
+    "src/Source/LyraGame/Crusader/CRCrowdAI.h": "de5e5fe008a055a3029a5f668c893dc07a46c66a7e6a6be419142af008a0c99b",
+    "src/Source/LyraGame/Crusader/CRWeaponEffects.cpp": "2f2de7fb2f120dda2b56553bad0ea3d5b0cc720df185a5d30b52ba5e5ffd45e5",
+    "src/Source/LyraGame/Crusader/CRWeaponEffects.h": "d8929eed75e048554697ab48ca94d3fbbca5c975d3b69a423405dac597953c11",
+    "resources/RobotGameplay.json": "e3c926b113ca2ce8de5ad56e5e04cbad56e65439ad2c627ea81d5549185ae981"
+  }
+}

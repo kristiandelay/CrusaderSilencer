@@ -1,0 +1,39 @@
+{
+  "name": "OldBattery",
+  "archive": "OldBattery.zip",
+  "archive_sha256": "07bf3e01061365e1317f95a763c2bf8ada3fe32a653fdc0c47189f7a4c2d5766",
+  "files": [
+    {
+      "original": "Meshy_AI_Old_Battery_1007205008_texture_fbx/Meshy_AI_Old_Battery_1007205008_texture.fbx",
+      "file": "OldBattery.fbx",
+      "bytes": 9553452,
+      "sha256": "502b82f4581386b4b7870a8e72cd3ab202c8fabc699d79276de44dbe6eced291"
+    },
+    {
+      "original": "Meshy_AI_Old_Battery_1007205008_texture_fbx/Meshy_AI_Old_Battery_1007205008_texture.png",
+      "file": "OldBattery_BaseColor.png",
+      "bytes": 3415857,
+      "sha256": "64f913da8a33931d7ea6c798775322effe0b6eb3641c118aa431ae9945722bf9"
+    },
+    {
+      "original": "Meshy_AI_Old_Battery_1007205008_texture_fbx/Meshy_AI_Old_Battery_1007205008_texture_metallic.png",
+      "file": "OldBattery_Metallic.png",
+      "bytes": 295233,
+      "sha256": "8e209c7834e87d869cc015b99952212c6dcd6a07811b4f3c0ca6574daa8ac6c8"
+    },
+    {
+      "original": "Meshy_AI_Old_Battery_1007205008_texture_fbx/Meshy_AI_Old_Battery_1007205008_texture_normal.png",
+      "file": "OldBattery_Normal.png",
+      "bytes": 2510427,
+      "sha256": "a3b81116960b5b364f8d5cc6a9f948584f0ec8ee71105d41df87f12d3f5592df"
+    },
+    {
+      "original": "Meshy_AI_Old_Battery_1007205008_texture_fbx/Meshy_AI_Old_Battery_1007205008_texture_roughness.png",
+      "file": "OldBattery_Roughness.png",
+      "bytes": 995715,
+      "sha256": "4e13d67d4ead3d3bbc91b5d5d7d1be4bcc74a00ff715439bc0208292d12d6b3f"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Old_Battery_1007205008_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level2/OldBattery.zip"
+}

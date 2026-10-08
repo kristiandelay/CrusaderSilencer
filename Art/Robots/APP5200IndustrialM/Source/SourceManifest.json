@@ -1,0 +1,39 @@
+{
+  "name": "APP5200IndustrialM",
+  "archive": "APP5200IndustrialM.zip",
+  "archive_sha256": "58a26b4ae6a0ed07916231978818b467de7a094d7f291085633550bf506338b3",
+  "files": [
+    {
+      "original": "Meshy_AI_APP_5200_Industrial_M_1007164210_texture_fbx/Meshy_AI_APP_5200_Industrial_M_1007164210_texture.fbx",
+      "file": "APP5200IndustrialM.fbx",
+      "bytes": 96555420,
+      "sha256": "6d67229ab24b952fd6bcf366d69e50f910bc1bdb4a1ecc2d2cfefb295a1690b8"
+    },
+    {
+      "original": "Meshy_AI_APP_5200_Industrial_M_1007164210_texture_fbx/Meshy_AI_APP_5200_Industrial_M_1007164210_texture.png",
+      "file": "APP5200IndustrialM_BaseColor.png",
+      "bytes": 7139222,
+      "sha256": "8e277bd52dafc82106a6fffa7cd14b93a8c2f5321bfdc772dc2137a04587a6c2"
+    },
+    {
+      "original": "Meshy_AI_APP_5200_Industrial_M_1007164210_texture_fbx/Meshy_AI_APP_5200_Industrial_M_1007164210_texture_metallic.png",
+      "file": "APP5200IndustrialM_Metallic.png",
+      "bytes": 915934,
+      "sha256": "b0e97522c991d060167d40b9915bc8bc85278fe875f46248bf4179549e6d33af"
+    },
+    {
+      "original": "Meshy_AI_APP_5200_Industrial_M_1007164210_texture_fbx/Meshy_AI_APP_5200_Industrial_M_1007164210_texture_normal.png",
+      "file": "APP5200IndustrialM_Normal.png",
+      "bytes": 5881848,
+      "sha256": "6d8ba3c05cdc599f78ad4179e455297aeaebc1da86d1a917e067845ef3d231df"
+    },
+    {
+      "original": "Meshy_AI_APP_5200_Industrial_M_1007164210_texture_fbx/Meshy_AI_APP_5200_Industrial_M_1007164210_texture_roughness.png",
+      "file": "APP5200IndustrialM_Roughness.png",
+      "bytes": 1974514,
+      "sha256": "b225d1d49410053c228a6c6cffa7d2855d7f9e4198bc786dba07ad9f14e3ef3e"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_APP_5200_Industrial_M_1007164210_texture_fbx.zip",
+  "archive_path": "mockups/Robots/APP5200IndustrialM.zip"
+}

@@ -1,0 +1,39 @@
+{
+  "name": "IndustrialHazardFloor",
+  "archive": "IndustrialHazardFloor.zip",
+  "archive_sha256": "9e1b25e26e895b24399f205f6a91b3d1b51e53ff366fe4e9b528b8541cb31a2e",
+  "files": [
+    {
+      "original": "Meshy_AI_Industrial_Hazard_Flo_1008205236_texture_fbx/Meshy_AI_Industrial_Hazard_Flo_1008205236_texture.fbx",
+      "file": "IndustrialHazardFloor.fbx",
+      "bytes": 25968044,
+      "sha256": "387ee3ab3fd25ee4a918614c21f2fc8938365f4d2a2eba011d5d6383514dd4d6"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Hazard_Flo_1008205236_texture_fbx/Meshy_AI_Industrial_Hazard_Flo_1008205236_texture.png",
+      "file": "IndustrialHazardFloor_BaseColor.png",
+      "bytes": 4995362,
+      "sha256": "59a258fd1768ea3c8ce315227aa917a2402aded74880210dfe87a79594da6000"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Hazard_Flo_1008205236_texture_fbx/Meshy_AI_Industrial_Hazard_Flo_1008205236_texture_metallic.png",
+      "file": "IndustrialHazardFloor_Metallic.png",
+      "bytes": 1116834,
+      "sha256": "b65071058b768ba817d144632c83d3d78b68c8d14d23030dbace32d1f7b016fd"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Hazard_Flo_1008205236_texture_fbx/Meshy_AI_Industrial_Hazard_Flo_1008205236_texture_normal.png",
+      "file": "IndustrialHazardFloor_Normal.png",
+      "bytes": 4522301,
+      "sha256": "f4085ff8bded7b1a50bc8fd2ea010ce11efe41a3d7211e2c962f9215d8ca1d78"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Hazard_Flo_1008205236_texture_fbx/Meshy_AI_Industrial_Hazard_Flo_1008205236_texture_roughness.png",
+      "file": "IndustrialHazardFloor_Roughness.png",
+      "bytes": 1700005,
+      "sha256": "f90e0afc0ed6b5f7d8f385aeb24a9833beba166d548776131f59c3decadf80bd"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Industrial_Hazard_Flo_1008205236_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level3/props/IndustrialHazardFloor.zip"
+}

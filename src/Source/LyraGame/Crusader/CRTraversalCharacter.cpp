@@ -2,6 +2,8 @@
 #include "CRWeaponEffects.h"
 #include "CRFootsteps.h"
 #include "CRCrowdAI.h"
+#include "CRRoll.h"
+#include "CRThrowable.h"
 #include "UObject/StructOnScope.h"
 #include "UObject/UnrealType.h"
 #include "InputMappingContext.h"
@@ -36,6 +38,8 @@ ACRTraversalCharacter::ACRTraversalCharacter(const FObjectInitializer& ObjectIni
     WeaponEffects = CreateDefaultSubobject<UCRWeaponEffectsComponent>(TEXT("WeaponEffects"));
     Footsteps = CreateDefaultSubobject<UCRFootstepComponent>(TEXT("Footsteps"));
     CrowdAgent = CreateDefaultSubobject<UCRCrowdAgentComponent>(TEXT("CrowdAgent"));
+    Roll = CreateDefaultSubobject<UCRRollComponent>(TEXT("Roll"));
+    Throwable = CreateDefaultSubobject<UCRThrowableComponent>(TEXT("Throwable"));
     PhysicsControl = CreateDefaultSubobject<UPhysicsControlComponent>(TEXT("PhysicsControl"));
     PhysicalInteraction = CreateDefaultSubobject<UBaselinePhysicalInteractionComponent>(TEXT("PhysicalInteraction"));
     SelectedVisualOverride = CreateDefaultSubobject<UChildActorComponent>(TEXT("SelectedVisualOverride"));
@@ -58,7 +62,7 @@ void ACRTraversalCharacter::OnMovementModeChanged(EMovementMode PreviousMovement
 bool ACRTraversalCharacter::CanUseMovementActions() const
 {
     const auto* Health = ULyraHealthComponent::FindHealthComponent(this);
-    return !PhysicalInteraction->IsBusy() && (!Health || !Health->IsDeadOrDying());
+    return !PhysicalInteraction->IsBusy() && (!Roll || !Roll->IsRolling()) && (!Throwable || !Throwable->IsBusy()) && (!Health || !Health->IsDeadOrDying());
 }
 
 void ACRTraversalCharacter::OnAbilitySystemInitialized()
@@ -157,7 +161,10 @@ void ACRTraversalCharacter::BeginPlay()
 
 void ACRTraversalCharacter::ToggleSlideCrouch()
 {
-    if (!CanUseMovementActions()) return;
+    const auto* Health=ULyraHealthComponent::FindHealthComponent(this);
+    // Throw preparation/release allows crouching and sliding. Jump, roll and
+    // traversal retain the stricter CanUseMovementActions gate.
+    if (PhysicalInteraction->IsBusy() || (Roll && Roll->IsRolling()) || (Health && Health->IsDeadOrDying())) return;
     auto* Movement = CastChecked<UBaselineCharacterMovement>(GetCharacterMovement());
     // Ignore rapid toggle presses during the entry animation. Physical exits
     // (jump, ledge, impact, ragdoll) still end the slide through movement itself.
@@ -183,7 +190,11 @@ void ACRTraversalCharacter::OnSlideChanged(bool bSliding)
     if (UAnimInstance* Anim = GetMesh()->GetAnimInstance())
     {
         if (bSliding && SlideAnimation)
-            SlideMontage = Anim->PlaySlotAnimationAsDynamicMontage(SlideAnimation, TEXT("DefaultSlot"), .15f, .2f, 1.f, 9999);
+        {
+            if (SlideMontage) Anim->Montage_Stop(.15f,SlideMontage);
+            SlideMontage = UAnimMontage::CreateSlotAnimationAsDynamicMontage(SlideAnimation, TEXT("DefaultSlot"), .15f, .2f, 1.f, 9999);
+            Anim->Montage_Play(SlideMontage,1.f,EMontagePlayReturnType::MontageLength,0.f,false);
+        }
         else if (SlideMontage)
         {
             Anim->Montage_Stop(.2f, SlideMontage);
@@ -209,6 +220,16 @@ void UCRTraversalHeroComponent::InitializePlayerInput(UInputComponent* PlayerInp
     auto* Input = CastChecked<UEnhancedInputComponent>(PlayerInputComponent);
     if (auto* Character = GetPawn<ACRTraversalCharacter>())
     {
+        if (auto* Action = LoadObject<UInputAction>(nullptr, TEXT("/Game/Baseline/Input/IA_Throw.IA_Throw")))
+        {
+            Input->BindAction(Action,ETriggerEvent::Started,Character->Throwable.Get(),&UCRThrowableComponent::BeginAim);
+            Input->BindAction(Action,ETriggerEvent::Completed,Character->Throwable.Get(),&UCRThrowableComponent::ReleaseThrow);
+            Input->BindAction(Action,ETriggerEvent::Canceled,Character->Throwable.Get(),&UCRThrowableComponent::CancelThrow);
+        }
+        if (auto* Action = LoadObject<UInputAction>(nullptr, TEXT("/Game/Baseline/Input/IA_ThrowType.IA_ThrowType")))
+            Input->BindAction(Action,ETriggerEvent::Started,Character->Throwable.Get(),&UCRThrowableComponent::CycleType);
+        if (auto* Action = LoadObject<UInputAction>(nullptr, TEXT("/Game/Baseline/Input/IA_ThrowCancel.IA_ThrowCancel")))
+            Input->BindAction(Action,ETriggerEvent::Started,Character->Throwable.Get(),&UCRThrowableComponent::CancelThrow);
         const auto BindPhysical = [Input, Character](const TCHAR* Name, auto Method)
         {
             const FString Path = FString::Printf(TEXT("/Game/Baseline/Input/IA_%s.IA_%s"), Name, Name);

@@ -1,0 +1,39 @@
+{
+  "name": "ModularSteelFloorPanel",
+  "archive": "ModularSteelFloorPanel.zip",
+  "archive_sha256": "b265eda4f36b4065a7c2dffeb46049ec8bd40f1baf4c3ac77796a389254c2826",
+  "files": [
+    {
+      "original": "Meshy_AI_Modular_Steel_Floor_P_1008201744_texture_fbx/Meshy_AI_Modular_Steel_Floor_P_1008201744_texture.fbx",
+      "file": "ModularSteelFloorPanel.fbx",
+      "bytes": 19873100,
+      "sha256": "d1835e6208ab81278aad8e0563ee903792ae8510a47a00f7ffbfeae470637053"
+    },
+    {
+      "original": "Meshy_AI_Modular_Steel_Floor_P_1008201744_texture_fbx/Meshy_AI_Modular_Steel_Floor_P_1008201744_texture.png",
+      "file": "ModularSteelFloorPanel_BaseColor.png",
+      "bytes": 4665031,
+      "sha256": "2249a1046dd5590f090e928dc3f88b2c0a479dad910fd3de218cb166b872ef68"
+    },
+    {
+      "original": "Meshy_AI_Modular_Steel_Floor_P_1008201744_texture_fbx/Meshy_AI_Modular_Steel_Floor_P_1008201744_texture_metallic.png",
+      "file": "ModularSteelFloorPanel_Metallic.png",
+      "bytes": 189367,
+      "sha256": "80a1aba9d1ccc6d134612841437227d33fd7df5b82256f8bd529656baad3f46b"
+    },
+    {
+      "original": "Meshy_AI_Modular_Steel_Floor_P_1008201744_texture_fbx/Meshy_AI_Modular_Steel_Floor_P_1008201744_texture_normal.png",
+      "file": "ModularSteelFloorPanel_Normal.png",
+      "bytes": 4420888,
+      "sha256": "d231a977b26a9f5293526358b9d835cbbcab45d284080780a0c3eabf2688cb82"
+    },
+    {
+      "original": "Meshy_AI_Modular_Steel_Floor_P_1008201744_texture_fbx/Meshy_AI_Modular_Steel_Floor_P_1008201744_texture_roughness.png",
+      "file": "ModularSteelFloorPanel_Roughness.png",
+      "bytes": 1367144,
+      "sha256": "c742964afe410a8ed591e95f0db9ee99b32c77d255b7e83464b799857dd41277"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Modular_Steel_Floor_P_1008201744_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level3/ModularSteelFloorPanel.zip"
+}

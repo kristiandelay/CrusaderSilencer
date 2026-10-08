@@ -10,6 +10,8 @@ visual_net={'phase':'setup','index':0,'next':0,'busy':False,'results':[],'deadli
 visual_net_out=Path(u.Paths.convert_relative_path_to_full(u.Paths.project_dir())).parent/'Artifacts/VisualOverride/network.json'
 visual_net_widget=u.get_editor_subsystem(u.EditorUtilitySubsystem).spawn_and_register_tab(u.load_asset('/Game/Widgets/GameAnimationWidget'))
 visual_net_names=['Echo','Twinblast','Kellan','Manny','Quinn','UE4_Mannequin','CrimsonSentinel', 'ObsidianSentinel', 'RegalCommander', 'TheSteadfastOfficer', 'UrbanTrailblazer']
+visual_net_names += [r['name'] for r in json.loads((Path(u.Paths.convert_relative_path_to_full(u.Paths.project_dir())).parent/'resources/NPCAdditions.json').read_text()) if r.get('imported')]
+visual_net['deadline']=time.monotonic()+max(180,len(visual_net_names)*40)
 
 
 def vn_context():

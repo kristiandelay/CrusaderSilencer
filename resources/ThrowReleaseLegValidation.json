@@ -1,0 +1,748 @@
+{
+  "passed": true,
+  "validated_utc": "2026-10-08T12:29:24.125858+00:00",
+  "checks": {
+    "release-legs": [
+      {
+        "slide": false,
+        "type": "<CRThrowableType.GRENADE: 0>",
+        "left": false,
+        "keys": [
+          "W"
+        ],
+        "owner_leg_motion_cm": [
+          72.69378004791201,
+          73.94228246717186,
+          69.17886996373116,
+          71.93821576819336
+        ],
+        "server_leg_motion_cm": [
+          72.69378004791201,
+          73.94228246717186,
+          69.17886996373116,
+          71.93821576819336
+        ],
+        "slide_pelvis_height_cm": [],
+        "full_body_slot_active": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "one_release": true
+      },
+      {
+        "slide": false,
+        "type": "<CRThrowableType.GRENADE: 0>",
+        "left": false,
+        "keys": [
+          "W",
+          "D"
+        ],
+        "owner_leg_motion_cm": [
+          82.96239925002153,
+          85.1358757024552,
+          81.45982858772078,
+          85.0773199235299
+        ],
+        "server_leg_motion_cm": [
+          82.96239925002153,
+          85.1358757024552,
+          81.45982858772078,
+          85.0773199235299
+        ],
+        "slide_pelvis_height_cm": [],
+        "full_body_slot_active": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "one_release": true
+      },
+      {
+        "slide": false,
+        "type": "<CRThrowableType.GRENADE: 0>",
+        "left": true,
+        "keys": [
+          "W"
+        ],
+        "owner_leg_motion_cm": [
+          77.26750580944103,
+          82.94100264090947,
+          73.45338283225605,
+          80.55565952065625
+        ],
+        "server_leg_motion_cm": [
+          77.26750580944103,
+          82.94100264090947,
+          73.45338283225605,
+          80.55565952065625
+        ],
+        "slide_pelvis_height_cm": [],
+        "full_body_slot_active": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "one_release": true
+      },
+      {
+        "slide": false,
+        "type": "<CRThrowableType.GRENADE: 0>",
+        "left": true,
+        "keys": [
+          "W",
+          "D"
+        ],
+        "owner_leg_motion_cm": [
+          84.0765741058054,
+          85.4666623977725,
+          82.79443458068862,
+          85.33460114992164
+        ],
+        "server_leg_motion_cm": [
+          84.0765741058054,
+          85.4666623977725,
+          82.79443458068862,
+          85.33460114992164
+        ],
+        "slide_pelvis_height_cm": [],
+        "full_body_slot_active": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "one_release": true
+      },
+      {
+        "slide": false,
+        "type": "<CRThrowableType.SMOKE: 1>",
+        "left": false,
+        "keys": [
+          "W"
+        ],
+        "owner_leg_motion_cm": [
+          78.77017760719667,
+          89.58247887789697,
+          75.20251491828375,
+          86.74200584525802
+        ],
+        "server_leg_motion_cm": [
+          78.77017760719667,
+          89.58247887789697,
+          75.20251491828375,
+          86.74200584525802
+        ],
+        "slide_pelvis_height_cm": [],
+        "full_body_slot_active": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "one_release": true
+      },
+      {
+        "slide": false,
+        "type": "<CRThrowableType.SMOKE: 1>",
+        "left": false,
+        "keys": [
+          "W",
+          "D"
+        ],
+        "owner_leg_motion_cm": [
+          84.01241378860146,
+          82.91615038331943,
+          82.15399485381597,
+          82.68582465624515
+        ],
+        "server_leg_motion_cm": [
+          84.01241378860146,
+          82.91615038331943,
+          82.15399485381597,
+          82.68582465624515
+        ],
+        "slide_pelvis_height_cm": [],
+        "full_body_slot_active": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "one_release": true
+      },
+      {
+        "slide": false,
+        "type": "<CRThrowableType.SMOKE: 1>",
+        "left": true,
+        "keys": [
+          "W"
+        ],
+        "owner_leg_motion_cm": [
+          72.77706603215464,
+          75.50956769112318,
+          69.0182653590167,
+          73.47138043945952
+        ],
+        "server_leg_motion_cm": [
+          72.77706603215464,
+          75.50956769112318,
+          69.0182653590167,
+          73.47138043945952
+        ],
+        "slide_pelvis_height_cm": [],
+        "full_body_slot_active": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "one_release": true
+      },
+      {
+        "slide": false,
+        "type": "<CRThrowableType.SMOKE: 1>",
+        "left": true,
+        "keys": [
+          "W",
+          "D"
+        ],
+        "owner_leg_motion_cm": [
+          82.54108655520648,
+          80.696825729695,
+          80.2492782923728,
+          80.55024657638951
+        ],
+        "server_leg_motion_cm": [
+          82.54108655520648,
+          80.696825729695,
+          80.2492782923728,
+          80.55024657638951
+        ],
+        "slide_pelvis_height_cm": [],
+        "full_body_slot_active": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "one_release": true
+      },
+      {
+        "slide": true,
+        "type": "<CRThrowableType.GRENADE: 0>",
+        "left": false,
+        "keys": [
+          "W"
+        ],
+        "owner_leg_motion_cm": [
+          7.103053453968696,
+          4.247212387359389,
+          5.898655938111794,
+          3.853347537091296
+        ],
+        "server_leg_motion_cm": [
+          7.103053453968696,
+          4.247212387359389,
+          5.898655938111794,
+          3.853347537091296
+        ],
+        "slide_pelvis_height_cm": [
+          21.62725145844715,
+          19.212844028346787,
+          21.69980177088486,
+          19.283965057093965,
+          21.748723210473205,
+          19.331922715640296,
+          21.55237521734891,
+          19.139442893097318,
+          21.270109129900362,
+          18.862737613061185,
+          21.171875543199548,
+          18.766439285611707,
+          21.07088588994362,
+          18.667439187734097,
+          20.92909700023336,
+          18.52844362228049
+        ],
+        "full_body_slot_active": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "one_release": true
+      },
+      {
+        "slide": true,
+        "type": "<CRThrowableType.SMOKE: 1>",
+        "left": true,
+        "keys": [
+          "W"
+        ],
+        "owner_leg_motion_cm": [
+          7.530590773863607,
+          4.543821963695474,
+          6.188985091865515,
+          4.170297865329826
+        ],
+        "server_leg_motion_cm": [
+          7.530590773863607,
+          4.543821963695474,
+          6.188985091865515,
+          4.170297865329826
+        ],
+        "slide_pelvis_height_cm": [
+          21.587470175111502,
+          19.173846459616186,
+          21.696988388389876,
+          19.281207099883602,
+          21.739049276365968,
+          19.322439363706692,
+          21.475577714678884,
+          19.064158346255482,
+          21.223169375367814,
+          18.816722599213215,
+          21.148673484501625,
+          18.74369432107325,
+          21.021011195175415,
+          18.61854705369386,
+          20.95037869435658,
+          18.549306054552236
+        ],
+        "full_body_slot_active": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "one_release": true
+      }
+    ],
+    "release-legs-network": [
+      {
+        "slide": false,
+        "type": "<CRThrowableType.GRENADE: 0>",
+        "left": false,
+        "keys": [
+          "W"
+        ],
+        "owner_leg_motion_cm": [
+          74.85266005685892,
+          82.99364587626394,
+          71.6422692566775,
+          80.57846753433739
+        ],
+        "server_leg_motion_cm": [
+          73.238984987485,
+          68.31333853427974,
+          69.51731362880936,
+          66.23849115216946
+        ],
+        "slide_pelvis_height_cm": [],
+        "full_body_slot_active": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "one_release": true
+      },
+      {
+        "slide": false,
+        "type": "<CRThrowableType.GRENADE: 0>",
+        "left": false,
+        "keys": [
+          "W",
+          "D"
+        ],
+        "owner_leg_motion_cm": [
+          90.1110263465181,
+          87.71617265540274,
+          88.40462152536934,
+          87.39111900467617
+        ],
+        "server_leg_motion_cm": [
+          75.51963330676953,
+          86.53739345495069,
+          75.4163204817988,
+          86.48171935466233
+        ],
+        "slide_pelvis_height_cm": [],
+        "full_body_slot_active": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "one_release": true
+      },
+      {
+        "slide": false,
+        "type": "<CRThrowableType.GRENADE: 0>",
+        "left": true,
+        "keys": [
+          "W"
+        ],
+        "owner_leg_motion_cm": [
+          78.53663682627037,
+          79.23173859300194,
+          75.95473790585724,
+          76.61049243161403
+        ],
+        "server_leg_motion_cm": [
+          65.80911148345979,
+          62.60509181492748,
+          63.36457806861484,
+          60.32388744402786
+        ],
+        "slide_pelvis_height_cm": [],
+        "full_body_slot_active": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "one_release": true
+      },
+      {
+        "slide": false,
+        "type": "<CRThrowableType.GRENADE: 0>",
+        "left": true,
+        "keys": [
+          "W",
+          "D"
+        ],
+        "owner_leg_motion_cm": [
+          87.0110676040028,
+          86.1252424705959,
+          85.36007103563817,
+          85.80128611413632
+        ],
+        "server_leg_motion_cm": [
+          72.71599230154406,
+          89.98913702377567,
+          70.0364663185856,
+          90.15790881941743
+        ],
+        "slide_pelvis_height_cm": [],
+        "full_body_slot_active": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "one_release": true
+      },
+      {
+        "slide": false,
+        "type": "<CRThrowableType.SMOKE: 1>",
+        "left": false,
+        "keys": [
+          "W"
+        ],
+        "owner_leg_motion_cm": [
+          76.48676949505865,
+          86.60669974969987,
+          72.796204861293,
+          83.81605217737301
+        ],
+        "server_leg_motion_cm": [
+          82.36386642637135,
+          65.38473596567506,
+          78.97262825081857,
+          63.98060642691794
+        ],
+        "slide_pelvis_height_cm": [],
+        "full_body_slot_active": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "one_release": true
+      },
+      {
+        "slide": false,
+        "type": "<CRThrowableType.SMOKE: 1>",
+        "left": false,
+        "keys": [
+          "W",
+          "D"
+        ],
+        "owner_leg_motion_cm": [
+          101.01338057654557,
+          90.42926470327214,
+          98.55257510916131,
+          90.28326672797796
+        ],
+        "server_leg_motion_cm": [
+          71.35529060350737,
+          80.00155755718902,
+          68.12254285701361,
+          80.16646979475128
+        ],
+        "slide_pelvis_height_cm": [],
+        "full_body_slot_active": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "one_release": true
+      },
+      {
+        "slide": false,
+        "type": "<CRThrowableType.SMOKE: 1>",
+        "left": true,
+        "keys": [
+          "W"
+        ],
+        "owner_leg_motion_cm": [
+          72.21809966661631,
+          79.50611354164812,
+          69.98125553196827,
+          77.36313843495626
+        ],
+        "server_leg_motion_cm": [
+          74.0552911855757,
+          70.0544139245952,
+          70.94366641957926,
+          68.04320074827673
+        ],
+        "slide_pelvis_height_cm": [],
+        "full_body_slot_active": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "one_release": true
+      },
+      {
+        "slide": false,
+        "type": "<CRThrowableType.SMOKE: 1>",
+        "left": true,
+        "keys": [
+          "W",
+          "D"
+        ],
+        "owner_leg_motion_cm": [
+          86.0587822409947,
+          82.95987705023609,
+          85.19429028406617,
+          82.64616758463882
+        ],
+        "server_leg_motion_cm": [
+          79.01893848212872,
+          92.88758659439085,
+          78.8257061137667,
+          92.75914464586499
+        ],
+        "slide_pelvis_height_cm": [],
+        "full_body_slot_active": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "one_release": true
+      },
+      {
+        "slide": true,
+        "type": "<CRThrowableType.GRENADE: 0>",
+        "left": false,
+        "keys": [
+          "W"
+        ],
+        "owner_leg_motion_cm": [
+          8.10000060303044,
+          5.714502477196747,
+          6.457587332505711,
+          5.552074739829713
+        ],
+        "server_leg_motion_cm": [
+          7.820004208827695,
+          4.863673280980987,
+          6.288508252384022,
+          4.5388425232815095
+        ],
+        "slide_pelvis_height_cm": [
+          21.654768424961144,
+          19.23981889448754,
+          21.71431631543368,
+          19.298193656605456,
+          21.470134943245835,
+          19.058822800610695,
+          21.18980320848977,
+          18.784013765384906,
+          21.10750531265057,
+          18.70333718634413,
+          20.96449480308473,
+          18.56314406766232,
+          21.417612735875558,
+          19.007335311518837,
+          21.801653822007346,
+          19.38381056309453
+        ],
+        "full_body_slot_active": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "one_release": true
+      },
+      {
+        "slide": true,
+        "type": "<CRThrowableType.SMOKE: 1>",
+        "left": true,
+        "keys": [
+          "W"
+        ],
+        "owner_leg_motion_cm": [
+          8.07700820925567,
+          5.7520327106556675,
+          6.539916338564647,
+          5.522496166176617
+        ],
+        "server_leg_motion_cm": [
+          7.199614491153312,
+          4.2674064008911445,
+          5.929461464618181,
+          3.957042847047262
+        ],
+        "slide_pelvis_height_cm": [
+          21.656703340515204,
+          19.241715691070766,
+          21.71583772986488,
+          19.299685098280378,
+          21.60230342623913,
+          19.18838748700003,
+          21.26815626980568,
+          18.86082322545532,
+          21.167918316513703,
+          18.762560018611644,
+          20.99168570092696,
+          18.58979928887533,
+          21.099971727885638,
+          18.69595201761595,
+          21.715120476689883,
+          19.29898197541343
+        ],
+        "full_body_slot_active": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "one_release": true
+      }
+    ]
+  },
+  "saved_slots": {
+    "AM_Aim": [
+      "ThrowUpperBody"
+    ],
+    "AM_Left_Aim": [
+      "ThrowUpperBody"
+    ],
+    "AM_Throw": [
+      "ThrowUpperBody"
+    ],
+    "AM_Left_Throw": [
+      "ThrowUpperBody"
+    ]
+  },
+  "hashes": {
+    "src/Content/Crusader/Equipment/Throw/AM_Aim.uasset": "59427c76f1fab9d721cba6cd41f6581beb06684ae431e702d3ca282c14029920",
+    "src/Content/Crusader/Equipment/Throw/AM_Left_Aim.uasset": "86389beeb8b2453fa7c66b627e2bc78220399b1bbdc826a6e4602de6a2e294ec",
+    "src/Content/Crusader/Equipment/Throw/AM_Throw.uasset": "3b54ecd557b6e8b918de2b504ae6c43121b8aae1e1a18e391526ea6614083d21",
+    "src/Content/Crusader/Equipment/Throw/AM_Left_Throw.uasset": "057edd77dadbf8d6171530b2accf12d54a3b1782adbe20f658b6c8dbeaf87f00"
+  },
+  "cause": "Editing an Unreal struct-array element without writing it back left the release montages in DefaultSlot.",
+  "scope": "Actual source/visible foot movement during release, not only pawn displacement. Both hands/types, forward/diagonal movement, slide leg preservation, one item consumed, standalone and owning network client."
+}

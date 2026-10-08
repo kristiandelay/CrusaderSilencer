@@ -9,8 +9,10 @@ lib=u.EditorAssetLibrary;tools=u.AssetToolsHelpers.get_asset_tools()
 editor=u.get_editor_subsystem(u.StaticMeshEditorSubsystem)
 assert not u.EditorLevelLibrary.get_pie_worlds(False)
 u.SystemLibrary.execute_console_command(None,'Interchange.FeatureFlags.Import.FBX 0')
-results=[]
+selected=globals().get('ENV_IMPORT_NAMES',[])
+results=json.loads((ROOT/'Artifacts/Environment/import.json').read_text()) if (ROOT/'Artifacts/Environment/import.json').exists() else []
 for entry in records:
+    if selected and entry['name'] not in selected and entry['category'] not in selected:continue
     name=entry['name'];source=ROOT/'Art/Environment'/entry['category']/name
     dest='/Game/Crusader/Environment/'+entry['category']+'/'+name
     textures={}
@@ -50,7 +52,7 @@ for entry in records:
     settings=editor.get_nanite_settings(mesh);settings.set_editor_property('enabled',True);editor.set_nanite_settings(mesh,settings,True)
     lib.save_loaded_asset(mesh,only_if_is_dirty=False)
     entry['imported']=True;entry['asset']=mesh.get_path_name()
-    results.append(dict(name=name,asset=mesh.get_path_name(),nanite=True,collision='ComplexAsSimple',surface=entry['surface'],bounds=str(mesh.get_bounds())))
+    results=[r for r in results if r['name']!=name]+[dict(name=name,asset=mesh.get_path_name(),nanite=True,collision='ComplexAsSimple',surface=entry['surface'],bounds=str(mesh.get_bounds()))]
     (ROOT/'Artifacts/Environment/import.json').write_text(json.dumps(results,indent=2))
     print('IMPORTED_ENVIRONMENT',name)
 (ROOT/'resources/EnvironmentModels.json').write_text(json.dumps(records,indent=2))

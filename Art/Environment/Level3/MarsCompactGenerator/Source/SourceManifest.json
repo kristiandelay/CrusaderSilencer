@@ -1,0 +1,39 @@
+{
+  "name": "MarsCompactGenerator",
+  "archive": "MarsCompactGenerator.zip",
+  "archive_sha256": "6641a799d2920d01d858d6d9d5c2cec8f0fdd315f6c8bde7c024125411b70c45",
+  "files": [
+    {
+      "original": "Meshy_AI_Mars_Compact_Generato_1008205336_texture_fbx/Meshy_AI_Mars_Compact_Generato_1008205336_texture.fbx",
+      "file": "MarsCompactGenerator.fbx",
+      "bytes": 39850844,
+      "sha256": "3a6160ea55bdd65358edf242ec424aefe0ce72d0ea0fb9dc819804575e7f2d19"
+    },
+    {
+      "original": "Meshy_AI_Mars_Compact_Generato_1008205336_texture_fbx/Meshy_AI_Mars_Compact_Generato_1008205336_texture.png",
+      "file": "MarsCompactGenerator_BaseColor.png",
+      "bytes": 5563481,
+      "sha256": "b3e451ba1ae086ea7ce4cda3c2f5fcdc2e7a77a3ec42709c34dba72fe00e59f7"
+    },
+    {
+      "original": "Meshy_AI_Mars_Compact_Generato_1008205336_texture_fbx/Meshy_AI_Mars_Compact_Generato_1008205336_texture_metallic.png",
+      "file": "MarsCompactGenerator_Metallic.png",
+      "bytes": 907626,
+      "sha256": "ce10dbffdda37f0499d82e13dfcdf7f1b23df0804dcf327d073d86ca39b6a57d"
+    },
+    {
+      "original": "Meshy_AI_Mars_Compact_Generato_1008205336_texture_fbx/Meshy_AI_Mars_Compact_Generato_1008205336_texture_normal.png",
+      "file": "MarsCompactGenerator_Normal.png",
+      "bytes": 4806073,
+      "sha256": "b63e201792c024b497339a24c2af8e0c382593109df956f29acbb5d858fba474"
+    },
+    {
+      "original": "Meshy_AI_Mars_Compact_Generato_1008205336_texture_fbx/Meshy_AI_Mars_Compact_Generato_1008205336_texture_roughness.png",
+      "file": "MarsCompactGenerator_Roughness.png",
+      "bytes": 1686930,
+      "sha256": "958ea7fc61baaae9632dfddea5d0dcccc01fd6e71e099934575fb526b30d7c5a"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Mars_Compact_Generato_1008205336_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level3/props/MarsCompactGenerator.zip"
+}

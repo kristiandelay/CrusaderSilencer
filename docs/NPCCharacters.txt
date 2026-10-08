@@ -5,7 +5,17 @@ Game Animation Widget > Visual Override now includes:
   8  RegalCommander
   9  TheSteadfastOfficer
  10  UrbanTrailblazer
-CrimsonSentinel remains the default at index 6. The catalog contains 11 visuals.
+ 11  ArmoredSentinel (guard)
+ 12  AstronautSentinel (guard)
+ 13  CrimsonVanguard (guard)
+ 14  MaintenanceWorker (civilian)
+ 15  RuggedMiner (civilian)
+ 16  RustboundExplorer (civilian)
+ 17  CrimsonAuthority (civilian)
+ 18  CrusaderOperative (civilian)
+ 19  GraySentinel (civilian)
+ 20  RuggedSurvivor (civilian)
+CrimsonSentinel remains the default at index 6. The catalog contains 21 visuals.
 These entries change appearance while keeping the existing pawn, combat,
 motion matching, traversal, shoulder swapping and physical animation driver.
 
@@ -35,3 +45,14 @@ Validation:
   Test-NPCVisuals-Network.py checks all four host/client pawn views.
   Detailed captures/reports: Artifacts/NPCCharacters/.
   Durable validation and file hashes: resources/NPCCharacterValidation.json.
+
+The ten October additions also appear individually in the new Level2 control
+room in L_TraversalGym. Each placement has one fixed CrowdAgent visual, so all
+ten are present on every run. The three guards carry rifle, pistol and shotgun;
+all seven civilian additions are unarmed. See docs/ControlRoomMockup.txt.
+NPCAdditionalProfiles.json records their fitted body and hand landmarks;
+RuggedMiner uses a separate lowered-arm/curled-hand profile. Tiny disconnected
+vertices in ArmoredSentinel inherit nearby normalized weights; all remaining
+vertices use automatic heat weighting and the fitted finger chains.
+Test-AdditionalNPCVisuals.py exercises the ten added widget entries.
+resources/ControlRoomValidation.json records this batch's validation.

@@ -67,18 +67,20 @@ def gym_tick(dt):
             gym_test.update(phase='settle', next=now+0.7)
         elif phase == 'settle':
             assert test_pawn.character_movement.movement_mode == u.MovementMode.MOVE_WALKING, case['name']+' has no starting floor'
-            gym_test.update(phase='act', started=now, start=gym_vec(test_pawn.get_actor_location()), speeds=[], heights=[], capsule_heights=[], montage=None, captured=False, contact_captured=False, weapon_stowed=False, recovery_started=None)
+            gym_test.update(phase='act', started=now, start=gym_vec(test_pawn.get_actor_location()), speeds=[], heights=[], capsule_heights=[], montage=None, captured=False, contact_captured=False, weapon_stowed=False, recovery_started=None,input_sent=False)
         elif phase == 'act':
             elapsed = now-gym_test['started']
             kind = case['kind']
             if kind in ['locomotion', 'crouch']:
                 gym_input('Move', (0, 1, 0))
             if case.get('action'):
-                hold = elapsed < (1.4 if case['action'] in ['Walk', 'Sprint'] else 0.12)
+                # A short wall-clock pulse can disappear entirely between slow editor frames.
+                hold = elapsed < 1.4 if case['action'] in ['Walk', 'Sprint'] else not gym_test['input_sent']
                 gym_input(case['action'], (1 if hold else 0, 0, 0))
             if kind == 'traversal':
                 # CMC uses IA_Jump for contextual traversal. IA_Traverse is Mover-only.
-                gym_input('Jump', (1 if elapsed < 0.2 else 0, 0, 0))
+                gym_input('Jump', (0 if gym_test['input_sent'] else 1, 0, 0))
+            gym_test['input_sent'] = True
             location = test_pawn.get_actor_location()
             velocity = test_pawn.get_velocity()
             gym_test['speeds'].append(math.hypot(velocity.x, velocity.y))

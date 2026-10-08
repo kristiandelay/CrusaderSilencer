@@ -2,6 +2,7 @@
 import json,time,traceback,math
 from pathlib import Path
 import unreal as u
+# Humanoid fixtures; mechanical pawns are covered by Test-RobotGameplay.py.
 av_root=Path(u.Paths.convert_relative_path_to_full(u.Paths.project_dir())).parent
 av_test=dict(phase='place',next=0,busy=False,results=[],deadline=time.monotonic()+150)
 def av_vec(v):return [v.x,v.y,v.z]
@@ -17,7 +18,7 @@ def av_tick(dt):
         if not ws:return
         now=u.GameplayStatics.get_time_seconds(ws[0])
         # This fixture intentionally measures the original twelve-agent crossing.
-        npcs=sorted([p for p in u.GameplayStatics.get_all_actors_of_class(ws[0],u.CRTraversalCharacter) if p.crowd_agent.enabled and p.crowd_agent.home_area and p.crowd_agent.home_area.get_actor_label().startswith('CR_Crowd_')],key=lambda p:p.get_name())
+        npcs=sorted([p for p in u.GameplayStatics.get_all_actors_of_class(ws[0],u.CRTraversalCharacter) if p.crowd_agent.enabled and not isinstance(p,u.CRRobotCharacter) and p.crowd_agent.home_area and p.crowd_agent.home_area.get_actor_label().startswith('CR_Crowd_')],key=lambda p:p.get_name())
         if len(npcs)!=12 or not all(p.crowd_agent.initialized for p in npcs) or not u.GameplayStatics.get_player_pawn(ws[0],0):return
         if av_test['phase']=='cross':
             positions=[p.get_actor_location() for p in npcs]

@@ -1,0 +1,641 @@
+{
+  "passed": true,
+  "validated_utc": "2026-10-07T23:38:11.319969+00:00",
+  "pack": "https://www.fab.com/listings/8e1f3fc0-fee5-44f8-963e-f13e2fb572cf",
+  "bindings": [
+    "LeftAlt",
+    "Gamepad_DPad_Right"
+  ],
+  "play_rate": 1.15,
+  "recovery_seconds": 0.55,
+  "assets": [
+    "/Game/Crusader/Movement/Roll/Animations/GASP_A_Roll_IdleFwd.GASP_A_Roll_IdleFwd",
+    "/Game/Crusader/Movement/Roll/AM_Roll_Fwd.AM_Roll_Fwd",
+    "/Game/Crusader/Movement/Roll/Animations/GASP_A_Roll_IdleFwdRt_45.GASP_A_Roll_IdleFwdRt_45",
+    "/Game/Crusader/Movement/Roll/AM_Roll_FwdRt_45.AM_Roll_FwdRt_45",
+    "/Game/Crusader/Movement/Roll/Animations/GASP_A_Roll_IdleFwdRt_90.GASP_A_Roll_IdleFwdRt_90",
+    "/Game/Crusader/Movement/Roll/AM_Roll_FwdRt_90.AM_Roll_FwdRt_90",
+    "/Game/Crusader/Movement/Roll/Animations/GASP_A_Roll_IdleBwdRt_135.GASP_A_Roll_IdleBwdRt_135",
+    "/Game/Crusader/Movement/Roll/AM_Roll_BwdRt_135.AM_Roll_BwdRt_135",
+    "/Game/Crusader/Movement/Roll/Animations/GASP_A_Roll_IdleBwd.GASP_A_Roll_IdleBwd",
+    "/Game/Crusader/Movement/Roll/AM_Roll_Bwd.AM_Roll_Bwd",
+    "/Game/Crusader/Movement/Roll/Animations/GASP_A_Roll_IdleBwdLt_135.GASP_A_Roll_IdleBwdLt_135",
+    "/Game/Crusader/Movement/Roll/AM_Roll_BwdLt_135.AM_Roll_BwdLt_135",
+    "/Game/Crusader/Movement/Roll/Animations/GASP_A_Roll_IdleFwdLt_90.GASP_A_Roll_IdleFwdLt_90",
+    "/Game/Crusader/Movement/Roll/AM_Roll_FwdLt_90.AM_Roll_FwdLt_90",
+    "/Game/Crusader/Movement/Roll/Animations/GASP_A_Roll_IdleFwdLt_45.GASP_A_Roll_IdleFwdLt_45",
+    "/Game/Crusader/Movement/Roll/AM_Roll_FwdLt_45.AM_Roll_FwdLt_45",
+    "/Game/Blueprints/SandboxCharacter_CMC.SandboxCharacter_CMC",
+    "/Game/Crusader/Characters/B_CRTraversalPawn.B_CRTraversalPawn",
+    "/Game/Crusader/AI/B_GuardRifle.B_GuardRifle",
+    "/Game/Crusader/AI/B_GuardPistol.B_GuardPistol",
+    "/Game/Crusader/AI/B_GuardShotgun.B_GuardShotgun",
+    "/Game/Crusader/AI/B_Civilian.B_Civilian",
+    "/Game/Crusader/Movement/Roll/IK_RollPack.IK_RollPack",
+    "/Game/Crusader/Movement/Roll/RTG_RollPack_to_GASP.RTG_RollPack_to_GASP",
+    "/Game/Baseline/Input/IA_Roll.IA_Roll",
+    "/Game/Baseline/Input/IMC_Baseline.IMC_Baseline",
+    "/Game/Crusader/System/AbilitySet_CRTraversal.AbilitySet_CRTraversal",
+    "/Game/Crusader/System/InputConfig_CRTraversal.InputConfig_CRTraversal"
+  ],
+  "native_hashes": {
+    "src/Source/LyraGame/Crusader/CRRoll.h": "3bca77c5e38d91bd5fe38bc7dce88a750b1b3b42b8b7c0a7d86fc01756c87d74",
+    "src/Source/LyraGame/Crusader/CRRoll.cpp": "f9c2197683d0a0fad8e6a60bb391d04d3ad71c739570ebf222fab34fc7387067"
+  },
+  "editor_build": "Artifacts/Roll/build.log",
+  "visual_capture": "Artifacts/Roll/RollForward.png",
+  "checks": {
+    "standalone": {
+      "path": "Artifacts/Roll/standalone.json",
+      "cases": 14,
+      "results": [
+        {
+          "case": "direction_0",
+          "rolls": 1,
+          "distance_cm": 425.5001728969319,
+          "delta": [
+            425.5001728969319,
+            0.0,
+            0.00099945068359375
+          ],
+          "weapon_stowed": true,
+          "jump_blocked": true,
+          "capsule_lowered": true
+        },
+        {
+          "case": "direction_1",
+          "rolls": 1,
+          "distance_cm": 423.9361346855879,
+          "delta": [
+            296.6136986661604,
+            302.8896829800201,
+            0.00099945068359375
+          ],
+          "weapon_stowed": true,
+          "jump_blocked": true,
+          "capsule_lowered": true
+        },
+        {
+          "case": "direction_2",
+          "rolls": 1,
+          "distance_cm": 423.7348062681526,
+          "delta": [
+            0.0,
+            423.7348062681526,
+            0.00099945068359375
+          ],
+          "weapon_stowed": true,
+          "jump_blocked": true,
+          "capsule_lowered": true
+        },
+        {
+          "case": "direction_3",
+          "rolls": 1,
+          "distance_cm": 465.45865862035316,
+          "delta": [
+            -358.8545783703212,
+            296.4374376952369,
+            0.00099945068359375
+          ],
+          "weapon_stowed": true,
+          "jump_blocked": true,
+          "capsule_lowered": true
+        },
+        {
+          "case": "direction_4",
+          "rolls": 1,
+          "distance_cm": 463.744345142316,
+          "delta": [
+            -463.744345142316,
+            0.0,
+            0.00099945068359375
+          ],
+          "weapon_stowed": true,
+          "jump_blocked": true,
+          "capsule_lowered": true
+        },
+        {
+          "case": "direction_5",
+          "rolls": 1,
+          "distance_cm": 467.95493510426286,
+          "delta": [
+            -339.39753401563667,
+            -322.1663160427229,
+            0.00099945068359375
+          ],
+          "weapon_stowed": true,
+          "jump_blocked": true,
+          "capsule_lowered": true
+        },
+        {
+          "case": "direction_6",
+          "rolls": 1,
+          "distance_cm": 422.4278919470389,
+          "delta": [
+            0.0,
+            -422.4278919470389,
+            0.00099945068359375
+          ],
+          "weapon_stowed": true,
+          "jump_blocked": true,
+          "capsule_lowered": true
+        },
+        {
+          "case": "direction_7",
+          "rolls": 1,
+          "distance_cm": 424.00621440804554,
+          "delta": [
+            302.5280471979586,
+            -297.0825651485311,
+            0.00099945068359375
+          ],
+          "weapon_stowed": true,
+          "jump_blocked": true,
+          "capsule_lowered": true
+        },
+        {
+          "case": "held_input",
+          "rolls": 1,
+          "distance_cm": 425.5001942592344,
+          "delta": [
+            425.5001942592344,
+            0.0,
+            0.00099945068359375
+          ],
+          "weapon_stowed": true,
+          "jump_blocked": true,
+          "capsule_lowered": true
+        },
+        {
+          "case": "spam",
+          "rolls": 1,
+          "distance_cm": 425.5001718943395,
+          "delta": [
+            425.5001718943395,
+            0.0,
+            0.00099945068359375
+          ],
+          "weapon_stowed": true,
+          "jump_blocked": true,
+          "capsule_lowered": true
+        },
+        {
+          "case": "airborne",
+          "blocked": true
+        },
+        {
+          "case": "slide",
+          "blocked": true
+        },
+        {
+          "case": "wall",
+          "rolls": 1,
+          "distance_cm": 138.987074163545,
+          "delta": [
+            138.987074163545,
+            0.0,
+            0.0010061559937639686
+          ],
+          "weapon_stowed": true,
+          "jump_blocked": true,
+          "capsule_lowered": true
+        },
+        {
+          "case": "ragdoll",
+          "blocked": true
+        }
+      ]
+    },
+    "network": {
+      "path": "Artifacts/Roll/network.json",
+      "cases": 8,
+      "results": [
+        {
+          "client_direction": 0,
+          "host_direction": 4,
+          "roll_counts": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "distance_cm": [
+            414.57302898354465,
+            484.4388151115227,
+            400.0125517192246,
+            414.56803107500036
+          ],
+          "replication_error_cm": [
+            0.00436330921458933,
+            0.3269706371711436
+          ],
+          "weapon_stowed_all": true
+        },
+        {
+          "client_direction": 1,
+          "host_direction": 5,
+          "roll_counts": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "distance_cm": [
+            415.5784632165948,
+            521.5285133251144,
+            441.64137746690517,
+            415.5875987070033
+          ],
+          "replication_error_cm": [
+            0.007057261463945077,
+            26.000999450683594
+          ],
+          "weapon_stowed_all": true
+        },
+        {
+          "client_direction": 2,
+          "host_direction": 6,
+          "roll_counts": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "distance_cm": [
+            390.36095257729926,
+            447.7089146365315,
+            391.7924145449788,
+            390.36047942996015
+          ],
+          "replication_error_cm": [
+            0.005308979230816644,
+            0.0
+          ],
+          "weapon_stowed_all": true
+        },
+        {
+          "client_direction": 3,
+          "host_direction": 7,
+          "roll_counts": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "distance_cm": [
+            397.1872001216826,
+            467.4483787768757,
+            416.63111768647804,
+            397.1350655476982
+          ],
+          "replication_error_cm": [
+            0.004422750023936235,
+            0.15648419185131093
+          ],
+          "weapon_stowed_all": true
+        },
+        {
+          "client_direction": 4,
+          "host_direction": 0,
+          "roll_counts": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "distance_cm": [
+            403.80451959160564,
+            464.2175767179242,
+            414.76508114297303,
+            403.8000013041492
+          ],
+          "replication_error_cm": [
+            0.004064486659388934,
+            0.0
+          ],
+          "weapon_stowed_all": true
+        },
+        {
+          "client_direction": 5,
+          "host_direction": 1,
+          "roll_counts": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "distance_cm": [
+            402.2758254530357,
+            479.2602645757396,
+            416.5681644950011,
+            402.2117630731819
+          ],
+          "replication_error_cm": [
+            0.004383170040534591,
+            0.001007080078125
+          ],
+          "weapon_stowed_all": true
+        },
+        {
+          "client_direction": 6,
+          "host_direction": 2,
+          "roll_counts": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "distance_cm": [
+            392.0062176540664,
+            449.9280088675896,
+            390.57351547309554,
+            392.0102231037613
+          ],
+          "replication_error_cm": [
+            0.004040681889659018,
+            0.0
+          ],
+          "weapon_stowed_all": true
+        },
+        {
+          "client_direction": 7,
+          "host_direction": 3,
+          "roll_counts": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "distance_cm": [
+            414.85099833926085,
+            498.54038826994326,
+            405.3012389639118,
+            414.85518738760345
+          ],
+          "replication_error_cm": [
+            0.007673799853117469,
+            0.0
+          ],
+          "weapon_stowed_all": true
+        }
+      ]
+    },
+    "interactions": {
+      "path": "Artifacts/Roll/interactions.json",
+      "cases": 7,
+      "results": [
+        {
+          "case": "cooldown",
+          "blocked_after_animation": true,
+          "reusable_after_1_65_seconds": true
+        },
+        {
+          "case": "shooting",
+          "blocked_during_roll": true,
+          "restored_after": true
+        },
+        {
+          "case": "crouch_preserved",
+          "passed": true
+        },
+        {
+          "case": "npc_roll",
+          "role": "Guard",
+          "distance_cm": 425.5001756450152
+        },
+        {
+          "case": "npc_roll",
+          "role": "Civilian",
+          "distance_cm": 364.4843233242069
+        },
+        {
+          "case": "death_interrupt",
+          "passed": true
+        },
+        {
+          "case": "ragdoll_interrupt_and_recovery",
+          "passed": true
+        }
+      ]
+    },
+    "slide_combat": {
+      "path": "Artifacts/SlideCadence/combat.json",
+      "cases": 6,
+      "results": [
+        {
+          "weapon": "Rifle",
+          "left_shoulder": false,
+          "rounds_fired": 3,
+          "maximum_aim_error_before_recoil_degrees": 8.825836478677772,
+          "maximum_hand_error_cm": 2.3368974461794076
+        },
+        {
+          "weapon": "Rifle",
+          "left_shoulder": true,
+          "rounds_fired": 1,
+          "maximum_aim_error_before_recoil_degrees": 3.1348416224423055,
+          "maximum_hand_error_cm": 1.472840853801027
+        },
+        {
+          "weapon": "Pistol",
+          "left_shoulder": false,
+          "rounds_fired": 1,
+          "maximum_aim_error_before_recoil_degrees": 10.16013682049472,
+          "maximum_hand_error_cm": 3.765868038627558
+        },
+        {
+          "weapon": "Pistol",
+          "left_shoulder": true,
+          "rounds_fired": 1,
+          "maximum_aim_error_before_recoil_degrees": 4.941981075528407,
+          "maximum_hand_error_cm": 3.7635884312603154
+        },
+        {
+          "weapon": "Shotgun",
+          "left_shoulder": false,
+          "rounds_fired": 1,
+          "maximum_aim_error_before_recoil_degrees": 8.657815878426716,
+          "maximum_hand_error_cm": 1.871506174570526
+        },
+        {
+          "weapon": "Shotgun",
+          "left_shoulder": true,
+          "rounds_fired": 1,
+          "maximum_aim_error_before_recoil_degrees": 1.6927994188262283,
+          "maximum_hand_error_cm": 1.4524401184401836
+        }
+      ]
+    },
+    "traversal": {
+      "path": "Artifacts/Roll/Traversal/result.json",
+      "cases": 9,
+      "results": [
+        {
+          "name": "jog",
+          "start": [
+            -1400.0,
+            -3200.0,
+            88.27499628067017
+          ],
+          "end": [
+            -877.499706137781,
+            -3200.0,
+            88.27499628067017
+          ],
+          "max_speed": 500.0,
+          "max_z": 88.27499628067017,
+          "min_capsule_half_height": 86.0,
+          "montage": null
+        },
+        {
+          "name": "walk",
+          "start": [
+            -1400.0,
+            -3200.0,
+            88.27499628067017
+          ],
+          "end": [
+            -1153.3332151831128,
+            -3200.0,
+            88.27499628067017
+          ],
+          "max_speed": 200.0,
+          "max_z": 88.27499628067017,
+          "min_capsule_half_height": 86.0,
+          "montage": null
+        },
+        {
+          "name": "sprint",
+          "start": [
+            -1400.0,
+            -3200.0,
+            88.27499628067017
+          ],
+          "end": [
+            -765.9419490316325,
+            -3200.0,
+            88.27499628067017
+          ],
+          "max_speed": 700.0,
+          "max_z": 88.27499628067017,
+          "min_capsule_half_height": 86.0,
+          "montage": null
+        },
+        {
+          "name": "crouch",
+          "start": [
+            -1400.0,
+            -3200.0,
+            88.27499628067017
+          ],
+          "end": [
+            -1126.2498938970966,
+            -3200.0,
+            62.274996280670166
+          ],
+          "max_speed": 225.0,
+          "max_z": 88.27499628067017,
+          "min_capsule_half_height": 60.0,
+          "montage": null
+        },
+        {
+          "name": "jump",
+          "start": [
+            -1400.0,
+            -3200.0,
+            88.27498817443848
+          ],
+          "end": [
+            -1400.0,
+            -3200.0,
+            88.27500151164665
+          ],
+          "max_speed": 0.0,
+          "max_z": 203.83047540001164,
+          "min_capsule_half_height": 86.0,
+          "montage": null
+        },
+        {
+          "name": "hurdle",
+          "start": [
+            2730.0,
+            -800.0,
+            88.27499628067017
+          ],
+          "end": [
+            2940.7420031490014,
+            -799.999999765669,
+            88.27499028985802
+          ],
+          "max_speed": 237.72568550484138,
+          "max_z": 150.59386308985472,
+          "min_capsule_half_height": 86.0,
+          "montage": "/Game/Characters/UEFN_Mannequin/Animations/Traversal/Catch/Hurdle/AM_M_Neutral_Traversal_Catch_Hurdle_med_stand.AM_M_Neutral_Traversal_Catch_Hurdle_med_stand",
+          "weapon_hidden_during_action": true,
+          "weapon_restored_after_action": true
+        },
+        {
+          "name": "mantle",
+          "start": [
+            4300.0,
+            -970.0,
+            88.27499628067017
+          ],
+          "end": [
+            4300.0000070105025,
+            -849.9987716562612,
+            188.49966614146967
+          ],
+          "max_speed": 182.93017251034536,
+          "max_z": 188.49966614146967,
+          "min_capsule_half_height": 86.0,
+          "montage": "/Game/Characters/UEFN_Mannequin/Animations/Traversal/Catch/Mantle/AM_M_Neutral_Traversal_Catch_Mantle_med_stand.AM_M_Neutral_Traversal_Catch_Mantle_med_stand",
+          "weapon_hidden_during_action": true,
+          "weapon_restored_after_action": true
+        },
+        {
+          "name": "climb",
+          "start": [
+            2700.0,
+            -1770.0,
+            88.27499628067017
+          ],
+          "end": [
+            2700.0,
+            -1649.9992106290292,
+            338.49727741288325
+          ],
+          "max_speed": 103.31066914061921,
+          "max_z": 338.49727741288325,
+          "min_capsule_half_height": 86.0,
+          "montage": "/Game/Characters/UEFN_Mannequin/Animations/Traversal/Climb/AM_M_Neutral_Traversal_Climb_Start_2_5_stand_F_Lfoot.AM_M_Neutral_Traversal_Climb_Start_2_5_stand_F_Lfoot",
+          "weapon_hidden_during_action": true,
+          "weapon_restored_after_action": true
+        },
+        {
+          "name": "vault",
+          "start": [
+            4810.0,
+            -800.0,
+            438.46249532699585
+          ],
+          "end": [
+            5319.387495766944,
+            -799.9999966949066,
+            88.27499030501946
+          ],
+          "max_speed": 467.95755479611165,
+          "max_z": 574.9018511260206,
+          "min_capsule_half_height": 86.0,
+          "montage": "/Game/Characters/UEFN_Mannequin/Animations/Traversal/Catch/Vault/AM_M_Neutral_Traversal_Catch_Vault_high.AM_M_Neutral_Traversal_Catch_Vault_high",
+          "weapon_hidden_during_action": true,
+          "weapon_restored_after_action": true
+        }
+      ]
+    }
+  },
+  "scope": "Editor standalone and two-player listen server; packaged/dedicated-server and adverse-network qualification not run.",
+  "leg_pose_fix_validation": "resources/RollLegValidation.json",
+  "direction_fix_validation": "resources/RollDirectionValidation.json",
+  "weapon_visibility_update": "resources/ThrowValidation.json"
+}

@@ -1,0 +1,1097 @@
+{
+  "passed": true,
+  "validated_utc": "2026-10-07T23:59:50.024509+00:00",
+  "cause": "Unretargeted IK foot bones were far from the animated feet; standing leg IK straightened the knees during a full-body roll.",
+  "fix": "Bake IK feet from FK feet and use the existing full-body pre-correction pose for rolls and get-ups. Restore locomotion corrections after rolling.",
+  "maximum_baked_ik_error_cm": 0.0011672496460460222,
+  "maximum_source_knee_error_degrees": 0.0845389542459003,
+  "checks": {
+    "standalone_poses": {
+      "path": "Artifacts/Roll/Legs/validation.json",
+      "results": [
+        {
+          "direction": 0,
+          "position": 0.3404410481452942,
+          "authored_knees": [
+            53.54863604464587,
+            97.55598912059726
+          ],
+          "source_knees": [
+            53.60373183625661,
+            97.57691902078605
+          ],
+          "source_error": 0.0550957916107393,
+          "visible_knees": [
+            57.00384988645305,
+            92.85480165571173
+          ],
+          "visible_error": 4.701187464885535
+        },
+        {
+          "direction": 0,
+          "position": 0.48629051446914673,
+          "authored_knees": [
+            95.49299005081004,
+            104.72100259413857
+          ],
+          "source_knees": [
+            95.55462688404388,
+            104.73775247847638
+          ],
+          "source_error": 0.061636833233848165,
+          "visible_knees": [
+            99.50999712619651,
+            99.7489056803011
+          ],
+          "visible_error": 4.972096913837461
+        },
+        {
+          "direction": 0,
+          "position": 0.622033953666687,
+          "authored_knees": [
+            119.49469537908564,
+            102.79965060204763
+          ],
+          "source_knees": [
+            119.53457859422525,
+            102.8170911462981
+          ],
+          "source_error": 0.039883215139610684,
+          "visible_knees": [
+            116.17891763922968,
+            99.94525667787218
+          ],
+          "visible_error": 3.3157777398559602
+        },
+        {
+          "direction": 1,
+          "position": 0.3506498634815216,
+          "authored_knees": [
+            107.21019820297626,
+            59.13148747993715
+          ],
+          "source_knees": [
+            107.25008363715675,
+            59.11941704226242
+          ],
+          "source_error": 0.03988543418049062,
+          "visible_knees": [
+            123.1285147462826,
+            65.7994415112649
+          ],
+          "visible_error": 15.918316543306346
+        },
+        {
+          "direction": 1,
+          "position": 0.4846942722797394,
+          "authored_knees": [
+            112.1950437222976,
+            111.457928952874
+          ],
+          "source_knees": [
+            112.23780001334866,
+            111.45219020268492
+          ],
+          "source_error": 0.042756291051063045,
+          "visible_knees": [
+            129.46798561236565,
+            116.05151801690738
+          ],
+          "visible_error": 17.272941890068054
+        },
+        {
+          "direction": 1,
+          "position": 0.6212367415428162,
+          "authored_knees": [
+            101.6693073687897,
+            133.1212219076709
+          ],
+          "source_knees": [
+            101.75211085161244,
+            133.10665009101282
+          ],
+          "source_error": 0.0828034828227402,
+          "visible_knees": [
+            109.7143657513908,
+            140.86128156176986
+          ],
+          "visible_error": 8.045058382601098
+        },
+        {
+          "direction": 2,
+          "position": 0.3463953733444214,
+          "authored_knees": [
+            102.70247560331836,
+            51.85784460540563
+          ],
+          "source_knees": [
+            102.70941691084097,
+            51.90432526400644
+          ],
+          "source_error": 0.046480658600806635,
+          "visible_knees": [
+            117.29798406835913,
+            54.76140036111948
+          ],
+          "visible_error": 14.595508465040766
+        },
+        {
+          "direction": 2,
+          "position": 0.48305073380470276,
+          "authored_knees": [
+            110.05102055673127,
+            97.6223264377826
+          ],
+          "source_knees": [
+            110.05811941177774,
+            97.65358404813585
+          ],
+          "source_error": 0.0312576103532507,
+          "visible_knees": [
+            124.2158241408704,
+            95.1988372463287
+          ],
+          "visible_error": 14.164803584139122
+        },
+        {
+          "direction": 2,
+          "position": 0.6226130127906799,
+          "authored_knees": [
+            108.38618322889697,
+            130.55246960695032
+          ],
+          "source_knees": [
+            108.40120002875642,
+            130.58515922477332
+          ],
+          "source_error": 0.03268961782299584,
+          "visible_knees": [
+            118.3351184669831,
+            142.7076231325094
+          ],
+          "visible_error": 12.155153525559086
+        },
+        {
+          "direction": 3,
+          "position": 0.3458111584186554,
+          "authored_knees": [
+            84.84124866669683,
+            56.632257413054525
+          ],
+          "source_knees": [
+            84.84747322348072,
+            56.67411222526853
+          ],
+          "source_error": 0.04185481221400522,
+          "visible_knees": [
+            94.52098054496149,
+            65.22691743265482
+          ],
+          "visible_error": 9.679731878264661
+        },
+        {
+          "direction": 3,
+          "position": 0.4800371825695038,
+          "authored_knees": [
+            81.22984388388788,
+            64.624779801533
+          ],
+          "source_knees": [
+            81.2150870476646,
+            64.57510649298771
+          ],
+          "source_error": 0.04967330854528029,
+          "visible_knees": [
+            86.97009507397524,
+            70.54807740228448
+          ],
+          "visible_error": 5.923297600751482
+        },
+        {
+          "direction": 3,
+          "position": 0.6292977333068848,
+          "authored_knees": [
+            43.44391848529113,
+            47.328914165927074
+          ],
+          "source_knees": [
+            43.432918030609166,
+            47.390064433075274
+          ],
+          "source_error": 0.061150267148200044,
+          "visible_knees": [
+            43.90862938562211,
+            47.23839442014704
+          ],
+          "visible_error": 0.46471090033098506
+        },
+        {
+          "direction": 4,
+          "position": 0.35284608602523804,
+          "authored_knees": [
+            53.61250422597537,
+            89.93600289366714
+          ],
+          "source_knees": [
+            53.65702405182321,
+            89.94488008501634
+          ],
+          "source_error": 0.04451982584783565,
+          "visible_knees": [
+            59.513522922618286,
+            89.52901860788764
+          ],
+          "visible_error": 5.901018696642915
+        },
+        {
+          "direction": 4,
+          "position": 0.4894081950187683,
+          "authored_knees": [
+            77.41783059141983,
+            84.73988692740483
+          ],
+          "source_knees": [
+            77.38326561713639,
+            84.72706431420605
+          ],
+          "source_error": 0.034564974283441074,
+          "visible_knees": [
+            83.69898895032246,
+            80.03855131444267
+          ],
+          "visible_error": 6.28115835890263
+        },
+        {
+          "direction": 4,
+          "position": 0.6281965970993042,
+          "authored_knees": [
+            51.02112478799676,
+            38.92746575713479
+          ],
+          "source_knees": [
+            51.053195758930165,
+            38.91647332481158
+          ],
+          "source_error": 0.03207097093340394,
+          "visible_knees": [
+            55.700334525818334,
+            40.70274392422056
+          ],
+          "visible_error": 4.679209737821573
+        },
+        {
+          "direction": 5,
+          "position": 0.34822389483451843,
+          "authored_knees": [
+            58.45731836432781,
+            85.1369109227689
+          ],
+          "source_knees": [
+            58.482163499130735,
+            85.13991746128394
+          ],
+          "source_error": 0.024845134802923496,
+          "visible_knees": [
+            68.89979615038827,
+            95.01599165322163
+          ],
+          "visible_error": 10.442477786060458
+        },
+        {
+          "direction": 5,
+          "position": 0.48836058378219604,
+          "authored_knees": [
+            65.93462595649163,
+            76.0281515566488
+          ],
+          "source_knees": [
+            65.88680241555149,
+            76.00781289894093
+          ],
+          "source_error": 0.047823540940143516,
+          "visible_knees": [
+            71.05854075642222,
+            81.01818467489979
+          ],
+          "visible_error": 5.1239147999305885
+        },
+        {
+          "direction": 5,
+          "position": 0.6278001666069031,
+          "authored_knees": [
+            48.55685379112169,
+            39.915042886971726
+          ],
+          "source_knees": [
+            48.61796807853826,
+            39.89587592276618
+          ],
+          "source_error": 0.06111428741657221,
+          "visible_knees": [
+            48.60717609029426,
+            40.54438126166261
+          ],
+          "visible_error": 0.6293383746908816
+        },
+        {
+          "direction": 6,
+          "position": 0.34856653213500977,
+          "authored_knees": [
+            52.76659766270715,
+            104.40008068596019
+          ],
+          "source_knees": [
+            52.81748759697765,
+            104.40762728659377
+          ],
+          "source_error": 0.0508899342705007,
+          "visible_knees": [
+            55.793936530027764,
+            119.22974142474398
+          ],
+          "visible_error": 14.829660738783787
+        },
+        {
+          "direction": 6,
+          "position": 0.4885576665401459,
+          "authored_knees": [
+            98.43194341178945,
+            107.67773846711681
+          ],
+          "source_knees": [
+            98.4704218459294,
+            107.68006864550884
+          ],
+          "source_error": 0.03847843413994667,
+          "visible_knees": [
+            96.60893436636844,
+            120.28830349463934
+          ],
+          "visible_error": 12.610565027522526
+        },
+        {
+          "direction": 6,
+          "position": 0.6281474828720093,
+          "authored_knees": [
+            123.73064080918122,
+            105.44241920128434
+          ],
+          "source_knees": [
+            123.77089722349729,
+            105.45674152162587
+          ],
+          "source_error": 0.04025641431606175,
+          "visible_knees": [
+            139.13663432907404,
+            114.62510472835753
+          ],
+          "visible_error": 15.405993519892817
+        },
+        {
+          "direction": 7,
+          "position": 0.3411593437194824,
+          "authored_knees": [
+            61.58949701919998,
+            110.73442266885488
+          ],
+          "source_knees": [
+            61.58345085197989,
+            110.77298407593167
+          ],
+          "source_error": 0.03856140707679856,
+          "visible_knees": [
+            69.75228978417981,
+            125.84742306234281
+          ],
+          "visible_error": 15.113000393487937
+        },
+        {
+          "direction": 7,
+          "position": 0.48500722646713257,
+          "authored_knees": [
+            110.3699149380567,
+            110.6220388155114
+          ],
+          "source_knees": [
+            110.37038924983946,
+            110.66094464400933
+          ],
+          "source_error": 0.03890582849793134,
+          "visible_knees": [
+            114.97768642128213,
+            126.7771133400094
+          ],
+          "visible_error": 16.15507452449799
+        },
+        {
+          "direction": 7,
+          "position": 0.6309936046600342,
+          "authored_knees": [
+            128.20782531755196,
+            98.56802535503584
+          ],
+          "source_knees": [
+            128.19616114902414,
+            98.65256430928174
+          ],
+          "source_error": 0.0845389542459003,
+          "visible_knees": [
+            135.83261044451024,
+            105.96874779364677
+          ],
+          "visible_error": 7.6247851269582725
+        }
+      ]
+    },
+    "network_poses": {
+      "path": "Artifacts/Roll/Legs/network.json",
+      "results": [
+        {
+          "role": 0,
+          "direction": 4,
+          "samples": 4,
+          "maximum_source_error": 0.044710846780112945,
+          "maximum_visible_error": 7.493345837538314
+        },
+        {
+          "role": 2,
+          "direction": 0,
+          "samples": 4,
+          "maximum_source_error": 0.06228011598501837,
+          "maximum_visible_error": 6.458559043123714
+        },
+        {
+          "role": 1,
+          "direction": 0,
+          "samples": 4,
+          "maximum_source_error": 0.06228011598501837,
+          "maximum_visible_error": 6.458559043123714
+        },
+        {
+          "role": 3,
+          "direction": 4,
+          "samples": 3,
+          "maximum_source_error": 0.03624317300184998,
+          "maximum_visible_error": 6.748966278112988
+        },
+        {
+          "role": 0,
+          "direction": 5,
+          "samples": 4,
+          "maximum_source_error": 0.06105527339494898,
+          "maximum_visible_error": 10.67617772382615
+        },
+        {
+          "role": 2,
+          "direction": 1,
+          "samples": 4,
+          "maximum_source_error": 0.0792159836343842,
+          "maximum_visible_error": 18.07629109024296
+        },
+        {
+          "role": 1,
+          "direction": 1,
+          "samples": 4,
+          "maximum_source_error": 0.0792159836343842,
+          "maximum_visible_error": 18.07629109024296
+        },
+        {
+          "role": 3,
+          "direction": 5,
+          "samples": 3,
+          "maximum_source_error": 0.054783599517143955,
+          "maximum_visible_error": 8.608287978484583
+        },
+        {
+          "role": 0,
+          "direction": 6,
+          "samples": 4,
+          "maximum_source_error": 0.05044878970367961,
+          "maximum_visible_error": 17.60932573282419
+        },
+        {
+          "role": 2,
+          "direction": 2,
+          "samples": 4,
+          "maximum_source_error": 0.045491183199324325,
+          "maximum_visible_error": 17.695696134692895
+        },
+        {
+          "role": 1,
+          "direction": 2,
+          "samples": 4,
+          "maximum_source_error": 0.045491183199324325,
+          "maximum_visible_error": 17.695696134692895
+        },
+        {
+          "role": 3,
+          "direction": 6,
+          "samples": 3,
+          "maximum_source_error": 0.04213727187899963,
+          "maximum_visible_error": 18.887502241862364
+        },
+        {
+          "role": 0,
+          "direction": 7,
+          "samples": 4,
+          "maximum_source_error": 0.08467878958144581,
+          "maximum_visible_error": 17.412455054875082
+        },
+        {
+          "role": 2,
+          "direction": 3,
+          "samples": 4,
+          "maximum_source_error": 0.061629011018069946,
+          "maximum_visible_error": 9.682243638198315
+        },
+        {
+          "role": 1,
+          "direction": 3,
+          "samples": 4,
+          "maximum_source_error": 0.061629011018069946,
+          "maximum_visible_error": 9.682243638198315
+        },
+        {
+          "role": 3,
+          "direction": 7,
+          "samples": 3,
+          "maximum_source_error": 0.08247261830618413,
+          "maximum_visible_error": 19.070182755405625
+        },
+        {
+          "role": 0,
+          "direction": 0,
+          "samples": 4,
+          "maximum_source_error": 0.06132004161571558,
+          "maximum_visible_error": 7.109175485969885
+        },
+        {
+          "role": 2,
+          "direction": 4,
+          "samples": 4,
+          "maximum_source_error": 0.044359344624702146,
+          "maximum_visible_error": 6.426141466009767
+        },
+        {
+          "role": 1,
+          "direction": 4,
+          "samples": 4,
+          "maximum_source_error": 0.044359344624702146,
+          "maximum_visible_error": 6.426141466009767
+        },
+        {
+          "role": 3,
+          "direction": 0,
+          "samples": 3,
+          "maximum_source_error": 0.06059457400115775,
+          "maximum_visible_error": 7.24311804374139
+        },
+        {
+          "role": 0,
+          "direction": 1,
+          "samples": 4,
+          "maximum_source_error": 0.07963974559140752,
+          "maximum_visible_error": 18.089786936636386
+        },
+        {
+          "role": 2,
+          "direction": 5,
+          "samples": 4,
+          "maximum_source_error": 0.0593251783008526,
+          "maximum_visible_error": 9.774844863485441
+        },
+        {
+          "role": 1,
+          "direction": 5,
+          "samples": 4,
+          "maximum_source_error": 0.0593251783008526,
+          "maximum_visible_error": 9.774844863485441
+        },
+        {
+          "role": 3,
+          "direction": 1,
+          "samples": 3,
+          "maximum_source_error": 0.08381751195987874,
+          "maximum_visible_error": 18.98308575935657
+        },
+        {
+          "role": 0,
+          "direction": 2,
+          "samples": 3,
+          "maximum_source_error": 0.04183995389286821,
+          "maximum_visible_error": 18.752512114236723
+        },
+        {
+          "role": 2,
+          "direction": 6,
+          "samples": 3,
+          "maximum_source_error": 0.044953380774423124,
+          "maximum_visible_error": 18.004983837598033
+        },
+        {
+          "role": 3,
+          "direction": 2,
+          "samples": 4,
+          "maximum_source_error": 0.0457262479660514,
+          "maximum_visible_error": 17.930698918032505
+        },
+        {
+          "role": 1,
+          "direction": 6,
+          "samples": 3,
+          "maximum_source_error": 0.0448483734197751,
+          "maximum_visible_error": 18.109468947741604
+        },
+        {
+          "role": 0,
+          "direction": 3,
+          "samples": 3,
+          "maximum_source_error": 0.0494108187500899,
+          "maximum_visible_error": 8.951115376222958
+        },
+        {
+          "role": 2,
+          "direction": 7,
+          "samples": 3,
+          "maximum_source_error": 0.08209383603917786,
+          "maximum_visible_error": 19.193849079694758
+        },
+        {
+          "role": 3,
+          "direction": 3,
+          "samples": 3,
+          "maximum_source_error": 0.047903203877808664,
+          "maximum_visible_error": 9.670297995466896
+        },
+        {
+          "role": 1,
+          "direction": 7,
+          "samples": 3,
+          "maximum_source_error": 0.08209383603917786,
+          "maximum_visible_error": 19.193849079694758
+        }
+      ]
+    },
+    "getup_continuity": {
+      "path": "Artifacts/PhysicalTests/getup-continuity.json",
+      "results": [
+        {
+          "case": "forward",
+          "montage": "AM_M_ragdoll_getup_stand_F",
+          "start_time": 0.3764960467815399,
+          "first_source_jump_cm": 0.18908977508547276,
+          "first_visible_jump_cm": 5.92449723321164,
+          "max_early_pelvis_step_cm": 1.8017166057198928,
+          "max_pelvis_speed_cm_s": 126.02698486923101,
+          "minimum_visible_head_z_cm": 4.43970236626973,
+          "return_to_locomotion_jump_cm": 1.2870420267569485,
+          "visible_return_to_locomotion_jump_cm": 1.314225347002722,
+          "duration": 2.4354396015405655
+        },
+        {
+          "case": "backward",
+          "montage": "AM_M_ragdoll_getup_stand_L",
+          "start_time": 0.35403382778167725,
+          "first_source_jump_cm": 1.5246143341065383,
+          "first_visible_jump_cm": 4.09222715047242,
+          "max_early_pelvis_step_cm": 1.5246143341065383,
+          "max_pelvis_speed_cm_s": 148.77876866011846,
+          "minimum_visible_head_z_cm": 19.422410885460494,
+          "return_to_locomotion_jump_cm": 1.5199773862702226,
+          "visible_return_to_locomotion_jump_cm": 1.5619189071802917,
+          "duration": 2.464484002441168
+        },
+        {
+          "case": "left",
+          "montage": "AM_M_ragdoll_getup_stand_F",
+          "start_time": 0.37777525186538696,
+          "first_source_jump_cm": 0.1948976516723896,
+          "first_visible_jump_cm": 5.500474848513065,
+          "max_early_pelvis_step_cm": 2.75359614599878,
+          "max_pelvis_speed_cm_s": 126.17993992939033,
+          "minimum_visible_head_z_cm": 4.493503108404813,
+          "return_to_locomotion_jump_cm": 1.3413476890988267,
+          "visible_return_to_locomotion_jump_cm": 1.3730835231381855,
+          "duration": 2.4421753026545048
+        },
+        {
+          "case": "turned_right",
+          "montage": "AM_M_ragdoll_getup_stand_L",
+          "start_time": 0.35116931796073914,
+          "first_source_jump_cm": 1.4407091140750203,
+          "first_visible_jump_cm": 4.144501209895958,
+          "max_early_pelvis_step_cm": 1.791516492072833,
+          "max_pelvis_speed_cm_s": 149.06862236619799,
+          "minimum_visible_head_z_cm": 8.387038872957744,
+          "return_to_locomotion_jump_cm": 1.6505454425948263,
+          "visible_return_to_locomotion_jump_cm": 1.7041614935269713,
+          "duration": 2.4776201024651527
+        }
+      ]
+    }
+  },
+  "before_after_comparison": [
+    {
+      "bypass": false,
+      "position": 0.2874893248081207,
+      "poses": {
+        "original": {
+          "knees": [
+            65.8065532948607,
+            92.85775859353451
+          ],
+          "ik_error": [
+            0.7048718016765348,
+            0.5068455998104622
+          ]
+        },
+        "retarget": {
+          "knees": [
+            65.69157064561693,
+            92.82289865235457
+          ],
+          "ik_error": [
+            189.7576073639612,
+            189.44689682335843
+          ]
+        },
+        "source": {
+          "knees": [
+            179.8484732485737,
+            179.85037144809203
+          ],
+          "ik_error": [
+            118.75860297299425,
+            118.55454069626444
+          ]
+        },
+        "driver": {
+          "knees": [
+            150.83557253946415,
+            150.15447978829596
+          ],
+          "ik_error": [
+            87.64873259898165,
+            86.08953557806878
+          ]
+        },
+        "visible": {
+          "knees": [
+            151.35473243456627,
+            150.69836719220723
+          ],
+          "ik_error": [
+            89.36346661751364,
+            87.56533667478226
+          ]
+        }
+      }
+    },
+    {
+      "bypass": false,
+      "position": 0.46905702352523804,
+      "poses": {
+        "original": {
+          "knees": [
+            84.67695084449882,
+            105.24390676983742
+          ],
+          "ik_error": [
+            0.18063733175126412,
+            0.18675224714332103
+          ]
+        },
+        "retarget": {
+          "knees": [
+            84.81529668310206,
+            105.23967163913913
+          ],
+          "ik_error": [
+            355.6239231256578,
+            339.0533926857157
+          ]
+        },
+        "source": {
+          "knees": [
+            179.8548482866944,
+            179.84929095349787
+          ],
+          "ik_error": [
+            233.0700065314604,
+            222.14551611256306
+          ]
+        },
+        "driver": {
+          "knees": [
+            155.2765208404091,
+            137.5705092819813
+          ],
+          "ik_error": [
+            77.71197970324968,
+            87.71429734629244
+          ]
+        },
+        "visible": {
+          "knees": [
+            155.8853174312279,
+            138.1965466809435
+          ],
+          "ik_error": [
+            72.59242538906086,
+            85.55831018772416
+          ]
+        }
+      }
+    },
+    {
+      "bypass": false,
+      "position": 0.6555680632591248,
+      "poses": {
+        "original": {
+          "knees": [
+            109.05339804752661,
+            91.5751677307654
+          ],
+          "ik_error": [
+            0.2445777728483209,
+            0.5393260510366125
+          ]
+        },
+        "retarget": {
+          "knees": [
+            109.09150711512065,
+            91.537289479972
+          ],
+          "ik_error": [
+            436.6045610129914,
+            434.46390798107177
+          ]
+        },
+        "source": {
+          "knees": [
+            179.84847362702666,
+            179.8484702719487
+          ],
+          "ik_error": [
+            288.65636346695857,
+            296.6822657789102
+          ]
+        },
+        "driver": {
+          "knees": [
+            142.47557179931195,
+            160.51369421697368
+          ],
+          "ik_error": [
+            86.60385609130763,
+            80.5876860075215
+          ]
+        },
+        "visible": {
+          "knees": [
+            143.01265421076494,
+            160.15002064632083
+          ],
+          "ik_error": [
+            83.82785095353023,
+            75.96735567689741
+          ]
+        }
+      }
+    },
+    {
+      "bypass": true,
+      "position": 0.287308007478714,
+      "poses": {
+        "original": {
+          "knees": [
+            65.86332739143755,
+            92.85338425879792
+          ],
+          "ik_error": [
+            0.7089316153226238,
+            0.5097328298456316
+          ]
+        },
+        "retarget": {
+          "knees": [
+            65.74853629157916,
+            92.8185187965012
+          ],
+          "ik_error": [
+            189.57743648416593,
+            189.27257378365277
+          ]
+        },
+        "source": {
+          "knees": [
+            65.79945557450719,
+            92.8446628701437
+          ],
+          "ik_error": [
+            189.52584854487,
+            189.22445581164902
+          ]
+        },
+        "driver": {
+          "knees": [
+            59.50644472865155,
+            85.54187717335348
+          ],
+          "ik_error": [
+            107.83222136125374,
+            118.3876961060953
+          ]
+        },
+        "visible": {
+          "knees": [
+            67.17925131840288,
+            93.95024853833853
+          ],
+          "ik_error": [
+            113.33017750083127,
+            121.76573689578613
+          ]
+        }
+      }
+    },
+    {
+      "bypass": true,
+      "position": 0.46681877970695496,
+      "poses": {
+        "original": {
+          "knees": [
+            83.31131127519235,
+            105.31100530006887
+          ],
+          "ik_error": [
+            0.012380168161838236,
+            0.012764019637477525
+          ]
+        },
+        "retarget": {
+          "knees": [
+            83.4364161178252,
+            105.30710365123446
+          ],
+          "ik_error": [
+            353.71515544605415,
+            337.09920702866896
+          ]
+        },
+        "source": {
+          "knees": [
+            83.49760982598487,
+            105.32452175703173
+          ],
+          "ik_error": [
+            353.67957241785206,
+            337.08103268410935
+          ]
+        },
+        "driver": {
+          "knees": [
+            76.68156668989089,
+            98.49977993002636
+          ],
+          "ik_error": [
+            71.03901235157274,
+            81.22395232484564
+          ]
+        },
+        "visible": {
+          "knees": [
+            86.14940266450145,
+            99.91603691290344
+          ],
+          "ik_error": [
+            76.53424092018328,
+            81.29694797331223
+          ]
+        }
+      }
+    },
+    {
+      "bypass": true,
+      "position": 0.6559910774230957,
+      "poses": {
+        "original": {
+          "knees": [
+            108.9205009674627,
+            91.34061457587593
+          ],
+          "ik_error": [
+            0.2398200269762801,
+            0.5286080078499589
+          ]
+        },
+        "retarget": {
+          "knees": [
+            108.957436505769,
+            91.30209318235018
+          ],
+          "ik_error": [
+            436.6208389606211,
+            434.4191175905563
+          ]
+        },
+        "source": {
+          "knees": [
+            108.99112897889486,
+            91.32141816573399
+          ],
+          "ik_error": [
+            436.6427822871331,
+            434.45676473464346
+          ]
+        },
+        "driver": {
+          "knees": [
+            104.16855171944924,
+            83.96697924419193
+          ],
+          "ik_error": [
+            62.547923231094444,
+            60.25490701636424
+          ]
+        },
+        "visible": {
+          "knees": [
+            103.86968563893018,
+            89.39822945346441
+          ],
+          "ik_error": [
+            56.313936885943285,
+            61.153028975814905
+          ]
+        }
+      }
+    }
+  ],
+  "build": "Artifacts/Roll/Legs/build.log",
+  "screenshots": "Artifacts/Roll/Legs",
+  "hashes": {
+    "src/Source/LyraGame/Baseline/BaselinePhysicalInteraction.cpp": "49fe6c6daac5dcdf5a9817a49e1c24068f84882296d19a2b8450c351d92d182c",
+    "src/Source/LyraGame/Baseline/BaselinePhysicalInteraction.h": "b2aebd1bfac7fa4b761c3bd3eef91c350e9e499b35b0424d136d63cd7f6fcfa8",
+    "src/Source/LyraEditor/Crusader/CRBlueprintTools.cpp": "f4de8c633b724f39bb0a0256e9393d0f528fe9417ce24fe46121b978ce7d1e0b",
+    "src/Content/Blueprints/SandboxCharacter_CMC_ABP.uasset": "00aa2705bf29698f1460d8118229621c038219c3472665344f54b0a159d354b6",
+    "src/Content/Crusader/Movement/Roll/AM_Roll_Bwd.uasset": "29ceb298a1b885d7d8d1a3ebe2f03ba0d2c81a451790e240fc2fc592c74b49ee",
+    "src/Content/Crusader/Movement/Roll/AM_Roll_BwdLt_135.uasset": "7afd8f607ab8551724d319d5639bbbb0dc7dabdbc09d3403c4e53ec602af9ad1",
+    "src/Content/Crusader/Movement/Roll/AM_Roll_BwdRt_135.uasset": "6ffb9a229327aa4436dfb853251373095f9dfc4141fd9f994eb78b3697ee13b9",
+    "src/Content/Crusader/Movement/Roll/AM_Roll_Fwd.uasset": "01b3f763de7a1e10c46e7da149525bdbe81da4be5670c154bd991963a7be6231",
+    "src/Content/Crusader/Movement/Roll/AM_Roll_FwdLt_45.uasset": "3ef2bd86f9591b8be4b71ca14e4b1e953f0ccfd2fb66526dfe19c6d72585476e",
+    "src/Content/Crusader/Movement/Roll/AM_Roll_FwdLt_90.uasset": "6aa1c25cf4571df2ec5a289af7248f4f89f5c4689633c4f98aae28737b3bff4c",
+    "src/Content/Crusader/Movement/Roll/AM_Roll_FwdRt_45.uasset": "89d339850cea5eccb9f5d0d584f7e3dd2013878c0ef497685fb41e60a7299def",
+    "src/Content/Crusader/Movement/Roll/AM_Roll_FwdRt_90.uasset": "b5fe566502d9e201f58edfe61591eb27ae53a0970f483ebfde3868547e8a36da",
+    "src/Content/Crusader/Movement/Roll/IK_RollPack.uasset": "1f2e347130fa229593f9105431ef326919f48e4b3018bf6d985515aabde2ba36",
+    "src/Content/Crusader/Movement/Roll/RTG_RollPack_to_GASP.uasset": "7f1b7e8b51c83c1d3900d501053a9b59d68d60c87ec999d762889545f657e005",
+    "src/Content/Crusader/Movement/Roll/Animations/GASP_A_Roll_IdleBwd.uasset": "ba9f4fd303dbad6bb4ce1c94cb7cbe6388c28e0ffc1b9b717777e83f66e07876",
+    "src/Content/Crusader/Movement/Roll/Animations/GASP_A_Roll_IdleBwdLt_135.uasset": "c26335d42ff13ccb230eff2ae3f8b68901b06c2a5f9fcf6e700e5aed19af99f3",
+    "src/Content/Crusader/Movement/Roll/Animations/GASP_A_Roll_IdleBwdRt_135.uasset": "f028d9d1488af4e791adb1faf0b37a9dcb61837555ac9aa0b0f1132eb54b448e",
+    "src/Content/Crusader/Movement/Roll/Animations/GASP_A_Roll_IdleFwd.uasset": "680c0cd5ca499f5cbf5890bdfd813a9438e853f6140352685e5fd6897a0357e6",
+    "src/Content/Crusader/Movement/Roll/Animations/GASP_A_Roll_IdleFwdLt_45.uasset": "5df71c633c7cc6153de3d111d132435a4ce166664c94a7336c3711e5b019553e",
+    "src/Content/Crusader/Movement/Roll/Animations/GASP_A_Roll_IdleFwdLt_90.uasset": "f0318e917ce7c79632e905a4a5171cdc6e06043cbd180940039cc9360e694f1e",
+    "src/Content/Crusader/Movement/Roll/Animations/GASP_A_Roll_IdleFwdRt_45.uasset": "58fb8108415ce305b44bb733f77f374bee4ae6ed711ecd05bb63a8f7affd63d1",
+    "src/Content/Crusader/Movement/Roll/Animations/GASP_A_Roll_IdleFwdRt_90.uasset": "eeec40deb5e87b25bba534f3ad3004c0918ba3b49dedce7c0c9f07eb82d055dc"
+  }
+}

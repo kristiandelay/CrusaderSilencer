@@ -9,7 +9,7 @@ import unreal as u
 
 bridge_root = Path(__file__).resolve().parents[1] / 'Artifacts/EditorBridge'
 bridge_root.mkdir(parents=True, exist_ok=True)
-bridge_state = {'last': None, 'next': 0.0}
+bridge_state = {'last': None, 'next': 0.0, 'busy': False}
 try:
     bridge_state['last'] = json.loads((bridge_root / 'request.json').read_text())['id']
 except (OSError, ValueError, KeyError):
@@ -17,7 +17,7 @@ except (OSError, ValueError, KeyError):
 u.EditorPythonScripting.set_keep_python_script_alive(True)
 
 def bridge_tick(delta):
-    if time.monotonic() < bridge_state['next']:
+    if bridge_state['busy'] or time.monotonic() < bridge_state['next']:
         return
     bridge_state['next'] = time.monotonic() + 0.2
     path = bridge_root / 'request.json'
@@ -32,11 +32,14 @@ def bridge_tick(delta):
     bridge_state['last'] = request['id']
     output = io.StringIO()
     error = None
-    with contextlib.redirect_stdout(output), contextlib.redirect_stderr(output):
-        try:
+    bridge_state['busy'] = True
+    try:
+        with contextlib.redirect_stdout(output), contextlib.redirect_stderr(output):
             exec(compile(request['code'], '<project-editor-request>', 'exec'), globals())
-        except Exception:
-            error = traceback.format_exc()
+    except Exception:
+        error = traceback.format_exc()
+    finally:
+        bridge_state['busy'] = False
     (bridge_root / 'response.json').write_text(json.dumps({'id': request['id'], 'output': output.getvalue(), 'error': error}, indent=2), encoding='utf-8')
 
 bridge_handle = u.register_slate_post_tick_callback(bridge_tick)

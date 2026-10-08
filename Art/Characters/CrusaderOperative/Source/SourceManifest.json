@@ -1,0 +1,39 @@
+{
+  "name": "CrusaderOperative",
+  "archive": "CrusaderOperative.zip",
+  "archive_sha256": "6bb15ea66702006141385465b776fbf08bc5b73551811b4f39cbf87c075c391d",
+  "files": [
+    {
+      "original": "Meshy_AI_Crusader_Operative_1007203010_texture_fbx/Meshy_AI_Crusader_Operative_1007203010_texture.fbx",
+      "file": "CrusaderOperative.fbx",
+      "bytes": 33971868,
+      "sha256": "74e84bbb607a8280af1df66bb9d32a5419050d9d4e7fbf2cfb2c51247e385eac"
+    },
+    {
+      "original": "Meshy_AI_Crusader_Operative_1007203010_texture_fbx/Meshy_AI_Crusader_Operative_1007203010_texture.png",
+      "file": "CrusaderOperative_BaseColor.png",
+      "bytes": 7160235,
+      "sha256": "6d583d1a30353437e2c861e8908c8a93347ce3d94186538d9a25882232394714"
+    },
+    {
+      "original": "Meshy_AI_Crusader_Operative_1007203010_texture_fbx/Meshy_AI_Crusader_Operative_1007203010_texture_metallic.png",
+      "file": "CrusaderOperative_Metallic.png",
+      "bytes": 40995,
+      "sha256": "7f3782b2c23524e12b0a5c36e9e00ddf96cfa05b2a9ecdb5dd9c00bb8a007f7e"
+    },
+    {
+      "original": "Meshy_AI_Crusader_Operative_1007203010_texture_fbx/Meshy_AI_Crusader_Operative_1007203010_texture_normal.png",
+      "file": "CrusaderOperative_Normal.png",
+      "bytes": 5619602,
+      "sha256": "2fd520008184ab9962588d844cd3446de8f23194501e2e7a0c95b0bbe87c7f04"
+    },
+    {
+      "original": "Meshy_AI_Crusader_Operative_1007203010_texture_fbx/Meshy_AI_Crusader_Operative_1007203010_texture_roughness.png",
+      "file": "CrusaderOperative_Roughness.png",
+      "bytes": 1399626,
+      "sha256": "765302f6677ed67587cb9e584f321162e937197703e9fa4c2bb0e52e413347b0"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Crusader_Operative_1007203010_texture_fbx.zip",
+  "archive_path": "mockups/NPC/CrusaderOperative.zip"
+}

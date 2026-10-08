@@ -1,0 +1,39 @@
+{
+  "name": "MaintenanceWorker",
+  "archive": "MaintenanceWorker.zip",
+  "archive_sha256": "8c900b978c957c773f895b19bf36e6f01131f0d72fa5247697b01f52385774e0",
+  "files": [
+    {
+      "original": "Meshy_AI_Maintenance_Worker_1007185253_texture_fbx/Meshy_AI_Maintenance_Worker_1007185253_texture.fbx",
+      "file": "MaintenanceWorker.fbx",
+      "bytes": 18530252,
+      "sha256": "04f98e165f888ae01944ea88c97bcea00f991eae429b9aab07a9cc51ec1d545c"
+    },
+    {
+      "original": "Meshy_AI_Maintenance_Worker_1007185253_texture_fbx/Meshy_AI_Maintenance_Worker_1007185253_texture.png",
+      "file": "MaintenanceWorker_BaseColor.png",
+      "bytes": 6664895,
+      "sha256": "1a8991b9e5924450772fa6641f35f0432796da00904a94822af3230789154922"
+    },
+    {
+      "original": "Meshy_AI_Maintenance_Worker_1007185253_texture_fbx/Meshy_AI_Maintenance_Worker_1007185253_texture_metallic.png",
+      "file": "MaintenanceWorker_Metallic.png",
+      "bytes": 44748,
+      "sha256": "18250a22df883b946a1d5840880dc1bd566cc6c54306f9e4309e4282eebc331f"
+    },
+    {
+      "original": "Meshy_AI_Maintenance_Worker_1007185253_texture_fbx/Meshy_AI_Maintenance_Worker_1007185253_texture_normal.png",
+      "file": "MaintenanceWorker_Normal.png",
+      "bytes": 5496204,
+      "sha256": "7a156c2e44846f732e56a6950ecf3b6c71203e61e0f41c152616a3b8d5b2f138"
+    },
+    {
+      "original": "Meshy_AI_Maintenance_Worker_1007185253_texture_fbx/Meshy_AI_Maintenance_Worker_1007185253_texture_roughness.png",
+      "file": "MaintenanceWorker_Roughness.png",
+      "bytes": 1141646,
+      "sha256": "a3fc31b529e9ee8a6d5d8323e010df2d6343c55955e0473d03adfe898fbe3792"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Maintenance_Worker_1007185253_texture_fbx.zip",
+  "archive_path": "mockups/NPC/MaintenanceWorker.zip"
+}

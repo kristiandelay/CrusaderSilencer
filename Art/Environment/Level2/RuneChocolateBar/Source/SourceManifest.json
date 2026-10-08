@@ -1,0 +1,39 @@
+{
+  "name": "RuneChocolateBar",
+  "archive": "RuneChocolateBar.zip",
+  "archive_sha256": "c167cb138ef9b20419d41a1fa2f9bd0a90afe1a81fcbaf0975722b772ef01c31",
+  "files": [
+    {
+      "original": "Meshy_AI_Rune_Chocolate_Bar_1007205300_texture_fbx/Meshy_AI_Rune_Chocolate_Bar_1007205300_texture.fbx",
+      "file": "RuneChocolateBar.fbx",
+      "bytes": 17602316,
+      "sha256": "c550b9eff018e645b0ef54c4e168f1b4658d1d36dafe1b0b30df440412550228"
+    },
+    {
+      "original": "Meshy_AI_Rune_Chocolate_Bar_1007205300_texture_fbx/Meshy_AI_Rune_Chocolate_Bar_1007205300_texture.png",
+      "file": "RuneChocolateBar_BaseColor.png",
+      "bytes": 4945301,
+      "sha256": "079a78581e1f8ebabb76e16215734e677f278af2be2711ceada967825486cce7"
+    },
+    {
+      "original": "Meshy_AI_Rune_Chocolate_Bar_1007205300_texture_fbx/Meshy_AI_Rune_Chocolate_Bar_1007205300_texture_metallic.png",
+      "file": "RuneChocolateBar_Metallic.png",
+      "bytes": 488776,
+      "sha256": "8cff4115be51614832af1907a4097919988dd31912a6fe88726ee95e7553dc65"
+    },
+    {
+      "original": "Meshy_AI_Rune_Chocolate_Bar_1007205300_texture_fbx/Meshy_AI_Rune_Chocolate_Bar_1007205300_texture_normal.png",
+      "file": "RuneChocolateBar_Normal.png",
+      "bytes": 3773829,
+      "sha256": "77121e1ece15f9d1776981a688afa1914bc6f52e14c29c47523d45cf6a1ab419"
+    },
+    {
+      "original": "Meshy_AI_Rune_Chocolate_Bar_1007205300_texture_fbx/Meshy_AI_Rune_Chocolate_Bar_1007205300_texture_roughness.png",
+      "file": "RuneChocolateBar_Roughness.png",
+      "bytes": 1372813,
+      "sha256": "b6357154f4af3088c52b0557d353b56d9539d2865784c1ee8269ebf20334662f"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Rune_Chocolate_Bar_1007205300_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level2/RuneChocolateBar.zip"
+}

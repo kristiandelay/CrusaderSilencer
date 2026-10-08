@@ -1,0 +1,1459 @@
+{
+  "passed": true,
+  "robots": [
+    {
+      "name": "IronSentinel",
+      "passed": true,
+      "fbx_sha256": "b136ffce7c17d9a200ea70e4a7169512935059a4f875fb9972ab79a8743f59e4",
+      "blender": {
+        "name": "IronSentinel",
+        "passed": true,
+        "parts": 29,
+        "poses": [
+          {
+            "frame": 1,
+            "maximum_edge_length_change_cm": 0.0,
+            "maximum_travel_cm": 0.0,
+            "piston_alignment_errors_degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "frame": 16,
+            "maximum_edge_length_change_cm": 2.1338462829589844e-05,
+            "maximum_travel_cm": 8.63170051574707,
+            "piston_alignment_errors_degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "frame": 31,
+            "maximum_edge_length_change_cm": 2.5331974029541016e-05,
+            "maximum_travel_cm": 17.596643447875977,
+            "piston_alignment_errors_degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "frame": 46,
+            "maximum_edge_length_change_cm": 2.6106834411621094e-05,
+            "maximum_travel_cm": 11.956892013549805,
+            "piston_alignment_errors_degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "frame": 61,
+            "maximum_edge_length_change_cm": 0.0,
+            "maximum_travel_cm": 0.0,
+            "piston_alignment_errors_degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "frame": 76,
+            "maximum_edge_length_change_cm": 2.586841583251953e-05,
+            "maximum_travel_cm": 11.959977149963379,
+            "piston_alignment_errors_degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "frame": 91,
+            "maximum_edge_length_change_cm": 2.5838613510131836e-05,
+            "maximum_travel_cm": 17.60097885131836,
+            "piston_alignment_errors_degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "frame": 106,
+            "maximum_edge_length_change_cm": 2.03549861907959e-05,
+            "maximum_travel_cm": 8.63398265838623,
+            "piston_alignment_errors_degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "frame": 121,
+            "maximum_edge_length_change_cm": 0.0,
+            "maximum_travel_cm": 0.0,
+            "piston_alignment_errors_degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "maximum_edge_length_change_cm": 2.6106834411621094e-05,
+        "foot_ik": [
+          {
+            "offset_cm": [
+              0,
+              0,
+              5
+            ],
+            "errors_cm": [
+              2.9242988789485862e-05,
+              2.9242988789485862e-05
+            ]
+          },
+          {
+            "offset_cm": [
+              0,
+              -8,
+              5
+            ],
+            "errors_cm": [
+              3.193029221111909e-05,
+              3.620195941181623e-05
+            ]
+          },
+          {
+            "offset_cm": [
+              0,
+              8,
+              5
+            ],
+            "errors_cm": [
+              3.438521647895803e-05,
+              3.4596170706209285e-05
+            ]
+          },
+          {
+            "offset_cm": [
+              0,
+              0,
+              0
+            ],
+            "errors_cm": [
+              3.777862571292354e-05,
+              3.777862571292354e-05
+            ]
+          }
+        ],
+        "fbx_parts": 29,
+        "fbx_bones": 14,
+        "maximum_influences": 1
+      },
+      "unreal": {
+        "name": "IronSentinel",
+        "mesh": "/Game/Crusader/Robots/IronSentinel/IronSentinel.IronSentinel",
+        "skeleton": "/Game/Crusader/Robots/IronSentinel/IronSentinel_Skeleton.IronSentinel_Skeleton",
+        "animation": "/Game/Crusader/Robots/IronSentinel/IronSentinel_JointCheck.IronSentinel_JointCheck",
+        "preview": "/Game/Crusader/Robots/IronSentinel/BP_IronSentinel_Preview.BP_IronSentinel_Preview",
+        "lods": 3,
+        "modules": [
+          "/Game/Crusader/Robots/IronSentinel/Parts/IronSentinel_Chassis.IronSentinel_Chassis",
+          "/Game/Crusader/Robots/IronSentinel/Parts/IronSentinel_foot_r.IronSentinel_foot_r",
+          "/Game/Crusader/Robots/IronSentinel/Parts/IronSentinel_JointHousing_3_r.IronSentinel_JointHousing_3_r",
+          "/Game/Crusader/Robots/IronSentinel/Parts/IronSentinel_JointHousing_1_r.IronSentinel_JointHousing_1_r",
+          "/Game/Crusader/Robots/IronSentinel/Parts/IronSentinel_JointHousing_0_r.IronSentinel_JointHousing_0_r",
+          "/Game/Crusader/Robots/IronSentinel/Parts/IronSentinel_lower_leg_r.IronSentinel_lower_leg_r",
+          "/Game/Crusader/Robots/IronSentinel/Parts/IronSentinel_middle_leg_r.IronSentinel_middle_leg_r",
+          "/Game/Crusader/Robots/IronSentinel/Parts/IronSentinel_JointHousing_2_r.IronSentinel_JointHousing_2_r",
+          "/Game/Crusader/Robots/IronSentinel/Parts/IronSentinel_upper_leg_r.IronSentinel_upper_leg_r",
+          "/Game/Crusader/Robots/IronSentinel/Parts/IronSentinel_upper_leg_l.IronSentinel_upper_leg_l",
+          "/Game/Crusader/Robots/IronSentinel/Parts/IronSentinel_JointHousing_0_l.IronSentinel_JointHousing_0_l",
+          "/Game/Crusader/Robots/IronSentinel/Parts/IronSentinel_JointHousing_1_l.IronSentinel_JointHousing_1_l",
+          "/Game/Crusader/Robots/IronSentinel/Parts/IronSentinel_middle_leg_l.IronSentinel_middle_leg_l",
+          "/Game/Crusader/Robots/IronSentinel/Parts/IronSentinel_foot_l.IronSentinel_foot_l",
+          "/Game/Crusader/Robots/IronSentinel/Parts/IronSentinel_JointHousing_2_l.IronSentinel_JointHousing_2_l",
+          "/Game/Crusader/Robots/IronSentinel/Parts/IronSentinel_lower_leg_l.IronSentinel_lower_leg_l",
+          "/Game/Crusader/Robots/IronSentinel/Parts/IronSentinel_JointHousing_3_l.IronSentinel_JointHousing_3_l",
+          "/Game/Crusader/Robots/IronSentinel/Parts/IronSentinel_Axle_0_l.IronSentinel_Axle_0_l",
+          "/Game/Crusader/Robots/IronSentinel/Parts/IronSentinel_Axle_1_l.IronSentinel_Axle_1_l",
+          "/Game/Crusader/Robots/IronSentinel/Parts/IronSentinel_Axle_2_l.IronSentinel_Axle_2_l",
+          "/Game/Crusader/Robots/IronSentinel/Parts/IronSentinel_Axle_3_l.IronSentinel_Axle_3_l",
+          "/Game/Crusader/Robots/IronSentinel/Parts/IronSentinel_Piston_housing_l.IronSentinel_Piston_housing_l",
+          "/Game/Crusader/Robots/IronSentinel/Parts/IronSentinel_Piston_rod_l.IronSentinel_Piston_rod_l",
+          "/Game/Crusader/Robots/IronSentinel/Parts/IronSentinel_Axle_0_r.IronSentinel_Axle_0_r",
+          "/Game/Crusader/Robots/IronSentinel/Parts/IronSentinel_Axle_1_r.IronSentinel_Axle_1_r",
+          "/Game/Crusader/Robots/IronSentinel/Parts/IronSentinel_Axle_2_r.IronSentinel_Axle_2_r",
+          "/Game/Crusader/Robots/IronSentinel/Parts/IronSentinel_Axle_3_r.IronSentinel_Axle_3_r",
+          "/Game/Crusader/Robots/IronSentinel/Parts/IronSentinel_Piston_housing_r.IronSentinel_Piston_housing_r",
+          "/Game/Crusader/Robots/IronSentinel/Parts/IronSentinel_Piston_rod_r.IronSentinel_Piston_rod_r"
+        ],
+        "lod_validation": [
+          {
+            "lod": 0,
+            "triangles": 510042,
+            "height_cm": 179.96633298811503,
+            "sampled_triangles": 2050,
+            "sampled_vertices": 6102,
+            "sampled_bones": 10,
+            "maximum_influences": 1
+          },
+          {
+            "lod": 1,
+            "triangles": 255020,
+            "height_cm": 180.02399595198222,
+            "sampled_triangles": 2050,
+            "sampled_vertices": 6080,
+            "sampled_bones": 10,
+            "maximum_influences": 1
+          },
+          {
+            "lod": 2,
+            "triangles": 127510,
+            "height_cm": 180.06539308279753,
+            "sampled_triangles": 2050,
+            "sampled_vertices": 5986,
+            "sampled_bones": 11,
+            "maximum_influences": 1
+          }
+        ],
+        "animated_bones": [
+          "upper_leg_l",
+          "middle_leg_l",
+          "lower_leg_l",
+          "foot_l",
+          "piston_rod_l",
+          "piston_housing_l",
+          "upper_leg_r",
+          "middle_leg_r",
+          "lower_leg_r",
+          "foot_r",
+          "piston_rod_r",
+          "piston_housing_r"
+        ],
+        "bone_scales_unit": true
+      }
+    },
+    {
+      "name": "SentinelWalker",
+      "passed": true,
+      "fbx_sha256": "3cc133219fa22f643c0cf278634b57ae1d427ad50f0f949b2e772d8ff35b2e64",
+      "blender": {
+        "name": "SentinelWalker",
+        "passed": true,
+        "parts": 25,
+        "poses": [
+          {
+            "frame": 1,
+            "maximum_edge_length_change_cm": 0.0,
+            "maximum_travel_cm": 0.0,
+            "piston_alignment_errors_degrees": []
+          },
+          {
+            "frame": 16,
+            "maximum_edge_length_change_cm": 2.1219253540039062e-05,
+            "maximum_travel_cm": 6.173300266265869,
+            "piston_alignment_errors_degrees": []
+          },
+          {
+            "frame": 31,
+            "maximum_edge_length_change_cm": 2.086162567138672e-05,
+            "maximum_travel_cm": 12.71358585357666,
+            "piston_alignment_errors_degrees": []
+          },
+          {
+            "frame": 46,
+            "maximum_edge_length_change_cm": 1.9788742065429688e-05,
+            "maximum_travel_cm": 8.584260940551758,
+            "piston_alignment_errors_degrees": []
+          },
+          {
+            "frame": 61,
+            "maximum_edge_length_change_cm": 0.0,
+            "maximum_travel_cm": 0.0,
+            "piston_alignment_errors_degrees": []
+          },
+          {
+            "frame": 76,
+            "maximum_edge_length_change_cm": 2.0071864128112793e-05,
+            "maximum_travel_cm": 8.5847749710083,
+            "piston_alignment_errors_degrees": []
+          },
+          {
+            "frame": 91,
+            "maximum_edge_length_change_cm": 2.0772218704223633e-05,
+            "maximum_travel_cm": 12.71432876586914,
+            "piston_alignment_errors_degrees": []
+          },
+          {
+            "frame": 106,
+            "maximum_edge_length_change_cm": 2.0265579223632812e-05,
+            "maximum_travel_cm": 6.173674583435059,
+            "piston_alignment_errors_degrees": []
+          },
+          {
+            "frame": 121,
+            "maximum_edge_length_change_cm": 0.0,
+            "maximum_travel_cm": 0.0,
+            "piston_alignment_errors_degrees": []
+          }
+        ],
+        "maximum_edge_length_change_cm": 2.1219253540039062e-05,
+        "foot_ik": [
+          {
+            "offset_cm": [
+              0,
+              0,
+              5
+            ],
+            "errors_cm": [
+              2.78368368517426e-05,
+              2.830662170344511e-05
+            ]
+          },
+          {
+            "offset_cm": [
+              0,
+              -8,
+              5
+            ],
+            "errors_cm": [
+              3.5848514803338054e-05,
+              2.707914517307412e-05
+            ]
+          },
+          {
+            "offset_cm": [
+              0,
+              8,
+              5
+            ],
+            "errors_cm": [
+              2.8032185471914423e-05,
+              3.057712467552452e-05
+            ]
+          },
+          {
+            "offset_cm": [
+              0,
+              0,
+              0
+            ],
+            "errors_cm": [
+              3.886734747374503e-05,
+              3.873843385999661e-05
+            ]
+          }
+        ],
+        "fbx_parts": 25,
+        "fbx_bones": 10,
+        "maximum_influences": 1
+      },
+      "unreal": {
+        "name": "SentinelWalker",
+        "mesh": "/Game/Crusader/Robots/SentinelWalker/SentinelWalker.SentinelWalker",
+        "skeleton": "/Game/Crusader/Robots/SentinelWalker/SentinelWalker_Skeleton.SentinelWalker_Skeleton",
+        "animation": "/Game/Crusader/Robots/SentinelWalker/SentinelWalker_JointCheck.SentinelWalker_JointCheck",
+        "preview": "/Game/Crusader/Robots/SentinelWalker/BP_SentinelWalker_Preview.BP_SentinelWalker_Preview",
+        "lods": 3,
+        "modules": [
+          "/Game/Crusader/Robots/SentinelWalker/Parts/SentinelWalker_Chassis.SentinelWalker_Chassis",
+          "/Game/Crusader/Robots/SentinelWalker/Parts/SentinelWalker_foot_r.SentinelWalker_foot_r",
+          "/Game/Crusader/Robots/SentinelWalker/Parts/SentinelWalker_JointHousing_3_r.SentinelWalker_JointHousing_3_r",
+          "/Game/Crusader/Robots/SentinelWalker/Parts/SentinelWalker_JointHousing_1_r.SentinelWalker_JointHousing_1_r",
+          "/Game/Crusader/Robots/SentinelWalker/Parts/SentinelWalker_lower_leg_r.SentinelWalker_lower_leg_r",
+          "/Game/Crusader/Robots/SentinelWalker/Parts/SentinelWalker_JointHousing_0_r.SentinelWalker_JointHousing_0_r",
+          "/Game/Crusader/Robots/SentinelWalker/Parts/SentinelWalker_JointHousing_2_r.SentinelWalker_JointHousing_2_r",
+          "/Game/Crusader/Robots/SentinelWalker/Parts/SentinelWalker_middle_leg_r.SentinelWalker_middle_leg_r",
+          "/Game/Crusader/Robots/SentinelWalker/Parts/SentinelWalker_upper_leg_r.SentinelWalker_upper_leg_r",
+          "/Game/Crusader/Robots/SentinelWalker/Parts/SentinelWalker_upper_leg_l.SentinelWalker_upper_leg_l",
+          "/Game/Crusader/Robots/SentinelWalker/Parts/SentinelWalker_JointHousing_1_l.SentinelWalker_JointHousing_1_l",
+          "/Game/Crusader/Robots/SentinelWalker/Parts/SentinelWalker_JointHousing_0_l.SentinelWalker_JointHousing_0_l",
+          "/Game/Crusader/Robots/SentinelWalker/Parts/SentinelWalker_JointHousing_3_l.SentinelWalker_JointHousing_3_l",
+          "/Game/Crusader/Robots/SentinelWalker/Parts/SentinelWalker_foot_l.SentinelWalker_foot_l",
+          "/Game/Crusader/Robots/SentinelWalker/Parts/SentinelWalker_lower_leg_l.SentinelWalker_lower_leg_l",
+          "/Game/Crusader/Robots/SentinelWalker/Parts/SentinelWalker_JointHousing_2_l.SentinelWalker_JointHousing_2_l",
+          "/Game/Crusader/Robots/SentinelWalker/Parts/SentinelWalker_middle_leg_l.SentinelWalker_middle_leg_l",
+          "/Game/Crusader/Robots/SentinelWalker/Parts/SentinelWalker_Axle_0_l.SentinelWalker_Axle_0_l",
+          "/Game/Crusader/Robots/SentinelWalker/Parts/SentinelWalker_Axle_1_l.SentinelWalker_Axle_1_l",
+          "/Game/Crusader/Robots/SentinelWalker/Parts/SentinelWalker_Axle_2_l.SentinelWalker_Axle_2_l",
+          "/Game/Crusader/Robots/SentinelWalker/Parts/SentinelWalker_Axle_3_l.SentinelWalker_Axle_3_l",
+          "/Game/Crusader/Robots/SentinelWalker/Parts/SentinelWalker_Axle_0_r.SentinelWalker_Axle_0_r",
+          "/Game/Crusader/Robots/SentinelWalker/Parts/SentinelWalker_Axle_1_r.SentinelWalker_Axle_1_r",
+          "/Game/Crusader/Robots/SentinelWalker/Parts/SentinelWalker_Axle_2_r.SentinelWalker_Axle_2_r",
+          "/Game/Crusader/Robots/SentinelWalker/Parts/SentinelWalker_Axle_3_r.SentinelWalker_Axle_3_r"
+        ],
+        "lod_validation": [
+          {
+            "lod": 0,
+            "triangles": 477106,
+            "height_cm": 179.96790659986436,
+            "sampled_triangles": 2050,
+            "sampled_vertices": 6085,
+            "sampled_bones": 9,
+            "maximum_influences": 1
+          },
+          {
+            "lod": 1,
+            "triangles": 238552,
+            "height_cm": 179.97039408050478,
+            "sampled_triangles": 2050,
+            "sampled_vertices": 6075,
+            "sampled_bones": 9,
+            "maximum_influences": 1
+          },
+          {
+            "lod": 2,
+            "triangles": 119276,
+            "height_cm": 179.9179801400751,
+            "sampled_triangles": 2050,
+            "sampled_vertices": 5958,
+            "sampled_bones": 9,
+            "maximum_influences": 1
+          }
+        ],
+        "animated_bones": [
+          "upper_leg_l",
+          "middle_leg_l",
+          "lower_leg_l",
+          "foot_l",
+          "upper_leg_r",
+          "middle_leg_r",
+          "lower_leg_r",
+          "foot_r"
+        ],
+        "bone_scales_unit": true
+      }
+    },
+    {
+      "name": "APP5200IndustrialM",
+      "passed": true,
+      "fbx_sha256": "19c90b352c2e9b05216ae2f464ff7a9fdc2818d3cd7c02ecb47f31c5249bcf78",
+      "blender": {
+        "name": "APP5200IndustrialM",
+        "passed": true,
+        "parts": 29,
+        "poses": [
+          {
+            "frame": 1,
+            "maximum_edge_length_change_cm": 0.0,
+            "maximum_travel_cm": 0.0,
+            "piston_alignment_errors_degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "frame": 16,
+            "maximum_edge_length_change_cm": 2.008676528930664e-05,
+            "maximum_travel_cm": 4.962632179260254,
+            "piston_alignment_errors_degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "frame": 31,
+            "maximum_edge_length_change_cm": 2.1338462829589844e-05,
+            "maximum_travel_cm": 10.224672317504883,
+            "piston_alignment_errors_degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "frame": 46,
+            "maximum_edge_length_change_cm": 1.4334917068481445e-05,
+            "maximum_travel_cm": 6.902087688446045,
+            "piston_alignment_errors_degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "frame": 61,
+            "maximum_edge_length_change_cm": 0.0,
+            "maximum_travel_cm": 0.0,
+            "piston_alignment_errors_degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "frame": 76,
+            "maximum_edge_length_change_cm": 1.9371509552001953e-05,
+            "maximum_travel_cm": 6.900538921356201,
+            "piston_alignment_errors_degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "frame": 91,
+            "maximum_edge_length_change_cm": 1.8358230590820312e-05,
+            "maximum_travel_cm": 10.22242546081543,
+            "piston_alignment_errors_degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "frame": 106,
+            "maximum_edge_length_change_cm": 1.8358230590820312e-05,
+            "maximum_travel_cm": 4.961503028869629,
+            "piston_alignment_errors_degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "frame": 121,
+            "maximum_edge_length_change_cm": 0.0,
+            "maximum_travel_cm": 0.0,
+            "piston_alignment_errors_degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "maximum_edge_length_change_cm": 2.1338462829589844e-05,
+        "foot_ik": [
+          {
+            "offset_cm": [
+              0,
+              0,
+              5
+            ],
+            "errors_cm": [
+              6.227473204903115e-06,
+              6.036276293359834e-06
+            ]
+          },
+          {
+            "offset_cm": [
+              0,
+              -8,
+              5
+            ],
+            "errors_cm": [
+              1.112165812462864e-05,
+              4.672030911985737e-06
+            ]
+          },
+          {
+            "offset_cm": [
+              0,
+              8,
+              5
+            ],
+            "errors_cm": [
+              1.3787109656144105e-05,
+              1.0789593218788873e-05
+            ]
+          },
+          {
+            "offset_cm": [
+              0,
+              0,
+              0
+            ],
+            "errors_cm": [
+              2.806486455677403e-06,
+              3.484196125429984e-06
+            ]
+          }
+        ],
+        "fbx_parts": 29,
+        "fbx_bones": 14,
+        "maximum_influences": 1
+      },
+      "unreal": {
+        "name": "APP5200IndustrialM",
+        "mesh": "/Game/Crusader/Robots/APP5200IndustrialM/APP5200IndustrialM.APP5200IndustrialM",
+        "skeleton": "/Game/Crusader/Robots/APP5200IndustrialM/APP5200IndustrialM_Skeleton.APP5200IndustrialM_Skeleton",
+        "animation": "/Game/Crusader/Robots/APP5200IndustrialM/APP5200IndustrialM_JointCheck.APP5200IndustrialM_JointCheck",
+        "preview": "/Game/Crusader/Robots/APP5200IndustrialM/BP_APP5200IndustrialM_Preview.BP_APP5200IndustrialM_Preview",
+        "lods": 3,
+        "modules": [
+          "/Game/Crusader/Robots/APP5200IndustrialM/Parts/APP5200IndustrialM_foot_r.APP5200IndustrialM_foot_r",
+          "/Game/Crusader/Robots/APP5200IndustrialM/Parts/APP5200IndustrialM_Chassis.APP5200IndustrialM_Chassis",
+          "/Game/Crusader/Robots/APP5200IndustrialM/Parts/APP5200IndustrialM_JointHousing_3_r.APP5200IndustrialM_JointHousing_3_r",
+          "/Game/Crusader/Robots/APP5200IndustrialM/Parts/APP5200IndustrialM_JointHousing_2_r.APP5200IndustrialM_JointHousing_2_r",
+          "/Game/Crusader/Robots/APP5200IndustrialM/Parts/APP5200IndustrialM_lower_leg_r.APP5200IndustrialM_lower_leg_r",
+          "/Game/Crusader/Robots/APP5200IndustrialM/Parts/APP5200IndustrialM_JointHousing_0_r.APP5200IndustrialM_JointHousing_0_r",
+          "/Game/Crusader/Robots/APP5200IndustrialM/Parts/APP5200IndustrialM_upper_leg_r.APP5200IndustrialM_upper_leg_r",
+          "/Game/Crusader/Robots/APP5200IndustrialM/Parts/APP5200IndustrialM_JointHousing_1_r.APP5200IndustrialM_JointHousing_1_r",
+          "/Game/Crusader/Robots/APP5200IndustrialM/Parts/APP5200IndustrialM_middle_leg_r.APP5200IndustrialM_middle_leg_r",
+          "/Game/Crusader/Robots/APP5200IndustrialM/Parts/APP5200IndustrialM_JointHousing_0_l.APP5200IndustrialM_JointHousing_0_l",
+          "/Game/Crusader/Robots/APP5200IndustrialM/Parts/APP5200IndustrialM_upper_leg_l.APP5200IndustrialM_upper_leg_l",
+          "/Game/Crusader/Robots/APP5200IndustrialM/Parts/APP5200IndustrialM_JointHousing_2_l.APP5200IndustrialM_JointHousing_2_l",
+          "/Game/Crusader/Robots/APP5200IndustrialM/Parts/APP5200IndustrialM_lower_leg_l.APP5200IndustrialM_lower_leg_l",
+          "/Game/Crusader/Robots/APP5200IndustrialM/Parts/APP5200IndustrialM_JointHousing_1_l.APP5200IndustrialM_JointHousing_1_l",
+          "/Game/Crusader/Robots/APP5200IndustrialM/Parts/APP5200IndustrialM_middle_leg_l.APP5200IndustrialM_middle_leg_l",
+          "/Game/Crusader/Robots/APP5200IndustrialM/Parts/APP5200IndustrialM_foot_l.APP5200IndustrialM_foot_l",
+          "/Game/Crusader/Robots/APP5200IndustrialM/Parts/APP5200IndustrialM_JointHousing_3_l.APP5200IndustrialM_JointHousing_3_l",
+          "/Game/Crusader/Robots/APP5200IndustrialM/Parts/APP5200IndustrialM_Axle_0_l.APP5200IndustrialM_Axle_0_l",
+          "/Game/Crusader/Robots/APP5200IndustrialM/Parts/APP5200IndustrialM_Axle_1_l.APP5200IndustrialM_Axle_1_l",
+          "/Game/Crusader/Robots/APP5200IndustrialM/Parts/APP5200IndustrialM_Axle_2_l.APP5200IndustrialM_Axle_2_l",
+          "/Game/Crusader/Robots/APP5200IndustrialM/Parts/APP5200IndustrialM_Axle_3_l.APP5200IndustrialM_Axle_3_l",
+          "/Game/Crusader/Robots/APP5200IndustrialM/Parts/APP5200IndustrialM_Piston_housing_l.APP5200IndustrialM_Piston_housing_l",
+          "/Game/Crusader/Robots/APP5200IndustrialM/Parts/APP5200IndustrialM_Piston_rod_l.APP5200IndustrialM_Piston_rod_l",
+          "/Game/Crusader/Robots/APP5200IndustrialM/Parts/APP5200IndustrialM_Axle_0_r.APP5200IndustrialM_Axle_0_r",
+          "/Game/Crusader/Robots/APP5200IndustrialM/Parts/APP5200IndustrialM_Axle_1_r.APP5200IndustrialM_Axle_1_r",
+          "/Game/Crusader/Robots/APP5200IndustrialM/Parts/APP5200IndustrialM_Axle_2_r.APP5200IndustrialM_Axle_2_r",
+          "/Game/Crusader/Robots/APP5200IndustrialM/Parts/APP5200IndustrialM_Axle_3_r.APP5200IndustrialM_Axle_3_r",
+          "/Game/Crusader/Robots/APP5200IndustrialM/Parts/APP5200IndustrialM_Piston_housing_r.APP5200IndustrialM_Piston_housing_r",
+          "/Game/Crusader/Robots/APP5200IndustrialM/Parts/APP5200IndustrialM_Piston_rod_r.APP5200IndustrialM_Piston_rod_r"
+        ],
+        "lod_validation": [
+          {
+            "lod": 0,
+            "triangles": 521517,
+            "height_cm": 179.96840862883255,
+            "sampled_triangles": 2050,
+            "sampled_vertices": 6112,
+            "sampled_bones": 10,
+            "maximum_influences": 1
+          },
+          {
+            "lod": 1,
+            "triangles": 260757,
+            "height_cm": 179.96840862883255,
+            "sampled_triangles": 2050,
+            "sampled_vertices": 6079,
+            "sampled_bones": 11,
+            "maximum_influences": 1
+          },
+          {
+            "lod": 2,
+            "triangles": 130379,
+            "height_cm": 180.03642628341913,
+            "sampled_triangles": 2050,
+            "sampled_vertices": 5968,
+            "sampled_bones": 12,
+            "maximum_influences": 1
+          }
+        ],
+        "animated_bones": [
+          "upper_leg_l",
+          "middle_leg_l",
+          "lower_leg_l",
+          "foot_l",
+          "piston_rod_l",
+          "piston_housing_l",
+          "upper_leg_r",
+          "middle_leg_r",
+          "lower_leg_r",
+          "foot_r",
+          "piston_rod_r",
+          "piston_housing_r"
+        ],
+        "bone_scales_unit": true
+      }
+    },
+    {
+      "name": "IroncladTitan",
+      "passed": true,
+      "fbx_sha256": "c2ce71654cc69b260f1d50e830b65503fcdea0060da8a963188a253d1bc9ca52",
+      "blender": {
+        "name": "IroncladTitan",
+        "passed": true,
+        "parts": 29,
+        "poses": [
+          {
+            "frame": 1,
+            "maximum_edge_length_change_cm": 0.0,
+            "maximum_travel_cm": 0.0,
+            "piston_alignment_errors_degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "frame": 16,
+            "maximum_edge_length_change_cm": 2.6091933250427246e-05,
+            "maximum_travel_cm": 8.445806503295898,
+            "piston_alignment_errors_degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "frame": 31,
+            "maximum_edge_length_change_cm": 2.6226043701171875e-05,
+            "maximum_travel_cm": 17.230440139770508,
+            "piston_alignment_errors_degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "frame": 46,
+            "maximum_edge_length_change_cm": 2.002716064453125e-05,
+            "maximum_travel_cm": 11.702631950378418,
+            "piston_alignment_errors_degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "frame": 61,
+            "maximum_edge_length_change_cm": 0.0,
+            "maximum_travel_cm": 0.0,
+            "piston_alignment_errors_degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "frame": 76,
+            "maximum_edge_length_change_cm": 2.1503306925296783e-05,
+            "maximum_travel_cm": 11.711560249328613,
+            "piston_alignment_errors_degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "frame": 91,
+            "maximum_edge_length_change_cm": 2.6881694793701172e-05,
+            "maximum_travel_cm": 17.2434024810791,
+            "piston_alignment_errors_degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "frame": 106,
+            "maximum_edge_length_change_cm": 2.6106834411621094e-05,
+            "maximum_travel_cm": 8.452302932739258,
+            "piston_alignment_errors_degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "frame": 121,
+            "maximum_edge_length_change_cm": 0.0,
+            "maximum_travel_cm": 0.0,
+            "piston_alignment_errors_degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "maximum_edge_length_change_cm": 2.6881694793701172e-05,
+        "foot_ik": [
+          {
+            "offset_cm": [
+              0,
+              0,
+              5
+            ],
+            "errors_cm": [
+              8.856857119086604e-06,
+              1.1131875543526413e-05
+            ]
+          },
+          {
+            "offset_cm": [
+              0,
+              -8,
+              5
+            ],
+            "errors_cm": [
+              7.688768146799611e-06,
+              1.225016839853776e-05
+            ]
+          },
+          {
+            "offset_cm": [
+              0,
+              8,
+              5
+            ],
+            "errors_cm": [
+              1.1757686620653107e-05,
+              1.1483759478370949e-05
+            ]
+          },
+          {
+            "offset_cm": [
+              0,
+              0,
+              0
+            ],
+            "errors_cm": [
+              1.440805905317128e-05,
+              1.0800124791055798e-05
+            ]
+          }
+        ],
+        "fbx_parts": 29,
+        "fbx_bones": 14,
+        "maximum_influences": 1
+      },
+      "unreal": {
+        "name": "IroncladTitan",
+        "mesh": "/Game/Crusader/Robots/IroncladTitan/IroncladTitan.IroncladTitan",
+        "skeleton": "/Game/Crusader/Robots/IroncladTitan/IroncladTitan_Skeleton.IroncladTitan_Skeleton",
+        "animation": "/Game/Crusader/Robots/IroncladTitan/IroncladTitan_JointCheck.IroncladTitan_JointCheck",
+        "preview": "/Game/Crusader/Robots/IroncladTitan/BP_IroncladTitan_Preview.BP_IroncladTitan_Preview",
+        "lods": 3,
+        "modules": [
+          "/Game/Crusader/Robots/IroncladTitan/Parts/IroncladTitan_Chassis.IroncladTitan_Chassis",
+          "/Game/Crusader/Robots/IroncladTitan/Parts/IroncladTitan_foot_r.IroncladTitan_foot_r",
+          "/Game/Crusader/Robots/IroncladTitan/Parts/IroncladTitan_JointHousing_3_r.IroncladTitan_JointHousing_3_r",
+          "/Game/Crusader/Robots/IroncladTitan/Parts/IroncladTitan_lower_leg_r.IroncladTitan_lower_leg_r",
+          "/Game/Crusader/Robots/IroncladTitan/Parts/IroncladTitan_JointHousing_2_r.IroncladTitan_JointHousing_2_r",
+          "/Game/Crusader/Robots/IroncladTitan/Parts/IroncladTitan_JointHousing_0_r.IroncladTitan_JointHousing_0_r",
+          "/Game/Crusader/Robots/IroncladTitan/Parts/IroncladTitan_middle_leg_r.IroncladTitan_middle_leg_r",
+          "/Game/Crusader/Robots/IroncladTitan/Parts/IroncladTitan_JointHousing_1_r.IroncladTitan_JointHousing_1_r",
+          "/Game/Crusader/Robots/IroncladTitan/Parts/IroncladTitan_upper_leg_r.IroncladTitan_upper_leg_r",
+          "/Game/Crusader/Robots/IroncladTitan/Parts/IroncladTitan_upper_leg_l.IroncladTitan_upper_leg_l",
+          "/Game/Crusader/Robots/IroncladTitan/Parts/IroncladTitan_JointHousing_1_l.IroncladTitan_JointHousing_1_l",
+          "/Game/Crusader/Robots/IroncladTitan/Parts/IroncladTitan_JointHousing_0_l.IroncladTitan_JointHousing_0_l",
+          "/Game/Crusader/Robots/IroncladTitan/Parts/IroncladTitan_middle_leg_l.IroncladTitan_middle_leg_l",
+          "/Game/Crusader/Robots/IroncladTitan/Parts/IroncladTitan_JointHousing_3_l.IroncladTitan_JointHousing_3_l",
+          "/Game/Crusader/Robots/IroncladTitan/Parts/IroncladTitan_JointHousing_2_l.IroncladTitan_JointHousing_2_l",
+          "/Game/Crusader/Robots/IroncladTitan/Parts/IroncladTitan_foot_l.IroncladTitan_foot_l",
+          "/Game/Crusader/Robots/IroncladTitan/Parts/IroncladTitan_lower_leg_l.IroncladTitan_lower_leg_l",
+          "/Game/Crusader/Robots/IroncladTitan/Parts/IroncladTitan_Axle_0_l.IroncladTitan_Axle_0_l",
+          "/Game/Crusader/Robots/IroncladTitan/Parts/IroncladTitan_Axle_1_l.IroncladTitan_Axle_1_l",
+          "/Game/Crusader/Robots/IroncladTitan/Parts/IroncladTitan_Axle_2_l.IroncladTitan_Axle_2_l",
+          "/Game/Crusader/Robots/IroncladTitan/Parts/IroncladTitan_Axle_3_l.IroncladTitan_Axle_3_l",
+          "/Game/Crusader/Robots/IroncladTitan/Parts/IroncladTitan_Piston_housing_l.IroncladTitan_Piston_housing_l",
+          "/Game/Crusader/Robots/IroncladTitan/Parts/IroncladTitan_Piston_rod_l.IroncladTitan_Piston_rod_l",
+          "/Game/Crusader/Robots/IroncladTitan/Parts/IroncladTitan_Axle_0_r.IroncladTitan_Axle_0_r",
+          "/Game/Crusader/Robots/IroncladTitan/Parts/IroncladTitan_Axle_1_r.IroncladTitan_Axle_1_r",
+          "/Game/Crusader/Robots/IroncladTitan/Parts/IroncladTitan_Axle_2_r.IroncladTitan_Axle_2_r",
+          "/Game/Crusader/Robots/IroncladTitan/Parts/IroncladTitan_Axle_3_r.IroncladTitan_Axle_3_r",
+          "/Game/Crusader/Robots/IroncladTitan/Parts/IroncladTitan_Piston_housing_r.IroncladTitan_Piston_housing_r",
+          "/Game/Crusader/Robots/IroncladTitan/Parts/IroncladTitan_Piston_rod_r.IroncladTitan_Piston_rod_r"
+        ],
+        "lod_validation": [
+          {
+            "lod": 0,
+            "triangles": 542439,
+            "height_cm": 180.115048058331,
+            "sampled_triangles": 2050,
+            "sampled_vertices": 6100,
+            "sampled_bones": 11,
+            "maximum_influences": 1
+          },
+          {
+            "lod": 1,
+            "triangles": 271219,
+            "height_cm": 180.115048058331,
+            "sampled_triangles": 2050,
+            "sampled_vertices": 6062,
+            "sampled_bones": 11,
+            "maximum_influences": 1
+          },
+          {
+            "lod": 2,
+            "triangles": 135609,
+            "height_cm": 180.11968280375004,
+            "sampled_triangles": 2050,
+            "sampled_vertices": 5984,
+            "sampled_bones": 11,
+            "maximum_influences": 1
+          }
+        ],
+        "animated_bones": [
+          "upper_leg_l",
+          "middle_leg_l",
+          "lower_leg_l",
+          "foot_l",
+          "piston_rod_l",
+          "piston_housing_l",
+          "upper_leg_r",
+          "middle_leg_r",
+          "lower_leg_r",
+          "foot_r",
+          "piston_rod_r",
+          "piston_housing_r"
+        ],
+        "bone_scales_unit": true
+      }
+    },
+    {
+      "name": "IroncladVanguard",
+      "passed": true,
+      "fbx_sha256": "b1e85703345b5dc0ce279366ee50202d6c5e44d6f4e502471869d228d853375b",
+      "blender": {
+        "name": "IroncladVanguard",
+        "passed": true,
+        "parts": 25,
+        "poses": [
+          {
+            "frame": 1,
+            "maximum_edge_length_change_cm": 0.0,
+            "maximum_travel_cm": 0.0,
+            "piston_alignment_errors_degrees": []
+          },
+          {
+            "frame": 16,
+            "maximum_edge_length_change_cm": 1.6808509826660156e-05,
+            "maximum_travel_cm": 6.476513385772705,
+            "piston_alignment_errors_degrees": []
+          },
+          {
+            "frame": 31,
+            "maximum_edge_length_change_cm": 1.3709068298339844e-05,
+            "maximum_travel_cm": 13.018645286560059,
+            "piston_alignment_errors_degrees": []
+          },
+          {
+            "frame": 46,
+            "maximum_edge_length_change_cm": 1.4126300811767578e-05,
+            "maximum_travel_cm": 8.924293518066406,
+            "piston_alignment_errors_degrees": []
+          },
+          {
+            "frame": 61,
+            "maximum_edge_length_change_cm": 0.0,
+            "maximum_travel_cm": 0.0,
+            "piston_alignment_errors_degrees": []
+          },
+          {
+            "frame": 76,
+            "maximum_edge_length_change_cm": 1.3828277587890625e-05,
+            "maximum_travel_cm": 8.724716186523438,
+            "piston_alignment_errors_degrees": []
+          },
+          {
+            "frame": 91,
+            "maximum_edge_length_change_cm": 1.3649463653564453e-05,
+            "maximum_travel_cm": 12.596879005432129,
+            "piston_alignment_errors_degrees": []
+          },
+          {
+            "frame": 106,
+            "maximum_edge_length_change_cm": 1.749396324157715e-05,
+            "maximum_travel_cm": 6.37091588973999,
+            "piston_alignment_errors_degrees": []
+          },
+          {
+            "frame": 121,
+            "maximum_edge_length_change_cm": 0.0,
+            "maximum_travel_cm": 0.0,
+            "piston_alignment_errors_degrees": []
+          }
+        ],
+        "maximum_edge_length_change_cm": 1.749396324157715e-05,
+        "foot_ik": [
+          {
+            "offset_cm": [
+              0,
+              0,
+              5
+            ],
+            "errors_cm": [
+              9.344061823971473e-06,
+              9.344061823971473e-06
+            ]
+          },
+          {
+            "offset_cm": [
+              0,
+              -8,
+              5
+            ],
+            "errors_cm": [
+              1.6655205914090136e-05,
+              1.3248867024850658e-05
+            ]
+          },
+          {
+            "offset_cm": [
+              0,
+              8,
+              5
+            ],
+            "errors_cm": [
+              1.1444091796875e-05,
+              7.62939453125e-06
+            ]
+          },
+          {
+            "offset_cm": [
+              0,
+              0,
+              0
+            ],
+            "errors_cm": [
+              1.1601948795887412e-05,
+              1.1601948795887412e-05
+            ]
+          }
+        ],
+        "fbx_parts": 25,
+        "fbx_bones": 10,
+        "maximum_influences": 1
+      },
+      "unreal": {
+        "name": "IroncladVanguard",
+        "mesh": "/Game/Crusader/Robots/IroncladVanguard/IroncladVanguard.IroncladVanguard",
+        "skeleton": "/Game/Crusader/Robots/IroncladVanguard/IroncladVanguard_Skeleton.IroncladVanguard_Skeleton",
+        "animation": "/Game/Crusader/Robots/IroncladVanguard/IroncladVanguard_JointCheck.IroncladVanguard_JointCheck",
+        "preview": "/Game/Crusader/Robots/IroncladVanguard/BP_IroncladVanguard_Preview.BP_IroncladVanguard_Preview",
+        "lods": 3,
+        "modules": [
+          "/Game/Crusader/Robots/IroncladVanguard/Parts/IroncladVanguard_foot_r.IroncladVanguard_foot_r",
+          "/Game/Crusader/Robots/IroncladVanguard/Parts/IroncladVanguard_Chassis.IroncladVanguard_Chassis",
+          "/Game/Crusader/Robots/IroncladVanguard/Parts/IroncladVanguard_JointHousing_1_r.IroncladVanguard_JointHousing_1_r",
+          "/Game/Crusader/Robots/IroncladVanguard/Parts/IroncladVanguard_JointHousing_3_r.IroncladVanguard_JointHousing_3_r",
+          "/Game/Crusader/Robots/IroncladVanguard/Parts/IroncladVanguard_lower_leg_r.IroncladVanguard_lower_leg_r",
+          "/Game/Crusader/Robots/IroncladVanguard/Parts/IroncladVanguard_middle_leg_r.IroncladVanguard_middle_leg_r",
+          "/Game/Crusader/Robots/IroncladVanguard/Parts/IroncladVanguard_JointHousing_0_r.IroncladVanguard_JointHousing_0_r",
+          "/Game/Crusader/Robots/IroncladVanguard/Parts/IroncladVanguard_upper_leg_r.IroncladVanguard_upper_leg_r",
+          "/Game/Crusader/Robots/IroncladVanguard/Parts/IroncladVanguard_JointHousing_2_r.IroncladVanguard_JointHousing_2_r",
+          "/Game/Crusader/Robots/IroncladVanguard/Parts/IroncladVanguard_foot_l.IroncladVanguard_foot_l",
+          "/Game/Crusader/Robots/IroncladVanguard/Parts/IroncladVanguard_JointHousing_1_l.IroncladVanguard_JointHousing_1_l",
+          "/Game/Crusader/Robots/IroncladVanguard/Parts/IroncladVanguard_JointHousing_0_l.IroncladVanguard_JointHousing_0_l",
+          "/Game/Crusader/Robots/IroncladVanguard/Parts/IroncladVanguard_middle_leg_l.IroncladVanguard_middle_leg_l",
+          "/Game/Crusader/Robots/IroncladVanguard/Parts/IroncladVanguard_upper_leg_l.IroncladVanguard_upper_leg_l",
+          "/Game/Crusader/Robots/IroncladVanguard/Parts/IroncladVanguard_lower_leg_l.IroncladVanguard_lower_leg_l",
+          "/Game/Crusader/Robots/IroncladVanguard/Parts/IroncladVanguard_JointHousing_2_l.IroncladVanguard_JointHousing_2_l",
+          "/Game/Crusader/Robots/IroncladVanguard/Parts/IroncladVanguard_JointHousing_3_l.IroncladVanguard_JointHousing_3_l",
+          "/Game/Crusader/Robots/IroncladVanguard/Parts/IroncladVanguard_Axle_0_l.IroncladVanguard_Axle_0_l",
+          "/Game/Crusader/Robots/IroncladVanguard/Parts/IroncladVanguard_Axle_1_l.IroncladVanguard_Axle_1_l",
+          "/Game/Crusader/Robots/IroncladVanguard/Parts/IroncladVanguard_Axle_2_l.IroncladVanguard_Axle_2_l",
+          "/Game/Crusader/Robots/IroncladVanguard/Parts/IroncladVanguard_Axle_3_l.IroncladVanguard_Axle_3_l",
+          "/Game/Crusader/Robots/IroncladVanguard/Parts/IroncladVanguard_Axle_0_r.IroncladVanguard_Axle_0_r",
+          "/Game/Crusader/Robots/IroncladVanguard/Parts/IroncladVanguard_Axle_1_r.IroncladVanguard_Axle_1_r",
+          "/Game/Crusader/Robots/IroncladVanguard/Parts/IroncladVanguard_Axle_2_r.IroncladVanguard_Axle_2_r",
+          "/Game/Crusader/Robots/IroncladVanguard/Parts/IroncladVanguard_Axle_3_r.IroncladVanguard_Axle_3_r"
+        ],
+        "lod_validation": [
+          {
+            "lod": 0,
+            "triangles": 539647,
+            "height_cm": 180.01872072555125,
+            "sampled_triangles": 2050,
+            "sampled_vertices": 6105,
+            "sampled_bones": 9,
+            "maximum_influences": 1
+          },
+          {
+            "lod": 1,
+            "triangles": 269823,
+            "height_cm": 180.02711305953562,
+            "sampled_triangles": 2050,
+            "sampled_vertices": 6057,
+            "sampled_bones": 9,
+            "maximum_influences": 1
+          },
+          {
+            "lod": 2,
+            "triangles": 134910,
+            "height_cm": 180.09372453569085,
+            "sampled_triangles": 2050,
+            "sampled_vertices": 5974,
+            "sampled_bones": 9,
+            "maximum_influences": 1
+          }
+        ],
+        "animated_bones": [
+          "upper_leg_l",
+          "middle_leg_l",
+          "lower_leg_l",
+          "foot_l",
+          "upper_leg_r",
+          "middle_leg_r",
+          "lower_leg_r",
+          "foot_r"
+        ],
+        "bone_scales_unit": true
+      }
+    },
+    {
+      "name": "IroncladSentinel",
+      "passed": true,
+      "fbx_sha256": "1e5122f59fdd31be0cfd325f00c60f2278a61c068e6481690ebf5bca2499daad",
+      "blender": {
+        "name": "IroncladSentinel",
+        "passed": true,
+        "parts": 29,
+        "poses": [
+          {
+            "frame": 1,
+            "maximum_edge_length_change_cm": 0.0,
+            "maximum_travel_cm": 0.0,
+            "piston_alignment_errors_degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "frame": 16,
+            "maximum_edge_length_change_cm": 2.0384788513183594e-05,
+            "maximum_travel_cm": 9.51826286315918,
+            "piston_alignment_errors_degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "frame": 31,
+            "maximum_edge_length_change_cm": 2.092123031616211e-05,
+            "maximum_travel_cm": 19.38958168029785,
+            "piston_alignment_errors_degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "frame": 46,
+            "maximum_edge_length_change_cm": 2.7954578399658203e-05,
+            "maximum_travel_cm": 13.181312561035156,
+            "piston_alignment_errors_degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "frame": 61,
+            "maximum_edge_length_change_cm": 0.0,
+            "maximum_travel_cm": 0.0,
+            "piston_alignment_errors_degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "frame": 76,
+            "maximum_edge_length_change_cm": 2.041459083557129e-05,
+            "maximum_travel_cm": 13.183882713317871,
+            "piston_alignment_errors_degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "frame": 91,
+            "maximum_edge_length_change_cm": 2.086162567138672e-05,
+            "maximum_travel_cm": 19.393333435058594,
+            "piston_alignment_errors_degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "frame": 106,
+            "maximum_edge_length_change_cm": 2.1219253540039062e-05,
+            "maximum_travel_cm": 9.520139694213867,
+            "piston_alignment_errors_degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "frame": 121,
+            "maximum_edge_length_change_cm": 0.0,
+            "maximum_travel_cm": 0.0,
+            "piston_alignment_errors_degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "maximum_edge_length_change_cm": 2.7954578399658203e-05,
+        "foot_ik": [
+          {
+            "offset_cm": [
+              0,
+              0,
+              5
+            ],
+            "errors_cm": [
+              2.1409935303348206e-05,
+              1.164107858250971e-05
+            ]
+          },
+          {
+            "offset_cm": [
+              0,
+              -8,
+              5
+            ],
+            "errors_cm": [
+              2.0631129887374818e-05,
+              1.9660499694908432e-05
+            ]
+          },
+          {
+            "offset_cm": [
+              0,
+              8,
+              5
+            ],
+            "errors_cm": [
+              1.9451215795870913e-05,
+              1.982174843866971e-05
+            ]
+          },
+          {
+            "offset_cm": [
+              0,
+              0,
+              0
+            ],
+            "errors_cm": [
+              7.448434520632414e-06,
+              5.56082906231432e-06
+            ]
+          }
+        ],
+        "fbx_parts": 29,
+        "fbx_bones": 14,
+        "maximum_influences": 1
+      },
+      "unreal": {
+        "name": "IroncladSentinel",
+        "mesh": "/Game/Crusader/Robots/IroncladSentinel/IroncladSentinel.IroncladSentinel",
+        "skeleton": "/Game/Crusader/Robots/IroncladSentinel/IroncladSentinel_Skeleton.IroncladSentinel_Skeleton",
+        "animation": "/Game/Crusader/Robots/IroncladSentinel/IroncladSentinel_JointCheck.IroncladSentinel_JointCheck",
+        "preview": "/Game/Crusader/Robots/IroncladSentinel/BP_IroncladSentinel_Preview.BP_IroncladSentinel_Preview",
+        "lods": 3,
+        "modules": [
+          "/Game/Crusader/Robots/IroncladSentinel/Parts/IroncladSentinel_Chassis.IroncladSentinel_Chassis",
+          "/Game/Crusader/Robots/IroncladSentinel/Parts/IroncladSentinel_foot_r.IroncladSentinel_foot_r",
+          "/Game/Crusader/Robots/IroncladSentinel/Parts/IroncladSentinel_JointHousing_0_r.IroncladSentinel_JointHousing_0_r",
+          "/Game/Crusader/Robots/IroncladSentinel/Parts/IroncladSentinel_JointHousing_3_r.IroncladSentinel_JointHousing_3_r",
+          "/Game/Crusader/Robots/IroncladSentinel/Parts/IroncladSentinel_upper_leg_r.IroncladSentinel_upper_leg_r",
+          "/Game/Crusader/Robots/IroncladSentinel/Parts/IroncladSentinel_JointHousing_2_r.IroncladSentinel_JointHousing_2_r",
+          "/Game/Crusader/Robots/IroncladSentinel/Parts/IroncladSentinel_lower_leg_r.IroncladSentinel_lower_leg_r",
+          "/Game/Crusader/Robots/IroncladSentinel/Parts/IroncladSentinel_middle_leg_r.IroncladSentinel_middle_leg_r",
+          "/Game/Crusader/Robots/IroncladSentinel/Parts/IroncladSentinel_JointHousing_1_r.IroncladSentinel_JointHousing_1_r",
+          "/Game/Crusader/Robots/IroncladSentinel/Parts/IroncladSentinel_JointHousing_0_l.IroncladSentinel_JointHousing_0_l",
+          "/Game/Crusader/Robots/IroncladSentinel/Parts/IroncladSentinel_upper_leg_l.IroncladSentinel_upper_leg_l",
+          "/Game/Crusader/Robots/IroncladSentinel/Parts/IroncladSentinel_JointHousing_1_l.IroncladSentinel_JointHousing_1_l",
+          "/Game/Crusader/Robots/IroncladSentinel/Parts/IroncladSentinel_foot_l.IroncladSentinel_foot_l",
+          "/Game/Crusader/Robots/IroncladSentinel/Parts/IroncladSentinel_JointHousing_2_l.IroncladSentinel_JointHousing_2_l",
+          "/Game/Crusader/Robots/IroncladSentinel/Parts/IroncladSentinel_middle_leg_l.IroncladSentinel_middle_leg_l",
+          "/Game/Crusader/Robots/IroncladSentinel/Parts/IroncladSentinel_lower_leg_l.IroncladSentinel_lower_leg_l",
+          "/Game/Crusader/Robots/IroncladSentinel/Parts/IroncladSentinel_JointHousing_3_l.IroncladSentinel_JointHousing_3_l",
+          "/Game/Crusader/Robots/IroncladSentinel/Parts/IroncladSentinel_Axle_0_l.IroncladSentinel_Axle_0_l",
+          "/Game/Crusader/Robots/IroncladSentinel/Parts/IroncladSentinel_Axle_1_l.IroncladSentinel_Axle_1_l",
+          "/Game/Crusader/Robots/IroncladSentinel/Parts/IroncladSentinel_Axle_2_l.IroncladSentinel_Axle_2_l",
+          "/Game/Crusader/Robots/IroncladSentinel/Parts/IroncladSentinel_Axle_3_l.IroncladSentinel_Axle_3_l",
+          "/Game/Crusader/Robots/IroncladSentinel/Parts/IroncladSentinel_Piston_housing_l.IroncladSentinel_Piston_housing_l",
+          "/Game/Crusader/Robots/IroncladSentinel/Parts/IroncladSentinel_Piston_rod_l.IroncladSentinel_Piston_rod_l",
+          "/Game/Crusader/Robots/IroncladSentinel/Parts/IroncladSentinel_Axle_0_r.IroncladSentinel_Axle_0_r",
+          "/Game/Crusader/Robots/IroncladSentinel/Parts/IroncladSentinel_Axle_1_r.IroncladSentinel_Axle_1_r",
+          "/Game/Crusader/Robots/IroncladSentinel/Parts/IroncladSentinel_Axle_2_r.IroncladSentinel_Axle_2_r",
+          "/Game/Crusader/Robots/IroncladSentinel/Parts/IroncladSentinel_Axle_3_r.IroncladSentinel_Axle_3_r",
+          "/Game/Crusader/Robots/IroncladSentinel/Parts/IroncladSentinel_Piston_housing_r.IroncladSentinel_Piston_housing_r",
+          "/Game/Crusader/Robots/IroncladSentinel/Parts/IroncladSentinel_Piston_rod_r.IroncladSentinel_Piston_rod_r"
+        ],
+        "lod_validation": [
+          {
+            "lod": 0,
+            "triangles": 539869,
+            "height_cm": 180.0320082977414,
+            "sampled_triangles": 2050,
+            "sampled_vertices": 6104,
+            "sampled_bones": 12,
+            "maximum_influences": 1
+          },
+          {
+            "lod": 1,
+            "triangles": 269933,
+            "height_cm": 180.03159631043673,
+            "sampled_triangles": 2050,
+            "sampled_vertices": 6071,
+            "sampled_bones": 11,
+            "maximum_influences": 1
+          },
+          {
+            "lod": 2,
+            "triangles": 134966,
+            "height_cm": 180.2426818832755,
+            "sampled_triangles": 2050,
+            "sampled_vertices": 5992,
+            "sampled_bones": 10,
+            "maximum_influences": 1
+          }
+        ],
+        "animated_bones": [
+          "upper_leg_l",
+          "middle_leg_l",
+          "lower_leg_l",
+          "foot_l",
+          "piston_rod_l",
+          "piston_housing_l",
+          "upper_leg_r",
+          "middle_leg_r",
+          "lower_leg_r",
+          "foot_r",
+          "piston_rod_r",
+          "piston_housing_r"
+        ],
+        "bone_scales_unit": true
+      }
+    }
+  ],
+  "unreal_playback": {
+    "passed": true,
+    "robots": [
+      {
+        "name": "IronSentinel",
+        "rest_foot": [
+          28.50000381794939,
+          29992.00034188899,
+          3014.897237900328
+        ],
+        "bent_foot": [
+          28.50000381794939,
+          29987.12343555284,
+          3000.4281664236078
+        ],
+        "foot_travel_cm": 15.268865210290702,
+        "passed": true
+      },
+      {
+        "name": "SentinelWalker",
+        "rest_foot": [
+          815.2999992370605,
+          29987.605425017977,
+          3014.9034447944555
+        ],
+        "bent_foot": [
+          815.2999992370605,
+          29980.603149445877,
+          3006.522538876313
+        ],
+        "foot_travel_cm": 10.921146789435117,
+        "passed": true
+      },
+      {
+        "name": "APP5200IndustrialM",
+        "rest_foot": [
+          1624.9999980926514,
+          29998.999769380567,
+          3017.8988044269063
+        ],
+        "bent_foot": [
+          1624.9999980926514,
+          29994.97751583799,
+          3010.333036846182
+        ],
+        "foot_travel_cm": 8.568509943176892,
+        "passed": true
+      },
+      {
+        "name": "IroncladTitan",
+        "rest_foot": [
+          2430.4999980926514,
+          29998.59918497218,
+          3017.3021533326523
+        ],
+        "bent_foot": [
+          2430.4999980926514,
+          29993.89716571412,
+          3003.5353402050364
+        ],
+        "foot_travel_cm": 14.54765028428538,
+        "passed": true
+      },
+      {
+        "name": "IroncladVanguard",
+        "rest_foot": [
+          3235.9999961853027,
+          29989.00325308685,
+          3026.9992493750965
+        ],
+        "bent_foot": [
+          3235.9999961853027,
+          29983.519490674476,
+          3018.6206261088855
+        ],
+        "foot_travel_cm": 10.013639599687822,
+        "passed": true
+      },
+      {
+        "name": "IroncladSentinel",
+        "rest_foot": [
+          4029.0,
+          29990.997980494612,
+          3015.1006437622013
+        ],
+        "bent_foot": [
+          4029.0,
+          29986.12765594016,
+          2999.3626858031585
+        ],
+        "foot_travel_cm": 16.474324932643185,
+        "passed": true
+      }
+    ],
+    "error": null
+  }
+}

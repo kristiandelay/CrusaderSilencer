@@ -11,6 +11,8 @@ visual_out.mkdir(parents=True, exist_ok=True)
 visual_widget = u.get_editor_subsystem(u.EditorUtilitySubsystem).spawn_and_register_tab(u.load_asset('/Game/Widgets/GameAnimationWidget'))
 visual_test = {'phase':'setup', 'index':0, 'angle':0, 'next':0, 'results':[], 'busy':False, 'deadline':time.monotonic()+240}
 visual_names = ['Echo', 'Twinblast', 'Kellan', 'Manny', 'Quinn', 'UE4_Mannequin', 'CrimsonSentinel', 'ObsidianSentinel', 'RegalCommander', 'TheSteadfastOfficer', 'UrbanTrailblazer']
+visual_names += [r['name'] for r in json.loads((visual_out.parents[1]/'resources/NPCAdditions.json').read_text()) if r.get('imported')]
+visual_test['deadline']=time.monotonic()+max(240,len(visual_names)*40)
 
 
 def visual_input(pawn, name, value):

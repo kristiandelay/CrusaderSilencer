@@ -1,0 +1,39 @@
+{
+  "name": "RadioactiveBarrel",
+  "archive": "RadioactiveBarrel.zip",
+  "archive_sha256": "19d8f5986c6fa0ab0a5fa8de565efd2169530a51ec08b0113d7a68c947c20ef4",
+  "files": [
+    {
+      "original": "Meshy_AI_Radioactive_Barrel_1008205051_texture_fbx/Meshy_AI_Radioactive_Barrel_1008205051_texture.fbx",
+      "file": "RadioactiveBarrel.fbx",
+      "bytes": 20146428,
+      "sha256": "845cb293c901a08034452c032750b38dc7e6ed0a0baeb043a8f7905061b0a880"
+    },
+    {
+      "original": "Meshy_AI_Radioactive_Barrel_1008205051_texture_fbx/Meshy_AI_Radioactive_Barrel_1008205051_texture.png",
+      "file": "RadioactiveBarrel_BaseColor.png",
+      "bytes": 5241200,
+      "sha256": "625ea17259add384b0a41b5d3623e74b89ad345f28702b72d26b84c419b8c582"
+    },
+    {
+      "original": "Meshy_AI_Radioactive_Barrel_1008205051_texture_fbx/Meshy_AI_Radioactive_Barrel_1008205051_texture_metallic.png",
+      "file": "RadioactiveBarrel_Metallic.png",
+      "bytes": 521878,
+      "sha256": "ad3d81a0404c72330c0c52eeb05c0aa4ac8f6aa05149fd6cb8790f7fa8aacbff"
+    },
+    {
+      "original": "Meshy_AI_Radioactive_Barrel_1008205051_texture_fbx/Meshy_AI_Radioactive_Barrel_1008205051_texture_normal.png",
+      "file": "RadioactiveBarrel_Normal.png",
+      "bytes": 3605310,
+      "sha256": "6dc00488f04026a2dfa50a170c22446df38a575fe8c0afb263e8e3090a108e6a"
+    },
+    {
+      "original": "Meshy_AI_Radioactive_Barrel_1008205051_texture_fbx/Meshy_AI_Radioactive_Barrel_1008205051_texture_roughness.png",
+      "file": "RadioactiveBarrel_Roughness.png",
+      "bytes": 1364309,
+      "sha256": "b36d5987d9206960356c5db8d3cae2866c7b1fd0658709b4a7cbe687d17ba603"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Radioactive_Barrel_1008205051_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level3/props/RadioactiveBarrel.zip"
+}

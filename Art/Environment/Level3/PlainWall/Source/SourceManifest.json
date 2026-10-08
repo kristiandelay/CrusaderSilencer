@@ -1,0 +1,39 @@
+{
+  "name": "PlainWall",
+  "archive": "PlainWall.zip",
+  "archive_sha256": "b3d9963c9f7f3f99b17942bf0664778044569fa9849fe5040f16216dd4046685",
+  "files": [
+    {
+      "original": "Meshy_AI_Plain_Wall_1008201926_texture_fbx/Meshy_AI_Plain_Wall_1008201926_texture.fbx",
+      "file": "PlainWall.fbx",
+      "bytes": 10049724,
+      "sha256": "e371215b4035c95eeb8730321193981abe379fbbc62e61cf871a749d952889b5"
+    },
+    {
+      "original": "Meshy_AI_Plain_Wall_1008201926_texture_fbx/Meshy_AI_Plain_Wall_1008201926_texture.png",
+      "file": "PlainWall_BaseColor.png",
+      "bytes": 4265275,
+      "sha256": "66487b99002efb51e676483dc3d81821d2cbdfbe5852cdd0fa030b8d0b92323a"
+    },
+    {
+      "original": "Meshy_AI_Plain_Wall_1008201926_texture_fbx/Meshy_AI_Plain_Wall_1008201926_texture_metallic.png",
+      "file": "PlainWall_Metallic.png",
+      "bytes": 180141,
+      "sha256": "a97ce7cfd49d24d6e195c4f704db0a21b99f4670e1b5e9d3c7872f1d219add19"
+    },
+    {
+      "original": "Meshy_AI_Plain_Wall_1008201926_texture_fbx/Meshy_AI_Plain_Wall_1008201926_texture_normal.png",
+      "file": "PlainWall_Normal.png",
+      "bytes": 3594363,
+      "sha256": "831c3a917a23246ca4a3b2a3c91bce72caf6ed4953bc4861fae777931c4cf92f"
+    },
+    {
+      "original": "Meshy_AI_Plain_Wall_1008201926_texture_fbx/Meshy_AI_Plain_Wall_1008201926_texture_roughness.png",
+      "file": "PlainWall_Roughness.png",
+      "bytes": 1238307,
+      "sha256": "58daed7f3c08b56d4c1ff8e572731f824e17a34baccae77494a3bdda4dec411e"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Plain_Wall_1008201926_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level3/PlainWall.zip"
+}

@@ -21,6 +21,10 @@
 #include "K2Node_VariableGet.h"
 #include "EnhancedInputComponent.h"
 #include "GameFramework/Pawn.h"
+#include "GameFramework/PlayerController.h"
+#include "GameFramework/PlayerInput.h"
+#include "GenericPlatform/GenericPlatformInputDeviceMapper.h"
+#include "InputKeyEventArgs.h"
 #include "AbilitySystemGlobals.h"
 #include "AbilitySystemComponent.h"
 #include "Abilities/GameplayAbility.h"
@@ -45,6 +49,18 @@
 #include "Crusader/CRWeaponEffects.h"
 #include "Crusader/CRFootsteps.h"
 #include "Crusader/CRCrowdAI.h"
+
+bool UCRBlueprintTools::InjectPIEKey(APawn* Pawn, FKey Key, bool bPressed)
+{
+    if (!Pawn || !Pawn->GetWorld() || Pawn->GetWorld()->WorldType != EWorldType::PIE || !Key.IsValid()) return false;
+    auto* Controller = Cast<APlayerController>(Pawn->GetController());
+    if (!Controller || !Controller->IsLocalController() || !Controller->PlayerInput) return false;
+    const auto Device = IPlatformInputDeviceMapper::Get().GetPrimaryInputDeviceForUser(Controller->GetPlatformUserId());
+    auto Args = FInputKeyEventArgs::CreateSimulated(Key,
+        bPressed ? IE_Pressed : IE_Released, bPressed ? 1.f : 0.f, 0, Device);
+    Args.DeltaTime = Pawn->GetWorld()->GetDeltaSeconds();
+    return Controller->PlayerInput->InputKey(Args);
+}
 
 bool UCRBlueprintTools::ConfigureCrowdVisualGate(UBlueprint* Manager)
 {
@@ -463,7 +479,20 @@ bool ConfigureRecoveryPosePath(UEdGraph* Graph, UEdGraphNode* SnapshotBlend)
     UAnimGraphNode_Slot* Slot = nullptr;
     for (UEdGraphNode* Node : Graph->Nodes)
     {
-        if (Node->NodeComment == TEXT("Baseline recovery without locomotion IK")) return true;
+        if (Node->NodeComment == TEXT("Baseline recovery without locomotion IK")
+            || Node->NodeComment == TEXT("Full-body actions without locomotion IK"))
+        {
+            // Migrate the existing get-up selector without inserting a second path.
+            auto* Alpha = Node->FindPin(TEXT("Alpha"));
+            auto* Weight = Alpha && Alpha->LinkedTo.Num() == 1
+                ? Cast<UK2Node_VariableGet>(Alpha->LinkedTo[0]->GetOwningNode()) : nullptr;
+            if (!Weight) return false;
+            Alpha->BreakAllPinLinks();
+            Weight->VariableReference.SetSelfMember(TEXT("LocomotionCorrectionBypassWeight"));
+            Weight->ReconstructNode();
+            Node->NodeComment = TEXT("Full-body actions without locomotion IK");
+            return Graph->GetSchema()->TryCreateConnection(Weight->GetValuePin(), Alpha);
+        }
         if (auto* Candidate = Cast<UAnimGraphNode_Slot>(Node))
             if (Candidate->Node.SlotName == TEXT("DefaultSlot")) Slot = Candidate;
     }
@@ -484,14 +513,14 @@ bool ConfigureRecoveryPosePath(UEdGraph* Graph, UEdGraphNode* SnapshotBlend)
     for (auto* Consumer : Consumers)
         if (!Schema->TryCreateConnection(Normal->FindPinChecked(TEXT("Pose")), Consumer)) return false;
     auto* Select = AddBaselineAnimNode<UAnimGraphNode_TwoWayBlend>(Graph, SnapshotBlend->NodePosX-200, SnapshotBlend->NodePosY-150);
-    Select->NodeComment = TEXT("Baseline recovery without locomotion IK");
+    Select->NodeComment = TEXT("Full-body actions without locomotion IK");
     // Keep the normal graph current so returning to locomotion cannot restore
     // stale root offsets or planted feet from before the fall.
     auto* AlwaysUpdate = FindFProperty<FBoolProperty>(FAnimNode_TwoWayBlend::StaticStruct(), TEXT("bAlwaysUpdateChildren"));
     check(AlwaysUpdate);
     AlwaysUpdate->SetPropertyValue_InContainer(&Select->BlendNode, true);
     auto* Weight = AddBaselineAnimNode<UK2Node_VariableGet>(Graph, Select->NodePosX-300, Select->NodePosY+200);
-    Weight->VariableReference.SetSelfMember(TEXT("RecoveryAnimationWeight"));
+    Weight->VariableReference.SetSelfMember(TEXT("LocomotionCorrectionBypassWeight"));
     Weight->ReconstructNode();
     auto* NormalOutput = SnapshotBlend->FindPinChecked(TEXT("A"))->LinkedTo[0];
     SnapshotBlend->FindPinChecked(TEXT("A"))->BreakAllPinLinks();
@@ -587,6 +616,111 @@ bool UCRBlueprintTools::ConfigurePhysicalAnimation(UBlueprint* Character, UAnimB
     FBlueprintEditorUtils::MarkBlueprintAsStructurallyModified(Character);
     FBlueprintEditorUtils::MarkBlueprintAsStructurallyModified(Animation);
     return true;
+}
+
+bool UCRBlueprintTools::ConfigureThrowUpperBody(UAnimBlueprint* Animation)
+{
+    if (!Animation || !Animation->TargetSkeleton) return false;
+    // A separate group lets the throw and full-body slide run concurrently.
+    Animation->TargetSkeleton->SetSlotGroupName(TEXT("ThrowUpperBody"),TEXT("ThrowGroup"));
+    Animation->TargetSkeleton->MarkPackageDirty();
+    TArray<UEdGraph*> Graphs;
+    Animation->GetAllGraphs(Graphs);
+    for (UEdGraph* Graph : Graphs)
+    {
+        if (Graph->GetFName() != TEXT("AnimGraph")) continue;
+        UAnimGraphNode_Slot* FullBody = nullptr;
+        UAnimGraphNode_Slot* UpperSlot = nullptr;
+        UAnimGraphNode_SaveCachedPose* Cache = nullptr;
+        UAnimGraphNode_LayeredBoneBlend* Blend = nullptr;
+        bool bHasTorsoRotation = false;
+        for (UEdGraphNode* Node : Graph->Nodes)
+        {
+            if (Node->NodeComment == TEXT("Throw upper body with GASP locomotion")
+                || Node->NodeComment == TEXT("Throw upper body over locomotion and slide")) Blend = Cast<UAnimGraphNode_LayeredBoneBlend>(Node);
+            if (Node->NodeComment == TEXT("Throw torso yaw while sliding")) bHasTorsoRotation = true;
+            if (auto* Candidate = Cast<UAnimGraphNode_SaveCachedPose>(Node))
+                if (Candidate->CacheName == TEXT("ThrowLocomotionBase")) Cache = Candidate;
+            if (auto* Slot = Cast<UAnimGraphNode_Slot>(Node))
+            {
+                if (Slot->Node.SlotName == TEXT("DefaultSlot")) FullBody = Slot;
+                if (Slot->Node.SlotName == TEXT("ThrowUpperBody")) UpperSlot = Slot;
+            }
+        }
+        if (!FullBody || FullBody->FindPinChecked(TEXT("Source"))->LinkedTo.Num() != 1) return false;
+        const auto* Schema = Graph->GetSchema();
+        if (Blend)
+        {
+            if (!Cache || !UpperSlot) return false;
+            if (Blend->NodeComment == TEXT("Throw upper body with GASP locomotion"))
+            {
+                // Migrate the previous walking-only layer to after DefaultSlot.
+                // Its base now includes the slide's pelvis, legs and foot targets.
+                auto* Source = Cache->FindPinChecked(TEXT("Pose"))->LinkedTo[0];
+                const auto Consumers = FullBody->FindPinChecked(TEXT("Pose"))->LinkedTo;
+                Cache->FindPinChecked(TEXT("Pose"))->BreakAllPinLinks();
+                FullBody->FindPinChecked(TEXT("Source"))->BreakAllPinLinks();
+                FullBody->FindPinChecked(TEXT("Pose"))->BreakAllPinLinks();
+                if (!Schema->TryCreateConnection(Source,FullBody->FindPinChecked(TEXT("Source")))
+                    || !Schema->TryCreateConnection(FullBody->FindPinChecked(TEXT("Pose")),Cache->FindPinChecked(TEXT("Pose")))) return false;
+                for (auto* Consumer : Consumers)
+                    if (!Schema->TryCreateConnection(Blend->FindPinChecked(TEXT("Pose")),Consumer)) return false;
+            }
+        }
+        else
+        {
+            Cache = AddBaselineAnimNode<UAnimGraphNode_SaveCachedPose>(Graph,FullBody->NodePosX+200,FullBody->NodePosY-300);
+            Cache->CacheName = TEXT("ThrowLocomotionBase");
+            auto* Base = AddBaselineAnimNode<UAnimGraphNode_UseCachedPose>(Graph,FullBody->NodePosX+400,FullBody->NodePosY-200);
+            auto* UpperBase = AddBaselineAnimNode<UAnimGraphNode_UseCachedPose>(Graph,FullBody->NodePosX+400,FullBody->NodePosY+200);
+            Base->SaveCachedPoseNode = UpperBase->SaveCachedPoseNode = Cache;
+            UpperSlot = AddBaselineAnimNode<UAnimGraphNode_Slot>(Graph,FullBody->NodePosX+600,FullBody->NodePosY+200);
+            UpperSlot->Node.SlotName = TEXT("ThrowUpperBody");
+            UpperSlot->Node.bAlwaysUpdateSourcePose = true;
+            Blend = AddBaselineAnimNode<UAnimGraphNode_LayeredBoneBlend>(Graph,FullBody->NodePosX+900,FullBody->NodePosY);
+            Blend->Node.BlendPoses.SetNum(1);
+            Blend->Node.BlendWeights = {1.f};
+            Blend->Node.LayerSetup.SetNum(1);
+            FBranchFilter Spine;
+            Spine.BoneName = TEXT("spine_01");
+            Spine.BlendDepth = 3;
+            Blend->Node.LayerSetup[0].BranchFilters.Add(Spine);
+            Blend->Node.bMeshSpaceRotationBlend = true;
+            Blend->Node.CurveBlendOption = ECurveBlendOption::UseBasePose;
+            Blend->ReconstructNode();
+            const auto Consumers = FullBody->FindPinChecked(TEXT("Pose"))->LinkedTo;
+            FullBody->FindPinChecked(TEXT("Pose"))->BreakAllPinLinks();
+            if (!Schema->TryCreateConnection(FullBody->FindPinChecked(TEXT("Pose")),Cache->FindPinChecked(TEXT("Pose")))
+                || !Schema->TryCreateConnection(Base->FindPinChecked(TEXT("Pose")),Blend->FindPinChecked(TEXT("BasePose")))
+                || !Schema->TryCreateConnection(UpperBase->FindPinChecked(TEXT("Pose")),UpperSlot->FindPinChecked(TEXT("Source")))
+                || !Schema->TryCreateConnection(UpperSlot->FindPinChecked(TEXT("Pose")),Blend->FindPinChecked(TEXT("BlendPoses_0")))) return false;
+            for (auto* Consumer : Consumers)
+                if (!Schema->TryCreateConnection(Blend->FindPinChecked(TEXT("Pose")),Consumer)) return false;
+        }
+        Blend->NodeComment = TEXT("Throw upper body over locomotion and slide");
+        if (!bHasTorsoRotation)
+        {
+            auto* ToComponent = AddBaselineAnimNode<UAnimGraphNode_LocalToComponentSpace>(Graph,UpperSlot->NodePosX+200,UpperSlot->NodePosY+200);
+            auto* Rotation = AddBaselineAnimNode<UAnimGraphNode_ModifyBone>(Graph,UpperSlot->NodePosX+400,UpperSlot->NodePosY+200);
+            Rotation->NodeComment = TEXT("Throw torso yaw while sliding");
+            Rotation->Node.BoneToModify.BoneName = TEXT("root");
+            Rotation->Node.RotationMode = BMM_Additive;
+            Rotation->Node.RotationSpace = BCS_ComponentSpace;
+            auto* ToLocal = AddBaselineAnimNode<UAnimGraphNode_ComponentToLocalSpace>(Graph,UpperSlot->NodePosX+600,UpperSlot->NodePosY+200);
+            auto* Weight = AddBaselineAnimNode<UK2Node_VariableGet>(Graph,UpperSlot->NodePosX+200,UpperSlot->NodePosY+500);
+            Weight->VariableReference.SetSelfMember(TEXT("ThrowRootRotation"));
+            Weight->ReconstructNode();
+            Blend->FindPinChecked(TEXT("BlendPoses_0"))->BreakAllPinLinks();
+            if (!Schema->TryCreateConnection(UpperSlot->FindPinChecked(TEXT("Pose")),ToComponent->FindPinChecked(TEXT("LocalPose")))
+                || !Schema->TryCreateConnection(ToComponent->FindPinChecked(TEXT("ComponentPose")),Rotation->FindPinChecked(TEXT("ComponentPose")))
+                || !Schema->TryCreateConnection(Weight->GetValuePin(),Rotation->FindPinChecked(TEXT("Rotation")))
+                || !Schema->TryCreateConnection(Rotation->FindPinChecked(TEXT("Pose")),ToLocal->FindPinChecked(TEXT("ComponentPose")))
+                || !Schema->TryCreateConnection(ToLocal->FindPinChecked(TEXT("Pose")),Blend->FindPinChecked(TEXT("BlendPoses_0")))) return false;
+        }
+        FBlueprintEditorUtils::MarkBlueprintAsStructurallyModified(Animation);
+        return true;
+    }
+    return false;
 }
 
 bool UCRBlueprintTools::BuildWeaponOverlay(UAnimBlueprint* Blueprint, UAnimSequence* FallbackPose, UBlendSpace* FallbackAimOffset)

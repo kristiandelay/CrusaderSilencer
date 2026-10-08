@@ -1,0 +1,39 @@
+{
+  "name": "ObsidianServerRack",
+  "archive": "ObsidianServerRack.zip",
+  "archive_sha256": "e9da4b8e66f13ba83f292ad0390f2c2854ffcbb7fe7bc85a8f74b7cb4e8e71b3",
+  "files": [
+    {
+      "original": "Meshy_AI_Obsidian_Server_Rack_1008204740_texture_fbx/Meshy_AI_Obsidian_Server_Rack_1008204740_texture.fbx",
+      "file": "ObsidianServerRack.fbx",
+      "bytes": 31115452,
+      "sha256": "7ee260386e81f0230bb57afd2097e0677af33cab11b60181614e93dd25dd0778"
+    },
+    {
+      "original": "Meshy_AI_Obsidian_Server_Rack_1008204740_texture_fbx/Meshy_AI_Obsidian_Server_Rack_1008204740_texture.png",
+      "file": "ObsidianServerRack_BaseColor.png",
+      "bytes": 4854409,
+      "sha256": "3bc5e1298bcc32d62ed346416a7af4ca02fc11827694045efeffb17170413be3"
+    },
+    {
+      "original": "Meshy_AI_Obsidian_Server_Rack_1008204740_texture_fbx/Meshy_AI_Obsidian_Server_Rack_1008204740_texture_metallic.png",
+      "file": "ObsidianServerRack_Metallic.png",
+      "bytes": 115895,
+      "sha256": "b471a5961923e3f5b0d4744bb75cdffd06ffab04a826fa1aa1d72bde3660c1dc"
+    },
+    {
+      "original": "Meshy_AI_Obsidian_Server_Rack_1008204740_texture_fbx/Meshy_AI_Obsidian_Server_Rack_1008204740_texture_normal.png",
+      "file": "ObsidianServerRack_Normal.png",
+      "bytes": 4460970,
+      "sha256": "876feb18d63a503b10ab72cdfb04852c144b14cdda756919b444e475d0cdd880"
+    },
+    {
+      "original": "Meshy_AI_Obsidian_Server_Rack_1008204740_texture_fbx/Meshy_AI_Obsidian_Server_Rack_1008204740_texture_roughness.png",
+      "file": "ObsidianServerRack_Roughness.png",
+      "bytes": 1753479,
+      "sha256": "47fd5481e0122eb606dab6368a9bc906222c73de9de3f76fb416c3afd810d0a9"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Obsidian_Server_Rack_1008204740_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level3/props/ObsidianServerRack.zip"
+}

@@ -1,0 +1,39 @@
+{
+  "name": "ArcanePowerCell",
+  "archive": "ArcanePowerCell.zip",
+  "archive_sha256": "e0e4db5305fe509da3b512ad8e06caed6a900362b50aa75edac62c098283030e",
+  "files": [
+    {
+      "original": "Meshy_AI_Arcane_Power_Cell_1008201536_texture_fbx/Meshy_AI_Arcane_Power_Cell_1008201536_texture.fbx",
+      "file": "ArcanePowerCell.fbx",
+      "bytes": 16270508,
+      "sha256": "9ad8243eb8494195f2b885efeb284a70dec3de0326998cca23f878fc406f04bf"
+    },
+    {
+      "original": "Meshy_AI_Arcane_Power_Cell_1008201536_texture_fbx/Meshy_AI_Arcane_Power_Cell_1008201536_texture.png",
+      "file": "ArcanePowerCell_BaseColor.png",
+      "bytes": 5427908,
+      "sha256": "e3e86b39a10c70cade2fa7e1d0c6adfd7d1641b6ef540c124955c2acbba25a89"
+    },
+    {
+      "original": "Meshy_AI_Arcane_Power_Cell_1008201536_texture_fbx/Meshy_AI_Arcane_Power_Cell_1008201536_texture_metallic.png",
+      "file": "ArcanePowerCell_Metallic.png",
+      "bytes": 1207430,
+      "sha256": "a9b3d53b5d9cde8e9aa94c0b1287ede8436d34c00ceb49776d74d2babab01575"
+    },
+    {
+      "original": "Meshy_AI_Arcane_Power_Cell_1008201536_texture_fbx/Meshy_AI_Arcane_Power_Cell_1008201536_texture_normal.png",
+      "file": "ArcanePowerCell_Normal.png",
+      "bytes": 4003316,
+      "sha256": "43b109304c32888efd06bd84bc27b144c8043463ab9026f2a9e179da350bf1af"
+    },
+    {
+      "original": "Meshy_AI_Arcane_Power_Cell_1008201536_texture_fbx/Meshy_AI_Arcane_Power_Cell_1008201536_texture_roughness.png",
+      "file": "ArcanePowerCell_Roughness.png",
+      "bytes": 1313884,
+      "sha256": "853d38be2ef0df05ad165931109e57df438ef1db7f1076b1941aa982945c2e82"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Arcane_Power_Cell_1008201536_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level3/ArcanePowerCell.zip"
+}

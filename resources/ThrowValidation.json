@@ -1,0 +1,448 @@
+{
+  "passed": true,
+  "validated_utc": "2026-10-08T01:38:56.275656+00:00",
+  "checks": {
+    "Throw/standalone.json": [
+      {
+        "case": "standing_throw_aim_pose",
+        "pelvis_heights_cm": [
+          90.76389492971347,
+          86.98745508913551
+        ]
+      },
+      {
+        "case": "cancel_and_type_lock",
+        "remaining": 6
+      },
+      {
+        "case": "close_cover_cancels_release"
+      },
+      {
+        "case": "standing_throw_release_pose",
+        "pelvis_heights_cm": [
+          90.7932894602895,
+          87.01627053022548
+        ]
+      },
+      {
+        "case": "grenade_arc_bounce_fuse_damage_cover",
+        "arc_error_cm": 0.4296875,
+        "health_before": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "health_after": [
+          18.315200805664062,
+          100.0,
+          100.0
+        ],
+        "bounces": 10
+      },
+      {
+        "case": "smoke_fuse_and_sight_obstruction",
+        "duration": 12.0,
+        "remaining": 5
+      },
+      {
+        "case": "roll_weapon_visible_throw_blocked"
+      },
+      {
+        "case": "knockdown_cancels_without_consuming"
+      },
+      {
+        "case": "airborne_throw_blocked"
+      },
+      {
+        "case": "empty_inventory_blocked"
+      },
+      {
+        "case": "smoke_expiry_restores_sight"
+      }
+    ],
+    "Throw/network.json": [
+      {
+        "case": "<CRThrowableType.GRENADE: 0>",
+        "replication_error_cm": 70.82853694714291,
+        "remaining": 5,
+        "projectile_copies": 1,
+        "detonated_both": true
+      },
+      {
+        "case": "<CRThrowableType.SMOKE: 1>",
+        "replication_error_cm": 69.50570280558331,
+        "remaining": 5,
+        "projectile_copies": 1,
+        "detonated_both": true
+      },
+      {
+        "case": "network_cancel",
+        "inventory_unchanged": true
+      }
+    ],
+    "Roll/standalone.json": [
+      {
+        "case": "direction_0",
+        "rolls": 1,
+        "distance_cm": 394.38256305566574,
+        "delta": [
+          394.38256305566574,
+          0.0,
+          0.00099945068359375
+        ],
+        "weapon_visible": true,
+        "jump_blocked": true,
+        "capsule_lowered": true
+      },
+      {
+        "case": "direction_1",
+        "rolls": 1,
+        "distance_cm": 391.79922390377794,
+        "delta": [
+          274.48565866859826,
+          279.5787099134491,
+          0.00099945068359375
+        ],
+        "weapon_visible": true,
+        "jump_blocked": true,
+        "capsule_lowered": true
+      },
+      {
+        "case": "direction_2",
+        "rolls": 1,
+        "distance_cm": 392.58723380357424,
+        "delta": [
+          0.0,
+          392.58723380357424,
+          0.00099945068359375
+        ],
+        "weapon_visible": true,
+        "jump_blocked": true,
+        "capsule_lowered": true
+      },
+      {
+        "case": "direction_3",
+        "rolls": 1,
+        "distance_cm": 414.28555398187257,
+        "delta": [
+          -319.34699087785975,
+          263.91290164621205,
+          0.00099945068359375
+        ],
+        "weapon_visible": true,
+        "jump_blocked": true,
+        "capsule_lowered": true
+      },
+      {
+        "case": "direction_4",
+        "rolls": 1,
+        "distance_cm": 414.1383056640625,
+        "delta": [
+          -414.1383056640625,
+          0.0,
+          0.00099945068359375
+        ],
+        "weapon_visible": true,
+        "jump_blocked": true,
+        "capsule_lowered": true
+      },
+      {
+        "case": "direction_5",
+        "rolls": 1,
+        "distance_cm": 415.28091684880246,
+        "delta": [
+          -301.00318983496436,
+          -286.10368681294267,
+          0.00099945068359375
+        ],
+        "weapon_visible": true,
+        "jump_blocked": true,
+        "capsule_lowered": true
+      },
+      {
+        "case": "direction_6",
+        "rolls": 1,
+        "distance_cm": 389.978543995358,
+        "delta": [
+          0.0,
+          -389.978543995358,
+          0.00099945068359375
+        ],
+        "weapon_visible": true,
+        "jump_blocked": true,
+        "capsule_lowered": true
+      },
+      {
+        "case": "direction_7",
+        "rolls": 1,
+        "distance_cm": 391.7606721256427,
+        "delta": [
+          279.89772338915463,
+          -274.1052510732029,
+          0.00099945068359375
+        ],
+        "weapon_visible": true,
+        "jump_blocked": true,
+        "capsule_lowered": true
+      },
+      {
+        "case": "held_input",
+        "rolls": 1,
+        "distance_cm": 397.659707341325,
+        "delta": [
+          397.659707341325,
+          0.0,
+          0.00099945068359375
+        ],
+        "weapon_visible": true,
+        "jump_blocked": true,
+        "capsule_lowered": true
+      },
+      {
+        "case": "spam",
+        "rolls": 2,
+        "distance_cm": 794.8681645404631,
+        "delta": [
+          794.8681645404631,
+          0.0,
+          0.0019989013671875
+        ],
+        "weapon_visible": true,
+        "jump_blocked": true,
+        "capsule_lowered": true
+      },
+      {
+        "case": "airborne",
+        "blocked": true
+      },
+      {
+        "case": "slide",
+        "blocked": true
+      },
+      {
+        "case": "wall",
+        "rolls": 1,
+        "distance_cm": 139.48876073988686,
+        "delta": [
+          139.48876073988686,
+          0.0,
+          0.0009966784305106557
+        ],
+        "weapon_visible": true,
+        "jump_blocked": true,
+        "capsule_lowered": true
+      },
+      {
+        "case": "ragdoll",
+        "blocked": true
+      }
+    ],
+    "Roll/network.json": [
+      {
+        "client_direction": 0,
+        "host_direction": 4,
+        "roll_counts": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "distance_cm": [
+          419.71084370576136,
+          510.5755569428802,
+          393.4500420481563,
+          419.7157302641872
+        ],
+        "replication_error_cm": [
+          0.0047787687066993805,
+          0.0
+        ],
+        "weapon_visible_all": true
+      },
+      {
+        "client_direction": 1,
+        "host_direction": 5,
+        "roll_counts": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "distance_cm": [
+          419.00981107330136,
+          518.4979397238081,
+          396.1929310783005,
+          419.0412833560219
+        ],
+        "replication_error_cm": [
+          0.005475724802263974,
+          3.235946620830743e-06
+        ],
+        "weapon_visible_all": true
+      },
+      {
+        "client_direction": 2,
+        "host_direction": 6,
+        "roll_counts": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "distance_cm": [
+          398.11748898998735,
+          485.9976663422585,
+          399.4966852647067,
+          398.1189719837905
+        ],
+        "replication_error_cm": [
+          0.004382621446045627,
+          0.0
+        ],
+        "weapon_visible_all": true
+      },
+      {
+        "client_direction": 3,
+        "host_direction": 7,
+        "roll_counts": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "distance_cm": [
+          405.9243300093489,
+          498.6444710389558,
+          424.3637801798922,
+          405.84940227468724
+        ],
+        "replication_error_cm": [
+          0.005007334789679516,
+          0.0
+        ],
+        "weapon_visible_all": true
+      },
+      {
+        "client_direction": 4,
+        "host_direction": 0,
+        "roll_counts": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "distance_cm": [
+          401.3619968232315,
+          489.6692964278727,
+          414.67689106293255,
+          401.35454617500363
+        ],
+        "replication_error_cm": [
+          0.005000202574100085,
+          5.9604644775390625e-06
+        ],
+        "weapon_visible_all": true
+      },
+      {
+        "client_direction": 5,
+        "host_direction": 1,
+        "roll_counts": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "distance_cm": [
+          393.22231355252103,
+          493.2606986633436,
+          421.87507768340026,
+          393.14771684327275
+        ],
+        "replication_error_cm": [
+          0.004191462570188236,
+          0.001007080078125
+        ],
+        "weapon_visible_all": true
+      },
+      {
+        "client_direction": 6,
+        "host_direction": 2,
+        "roll_counts": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "distance_cm": [
+          395.93361305648295,
+          479.5380432233019,
+          394.54744384435844,
+          395.93396542310757
+        ],
+        "replication_error_cm": [
+          0.0055318903547516545,
+          0.0
+        ],
+        "weapon_visible_all": true
+      },
+      {
+        "client_direction": 7,
+        "host_direction": 3,
+        "roll_counts": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "distance_cm": [
+          419.6635588923691,
+          517.0475910155262,
+          402.8522354553401,
+          419.68603287438816
+        ],
+        "replication_error_cm": [
+          0.006055725289648159,
+          0.0
+        ],
+        "weapon_visible_all": true
+      }
+    ]
+  },
+  "build": "Artifacts/Throw/build.log",
+  "animations": [
+    {
+      "animation": "/Game/Crusader/Equipment/Throw/Animations/GASP_AS_Aim.GASP_AS_Aim",
+      "montage": "/Game/Crusader/Equipment/Throw/AM_Aim.AM_Aim",
+      "duration": 0.03333333507180214,
+      "pelvis_height_cm": [
+        93.08876037597656,
+        93.08876037597656
+      ]
+    },
+    {
+      "animation": "/Game/Crusader/Equipment/Throw/Animations/GASP_AS_Throw.GASP_AS_Throw",
+      "montage": "/Game/Crusader/Equipment/Throw/AM_Throw.AM_Throw",
+      "duration": 0.800000011920929,
+      "pelvis_height_cm": [
+        93.08876037597656,
+        93.11913299560547
+      ]
+    }
+  ],
+  "captures": [
+    "Artifacts/Throw/ThrowAimPose.png",
+    "Artifacts/Throw/GrenadeTrajectory.png",
+    "Artifacts/Throw/SmokeCloud.png"
+  ],
+  "weapon_during_roll": "Visible and attached; fire/reload remain blocked",
+  "hashes": {
+    "src/Source/LyraGame/Crusader/CRThrowable.h": "adeebda225afd757c43b30b2d9c4ebb1b654a5cb9f13e326799b801c5449b275",
+    "src/Source/LyraGame/Crusader/CRThrowable.cpp": "19ac3a5a33a985ee4878250763d914fcf9fc0ded2a652d924d157e288cb9dd93",
+    "src/Source/LyraGame/Baseline/BaselineEquipment.cpp": "14fbdf434d9202ffc3adf13444c1f2727d1a647c39b2452a1e0e3caa6f52fa2b",
+    "Scripts/Prepare-ThrowAnimations.py": "4c6c58a96f8c7e52291f8e86b742a3f31f5b8d8882598d47ccf18b21968d87a1"
+  },
+  "shoulder_update": "resources/ThrowShoulderValidation.json",
+  "movement_update": "resources/ThrowMovementValidation.json",
+  "slide_update": "resources/ThrowSlideValidation.json",
+  "release_legs_update": "resources/ThrowReleaseLegValidation.json"
+}

@@ -36,6 +36,8 @@ public:
     UPROPERTY(EditAnywhere, BlueprintReadOnly) TObjectPtr<UNiagaraSystem> ShellEjection;
     UPROPERTY(EditAnywhere, BlueprintReadOnly) TObjectPtr<UNiagaraSystem> BulletTrail;
     UPROPERTY(EditAnywhere, BlueprintReadOnly) TObjectPtr<USoundAttenuation> ImpactAttenuation;
+    /** Optional mounted-weapon sound; handheld guns already play their own cues. */
+    UPROPERTY(EditAnywhere, BlueprintReadOnly) TObjectPtr<USoundBase> FireSound;
     UPROPERTY(EditAnywhere, BlueprintReadOnly) TArray<FCRSurfaceImpact> Surfaces;
     UPROPERTY(EditAnywhere, BlueprintReadOnly) float MuzzleScale = .6f;
     UPROPERTY(EditAnywhere, BlueprintReadOnly) float TrailSpeed = 18000.f;
@@ -69,6 +71,7 @@ public:
     virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
     virtual void EndPlay(const EEndPlayReason::Type EndPlayReason) override;
     void SubmitShot(UBaselineWeaponInstance* Weapon, const FGameplayAbilityTargetDataHandle& Data);
+    void SubmitMountedShot(UCRWeaponEffectsProfile* Profile, const FTransform& Muzzle, const FHitResult& Hit);
     UFUNCTION(BlueprintPure, Category="Crusader|Weapons")
     static bool UsesCustomWeaponEffects(AActor* WeaponActor);
     UPROPERTY(BlueprintReadOnly, Transient) int32 ShotsPlayed = 0;

@@ -1,0 +1,190 @@
+{
+  "passed": true,
+  "map": "/Game/Maps/L_TraversalGym",
+  "placements": 27,
+  "source_mesh_actors": 32,
+  "collections": 17,
+  "maximum_bounds_difference_cm": 8.970532860530511e-06,
+  "native_build": "Artifacts/BuildingDestruction/build.log",
+  "reports": {
+    "standalone": {
+      "passed": true,
+      "error": null,
+      "results": [
+        {
+          "case": "27_intact_stable_navigation_obstacles",
+          "count": 27,
+          "maximum_settling_cm": 0.0
+        },
+        {
+          "case": "building_crowd_routes",
+          "complete_routes": 36,
+          "npcs": 16
+        },
+        {
+          "case": "placed_furniture_shot",
+          "actor": "Facility_OfficeDesk",
+          "weapon": "Rifle",
+          "hits": 1,
+          "breaks": 4
+        },
+        {
+          "case": "placed_furniture_shot",
+          "actor": "Facility_OfficeChair",
+          "weapon": "Rifle",
+          "hits": 1,
+          "breaks": 19
+        },
+        {
+          "case": "placed_furniture_shot",
+          "actor": "Facility_OfficeDrawer",
+          "weapon": "Rifle",
+          "hits": 1,
+          "breaks": 1
+        },
+        {
+          "case": "placed_furniture_shot",
+          "actor": "Facility_LabSupplyA",
+          "weapon": "Rifle",
+          "hits": 1,
+          "breaks": 2
+        },
+        {
+          "case": "placed_furniture_shot",
+          "actor": "Facility_ContainmentCrate",
+          "weapon": "Rifle",
+          "hits": 2,
+          "breaks": 25
+        },
+        {
+          "case": "placed_furniture_shot",
+          "actor": "Facility_OfficeCrate",
+          "weapon": "Rifle",
+          "hits": 1,
+          "breaks": 1
+        },
+        {
+          "case": "placed_furniture_shot",
+          "actor": "ControlRoom_CommandTerminal_0",
+          "weapon": "Rifle",
+          "hits": 1,
+          "breaks": 1
+        },
+        {
+          "case": "placed_furniture_shot",
+          "actor": "ControlRoom_OperationsCrate_0",
+          "weapon": "Pistol",
+          "hits": 1,
+          "breaks": 1
+        },
+        {
+          "case": "placed_furniture_shot",
+          "actor": "ControlRoom_ServiceLocker_0",
+          "weapon": "Pistol",
+          "hits": 1,
+          "breaks": 1
+        },
+        {
+          "case": "placed_furniture_shot",
+          "actor": "ControlRoom_StorageBarrel_2",
+          "weapon": "Shotgun",
+          "hits": 1,
+          "breaks": 1
+        },
+        {
+          "case": "placed_furniture_shot",
+          "actor": "ControlRoom_StorageCrate_2",
+          "weapon": "Shotgun",
+          "hits": 1,
+          "breaks": 1
+        },
+        {
+          "case": "building_grenade",
+          "hits": 1,
+          "breaks": 1
+        },
+        {
+          "case": "crowd_continues_moving",
+          "moving": 16,
+          "total": 16
+        }
+      ]
+    },
+    "network": {
+      "passed": true,
+      "error": null,
+      "results": [
+        {
+          "case": "27_intact_stable_navigation_obstacles",
+          "count": 27,
+          "maximum_settling_cm": 0.0
+        },
+        {
+          "case": "building_crowd_routes",
+          "complete_routes": 36,
+          "npcs": 16
+        },
+        {
+          "case": "placed_furniture_shot",
+          "actor": "Facility_OfficeDesk",
+          "weapon": "Rifle",
+          "hits": 1,
+          "breaks": 4,
+          "client_motion_cm": 112.7422672820769
+        },
+        {
+          "case": "placed_furniture_shot",
+          "actor": "Facility_OfficeChair",
+          "weapon": "Rifle",
+          "hits": 1,
+          "breaks": 1,
+          "client_motion_cm": 616.9004143814507
+        },
+        {
+          "case": "placed_furniture_shot",
+          "actor": "ControlRoom_OperationsCrate_0",
+          "weapon": "Pistol",
+          "hits": 1,
+          "breaks": 1,
+          "client_motion_cm": 9.652632678356259
+        },
+        {
+          "case": "placed_furniture_shot",
+          "actor": "ControlRoom_StorageBarrel_2",
+          "weapon": "Shotgun",
+          "hits": 2,
+          "breaks": 23,
+          "client_motion_cm": 266.7177638965212
+        },
+        {
+          "case": "building_grenade",
+          "hits": 1,
+          "breaks": 1
+        },
+        {
+          "case": "crowd_continues_moving",
+          "moving": 16,
+          "total": 16
+        }
+      ]
+    },
+    "suite": {
+      "passed": true,
+      "error": null,
+      "results": [
+        {
+          "script": "Test-BuildingDestruction.py",
+          "report": "BuildingDestruction/standalone.json",
+          "cases": 15,
+          "passed": true
+        },
+        {
+          "script": "Test-BuildingDestruction.py",
+          "report": "BuildingDestruction/network.json",
+          "cases": 8,
+          "passed": true
+        }
+      ]
+    }
+  }
+}

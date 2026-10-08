@@ -1,0 +1,188 @@
+{
+  "passed": true,
+  "validated_utc": "2026-10-08T01:52:53.015697+00:00",
+  "checks": {
+    "shoulders": [
+      {
+        "type": "<CRThrowableType.GRENADE: 0>",
+        "left": false,
+        "swap_while_aiming": false,
+        "trajectory_side_cm": 23.99999999999951,
+        "impact_error_cm": 0.41875291517129487,
+        "release_locked": true,
+        "weapon_hand_restored": true
+      },
+      {
+        "type": "<CRThrowableType.GRENADE: 0>",
+        "left": true,
+        "swap_while_aiming": false,
+        "trajectory_side_cm": -24.000000000000252,
+        "impact_error_cm": 0.45069390949757426,
+        "release_locked": true,
+        "weapon_hand_restored": true
+      },
+      {
+        "type": "<CRThrowableType.GRENADE: 0>",
+        "left": false,
+        "swap_while_aiming": true,
+        "trajectory_side_cm": 23.99999999999951,
+        "impact_error_cm": 0.4250459534664548,
+        "release_locked": true,
+        "weapon_hand_restored": true
+      },
+      {
+        "type": "<CRThrowableType.GRENADE: 0>",
+        "left": true,
+        "swap_while_aiming": true,
+        "trajectory_side_cm": -24.000000000000252,
+        "impact_error_cm": 0.4442146554946719,
+        "release_locked": true,
+        "weapon_hand_restored": true
+      },
+      {
+        "type": "<CRThrowableType.SMOKE: 1>",
+        "left": false,
+        "swap_while_aiming": false,
+        "trajectory_side_cm": 23.99999999999951,
+        "impact_error_cm": 0.4250459534664548,
+        "release_locked": true,
+        "weapon_hand_restored": true
+      },
+      {
+        "type": "<CRThrowableType.SMOKE: 1>",
+        "left": true,
+        "swap_while_aiming": false,
+        "trajectory_side_cm": -24.000000000000252,
+        "impact_error_cm": 0.40745015032516557,
+        "release_locked": true,
+        "weapon_hand_restored": true
+      },
+      {
+        "type": "<CRThrowableType.SMOKE: 1>",
+        "left": false,
+        "swap_while_aiming": true,
+        "trajectory_side_cm": 23.99999999999951,
+        "impact_error_cm": 0.4141361965529343,
+        "release_locked": true,
+        "weapon_hand_restored": true
+      },
+      {
+        "type": "<CRThrowableType.SMOKE: 1>",
+        "left": true,
+        "swap_while_aiming": true,
+        "trajectory_side_cm": -24.000000000000252,
+        "impact_error_cm": 0.4637756899892447,
+        "release_locked": true,
+        "weapon_hand_restored": true
+      },
+      {
+        "case": "cancel_after_hand_swap",
+        "no_extra_throw": true
+      }
+    ],
+    "shoulders-network": [
+      {
+        "type": "<CRThrowableType.GRENADE: 0>",
+        "left": false,
+        "swap_while_aiming": false,
+        "trajectory_side_cm": 24.0,
+        "impact_error_cm": 0.375,
+        "release_locked": true,
+        "weapon_hand_restored": true
+      },
+      {
+        "type": "<CRThrowableType.GRENADE: 0>",
+        "left": true,
+        "swap_while_aiming": false,
+        "trajectory_side_cm": -24.000000000000252,
+        "impact_error_cm": 0.40361222978404654,
+        "release_locked": true,
+        "weapon_hand_restored": true
+      },
+      {
+        "type": "<CRThrowableType.GRENADE: 0>",
+        "left": false,
+        "swap_while_aiming": true,
+        "trajectory_side_cm": 23.99999999999951,
+        "impact_error_cm": 0.44777280884334375,
+        "release_locked": true,
+        "weapon_hand_restored": true
+      },
+      {
+        "type": "<CRThrowableType.GRENADE: 0>",
+        "left": true,
+        "swap_while_aiming": true,
+        "trajectory_side_cm": -24.000000000000252,
+        "impact_error_cm": 0.44318295643075856,
+        "release_locked": true,
+        "weapon_hand_restored": true
+      },
+      {
+        "type": "<CRThrowableType.SMOKE: 1>",
+        "left": false,
+        "swap_while_aiming": false,
+        "trajectory_side_cm": 23.99999999999951,
+        "impact_error_cm": 0.44207982346234714,
+        "release_locked": true,
+        "weapon_hand_restored": true
+      },
+      {
+        "type": "<CRThrowableType.SMOKE: 1>",
+        "left": true,
+        "swap_while_aiming": false,
+        "trajectory_side_cm": -24.000000000000252,
+        "impact_error_cm": 0.39257326645003476,
+        "release_locked": true,
+        "weapon_hand_restored": true
+      },
+      {
+        "type": "<CRThrowableType.SMOKE: 1>",
+        "left": false,
+        "swap_while_aiming": true,
+        "trajectory_side_cm": 23.99999999999951,
+        "impact_error_cm": 0.4254047935078514,
+        "release_locked": true,
+        "weapon_hand_restored": true
+      },
+      {
+        "type": "<CRThrowableType.SMOKE: 1>",
+        "left": true,
+        "swap_while_aiming": true,
+        "trajectory_side_cm": -24.000000000000252,
+        "impact_error_cm": 0.3931946728800506,
+        "release_locked": true,
+        "weapon_hand_restored": true
+      },
+      {
+        "case": "cancel_after_hand_swap",
+        "no_extra_throw": true
+      }
+    ]
+  },
+  "animations": {
+    "animations": [
+      {
+        "name": "Aim",
+        "left_animation": "/Game/Crusader/Equipment/Throw/Animations/GASP_Left_AS_Aim.GASP_Left_AS_Aim",
+        "left_montage": "/Game/Crusader/Equipment/Throw/AM_Left_Aim.AM_Left_Aim",
+        "maximum_hand_mirror_error_cm": 1.8282774668509572e-06,
+        "minimum_pelvis_height_cm": 93.08876037597656
+      },
+      {
+        "name": "Throw",
+        "left_animation": "/Game/Crusader/Equipment/Throw/Animations/GASP_Left_AS_Throw.GASP_Left_AS_Throw",
+        "left_montage": "/Game/Crusader/Equipment/Throw/AM_Left_Throw.AM_Left_Throw",
+        "maximum_hand_mirror_error_cm": 6.370084563258622e-06,
+        "minimum_pelvis_height_cm": 93.08876037597656
+      }
+    ],
+    "left_grip": "(Rotation=(X=-1.000000,Y=0.000000,Z=-0.000000,W=-0.000000),Translation=(X=-3.999999,Y=-0.000000,Z=0.000001),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))"
+  },
+  "build": "Artifacts/Throw/shoulder-build.log",
+  "scope": "Standalone and owning client on a two-player listen server; both objects, both hands, preset shoulder and Q during aim, release hand lock and cancellation.",
+  "hashes": {
+    "src/Source/LyraGame/Crusader/CRThrowable.cpp": "3c6cf7ea44d5b731108ffcb309514f35c7e35c67a51c4dd16bc9d89ca5f7321e",
+    "src/Source/LyraGame/Baseline/BaselineEquipment.cpp": "93586c338ce8b885eac2e4115dcafb39989ab4c54262badbde681e25de923f07",
+    "Scripts/Prepare-ThrowShoulders.py": "f1b5ec97ebd45c5dd59e33aac0bb6a3d712a46f443b1b3dbf91d72f3068ee5f8"
+  }
+}

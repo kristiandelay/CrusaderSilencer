@@ -1,0 +1,430 @@
+{
+  "map": "/Game/Maps/L_TraversalGym",
+  "blueprint": "/Game/Crusader/Destruction/B_CRDestructible",
+  "origin": [
+    -4300,
+    -6650,
+    0
+  ],
+  "targets": [
+    {
+      "name": "Concrete_Pillar",
+      "actor": "CR_Destruction_Concrete_Pillar",
+      "preset": "DA_Pillar_Small_Concrete",
+      "section": "Targets",
+      "position": [
+        -7099.9999923706055,
+        -5399.9999923706055,
+        7.0
+      ],
+      "target": [
+        -7100.0,
+        -5400.0,
+        106.99996185302734
+      ],
+      "standing": [
+        -7100,
+        -4400,
+        100
+      ],
+      "geometry": "/Game/NextGenDestruction/GeometryCollections/Concrete/GC_ConcretePillar_Small.GC_ConcretePillar_Small"
+    },
+    {
+      "name": "Concrete_5m",
+      "actor": "CR_Destruction_Concrete_5m",
+      "preset": "DA_Pillar_Large_Concrete_Square",
+      "section": "Targets",
+      "position": [
+        -6299.99994468689,
+        -5399.999849319458,
+        7.000000000000114
+      ],
+      "target": [
+        -6300.0,
+        -5400.0,
+        256.99996948242193
+      ],
+      "standing": [
+        -6300,
+        -4400,
+        100
+      ],
+      "geometry": "/Game/NextGenDestruction/GeometryCollections/Concrete/GC_ConcretePillar_Square_5m.GC_ConcretePillar_Square_5m"
+    },
+    {
+      "name": "Concrete_LowCost",
+      "actor": "CR_Destruction_Concrete_LowCost",
+      "preset": "DA_Pillar_Small_Concrete_Simplified",
+      "section": "Targets",
+      "position": [
+        -5500.0,
+        -5400.000066757202,
+        7.000000000000028
+      ],
+      "target": [
+        -5500.0,
+        -5400.0,
+        107.00000000000001
+      ],
+      "standing": [
+        -5500,
+        -4400,
+        100
+      ],
+      "geometry": "/Game/NextGenDestruction/GeometryCollections/Concrete/GC_ConcretePillar_Small_Simplified.GC_ConcretePillar_Small_Simplified"
+    },
+    {
+      "name": "Wood_Wall",
+      "actor": "CR_Destruction_Wood_Wall",
+      "preset": "DA_Wall_Wood",
+      "section": "Targets",
+      "position": [
+        -4700.0,
+        -5400.0,
+        131.99999580700364
+      ],
+      "target": [
+        -4700.0,
+        -5400.0,
+        131.99999580700364
+      ],
+      "standing": [
+        -4700,
+        -4400,
+        100
+      ],
+      "geometry": "/Game/NextGenDestruction/GeometryCollections/Wood/GC_Wall_Wood.GC_Wall_Wood"
+    },
+    {
+      "name": "Plaster_Wall",
+      "actor": "CR_Destruction_Plaster_Wall",
+      "preset": "DA_Wall_Plaster",
+      "section": "Targets",
+      "position": [
+        -3772.0,
+        -5399.999999761581,
+        7.0
+      ],
+      "target": [
+        -3900.0,
+        -5400.0,
+        132.0
+      ],
+      "standing": [
+        -3900,
+        -4400,
+        100
+      ],
+      "geometry": "/Game/NextGenDestruction/GeometryCollections/Plaster/GC_Plaster_DrywallStruc.GC_Plaster_DrywallStruc"
+    },
+    {
+      "name": "Wood_Beams",
+      "actor": "CR_Destruction_Wood_Beams",
+      "preset": "DA_Wall_WoodenBeams",
+      "section": "Targets",
+      "position": [
+        -2972.0,
+        -5400.0,
+        7.0
+      ],
+      "target": [
+        -3100.0,
+        -5400.0,
+        132.0
+      ],
+      "standing": [
+        -3100,
+        -4400,
+        100
+      ],
+      "geometry": "/Game/NextGenDestruction/GeometryCollections/Wood/GC_Wooden_2x4DrywallStruc.GC_Wooden_2x4DrywallStruc"
+    },
+    {
+      "name": "Tall_Window",
+      "actor": "CR_Destruction_Tall_Window",
+      "preset": "DA_Window_Large",
+      "section": "Targets",
+      "position": [
+        -2300.0000038146973,
+        -5400.0,
+        183.92871856689453
+      ],
+      "target": [
+        -2300.0000038146973,
+        -5400.0,
+        183.92871856689453
+      ],
+      "standing": [
+        -2300,
+        -4400,
+        100
+      ],
+      "geometry": "/Game/NextGenDestruction/GeometryCollections/Glass/GC_Glass_Tall.GC_Glass_Tall"
+    },
+    {
+      "name": "Small_Window",
+      "actor": "CR_Destruction_Small_Window",
+      "preset": "DA_Window_Small",
+      "section": "Targets",
+      "position": [
+        -1500.0000038146973,
+        -5400.0,
+        83.10237503051758
+      ],
+      "target": [
+        -1500.0000038146973,
+        -5400.0,
+        83.10237503051758
+      ],
+      "standing": [
+        -1500,
+        -4400,
+        100
+      ],
+      "geometry": "/Game/NextGenDestruction/GeometryCollections/Glass/GC_Glass_Square.GC_Glass_Square"
+    },
+    {
+      "name": "Wood_Chair",
+      "actor": "CR_Destruction_Wood_Chair",
+      "preset": "DA_Chair_Wood",
+      "section": "Targets",
+      "position": [
+        -6900.0,
+        -7720.0,
+        7.0
+      ],
+      "target": [
+        -6900.0,
+        -7720.0,
+        67.66740417480469
+      ],
+      "standing": [
+        -6900,
+        -6720,
+        100
+      ],
+      "geometry": "/Game/NextGenDestruction/GeometryCollections/Wood/GC_Chair.GC_Chair"
+    },
+    {
+      "name": "Coffee_Table",
+      "actor": "CR_Destruction_Coffee_Table",
+      "preset": "DA_CoffeeTable_Wood",
+      "section": "Targets",
+      "position": [
+        -6029.999996185303,
+        -7720.0,
+        7.0
+      ],
+      "target": [
+        -6030.0,
+        -7720.0,
+        68.90774154663086
+      ],
+      "standing": [
+        -6030,
+        -6720,
+        100
+      ],
+      "geometry": "/Game/NextGenDestruction/GeometryCollections/Wood/GC_CoffeeTable_Wood.GC_CoffeeTable_Wood"
+    },
+    {
+      "name": "Wood_Desk",
+      "actor": "CR_Destruction_Wood_Desk",
+      "preset": "DA_Desk_Wood",
+      "section": "Targets",
+      "position": [
+        -5269.323204040527,
+        -7816.319999694824,
+        7.0
+      ],
+      "target": [
+        -5160.0,
+        -7720.0,
+        81.64799880981445
+      ],
+      "standing": [
+        -5160,
+        -6720,
+        100
+      ],
+      "geometry": "/Game/NextGenDestruction/GeometryCollections/Wood/GC_Desk_Wood.GC_Desk_Wood"
+    },
+    {
+      "name": "Dining_Table",
+      "actor": "CR_Destruction_Dining_Table",
+      "preset": "DA_DiningTable_Wood",
+      "section": "Targets",
+      "position": [
+        -4290.0,
+        -7720.0,
+        7.0
+      ],
+      "target": [
+        -4290.0,
+        -7720.0,
+        97.80728912353516
+      ],
+      "standing": [
+        -4290,
+        -6720,
+        100
+      ],
+      "geometry": "/Game/NextGenDestruction/GeometryCollections/Wood/GC_WoodenDiningTable.GC_WoodenDiningTable"
+    },
+    {
+      "name": "Ceramic_Vase",
+      "actor": "CR_Destruction_Ceramic_Vase",
+      "preset": "DA_Vase",
+      "section": "Targets",
+      "position": [
+        -3420.0789012908936,
+        -7720.0,
+        97.0
+      ],
+      "target": [
+        -3420.0,
+        -7720.0,
+        128.62629010889765
+      ],
+      "standing": [
+        -3420,
+        -6720,
+        100
+      ],
+      "geometry": "/Game/NextGenDestruction/GeometryCollections/Ceramic/GC_Vase.GC_Vase"
+    },
+    {
+      "name": "Ceramic_Mug_1",
+      "actor": "CR_Destruction_Ceramic_Mug_1",
+      "preset": "DA_Mug01",
+      "section": "Targets",
+      "position": [
+        -2554.0975308418274,
+        -7720.002526283264,
+        97.15365087985992
+      ],
+      "target": [
+        -2550.0,
+        -7720.0,
+        107.1067755818367
+      ],
+      "standing": [
+        -2550,
+        -7370,
+        100
+      ],
+      "geometry": "/Game/NextGenDestruction/GeometryCollections/Ceramic/GC_Mug.GC_Mug"
+    },
+    {
+      "name": "Ceramic_Mug_2",
+      "actor": "CR_Destruction_Ceramic_Mug_2",
+      "preset": "DA_Mug02",
+      "section": "Targets",
+      "position": [
+        -1684.0975308418274,
+        -7720.002526283264,
+        97.15365087985992
+      ],
+      "target": [
+        -1680.0,
+        -7720.0,
+        107.1067755818367
+      ],
+      "standing": [
+        -1680,
+        -7370,
+        100
+      ],
+      "geometry": "/Game/NextGenDestruction/GeometryCollections/Ceramic/GC_Mug.GC_Mug"
+    },
+    {
+      "name": "Blast_Chair",
+      "actor": "CR_Destruction_Blast_Chair",
+      "preset": "DA_Chair_Wood",
+      "section": "Grenade Bay",
+      "position": [
+        -4850.0,
+        -8930.0,
+        7.0
+      ],
+      "target": [
+        -4850.0,
+        -8930.0,
+        67.66740417480469
+      ],
+      "standing": [
+        -4850,
+        -7930,
+        100
+      ],
+      "geometry": "/Game/NextGenDestruction/GeometryCollections/Wood/GC_Chair.GC_Chair"
+    },
+    {
+      "name": "Blast_Table",
+      "actor": "CR_Destruction_Blast_Table",
+      "preset": "DA_CoffeeTable_Wood",
+      "section": "Grenade Bay",
+      "position": [
+        -4529.999996185303,
+        -8850.0,
+        7.0
+      ],
+      "target": [
+        -4530.0,
+        -8850.0,
+        68.90774154663086
+      ],
+      "standing": [
+        -4530,
+        -7850,
+        100
+      ],
+      "geometry": "/Game/NextGenDestruction/GeometryCollections/Wood/GC_CoffeeTable_Wood.GC_CoffeeTable_Wood"
+    },
+    {
+      "name": "Blast_Vase",
+      "actor": "CR_Destruction_Blast_Vase",
+      "preset": "DA_Vase",
+      "section": "Grenade Bay",
+      "position": [
+        -4230.078901290894,
+        -8930.0,
+        7.0
+      ],
+      "target": [
+        -4230.0,
+        -8930.0,
+        38.62629010889765
+      ],
+      "standing": [
+        -4230,
+        -7930,
+        100
+      ],
+      "geometry": "/Game/NextGenDestruction/GeometryCollections/Ceramic/GC_Vase.GC_Vase"
+    },
+    {
+      "name": "Blast_Pillar",
+      "actor": "CR_Destruction_Blast_Pillar",
+      "preset": "DA_Pillar_Small_Concrete",
+      "section": "Grenade Bay",
+      "position": [
+        -3899.9999923706055,
+        -8929.999992370605,
+        7.0
+      ],
+      "target": [
+        -3900.0,
+        -8930.0,
+        106.99996185302734
+      ],
+      "standing": [
+        -3900,
+        -7930,
+        100
+      ],
+      "geometry": "/Game/NextGenDestruction/GeometryCollections/Concrete/GC_ConcretePillar_Small.GC_ConcretePillar_Small"
+    }
+  ],
+  "source": "https://www.fab.com/listings/9990252b-cfef-4b64-b99e-89e489e5b16b"
+}

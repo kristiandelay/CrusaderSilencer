@@ -1,0 +1,639 @@
+{
+  "passed": true,
+  "validated_utc": "2026-10-08T00:35:42.850904+00:00",
+  "cause": "GASP normalized diagonal input had squared length 0.9999999657714582; the old < 1 check incorrectly selected forward. Last-frame input also missed simultaneous presses.",
+  "fix": "Use pending movement input before consumed input, and reject only effectively zero planar direction.",
+  "checks": {
+    "standalone": [
+      {
+        "mode": "held",
+        "keys": [
+          "W",
+          "D"
+        ],
+        "direction": 1,
+        "yaw": 0,
+        "aim": true,
+        "selected": 1,
+        "server_selected": 1,
+        "distance_cm": 392.9601351602972,
+        "direction_agreement": 0.9999582475042026,
+        "input_before": [
+          0.7071067690849304,
+          0.7071067690849304
+        ],
+        "input_length_squared": 0.9999999657714582
+      },
+      {
+        "mode": "held",
+        "keys": [
+          "S",
+          "D"
+        ],
+        "direction": 3,
+        "yaw": 0,
+        "aim": true,
+        "selected": 3,
+        "server_selected": 3,
+        "distance_cm": 416.3550606272973,
+        "direction_agreement": 0.9955624075644647,
+        "input_before": [
+          -0.7071067690849304,
+          0.7071067690849304
+        ],
+        "input_length_squared": 0.9999999657714582
+      },
+      {
+        "mode": "held",
+        "keys": [
+          "S",
+          "A"
+        ],
+        "direction": 5,
+        "yaw": 0,
+        "aim": true,
+        "selected": 5,
+        "server_selected": 5,
+        "distance_cm": 414.6231317373624,
+        "direction_agreement": 0.999670407411028,
+        "input_before": [
+          -0.7071067690849304,
+          -0.7071067690849304
+        ],
+        "input_length_squared": 0.9999999657714582
+      },
+      {
+        "mode": "held",
+        "keys": [
+          "W",
+          "A"
+        ],
+        "direction": 7,
+        "yaw": 0,
+        "aim": true,
+        "selected": 7,
+        "server_selected": 7,
+        "distance_cm": 394.18506579396677,
+        "direction_agreement": 0.9999401849602167,
+        "input_before": [
+          0.7071067690849304,
+          -0.7071067690849304
+        ],
+        "input_length_squared": 0.9999999657714582
+      },
+      {
+        "mode": "simultaneous",
+        "keys": [
+          "W",
+          "D"
+        ],
+        "direction": 1,
+        "yaw": 37,
+        "aim": true,
+        "selected": 1,
+        "server_selected": 1,
+        "distance_cm": 391.233168641083,
+        "direction_agreement": 0.9999553662151752,
+        "input_before": [
+          0.0,
+          0.0
+        ],
+        "input_length_squared": 0.0
+      },
+      {
+        "mode": "simultaneous",
+        "keys": [
+          "S",
+          "D"
+        ],
+        "direction": 3,
+        "yaw": 37,
+        "aim": true,
+        "selected": 3,
+        "server_selected": 3,
+        "distance_cm": 415.5132059996171,
+        "direction_agreement": 0.995530305393999,
+        "input_before": [
+          0.0,
+          0.0
+        ],
+        "input_length_squared": 0.0
+      },
+      {
+        "mode": "simultaneous",
+        "keys": [
+          "S",
+          "A"
+        ],
+        "direction": 5,
+        "yaw": 37,
+        "aim": true,
+        "selected": 5,
+        "server_selected": 5,
+        "distance_cm": 415.31364635456714,
+        "direction_agreement": 0.9996743551514036,
+        "input_before": [
+          0.0,
+          0.0
+        ],
+        "input_length_squared": 0.0
+      },
+      {
+        "mode": "simultaneous",
+        "keys": [
+          "W",
+          "A"
+        ],
+        "direction": 7,
+        "yaw": 37,
+        "aim": true,
+        "selected": 7,
+        "server_selected": 7,
+        "distance_cm": 392.2674429211479,
+        "direction_agreement": 0.9999434760327723,
+        "input_before": [
+          0.0,
+          0.0
+        ],
+        "input_length_squared": 0.0
+      },
+      {
+        "mode": "reverse",
+        "keys": [
+          "W",
+          "D"
+        ],
+        "direction": 1,
+        "yaw": -63,
+        "aim": true,
+        "selected": 1,
+        "server_selected": 1,
+        "distance_cm": 394.9753609943153,
+        "direction_agreement": 0.999962737584048,
+        "input_before": [
+          0.8910065203214694,
+          0.4539905073287618
+        ],
+        "input_length_squared": 0.9999999999999997
+      },
+      {
+        "mode": "reverse",
+        "keys": [
+          "S",
+          "D"
+        ],
+        "direction": 3,
+        "yaw": -63,
+        "aim": true,
+        "selected": 3,
+        "server_selected": 3,
+        "distance_cm": 415.1052371705866,
+        "direction_agreement": 0.9955324141350521,
+        "input_before": [
+          0.8910065203214694,
+          0.4539905073287618
+        ],
+        "input_length_squared": 0.9999999999999997
+      },
+      {
+        "mode": "reverse",
+        "keys": [
+          "S",
+          "A"
+        ],
+        "direction": 5,
+        "yaw": -63,
+        "aim": true,
+        "selected": 5,
+        "server_selected": 5,
+        "distance_cm": 416.05665866425073,
+        "direction_agreement": 0.9996785230337232,
+        "input_before": [
+          0.8910065203214694,
+          0.4539905073287618
+        ],
+        "input_length_squared": 0.9999999999999997
+      },
+      {
+        "mode": "reverse",
+        "keys": [
+          "W",
+          "A"
+        ],
+        "direction": 7,
+        "yaw": -63,
+        "aim": true,
+        "selected": 7,
+        "server_selected": 7,
+        "distance_cm": 394.1653091504063,
+        "direction_agreement": 0.9999422581394273,
+        "input_before": [
+          0.8910065203214694,
+          0.4539905073287618
+        ],
+        "input_length_squared": 0.9999999999999997
+      },
+      {
+        "mode": "unarmed_stance",
+        "keys": [
+          "W",
+          "D"
+        ],
+        "direction": 1,
+        "yaw": 112,
+        "aim": false,
+        "selected": 1,
+        "server_selected": 1,
+        "distance_cm": 392.3642337836903,
+        "direction_agreement": 0.9999553219735845,
+        "input_before": [
+          -0.9205048417096817,
+          0.390731131729796
+        ],
+        "input_length_squared": 0.9999999809138134
+      },
+      {
+        "mode": "unarmed_stance",
+        "keys": [
+          "S",
+          "D"
+        ],
+        "direction": 3,
+        "yaw": 112,
+        "aim": false,
+        "selected": 3,
+        "server_selected": 3,
+        "distance_cm": 415.3566554583739,
+        "direction_agreement": 0.9955585922921394,
+        "input_before": [
+          -0.39073112581320624,
+          -0.92050482777107
+        ],
+        "input_length_squared": 0.9999999506291029
+      },
+      {
+        "mode": "unarmed_stance",
+        "keys": [
+          "S",
+          "A"
+        ],
+        "direction": 5,
+        "yaw": 112,
+        "aim": false,
+        "selected": 5,
+        "server_selected": 5,
+        "distance_cm": 415.34085353683355,
+        "direction_agreement": 0.9996814742264702,
+        "input_before": [
+          0.9205048417096817,
+          -0.390731131729796
+        ],
+        "input_length_squared": 0.9999999809138134
+      },
+      {
+        "mode": "unarmed_stance",
+        "keys": [
+          "W",
+          "A"
+        ],
+        "direction": 7,
+        "yaw": 112,
+        "aim": false,
+        "selected": 7,
+        "server_selected": 7,
+        "distance_cm": 389.6496203704387,
+        "direction_agreement": 0.9999465588117256,
+        "input_before": [
+          0.39073112581320624,
+          0.92050482777107
+        ],
+        "input_length_squared": 0.9999999506291029
+      },
+      {
+        "mode": "analog",
+        "keys": [
+          "W",
+          "D"
+        ],
+        "direction": 1,
+        "yaw": 19,
+        "aim": true,
+        "selected": 1,
+        "server_selected": 1,
+        "distance_cm": 392.5758354875334,
+        "direction_agreement": 0.9999570992075251,
+        "input_before": [
+          0.4383711410041247,
+          0.8987940315083275
+        ],
+        "input_length_squared": 0.9999999683402505
+      },
+      {
+        "mode": "analog",
+        "keys": [
+          "S",
+          "D"
+        ],
+        "direction": 3,
+        "yaw": 19,
+        "aim": true,
+        "selected": 3,
+        "server_selected": 3,
+        "distance_cm": 415.1506570482563,
+        "direction_agreement": 0.9955104621312068,
+        "input_before": [
+          -0.8987940291995122,
+          0.4383711398780402
+        ],
+        "input_length_squared": 0.9999999632026659
+      },
+      {
+        "mode": "analog",
+        "keys": [
+          "S",
+          "A"
+        ],
+        "direction": 5,
+        "yaw": 19,
+        "aim": true,
+        "selected": 5,
+        "server_selected": 5,
+        "distance_cm": 416.43081547509576,
+        "direction_agreement": 0.9996848280330467,
+        "input_before": [
+          -0.4383711410041247,
+          -0.8987940315083275
+        ],
+        "input_length_squared": 0.9999999683402505
+      },
+      {
+        "mode": "analog",
+        "keys": [
+          "W",
+          "A"
+        ],
+        "direction": 7,
+        "yaw": 19,
+        "aim": true,
+        "selected": 7,
+        "server_selected": 7,
+        "distance_cm": 389.97228670258687,
+        "direction_agreement": 0.9999475433448474,
+        "input_before": [
+          0.8987940291995122,
+          -0.4383711398780402
+        ],
+        "input_length_squared": 0.9999999632026659
+      },
+      {
+        "mode": "cardinal",
+        "keys": [
+          "W"
+        ],
+        "direction": 0,
+        "yaw": 0,
+        "aim": true,
+        "selected": 0,
+        "server_selected": 0,
+        "distance_cm": 391.31755614082067,
+        "direction_agreement": 1.0,
+        "input_before": [
+          1.0,
+          0.0
+        ],
+        "input_length_squared": 1.0
+      },
+      {
+        "mode": "cardinal",
+        "keys": [
+          "D"
+        ],
+        "direction": 2,
+        "yaw": 0,
+        "aim": true,
+        "selected": 2,
+        "server_selected": 2,
+        "distance_cm": 389.35603964717484,
+        "direction_agreement": 1.0,
+        "input_before": [
+          0.0,
+          1.0
+        ],
+        "input_length_squared": 1.0
+      },
+      {
+        "mode": "cardinal",
+        "keys": [
+          "S"
+        ],
+        "direction": 4,
+        "yaw": 0,
+        "aim": true,
+        "selected": 4,
+        "server_selected": 4,
+        "distance_cm": 414.58653914774004,
+        "direction_agreement": 1.0,
+        "input_before": [
+          -1.0,
+          0.0
+        ],
+        "input_length_squared": 1.0
+      },
+      {
+        "mode": "cardinal",
+        "keys": [
+          "A"
+        ],
+        "direction": 6,
+        "yaw": 0,
+        "aim": true,
+        "selected": 6,
+        "server_selected": 6,
+        "distance_cm": 390.9105540847256,
+        "direction_agreement": 1.0,
+        "input_before": [
+          0.0,
+          -1.0
+        ],
+        "input_length_squared": 1.0
+      },
+      {
+        "mode": "cardinal",
+        "keys": [],
+        "direction": 0,
+        "yaw": 0,
+        "aim": true,
+        "selected": 0,
+        "server_selected": 0,
+        "distance_cm": 392.1238224437575,
+        "direction_agreement": 1.0,
+        "input_before": [
+          0.0,
+          0.0
+        ],
+        "input_length_squared": 0.0
+      }
+    ],
+    "network": [
+      {
+        "mode": "held",
+        "keys": [
+          "W",
+          "D"
+        ],
+        "direction": 1,
+        "yaw": 0,
+        "aim": true,
+        "selected": 1,
+        "server_selected": 1,
+        "distance_cm": 391.8523190741003,
+        "direction_agreement": 0.9999533433240592,
+        "input_before": [
+          0.7071067690849304,
+          0.7071067690849304
+        ],
+        "input_length_squared": 0.9999999657714582
+      },
+      {
+        "mode": "held",
+        "keys": [
+          "S",
+          "D"
+        ],
+        "direction": 3,
+        "yaw": 0,
+        "aim": true,
+        "selected": 3,
+        "server_selected": 3,
+        "distance_cm": 415.34137339071015,
+        "direction_agreement": 0.9953974234188893,
+        "input_before": [
+          -0.7071067690849304,
+          0.7071067690849304
+        ],
+        "input_length_squared": 0.9999999657714582
+      },
+      {
+        "mode": "held",
+        "keys": [
+          "S",
+          "A"
+        ],
+        "direction": 5,
+        "yaw": 0,
+        "aim": true,
+        "selected": 5,
+        "server_selected": 5,
+        "distance_cm": 416.2544025215509,
+        "direction_agreement": 0.9996510005182752,
+        "input_before": [
+          -0.7071067690849304,
+          -0.7071067690849304
+        ],
+        "input_length_squared": 0.9999999657714582
+      },
+      {
+        "mode": "held",
+        "keys": [
+          "W",
+          "A"
+        ],
+        "direction": 7,
+        "yaw": 0,
+        "aim": true,
+        "selected": 7,
+        "server_selected": 7,
+        "distance_cm": 398.75404173677714,
+        "direction_agreement": 0.9999381578806318,
+        "input_before": [
+          0.7071067690849304,
+          -0.7071067690849304
+        ],
+        "input_length_squared": 0.9999999657714582
+      },
+      {
+        "mode": "simultaneous",
+        "keys": [
+          "W",
+          "D"
+        ],
+        "direction": 1,
+        "yaw": 37,
+        "aim": true,
+        "selected": 1,
+        "server_selected": 1,
+        "distance_cm": 399.10306917063184,
+        "direction_agreement": 0.9999680190528024,
+        "input_before": [
+          0.0,
+          0.0
+        ],
+        "input_length_squared": 0.0
+      },
+      {
+        "mode": "simultaneous",
+        "keys": [
+          "S",
+          "D"
+        ],
+        "direction": 3,
+        "yaw": 37,
+        "aim": true,
+        "selected": 3,
+        "server_selected": 3,
+        "distance_cm": 415.1345967520398,
+        "direction_agreement": 0.9954137376915572,
+        "input_before": [
+          0.0,
+          0.0
+        ],
+        "input_length_squared": 0.0
+      },
+      {
+        "mode": "simultaneous",
+        "keys": [
+          "S",
+          "A"
+        ],
+        "direction": 5,
+        "yaw": 37,
+        "aim": true,
+        "selected": 5,
+        "server_selected": 5,
+        "distance_cm": 415.8325084195664,
+        "direction_agreement": 0.9996515262104325,
+        "input_before": [
+          0.0,
+          0.0
+        ],
+        "input_length_squared": 0.0
+      },
+      {
+        "mode": "simultaneous",
+        "keys": [
+          "W",
+          "A"
+        ],
+        "direction": 7,
+        "yaw": 37,
+        "aim": true,
+        "selected": 7,
+        "server_selected": 7,
+        "distance_cm": 392.66437517340586,
+        "direction_agreement": 0.9999476341169354,
+        "input_before": [
+          0.0,
+          0.0
+        ],
+        "input_length_squared": 0.0
+      }
+    ]
+  },
+  "build": "Artifacts/Roll/Diagonal/build.log",
+  "before": "Artifacts/Roll/Diagonal/before.json",
+  "hashes": {
+    "src/Source/LyraGame/Crusader/CRRoll.cpp": "59caff59a964e9fa0e6c870577052770361a6768dacea42cd54f89d48b367498",
+    "src/Source/LyraEditor/Crusader/CRBlueprintTools.cpp": "094ce062af0906edf7eb2f933ac599f88e88dbae1ec25aec6149abf3c2c42132",
+    "src/Source/LyraEditor/Crusader/CRBlueprintTools.h": "f6bce95f7a37c05674fbe737acd430d963760193de90dfc3f9f91cdc03780799"
+  }
+}

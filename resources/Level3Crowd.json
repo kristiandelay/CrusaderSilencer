@@ -1,0 +1,297 @@
+{
+  "map": "/Game/Maps/L_TraversalGym",
+  "spawns": [
+    {
+      "actor": "CR_Level3Crowd_L1_ArmoredSentinel",
+      "visual": "ArmoredSentinel",
+      "role": "GuardRifle",
+      "level": 1,
+      "home": "L1Hall"
+    },
+    {
+      "actor": "CR_Level3Crowd_L1_MaintenanceWorker",
+      "visual": "MaintenanceWorker",
+      "role": "Civilian",
+      "level": 1,
+      "home": "L1West"
+    },
+    {
+      "actor": "CR_Level3Crowd_L1_RuggedMiner",
+      "visual": "RuggedMiner",
+      "role": "Civilian",
+      "level": 1,
+      "home": "L1East"
+    },
+    {
+      "actor": "CR_Level3Crowd_L2_AstronautSentinel",
+      "visual": "AstronautSentinel",
+      "role": "GuardPistol",
+      "level": 2,
+      "home": "L2Hall"
+    },
+    {
+      "actor": "CR_Level3Crowd_L2_CrusaderOperative",
+      "visual": "CrusaderOperative",
+      "role": "Civilian",
+      "level": 2,
+      "home": "L2West"
+    },
+    {
+      "actor": "CR_Level3Crowd_L2_GraySentinel",
+      "visual": "GraySentinel",
+      "role": "Civilian",
+      "level": 2,
+      "home": "L2East"
+    },
+    {
+      "actor": "CR_Level3Crowd_L3_CrimsonVanguard",
+      "visual": "CrimsonVanguard",
+      "role": "GuardShotgun",
+      "level": 3,
+      "home": "L3Hall"
+    },
+    {
+      "actor": "CR_Level3Crowd_L3_CrimsonAuthority",
+      "visual": "CrimsonAuthority",
+      "role": "Civilian",
+      "level": 3,
+      "home": "L3West"
+    },
+    {
+      "actor": "CR_Level3Crowd_L3_RuggedSurvivor",
+      "visual": "RuggedSurvivor",
+      "role": "Civilian",
+      "level": 3,
+      "home": "L3East"
+    }
+  ],
+  "areas": {
+    "Promenade": {
+      "position": [
+        26800.0,
+        4750.0,
+        30.0
+      ],
+      "radius": 260.0,
+      "neighbours": [
+        "CR_Level3Crowd_Area_Entrance",
+        "CR_ControlCrowd_Area_SouthWalk"
+      ]
+    },
+    "Entrance": {
+      "position": [
+        33000.0,
+        4850.0,
+        30.0
+      ],
+      "radius": 220.0,
+      "neighbours": [
+        "CR_Level3Crowd_Area_L1Hall",
+        "CR_Level3Crowd_Area_Promenade"
+      ]
+    },
+    "L1Hall": {
+      "position": [
+        33000.0,
+        7400.0,
+        30.0
+      ],
+      "radius": 450.0,
+      "neighbours": [
+        "CR_Level3Crowd_Area_Entrance",
+        "CR_Level3Crowd_Area_L1Command",
+        "CR_Level3Crowd_Area_L1East",
+        "CR_Level3Crowd_Area_L1StairLobby",
+        "CR_Level3Crowd_Area_L1West"
+      ]
+    },
+    "L1West": {
+      "position": [
+        30770.0,
+        7900.0,
+        30.0
+      ],
+      "radius": 280.0,
+      "neighbours": [
+        "CR_Level3Crowd_Area_L1Hall"
+      ]
+    },
+    "L1East": {
+      "position": [
+        35400.0,
+        7900.0,
+        30.0
+      ],
+      "radius": 270.0,
+      "neighbours": [
+        "CR_Level3Crowd_Area_L1Hall"
+      ]
+    },
+    "L1Command": {
+      "position": [
+        33000.0,
+        8550.0,
+        30.0
+      ],
+      "radius": 230.0,
+      "neighbours": [
+        "CR_Level3Crowd_Area_L1Hall"
+      ]
+    },
+    "L1StairLobby": {
+      "position": [
+        37000.0,
+        6150.0,
+        30.0
+      ],
+      "radius": 130.0,
+      "neighbours": [
+        "CR_Level3Crowd_Area_L1Hall",
+        "CR_Level3Crowd_Area_L1StairTurn"
+      ]
+    },
+    "L1StairTurn": {
+      "position": [
+        37300.0,
+        9160.0,
+        390.0
+      ],
+      "radius": 100.0,
+      "neighbours": [
+        "CR_Level3Crowd_Area_L1StairLobby",
+        "CR_Level3Crowd_Area_L2StairLobby"
+      ]
+    },
+    "L2Hall": {
+      "position": [
+        33000.0,
+        7400.0,
+        750.0
+      ],
+      "radius": 450.0,
+      "neighbours": [
+        "CR_Level3Crowd_Area_L2Command",
+        "CR_Level3Crowd_Area_L2East",
+        "CR_Level3Crowd_Area_L2StairLobby",
+        "CR_Level3Crowd_Area_L2West"
+      ]
+    },
+    "L2West": {
+      "position": [
+        30770.0,
+        7900.0,
+        750.0
+      ],
+      "radius": 280.0,
+      "neighbours": [
+        "CR_Level3Crowd_Area_L2Hall"
+      ]
+    },
+    "L2East": {
+      "position": [
+        35400.0,
+        7900.0,
+        750.0
+      ],
+      "radius": 270.0,
+      "neighbours": [
+        "CR_Level3Crowd_Area_L2Hall"
+      ]
+    },
+    "L2Command": {
+      "position": [
+        33000.0,
+        8550.0,
+        750.0
+      ],
+      "radius": 230.0,
+      "neighbours": [
+        "CR_Level3Crowd_Area_L2Hall"
+      ]
+    },
+    "L2StairLobby": {
+      "position": [
+        37000.0,
+        6150.0,
+        750.0
+      ],
+      "radius": 130.0,
+      "neighbours": [
+        "CR_Level3Crowd_Area_L1StairTurn",
+        "CR_Level3Crowd_Area_L2Hall",
+        "CR_Level3Crowd_Area_L2StairTurn"
+      ]
+    },
+    "L2StairTurn": {
+      "position": [
+        37300.0,
+        9160.0,
+        1110.0
+      ],
+      "radius": 100.0,
+      "neighbours": [
+        "CR_Level3Crowd_Area_L2StairLobby",
+        "CR_Level3Crowd_Area_L3StairLobby"
+      ]
+    },
+    "L3Hall": {
+      "position": [
+        33000.0,
+        7400.0,
+        1470.0
+      ],
+      "radius": 450.0,
+      "neighbours": [
+        "CR_Level3Crowd_Area_L3Command",
+        "CR_Level3Crowd_Area_L3East",
+        "CR_Level3Crowd_Area_L3StairLobby",
+        "CR_Level3Crowd_Area_L3West"
+      ]
+    },
+    "L3West": {
+      "position": [
+        30770.0,
+        7900.0,
+        1470.0
+      ],
+      "radius": 280.0,
+      "neighbours": [
+        "CR_Level3Crowd_Area_L3Hall"
+      ]
+    },
+    "L3East": {
+      "position": [
+        35400.0,
+        7900.0,
+        1470.0
+      ],
+      "radius": 270.0,
+      "neighbours": [
+        "CR_Level3Crowd_Area_L3Hall"
+      ]
+    },
+    "L3Command": {
+      "position": [
+        33000.0,
+        8550.0,
+        1470.0
+      ],
+      "radius": 230.0,
+      "neighbours": [
+        "CR_Level3Crowd_Area_L3Hall"
+      ]
+    },
+    "L3StairLobby": {
+      "position": [
+        37000.0,
+        6150.0,
+        1470.0
+      ],
+      "radius": 130.0,
+      "neighbours": [
+        "CR_Level3Crowd_Area_L2StairTurn",
+        "CR_Level3Crowd_Area_L3Hall"
+      ]
+    }
+  }
+}

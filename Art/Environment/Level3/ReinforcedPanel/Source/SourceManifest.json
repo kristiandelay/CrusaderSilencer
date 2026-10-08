@@ -1,0 +1,39 @@
+{
+  "name": "ReinforcedPanel",
+  "archive": "ReinforcedPanel.zip",
+  "archive_sha256": "18b833324b34d70307c60008a285e45c4b4d084681c7c1d0570679487ec4259d",
+  "files": [
+    {
+      "original": "Meshy_AI_Reinforced_Panel_1008201609_texture_fbx/Meshy_AI_Reinforced_Panel_1008201609_texture.fbx",
+      "file": "ReinforcedPanel.fbx",
+      "bytes": 17488348,
+      "sha256": "9ee35532d71e47869e319571eb6a57cdfee9e1e41624c4c1df991b92182bf63e"
+    },
+    {
+      "original": "Meshy_AI_Reinforced_Panel_1008201609_texture_fbx/Meshy_AI_Reinforced_Panel_1008201609_texture.png",
+      "file": "ReinforcedPanel_BaseColor.png",
+      "bytes": 4221819,
+      "sha256": "c5bc907e0ee39bd75b419ccdde818a9d0d1993b7c4622f7e0b68cc14a1e3da5c"
+    },
+    {
+      "original": "Meshy_AI_Reinforced_Panel_1008201609_texture_fbx/Meshy_AI_Reinforced_Panel_1008201609_texture_metallic.png",
+      "file": "ReinforcedPanel_Metallic.png",
+      "bytes": 1221116,
+      "sha256": "1143da388ac888aa64f4fd13e90fc1ce7545da842adc5e646f44ae914364344a"
+    },
+    {
+      "original": "Meshy_AI_Reinforced_Panel_1008201609_texture_fbx/Meshy_AI_Reinforced_Panel_1008201609_texture_normal.png",
+      "file": "ReinforcedPanel_Normal.png",
+      "bytes": 3479854,
+      "sha256": "3edc9cd784bd4e7f26f0658ec3d7ee7a03a2b2520d31fd56ba983d9688d17136"
+    },
+    {
+      "original": "Meshy_AI_Reinforced_Panel_1008201609_texture_fbx/Meshy_AI_Reinforced_Panel_1008201609_texture_roughness.png",
+      "file": "ReinforcedPanel_Roughness.png",
+      "bytes": 1295845,
+      "sha256": "506e187161c01fe95d13353cdf794ddddc466b858800037e14af762efc6dfd90"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Reinforced_Panel_1008201609_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level3/ReinforcedPanel.zip"
+}

@@ -1,0 +1,39 @@
+{
+  "name": "SentinelWalker",
+  "archive": "SentinelWalker.zip",
+  "archive_sha256": "89dac1239bf19a9cc1b67c6284069aede6c23858c0cbd41fe18eac8c292ae00b",
+  "files": [
+    {
+      "original": "Meshy_AI_Sentinel_Walker_1007164045_texture_fbx/Meshy_AI_Sentinel_Walker_1007164045_texture.fbx",
+      "file": "SentinelWalker.fbx",
+      "bytes": 76969756,
+      "sha256": "632fa389ef5e9176d0aab23e227f850a62e1b4de439520936bd99abe1d93e31d"
+    },
+    {
+      "original": "Meshy_AI_Sentinel_Walker_1007164045_texture_fbx/Meshy_AI_Sentinel_Walker_1007164045_texture.png",
+      "file": "SentinelWalker_BaseColor.png",
+      "bytes": 7044503,
+      "sha256": "aae76782a701c64502ddd22aaf4ed2860a9a20967721c3aca643ea7e2db50211"
+    },
+    {
+      "original": "Meshy_AI_Sentinel_Walker_1007164045_texture_fbx/Meshy_AI_Sentinel_Walker_1007164045_texture_metallic.png",
+      "file": "SentinelWalker_Metallic.png",
+      "bytes": 2097325,
+      "sha256": "8be06033915ee41979a6686f71a00e91504d71297ad64d31ee48955c1b27d1a8"
+    },
+    {
+      "original": "Meshy_AI_Sentinel_Walker_1007164045_texture_fbx/Meshy_AI_Sentinel_Walker_1007164045_texture_normal.png",
+      "file": "SentinelWalker_Normal.png",
+      "bytes": 6325468,
+      "sha256": "d43a3d33ae59aa52bc5de930b3d87b41dcbed7cd499f3149d218858d9e2a0d27"
+    },
+    {
+      "original": "Meshy_AI_Sentinel_Walker_1007164045_texture_fbx/Meshy_AI_Sentinel_Walker_1007164045_texture_roughness.png",
+      "file": "SentinelWalker_Roughness.png",
+      "bytes": 1777549,
+      "sha256": "a2b55bd85699d2a837abf31e7f1e28b2567ad638237062530145ac101f48b315"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Sentinel_Walker_1007164045_texture_fbx.zip",
+  "archive_path": "mockups/Robots/SentinelWalker.zip"
+}

@@ -1,5 +1,6 @@
 #pragma once
 #include "Kismet/BlueprintFunctionLibrary.h"
+#include "InputCoreTypes.h"
 #include "CRBlueprintTools.generated.h"
 
 UCLASS()
@@ -19,6 +20,8 @@ public:
     static bool ConfigureWeaponMirrorTable(class UMirrorDataTable* Table, class USkeleton* Skeleton);
     UFUNCTION(BlueprintCallable, Category="Baseline|Editor")
     static bool ConfigurePhysicalAnimation(UBlueprint* Character, class UAnimBlueprint* Animation);
+    UFUNCTION(BlueprintCallable, Category="Crusader|Editor")
+    static bool ConfigureThrowUpperBody(class UAnimBlueprint* Animation);
     UFUNCTION(BlueprintCallable, Category="Crusader|Editor")
     static FString DescribeObject(UObject* Object);
     UFUNCTION(BlueprintCallable, Category="Crusader|Editor")
@@ -45,4 +48,7 @@ public:
     static int32 RouteNotifyGameplayOwner(UBlueprint* Blueprint, UClass* LibraryClass);
     UFUNCTION(BlueprintCallable, Category="Baseline|Editor")
     static AActor* SpawnPIETestActor(UObject* WorldContext, TSubclassOf<AActor> ActorClass, const FTransform& Transform);
+    /** Send a key through the local PIE controller's real input mappings. */
+    UFUNCTION(BlueprintCallable, Category="Crusader|Editor")
+    static bool InjectPIEKey(class APawn* Pawn, FKey Key, bool bPressed);
 };

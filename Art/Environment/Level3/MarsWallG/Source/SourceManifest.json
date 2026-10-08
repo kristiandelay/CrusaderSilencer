@@ -1,0 +1,39 @@
+{
+  "name": "MarsWallG",
+  "archive": "MarsWallG.zip",
+  "archive_sha256": "37391ac9835614c5791ccc7d0cb3b444d2b1494ae9fb186acac24bf560cfcfdd",
+  "files": [
+    {
+      "original": "Meshy_AI_Wall_G_1008201933_texture_fbx/Meshy_AI_Wall_G_1008201933_texture.fbx",
+      "file": "MarsWallG.fbx",
+      "bytes": 16458524,
+      "sha256": "9bc4e62fb0339ee6880f7d68920eec7425a264dd8f6006e66abe7d52337c297c"
+    },
+    {
+      "original": "Meshy_AI_Wall_G_1008201933_texture_fbx/Meshy_AI_Wall_G_1008201933_texture.png",
+      "file": "MarsWallG_BaseColor.png",
+      "bytes": 5173409,
+      "sha256": "2fdbc2e9198206bd2a163f8a807a4c2c49edf4061281a906cb50b750ff4ad58f"
+    },
+    {
+      "original": "Meshy_AI_Wall_G_1008201933_texture_fbx/Meshy_AI_Wall_G_1008201933_texture_metallic.png",
+      "file": "MarsWallG_Metallic.png",
+      "bytes": 361782,
+      "sha256": "7a440d5c8cbd97fc3be783113bd4a6fb9a6a17e21554b46189c31e1d02aab0d4"
+    },
+    {
+      "original": "Meshy_AI_Wall_G_1008201933_texture_fbx/Meshy_AI_Wall_G_1008201933_texture_normal.png",
+      "file": "MarsWallG_Normal.png",
+      "bytes": 4111507,
+      "sha256": "5f208e8d9e807854ea1b1a1202da1d36bb23a67206ecfa9203afe7f3876a5225"
+    },
+    {
+      "original": "Meshy_AI_Wall_G_1008201933_texture_fbx/Meshy_AI_Wall_G_1008201933_texture_roughness.png",
+      "file": "MarsWallG_Roughness.png",
+      "bytes": 1349847,
+      "sha256": "088dd8a0996b05bc08f58b1e71b30c66064925cd9cbf92b9ef206773806b4ea5"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Wall_G_1008201933_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level3/MarsWallG.zip"
+}

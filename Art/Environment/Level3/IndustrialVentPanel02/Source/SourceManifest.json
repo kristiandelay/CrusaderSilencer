@@ -1,0 +1,39 @@
+{
+  "name": "IndustrialVentPanel02",
+  "archive": "IndustrialVentPanel02.zip",
+  "archive_sha256": "c3bced947ecaed6bd46adb958ddd14b2df8f6dec7e1b221757c9d348e9e6ef63",
+  "files": [
+    {
+      "original": "Meshy_AI_Industrial_Vent_Panel_1008201559_texture_fbx/Meshy_AI_Industrial_Vent_Panel_1008201559_texture.fbx",
+      "file": "IndustrialVentPanel02.fbx",
+      "bytes": 15457180,
+      "sha256": "aa7ba74c0566c90b4be5deabaf546baacb4d05a5dd57ffad6b32002751661ab2"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Vent_Panel_1008201559_texture_fbx/Meshy_AI_Industrial_Vent_Panel_1008201559_texture.png",
+      "file": "IndustrialVentPanel02_BaseColor.png",
+      "bytes": 4422806,
+      "sha256": "dbd76fa449ab217377d50cea30be20dee6136b74dae1e8d98e2dce1307805866"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Vent_Panel_1008201559_texture_fbx/Meshy_AI_Industrial_Vent_Panel_1008201559_texture_metallic.png",
+      "file": "IndustrialVentPanel02_Metallic.png",
+      "bytes": 1366748,
+      "sha256": "41a04c3ae64ae2d35d43ca1bf27764b1908c0044783bb7deb20ab19f5afb4860"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Vent_Panel_1008201559_texture_fbx/Meshy_AI_Industrial_Vent_Panel_1008201559_texture_normal.png",
+      "file": "IndustrialVentPanel02_Normal.png",
+      "bytes": 3535753,
+      "sha256": "6b5cba602cad34b8d706e659198f8a7e962acc3e7f515824171ec44e9d348723"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Vent_Panel_1008201559_texture_fbx/Meshy_AI_Industrial_Vent_Panel_1008201559_texture_roughness.png",
+      "file": "IndustrialVentPanel02_Roughness.png",
+      "bytes": 1239872,
+      "sha256": "5d973cfa8a711c20fa9efdf565433d01dfc5fb2c703e57223c1eab8c06bc3f74"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Industrial_Vent_Panel_1008201559_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level3/IndustrialVentPanel02.zip"
+}

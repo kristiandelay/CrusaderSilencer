@@ -1,0 +1,21 @@
+{
+  "pack": "https://www.fab.com/listings/c0bb75a3-c87b-436b-b965-b74632cca916",
+  "projectile": "/Game/Crusader/Equipment/Throw/B_ThrownObject.B_ThrownObject",
+  "controls": {
+    "hold_release": "H",
+    "type": "X",
+    "cancel": "Z",
+    "shoulder_hand": "Q (also while aiming)"
+  },
+  "grenades": 6,
+  "smoke_grenades": 6,
+  "throw_hand": "Selected shoulder: mirrored aim/release/grip and launch origin; hand locked during release.",
+  "movement": "Walk, strafe or slide while aiming and releasing; upper-body throw over GASP locomotion/slide. Release origin follows current position.",
+  "grenade_fuse_seconds": 3,
+  "smoke_fuse_seconds": 1.3,
+  "smoke_duration_seconds": 12,
+  "blast_radius_cm": 550,
+  "smoke_radius_cm": 450,
+  "preview": "Predicted first impact using projectile gravity and collision radius; released objects bounce.",
+  "release_notify_seconds": 0.168179
+}

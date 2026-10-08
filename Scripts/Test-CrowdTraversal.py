@@ -2,6 +2,7 @@
 import json,time,traceback,math
 from pathlib import Path
 import unreal as u
+# Humanoid fixtures; mechanical pawns are covered by Test-RobotGameplay.py.
 
 ct_root=Path(u.Paths.convert_relative_path_to_full(u.Paths.project_dir())).parent
 ct_actions=[
@@ -26,7 +27,7 @@ def ct_tick(dt):
         ws=u.EditorLevelLibrary.get_pie_worlds(False)
         if not ws:return
         case=ct_cases[ct_test['index']];now=u.GameplayStatics.get_time_seconds(ws[0]);phase=ct_test['phase']
-        matches=[a for a in u.GameplayStatics.get_all_actors_of_class(ws[0],u.CRTraversalCharacter) if a.crowd_agent.enabled and a.crowd_agent.initialized and a.crowd_agent.guard==(case['role']=='Guard')]
+        matches=[a for a in u.GameplayStatics.get_all_actors_of_class(ws[0],u.CRTraversalCharacter) if a.crowd_agent.enabled and not isinstance(a,u.CRRobotCharacter) and a.crowd_agent.initialized and a.crowd_agent.guard==(case['role']=='Guard')]
         if not matches:return
         p=next((a for a in matches if a.get_name()==ct_test.get('pawn')),matches[0]);ctrl=p.get_controller()
         if phase=='warm' and case['name']=='Slide':p.add_movement_input(u.Vector(1,0,0),1,True)

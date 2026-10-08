@@ -1,0 +1,143 @@
+Mechanical robot rigs
+====================
+
+Six robots: IronSentinel, SentinelWalker, APP5200IndustrialM, IroncladTitan,
+IroncladVanguard and IroncladSentinel.
+
+Open in Unreal
+--------------
+Content/Crusader/Robots/<Name> contains the skeletal mesh, its custom skeleton,
+PBR materials, Textures, the four-second <Name>_JointCheck animation and
+BP_<Name>_Preview. Drag the preview Blueprint into a level and press Play to
+exercise both legs. Preview actors have no collision or AI controller.
+
+The Parts subfolder contains independently imported static modules. These use
+bone-local pivots; RigManifest.json maps each part to its attachment bone.
+They are alternatives to sections of the complete skeletal mesh, so attaching
+them on top of that mesh would duplicate the geometry.
+
+The rigs have chassis, upper_leg, middle_leg, lower_leg and foot bones. Each
+metal piece has exactly one bone influence at full weight. Separate joint
+housings, axle inserts and closed cut rims allow the pieces to rotate without
+stretching their surfaces. The four piston-equipped models also have separate
+housing and rod bones. Upper body and weapons remain a rigid chassis assembly.
+
+These are custom mechanical skeletons. They do not use the humanoid mannequin
+skeleton or the existing humanoid visual override/locomotion system. JointCheck
+is a rig inspection animation. Gameplay uses a separate native mechanical gait
+on CRRobotCharacter; it does not loop JointCheck as a walk animation.
+
+Gameplay in L_TraversalGym
+-------------------------
+Six B_Robot_<Name> pawns patrol with the existing human crowds: four start in
+the outdoor district and two in the facility checkpoint/hall. They share the
+crowd controller's Detour avoidance, linked tether areas, sight/hearing,
+investigation, pursuit and tactical firing positions. Actors are labeled
+CR_Robot_<Name> under the crowd Robots folders in the level outliner.
+
+Robots only retaliate against the actor that damages them or fires a directed
+near miss within their capsule radius plus 55 cm. Seeing a player or hearing
+ambient gunfire can cause investigation but never grants permission to shoot.
+Other guards/robots are friendly. Unrelated noise cannot replace an aggressor.
+After losing the attacker for 18 seconds they disengage and resume patrol.
+
+Mounted guns fire three-shot laser bursts with modest spread and shared Laser
+Tracer 5, muzzle, impact and sound effects. Damage is server authoritative.
+World cover and intervening pawn space block fire. Muzzle points are authored
+per model and follow chassis pitch/recoil. Existing humanoid weapons retain
+their original effects/audio path.
+
+The native animation instance plants feet using ground traces, solves only
+the mechanical hinge axes, and keeps every rigid link at unit scale. Stride
+length follows leg length; feet adjust to changes of direction. Landings use
+the project's surface footstep profile. Normal navigation and hops are
+supported. Humanoid slide, vault and climb montages are deliberately excluded
+from these nonhumanoid skeletons; robot-specific parkour is not implemented.
+
+Each robot uses one capsule for movement and weapon hits (no per-part damage).
+On death it stops shooting and lowers into a mechanical shutdown pose, then
+respawns after the death lifecycle plus five seconds with the same model,
+armor and home area. It does not use the humanoid ragdoll/get-up system.
+
+resources/RobotGameplay.json contains initial placement, armor and barrel tip
+positions. With PIE stopped, Send-Editor.py Scripts/Configure-RobotGameplay.py
+updates the six pawn Blueprints and shared assets, adds missing level actors,
+and saves the traversal map. Existing robot actor transforms are preserved.
+Edit CrowdAgent patrol/run speed, home area and tether settings in the editor;
+armor, damage, laser range and model-space muzzle points are pawn defaults.
+Fit-RobotMuzzles.py runs in Blender to refit barrel tips against source geometry
+and inspected orthographic aperture centres. It includes Vanguard's asymmetric
+guns and all four industrial barrels; it does not change the model geometry.
+
+Test-RobotGameplaySuite.py runs standalone robot checks, human crowd regression
+and two-player checks, then restores editor quality and Play settings.
+Test-RobotGameplay.py exercises actual player fire, peaceful sensing, gait,
+retaliation, civilian flight, cover, disengagement and shutdown/respawn in PIE.
+Test-RobotGameplay-Network.py exercises the same authoritative combat path
+from a client in two-player listen-server PIE. Test-RobotMountedWeapons.py
+checks real player provocation and the final fitted gun layout on each model.
+Validate-RobotGameplayAssets.py checks the six Blueprints, their defaults and
+saved traversal placements with PIE stopped. Runtime test fixtures are not
+saved to the map. Results are in Artifacts/RobotGameplay and summarized in
+resources/RobotGameplayValidation.json.
+
+Edit in Blender
+---------------
+Art/Robots/<Name>/<Name>.blend is the editable rig. Source/ preserves the
+original FBX and four textures, renamed to <Name>.fbx and
+<Name>_BaseColor/Normal/Metallic/Roughness.png. SourceManifest.json records the
+original archive/member names and hashes. Renamed archives are in mockups/Robots.
+
+Select Armature and enter Pose Mode. The leg bones rotate around local X only;
+their other axes and scales are locked. FootIK on the armature switches between
+FK (0, the default) and the three-link foot solver (1). Move foot_control_l/r
+and use knee_pole_l/r for the optional IK setup. The hydraulic aim constraints
+orient rigid rods and housings; they never stretch those meshes.
+
+Blender controls and constraints are authoring controls. Their evaluated motion
+is baked into the FBX animation; they are not a live Unreal Control Rig.
+When authoring another clip, keep joint angles within the visible armor's
+clearance. Mechanical hinge limits do not provide armor collision detection.
+
+Exports and scale
+-----------------
+Export/<Name>.fbx contains the complete rigidly weighted robot and skeleton.
+Export/<Name>_JointCheck.fbx also contains the baked 30 fps test clip.
+Export/Parts/*.fbx contains the individual modules without skeletons.
+The delivered source height is 180 cm with unit armature/mesh/bone scale.
+
+LOD0 retains the textured prototype detail and closed inner surfaces. Unreal
+also generates LOD1 and LOD2 at approximately 50% and 25% of its triangles.
+DA_RobotLODSettings preserves bone boundaries and limits weights to one bone.
+These detailed mockup meshes still need profiling and a production topology
+pass before using large crowds of robots; see validation for actual counts.
+
+Rebuild and validate
+--------------------
+From the repository root:
+  python Scripts/Prepare-RobotSources.py
+  python Scripts/Prepare-RobotRigs.py
+
+Prepare-RobotRigs.py accepts optional robot names. It imports and reduces a
+working copy if its cache is missing, constructs fitted rigid modules, exports,
+checks every vertex weight and edge length in nine poses, exercises foot IK,
+checks piston alignment and reimports the delivered FBX. Originals stay intact.
+
+With the project's editor bridge active and PIE stopped:
+  python Scripts/Send-Editor.py Scripts/Import-RobotAssets.py
+  python Scripts/Send-Editor.py Scripts/Validate-RobotImports.py
+
+Capture-RobotPreviews.py can also be sent through the bridge. It starts a
+temporary PIE session, loads full texture detail, captures neutral/bent poses,
+checks that each foot actually moves in Unreal, then ends PIE and restores the
+editor camera. Run Validate-RobotImports.py afterward to include these playback
+results in the durable validation report. Captures are under Artifacts/Robots.
+
+Set CR_EDITOR_TIMEOUT to 1800 for the full batch. ROBOT_IMPORT_NAMES in the
+editor bridge globals can restrict an import; remove that override to import
+all six. Imports save only their own assets, not the open traversal map.
+
+resources/RobotRigValidation.json records Blender results and independent
+Unreal checks of assets, sampled LOD skin weights/triangle bindings, animation
+movement and unit bone scales. Artifacts/Robots holds local build logs and
+rendered pose inspections. Generated binary assets use existing Git LFS rules.

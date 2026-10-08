@@ -1,6 +1,9 @@
 #include "CRCrowdAI.h"
 #include "CRTraversalCharacter.h"
 #include "CRWeaponEffects.h"
+#include "CRRobotCharacter.h"
+#include "CRRoll.h"
+#include "CRThrowable.h"
 #include "Baseline/BaselineEquipment.h"
 #include "Baseline/BaselineCharacterMovement.h"
 #include "Baseline/BaselinePhysicalInteraction.h"
@@ -89,6 +92,7 @@ void UCRCrowdAgentComponent::GetLifetimeReplicatedProps(TArray<FLifetimeProperty
     DOREPLIFETIME(ThisClass,DamageReactions);DOREPLIFETIME(ThisClass,bInitialized);
     DOREPLIFETIME(ThisClass,SelectedVisual);
     DOREPLIFETIME(ThisClass,DesiredSpeed);
+    DOREPLIFETIME(ThisClass,bProvoked);
 }
 void UCRCrowdAgentComponent::BeginPlay()
 {
@@ -162,7 +166,8 @@ void UCRCrowdAgentComponent::ReportGunshot(APawn* Shooter, const FVector& Origin
         const bool bFriendlyGuard=ShooterAgent && ShooterAgent->bEnabled && ShooterAgent->bGuard;
         bool bNearMiss=false;
         for (const auto& Hit : Hits)
-            if (FMath::PointDistToSegment(It->GetActorLocation(),Origin,Hit.Position)<190.f) { bNearMiss=true;break; }
+            if (FMath::PointDistToSegment(It->GetActorLocation(),Origin,Hit.Position)<
+                (Agent->bReturnFireOnly ? It->GetCapsuleComponent()->GetScaledCapsuleRadius()+55.f : 190.f)) { bNearMiss=true;break; }
         if (bNearMiss && !bFriendlyGuard) Controller->ReactToThreat(Shooter,Origin,true);
         if (!Agent->bGuard && FVector::DistSquared(It->GetActorLocation(),Origin)<FMath::Square(4500.f))
             Controller->ReactToThreat(Shooter,Origin,true);
@@ -297,6 +302,7 @@ bool ACRCrowdController::CanSee(const AActor* Actor) const
     const FVector Delta=Actor->GetActorLocation()-GetPawn()->GetActorLocation();
     if (Delta.SizeSquared()>FMath::Square(3200.f)) return false;
     if (FVector::DotProduct(GetControlRotation().Vector().GetSafeNormal2D(),Delta.GetSafeNormal2D())<.25f) return false;
+    if (ACRThrownObject::IsSightObscured(this,GetPawn()->GetPawnViewLocation(),Actor->GetActorLocation()+FVector(0,0,50))) return false;
     return LineOfSightTo(Actor);
 }
 bool ACRCrowdController::ClearShot(const AActor* Actor) const
@@ -306,6 +312,7 @@ bool ACRCrowdController::ClearShot(const AActor* Actor) const
     TArray<AActor*> Attached;GetPawn()->GetAttachedActors(Attached,true,true);Query.AddIgnoredActors(Attached);
     FHitResult Hit;
     const FVector Start=GetPawn()->GetActorLocation()+FVector(0,0,GetPawn()->BaseEyeHeight);
+    if (ACRThrownObject::IsSightObscured(this,Start,Actor->GetActorLocation()+FVector(0,0,25))) return false;
     const bool Blocked=GetWorld()->LineTraceSingleByChannel(Hit,Start,Actor->GetActorLocation()+FVector(0,0,25),ECC_Visibility,Query);
     if (!Blocked) return true;
     return Hit.GetActor()==Actor || (Hit.GetActor() && Hit.GetActor()->GetAttachParentActor()==Actor);
@@ -317,11 +324,17 @@ void ACRCrowdController::ReactToThreat(AActor* Actor,const FVector& Location,boo
     if (!Data || !Data->bEnabled || !IsAlive(GetPawn()) || Actor==GetPawn()) return;
     if (const auto* Other=Actor ? Actor->FindComponentByClass<UCRCrowdAgentComponent>() : nullptr)
         if (Data->bGuard && Other->bEnabled && Other->bGuard) return;
+    if (!IsAlive(Actor)) return;
+    // Unrelated noise must not replace a robot's aggressor and inherit its
+    // permission to fire. A second actual attacker can start a new engagement.
+    if (Data->bReturnFireOnly && !bAggression && bAggressive && Actor!=Data->Threat) return;
+    if (Data->bReturnFireOnly && Actor!=Data->Threat) bAggressive=false;
     const bool bNewEngagement=Data->Threat!=Actor || !bAggressive;
     const bool bStartingFlight=Data->State!=ECRCrowdState::Flee;
     Data->Threat=Actor;Data->LastKnownThreatLocation=Location;
     LastThreatTime=GetWorld()->GetTimeSeconds();
     bAggressive|=bAggression;
+    Data->bProvoked=bAggressive;
     if (!Data->bGuard) { Data->State=ECRCrowdState::Flee;if (bStartingFlight) NextTactic=0.; }
     else if (bAggressive) { Data->State=ECRCrowdState::Pursue;if (bNewEngagement) NextTactic=0.; }
     else Data->State=ECRCrowdState::Investigate;
@@ -336,12 +349,12 @@ void ACRCrowdController::PerceptionUpdated(AActor* Actor,FAIStimulus Stimulus)
         if (const auto* Other=Actor->FindComponentByClass<UCRCrowdAgentComponent>())
             if (Other->bEnabled && ((Data->bGuard && Other->bGuard) || Stimulus.Tag==TEXT("Footstep"))) return;
         ++Data->HearingDetections;
-        if (Stimulus.Tag==TEXT("Gunfire")) { bHeardGunfire=true;ReactToThreat(Actor,Stimulus.StimulusLocation,CanSee(Actor) || !Data->bGuard); }
+        if (Stimulus.Tag==TEXT("Gunfire")) { bHeardGunfire=true;ReactToThreat(Actor,Stimulus.StimulusLocation,(!Data->bReturnFireOnly && CanSee(Actor)) || !Data->bGuard); }
         else if (Data->bGuard && !Data->Threat) ReactToThreat(Actor,Stimulus.StimulusLocation,false);
     }
     else if (Stimulus.Type==UAISense::GetSenseID<UAISense_Sight>())
     {
-        if (!Cast<APawn>(Actor)) return;
+        if (!Cast<APawn>(Actor) || !CanSee(Actor)) return;
         ++Data->SightDetections;
         if (Actor==Data->Threat) { Data->LastKnownThreatLocation=Actor->GetActorLocation();LastSeenTime=GetWorld()->GetTimeSeconds(); }
     }
@@ -358,6 +371,7 @@ void ACRCrowdController::StopFiring()
 {
     if (auto* ControlledCharacter=Character())
     {
+        if (auto* Robot=Cast<ACRRobotCharacter>(ControlledCharacter)) Robot->StopMountedBurst();
         ControlledCharacter->BaselineEquipment->EndFire();
         if (auto* ASC=ControlledCharacter->GetLyraAbilitySystemComponent())
         {
@@ -371,6 +385,7 @@ void ACRCrowdController::StopFiring()
 void ACRCrowdController::MoveTowards(const FVector& Goal,ECRCrowdState NewState,float Speed)
 {
     auto* ControlledCharacter=Character();auto* Data=Agent();if (!ControlledCharacter || !Data) return;
+    if (Cast<ACRRobotCharacter>(ControlledCharacter)) Speed=FMath::Min(Speed,Data->RunSpeed);
     Data->Destination=Goal;Data->State=NewState;
     Data->DesiredSpeed=Speed;
     ControlledCharacter->GetCharacterMovement()->MaxWalkSpeed=Speed;
@@ -435,6 +450,12 @@ void ACRCrowdController::FireBurst()
     auto* ControlledCharacter=Character();auto* Data=Agent();auto* ASC=ControlledCharacter->GetLyraAbilitySystemComponent();
     const double Now=GetWorld()->GetTimeSeconds();
     if (!ASC || Now<NextShot || bTriggerHeld || ControlledCharacter->BaselineEquipment->AreHandsBusy() || !ClearShot(Data->Threat)) return;
+    if (auto* Robot=Cast<ACRRobotCharacter>(ControlledCharacter))
+    {
+        if (bAggressive && Robot->StartMountedBurst(Data->Threat))
+        { NextShot=Now+FMath::FRandRange(1.1f,1.7f);++Data->ShotsRequested; }
+        return;
+    }
     if (auto* Item=QuickBar->GetActiveSlotItem())
     {
         if (Item->GetStatTagStackCount(InputTag(TEXT("Lyra.ShooterGame.Weapon.MagazineAmmo")))<=0)
@@ -461,7 +482,7 @@ void ACRCrowdController::Combat()
     {
         StopFiring();ControlledCharacter->BaselineEquipment->EndAim();ClearFocus(EAIFocusPriority::Gameplay);
         if (Now-LastSeenTime>18. && Now-LastThreatTime>18.)
-        { Data->Threat=nullptr;bAggressive=false;bHeardGunfire=false;StopMovement();NextPatrol=Now;return; }
+        { Data->Threat=nullptr;bAggressive=false;Data->bProvoked=false;bHeardGunfire=false;StopMovement();NextPatrol=Now;return; }
         if (GetMoveStatus()!=EPathFollowingStatus::Moving || Now>=NextTactic)
         {
             MoveTowards(Data->LastKnownThreatLocation,ECRCrowdState::Pursue,Data->RunSpeed);
@@ -476,15 +497,20 @@ void ACRCrowdController::Combat()
         if (SelectTacticalPosition(Goal))
         {
             ControlledCharacter->UnCrouch();MoveTowards(Goal,ECRCrowdState::Reposition,450.f);++Data->TacticalMoves;
-            if (Data->TacticalMoves%3==0) ControlledCharacter->BaselineEquipment->ToggleShoulder();
+            if (Data->TacticalMoves%3==0 && !Cast<ACRRobotCharacter>(ControlledCharacter)) ControlledCharacter->BaselineEquipment->ToggleShoulder();
         }
-        NextTactic=Now+FMath::FRandRange(3.f,5.f);
+        const float TravelTime=Cast<ACRRobotCharacter>(ControlledCharacter)
+            ? FVector::Dist2D(Data->Destination,ControlledCharacter->GetActorLocation())/FMath::Max(Data->RunSpeed,1.f) : 0.f;
+        NextTactic=Now+(TravelTime>0.f ? TravelTime+FMath::FRandRange(2.2f,3.f) : FMath::FRandRange(3.f,5.f));
     }
     if (GetMoveStatus()!=EPathFollowingStatus::Moving)
     {
         Data->State=ECRCrowdState::Attack;
-        if (Now>=NextShot && ControlledCharacter->bIsCrouched) ControlledCharacter->UnCrouch();
-        else if (Now<NextShot-.25 && !bTriggerHeld) ControlledCharacter->Crouch();
+        if (!Cast<ACRRobotCharacter>(ControlledCharacter))
+        {
+            if (Now>=NextShot && ControlledCharacter->bIsCrouched) ControlledCharacter->UnCrouch();
+            else if (Now<NextShot-.25 && !bTriggerHeld) ControlledCharacter->Crouch();
+        }
     }
     FireBurst();
 }
@@ -514,6 +540,9 @@ bool ACRCrowdController::RequestMovementAction(FName Action,FVector Goal)
 {
     auto* ControlledCharacter=Character();auto* Data=Agent();const double Now=GetWorld()->GetTimeSeconds();
     if (!ControlledCharacter || !Data || !ControlledCharacter->CanUseMovementActions() || Now<NextTraversal || ControlledCharacter->BaselineEquipment->AreHandsBusy()) return false;
+    // Mechanical rigs have their own grounded gait and jump pose. Do not play
+    // humanoid slide/vault montages on their incompatible skeletons.
+    if (Cast<ACRRobotCharacter>(ControlledCharacter) && Action!=TEXT("Jump")) return false;
     auto* Movement=CastChecked<UBaselineCharacterMovement>(ControlledCharacter->GetCharacterMovement());
     if (!Movement->IsMovingOnGround()) return false;
     const FRotator Facing=(Goal-ControlledCharacter->GetActorLocation()).GetSafeNormal2D().Rotation();
@@ -523,6 +552,10 @@ bool ACRCrowdController::RequestMovementAction(FName Action,FVector Goal)
         if (!ControlledCharacter->RequestAITraversal()) { NextTraversal=Now+.6;return false; }
     }
     else if (Action==TEXT("Jump")) ControlledCharacter->Jump();
+    else if (Action==TEXT("Roll"))
+    {
+        if (!ControlledCharacter->Roll->RequestRoll(Goal-ControlledCharacter->GetActorLocation())) return false;
+    }
     else if (Action==TEXT("Slide"))
     {
         if (!Movement->CanStartSlide()) return false;
@@ -553,10 +586,10 @@ void ACRCrowdController::Think()
         }
         return;
     }
-    if (Data->Threat && !IsAlive(Data->Threat)) { Data->Threat=nullptr;bAggressive=false;bHeardGunfire=false;StopFiring();StopMovement(); }
+    if (Data->Threat && !IsAlive(Data->Threat)) { Data->Threat=nullptr;bAggressive=false;Data->bProvoked=false;bHeardGunfire=false;StopFiring();StopMovement(); }
     if (Data->Threat)
     {
-        if (Data->bGuard && bHeardGunfire && CanSee(Data->Threat)) bAggressive=true;
+        if (Data->bGuard && !Data->bReturnFireOnly && bHeardGunfire && CanSee(Data->Threat)) bAggressive=true;
         if (!Data->bGuard) Flee();
         else if (bAggressive) Combat();
         else if (Now-LastThreatTime>7.) { Data->Threat=nullptr;bHeardGunfire=false;StopMovement();NextPatrol=Now; }

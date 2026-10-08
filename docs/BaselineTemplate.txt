@@ -13,6 +13,8 @@ Controls
   Tab: cycle the three inventory slots
   Left mouse: fire; hold right mouse: raise weapon and aim; R: reload
   Q: switch shoulder and weapon hand
+  Left Alt: directional roll; hold a movement direction to choose from eight rolls
+  H: hold to aim a throwable, release to throw; X: grenade/smoke; Z: cancel aim
   F: shove; V: tackle; B: takedown (face a nearby, ready character)
   T: enter ragdoll / request get-up; Space also requests get-up while ragdolled
   Gamepad: left/right sticks move/look, left shoulder sprint, right shoulder walk,
@@ -21,7 +23,74 @@ Controls
   right trigger fire, left trigger aim.
   Top face button (Y / Triangle): switch shoulder and weapon hand.
   Gamepad physical actions: right stick click shove, D-pad left tackle,
-  left stick click takedown, D-pad right ragdoll/get-up.
+  left stick click takedown, D-pad right directional roll.
+
+Directional roll
+Left Alt / D-pad right activates the predicted Lyra GAS roll ability on the GASP
+source mesh. Movement selects forward, backward, sideways or a diagonal relative
+to the character; no movement defaults to forward.
+Combined movement keys and roll can be pressed together; direction selection
+uses the current input and accepts normalized diagonals and partial stick values.
+The Roll Dodge Dash Set's eight standing root-motion rolls are retargeted to
+the UEFN source skeleton.
+Their IK foot targets are baked onto the animated feet. While rolling, the
+source graph uses its full-body montage path before standing root offsets,
+foot planting and leg IK, preserving the authored knee bend. Normal walking
+corrections resume afterward; get-ups retain the same correction bypass.
+They play at 1.15x, followed by 0.55 seconds of recovery before another roll.
+Holding the button does not repeat it. Swept character movement handles walls;
+the capsule crouches during the roll and returns to its previous stance afterward.
+Weapons remain visible in the hand during rolls. Firing/reloading and other
+movement actions pause, then normal movement and weapon use return.
+Falling, sliding, traversal, physical actions,
+shoulder transfer and death prevent activation. Knockdowns and death interrupt it.
+The roll adds no damage immunity or stamina cost. Guards and civilians can request
+the same ability through RequestMovementAction("Roll", Goal). Mechanical robots
+retain their own movement because these animations require a humanoid skeleton.
+Assets live under /Game/Crusader/Movement/Roll. Scripts/Prepare-RollAnimations.py
+and Configure-Roll.py reproduce the retargeting, montage, ability and input setup.
+See resources/RollValidation.json for the measured checks.
+Roll leg-pose and get-up regression results are in resources/RollLegValidation.json.
+Keyboard combination and client direction checks are in resources/RollDirectionValidation.json.
+
+Throwable objects
+Hold H to aim while walking, strafing or sliding, release H to throw. X switches between grenade
+and smoke while idle; Z cancels aiming without spending an item. These keyboard
+bindings leave the existing controller weapon/reload mappings intact.
+The selected shoulder determines the throwing hand. Q also transfers the held
+object while aiming, blending to the mirrored arm pose and moving the trajectory
+origin to that side. The release animation keeps its committed hand until finished.
+Upper-body aim and release leave the pelvis, legs and foot IK on GASP locomotion.
+During slides those bones keep the slide pose. Start H during a slide or press C
+while aiming at sufficient speed; aim/throw and slide animations run independently.
+Slide commitment and recovery still apply, and Q swaps the throwing hand mid-slide.
+Movement continues through release; the object launches from the current position
+using the direction committed when H was released.
+Each spawn starts with six of each type. The trajectory and landing marker show
+the first collision, using the same launch velocity, gravity and swept radius as
+the server projectile. Objects can bounce after that impact. Throws consume one
+item at the animation's release, with a short recovery before the next throw.
+The ThrowSystem pack supplies the grenade/smoke models, aim/throw animations,
+trajectory material, landing decal, explosion and smoke effects. Its animations
+are retargeted to the GASP source skeleton; existing Lyra grenade sounds are used.
+Grenades have a three-second fuse, 5.5 m damage radius and cover-aware Lyra damage.
+Smoke starts after 1.3 seconds and lasts 12 seconds, blocking guard and robot sight
+through the cloud. Low effects settings retain the visible smoke; bullets and
+characters can still pass through it. Smoke clears naturally and restores sight.
+Throwing stows the firearm and blocks fire/reload, rolls and traversal. Falling,
+ragdoll and death interrupt preparation; already released objects keep their fuse.
+The server validates throws and inventory, and replicates the animation, projectile
+and detonation. Only the owning player sees the trajectory preview.
+Assets: /Game/Crusader/Equipment/Throw. Setup: Scripts/Prepare-ThrowAnimations.py
+then Scripts/Prepare-ThrowShoulders.py and Scripts/Configure-Throw.py.
+Controls/settings: resources/ThrowSystem.json.
+Measured gameplay, network, pose-height and roll-visibility checks:
+resources/ThrowValidation.json.
+Moving aim/release, both hands and network checks: resources/ThrowMovementValidation.json.
+Slide aim/release, slide cadence and network checks: resources/ThrowSlideValidation.json.
+Release-time source/visible leg animation and saved montage slots:
+resources/ThrowReleaseLegValidation.json. Release montages use ThrowUpperBody;
+Configure-Throw.py writes each edited struct back into the slot array before saving.
 
 Physics and character interactions
 The playable Lyra/CMC pawn now has a Physics Control component using the UE 5.8

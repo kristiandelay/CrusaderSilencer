@@ -1,4 +1,5 @@
 #include "CRWeaponEffects.h"
+#include "CRDestructibleActor.h"
 #include "CRCrowdAI.h"
 #include "Baseline/BaselineEquipment.h"
 #include "Equipment/LyraEquipmentManagerComponent.h"
@@ -98,11 +99,16 @@ void UCRWeaponEffectsComponent::SubmitShot(UBaselineWeaponInstance* Weapon, cons
     const FTransform Muzzle = Mesh->GetSocketTransform(TEXT("Muzzle"));
     const FTransform Ejection = Mesh->GetSocketTransform(TEXT("ShellEject"));
     TArray<FCRShotImpact> Hits;
+    TSet<AActor*> FracturedTargets;
     for (int32 Index = 0; Index < FMath::Min(Data.Num(), 32); ++Index)
     {
         const auto* Target = Data.Get(Index);
         const FHitResult* Hit = Target ? Target->GetHitResult() : nullptr;
         if (!Hit) continue;
+        // Shotgun pellets retain their individual surface effects, but one
+        // cartridge should not stack many physics fields on the same object.
+        if (GetOwner()->HasAuthority() && !FracturedTargets.Contains(Hit->GetActor())
+            && ACRDestructibleActor::ApplyWeaponHit(*Hit)) FracturedTargets.Add(Hit->GetActor());
         FCRShotImpact& Impact = Hits.AddDefaulted_GetRef();
         Impact.bBlockingHit = Hit->bBlockingHit;
         Impact.Position = Hit->bBlockingHit ? Hit->ImpactPoint : Hit->TraceEnd;
@@ -115,6 +121,20 @@ void UCRWeaponEffectsComponent::SubmitShot(UBaselineWeaponInstance* Weapon, cons
         MulticastShot(Weapon->EffectsProfile, Muzzle, Ejection, Hits);
     }
     else PlayShot(Weapon->EffectsProfile, Muzzle, Ejection, Hits);
+}
+
+void UCRWeaponEffectsComponent::SubmitMountedShot(UCRWeaponEffectsProfile* Profile, const FTransform& Muzzle, const FHitResult& Hit)
+{
+    if (!GetOwner()->HasAuthority() || !Profile) return;
+    ACRDestructibleActor::ApplyWeaponHit(Hit);
+    FCRShotImpact Impact;
+    Impact.bBlockingHit=Hit.bBlockingHit;
+    Impact.Position=Hit.bBlockingHit ? Hit.ImpactPoint : Hit.TraceEnd;
+    Impact.Normal=Hit.ImpactNormal.GetSafeNormal();
+    Impact.Surface=UPhysicalMaterial::DetermineSurfaceType(Hit.PhysMaterial.Get());
+    const TArray<FCRShotImpact> Hits{Impact};
+    UCRCrowdAgentComponent::ReportGunshot(Cast<APawn>(GetOwner()),Muzzle.GetLocation(),Hits);
+    MulticastShot(Profile,Muzzle,Muzzle,Hits);
 }
 
 void UCRWeaponEffectsComponent::MulticastShot_Implementation(UCRWeaponEffectsProfile* Profile, const FTransform& Muzzle, const FTransform& Ejection, const TArray<FCRShotImpact>& Hits)
@@ -133,6 +153,8 @@ void UCRWeaponEffectsComponent::PlayShot(UCRWeaponEffectsProfile* Profile, const
         return System ? UNiagaraFunctionLibrary::SpawnSystemAtLocation(this, System, Location, Rotation, FVector(Scale), true, true, ENCPoolMethod::AutoRelease) : nullptr;
     };
     Spawn(Profile->MuzzleFlash, Muzzle.GetLocation(), Muzzle.Rotator(), Profile->MuzzleScale);
+    if (Profile->FireSound)
+        UGameplayStatics::PlaySoundAtLocation(this,Profile->FireSound,Muzzle.GetLocation(),FRotator::ZeroRotator,.7f,FMath::FRandRange(.95f,1.03f),0.f,Profile->ImpactAttenuation,nullptr,GetOwner());
     Spawn(Profile->ShellEjection, Ejection.GetLocation(), Ejection.Rotator(), 1.f);
     TArray<FVector> SoundPositions;
     for (const FCRShotImpact& Hit : Hits)

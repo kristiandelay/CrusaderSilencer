@@ -1,0 +1,39 @@
+{
+  "name": "RuggedSurvivor",
+  "archive": "RuggedSurvivor.zip",
+  "archive_sha256": "d6e1b5df26e67cf9905c5636bb7adad505d0463d7511552c16f8530842113551",
+  "files": [
+    {
+      "original": "Meshy_AI_Rugged_Survivor_1007202441_texture_fbx/Meshy_AI_Rugged_Survivor_1007202441_texture.fbx",
+      "file": "RuggedSurvivor.fbx",
+      "bytes": 25324556,
+      "sha256": "4b53ef3bce4f52725cc943d9784775c4331f4315fcb5241a38956b364250bff6"
+    },
+    {
+      "original": "Meshy_AI_Rugged_Survivor_1007202441_texture_fbx/Meshy_AI_Rugged_Survivor_1007202441_texture.png",
+      "file": "RuggedSurvivor_BaseColor.png",
+      "bytes": 6970729,
+      "sha256": "d222de4bcf4eb10c09e3ab8e8d1e0af28fdd9def4cb4ee8e26e2eb535da6661e"
+    },
+    {
+      "original": "Meshy_AI_Rugged_Survivor_1007202441_texture_fbx/Meshy_AI_Rugged_Survivor_1007202441_texture_metallic.png",
+      "file": "RuggedSurvivor_Metallic.png",
+      "bytes": 32962,
+      "sha256": "1636b1576796b32b2abcc25f41b0f880d522f683d608c5f60f39ca2cd4252e96"
+    },
+    {
+      "original": "Meshy_AI_Rugged_Survivor_1007202441_texture_fbx/Meshy_AI_Rugged_Survivor_1007202441_texture_normal.png",
+      "file": "RuggedSurvivor_Normal.png",
+      "bytes": 5523252,
+      "sha256": "596d7211de6a096f1cd297d13794d62447f9952638043a4ded4c563355789797"
+    },
+    {
+      "original": "Meshy_AI_Rugged_Survivor_1007202441_texture_fbx/Meshy_AI_Rugged_Survivor_1007202441_texture_roughness.png",
+      "file": "RuggedSurvivor_Roughness.png",
+      "bytes": 1333710,
+      "sha256": "a6b6a24ebe4ac84a384f934daca783db79f1784604ff8be79fee638fc9cdce1b"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Rugged_Survivor_1007202441_texture_fbx.zip",
+  "archive_path": "mockups/NPC/RuggedSurvivor.zip"
+}

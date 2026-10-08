@@ -1,0 +1,39 @@
+{
+  "name": "BlueSlateShowcase",
+  "archive": "BlueSlateShowcase.zip",
+  "archive_sha256": "e5d494f8f786f22525fe7623a28aa0de1fe854dce93f63c0847549f68b89dd5e",
+  "files": [
+    {
+      "original": "Meshy_AI_Blue_Slate_Showcase_1007204907_texture_fbx/Meshy_AI_Blue_Slate_Showcase_1007204907_texture.fbx",
+      "file": "BlueSlateShowcase.fbx",
+      "bytes": 10855052,
+      "sha256": "e22f5dddb709e39769fa4a622e486ba285961c99cb9267f73de039fe27ef28be"
+    },
+    {
+      "original": "Meshy_AI_Blue_Slate_Showcase_1007204907_texture_fbx/Meshy_AI_Blue_Slate_Showcase_1007204907_texture.png",
+      "file": "BlueSlateShowcase_BaseColor.png",
+      "bytes": 4266538,
+      "sha256": "8f81881b25727c69e7bbd701646aaf4f6c7dadb321015c1de857762eaa19df68"
+    },
+    {
+      "original": "Meshy_AI_Blue_Slate_Showcase_1007204907_texture_fbx/Meshy_AI_Blue_Slate_Showcase_1007204907_texture_metallic.png",
+      "file": "BlueSlateShowcase_Metallic.png",
+      "bytes": 968852,
+      "sha256": "dbe5686d8c2f945899d65ba635ae1b3f309a31915a339fb999517208b1aa5a83"
+    },
+    {
+      "original": "Meshy_AI_Blue_Slate_Showcase_1007204907_texture_fbx/Meshy_AI_Blue_Slate_Showcase_1007204907_texture_normal.png",
+      "file": "BlueSlateShowcase_Normal.png",
+      "bytes": 3404505,
+      "sha256": "439f21520e9d82adc857af2fc7c0fe3ce8f167160e753c9b8f0b2c9fd7525dc0"
+    },
+    {
+      "original": "Meshy_AI_Blue_Slate_Showcase_1007204907_texture_fbx/Meshy_AI_Blue_Slate_Showcase_1007204907_texture_roughness.png",
+      "file": "BlueSlateShowcase_Roughness.png",
+      "bytes": 1153241,
+      "sha256": "4840f21d336392b4bfad3056238748950e58b3c944c01c49acf5166227361ab8"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Blue_Slate_Showcase_1007204907_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level2/BlueSlateShowcase.zip"
+}

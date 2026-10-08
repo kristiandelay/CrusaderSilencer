@@ -1,0 +1,39 @@
+{
+  "name": "CrimsonAuthority",
+  "archive": "CrimsonAuthority.zip",
+  "archive_sha256": "b81c655eca5c55e9f980ad0a40ebd5688b1d4995f30a8cd0b1158253708eb7ac",
+  "files": [
+    {
+      "original": "Meshy_AI_Crimson_Authority_1007202431_texture_fbx/Meshy_AI_Crimson_Authority_1007202431_texture.fbx",
+      "file": "CrimsonAuthority.fbx",
+      "bytes": 18707788,
+      "sha256": "13af016cec56d91e1745ce96c5776743e6218692f89f9adbb9c369d302a4aaa7"
+    },
+    {
+      "original": "Meshy_AI_Crimson_Authority_1007202431_texture_fbx/Meshy_AI_Crimson_Authority_1007202431_texture.png",
+      "file": "CrimsonAuthority_BaseColor.png",
+      "bytes": 6492670,
+      "sha256": "37929d77fc9226116a86700e389070ae483960ea6acb145f3bf3b1c8dce33e48"
+    },
+    {
+      "original": "Meshy_AI_Crimson_Authority_1007202431_texture_fbx/Meshy_AI_Crimson_Authority_1007202431_texture_metallic.png",
+      "file": "CrimsonAuthority_Metallic.png",
+      "bytes": 44160,
+      "sha256": "3fd5f50d4d4cbfa258ad2ee588ddda250570aeb262a7a9ab47d5159fa27d0156"
+    },
+    {
+      "original": "Meshy_AI_Crimson_Authority_1007202431_texture_fbx/Meshy_AI_Crimson_Authority_1007202431_texture_normal.png",
+      "file": "CrimsonAuthority_Normal.png",
+      "bytes": 5100372,
+      "sha256": "9580ec744e75d2207044a9c406e8755646c2a9c7a5b2960991307e8d344d1cad"
+    },
+    {
+      "original": "Meshy_AI_Crimson_Authority_1007202431_texture_fbx/Meshy_AI_Crimson_Authority_1007202431_texture_roughness.png",
+      "file": "CrimsonAuthority_Roughness.png",
+      "bytes": 1050108,
+      "sha256": "cb51e6d923ed403cf41b03bea00fe2af5ffc934ee8a11a24042447a8bc40c943"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Crimson_Authority_1007202431_texture_fbx.zip",
+  "archive_path": "mockups/NPC/CrimsonAuthority.zip"
+}

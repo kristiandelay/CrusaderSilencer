@@ -39,6 +39,7 @@ public class LyraEditor : ModuleRules
         PrivateDependencyModuleNames.AddRange(
             new string[] {
 				"InputCore",
+				"ApplicationCore",
 				"Slate",
 				"SlateCore",
 				"ToolMenus",
@@ -50,6 +51,10 @@ public class LyraEditor : ModuleRules
 				"CollectionManager",
 				"SourceControl",
 				"Chaos",
+				"GeometryCollectionEngine",
+				"FractureEngine",
+				"PlanarCut",
+				"DataflowCore",
 				"Kismet",
 				"BlueprintGraph",
                 "AnimGraph",

@@ -21,7 +21,7 @@ def ss_finish(error=None):
     sub=next(s for s in u.ObjectIterator(u.EnhancedInputLocalPlayerSubsystem) if isinstance(s.get_outer(),u.LocalPlayer) and u.GameplayStatics.get_player_controller(s,0)==p.get_controller())
     for n in ['Aim','Fire','FireSemi','Move','Sprint','Crouch','Interact']:ss_input(sub,n,0)
     p.character_movement.set_slide_requested(False);p.un_crouch()
-    (ss_root/'Artifacts/SlideCadence/combat.json').write_text(json.dumps(dict(passed=error is None,error=error,results=ss_test['results']),indent=2)+'\n')
+    (ss_root/'Artifacts/SlideCadence/combat.json').write_text(json.dumps(dict(passed=error is None,error=error,results=ss_test['results'],diagnostics=ss_test.get('diagnostics',[])),indent=2)+'\n')
     print('SLIDE_COMBAT_COMPLETE',error)
 
 def ss_tick(dt):
@@ -55,16 +55,25 @@ def ss_tick(dt):
             assert now-ss_test['started']<5,'Could not reach slide speed'
             if p.get_velocity().length()>660:
                 ss_input(sub,'Crouch',1)
-                ss_test.update(phase='fire',started=now,before=ss_ammo(p),errors=[],hands=[])
+                ss_test.update(phase='fire',started=now,before=ss_ammo(p),errors=[],hands=[],aim_ready_at=None,diagnostics=[])
         elif phase=='fire':
             for n in ['Move','Sprint','Crouch']:ss_input(sub,n,0)
             ss_input(sub,'Aim',1)
             p.get_controller().set_control_rotation(u.Rotator(pitch=25,yaw=45))
             elapsed=now-ss_test['started']
-            # Measure aim before the weapon's recoil montage kicks the muzzle up.
-            # Then fire while still sliding and verify ammunition and hand grips.
-            for n in ['Fire','FireSemi']:ss_input(sub,n,1 if elapsed>1.0 else 0)
-            if elapsed>.65:
+            # Enhanced Input and animation evaluate on subsequent ticks. At a low
+            # editor frame rate .65 seconds can still be the initial carry pose.
+            # The upper-body mirror also blends for .35 seconds when that branch
+            # becomes relevant after a shoulder change. Readiness/pitch can reach
+            # their targets sooner; measure after both transitions, before recoil.
+            aim=eq.get_weapon_animation_mesh().get_anim_instance()
+            if ss_test['aim_ready_at'] is None:
+                if elapsed>=.4 and aim.weapon_ready_weight>.98 and abs(aim.aim_pitch-25)<2:
+                    ss_test['aim_ready_at']=now
+                else:assert elapsed<2.5,'Aim pose never became ready during slide'
+            aimed=now-ss_test['aim_ready_at'] if ss_test['aim_ready_at'] is not None else -1
+            for n in ['Fire','FireSemi']:ss_input(sub,n,1 if aimed>.2 else 0)
+            if aimed>=0:
                 assert move.is_sliding() and not eq.are_hands_busy()
                 weapon=p.equipment_manager.get_first_instance_of_type(u.BaselineWeaponInstance).get_spawned_actors()[0]
                 assert not weapon.get_editor_property('bHidden')
@@ -72,10 +81,15 @@ def ss_tick(dt):
                 def direction(rot):
                     pitch,yaw=math.radians(rot.pitch),math.radians(rot.yaw)
                     return [math.cos(pitch)*math.cos(yaw),math.cos(pitch)*math.sin(yaw),math.sin(pitch)]
-                if elapsed<.95:
+                if aimed<=.2:
                     ss_test['errors'].append(math.degrees(math.acos(max(-1,min(1,sum(a*b for a,b in zip(direction(r),direction(p.get_control_rotation()))))))))
+                    montage=aim.get_current_active_montage()
+                    ss_test['diagnostics'].append(dict(weapon=kind,left=left,elapsed=elapsed,aimed=aimed,actor_yaw=p.get_actor_rotation().yaw,
+                        source_root_yaw=u.MathLibrary.quat_rotator(p.mesh.get_socket_transform('root',u.RelativeTransformSpace.RTS_COMPONENT).rotation).yaw,
+                        weapon_root_yaw=aim.weapon_root_rotation.yaw,aim_yaw=aim.aim_yaw,aim_pitch=aim.aim_pitch,
+                        montage=montage.get_name() if montage else None,muzzle=str(r)))
                 ss_test['hands'].append(max((eq.get_presentation_mesh().get_socket_location(n)-eq.get_weapon_animation_mesh().get_socket_location(n)).length() for n in ['hand_l','hand_r']))
-            if elapsed>1.4:
+            if aimed>.6:
                 after=ss_ammo(p)
                 assert after<ss_test['before'],'No rounds fired during slide'
                 assert max(ss_test['errors'])<18,ss_test['errors']

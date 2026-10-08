@@ -21,6 +21,10 @@
   ],
   "Plugins": [
     {
+      "Name": "ChaosNiagara",
+      "Enabled": true
+    },
+    {
       "Name": "ActorPalette",
       "Enabled": true
     },
@@ -470,6 +474,16 @@
     {
       "Name": "PhysicsControl",
       "Enabled": true
+    },
+    {
+      "Name": "Fracture",
+      "Enabled": true,
+      "TargetAllowList": ["Editor"]
+    },
+    {
+      "Name": "PlanarCut",
+      "Enabled": true,
+      "TargetAllowList": ["Editor"]
     }
   ]
 }

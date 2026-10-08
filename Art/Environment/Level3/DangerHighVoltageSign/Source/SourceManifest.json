@@ -1,0 +1,39 @@
+{
+  "name": "DangerHighVoltageSign",
+  "archive": "DangerHighVoltageSign.zip",
+  "archive_sha256": "cbdbd21e5c6ddb0aebd5e07222242c551411b4f486fc1db862c0e699788b08fd",
+  "files": [
+    {
+      "original": "Meshy_AI_Danger_High_Voltage_S_1008205310_texture_fbx/Meshy_AI_Danger_High_Voltage_S_1008205310_texture.fbx",
+      "file": "DangerHighVoltageSign.fbx",
+      "bytes": 15378908,
+      "sha256": "37b2cfb56f00d9dbe7d9bd69038a19431b6b38de03dd2e54c0733e1f688455c1"
+    },
+    {
+      "original": "Meshy_AI_Danger_High_Voltage_S_1008205310_texture_fbx/Meshy_AI_Danger_High_Voltage_S_1008205310_texture.png",
+      "file": "DangerHighVoltageSign_BaseColor.png",
+      "bytes": 4771447,
+      "sha256": "24101af9c7420bce6a93abc1d18da92aed9eaaf87c8fa54228a94e3d8612fd1b"
+    },
+    {
+      "original": "Meshy_AI_Danger_High_Voltage_S_1008205310_texture_fbx/Meshy_AI_Danger_High_Voltage_S_1008205310_texture_metallic.png",
+      "file": "DangerHighVoltageSign_Metallic.png",
+      "bytes": 38283,
+      "sha256": "d9260dc48a07ba4d5d0f989465194fceabb47cb0efdb879d89ec5f8074b72476"
+    },
+    {
+      "original": "Meshy_AI_Danger_High_Voltage_S_1008205310_texture_fbx/Meshy_AI_Danger_High_Voltage_S_1008205310_texture_normal.png",
+      "file": "DangerHighVoltageSign_Normal.png",
+      "bytes": 3935101,
+      "sha256": "390e81128543575e812f8b7775bd44c71ed577812fd739cbe3f704fff35bcabd"
+    },
+    {
+      "original": "Meshy_AI_Danger_High_Voltage_S_1008205310_texture_fbx/Meshy_AI_Danger_High_Voltage_S_1008205310_texture_roughness.png",
+      "file": "DangerHighVoltageSign_Roughness.png",
+      "bytes": 1313443,
+      "sha256": "5b9b86ba335c1e93a82d2c7b8764f54bdc8de23a9013bd166f3b380c11708263"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Danger_High_Voltage_S_1008205310_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level3/props/DangerHighVoltageSign.zip"
+}

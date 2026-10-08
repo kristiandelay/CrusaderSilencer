@@ -1,0 +1,39 @@
+{
+  "name": "IndustrialVentWall",
+  "archive": "IndustrialVentWall.zip",
+  "archive_sha256": "d9ae1d854373dcc2df52a4bae70189a1c090e196a3f807e852d9b54778d9a6c5",
+  "files": [
+    {
+      "original": "Meshy_AI_Industrial_Vent_Wall__1007205313_texture_fbx/Meshy_AI_Industrial_Vent_Wall__1007205313_texture.fbx",
+      "file": "IndustrialVentWall.fbx",
+      "bytes": 16163148,
+      "sha256": "2649beb4ce871c38b810ad6c394208627dcbfeee63dda1c2253327f3753ee798"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Vent_Wall__1007205313_texture_fbx/Meshy_AI_Industrial_Vent_Wall__1007205313_texture.png",
+      "file": "IndustrialVentWall_BaseColor.png",
+      "bytes": 4819570,
+      "sha256": "b0ca2ae80042e8655aabdc206dd5f747e84587c4eb703e6681c392e8897b8fd0"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Vent_Wall__1007205313_texture_fbx/Meshy_AI_Industrial_Vent_Wall__1007205313_texture_metallic.png",
+      "file": "IndustrialVentWall_Metallic.png",
+      "bytes": 454820,
+      "sha256": "6bfe9898b913ab18f146c8d005ed54597a0d87863c8ecc0847e3cec20ce11370"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Vent_Wall__1007205313_texture_fbx/Meshy_AI_Industrial_Vent_Wall__1007205313_texture_normal.png",
+      "file": "IndustrialVentWall_Normal.png",
+      "bytes": 4081539,
+      "sha256": "cb8e2ca857ba8124996b9a2fe827aebc2292b348bfb22e481fa4520cc8e9fac7"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Vent_Wall__1007205313_texture_fbx/Meshy_AI_Industrial_Vent_Wall__1007205313_texture_roughness.png",
+      "file": "IndustrialVentWall_Roughness.png",
+      "bytes": 1383072,
+      "sha256": "6774df42a7ad514a64da16ef999985cd3157d0e42a18208859c4b5a5ffc11972"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Industrial_Vent_Wall__1007205313_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level2/IndustrialVentWall.zip"
+}

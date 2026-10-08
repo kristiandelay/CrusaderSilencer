@@ -52,6 +52,9 @@ public:
     virtual void GetCrowdAgentCollisions(float& Radius, float& HalfHeight) const override;
     UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Crowd") bool bEnabled = false;
     UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Crowd") bool bGuard = false;
+    /** Gunfire may be investigated, but only damage or a close shot permits return fire. */
+    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Crowd") bool bReturnFireOnly = false;
+    UPROPERTY(BlueprintReadOnly, Replicated, Category="Crowd") bool bProvoked = false;
     UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Crowd") TObjectPtr<ACRCrowdArea> HomeArea;
     UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Crowd") TArray<TSubclassOf<AActor>> Visuals;
     UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Crowd") TArray<TSubclassOf<ULyraInventoryItemDefinition>> Weapons;

@@ -1,0 +1,39 @@
+{
+  "name": "IndustrialReactorPanel",
+  "archive": "IndustrialReactorPanel.zip",
+  "archive_sha256": "aea2ca90f752ca058bef8e5f605b7fe15365329bc538fe1acf9e4a6ea9dfbe46",
+  "files": [
+    {
+      "original": "Meshy_AI_Industrial_Reactor_Pa_1008201819_texture_fbx/Meshy_AI_Industrial_Reactor_Pa_1008201819_texture.fbx",
+      "file": "IndustrialReactorPanel.fbx",
+      "bytes": 46074316,
+      "sha256": "5a02c77d4b899bda85e12bfe2980923dba5b09210958886121449f55773d41e0"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Reactor_Pa_1008201819_texture_fbx/Meshy_AI_Industrial_Reactor_Pa_1008201819_texture.png",
+      "file": "IndustrialReactorPanel_BaseColor.png",
+      "bytes": 5110358,
+      "sha256": "dd092c975bf3655a46577803c5522b50e4aa49430a6d03ad9fe75bc1a3cd7d4a"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Reactor_Pa_1008201819_texture_fbx/Meshy_AI_Industrial_Reactor_Pa_1008201819_texture_metallic.png",
+      "file": "IndustrialReactorPanel_Metallic.png",
+      "bytes": 1477083,
+      "sha256": "679be46556d9a92907649247310829c45ade2a684c8365fb2108c501711b25e6"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Reactor_Pa_1008201819_texture_fbx/Meshy_AI_Industrial_Reactor_Pa_1008201819_texture_normal.png",
+      "file": "IndustrialReactorPanel_Normal.png",
+      "bytes": 4897428,
+      "sha256": "df503706dc8730f6148173951d8de5458b5133f32ad33268f39a919fd0ca64ca"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Reactor_Pa_1008201819_texture_fbx/Meshy_AI_Industrial_Reactor_Pa_1008201819_texture_roughness.png",
+      "file": "IndustrialReactorPanel_Roughness.png",
+      "bytes": 1653590,
+      "sha256": "6a2d5a822eb0392fab994dcca542f3f457de9a50a3db4412590ad7c1600eba41"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Industrial_Reactor_Pa_1008201819_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level3/IndustrialReactorPanel.zip"
+}

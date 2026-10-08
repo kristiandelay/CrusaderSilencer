@@ -1,0 +1,39 @@
+{
+  "name": "BlackEquipmentCase",
+  "archive": "BlackEquipmentCase.zip",
+  "archive_sha256": "0f2033b8a113af0b2ec7b833157d3dbd96499ffbb3278ab6bbf5857921bff384",
+  "files": [
+    {
+      "original": "Meshy_AI_Black_Equipment_Case_1007205201_texture_fbx/Meshy_AI_Black_Equipment_Case_1007205201_texture.fbx",
+      "file": "BlackEquipmentCase.fbx",
+      "bytes": 10290156,
+      "sha256": "72fc1a8b6da57f2ed9a28e3d859610d6bf205894d56c5b5cf87a02785f93ba12"
+    },
+    {
+      "original": "Meshy_AI_Black_Equipment_Case_1007205201_texture_fbx/Meshy_AI_Black_Equipment_Case_1007205201_texture.png",
+      "file": "BlackEquipmentCase_BaseColor.png",
+      "bytes": 4077327,
+      "sha256": "e4e32d1bd170ce5a6ddd5d0d428d74c0ef67b58f35611733298925817a4d03d5"
+    },
+    {
+      "original": "Meshy_AI_Black_Equipment_Case_1007205201_texture_fbx/Meshy_AI_Black_Equipment_Case_1007205201_texture_metallic.png",
+      "file": "BlackEquipmentCase_Metallic.png",
+      "bytes": 1206794,
+      "sha256": "efdfa4ce83875f06625a7aaa37a21a78943c8b36d84ece3d8d61f3b8e30fb7c1"
+    },
+    {
+      "original": "Meshy_AI_Black_Equipment_Case_1007205201_texture_fbx/Meshy_AI_Black_Equipment_Case_1007205201_texture_normal.png",
+      "file": "BlackEquipmentCase_Normal.png",
+      "bytes": 3373619,
+      "sha256": "fe4da499c99ba65f26b609048789e271b3868f0c2c3c3fdc3aab71ef3b895bbe"
+    },
+    {
+      "original": "Meshy_AI_Black_Equipment_Case_1007205201_texture_fbx/Meshy_AI_Black_Equipment_Case_1007205201_texture_roughness.png",
+      "file": "BlackEquipmentCase_Roughness.png",
+      "bytes": 1155474,
+      "sha256": "a7932ab414a277b2d9be9edaf5ae2e3967635285c29b73cbbc89a312b047eb35"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Black_Equipment_Case_1007205201_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level2/BlackEquipmentCase.zip"
+}

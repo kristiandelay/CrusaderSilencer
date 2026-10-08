@@ -1,0 +1,153 @@
+{
+  "map": "/Game/Maps/L_TraversalGym",
+  "robots": [
+    {
+      "name": "IronSentinel",
+      "home": "CR_Crowd_Commons",
+      "position": [
+        10400,
+        -650,
+        94
+      ],
+      "yaw": 25,
+      "muzzles": [
+        [
+          -48.46,
+          36.84,
+          131.4
+        ],
+        [
+          48.14,
+          35.76,
+          134.16
+        ]
+      ],
+      "health": 240
+    },
+    {
+      "name": "SentinelWalker",
+      "home": "CR_Crowd_Market",
+      "position": [
+        14100,
+        -750,
+        94
+      ],
+      "yaw": 160,
+      "muzzles": [
+        [
+          -3.75,
+          48.29,
+          138.99
+        ],
+        [
+          4.3,
+          48.32,
+          138.99
+        ]
+      ],
+      "health": 180
+    },
+    {
+      "name": "APP5200IndustrialM",
+      "home": "CR_FacilityCrowd_Area_Checkpoint",
+      "position": [
+        11170,
+        7310,
+        122
+      ],
+      "yaw": 30,
+      "muzzles": [
+        [
+          -35.74,
+          32.42,
+          132.78
+        ],
+        [
+          35.56,
+          32.3,
+          132.78
+        ],
+        [
+          -35.28,
+          31.67,
+          124.27
+        ],
+        [
+          35.1,
+          31.45,
+          124.27
+        ]
+      ],
+      "health": 240
+    },
+    {
+      "name": "IroncladTitan",
+      "home": "CR_Crowd_Depot",
+      "position": [
+        14900,
+        4000,
+        94
+      ],
+      "yaw": 210,
+      "muzzles": [
+        [
+          -45.55,
+          38.98,
+          129.79
+        ],
+        [
+          45.53,
+          38.93,
+          129.79
+        ]
+      ],
+      "health": 300
+    },
+    {
+      "name": "IroncladVanguard",
+      "home": "CR_Crowd_Refuge",
+      "position": [
+        10000,
+        3050,
+        94
+      ],
+      "yaw": 95,
+      "muzzles": [
+        [
+          -37.54,
+          54.84,
+          130.71
+        ],
+        [
+          -36.62,
+          46.45,
+          113.0
+        ]
+      ],
+      "health": 280
+    },
+    {
+      "name": "IroncladSentinel",
+      "home": "CR_FacilityCrowd_Area_Hall",
+      "position": [
+        12900,
+        7360,
+        122
+      ],
+      "yaw": -45,
+      "muzzles": [
+        [
+          -41.45,
+          41.12,
+          136.0
+        ],
+        [
+          41.35,
+          41.12,
+          136.0
+        ]
+      ],
+      "health": 260
+    }
+  ]
+}

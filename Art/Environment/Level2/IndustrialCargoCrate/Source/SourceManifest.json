@@ -1,0 +1,39 @@
+{
+  "name": "IndustrialCargoCrate",
+  "archive": "IndustrialCargoCrate.zip",
+  "archive_sha256": "0b10444660ac03067f55228c12f67ff93d398c6e2ec3dc46ae643e3bd8b026d0",
+  "files": [
+    {
+      "original": "Meshy_AI_Industrial_Cargo_Crat_1007205121_texture_fbx/Meshy_AI_Industrial_Cargo_Crat_1007205121_texture.fbx",
+      "file": "IndustrialCargoCrate.fbx",
+      "bytes": 14238028,
+      "sha256": "2c795a8b749a3bfccddb5d6784aef862d97f24cb4af886d2072a16ff71c8f930"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Cargo_Crat_1007205121_texture_fbx/Meshy_AI_Industrial_Cargo_Crat_1007205121_texture.png",
+      "file": "IndustrialCargoCrate_BaseColor.png",
+      "bytes": 4111327,
+      "sha256": "bc1ed1ecf15960493428c9465aa89b330f54e43b0cc9e05c3099b908e962193d"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Cargo_Crat_1007205121_texture_fbx/Meshy_AI_Industrial_Cargo_Crat_1007205121_texture_metallic.png",
+      "file": "IndustrialCargoCrate_Metallic.png",
+      "bytes": 25671,
+      "sha256": "034c953b12f4f6455b2f8ad90f6b428a90ce0c4f746d817b927b8cab051530af"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Cargo_Crat_1007205121_texture_fbx/Meshy_AI_Industrial_Cargo_Crat_1007205121_texture_normal.png",
+      "file": "IndustrialCargoCrate_Normal.png",
+      "bytes": 2800187,
+      "sha256": "8d5851addfa3a9b99086efd7bbe52ac81d0e3a55eaf113179c4660ac5889beaf"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Cargo_Crat_1007205121_texture_fbx/Meshy_AI_Industrial_Cargo_Crat_1007205121_texture_roughness.png",
+      "file": "IndustrialCargoCrate_Roughness.png",
+      "bytes": 1267910,
+      "sha256": "aff64db30e4bc5815fd1f8e635005ee849a1534a3a76b9fbf285fc96ce795c88"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Industrial_Cargo_Crat_1007205121_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level2/IndustrialCargoCrate.zip"
+}

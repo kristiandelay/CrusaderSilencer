@@ -1,0 +1,39 @@
+{
+  "name": "MarsIndustrialPowerCell",
+  "archive": "MarsIndustrialPowerCell.zip",
+  "archive_sha256": "2aaa74196613a33c7835937a1641dc98b69f0537377cbfacaaa4faf738dae83f",
+  "files": [
+    {
+      "original": "Meshy_AI_Industrial_Power_Cell_1008204831_texture_fbx/Meshy_AI_Industrial_Power_Cell_1008204831_texture.fbx",
+      "file": "MarsIndustrialPowerCell.fbx",
+      "bytes": 28324940,
+      "sha256": "f927fe32340809726308ac34ea0a7bb961677c63d92144ca57bb864b0d0e311f"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Power_Cell_1008204831_texture_fbx/Meshy_AI_Industrial_Power_Cell_1008204831_texture.png",
+      "file": "MarsIndustrialPowerCell_BaseColor.png",
+      "bytes": 5474470,
+      "sha256": "55f1cdd8f252d75950f65f8831616b8506db18436af9b44c6455a0aea1d3b5d1"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Power_Cell_1008204831_texture_fbx/Meshy_AI_Industrial_Power_Cell_1008204831_texture_metallic.png",
+      "file": "MarsIndustrialPowerCell_Metallic.png",
+      "bytes": 583721,
+      "sha256": "7b749029c762898e7fbc95df3e7b3138896d9f4c9c1ba4a4f540d1688668f53f"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Power_Cell_1008204831_texture_fbx/Meshy_AI_Industrial_Power_Cell_1008204831_texture_normal.png",
+      "file": "MarsIndustrialPowerCell_Normal.png",
+      "bytes": 4380142,
+      "sha256": "560160f081172303431227236a2dda9c38d7aed8d2de3c335a2576caba9dc149"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Power_Cell_1008204831_texture_fbx/Meshy_AI_Industrial_Power_Cell_1008204831_texture_roughness.png",
+      "file": "MarsIndustrialPowerCell_Roughness.png",
+      "bytes": 1608517,
+      "sha256": "233f1d10f5c76edfcb03fe6df149fa8bfc13ae4f0447deed6ce6a8f51073f510"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Industrial_Power_Cell_1008204831_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level3/props/MarsIndustrialPowerCell.zip"
+}

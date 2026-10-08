@@ -1,0 +1,8594 @@
+{
+  "map": "/Game/Maps/L_TraversalGym",
+  "origin": [
+    20600,
+    7900,
+    30
+  ],
+  "footprint_cm": [
+    6000,
+    4200
+  ],
+  "wall_height_cm": 660,
+  "roof_underside_cm": 660,
+  "main_door_width_cm": 800,
+  "door_height_cm": 510,
+  "rooms": {
+    "Hall": [
+      -2100,
+      2100,
+      -1500,
+      1500
+    ],
+    "Command": [
+      -900,
+      900,
+      1500,
+      2100
+    ],
+    "Lobby": [
+      -900,
+      900,
+      -2100,
+      -1500
+    ],
+    "Service": [
+      -3000,
+      -2100,
+      -600,
+      600
+    ],
+    "Storage": [
+      2100,
+      3000,
+      -900,
+      900
+    ]
+  },
+  "roof_samples": [
+    [
+      -1950,
+      -1350
+    ],
+    [
+      -1950,
+      -1050
+    ],
+    [
+      -1950,
+      -750
+    ],
+    [
+      -1950,
+      -450
+    ],
+    [
+      -1950,
+      -150
+    ],
+    [
+      -1950,
+      150
+    ],
+    [
+      -1950,
+      450
+    ],
+    [
+      -1950,
+      750
+    ],
+    [
+      -1950,
+      1050
+    ],
+    [
+      -1950,
+      1350
+    ],
+    [
+      -1650,
+      -1350
+    ],
+    [
+      -1650,
+      -1050
+    ],
+    [
+      -1650,
+      -750
+    ],
+    [
+      -1650,
+      -450
+    ],
+    [
+      -1650,
+      -150
+    ],
+    [
+      -1650,
+      150
+    ],
+    [
+      -1650,
+      450
+    ],
+    [
+      -1650,
+      750
+    ],
+    [
+      -1650,
+      1050
+    ],
+    [
+      -1650,
+      1350
+    ],
+    [
+      -1350,
+      -1350
+    ],
+    [
+      -1350,
+      -1050
+    ],
+    [
+      -1350,
+      -750
+    ],
+    [
+      -1350,
+      -450
+    ],
+    [
+      -1350,
+      -150
+    ],
+    [
+      -1350,
+      150
+    ],
+    [
+      -1350,
+      450
+    ],
+    [
+      -1350,
+      750
+    ],
+    [
+      -1350,
+      1050
+    ],
+    [
+      -1350,
+      1350
+    ],
+    [
+      -1050,
+      -1350
+    ],
+    [
+      -1050,
+      -1050
+    ],
+    [
+      -1050,
+      -750
+    ],
+    [
+      -1050,
+      -450
+    ],
+    [
+      -1050,
+      -150
+    ],
+    [
+      -1050,
+      150
+    ],
+    [
+      -1050,
+      450
+    ],
+    [
+      -1050,
+      750
+    ],
+    [
+      -1050,
+      1050
+    ],
+    [
+      -1050,
+      1350
+    ],
+    [
+      -750,
+      -1350
+    ],
+    [
+      -750,
+      -1050
+    ],
+    [
+      -750,
+      -750
+    ],
+    [
+      -750,
+      -450
+    ],
+    [
+      -750,
+      -150
+    ],
+    [
+      -750,
+      150
+    ],
+    [
+      -750,
+      450
+    ],
+    [
+      -750,
+      750
+    ],
+    [
+      -750,
+      1050
+    ],
+    [
+      -750,
+      1350
+    ],
+    [
+      -450,
+      -1350
+    ],
+    [
+      -450,
+      -1050
+    ],
+    [
+      -450,
+      -750
+    ],
+    [
+      -450,
+      -450
+    ],
+    [
+      -450,
+      -150
+    ],
+    [
+      -450,
+      150
+    ],
+    [
+      -450,
+      450
+    ],
+    [
+      -450,
+      750
+    ],
+    [
+      -450,
+      1050
+    ],
+    [
+      -450,
+      1350
+    ],
+    [
+      -150,
+      -1350
+    ],
+    [
+      -150,
+      -1050
+    ],
+    [
+      -150,
+      -750
+    ],
+    [
+      -150,
+      -450
+    ],
+    [
+      -150,
+      -150
+    ],
+    [
+      -150,
+      150
+    ],
+    [
+      -150,
+      450
+    ],
+    [
+      -150,
+      750
+    ],
+    [
+      -150,
+      1050
+    ],
+    [
+      -150,
+      1350
+    ],
+    [
+      150,
+      -1350
+    ],
+    [
+      150,
+      -1050
+    ],
+    [
+      150,
+      -750
+    ],
+    [
+      150,
+      -450
+    ],
+    [
+      150,
+      -150
+    ],
+    [
+      150,
+      150
+    ],
+    [
+      150,
+      450
+    ],
+    [
+      150,
+      750
+    ],
+    [
+      150,
+      1050
+    ],
+    [
+      150,
+      1350
+    ],
+    [
+      450,
+      -1350
+    ],
+    [
+      450,
+      -1050
+    ],
+    [
+      450,
+      -750
+    ],
+    [
+      450,
+      -450
+    ],
+    [
+      450,
+      -150
+    ],
+    [
+      450,
+      150
+    ],
+    [
+      450,
+      450
+    ],
+    [
+      450,
+      750
+    ],
+    [
+      450,
+      1050
+    ],
+    [
+      450,
+      1350
+    ],
+    [
+      750,
+      -1350
+    ],
+    [
+      750,
+      -1050
+    ],
+    [
+      750,
+      -750
+    ],
+    [
+      750,
+      -450
+    ],
+    [
+      750,
+      -150
+    ],
+    [
+      750,
+      150
+    ],
+    [
+      750,
+      450
+    ],
+    [
+      750,
+      750
+    ],
+    [
+      750,
+      1050
+    ],
+    [
+      750,
+      1350
+    ],
+    [
+      1050,
+      -1350
+    ],
+    [
+      1050,
+      -1050
+    ],
+    [
+      1050,
+      -750
+    ],
+    [
+      1050,
+      -450
+    ],
+    [
+      1050,
+      -150
+    ],
+    [
+      1050,
+      150
+    ],
+    [
+      1050,
+      450
+    ],
+    [
+      1050,
+      750
+    ],
+    [
+      1050,
+      1050
+    ],
+    [
+      1050,
+      1350
+    ],
+    [
+      1350,
+      -1350
+    ],
+    [
+      1350,
+      -1050
+    ],
+    [
+      1350,
+      -750
+    ],
+    [
+      1350,
+      -450
+    ],
+    [
+      1350,
+      -150
+    ],
+    [
+      1350,
+      150
+    ],
+    [
+      1350,
+      450
+    ],
+    [
+      1350,
+      750
+    ],
+    [
+      1350,
+      1050
+    ],
+    [
+      1350,
+      1350
+    ],
+    [
+      1650,
+      -1350
+    ],
+    [
+      1650,
+      -1050
+    ],
+    [
+      1650,
+      -750
+    ],
+    [
+      1650,
+      -450
+    ],
+    [
+      1650,
+      -150
+    ],
+    [
+      1650,
+      150
+    ],
+    [
+      1650,
+      450
+    ],
+    [
+      1650,
+      750
+    ],
+    [
+      1650,
+      1050
+    ],
+    [
+      1650,
+      1350
+    ],
+    [
+      1950,
+      -1350
+    ],
+    [
+      1950,
+      -1050
+    ],
+    [
+      1950,
+      -750
+    ],
+    [
+      1950,
+      -450
+    ],
+    [
+      1950,
+      -150
+    ],
+    [
+      1950,
+      150
+    ],
+    [
+      1950,
+      450
+    ],
+    [
+      1950,
+      750
+    ],
+    [
+      1950,
+      1050
+    ],
+    [
+      1950,
+      1350
+    ],
+    [
+      -750,
+      1650
+    ],
+    [
+      -750,
+      1950
+    ],
+    [
+      -450,
+      1650
+    ],
+    [
+      -450,
+      1950
+    ],
+    [
+      -150,
+      1650
+    ],
+    [
+      -150,
+      1950
+    ],
+    [
+      150,
+      1650
+    ],
+    [
+      150,
+      1950
+    ],
+    [
+      450,
+      1650
+    ],
+    [
+      450,
+      1950
+    ],
+    [
+      750,
+      1650
+    ],
+    [
+      750,
+      1950
+    ],
+    [
+      -750,
+      -1950
+    ],
+    [
+      -750,
+      -1650
+    ],
+    [
+      -450,
+      -1950
+    ],
+    [
+      -450,
+      -1650
+    ],
+    [
+      -150,
+      -1950
+    ],
+    [
+      -150,
+      -1650
+    ],
+    [
+      150,
+      -1950
+    ],
+    [
+      150,
+      -1650
+    ],
+    [
+      450,
+      -1950
+    ],
+    [
+      450,
+      -1650
+    ],
+    [
+      750,
+      -1950
+    ],
+    [
+      750,
+      -1650
+    ],
+    [
+      -2850,
+      -450
+    ],
+    [
+      -2850,
+      -150
+    ],
+    [
+      -2850,
+      150
+    ],
+    [
+      -2850,
+      450
+    ],
+    [
+      -2550,
+      -450
+    ],
+    [
+      -2550,
+      -150
+    ],
+    [
+      -2550,
+      150
+    ],
+    [
+      -2550,
+      450
+    ],
+    [
+      -2250,
+      -450
+    ],
+    [
+      -2250,
+      -150
+    ],
+    [
+      -2250,
+      150
+    ],
+    [
+      -2250,
+      450
+    ],
+    [
+      2250,
+      -750
+    ],
+    [
+      2250,
+      -450
+    ],
+    [
+      2250,
+      -150
+    ],
+    [
+      2250,
+      150
+    ],
+    [
+      2250,
+      450
+    ],
+    [
+      2250,
+      750
+    ],
+    [
+      2550,
+      -750
+    ],
+    [
+      2550,
+      -450
+    ],
+    [
+      2550,
+      -150
+    ],
+    [
+      2550,
+      150
+    ],
+    [
+      2550,
+      450
+    ],
+    [
+      2550,
+      750
+    ],
+    [
+      2850,
+      -750
+    ],
+    [
+      2850,
+      -450
+    ],
+    [
+      2850,
+      -150
+    ],
+    [
+      2850,
+      150
+    ],
+    [
+      2850,
+      450
+    ],
+    [
+      2850,
+      750
+    ]
+  ],
+  "mesh_actors": [
+    {
+      "actor": "CR_ControlRoom_FloorBacking_Hall",
+      "model": "BlueSlateShowcase",
+      "section": "Floor",
+      "center": [
+        0.0,
+        0.0,
+        -20
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_RoofBacking_Hall",
+      "model": "BlueSlateShowcase",
+      "section": "Roof",
+      "center": [
+        0.0,
+        0.0,
+        688
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_0_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -1950,
+        -1350,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_0_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -1950,
+        -1350,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_0_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -1950,
+        -1050,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_0_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -1950,
+        -1050,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_0_2",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -1950,
+        -750,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_0_2",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -1950,
+        -750,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_0_3",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -1950,
+        -450,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_0_3",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -1950,
+        -450,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_0_4",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -1950,
+        -150,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_0_4",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -1950,
+        -150,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_0_5",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -1950,
+        150,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_0_5",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -1950,
+        150,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_0_6",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -1950,
+        450,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_0_6",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -1950,
+        450,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_0_7",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -1950,
+        750,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_0_7",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -1950,
+        750,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_0_8",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -1950,
+        1050,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_0_8",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -1950,
+        1050,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_0_9",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -1950,
+        1350,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_0_9",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -1950,
+        1350,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_1_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -1650,
+        -1350,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_1_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -1650,
+        -1350,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_1_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -1650,
+        -1050,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_1_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -1650,
+        -1050,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_1_2",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -1650,
+        -750,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_1_2",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -1650,
+        -750,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_1_3",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -1650,
+        -450,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_1_3",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -1650,
+        -450,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_1_4",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -1650,
+        -150,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_1_4",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -1650,
+        -150,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_1_5",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -1650,
+        150,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_1_5",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -1650,
+        150,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_1_6",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -1650,
+        450,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_1_6",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -1650,
+        450,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_1_7",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -1650,
+        750,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_1_7",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -1650,
+        750,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_1_8",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -1650,
+        1050,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_1_8",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -1650,
+        1050,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_1_9",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -1650,
+        1350,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_1_9",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -1650,
+        1350,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_2_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -1350,
+        -1350,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_2_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -1350,
+        -1350,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_2_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -1350,
+        -1050,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_2_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -1350,
+        -1050,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_2_2",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -1350,
+        -750,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_2_2",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -1350,
+        -750,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_2_3",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -1350,
+        -450,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_2_3",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -1350,
+        -450,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_2_4",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -1350,
+        -150,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_2_4",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -1350,
+        -150,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_2_5",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -1350,
+        150,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_2_5",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -1350,
+        150,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_2_6",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -1350,
+        450,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_2_6",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -1350,
+        450,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_2_7",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -1350,
+        750,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_2_7",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -1350,
+        750,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_2_8",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -1350,
+        1050,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_2_8",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -1350,
+        1050,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_2_9",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -1350,
+        1350,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_2_9",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -1350,
+        1350,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_3_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -1050,
+        -1350,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_3_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -1050,
+        -1350,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_3_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -1050,
+        -1050,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_3_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -1050,
+        -1050,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_3_2",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -1050,
+        -750,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_3_2",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -1050,
+        -750,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_3_3",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -1050,
+        -450,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_3_3",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -1050,
+        -450,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_3_4",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -1050,
+        -150,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_3_4",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -1050,
+        -150,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_3_5",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -1050,
+        150,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_3_5",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -1050,
+        150,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_3_6",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -1050,
+        450,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_3_6",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -1050,
+        450,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_3_7",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -1050,
+        750,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_3_7",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -1050,
+        750,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_3_8",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -1050,
+        1050,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_3_8",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -1050,
+        1050,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_3_9",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -1050,
+        1350,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_3_9",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -1050,
+        1350,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_4_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -750,
+        -1350,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_4_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -750,
+        -1350,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_4_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -750,
+        -1050,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_4_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -750,
+        -1050,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_4_2",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -750,
+        -750,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_4_2",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -750,
+        -750,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_4_3",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -750,
+        -450,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_4_3",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -750,
+        -450,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_4_4",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -750,
+        -150,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_4_4",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -750,
+        -150,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_4_5",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -750,
+        150,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_4_5",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -750,
+        150,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_4_6",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -750,
+        450,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_4_6",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -750,
+        450,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_4_7",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -750,
+        750,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_4_7",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -750,
+        750,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_4_8",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -750,
+        1050,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_4_8",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -750,
+        1050,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_4_9",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -750,
+        1350,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_4_9",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -750,
+        1350,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_5_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -450,
+        -1350,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_5_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -450,
+        -1350,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_5_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -450,
+        -1050,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_5_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -450,
+        -1050,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_5_2",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -450,
+        -750,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_5_2",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -450,
+        -750,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_5_3",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -450,
+        -450,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_5_3",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -450,
+        -450,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_5_4",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -450,
+        -150,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_5_4",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -450,
+        -150,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_5_5",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -450,
+        150,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_5_5",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -450,
+        150,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_5_6",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -450,
+        450,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_5_6",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -450,
+        450,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_5_7",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -450,
+        750,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_5_7",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -450,
+        750,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_5_8",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -450,
+        1050,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_5_8",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -450,
+        1050,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_5_9",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -450,
+        1350,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_5_9",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -450,
+        1350,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_6_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -150,
+        -1350,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_6_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -150,
+        -1350,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_6_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -150,
+        -1050,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_6_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -150,
+        -1050,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_6_2",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -150,
+        -750,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_6_2",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -150,
+        -750,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_6_3",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -150,
+        -450,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_6_3",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -150,
+        -450,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_6_4",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -150,
+        -150,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_6_4",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -150,
+        -150,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_6_5",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -150,
+        150,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_6_5",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -150,
+        150,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_6_6",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -150,
+        450,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_6_6",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -150,
+        450,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_6_7",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -150,
+        750,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_6_7",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -150,
+        750,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_6_8",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -150,
+        1050,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_6_8",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -150,
+        1050,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_6_9",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -150,
+        1350,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_6_9",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -150,
+        1350,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_7_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        150,
+        -1350,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_7_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        150,
+        -1350,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_7_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        150,
+        -1050,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_7_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        150,
+        -1050,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_7_2",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        150,
+        -750,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_7_2",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        150,
+        -750,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_7_3",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        150,
+        -450,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_7_3",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        150,
+        -450,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_7_4",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        150,
+        -150,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_7_4",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        150,
+        -150,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_7_5",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        150,
+        150,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_7_5",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        150,
+        150,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_7_6",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        150,
+        450,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_7_6",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        150,
+        450,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_7_7",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        150,
+        750,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_7_7",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        150,
+        750,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_7_8",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        150,
+        1050,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_7_8",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        150,
+        1050,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_7_9",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        150,
+        1350,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_7_9",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        150,
+        1350,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_8_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        450,
+        -1350,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_8_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        450,
+        -1350,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_8_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        450,
+        -1050,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_8_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        450,
+        -1050,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_8_2",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        450,
+        -750,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_8_2",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        450,
+        -750,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_8_3",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        450,
+        -450,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_8_3",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        450,
+        -450,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_8_4",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        450,
+        -150,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_8_4",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        450,
+        -150,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_8_5",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        450,
+        150,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_8_5",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        450,
+        150,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_8_6",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        450,
+        450,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_8_6",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        450,
+        450,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_8_7",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        450,
+        750,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_8_7",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        450,
+        750,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_8_8",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        450,
+        1050,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_8_8",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        450,
+        1050,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_8_9",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        450,
+        1350,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_8_9",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        450,
+        1350,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_9_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        750,
+        -1350,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_9_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        750,
+        -1350,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_9_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        750,
+        -1050,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_9_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        750,
+        -1050,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_9_2",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        750,
+        -750,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_9_2",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        750,
+        -750,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_9_3",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        750,
+        -450,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_9_3",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        750,
+        -450,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_9_4",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        750,
+        -150,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_9_4",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        750,
+        -150,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_9_5",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        750,
+        150,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_9_5",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        750,
+        150,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_9_6",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        750,
+        450,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_9_6",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        750,
+        450,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_9_7",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        750,
+        750,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_9_7",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        750,
+        750,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_9_8",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        750,
+        1050,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_9_8",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        750,
+        1050,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_9_9",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        750,
+        1350,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_9_9",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        750,
+        1350,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_10_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        1050,
+        -1350,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_10_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        1050,
+        -1350,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_10_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        1050,
+        -1050,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_10_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        1050,
+        -1050,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_10_2",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        1050,
+        -750,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_10_2",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        1050,
+        -750,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_10_3",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        1050,
+        -450,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_10_3",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        1050,
+        -450,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_10_4",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        1050,
+        -150,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_10_4",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        1050,
+        -150,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_10_5",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        1050,
+        150,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_10_5",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        1050,
+        150,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_10_6",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        1050,
+        450,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_10_6",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        1050,
+        450,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_10_7",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        1050,
+        750,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_10_7",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        1050,
+        750,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_10_8",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        1050,
+        1050,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_10_8",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        1050,
+        1050,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_10_9",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        1050,
+        1350,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_10_9",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        1050,
+        1350,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_11_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        1350,
+        -1350,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_11_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        1350,
+        -1350,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_11_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        1350,
+        -1050,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_11_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        1350,
+        -1050,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_11_2",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        1350,
+        -750,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_11_2",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        1350,
+        -750,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_11_3",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        1350,
+        -450,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_11_3",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        1350,
+        -450,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_11_4",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        1350,
+        -150,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_11_4",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        1350,
+        -150,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_11_5",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        1350,
+        150,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_11_5",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        1350,
+        150,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_11_6",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        1350,
+        450,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_11_6",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        1350,
+        450,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_11_7",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        1350,
+        750,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_11_7",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        1350,
+        750,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_11_8",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        1350,
+        1050,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_11_8",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        1350,
+        1050,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_11_9",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        1350,
+        1350,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_11_9",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        1350,
+        1350,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_12_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        1650,
+        -1350,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_12_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        1650,
+        -1350,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_12_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        1650,
+        -1050,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_12_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        1650,
+        -1050,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_12_2",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        1650,
+        -750,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_12_2",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        1650,
+        -750,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_12_3",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        1650,
+        -450,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_12_3",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        1650,
+        -450,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_12_4",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        1650,
+        -150,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_12_4",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        1650,
+        -150,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_12_5",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        1650,
+        150,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_12_5",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        1650,
+        150,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_12_6",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        1650,
+        450,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_12_6",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        1650,
+        450,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_12_7",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        1650,
+        750,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_12_7",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        1650,
+        750,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_12_8",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        1650,
+        1050,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_12_8",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        1650,
+        1050,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_12_9",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        1650,
+        1350,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_12_9",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        1650,
+        1350,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_13_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        1950,
+        -1350,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_13_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        1950,
+        -1350,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_13_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        1950,
+        -1050,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_13_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        1950,
+        -1050,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_13_2",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        1950,
+        -750,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_13_2",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        1950,
+        -750,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_13_3",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        1950,
+        -450,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_13_3",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        1950,
+        -450,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_13_4",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        1950,
+        -150,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_13_4",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        1950,
+        -150,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_13_5",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        1950,
+        150,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_13_5",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        1950,
+        150,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_13_6",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        1950,
+        450,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_13_6",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        1950,
+        450,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_13_7",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        1950,
+        750,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_13_7",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        1950,
+        750,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_13_8",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        1950,
+        1050,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_13_8",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        1950,
+        1050,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Hall_13_9",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        1950,
+        1350,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Hall_13_9",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        1950,
+        1350,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_FloorBacking_Command",
+      "model": "BlueSlateShowcase",
+      "section": "Floor",
+      "center": [
+        0.0,
+        1800.0,
+        -20
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_RoofBacking_Command",
+      "model": "BlueSlateShowcase",
+      "section": "Roof",
+      "center": [
+        0.0,
+        1800.0,
+        688
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Command_0_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -750,
+        1650,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Command_0_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -750,
+        1650,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Command_0_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -750,
+        1950,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Command_0_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -750,
+        1950,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Command_1_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -450,
+        1650,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Command_1_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -450,
+        1650,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Command_1_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -450,
+        1950,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Command_1_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -450,
+        1950,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Command_2_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -150,
+        1650,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Command_2_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -150,
+        1650,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Command_2_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -150,
+        1950,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Command_2_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -150,
+        1950,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Command_3_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        150,
+        1650,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Command_3_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        150,
+        1650,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Command_3_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        150,
+        1950,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Command_3_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        150,
+        1950,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Command_4_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        450,
+        1650,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Command_4_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        450,
+        1650,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Command_4_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        450,
+        1950,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Command_4_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        450,
+        1950,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Command_5_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        750,
+        1650,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Command_5_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        750,
+        1650,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Command_5_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        750,
+        1950,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Command_5_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        750,
+        1950,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_FloorBacking_Lobby",
+      "model": "BlueSlateShowcase",
+      "section": "Floor",
+      "center": [
+        0.0,
+        -1800.0,
+        -20
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_RoofBacking_Lobby",
+      "model": "BlueSlateShowcase",
+      "section": "Roof",
+      "center": [
+        0.0,
+        -1800.0,
+        688
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Lobby_0_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -750,
+        -1950,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Lobby_0_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -750,
+        -1950,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Lobby_0_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -750,
+        -1650,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Lobby_0_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -750,
+        -1650,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Lobby_1_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -450,
+        -1950,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Lobby_1_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -450,
+        -1950,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Lobby_1_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -450,
+        -1650,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Lobby_1_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -450,
+        -1650,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Lobby_2_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -150,
+        -1950,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Lobby_2_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -150,
+        -1950,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Lobby_2_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -150,
+        -1650,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Lobby_2_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -150,
+        -1650,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Lobby_3_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        150,
+        -1950,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Lobby_3_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        150,
+        -1950,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Lobby_3_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        150,
+        -1650,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Lobby_3_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        150,
+        -1650,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Lobby_4_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        450,
+        -1950,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Lobby_4_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        450,
+        -1950,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Lobby_4_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        450,
+        -1650,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Lobby_4_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        450,
+        -1650,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Lobby_5_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        750,
+        -1950,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Lobby_5_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        750,
+        -1950,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Lobby_5_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        750,
+        -1650,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Lobby_5_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        750,
+        -1650,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_FloorBacking_Service",
+      "model": "BlueSlateShowcase",
+      "section": "Floor",
+      "center": [
+        -2550.0,
+        0.0,
+        -20
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_RoofBacking_Service",
+      "model": "BlueSlateShowcase",
+      "section": "Roof",
+      "center": [
+        -2550.0,
+        0.0,
+        688
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Service_0_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -2850,
+        -450,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Service_0_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -2850,
+        -450,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Service_0_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -2850,
+        -150,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Service_0_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -2850,
+        -150,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Service_0_2",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -2850,
+        150,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Service_0_2",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -2850,
+        150,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Service_0_3",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -2850,
+        450,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Service_0_3",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -2850,
+        450,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Service_1_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -2550,
+        -450,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Service_1_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -2550,
+        -450,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Service_1_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -2550,
+        -150,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Service_1_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -2550,
+        -150,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Service_1_2",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -2550,
+        150,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Service_1_2",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -2550,
+        150,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Service_1_3",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -2550,
+        450,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Service_1_3",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -2550,
+        450,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Service_2_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -2250,
+        -450,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Service_2_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -2250,
+        -450,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Service_2_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -2250,
+        -150,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Service_2_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -2250,
+        -150,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Service_2_2",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -2250,
+        150,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Service_2_2",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -2250,
+        150,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Service_2_3",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        -2250,
+        450,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Service_2_3",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        -2250,
+        450,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_FloorBacking_Storage",
+      "model": "BlueSlateShowcase",
+      "section": "Floor",
+      "center": [
+        2550.0,
+        0.0,
+        -20
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_RoofBacking_Storage",
+      "model": "BlueSlateShowcase",
+      "section": "Roof",
+      "center": [
+        2550.0,
+        0.0,
+        688
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Storage_0_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        2250,
+        -750,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Storage_0_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        2250,
+        -750,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Storage_0_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        2250,
+        -450,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Storage_0_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        2250,
+        -450,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Storage_0_2",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        2250,
+        -150,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Storage_0_2",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        2250,
+        -150,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Storage_0_3",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        2250,
+        150,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Storage_0_3",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        2250,
+        150,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Storage_0_4",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        2250,
+        450,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Storage_0_4",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        2250,
+        450,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Storage_0_5",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        2250,
+        750,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Storage_0_5",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        2250,
+        750,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Storage_1_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        2550,
+        -750,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Storage_1_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        2550,
+        -750,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Storage_1_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        2550,
+        -450,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Storage_1_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        2550,
+        -450,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Storage_1_2",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        2550,
+        -150,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Storage_1_2",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        2550,
+        -150,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Storage_1_3",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        2550,
+        150,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Storage_1_3",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        2550,
+        150,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Storage_1_4",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        2550,
+        450,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Storage_1_4",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        2550,
+        450,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Storage_1_5",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        2550,
+        750,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Storage_1_5",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        2550,
+        750,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Storage_2_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        2850,
+        -750,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Storage_2_0",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        2850,
+        -750,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Storage_2_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        2850,
+        -450,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Storage_2_1",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        2850,
+        -450,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Storage_2_2",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        2850,
+        -150,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Storage_2_2",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        2850,
+        -150,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Storage_2_3",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        2850,
+        150,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Storage_2_3",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        2850,
+        150,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Storage_2_4",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        2850,
+        450,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Storage_2_4",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        2850,
+        450,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Floor_Storage_2_5",
+      "model": "MidnightCircuitSlab",
+      "section": "Floor",
+      "center": [
+        2850,
+        750,
+        -9
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Roof_Storage_2_5",
+      "model": "MidnightCircuitSlab",
+      "section": "Roof",
+      "center": [
+        2850,
+        750,
+        672
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_WestSouth_0_0",
+      "model": "IndustrialWallPanel",
+      "section": "Walls",
+      "center": [
+        -2100,
+        -1350.0,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_WestSouth_0_1",
+      "model": "IndustrialVentWall",
+      "section": "Walls",
+      "center": [
+        -2100,
+        -1050.0,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_WestSouth_0_2",
+      "model": "IndustrialWallPanel",
+      "section": "Walls",
+      "center": [
+        -2100,
+        -750.0,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_WestSouth_1_0",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        -2100,
+        -1350.0,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_WestSouth_1_1",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        -2100,
+        -1050.0,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_WestSouth_1_2",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        -2100,
+        -750.0,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_WestNorth_0_0",
+      "model": "IndustrialWallPanel",
+      "section": "Walls",
+      "center": [
+        -2100,
+        750.0,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_WestNorth_0_1",
+      "model": "IndustrialVentWall",
+      "section": "Walls",
+      "center": [
+        -2100,
+        1050.0,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_WestNorth_0_2",
+      "model": "IndustrialWallPanel",
+      "section": "Walls",
+      "center": [
+        -2100,
+        1350.0,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_WestNorth_1_0",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        -2100,
+        750.0,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_WestNorth_1_1",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        -2100,
+        1050.0,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_WestNorth_1_2",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        -2100,
+        1350.0,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_EastSouth_0_0",
+      "model": "IndustrialWallPanel",
+      "section": "Walls",
+      "center": [
+        2100,
+        -1350.0,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_EastSouth_0_1",
+      "model": "IndustrialVentWall",
+      "section": "Walls",
+      "center": [
+        2100,
+        -1050.0,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_EastSouth_1_0",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        2100,
+        -1350.0,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_EastSouth_1_1",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        2100,
+        -1050.0,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_EastNorth_0_0",
+      "model": "IndustrialWallPanel",
+      "section": "Walls",
+      "center": [
+        2100,
+        1050.0,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_EastNorth_0_1",
+      "model": "IndustrialVentWall",
+      "section": "Walls",
+      "center": [
+        2100,
+        1350.0,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_EastNorth_1_0",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        2100,
+        1050.0,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_EastNorth_1_1",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        2100,
+        1350.0,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_CommandWest_0_0",
+      "model": "IndustrialWallPanel",
+      "section": "Walls",
+      "center": [
+        -900,
+        1650.0,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_CommandWest_0_1",
+      "model": "IndustrialVentWall",
+      "section": "Walls",
+      "center": [
+        -900,
+        1950.0,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_CommandWest_1_0",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        -900,
+        1650.0,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_CommandWest_1_1",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        -900,
+        1950.0,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_CommandEast_0_0",
+      "model": "IndustrialWallPanel",
+      "section": "Walls",
+      "center": [
+        900,
+        1650.0,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_CommandEast_0_1",
+      "model": "IndustrialVentWall",
+      "section": "Walls",
+      "center": [
+        900,
+        1950.0,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_CommandEast_1_0",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        900,
+        1650.0,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_CommandEast_1_1",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        900,
+        1950.0,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_LobbyWest_0_0",
+      "model": "IndustrialWallPanel",
+      "section": "Walls",
+      "center": [
+        -900,
+        -1950.0,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_LobbyWest_0_1",
+      "model": "IndustrialVentWall",
+      "section": "Walls",
+      "center": [
+        -900,
+        -1650.0,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_LobbyWest_1_0",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        -900,
+        -1950.0,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_LobbyWest_1_1",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        -900,
+        -1650.0,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_LobbyEast_0_0",
+      "model": "IndustrialWallPanel",
+      "section": "Walls",
+      "center": [
+        900,
+        -1950.0,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_LobbyEast_0_1",
+      "model": "IndustrialVentWall",
+      "section": "Walls",
+      "center": [
+        900,
+        -1650.0,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_LobbyEast_1_0",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        900,
+        -1950.0,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_LobbyEast_1_1",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        900,
+        -1650.0,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_StorageEast_0_0",
+      "model": "IndustrialWallPanel",
+      "section": "Walls",
+      "center": [
+        3000,
+        -750.0,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_StorageEast_0_1",
+      "model": "IndustrialVentWall",
+      "section": "Walls",
+      "center": [
+        3000,
+        -450.0,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_StorageEast_0_2",
+      "model": "IndustrialWallPanel",
+      "section": "Walls",
+      "center": [
+        3000,
+        -150.0,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_StorageEast_0_3",
+      "model": "TriangularBastion",
+      "section": "Walls",
+      "center": [
+        3000,
+        150.0,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_StorageEast_0_4",
+      "model": "IndustrialWallPanel",
+      "section": "Walls",
+      "center": [
+        3000,
+        450.0,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_StorageEast_0_5",
+      "model": "IndustrialVentWall",
+      "section": "Walls",
+      "center": [
+        3000,
+        750.0,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_StorageEast_1_0",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        3000,
+        -750.0,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_StorageEast_1_1",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        3000,
+        -450.0,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_StorageEast_1_2",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        3000,
+        -150.0,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_StorageEast_1_3",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        3000,
+        150.0,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_StorageEast_1_4",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        3000,
+        450.0,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_StorageEast_1_5",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        3000,
+        750.0,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_NorthWest_0_0",
+      "model": "IndustrialWallPanel",
+      "section": "Walls",
+      "center": [
+        -1950.0,
+        1500,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_NorthWest_0_1",
+      "model": "IndustrialVentWall",
+      "section": "Walls",
+      "center": [
+        -1650.0,
+        1500,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_NorthWest_0_2",
+      "model": "IndustrialWallPanel",
+      "section": "Walls",
+      "center": [
+        -1350.0,
+        1500,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_NorthWest_0_3",
+      "model": "TriangularBastion",
+      "section": "Walls",
+      "center": [
+        -1050.0,
+        1500,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_NorthWest_1_0",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        -1950.0,
+        1500,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_NorthWest_1_1",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        -1650.0,
+        1500,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_NorthWest_1_2",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        -1350.0,
+        1500,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_NorthWest_1_3",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        -1050.0,
+        1500,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_NorthEast_0_0",
+      "model": "IndustrialWallPanel",
+      "section": "Walls",
+      "center": [
+        1050.0,
+        1500,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_NorthEast_0_1",
+      "model": "IndustrialVentWall",
+      "section": "Walls",
+      "center": [
+        1350.0,
+        1500,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_NorthEast_0_2",
+      "model": "IndustrialWallPanel",
+      "section": "Walls",
+      "center": [
+        1650.0,
+        1500,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_NorthEast_0_3",
+      "model": "TriangularBastion",
+      "section": "Walls",
+      "center": [
+        1950.0,
+        1500,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_NorthEast_1_0",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        1050.0,
+        1500,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_NorthEast_1_1",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        1350.0,
+        1500,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_NorthEast_1_2",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        1650.0,
+        1500,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_NorthEast_1_3",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        1950.0,
+        1500,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_SouthWest_0_0",
+      "model": "IndustrialWallPanel",
+      "section": "Walls",
+      "center": [
+        -1950.0,
+        -1500,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_SouthWest_0_1",
+      "model": "IndustrialVentWall",
+      "section": "Walls",
+      "center": [
+        -1650.0,
+        -1500,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_SouthWest_0_2",
+      "model": "IndustrialWallPanel",
+      "section": "Walls",
+      "center": [
+        -1350.0,
+        -1500,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_SouthWest_0_3",
+      "model": "TriangularBastion",
+      "section": "Walls",
+      "center": [
+        -1050.0,
+        -1500,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_SouthWest_1_0",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        -1950.0,
+        -1500,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_SouthWest_1_1",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        -1650.0,
+        -1500,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_SouthWest_1_2",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        -1350.0,
+        -1500,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_SouthWest_1_3",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        -1050.0,
+        -1500,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_SouthEast_0_0",
+      "model": "IndustrialWallPanel",
+      "section": "Walls",
+      "center": [
+        1050.0,
+        -1500,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_SouthEast_0_1",
+      "model": "IndustrialVentWall",
+      "section": "Walls",
+      "center": [
+        1350.0,
+        -1500,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_SouthEast_0_2",
+      "model": "IndustrialWallPanel",
+      "section": "Walls",
+      "center": [
+        1650.0,
+        -1500,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_SouthEast_0_3",
+      "model": "TriangularBastion",
+      "section": "Walls",
+      "center": [
+        1950.0,
+        -1500,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_SouthEast_1_0",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        1050.0,
+        -1500,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_SouthEast_1_1",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        1350.0,
+        -1500,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_SouthEast_1_2",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        1650.0,
+        -1500,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_SouthEast_1_3",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        1950.0,
+        -1500,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_CommandRear_0_0",
+      "model": "IndustrialWallPanel",
+      "section": "Walls",
+      "center": [
+        -750.0,
+        2100,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_CommandRear_0_1",
+      "model": "IndustrialVentWall",
+      "section": "Walls",
+      "center": [
+        -450.0,
+        2100,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_CommandRear_0_2",
+      "model": "IndustrialWallPanel",
+      "section": "Walls",
+      "center": [
+        -150.0,
+        2100,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_CommandRear_0_3",
+      "model": "TriangularBastion",
+      "section": "Walls",
+      "center": [
+        150.0,
+        2100,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_CommandRear_0_4",
+      "model": "IndustrialWallPanel",
+      "section": "Walls",
+      "center": [
+        450.0,
+        2100,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_CommandRear_0_5",
+      "model": "IndustrialVentWall",
+      "section": "Walls",
+      "center": [
+        750.0,
+        2100,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_CommandRear_1_0",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        -750.0,
+        2100,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_CommandRear_1_1",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        -450.0,
+        2100,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_CommandRear_1_2",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        -150.0,
+        2100,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_CommandRear_1_3",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        150.0,
+        2100,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_CommandRear_1_4",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        450.0,
+        2100,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_CommandRear_1_5",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        750.0,
+        2100,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_StorageNorth_0_0",
+      "model": "IndustrialWallPanel",
+      "section": "Walls",
+      "center": [
+        2250.0,
+        900,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_StorageNorth_0_1",
+      "model": "IndustrialVentWall",
+      "section": "Walls",
+      "center": [
+        2550.0,
+        900,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_StorageNorth_0_2",
+      "model": "IndustrialWallPanel",
+      "section": "Walls",
+      "center": [
+        2850.0,
+        900,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_StorageNorth_1_0",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        2250.0,
+        900,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_StorageNorth_1_1",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        2550.0,
+        900,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_StorageNorth_1_2",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        2850.0,
+        900,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_StorageSouth_0_0",
+      "model": "IndustrialWallPanel",
+      "section": "Walls",
+      "center": [
+        2250.0,
+        -900,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_StorageSouth_0_1",
+      "model": "IndustrialVentWall",
+      "section": "Walls",
+      "center": [
+        2550.0,
+        -900,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_StorageSouth_0_2",
+      "model": "IndustrialWallPanel",
+      "section": "Walls",
+      "center": [
+        2850.0,
+        -900,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_StorageSouth_1_0",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        2250.0,
+        -900,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_StorageSouth_1_1",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        2550.0,
+        -900,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_StorageSouth_1_2",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        2850.0,
+        -900,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_ServiceNorth_0_0",
+      "model": "IndustrialWallPanel",
+      "section": "Walls",
+      "center": [
+        -2850.0,
+        600,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_ServiceNorth_0_1",
+      "model": "IndustrialVentWall",
+      "section": "Walls",
+      "center": [
+        -2550.0,
+        600,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_ServiceNorth_0_2",
+      "model": "IndustrialWallPanel",
+      "section": "Walls",
+      "center": [
+        -2250.0,
+        600,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_ServiceNorth_1_0",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        -2850.0,
+        600,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_ServiceNorth_1_1",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        -2550.0,
+        600,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_ServiceNorth_1_2",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        -2250.0,
+        600,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_ServiceSouth_0_0",
+      "model": "IndustrialWallPanel",
+      "section": "Walls",
+      "center": [
+        -2850.0,
+        -600,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_ServiceSouth_0_1",
+      "model": "IndustrialVentWall",
+      "section": "Walls",
+      "center": [
+        -2550.0,
+        -600,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_ServiceSouth_0_2",
+      "model": "IndustrialWallPanel",
+      "section": "Walls",
+      "center": [
+        -2250.0,
+        -600,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_ServiceSouth_1_0",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        -2850.0,
+        -600,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_ServiceSouth_1_1",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        -2550.0,
+        -600,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_ServiceSouth_1_2",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        -2250.0,
+        -600,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_EntryLeft_0_0",
+      "model": "IndustrialWallPanel",
+      "section": "Walls",
+      "center": [
+        -775.0,
+        -2100,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_EntryLeft_0_1",
+      "model": "IndustrialVentWall",
+      "section": "Walls",
+      "center": [
+        -525.0,
+        -2100,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_EntryLeft_1_0",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        -775.0,
+        -2100,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_EntryLeft_1_1",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        -525.0,
+        -2100,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_EntryRight_0_0",
+      "model": "IndustrialWallPanel",
+      "section": "Walls",
+      "center": [
+        525.0,
+        -2100,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_EntryRight_0_1",
+      "model": "IndustrialVentWall",
+      "section": "Walls",
+      "center": [
+        775.0,
+        -2100,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_EntryRight_1_0",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        525.0,
+        -2100,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_EntryRight_1_1",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        775.0,
+        -2100,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_EntryHeader_0_0",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        -266.66666666666663,
+        -2100,
+        585.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_EntryHeader_0_1",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        0.0,
+        -2100,
+        585.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_EntryHeader_0_2",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        266.66666666666674,
+        -2100,
+        585.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_MainEntrance",
+      "model": "WallG",
+      "section": "Entrances",
+      "center": [
+        0,
+        -2100,
+        255
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_ServiceEntrySouth_0_0",
+      "model": "IndustrialWallPanel",
+      "section": "Walls",
+      "center": [
+        -3000,
+        -500.0,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_ServiceEntrySouth_1_0",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        -3000,
+        -500.0,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_ServiceEntryNorth_0_0",
+      "model": "IndustrialWallPanel",
+      "section": "Walls",
+      "center": [
+        -3000,
+        500.0,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_ServiceEntryNorth_1_0",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        -3000,
+        500.0,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_ServiceEntryHeader_0_0",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        -3000,
+        -266.66666666666663,
+        585.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_ServiceEntryHeader_0_1",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        -3000,
+        0.0,
+        585.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_ServiceEntryHeader_0_2",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        -3000,
+        266.66666666666674,
+        585.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_ServiceEntrance",
+      "model": "WallG",
+      "section": "Entrances",
+      "center": [
+        -3000,
+        0,
+        255
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_StorageDividerSouth_0_0",
+      "model": "IndustrialWallPanel",
+      "section": "Walls",
+      "center": [
+        2100,
+        -750.0,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_StorageDividerSouth_1_0",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        2100,
+        -750.0,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_StorageDividerNorth_0_0",
+      "model": "IndustrialWallPanel",
+      "section": "Walls",
+      "center": [
+        2100,
+        750.0,
+        165.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_StorageDividerNorth_1_0",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        2100,
+        750.0,
+        495.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_StorageHeader_0_0",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        2100,
+        -450.0,
+        600.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_StorageHeader_0_1",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        2100,
+        -150.0,
+        600.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_StorageHeader_0_2",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        2100,
+        150.0,
+        600.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_StorageHeader_0_3",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        2100,
+        450.0,
+        600.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_ServiceHeader_0_0",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        -2100,
+        -450.0,
+        600.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_ServiceHeader_0_1",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        -2100,
+        -150.0,
+        600.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_ServiceHeader_0_2",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        -2100,
+        150.0,
+        600.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_ServiceHeader_0_3",
+      "model": "BlueSlateShowcase",
+      "section": "Walls",
+      "center": [
+        -2100,
+        450.0,
+        600.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_MainCommandConsole",
+      "model": "CommandNexus",
+      "section": "Command",
+      "center": [
+        0,
+        1690,
+        88.56757415771484
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_CommandTerminal_0",
+      "model": "RetroCyberConsole",
+      "section": "Command",
+      "center": [
+        -630,
+        1830,
+        90.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_CommandVent_0",
+      "model": "BronzeVentilationPanel",
+      "section": "Command",
+      "center": [
+        -630,
+        2070,
+        470.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_CommandTerminal_1",
+      "model": "RetroCyberConsole",
+      "section": "Command",
+      "center": [
+        630,
+        1830,
+        90.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_CommandVent_1",
+      "model": "BronzeVentilationPanel",
+      "section": "Command",
+      "center": [
+        630,
+        2070,
+        470.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_CommandRearDisplay",
+      "model": "WallCControlPanel",
+      "section": "Command",
+      "center": [
+        0,
+        2070,
+        455.70165100097654
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_OperationsConsole_0",
+      "model": "CommandNexus",
+      "section": "Operations",
+      "center": [
+        -1650,
+        825,
+        81.75468383789062
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_OperationsTerminal_0",
+      "model": "RetroServerTerminal",
+      "section": "Operations",
+      "center": [
+        -1650,
+        1280,
+        100.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_OperationsCrate_0",
+      "model": "BlueSteelVault",
+      "section": "Operations",
+      "center": [
+        -1650,
+        150,
+        49.99999694824219
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_OperationsConsole_1",
+      "model": "CommandNexus",
+      "section": "Operations",
+      "center": [
+        1650,
+        825,
+        81.75468383789062
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_OperationsTerminal_1",
+      "model": "RetroServerTerminal",
+      "section": "Operations",
+      "center": [
+        1650,
+        1280,
+        100.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_OperationsCrate_1",
+      "model": "BlueSteelVault",
+      "section": "Operations",
+      "center": [
+        1650,
+        150,
+        49.99999694824219
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_EastWallComputer_0",
+      "model": "WallCControlPanel",
+      "section": "Operations",
+      "center": [
+        2050,
+        -850,
+        113.99600372314453
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_EastWallComputer_1",
+      "model": "WallCControlPanel",
+      "section": "Operations",
+      "center": [
+        2050,
+        -430,
+        113.99600372314453
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_HallConsole_0",
+      "model": "CommandNexus",
+      "section": "Operations",
+      "center": [
+        -900,
+        -650,
+        81.75468383789062
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_HallConsole_1",
+      "model": "CommandNexus",
+      "section": "Operations",
+      "center": [
+        900,
+        -650,
+        81.75468383789062
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_ServiceAirlock",
+      "model": "IndustrialAirlockDoor",
+      "section": "Service",
+      "center": [
+        -2560,
+        552,
+        143.91758880615234
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_ServiceCorner",
+      "model": "IronboundBastion",
+      "section": "Service",
+      "center": [
+        -2840,
+        425,
+        150.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_ServiceLocker_0",
+      "model": "BlackEquipmentCase",
+      "section": "Service",
+      "center": [
+        -2690,
+        -530,
+        79.75
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_ServiceLocker_1",
+      "model": "BlackEquipmentCase",
+      "section": "Service",
+      "center": [
+        -2490,
+        -530,
+        79.75
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_ServiceLocker_2",
+      "model": "BlackEquipmentCase",
+      "section": "Service",
+      "center": [
+        -2290,
+        -530,
+        79.75
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_ServiceWorkstation",
+      "model": "RetroCyberConsole",
+      "section": "Service",
+      "center": [
+        -2390,
+        350,
+        81.0
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_StorageBarrel_0",
+      "model": "RustyRadioactiveBarrel",
+      "section": "Storage",
+      "center": [
+        2740,
+        640,
+        58.5
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_StorageBarrel_1",
+      "model": "RustyRadioactiveBarrel",
+      "section": "Storage",
+      "center": [
+        2860,
+        620,
+        58.5
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_StorageBarrel_2",
+      "model": "RustyRadioactiveBarrel",
+      "section": "Storage",
+      "center": [
+        2800,
+        430,
+        58.5
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_StorageCrate_0",
+      "model": "IndustrialCargoCrate",
+      "section": "Storage",
+      "center": [
+        2640,
+        -655,
+        56.225847244262695
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_StorageCrate_1",
+      "model": "BlueSteelVault",
+      "section": "Storage",
+      "center": [
+        2810,
+        -650,
+        56.24999656677246
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_StorageCrate_2",
+      "model": "IndustrialCargoCrate",
+      "section": "Storage",
+      "center": [
+        2770,
+        -480,
+        56.225847244262695
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_StorageBattery_0",
+      "model": "OldBattery",
+      "section": "Storage",
+      "center": [
+        2900,
+        -100,
+        60.000003814697266
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_StorageBattery_1",
+      "model": "OldBattery",
+      "section": "Storage",
+      "center": [
+        2900,
+        -15,
+        60.000003814697266
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_StorageBattery_2",
+      "model": "OldBattery",
+      "section": "Storage",
+      "center": [
+        2900,
+        70,
+        60.000003814697266
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_StorageBattery_3",
+      "model": "OldBattery",
+      "section": "Storage",
+      "center": [
+        2900,
+        155,
+        60.000003814697266
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_LobbyTerminal_0",
+      "model": "RetroCyberConsole",
+      "section": "Lobby",
+      "center": [
+        -670,
+        -1740,
+        76.5
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_LobbySupply_0",
+      "model": "IndustrialCargoCrate",
+      "section": "Lobby",
+      "center": [
+        -670,
+        -1960,
+        49.97853088378906
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_LobbyTerminal_1",
+      "model": "RetroCyberConsole",
+      "section": "Lobby",
+      "center": [
+        670,
+        -1740,
+        76.5
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_LobbySupply_1",
+      "model": "IndustrialCargoCrate",
+      "section": "Lobby",
+      "center": [
+        670,
+        -1960,
+        49.97853088378906
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_0",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -5850,
+        -3450,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_1",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -5850,
+        -3150,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_2",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -5850,
+        -2850,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_3",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -5850,
+        -2550,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_4",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -5850,
+        -2250,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_5",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -5850,
+        -1950,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_6",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -5850,
+        -1650,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_7",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -5850,
+        -1350,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_8",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -5850,
+        -1050,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_9",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -5850,
+        -750,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_10",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -5850,
+        -450,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_11",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -5850,
+        -150,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_12",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -5850,
+        150,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_13",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -5850,
+        450,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_14",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -5550,
+        -3450,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_15",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -5550,
+        -3150,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_16",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -5550,
+        -2850,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_17",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -5550,
+        -2550,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_18",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -5550,
+        -2250,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_19",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -5550,
+        -1950,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_20",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -5550,
+        -1650,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_21",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -5550,
+        -1350,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_22",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -5550,
+        -1050,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_23",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -5550,
+        -750,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_24",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -5550,
+        -450,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_25",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -5550,
+        -150,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_26",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -5550,
+        150,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_27",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -5550,
+        450,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_28",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -5250,
+        -3450,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_29",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -5250,
+        -3150,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_30",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -5250,
+        -2850,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_31",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -5250,
+        -2550,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_32",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -5250,
+        -2250,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_33",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -5250,
+        -1950,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_34",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -5250,
+        -1650,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_35",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -5250,
+        -1350,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_36",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -5250,
+        -1050,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_37",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -5250,
+        -750,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_38",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -5250,
+        -450,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_39",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -5250,
+        -150,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_40",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -5250,
+        150,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_41",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -5250,
+        450,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_42",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -4950,
+        -3450,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_43",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -4950,
+        -3150,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_44",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -4950,
+        -2850,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_45",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -4950,
+        -150,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_46",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -4950,
+        150,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_47",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -4950,
+        450,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_48",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -4650,
+        -3450,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_49",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -4650,
+        -3150,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_50",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -4650,
+        -2850,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_51",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -4650,
+        -150,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_52",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -4650,
+        150,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_53",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -4650,
+        450,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_54",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -4350,
+        -3450,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_55",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -4350,
+        -3150,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_56",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -4350,
+        -2850,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_57",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -4350,
+        -150,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_58",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -4350,
+        150,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_59",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -4350,
+        450,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_60",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -4050,
+        -3450,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_61",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -4050,
+        -3150,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_62",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -4050,
+        -2850,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_63",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -4050,
+        -150,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_64",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -4050,
+        150,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_65",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -4050,
+        450,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_66",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -3750,
+        -3450,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_67",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -3750,
+        -3150,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_68",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -3750,
+        -2850,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_69",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -3750,
+        -150,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_70",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -3750,
+        150,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_71",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -3750,
+        450,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_72",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -3450,
+        -3450,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_73",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -3450,
+        -3150,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_74",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -3450,
+        -2850,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_75",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -3450,
+        -150,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_76",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -3450,
+        150,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_77",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -3450,
+        450,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_78",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -3150,
+        -3450,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_79",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -3150,
+        -3150,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_80",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -3150,
+        -2850,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_81",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -3150,
+        -150,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_82",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -3150,
+        150,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_83",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -3150,
+        450,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_84",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -2850,
+        -3450,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_85",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -2850,
+        -3150,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_86",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -2850,
+        -2850,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_87",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -2550,
+        -3450,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_88",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -2550,
+        -3150,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_89",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -2550,
+        -2850,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_90",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -2250,
+        -3450,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_91",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -2250,
+        -3150,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_92",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -2250,
+        -2850,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_93",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -1950,
+        -3450,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_94",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -1950,
+        -3150,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_95",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -1950,
+        -2850,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_96",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -1650,
+        -3450,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_97",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -1650,
+        -3150,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_98",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -1650,
+        -2850,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_99",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -1350,
+        -3450,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_100",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -1350,
+        -3150,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_101",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -1350,
+        -2850,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_102",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -1050,
+        -3450,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_103",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -1050,
+        -3150,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_104",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -1050,
+        -2850,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_105",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -750,
+        -3450,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_106",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -750,
+        -3150,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_107",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -750,
+        -2850,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_108",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -450,
+        -3450,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_109",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -450,
+        -3150,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_110",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -450,
+        -2850,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_111",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -150,
+        -3450,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_112",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -150,
+        -3150,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_113",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -150,
+        -2850,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_114",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -150,
+        -2550,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_115",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        -150,
+        -2250,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_116",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        150,
+        -3450,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_117",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        150,
+        -3150,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_118",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        150,
+        -2850,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_119",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        150,
+        -2550,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_120",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        150,
+        -2250,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_121",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        450,
+        -2550,
+        -15
+      ],
+      "collision": true
+    },
+    {
+      "actor": "CR_ControlRoom_Approach_122",
+      "model": "RuneChocolateBar",
+      "section": "Approach",
+      "center": [
+        450,
+        -2250,
+        -15
+      ],
+      "collision": true
+    }
+  ],
+  "actor_count": 725,
+  "entrance": [
+    20600,
+    5800,
+    130
+  ],
+  "district_connection": [
+    14750,
+    4750,
+    30
+  ]
+}

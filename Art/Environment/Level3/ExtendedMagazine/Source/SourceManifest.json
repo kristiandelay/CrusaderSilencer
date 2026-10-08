@@ -1,0 +1,39 @@
+{
+  "name": "ExtendedMagazine",
+  "archive": "ExtendedMagazine.zip",
+  "archive_sha256": "f807356723d091dd4ff50cd18d2fae9baef9d1d7f493ea16c8c368f5c84d67e2",
+  "files": [
+    {
+      "original": "Meshy_AI_Extended_Magazine_1008201547_texture_fbx/Meshy_AI_Extended_Magazine_1008201547_texture.fbx",
+      "file": "ExtendedMagazine.fbx",
+      "bytes": 28167964,
+      "sha256": "a488bb47a9867c792d5e5c22d356b6ac929d9f4dd9eaddc6d127b0abbda48f07"
+    },
+    {
+      "original": "Meshy_AI_Extended_Magazine_1008201547_texture_fbx/Meshy_AI_Extended_Magazine_1008201547_texture.png",
+      "file": "ExtendedMagazine_BaseColor.png",
+      "bytes": 4897662,
+      "sha256": "c2b1d00026546d4567c6654ddb32359e16de4ae0e426a1e6dfd796782d62c09d"
+    },
+    {
+      "original": "Meshy_AI_Extended_Magazine_1008201547_texture_fbx/Meshy_AI_Extended_Magazine_1008201547_texture_metallic.png",
+      "file": "ExtendedMagazine_Metallic.png",
+      "bytes": 1600457,
+      "sha256": "189f00889d32c5307c8f2ca3fa8ed9f329388bcb12a5391e2e3f60a93e7af838"
+    },
+    {
+      "original": "Meshy_AI_Extended_Magazine_1008201547_texture_fbx/Meshy_AI_Extended_Magazine_1008201547_texture_normal.png",
+      "file": "ExtendedMagazine_Normal.png",
+      "bytes": 3971300,
+      "sha256": "0c3842123e9390f6cb5826e1bc45782e81a78568d34f2854efc3ac98db75d972"
+    },
+    {
+      "original": "Meshy_AI_Extended_Magazine_1008201547_texture_fbx/Meshy_AI_Extended_Magazine_1008201547_texture_roughness.png",
+      "file": "ExtendedMagazine_Roughness.png",
+      "bytes": 1556854,
+      "sha256": "5f07de0d03debf6e9520171ce58185c1be9d908ceadd00019d146d0cef53cb3c"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Extended_Magazine_1008201547_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level3/ExtendedMagazine.zip"
+}

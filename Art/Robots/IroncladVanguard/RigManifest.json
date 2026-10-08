@@ -1,0 +1,171 @@
+{
+  "name": "IroncladVanguard",
+  "rig_type": "three-link mechanical legs",
+  "parts": [
+    {
+      "name": "IroncladVanguard_foot_r",
+      "bone": "foot_r",
+      "vertices": 21456,
+      "triangles": 43012
+    },
+    {
+      "name": "IroncladVanguard_Chassis",
+      "bone": "chassis",
+      "vertices": 107962,
+      "triangles": 216336
+    },
+    {
+      "name": "IroncladVanguard_JointHousing_1_r",
+      "bone": "middle_leg_r",
+      "vertices": 2148,
+      "triangles": 4296
+    },
+    {
+      "name": "IroncladVanguard_JointHousing_3_r",
+      "bone": "foot_r",
+      "vertices": 1650,
+      "triangles": 3296
+    },
+    {
+      "name": "IroncladVanguard_lower_leg_r",
+      "bone": "lower_leg_r",
+      "vertices": 9152,
+      "triangles": 18304
+    },
+    {
+      "name": "IroncladVanguard_middle_leg_r",
+      "bone": "middle_leg_r",
+      "vertices": 17036,
+      "triangles": 34048
+    },
+    {
+      "name": "IroncladVanguard_JointHousing_0_r",
+      "bone": "upper_leg_r",
+      "vertices": 5930,
+      "triangles": 11868
+    },
+    {
+      "name": "IroncladVanguard_upper_leg_r",
+      "bone": "upper_leg_r",
+      "vertices": 20380,
+      "triangles": 40796
+    },
+    {
+      "name": "IroncladVanguard_JointHousing_2_r",
+      "bone": "lower_leg_r",
+      "vertices": 2640,
+      "triangles": 5308
+    },
+    {
+      "name": "IroncladVanguard_foot_l",
+      "bone": "foot_l",
+      "vertices": 22450,
+      "triangles": 45048
+    },
+    {
+      "name": "IroncladVanguard_JointHousing_1_l",
+      "bone": "middle_leg_l",
+      "vertices": 2512,
+      "triangles": 5040
+    },
+    {
+      "name": "IroncladVanguard_JointHousing_0_l",
+      "bone": "upper_leg_l",
+      "vertices": 7220,
+      "triangles": 14496
+    },
+    {
+      "name": "IroncladVanguard_middle_leg_l",
+      "bone": "middle_leg_l",
+      "vertices": 18084,
+      "triangles": 36212
+    },
+    {
+      "name": "IroncladVanguard_upper_leg_l",
+      "bone": "upper_leg_l",
+      "vertices": 17682,
+      "triangles": 35376
+    },
+    {
+      "name": "IroncladVanguard_lower_leg_l",
+      "bone": "lower_leg_l",
+      "vertices": 8636,
+      "triangles": 17272
+    },
+    {
+      "name": "IroncladVanguard_JointHousing_2_l",
+      "bone": "lower_leg_l",
+      "vertices": 2542,
+      "triangles": 5108
+    },
+    {
+      "name": "IroncladVanguard_JointHousing_3_l",
+      "bone": "foot_l",
+      "vertices": 1554,
+      "triangles": 3104
+    },
+    {
+      "name": "IroncladVanguard_Axle_0_l",
+      "bone": "upper_leg_l",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "IroncladVanguard_Axle_1_l",
+      "bone": "middle_leg_l",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "IroncladVanguard_Axle_2_l",
+      "bone": "lower_leg_l",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "IroncladVanguard_Axle_3_l",
+      "bone": "foot_l",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "IroncladVanguard_Axle_0_r",
+      "bone": "upper_leg_r",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "IroncladVanguard_Axle_1_r",
+      "bone": "middle_leg_r",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "IroncladVanguard_Axle_2_r",
+      "bone": "lower_leg_r",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "IroncladVanguard_Axle_3_r",
+      "bone": "foot_r",
+      "vertices": 48,
+      "triangles": 92
+    }
+  ],
+  "bones": [
+    "chassis",
+    "upper_leg_l",
+    "middle_leg_l",
+    "lower_leg_l",
+    "foot_l",
+    "upper_leg_r",
+    "middle_leg_r",
+    "lower_leg_r",
+    "foot_r"
+  ],
+  "closed_cut_faces": 12302,
+  "height_cm": 180,
+  "preview_action": "IroncladVanguard_JointCheck",
+  "has_hydraulic_constraints": false
+}

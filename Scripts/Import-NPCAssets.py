@@ -1,5 +1,6 @@
 """Import the prepared Blender exports and consistently named PBR textures."""
 import unreal as u
+import json
 from pathlib import Path
 
 ROOT=Path(u.Paths.convert_relative_path_to_full(u.Paths.project_dir())).parent
@@ -14,7 +15,7 @@ def duplicate(source,target):
     return u.load_asset(target) if lib.does_asset_exist(target) else lib.duplicate_asset(source,target)
 
 u.SystemLibrary.execute_console_command(None,'Interchange.FeatureFlags.Import.FBX 0')
-for category,name in [('Characters',n) for n in ['ObsidianSentinel','RegalCommander','TheSteadfastOfficer','UrbanTrailblazer']]:
+for category,name in [('Characters',n) for n in globals().get('NPC_IMPORT_NAMES',list(json.loads((ROOT/'resources/NPCCharacterRigs.json').read_text())))]:
     source=ROOT/'Art'/category/name
     destination='/Game/Crusader/'+category+'/'+name
     textures={}

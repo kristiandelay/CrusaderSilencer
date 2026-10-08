@@ -1,0 +1,39 @@
+{
+  "name": "SolarPanel",
+  "archive": "SolarPanel.zip",
+  "archive_sha256": "8074784a75c6c55e8d2c138d14e63087891562bfa3247bd507f08a5045bb9e23",
+  "files": [
+    {
+      "original": "Meshy_AI_Solar_Panel_1008201420_texture_fbx/Meshy_AI_Solar_Panel_1008201420_texture.fbx",
+      "file": "SolarPanel.fbx",
+      "bytes": 13447052,
+      "sha256": "482f70450c734d0a569fbdc7f3c9bf26254cdb3bcaba9455e3b6dd8862f3d0bb"
+    },
+    {
+      "original": "Meshy_AI_Solar_Panel_1008201420_texture_fbx/Meshy_AI_Solar_Panel_1008201420_texture.png",
+      "file": "SolarPanel_BaseColor.png",
+      "bytes": 4318745,
+      "sha256": "7b3aaecc441d60d93209c23089a8b4f048e9d04cb0bf04a56718c10d00932607"
+    },
+    {
+      "original": "Meshy_AI_Solar_Panel_1008201420_texture_fbx/Meshy_AI_Solar_Panel_1008201420_texture_metallic.png",
+      "file": "SolarPanel_Metallic.png",
+      "bytes": 18583,
+      "sha256": "5b97e865d782ccfec036ddf6266555638b52c653372f7058bb85802539f07f87"
+    },
+    {
+      "original": "Meshy_AI_Solar_Panel_1008201420_texture_fbx/Meshy_AI_Solar_Panel_1008201420_texture_normal.png",
+      "file": "SolarPanel_Normal.png",
+      "bytes": 3681344,
+      "sha256": "58923ad47cc91eb19233a45b8b95a103326e62dde53f5d01913459e4903494b5"
+    },
+    {
+      "original": "Meshy_AI_Solar_Panel_1008201420_texture_fbx/Meshy_AI_Solar_Panel_1008201420_texture_roughness.png",
+      "file": "SolarPanel_Roughness.png",
+      "bytes": 1323287,
+      "sha256": "a25909d516ba4ae684bf36d9eada35606957f109a3af5707ae63f4ff590f5881"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Solar_Panel_1008201420_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level3/SolarPanel.zip"
+}

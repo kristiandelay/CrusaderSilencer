@@ -1,0 +1,39 @@
+{
+  "name": "IndustrialAirlockDoor",
+  "archive": "IndustrialAirlockDoor.zip",
+  "archive_sha256": "addf7ec57408883b13cee4e8c523a1f5cbed890460dc9bd49d86098db77cd3e4",
+  "files": [
+    {
+      "original": "Meshy_AI_Industrial_Airlock_Do_1007205241_texture_fbx/Meshy_AI_Industrial_Airlock_Do_1007205241_texture.fbx",
+      "file": "IndustrialAirlockDoor.fbx",
+      "bytes": 19456060,
+      "sha256": "b121471672ab8f6ce670ece59064ffff2c3091059ab2034181e37a49883cfcfe"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Airlock_Do_1007205241_texture_fbx/Meshy_AI_Industrial_Airlock_Do_1007205241_texture.png",
+      "file": "IndustrialAirlockDoor_BaseColor.png",
+      "bytes": 4771312,
+      "sha256": "e6dafc65cb2b515e5eeb450f381e28804a1cd91914ecafd4e84585041fb89c1c"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Airlock_Do_1007205241_texture_fbx/Meshy_AI_Industrial_Airlock_Do_1007205241_texture_metallic.png",
+      "file": "IndustrialAirlockDoor_Metallic.png",
+      "bytes": 1445254,
+      "sha256": "65ec260e7a98239281af9cf187f5ad00e28921f51af97b28baa1ad82e2deafe4"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Airlock_Do_1007205241_texture_fbx/Meshy_AI_Industrial_Airlock_Do_1007205241_texture_normal.png",
+      "file": "IndustrialAirlockDoor_Normal.png",
+      "bytes": 3999029,
+      "sha256": "8f7a359624438027a9e4fc3645503eb404132e2de0ee02f84462dd3929f9ed93"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Airlock_Do_1007205241_texture_fbx/Meshy_AI_Industrial_Airlock_Do_1007205241_texture_roughness.png",
+      "file": "IndustrialAirlockDoor_Roughness.png",
+      "bytes": 1525030,
+      "sha256": "4e2b9e71b728faf85160778594491e47d0ae9ffb1f188a8bd808f522f4180fea"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Industrial_Airlock_Do_1007205241_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level2/IndustrialAirlockDoor.zip"
+}

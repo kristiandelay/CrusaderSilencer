@@ -1,0 +1,20 @@
+[
+  {
+    "animation": "/Game/Crusader/Equipment/Throw/Animations/GASP_AS_Aim.GASP_AS_Aim",
+    "montage": "/Game/Crusader/Equipment/Throw/AM_Aim.AM_Aim",
+    "duration": 0.03333333507180214,
+    "pelvis_height_cm": [
+      93.08876037597656,
+      93.08876037597656
+    ]
+  },
+  {
+    "animation": "/Game/Crusader/Equipment/Throw/Animations/GASP_AS_Throw.GASP_AS_Throw",
+    "montage": "/Game/Crusader/Equipment/Throw/AM_Throw.AM_Throw",
+    "duration": 0.800000011920929,
+    "pelvis_height_cm": [
+      93.08876037597656,
+      93.11913299560547
+    ]
+  }
+]

@@ -1,0 +1,87 @@
+Next Gen Destruction integration
+
+Source: C:/Development/Game/NextGenDestructionToolkit
+Fab: https://www.fab.com/listings/9990252b-cfef-4b64-b99e-89e489e5b16b
+Imported content: /Game/NextGenDestruction (covered by the repository's Git LFS rules).
+Game Blueprint: /Game/Crusader/Destruction/B_CRDestructible
+
+The traversal map contains a destruction range west of the surface firing range,
+centred at (-4300, -6650, 0). Nineteen targets cover fourteen geometry collections:
+concrete pillars, wood/plaster walls, exposed beams, framed windows, furniture,
+mugs and a vase. Four of these targets form the grenade bay. Rifle, pistol
+and shotgun pickups are at the entrance. E picks up; LMB fires; hold/release H
+throws; X selects grenade/smoke. Restart Play to restore the targets.
+
+CRDestructibleActor is the native parent of a project-owned copy of the toolkit
+breakable Blueprint. Committed authoritative Lyra hits, including guard weapons
+and robot mounted weapons, invoke the toolkit's BulletImpact interface. Existing
+laser trails, weapon sounds and surface impacts stay in the Crusader effects
+system. Each shotgun blast applies one physics field per struck destructible,
+while preserving individual pellet impacts. The toolkit supplies fracture
+geometry, break sounds and debris effects.
+Physical material identities are retained for Chaos Niagara; their surface IDs
+are mapped to Crusader's existing surface table.
+
+Grenades apply bounded external strain to nearby destructibles with a cover
+trace; smoke does not. Chaos particle state replicates from the server. A small
+replicated break-effect sample also drives remote material changes and effects,
+because replicated particle motion does not consistently emit break delegates.
+Loose pieces ignore Pawn and Camera collision. Bullet-hole decals are disabled
+on geometry collections because they cannot follow individual moving fragments.
+Optional static frames still accept normal surface impacts.
+These test fixtures do not export their dense fracture meshes to navigation;
+they are placed outside the existing crowd patrol district.
+
+Authoring: Configure-Destruction.py, then Build-DestructionRange.py through
+Send-Editor.py with PIE stopped. The range builder updates only its own actors.
+Gameplay checks: Test-DestructionSuite.py. Persisted validation:
+Validate-Destruction.py and resources/DestructionValidation.json.
+
+Destructible furniture in the two existing buildings
+
+Build-BuildingDestruction.py converts 27 selected placements (11 prop types, with
+17 geometry collections for their different sizes) from the imported environment
+models. Placement scale is baked into geometry, bone translations and convex
+collision; runtime collection components use unit scale. This keeps Chaos query
+shapes aligned with the visible furniture. The facility includes its office
+chair, desk with monitor/keyboard/terminal, drawer with storage box, laboratory
+supplies, and cargo crates. The control room includes terminals, equipment cases,
+vault crates, cargo boxes and barrels. These are the original sci-fi meshes and
+outside texture materials with a dark metal material on newly exposed cut faces.
+Walls, roofs and the large command consoles remain intact. Barrels break as props;
+they do not produce an extra explosion or radiation damage.
+
+The furniture Blueprint is /Game/Crusader/Destruction/Furniture/B_CRDestructibleFurniture.
+Its toolkit data assets provide metal sounds and sparks. Collision damage is disabled
+so settling or brushing against a chair does not shatter it. Bullets and grenades
+still break it. Intact clusters block characters and cameras; released pieces ignore
+them and shrink away after resting for 12-18 seconds. A lightweight navigation modifier
+excludes the intact bounds and is removed on the first break. UCRDestructibleNavigation
+exports that box directly because collections lack the ordinary static-mesh collision
+body setup required by Unreal's standard NavModifierComponent. Dense fracture
+triangles are never exported to the navigation mesh.
+The traversal navmesh uses Dynamic generation so affected tiles can rebuild and
+restore walkable floor after a broken footprint is removed.
+Breaking-event filtering is disabled: even a stationary or lightweight piece must
+notify gameplay so its navigation obstacle and replicated break state update.
+Collision/trailing filters and the existing sound/network throttles remain active.
+Furniture also applies contact strain to the bone reported by the weapon hit. This
+keeps tabletop/edge hits effective even when the center of mass lies outside the
+toolkit's radial impact field; contact strain affects only the struck collection.
+
+Desk accessories and stacked boxes belong to their support's collection, so they
+fall with it. Original StaticMeshActors are retained in the Editor Sources folder,
+hidden, without collision, and marked editor-only (excluded from cooked games).
+They preserve transforms/materials and remain compatible with the existing building
+generators. Both generators reapply the furniture pass when its manifest exists.
+The furniture pass alone updates no building walls, roofs, posts or other props.
+Assets and source transforms are recorded in resources/BuildingDestruction.json.
+
+Run the furniture builder with Play stopped. Set BD_REBUILD_COLLECTIONS=True before
+executing it only when intentionally refracturing; normally it reuses matching assets.
+CRDestructionTools uses Unreal's Fracture/PlanarCut editor modules, which are not required
+at runtime. GetRigidPieceCount also supports validation of the generated assets.
+Test-BuildingDestructionSuite.py exercises placed objects with real weapon/throw input
+in standalone and two-player PIE. Validate-BuildingDestruction.py verifies the saved
+placements, original material/bounds preservation, collision and gameplay reports.
+Restart Play to restore destroyed furniture.

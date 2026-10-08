@@ -1,0 +1,67 @@
+Crusader Silencer: three-storey Mars facility
+
+Map: /Game/Maps/L_TraversalGym
+Outliner: Crusader/Three Storey Facility
+Main entrance: (33000, 5200, 130), east of the existing two buildings.
+The promenade joins the control-room approach along world Y=4750.
+
+The new Level3 kit supplies all visible construction and equipment. The main
+building is 66 x 54 metres with an east stair tower. All three storeys remain
+enclosed during play, with 6.6-metre clear ceilings and a complete top roof.
+The reference guides the loading/reactor floor, operations/server floor and
+research/containment floor. Large side bays and broad cross-corridors leave
+room for the third-person camera, combat and NPC avoidance.
+
+Occupied floor elevations are 0, 720 and 1440 cm above the building origin.
+The wide switchback stairs use four shallow kit runs per storey with resting
+landings. The kit's actual first/last tread heights determine placement; its
+rail-inclusive bounds are not used as the walkable rise. Stair openings stay
+over landing floor, and upper slabs do not cap the stairwell.
+
+Eight invisible continuous collision ramps carry player/NPC capsules and the
+camera over the visible treads. Flat collision plates connect the landings
+and room floors without decorative tile seams. Invisible side guards retain
+stair safety without shortening the camera boom. Detailed visible meshes
+still receive weapon/grenade hits, foot IK and metal footstep traces. The
+walkthrough measures capsule height along every ramp in both directions to
+catch step bounce and checks all linked crowd routes after navigation rebuild.
+
+Three guards (rifle, pistol and shotgun) and six unarmed civilians use the
+existing AI, visuals, hearing, combat response and avoidance. Connected crowd
+areas cover all three floors, the stairs, entrance and outside promenade.
+They connect to the previous control-room patrol network.
+
+All 74 original archive bytes are preserved under clean Name.zip filenames
+in mockups/Environment/Level3 and its props folder. Untouched normalized
+FBX/textures are in Art/Environment/Level3/Name/Source; editable Blender scenes
+and centimetre-normalized Export/Name.fbx files are alongside them. Names and
+hashes are recorded in SourceManifest.json, resources/Level3Sources.json and
+the existing project asset catalogs. Unreal assets are under
+/Game/Crusader/Environment/Level3/Name with four PBR texture maps, Nanite and
+metal surface materials. No original building generator is rerun by this pass.
+
+The reusable naming skill is installed at:
+C:/Users/remote/.codex/skills/meshy-mockup-naming/SKILL.md
+It records model/texture naming, collision-safe extraction, provenance and
+the project import workflow. It can be invoked as $meshy-mockup-naming.
+
+Author with Play stopped through Scripts/Send-Editor.py:
+  Build-Level3Facility.py
+  Configure-Level3Crowd.py
+These manage only their own actor prefixes. Rebuilding resets those managed
+placements. Existing facilities, user-adjusted posts and their furniture
+destruction actors remain in place.
+
+Validation:
+  Validate-Level3Sources.py runs in ordinary Python.
+  Test-Level3Facility.py runs in PIE and walks up and down both staircases,
+    checking floor/roof collision, connected navigation, camera room and NPCs.
+  Capture-Level3Facility.py captures the exterior and occupied interiors in PIE.
+  Validate-Level3Content.py runs with Play stopped after the walkthrough.
+Results and images: Artifacts/Level3. Durable result: resources/Level3Validation.json.
+
+Verified 2026-10-08: 74 models / 444 Unreal assets; 196 gameplay checks;
+67 walkthrough stops; all eight ramp runs measured in both directions;
+all nine residents patrolling. Navigation connects every floor to the older
+control-room approach. Collision proxies are query-only, hidden, and ignored
+by visibility and weapon traces. The saved editor view faces the stairwell.

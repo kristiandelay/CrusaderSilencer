@@ -2,8 +2,9 @@
 import json,time,traceback
 from pathlib import Path
 import unreal as u
+# Humanoid fixtures; mechanical pawns are covered by Test-RobotGameplay.py.
 sd_root=Path(u.Paths.convert_relative_path_to_full(u.Paths.project_dir())).parent
-sd_expected=sum(len(json.loads((sd_root/f'resources/{name}.json').read_text())['spawns']) for name in ['CrowdDistrict','FacilityCrowd'] if (sd_root/f'resources/{name}.json').exists())
+sd_expected=sum(len(json.loads((sd_root/f'resources/{name}.json').read_text())['spawns']) for name in ['CrowdDistrict','FacilityCrowd','ControlRoomCrowd'] if (sd_root/f'resources/{name}.json').exists())
 sd_test=dict(phase='place',next=0,busy=False,results=[],deadline=time.monotonic()+180)
 def sd_damage(source,target):
     asc=u.AbilitySystemLibrary.get_ability_system_component(source)
@@ -23,7 +24,7 @@ def sd_tick(dt):
         ws=u.EditorLevelLibrary.get_pie_worlds(False)
         if not ws:return
         w=ws[0];p=u.GameplayStatics.get_player_pawn(w,0)
-        npcs=[a for a in u.GameplayStatics.get_all_actors_of_class(w,u.CRTraversalCharacter) if a.crowd_agent.enabled]
+        npcs=[a for a in u.GameplayStatics.get_all_actors_of_class(w,u.CRTraversalCharacter) if a.crowd_agent.enabled and not isinstance(a,u.CRRobotCharacter)]
         if not p or len(npcs)!=sd_expected or not all(a.crowd_agent.initialized for a in npcs):return
         now=u.GameplayStatics.get_time_seconds(w)
         if now<sd_test['next']:return

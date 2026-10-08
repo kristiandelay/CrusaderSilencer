@@ -1,0 +1,114 @@
+[
+  {
+    "index": 0,
+    "direction": "Fwd",
+    "source": "/Game/RollDodgeDashSet/Animations/RootMotion/Mannequin/Roll/A_Roll_IdleFwd",
+    "animation": "/Game/Crusader/Movement/Roll/Animations/GASP_A_Roll_IdleFwd.GASP_A_Roll_IdleFwd",
+    "montage": "/Game/Crusader/Movement/Roll/AM_Roll_Fwd.AM_Roll_Fwd",
+    "duration": 1.0,
+    "root_delta": [
+      0.0,
+      446.17913818359375,
+      0.0
+    ],
+    "maximum_baked_foot_ik_error_cm": 0.00013585092356889172
+  },
+  {
+    "index": 1,
+    "direction": "FwdRt_45",
+    "source": "/Game/RollDodgeDashSet/Animations/RootMotion/Mannequin/Roll/A_Roll_IdleFwdRt_45",
+    "animation": "/Game/Crusader/Movement/Roll/Animations/GASP_A_Roll_IdleFwdRt_45.GASP_A_Roll_IdleFwdRt_45",
+    "montage": "/Game/Crusader/Movement/Roll/AM_Roll_FwdRt_45.AM_Roll_FwdRt_45",
+    "duration": 1.0,
+    "root_delta": [
+      -315.4962463378906,
+      315.4962158203125,
+      0.0
+    ],
+    "maximum_baked_foot_ik_error_cm": 0.00012725156535027047
+  },
+  {
+    "index": 2,
+    "direction": "FwdRt_90",
+    "source": "/Game/RollDodgeDashSet/Animations/RootMotion/Mannequin/Roll/A_Roll_IdleFwdRt_90",
+    "animation": "/Game/Crusader/Movement/Roll/Animations/GASP_A_Roll_IdleFwdRt_90.GASP_A_Roll_IdleFwdRt_90",
+    "montage": "/Game/Crusader/Movement/Roll/AM_Roll_FwdRt_90.AM_Roll_FwdRt_90",
+    "duration": 1.0,
+    "root_delta": [
+      -446.772705078125,
+      1.708853778836783e-05,
+      0.0
+    ],
+    "maximum_baked_foot_ik_error_cm": 0.00012721382271742244
+  },
+  {
+    "index": 3,
+    "direction": "BwdRt_135",
+    "source": "/Game/RollDodgeDashSet/Animations/RootMotion/Mannequin/Roll/A_Roll_IdleBwdRt_135",
+    "animation": "/Game/Crusader/Movement/Roll/Animations/GASP_A_Roll_IdleBwdRt_135.GASP_A_Roll_IdleBwdRt_135",
+    "montage": "/Game/Crusader/Movement/Roll/AM_Roll_BwdRt_135.AM_Roll_BwdRt_135",
+    "duration": 1.0,
+    "root_delta": [
+      -260.9215914179804,
+      -322.8728503838993,
+      0.0
+    ],
+    "maximum_baked_foot_ik_error_cm": 0.0011672496460460222
+  },
+  {
+    "index": 4,
+    "direction": "Bwd",
+    "source": "/Game/RollDodgeDashSet/Animations/RootMotion/Mannequin/Roll/A_Roll_IdleBwd",
+    "animation": "/Game/Crusader/Movement/Roll/Animations/GASP_A_Roll_IdleBwd.GASP_A_Roll_IdleBwd",
+    "montage": "/Game/Crusader/Movement/Roll/AM_Roll_Bwd.AM_Roll_Bwd",
+    "duration": 1.0,
+    "root_delta": [
+      0.0,
+      -415.2896423339844,
+      0.0
+    ],
+    "maximum_baked_foot_ik_error_cm": 8.500972733245926e-05
+  },
+  {
+    "index": 5,
+    "direction": "BwdLt_135",
+    "source": "/Game/RollDodgeDashSet/Animations/RootMotion/Mannequin/Roll/A_Roll_IdleBwdLt_135",
+    "animation": "/Game/Crusader/Movement/Roll/Animations/GASP_A_Roll_IdleBwdLt_135.GASP_A_Roll_IdleBwdLt_135",
+    "montage": "/Game/Crusader/Movement/Roll/AM_Roll_BwdLt_135.AM_Roll_BwdLt_135",
+    "duration": 1.0,
+    "root_delta": [
+      284.4196472167969,
+      -304.9083557128906,
+      0.0
+    ],
+    "maximum_baked_foot_ik_error_cm": 0.0001228410351612215
+  },
+  {
+    "index": 6,
+    "direction": "FwdLt_90",
+    "source": "/Game/RollDodgeDashSet/Animations/RootMotion/Mannequin/Roll/A_Roll_IdleFwdLt_90",
+    "animation": "/Game/Crusader/Movement/Roll/Animations/GASP_A_Roll_IdleFwdLt_90.GASP_A_Roll_IdleFwdLt_90",
+    "montage": "/Game/Crusader/Movement/Roll/AM_Roll_FwdLt_90.AM_Roll_FwdLt_90",
+    "duration": 1.0,
+    "root_delta": [
+      445.1695251464844,
+      0.0,
+      0.0
+    ],
+    "maximum_baked_foot_ik_error_cm": 0.00012341640542333878
+  },
+  {
+    "index": 7,
+    "direction": "FwdLt_45",
+    "source": "/Game/RollDodgeDashSet/Animations/RootMotion/Mannequin/Roll/A_Roll_IdleFwdLt_45",
+    "animation": "/Game/Crusader/Movement/Roll/Animations/GASP_A_Roll_IdleFwdLt_45.GASP_A_Roll_IdleFwdLt_45",
+    "montage": "/Game/Crusader/Movement/Roll/AM_Roll_FwdLt_45.AM_Roll_FwdLt_45",
+    "duration": 1.0,
+    "root_delta": [
+      309.9420166015625,
+      320.954345703125,
+      0.0
+    ],
+    "maximum_baked_foot_ik_error_cm": 0.00026271893508948376
+  }
+]

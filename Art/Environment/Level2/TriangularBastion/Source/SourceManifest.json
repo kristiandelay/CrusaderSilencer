@@ -1,0 +1,39 @@
+{
+  "name": "TriangularBastion",
+  "archive": "TriangularBastion.zip",
+  "archive_sha256": "f253ac809f31e6740cbf0880180594e1541c94411da7c0bb686a9aec98d09a69",
+  "files": [
+    {
+      "original": "Meshy_AI_Triangular_Bastion_1007205230_texture_fbx/Meshy_AI_Triangular_Bastion_1007205230_texture.fbx",
+      "file": "TriangularBastion.fbx",
+      "bytes": 13032844,
+      "sha256": "25adc08beba9f142274147a1720aaeaec1314c1ef6fa3a956f9901399139b2d4"
+    },
+    {
+      "original": "Meshy_AI_Triangular_Bastion_1007205230_texture_fbx/Meshy_AI_Triangular_Bastion_1007205230_texture.png",
+      "file": "TriangularBastion_BaseColor.png",
+      "bytes": 4225485,
+      "sha256": "6c4eee01b97cf3e3488033c84d35d5ebd672e345dc144d482e8a23abdeaa4a46"
+    },
+    {
+      "original": "Meshy_AI_Triangular_Bastion_1007205230_texture_fbx/Meshy_AI_Triangular_Bastion_1007205230_texture_metallic.png",
+      "file": "TriangularBastion_Metallic.png",
+      "bytes": 906683,
+      "sha256": "be6205f6aebb44a2c11133bfa9e8d3946e8a6f6f3cfdd9b4c7dbc3ad77384c28"
+    },
+    {
+      "original": "Meshy_AI_Triangular_Bastion_1007205230_texture_fbx/Meshy_AI_Triangular_Bastion_1007205230_texture_normal.png",
+      "file": "TriangularBastion_Normal.png",
+      "bytes": 3495179,
+      "sha256": "37ccf8b41bb06eabc15c2582f8a825f1a6b935ae434840b8a479fa7db9836a09"
+    },
+    {
+      "original": "Meshy_AI_Triangular_Bastion_1007205230_texture_fbx/Meshy_AI_Triangular_Bastion_1007205230_texture_roughness.png",
+      "file": "TriangularBastion_Roughness.png",
+      "bytes": 1254138,
+      "sha256": "692d55cc3529af8fa1edf2cd5ef1c4b15723328f1b4f4ab3613ac503121c62d4"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Triangular_Bastion_1007205230_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level2/TriangularBastion.zip"
+}

@@ -1,0 +1,39 @@
+{
+  "name": "BlastDoor",
+  "archive": "BlastDoor.zip",
+  "archive_sha256": "7df211092fd79742c6f3884224d67d11b572c097ca51cce73832f66353ec14b7",
+  "files": [
+    {
+      "original": "Meshy_AI_Blast_Door_1008201857_texture_fbx/Meshy_AI_Blast_Door_1008201857_texture.fbx",
+      "file": "BlastDoor.fbx",
+      "bytes": 35420780,
+      "sha256": "938231b2538e20b9ecf88c66429f424cb880e6512e68b7dfb54815b47d0d0d79"
+    },
+    {
+      "original": "Meshy_AI_Blast_Door_1008201857_texture_fbx/Meshy_AI_Blast_Door_1008201857_texture.png",
+      "file": "BlastDoor_BaseColor.png",
+      "bytes": 5357738,
+      "sha256": "4a2aa2904889fb3475aeec3d96838d8d30d247206ee1038bc9fb9b4323425666"
+    },
+    {
+      "original": "Meshy_AI_Blast_Door_1008201857_texture_fbx/Meshy_AI_Blast_Door_1008201857_texture_metallic.png",
+      "file": "BlastDoor_Metallic.png",
+      "bytes": 1516651,
+      "sha256": "bff5c3cd6ba5256fc153973b5c906155b8071764225353b57987801d187c1b80"
+    },
+    {
+      "original": "Meshy_AI_Blast_Door_1008201857_texture_fbx/Meshy_AI_Blast_Door_1008201857_texture_normal.png",
+      "file": "BlastDoor_Normal.png",
+      "bytes": 5035620,
+      "sha256": "314c17c10281f62848df114412fce2983237fb94b0c7ae8ab514b20f97d493d1"
+    },
+    {
+      "original": "Meshy_AI_Blast_Door_1008201857_texture_fbx/Meshy_AI_Blast_Door_1008201857_texture_roughness.png",
+      "file": "BlastDoor_Roughness.png",
+      "bytes": 1724787,
+      "sha256": "32ddc9bbe7c0e6faec614e23cf12971a37675c2ff4f7d85b5406e083ba7773a0"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Blast_Door_1008201857_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level3/BlastDoor.zip"
+}

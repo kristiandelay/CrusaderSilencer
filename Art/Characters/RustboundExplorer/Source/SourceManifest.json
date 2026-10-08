@@ -1,0 +1,39 @@
+{
+  "name": "RustboundExplorer",
+  "archive": "RustboundExplorer.zip",
+  "archive_sha256": "3afa216eb3bf2f891c7f20d1a7f8cbf3497ffc7535faaf14566e4f656d8569e2",
+  "files": [
+    {
+      "original": "Meshy_AI_Rustbound_Explorer_1007183713_texture_fbx/Meshy_AI_Rustbound_Explorer_1007183713_texture.fbx",
+      "file": "RustboundExplorer.fbx",
+      "bytes": 39316188,
+      "sha256": "50639c3477e83b60e1e7867159cf98322156ab6cc3ce4aa579dceb5103d51e40"
+    },
+    {
+      "original": "Meshy_AI_Rustbound_Explorer_1007183713_texture_fbx/Meshy_AI_Rustbound_Explorer_1007183713_texture.png",
+      "file": "RustboundExplorer_BaseColor.png",
+      "bytes": 7188265,
+      "sha256": "68cb1c0a4b61da474451ed5639223ba12b08d99b70fb9dc69bf93eecffe51751"
+    },
+    {
+      "original": "Meshy_AI_Rustbound_Explorer_1007183713_texture_fbx/Meshy_AI_Rustbound_Explorer_1007183713_texture_metallic.png",
+      "file": "RustboundExplorer_Metallic.png",
+      "bytes": 38726,
+      "sha256": "1df005816d90b77396feb9431c76f28582a480ae01854ea6bc58f48da699d344"
+    },
+    {
+      "original": "Meshy_AI_Rustbound_Explorer_1007183713_texture_fbx/Meshy_AI_Rustbound_Explorer_1007183713_texture_normal.png",
+      "file": "RustboundExplorer_Normal.png",
+      "bytes": 5505669,
+      "sha256": "530373c92ee26ccf4ec92d97f15a4bb2fd697270fa722a753eea27fd558eb802"
+    },
+    {
+      "original": "Meshy_AI_Rustbound_Explorer_1007183713_texture_fbx/Meshy_AI_Rustbound_Explorer_1007183713_texture_roughness.png",
+      "file": "RustboundExplorer_Roughness.png",
+      "bytes": 1342796,
+      "sha256": "5c1e9ad74297a65e7671f1b9c7bf8296641af2e5703a3494735f8649cf6ecbc7"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Rustbound_Explorer_1007183713_texture_fbx.zip",
+  "archive_path": "mockups/NPC/RustboundExplorer.zip"
+}

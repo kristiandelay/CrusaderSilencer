@@ -1,0 +1,39 @@
+{
+  "name": "RetroCommandConsole",
+  "archive": "RetroCommandConsole.zip",
+  "archive_sha256": "98ab4db622659a329e1846013ee1311a95798e5eff2b852802057cc10219516e",
+  "files": [
+    {
+      "original": "Meshy_AI_Retro_Command_Console_1008204640_texture_fbx/Meshy_AI_Retro_Command_Console_1008204640_texture.fbx",
+      "file": "RetroCommandConsole.fbx",
+      "bytes": 37372892,
+      "sha256": "dd637e1ffe94757d7ff8034a7bfe97bc0126b937ad4e2caab8477fb9d16e723f"
+    },
+    {
+      "original": "Meshy_AI_Retro_Command_Console_1008204640_texture_fbx/Meshy_AI_Retro_Command_Console_1008204640_texture.png",
+      "file": "RetroCommandConsole_BaseColor.png",
+      "bytes": 6169232,
+      "sha256": "fcba1381138229b9d57cc8af9387f875692d972b531c28c5645bd09fb3fa347c"
+    },
+    {
+      "original": "Meshy_AI_Retro_Command_Console_1008204640_texture_fbx/Meshy_AI_Retro_Command_Console_1008204640_texture_metallic.png",
+      "file": "RetroCommandConsole_Metallic.png",
+      "bytes": 549952,
+      "sha256": "577a1f6cedf77ab3cd058b22dcd4b9a148f67d15429e3c79c44fd3e65d558332"
+    },
+    {
+      "original": "Meshy_AI_Retro_Command_Console_1008204640_texture_fbx/Meshy_AI_Retro_Command_Console_1008204640_texture_normal.png",
+      "file": "RetroCommandConsole_Normal.png",
+      "bytes": 5041979,
+      "sha256": "ae427c0d0b0e39b69da69a566620f1f9637813d9f2c28b7b77d606a5f4761a73"
+    },
+    {
+      "original": "Meshy_AI_Retro_Command_Console_1008204640_texture_fbx/Meshy_AI_Retro_Command_Console_1008204640_texture_roughness.png",
+      "file": "RetroCommandConsole_Roughness.png",
+      "bytes": 1712708,
+      "sha256": "e75ec52a607c41b59a1383b4471a61bca68b541597d539b5f38935b6d8aa9666"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Retro_Command_Console_1008204640_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level3/props/RetroCommandConsole.zip"
+}

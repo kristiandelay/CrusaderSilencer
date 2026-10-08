@@ -1,0 +1,39 @@
+{
+  "name": "IndustrialSciFiBlastDoor",
+  "archive": "IndustrialSciFiBlastDoor.zip",
+  "archive_sha256": "b01d851c6cfe6b37d645703e2711d1b9ea633e57bc3973560020e35a946de72b",
+  "files": [
+    {
+      "original": "Meshy_AI_Industrial_Sci_Fi_Bla_1008201500_texture_fbx/Meshy_AI_Industrial_Sci_Fi_Bla_1008201500_texture.fbx",
+      "file": "IndustrialSciFiBlastDoor.fbx",
+      "bytes": 35249580,
+      "sha256": "12978df16e29b4534dfae297b4bb3eee4e43c26c55b6e01e478c1310fdcdda38"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Sci_Fi_Bla_1008201500_texture_fbx/Meshy_AI_Industrial_Sci_Fi_Bla_1008201500_texture.png",
+      "file": "IndustrialSciFiBlastDoor_BaseColor.png",
+      "bytes": 5244155,
+      "sha256": "5999b2e191aff727549c3ad8daea2942f46207f3158c58dcec6285fefd7dedc7"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Sci_Fi_Bla_1008201500_texture_fbx/Meshy_AI_Industrial_Sci_Fi_Bla_1008201500_texture_metallic.png",
+      "file": "IndustrialSciFiBlastDoor_Metallic.png",
+      "bytes": 941946,
+      "sha256": "6d39518f2689f71834c86c64aabb98dfda65222ed7e92e0419ebe56b958a2958"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Sci_Fi_Bla_1008201500_texture_fbx/Meshy_AI_Industrial_Sci_Fi_Bla_1008201500_texture_normal.png",
+      "file": "IndustrialSciFiBlastDoor_Normal.png",
+      "bytes": 4806369,
+      "sha256": "2a0fdb255b8dcaea2a5c204e89a32ebbf450fa1ecf7a0d537345d6a66459d686"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Sci_Fi_Bla_1008201500_texture_fbx/Meshy_AI_Industrial_Sci_Fi_Bla_1008201500_texture_roughness.png",
+      "file": "IndustrialSciFiBlastDoor_Roughness.png",
+      "bytes": 1681175,
+      "sha256": "09ae39579ae96de433dd73adaea700d87e76e462fc6a8a0d4f8d871034ee3e5e"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Industrial_Sci_Fi_Bla_1008201500_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level3/IndustrialSciFiBlastDoor.zip"
+}

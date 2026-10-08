@@ -1,0 +1,102 @@
+[
+  {
+    "name": "ArmoredSentinel",
+    "archive": "mockups/Guards/ArmoredSentinel.zip",
+    "original_archive_name": "Meshy_AI_Armored_Sentinel_1007191946_texture_fbx.zip",
+    "sha256": "0ca1c4793072f589f0dfb55bb644a7048a204cba50712de521090834f63d045c",
+    "imported": true,
+    "category": "Guards",
+    "role": "Guard",
+    "asset": "/Game/Crusader/Characters/ArmoredSentinel/ArmoredSentinel"
+  },
+  {
+    "name": "AstronautSentinel",
+    "archive": "mockups/Guards/AstronautSentinel.zip",
+    "original_archive_name": "Meshy_AI_Astronaut_Sentinel_1007183706_texture_fbx.zip",
+    "sha256": "2e53c85a213b508db8362256bf5d6a38c09f4898ec748bc5c13b09fdd7f70bad",
+    "imported": true,
+    "category": "Guards",
+    "role": "Guard",
+    "asset": "/Game/Crusader/Characters/AstronautSentinel/AstronautSentinel"
+  },
+  {
+    "name": "CrimsonVanguard",
+    "archive": "mockups/Guards/CrimsonVanguard.zip",
+    "original_archive_name": "Meshy_AI_Crimson_Vanguard_1007202501_texture_fbx.zip",
+    "sha256": "c2daab4639ba2a86272d847feadf15e2384525484867daf565e00cb812e95346",
+    "imported": true,
+    "category": "Guards",
+    "role": "Guard",
+    "asset": "/Game/Crusader/Characters/CrimsonVanguard/CrimsonVanguard"
+  },
+  {
+    "name": "MaintenanceWorker",
+    "archive": "mockups/NPC/MaintenanceWorker.zip",
+    "original_archive_name": "Meshy_AI_Maintenance_Worker_1007185253_texture_fbx.zip",
+    "sha256": "8c900b978c957c773f895b19bf36e6f01131f0d72fa5247697b01f52385774e0",
+    "imported": true,
+    "category": "NPC",
+    "role": "Civilian",
+    "asset": "/Game/Crusader/Characters/MaintenanceWorker/MaintenanceWorker"
+  },
+  {
+    "name": "RuggedMiner",
+    "archive": "mockups/NPC/RuggedMiner.zip",
+    "original_archive_name": "Meshy_AI_Rugged_Miner_1007185205_texture_fbx.zip",
+    "sha256": "a662f814c6a1cb299a192d3a27ca1d7be4c94ace03b80f3e03e2875070dab611",
+    "imported": true,
+    "category": "NPC",
+    "role": "Civilian",
+    "asset": "/Game/Crusader/Characters/RuggedMiner/RuggedMiner"
+  },
+  {
+    "name": "RustboundExplorer",
+    "archive": "mockups/NPC/RustboundExplorer.zip",
+    "original_archive_name": "Meshy_AI_Rustbound_Explorer_1007183713_texture_fbx.zip",
+    "sha256": "3afa216eb3bf2f891c7f20d1a7f8cbf3497ffc7535faaf14566e4f656d8569e2",
+    "imported": true,
+    "category": "NPC",
+    "role": "Civilian",
+    "asset": "/Game/Crusader/Characters/RustboundExplorer/RustboundExplorer"
+  },
+  {
+    "name": "CrimsonAuthority",
+    "archive": "mockups/NPC/CrimsonAuthority.zip",
+    "original_archive_name": "Meshy_AI_Crimson_Authority_1007202431_texture_fbx.zip",
+    "sha256": "b81c655eca5c55e9f980ad0a40ebd5688b1d4995f30a8cd0b1158253708eb7ac",
+    "imported": true,
+    "category": "NPC",
+    "role": "Civilian",
+    "asset": "/Game/Crusader/Characters/CrimsonAuthority/CrimsonAuthority"
+  },
+  {
+    "name": "CrusaderOperative",
+    "archive": "mockups/NPC/CrusaderOperative.zip",
+    "original_archive_name": "Meshy_AI_Crusader_Operative_1007203010_texture_fbx.zip",
+    "sha256": "6bb15ea66702006141385465b776fbf08bc5b73551811b4f39cbf87c075c391d",
+    "imported": true,
+    "category": "NPC",
+    "role": "Civilian",
+    "asset": "/Game/Crusader/Characters/CrusaderOperative/CrusaderOperative"
+  },
+  {
+    "name": "GraySentinel",
+    "archive": "mockups/NPC/GraySentinel.zip",
+    "original_archive_name": "Meshy_AI_Gray_Sentinel_1007202451_texture_fbx.zip",
+    "sha256": "de05637b09ca7a781c0df992f4f547fa06ced3da3d30c7e6f392df37bf5e0914",
+    "imported": true,
+    "category": "NPC",
+    "role": "Civilian",
+    "asset": "/Game/Crusader/Characters/GraySentinel/GraySentinel"
+  },
+  {
+    "name": "RuggedSurvivor",
+    "archive": "mockups/NPC/RuggedSurvivor.zip",
+    "original_archive_name": "Meshy_AI_Rugged_Survivor_1007202441_texture_fbx.zip",
+    "sha256": "d6e1b5df26e67cf9905c5636bb7adad505d0463d7511552c16f8530842113551",
+    "imported": true,
+    "category": "NPC",
+    "role": "Civilian",
+    "asset": "/Game/Crusader/Characters/RuggedSurvivor/RuggedSurvivor"
+  }
+]

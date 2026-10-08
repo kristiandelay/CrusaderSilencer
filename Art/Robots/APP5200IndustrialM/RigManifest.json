@@ -1,0 +1,199 @@
+{
+  "name": "APP5200IndustrialM",
+  "rig_type": "three-link mechanical legs",
+  "parts": [
+    {
+      "name": "APP5200IndustrialM_foot_r",
+      "bone": "foot_r",
+      "vertices": 22922,
+      "triangles": 45892
+    },
+    {
+      "name": "APP5200IndustrialM_Chassis",
+      "bone": "chassis",
+      "vertices": 89656,
+      "triangles": 179620
+    },
+    {
+      "name": "APP5200IndustrialM_JointHousing_3_r",
+      "bone": "foot_r",
+      "vertices": 2456,
+      "triangles": 4920
+    },
+    {
+      "name": "APP5200IndustrialM_JointHousing_2_r",
+      "bone": "lower_leg_r",
+      "vertices": 7922,
+      "triangles": 15852
+    },
+    {
+      "name": "APP5200IndustrialM_lower_leg_r",
+      "bone": "lower_leg_r",
+      "vertices": 11576,
+      "triangles": 23164
+    },
+    {
+      "name": "APP5200IndustrialM_JointHousing_0_r",
+      "bone": "upper_leg_r",
+      "vertices": 5920,
+      "triangles": 11852
+    },
+    {
+      "name": "APP5200IndustrialM_upper_leg_r",
+      "bone": "upper_leg_r",
+      "vertices": 17734,
+      "triangles": 35468
+    },
+    {
+      "name": "APP5200IndustrialM_JointHousing_1_r",
+      "bone": "middle_leg_r",
+      "vertices": 2234,
+      "triangles": 4472
+    },
+    {
+      "name": "APP5200IndustrialM_middle_leg_r",
+      "bone": "middle_leg_r",
+      "vertices": 13872,
+      "triangles": 27736
+    },
+    {
+      "name": "APP5200IndustrialM_JointHousing_0_l",
+      "bone": "upper_leg_l",
+      "vertices": 6280,
+      "triangles": 12544
+    },
+    {
+      "name": "APP5200IndustrialM_upper_leg_l",
+      "bone": "upper_leg_l",
+      "vertices": 18318,
+      "triangles": 36656
+    },
+    {
+      "name": "APP5200IndustrialM_JointHousing_2_l",
+      "bone": "lower_leg_l",
+      "vertices": 8074,
+      "triangles": 16156
+    },
+    {
+      "name": "APP5200IndustrialM_lower_leg_l",
+      "bone": "lower_leg_l",
+      "vertices": 11766,
+      "triangles": 23552
+    },
+    {
+      "name": "APP5200IndustrialM_JointHousing_1_l",
+      "bone": "middle_leg_l",
+      "vertices": 2322,
+      "triangles": 4644
+    },
+    {
+      "name": "APP5200IndustrialM_middle_leg_l",
+      "bone": "middle_leg_l",
+      "vertices": 13958,
+      "triangles": 27912
+    },
+    {
+      "name": "APP5200IndustrialM_foot_l",
+      "bone": "foot_l",
+      "vertices": 22504,
+      "triangles": 45060
+    },
+    {
+      "name": "APP5200IndustrialM_JointHousing_3_l",
+      "bone": "foot_l",
+      "vertices": 2490,
+      "triangles": 4984
+    },
+    {
+      "name": "APP5200IndustrialM_Axle_0_l",
+      "bone": "upper_leg_l",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "APP5200IndustrialM_Axle_1_l",
+      "bone": "middle_leg_l",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "APP5200IndustrialM_Axle_2_l",
+      "bone": "lower_leg_l",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "APP5200IndustrialM_Axle_3_l",
+      "bone": "foot_l",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "APP5200IndustrialM_Piston_housing_l",
+      "bone": "piston_housing_l",
+      "vertices": 40,
+      "triangles": 76
+    },
+    {
+      "name": "APP5200IndustrialM_Piston_rod_l",
+      "bone": "piston_rod_l",
+      "vertices": 40,
+      "triangles": 76
+    },
+    {
+      "name": "APP5200IndustrialM_Axle_0_r",
+      "bone": "upper_leg_r",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "APP5200IndustrialM_Axle_1_r",
+      "bone": "middle_leg_r",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "APP5200IndustrialM_Axle_2_r",
+      "bone": "lower_leg_r",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "APP5200IndustrialM_Axle_3_r",
+      "bone": "foot_r",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "APP5200IndustrialM_Piston_housing_r",
+      "bone": "piston_housing_r",
+      "vertices": 40,
+      "triangles": 76
+    },
+    {
+      "name": "APP5200IndustrialM_Piston_rod_r",
+      "bone": "piston_rod_r",
+      "vertices": 40,
+      "triangles": 76
+    }
+  ],
+  "bones": [
+    "chassis",
+    "upper_leg_l",
+    "middle_leg_l",
+    "lower_leg_l",
+    "foot_l",
+    "piston_rod_l",
+    "piston_housing_l",
+    "upper_leg_r",
+    "middle_leg_r",
+    "lower_leg_r",
+    "foot_r",
+    "piston_rod_r",
+    "piston_housing_r"
+  ],
+  "closed_cut_faces": 12817,
+  "height_cm": 180,
+  "preview_action": "APP5200IndustrialM_JointCheck",
+  "has_hydraulic_constraints": true
+}

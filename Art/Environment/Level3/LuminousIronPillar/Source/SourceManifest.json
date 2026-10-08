@@ -1,0 +1,39 @@
+{
+  "name": "LuminousIronPillar",
+  "archive": "LuminousIronPillar.zip",
+  "archive_sha256": "11dbfaf72f27a4de583eb90dd4af9edf69a5c40e2ca46bfe49c66a4b27c3aa6b",
+  "files": [
+    {
+      "original": "Meshy_AI_Luminous_Iron_Pillar_1008204432_texture_fbx/Meshy_AI_Luminous_Iron_Pillar_1008204432_texture.fbx",
+      "file": "LuminousIronPillar.fbx",
+      "bytes": 21006988,
+      "sha256": "cec90098452d07538dc619227435b51dc946e990e20282ab3d449c75c49374c6"
+    },
+    {
+      "original": "Meshy_AI_Luminous_Iron_Pillar_1008204432_texture_fbx/Meshy_AI_Luminous_Iron_Pillar_1008204432_texture.png",
+      "file": "LuminousIronPillar_BaseColor.png",
+      "bytes": 5869802,
+      "sha256": "c5821d70dbbb86721bbc932dcc4a75ad4cddf45a67c42d09a23a6cd3f5c9c688"
+    },
+    {
+      "original": "Meshy_AI_Luminous_Iron_Pillar_1008204432_texture_fbx/Meshy_AI_Luminous_Iron_Pillar_1008204432_texture_metallic.png",
+      "file": "LuminousIronPillar_Metallic.png",
+      "bytes": 1616748,
+      "sha256": "ce0831404489ab737d1ee1189797b113b86774352afef384d4c6aceed839d2e4"
+    },
+    {
+      "original": "Meshy_AI_Luminous_Iron_Pillar_1008204432_texture_fbx/Meshy_AI_Luminous_Iron_Pillar_1008204432_texture_normal.png",
+      "file": "LuminousIronPillar_Normal.png",
+      "bytes": 5230085,
+      "sha256": "a192ea78dac76d34c76b2bce3f8f3d124ae52c8b901e756a9211f23fac3d9490"
+    },
+    {
+      "original": "Meshy_AI_Luminous_Iron_Pillar_1008204432_texture_fbx/Meshy_AI_Luminous_Iron_Pillar_1008204432_texture_roughness.png",
+      "file": "LuminousIronPillar_Roughness.png",
+      "bytes": 1672956,
+      "sha256": "6f9aa0874c6c42f7f49c040df0313399e8988a510f41a4e0cbd272438977c6f3"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Luminous_Iron_Pillar_1008204432_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level3/LuminousIronPillar.zip"
+}

@@ -1,0 +1,39 @@
+{
+  "name": "IndustrialWallLight",
+  "archive": "IndustrialWallLight.zip",
+  "archive_sha256": "21dc2b043345c582ebe5df8cd441f3e453dfe8dbcc6d968a0b309a94b334b330",
+  "files": [
+    {
+      "original": "Meshy_AI_Industrial_Wall_Light_1008205003_texture_fbx/Meshy_AI_Industrial_Wall_Light_1008205003_texture.fbx",
+      "file": "IndustrialWallLight.fbx",
+      "bytes": 12890188,
+      "sha256": "c2bc1a5a1d3aad1146212d5136203d7052fed5b4752e22649db249c5af2136b4"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Wall_Light_1008205003_texture_fbx/Meshy_AI_Industrial_Wall_Light_1008205003_texture.png",
+      "file": "IndustrialWallLight_BaseColor.png",
+      "bytes": 4283458,
+      "sha256": "fdb5fd6b1cd6db996990ae8f46031604c3c2bd8a8b328988a1824d4be139fc2d"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Wall_Light_1008205003_texture_fbx/Meshy_AI_Industrial_Wall_Light_1008205003_texture_metallic.png",
+      "file": "IndustrialWallLight_Metallic.png",
+      "bytes": 1310277,
+      "sha256": "3cecd768b94b58d601f10720bd3060351c9062d632819ff910b8574b13cf541a"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Wall_Light_1008205003_texture_fbx/Meshy_AI_Industrial_Wall_Light_1008205003_texture_normal.png",
+      "file": "IndustrialWallLight_Normal.png",
+      "bytes": 3531272,
+      "sha256": "2e50c87a42419e74d524fbcf7011bc4f0987b8062ddced72dc2072632c12e3d6"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Wall_Light_1008205003_texture_fbx/Meshy_AI_Industrial_Wall_Light_1008205003_texture_roughness.png",
+      "file": "IndustrialWallLight_Roughness.png",
+      "bytes": 1281319,
+      "sha256": "ab3d149690e6afb45af61626d33057d2a12deedad338351c7da325e3b0bc7be9"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Industrial_Wall_Light_1008205003_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level3/props/IndustrialWallLight.zip"
+}

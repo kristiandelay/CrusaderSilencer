@@ -1,0 +1,39 @@
+{
+  "name": "AstronautSentinel",
+  "archive": "AstronautSentinel.zip",
+  "archive_sha256": "2e53c85a213b508db8362256bf5d6a38c09f4898ec748bc5c13b09fdd7f70bad",
+  "files": [
+    {
+      "original": "Meshy_AI_Astronaut_Sentinel_1007183706_texture_fbx/Meshy_AI_Astronaut_Sentinel_1007183706_texture.fbx",
+      "file": "AstronautSentinel.fbx",
+      "bytes": 27969420,
+      "sha256": "19c7a4734f4c62a6c2c42b7fb00de71dfd8ba3f6b93139d963fe576250c879a6"
+    },
+    {
+      "original": "Meshy_AI_Astronaut_Sentinel_1007183706_texture_fbx/Meshy_AI_Astronaut_Sentinel_1007183706_texture.png",
+      "file": "AstronautSentinel_BaseColor.png",
+      "bytes": 6532301,
+      "sha256": "2c251a0bfd1cca0fac3fd7110dada28e74069f8adc31d07c9a2eefff8d0669cd"
+    },
+    {
+      "original": "Meshy_AI_Astronaut_Sentinel_1007183706_texture_fbx/Meshy_AI_Astronaut_Sentinel_1007183706_texture_metallic.png",
+      "file": "AstronautSentinel_Metallic.png",
+      "bytes": 50634,
+      "sha256": "b0c03e7cb313e5b4456ca81db4211c08674c1cafecc571358d00728e1c113655"
+    },
+    {
+      "original": "Meshy_AI_Astronaut_Sentinel_1007183706_texture_fbx/Meshy_AI_Astronaut_Sentinel_1007183706_texture_normal.png",
+      "file": "AstronautSentinel_Normal.png",
+      "bytes": 5644296,
+      "sha256": "71c7d4f5d046360122874258f6080143db5e0882a27e3b69958b0ffe042fe5ef"
+    },
+    {
+      "original": "Meshy_AI_Astronaut_Sentinel_1007183706_texture_fbx/Meshy_AI_Astronaut_Sentinel_1007183706_texture_roughness.png",
+      "file": "AstronautSentinel_Roughness.png",
+      "bytes": 1222722,
+      "sha256": "7416616ae42b586d34c36dba7ea355b66e310240c9680edddb5674c616961698"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Astronaut_Sentinel_1007183706_texture_fbx.zip",
+  "archive_path": "mockups/Guards/AstronautSentinel.zip"
+}

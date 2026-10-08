@@ -1,0 +1,39 @@
+{
+  "name": "IndustrialPowerCabinet",
+  "archive": "IndustrialPowerCabinet.zip",
+  "archive_sha256": "0ac959f244c24af6769775d076ce7983ce3be248ca37b4d441d7577be8bd3619",
+  "files": [
+    {
+      "original": "Meshy_AI_Industrial_Power_Cabi_1008204756_texture_fbx/Meshy_AI_Industrial_Power_Cabi_1008204756_texture.fbx",
+      "file": "IndustrialPowerCabinet.fbx",
+      "bytes": 20972060,
+      "sha256": "69e985a91d3357a88e6ecfaff4ad1d808959cdcf1bdea60cae60621e9cfc5d90"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Power_Cabi_1008204756_texture_fbx/Meshy_AI_Industrial_Power_Cabi_1008204756_texture.png",
+      "file": "IndustrialPowerCabinet_BaseColor.png",
+      "bytes": 4930489,
+      "sha256": "6fd72a6db1adf821c411a6e4fb6663268fc3f536a2e43a045aa62508033bb693"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Power_Cabi_1008204756_texture_fbx/Meshy_AI_Industrial_Power_Cabi_1008204756_texture_metallic.png",
+      "file": "IndustrialPowerCabinet_Metallic.png",
+      "bytes": 72580,
+      "sha256": "97e5a5823021c4ba917ca4cff7b8ebad032b7393fccd99ca1cc391c20f6fc6be"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Power_Cabi_1008204756_texture_fbx/Meshy_AI_Industrial_Power_Cabi_1008204756_texture_normal.png",
+      "file": "IndustrialPowerCabinet_Normal.png",
+      "bytes": 4213856,
+      "sha256": "cbe96f4a164234a3ca6e8bc4eccb0959c7460b04f313d6ac35b5c9f80c4290ac"
+    },
+    {
+      "original": "Meshy_AI_Industrial_Power_Cabi_1008204756_texture_fbx/Meshy_AI_Industrial_Power_Cabi_1008204756_texture_roughness.png",
+      "file": "IndustrialPowerCabinet_Roughness.png",
+      "bytes": 1562022,
+      "sha256": "d5254233eb1c6b9aa6f13b62612cc4dbcd9a485fcfda220b680667caee516c5e"
+    }
+  ],
+  "original_archive_name": "Meshy_AI_Industrial_Power_Cabi_1008204756_texture_fbx.zip",
+  "archive_path": "mockups/Environment/Level3/props/IndustrialPowerCabinet.zip"
+}
