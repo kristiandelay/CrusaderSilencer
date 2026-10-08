@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "manifest_sha256": "56099f2b6a623418e401ee7510b9aab6c8d3e7f02d577569a879e59c43d14a9c",
+  "probes": 30071,
+  "wall_spans": 51,
+  "liners": 1147,
+  "open_probes_without_liners": 2113,
+  "open_probes_after": 0,
+  "preserved_window_centres": 56,
+  "misses": []
+}

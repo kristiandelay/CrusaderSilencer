@@ -12,7 +12,8 @@ lp_views=[('Exterior',(7800,-9200,6500),(650,0,950),74),
           ('Operations',(-920,-500,960),(0,1750,920),83),
           ('Research',(-1050,-380,1680),(0,1600,1630),83),
           ('Medbay',(-1740,560,1660),(-2500,1700,1550),86),
-          ('Stairwell',(4300,-1920,960),(4200,1050,1350),90)]
+          ('Stairwell',(4300,-1920,960),(4200,1050,1350),90),
+          ('WallSeams',(-2350,-700,1720),(-3300,-900,1770),75)]
 lp_test=dict(index=0,phase='spawn',next=0,busy=False,deadline=time.monotonic()+180)
 def lp_tick(delta):
     if lp_test['busy']:return

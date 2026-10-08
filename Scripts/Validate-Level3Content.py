@@ -1,5 +1,5 @@
 """Verify Level3 imported materials, collision, saved structure and gameplay results."""
-import json
+import hashlib,json
 from pathlib import Path
 import unreal as u
 
@@ -64,11 +64,16 @@ assert lv_failures==0,lv_validation.export_text()
 lv_walk=json.loads((lv_root/'Artifacts/Level3/walkthrough.json').read_text())
 assert lv_walk['passed'] and lv_walk['walkthrough_completed'],lv_walk.get('error')
 assert len(lv_walk['smooth_stairs'])==16
+lv_seams=json.loads((lv_root/'resources/Level3WallSeamValidation.json').read_text())
+assert lv_seams['passed'] and lv_seams['open_probes_after']==0
+lv_manifest_hash=hashlib.sha256((lv_root/'resources/Level3Facility.json').read_bytes()).hexdigest()
+assert lv_walk['manifest_sha256']==lv_seams['manifest_sha256']==lv_manifest_hash,'Stale facility validation'
 lv_source=json.loads((lv_root/'Artifacts/Level3/source-validation.json').read_text());assert lv_source['passed']
 result=dict(passed=True,map='/Game/Maps/L_TraversalGym',models=len(lv_rows),assets=len(set(lv_paths)),
     actors=lv_manifest['actor_count'],models_placed=len(lv_manifest['models_used']),storeys=3,clear_height_cm=660,
     residents=9,checks=len(lv_walk['checks']),closed_stair_tower_band_checks=lv_band_checks,walkthrough_stops=len(lv_walk['walkthrough']),
     walking_collision_surfaces=len(lv_collision),smooth_stair_runs=8,
+    wall_seam_probes=lv_seams['probes'],open_wall_seams=lv_seams['open_probes_after'],
     maximum_stair_bounce_cm=max(r['offset_range_cm'] for r in lv_walk['smooth_stairs']),
     source_validation='Artifacts/Level3/source-validation.json',gameplay_validation='Artifacts/Level3/walkthrough.json',
     skill='C:/Users/remote/.codex/skills/meshy-mockup-naming/SKILL.md')

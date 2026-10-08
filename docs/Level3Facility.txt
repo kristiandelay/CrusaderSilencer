@@ -12,6 +12,18 @@ The reference guides the loading/reactor floor, operations/server floor and
 research/containment floor. Large side bays and broad cross-corridors leave
 room for the third-person camera, combat and NPC avoidance.
 
+Wall joins use matching PlainWall metal liners embedded within the decorative
+wall thickness. Vertical joints, corners, tier joins and floor-depth bands
+are closed independently of the source meshes' rounded frame bounds. Liners
+cover the joints while retaining all 56 window centres and the door openings.
+Test-Level3WallSeams.py traces 30,071 seam positions across all 51 wall spans;
+it compares the original panels with the liner collision disabled, restores
+the liners and checks that none of those seams remain open. Its result and
+the walkthrough are tied to the generated facility manifest hash. Floor-depth
+band liners finish flush with the floor so they cannot become raised door
+thresholds. All 30,071 probes are closed after the fix (2,113 were open with
+the liners disabled).
+
 Occupied floor elevations are 0, 720 and 1440 cm above the building origin.
 The wide switchback stairs use four shallow kit runs per storey with resting
 landings. The kit's actual first/last tread heights determine placement; its
@@ -54,6 +66,7 @@ destruction actors remain in place.
 
 Validation:
   Validate-Level3Sources.py runs in ordinary Python.
+  Test-Level3WallSeams.py runs with Play stopped after building the facility.
   Test-Level3Facility.py runs in PIE and walks up and down both staircases,
     checking floor/roof collision, connected navigation, camera room and NPCs.
   Capture-Level3Facility.py captures the exterior and occupied interiors in PIE.

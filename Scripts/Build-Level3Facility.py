@@ -14,7 +14,7 @@ l3_catalog={r['name']:r for r in json.loads((l3_root/'resources/EnvironmentModel
 l3_meshes={n:u.load_asset(r['asset']) for n,r in l3_catalog.items()}
 assert len(l3_meshes)==74 and all(l3_meshes.values())
 l3_used=set();l3_records=[];l3_floor_samples=[];l3_roof_samples=[];l3_stairs=[]
-l3_collision_records=[]
+l3_collision_records=[];l3_wall_spans=[]
 l3_cube=u.load_asset('/Engine/BasicShapes/Cube.Cube')
 l3_metal=u.load_asset('/Game/Crusader/Effects/Surfaces/PM_Metal')
 
@@ -57,6 +57,23 @@ def l3_wall(name,axis,fixed,start,end,base=0,yaw=0,bottom=0,top=660,models=None)
             # Thin storey bands overlap the source panel's bevelled end caps.
             overlap=50 if high-low<100 else 5
             l3_panel(f'{name}_{tier}_{i}',model,x,y,base+(low+high)/2,width+overlap,high-low+2,yaw)
+    # Source bounds include rounded frame ends, so bounding-box overlap alone
+    # leaves daylight at panel joins. Kit-metal liners sit inside the 42 cm wall
+    # thickness and cover just the seams, preserving window/door apertures.
+    l3_wall_spans.append(dict(name=name,axis=axis,fixed=fixed,start=start,end=end,
+                             base=base,bottom=bottom,top=top,count=count,width=width))
+    band=top-bottom<100
+    liner_bottom=bottom-16;liner_top=top if band else top+16
+    for i in range(count+1):
+        p=start+i*width;x,y=(p,fixed) if axis=='x' else (fixed,p)
+        l3_panel(f'{name}_SeamVertical_{i}','PlainWall',x,y,base+(liner_bottom+liner_top)/2,
+                 40,liner_top-liner_bottom,yaw,18,'Wall Seam Liners')
+    for edge,z in enumerate(sorted({bottom,top,*[a for pair in tiers for a in pair]})):
+        for i in range(count):
+            p=start+(i+.5)*width;x,y=(p,fixed) if axis=='x' else (fixed,p)
+            seam_z=z-16 if band and z==top else z
+            l3_panel(f'{name}_SeamHorizontal_{edge}_{i}','PlainWall',x,y,base+seam_z,
+                     width+40,32,yaw,18,'Wall Seam Liners')
 
 def l3_floor_rect(name,x0,x1,y0,y1,z,section='Floors',model='IndustrialFloorPanel',samples=True):
     nx=math.ceil((x1-x0)/600);ny=math.ceil((y1-y0)/600)
@@ -349,7 +366,7 @@ assert u.get_editor_subsystem(u.LevelEditorSubsystem).save_current_level()
 manifest=dict(map='/Game/Maps/L_TraversalGym',origin=[33000,7900,30],storeys=3,main_footprint_cm=[6600,5400],
     overall_footprint_cm=[8600,5400],floor_elevations_cm=[0,720,1440],clear_height_cm=660,stair_run_width_cm=700,
     entrance=[33000,5200,130],floor_samples=l3_floor_samples,ceiling_samples=l3_roof_samples,stairs=l3_stairs,
-    meshes=l3_records,walking_collision=l3_collision_records,actor_count=len(l3_used),models_used=sorted({r['model'] for r in l3_records}),stair_profile=dict(low=l3_stair_low,high=l3_stair_high,yaw=l3_stair_yaw),
+    meshes=l3_records,wall_spans=l3_wall_spans,walking_collision=l3_collision_records,actor_count=len(l3_used),models_used=sorted({r['model'] for r in l3_records}),stair_profile=dict(low=l3_stair_low,high=l3_stair_high,yaw=l3_stair_yaw),
     rooms=['L1 Loading / Reactor / Maintenance / Utilities','L2 Operations / Servers / Power / Analysis','L3 Containment / Medbay / Research / Observation'])
 (l3_root/'resources/Level3Facility.json').write_text(json.dumps(manifest,indent=2)+'\n')
 print('LEVEL3_FACILITY_BUILT',len(l3_used),'actors',len(manifest['models_used']),'kit models')

@@ -1,5 +1,5 @@
 """Validate solid floors/ceilings, connected nav, stairs and a real player walkthrough."""
-import json,math,time,traceback
+import hashlib,json,math,time,traceback
 from pathlib import Path
 import unreal as u
 
@@ -9,7 +9,7 @@ lt_world=u.EditorLevelLibrary.get_pie_worlds(False)[0]
 lt_pawn=u.GameplayStatics.get_player_pawn(lt_world,0)
 lt_origin=u.Vector(33000,7900,30)
 lt_manifest=json.loads((lt_root/'resources/Level3Facility.json').read_text())
-lt_report=dict(passed=False,checks=[],walkthrough=[])
+lt_report=dict(passed=False,checks=[],walkthrough=[],manifest_sha256=hashlib.sha256((lt_root/'resources/Level3Facility.json').read_bytes()).hexdigest())
 # The shared PIE suite counts result cases; keep its contract alongside the
 # richer named checks consumed by the facility content validator.
 lt_report['results']=lt_report['checks']
